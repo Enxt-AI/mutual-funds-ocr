@@ -1,0 +1,702 @@
+.detailPage {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.notFound {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.notFound h1 {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.notFound p {
+    color: var(--text-secondary);
+    margin-bottom: 24px;
+}
+
+.noData {
+    text-align: center;
+    padding: 32px;
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+.section {
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+/* ===== HEADER ===== */
+.header {
+    margin-bottom: 8px;
+}
+
+.breadcrumb {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+}
+
+.breadcrumb a {
+    color: var(--accent-blue);
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.fundTitle {
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    margin-bottom: 14px;
+    line-height: 1.2;
+}
+
+.fundMeta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.headerCards {
+    display: grid;
+    grid-template-columns: 2fr repeat(4, 1fr);
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.navCard {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.navLabel {
+    font-size: 12px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+
+.navRow {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+}
+
+.navPrice {
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.navChange {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.navDate {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+.liveBadge {
+    display: inline-block;
+    font-size: 9px;
+    font-weight: 700;
+    color: #10b981;
+    background: rgba(16, 185, 129, 0.12);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    padding: 2px 8px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    margin-left: 8px;
+    animation: livePulse 2s ease-in-out infinite;
+}
+
+@keyframes livePulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.statCard {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.statLabel {
+    font-size: 12px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+
+.statValue {
+    font-size: 22px;
+    font-weight: 800;
+}
+
+/* ===== CHART ===== */
+.sectionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.chartSvg {
+    width: 100%;
+    height: auto;
+}
+
+/* ===== TABLE ===== */
+.tableWrap {
+    overflow-x: auto;
+}
+
+/* ===== TWO COLUMN ===== */
+.twoCol {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 24px;
+}
+
+.allocColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* ===== ALLOCATION BARS ===== */
+.allocBars {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.allocItem {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.allocHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.allocName {
+    font-size: 13px;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.allocDot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.allocPct {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+/* ===== RISKOMETER ===== */
+.riskometer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.riskMeter {
+    display: flex;
+    gap: 3px;
+}
+
+.riskSegment {
+    width: 16px;
+    height: 8px;
+    border-radius: 2px;
+}
+
+.riskLabel {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* ===== FUND MANAGERS ===== */
+.managerGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px;
+}
+
+.managerCard {
+    display: flex;
+    gap: 16px;
+    padding: 20px;
+    background: var(--bg-secondary);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+}
+
+.managerAvatar {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: var(--gradient-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    flex-shrink: 0;
+}
+
+.managerInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.managerName {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.managerDetail {
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+/* ===== RISK METRICS ===== */
+.riskGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 12px;
+}
+
+.riskMetricCard {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+}
+
+.riskMetricLabel {
+    font-size: 12px;
+    color: var(--text-muted);
+    text-transform: capitalize;
+}
+
+.riskMetricVal {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+/* ===== SIP CALCULATOR ===== */
+.calculator {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.calcInputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.calcField {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.calcField label {
+    font-size: 13px;
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+
+.calcField input[type="range"] {
+    width: 100%;
+    height: 6px;
+    -webkit-appearance: none;
+    appearance: none;
+    background: var(--bg-secondary);
+    border-radius: 3px;
+    outline: none;
+}
+
+.calcField input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--accent-blue);
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+.calcValue {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--accent-blue);
+}
+
+.calcResults {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+.calcResultItem {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+}
+
+.calcTotal {
+    background: rgba(59, 130, 246, 0.08);
+    border-color: rgba(59, 130, 246, 0.2);
+}
+
+.calcResultLabel {
+    font-size: 12px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+
+.calcResultVal {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.calcNote {
+    font-size: 12px;
+    color: var(--text-muted);
+    text-align: center;
+}
+
+/* ===== FUND INFO ===== */
+.infoGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+}
+
+.infoItem {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 16px;
+    background: var(--bg-secondary);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+}
+
+.infoLabel {
+    font-size: 12px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+
+.infoValue {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+/* ===== MORNINGSTAR RATING ===== */
+.starRating {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.star {
+    font-size: 18px;
+    color: var(--border-color);
+}
+
+.starFilled {
+    color: #f59e0b;
+}
+
+.ratingLabel {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-left: 6px;
+    font-weight: 600;
+}
+
+/* ===== HIGHLIGHTS ===== */
+.highlightsList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.highlightItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--text-primary);
+}
+
+.highlightIcon {
+    flex-shrink: 0;
+    font-size: 16px;
+    margin-top: 2px;
+}
+
+/* ===== PORTFOLIO ACTIVITY ===== */
+.activityGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.activityColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.activityTitle {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+
+.activityEntry {
+    font-size: 13px;
+    padding: 6px 12px;
+    border-radius: var(--radius-md);
+    background: rgba(16, 185, 129, 0.08);
+    border: 1px solid rgba(16, 185, 129, 0.2);
+    color: var(--text-primary);
+}
+
+.activityExit {
+    font-size: 13px;
+    padding: 6px 12px;
+    border-radius: var(--radius-md);
+    background: rgba(239, 68, 68, 0.08);
+    border: 1px solid rgba(239, 68, 68, 0.2);
+    color: var(--text-primary);
+}
+
+/* ===== PORTFOLIO STATS ===== */
+.statsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 12px;
+}
+
+.statItem {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+}
+
+.statItemLabel {
+    font-size: 11px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+
+.statItemValue {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--text-primary);
+}
+
+/* ===== AVAILABILITY BADGES ===== */
+.availGrid {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.availBadge {
+    font-size: 12px;
+    font-weight: 700;
+    padding: 5px 14px;
+    border-radius: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.availYes {
+    background: rgba(16, 185, 129, 0.1);
+    color: #10b981;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.availNo {
+    background: rgba(100, 116, 139, 0.08);
+    color: var(--text-muted);
+    border: 1px solid var(--border-color);
+}
+
+/* ===== STRATEGY CARDS ===== */
+.strategyGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 12px;
+}
+
+.strategyCard {
+    padding: 16px;
+    background: var(--bg-secondary);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+}
+
+.strategyLabel {
+    font-size: 11px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.strategyText {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+    line-height: 1.5;
+}
+
+/* ===== OTHER SCHEMES ===== */
+.schemeTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 6px;
+}
+
+.schemeTag {
+    font-size: 11px;
+    padding: 3px 10px;
+    border-radius: 12px;
+    background: rgba(99, 102, 241, 0.08);
+    color: var(--text-secondary);
+    border: 1px solid rgba(99, 102, 241, 0.15);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+    .headerCards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .twoCol {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .fundTitle {
+        font-size: 24px;
+    }
+
+    .headerCards {
+        grid-template-columns: 1fr;
+    }
+
+    .navPrice {
+        font-size: 28px;
+    }
+
+    .calcInputs {
+        grid-template-columns: 1fr;
+    }
+
+    .calcResults {
+        grid-template-columns: 1fr;
+    }
+
+    .riskGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .activityGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .statsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .strategyGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .managerGrid {
+        grid-template-columns: 1fr;
+    }
+}

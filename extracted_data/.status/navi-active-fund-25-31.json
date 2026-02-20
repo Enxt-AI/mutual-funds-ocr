@@ -1,0 +1,27 @@
+{
+  "status": "done",
+  "amc": "navi-active-fund-25-31",
+  "file": "Navi_Active_Fund_Nov_25_20251215205131.pdf",
+  "schemes": 14,
+  "exitCode": 0,
+  "completedAt": "2026-02-19T11:50:12.116Z",
+  "logs": [
+    "============================================================\r\n  Gemini 2.5 Flash — Factsheet Extractor\r\n============================================================\r\n  Model:  gemini-2.5-flash\r\n  Source: D:\\OCR\\OCR\\Factsheets\r\n  Output: D:\\OCR\\OCR\\extracted_data\r\n\r\n  Processing 1 AMC(s)\r\n\r\n[1/1] navi-active-fund-25-31\r\n  📄 PDF: Navi_Active_Fund_Nov_25_20251215205131.pdf\r\n  🖼 Converting PDF to images...\r\n  📸 16 pages\r\n    Page 1/16...",
+    "✅ (1 scheme)\r\n    Page 2/16...",
+    "✅ (5 schemes)\r\n    Page 3/16...",
+    "✅ (1 scheme)\r\n    Page 4/16...",
+    "✅ (1 scheme)\r\n    Page 5/16...",
+    "✅ (1 scheme)\r\n    Page 6/16...",
+    "✅ (2 schemes)\r\n    Page 7/16...",
+    "✅ (1 scheme)\r\n    Page 8/16...",
+    "✅ (2 schemes)\r\n    Page 9/16...",
+    "✅ (1 scheme)\r\n    Page 10/16...",
+    "✅ (2 schemes)\r\n    Page 11/16...",
+    "✅ (2 schemes)\r\n    Page 12/16...",
+    "✅ (2 schemes)\r\n    Page 13/16...",
+    "✅ (1 scheme)\r\n    Page 14/16...",
+    "✅ (5 schemes)\r\n    Page 15/16...",
+    "✅ (8 schemes)\r\n    Page 16/16...",
+    "JSON parse error (attempt 1): Unterminated string starting at: line 164 column 18 (char 6958)\r\n      ✅ Repaired truncated JSON successfully\r\n✅ (0 schemes)\r\n  🔗 Merging 16 pages...\r\n  💾 Saved: navi-active-fund-25-31.json (14 schemes)\r\n\r\n============================================================\r\n  EXTRACTION SUMMARY\r\n============================================================\r\n  ✅ navi-active-fund-25-31: OK (14 schemes)\r\n\r\n  Total schemes extracted: 14\r\n  Output directory: D:\\OCR\\OCR\\extracted_data"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "status": "done",
+  "amc": "helios-mutual-fund-25",
+  "file": "Helios-Mutual-Fund-Factsheet_Nov25.pdf",
+  "schemes": 7,
+  "exitCode": 0,
+  "completedAt": "2026-02-19T08:46:00.993Z",
+  "logs": [
+    "============================================================\r\n  Gemini 2.5 Flash — Factsheet Extractor\r\n============================================================\r\n  Model:  gemini-2.5-flash\r\n  Source: D:\\OCR\\OCR\\Factsheets\r\n  Output: D:\\OCR\\OCR\\extracted_data\r\n\r\n  Processing 1 AMC(s)\r\n\r\n[1/1] helios-mutual-fund-25\r\n  📄 PDF: Helios-Mutual-Fund-Factsheet_Nov25.pdf\r\n  🖼 Converting PDF to images...\r\n  📸 19 pages\r\n    Page 1/19...",
+    "✅ (1 scheme)\r\n    Page 2/19...",
+    "[stderr] Traceback (most recent call last):\r\n  File \"D:\\OCR\\OCR\\gemini_extractor.py\", line 588, in process_amc\r\n    result = extract_page_with_gemini(uploaded)\r\n  File \"D:\\OCR\\OCR\\gemini_extractor.py\", line 385, in extract_page_with_gemini\r\n    raise RuntimeError(\"Gemini returned empty response after all retries\")\r\nRuntimeError: Gemini returned empty response after all retries",
+    "Empty response (attempt 1/5), waiting 30s...\r\n      Empty response (attempt 2/5), waiting 60s...\r\n      Empty response (attempt 3/5), waiting 90s...\r\n      Empty response (attempt 4/5), waiting 120s...\r\n      Empty response (attempt 5/5), waiting 150s...\r\n      API error (attempt 5): Gemini returned empty response after all retries\r\n❌ Error: Gemini returned empty response after all retries\r\n    Page 3/19...",
+    "✅ (1 scheme)\r\n    Page 4/19...",
+    "✅ (1 scheme)\r\n    Page 5/19...",
+    "✅ (1 scheme)\r\n    Page 6/19...",
+    "✅ (1 scheme)\r\n    Page 7/19...",
+    "Empty response (attempt 1/5), waiting 30s...\r\n      Empty response (attempt 2/5), waiting 60s...\r\n✅ (1 scheme)\r\n    Page 8/19...",
+    "✅ (1 scheme)\r\n    Page 9/19...",
+    "✅ (1 scheme)\r\n    Page 10/19...",
+    "✅ (1 scheme)\r\n    Page 11/19...",
+    "✅ (1 scheme)\r\n    Page 12/19...",
+    "✅ (1 scheme)\r\n    Page 13/19...",
+    "✅ (1 scheme)\r\n    Page 14/19...",
+    "✅ (1 scheme)\r\n    Page 15/19...",
+    "✅ (1 scheme)\r\n    Page 16/19...",
+    "✅ (6 schemes)\r\n    Page 17/19...",
+    "✅ (7 schemes)\r\n    Page 18/19...",
+    "✅ (6 schemes)\r\n    Page 19/19...",
+    "✅ (1 scheme)\r\n  🔗 Merging 19 pages...\r\n  💾 Saved: helios-mutual-fund-25.json (7 schemes)\r\n\r\n============================================================\r\n  EXTRACTION SUMMARY\r\n============================================================\r\n  ✅ helios-mutual-fund-25: OK (7 schemes)\r\n\r\n  Total schemes extracted: 7\r\n  Output directory: D:\\OCR\\OCR\\extracted_data"
+  ]
+}

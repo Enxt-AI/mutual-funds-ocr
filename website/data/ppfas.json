@@ -1,0 +1,3910 @@
+{
+  "schemes": [
+    {
+      "fund_name": "Parag Parikh Flexi Cap Fund",
+      "fund_type": "Open-ended",
+      "scheme_type": "Equity Oriented Scheme",
+      "category": "Flexi Cap Fund",
+      "investment_objective": "Parag Parikh Flexi Cap Fund (PPFCF) is an open ended equity oriented scheme with flexibility to invest a minimum of 65% in Indian equities and up to 35% in overseas equity security and domestic debt / money market securities. The core portfolio consists of equity investments made with a long term outlook and the factors considered while investing are quality of management, quality of the sector and the business (return on capital, entry barriers, capital intensity, use of debt, growth prospects etc) and the valuation of the companies. The endeavor of the fund management team is to identify opportunities for long term investments. However, there are times when the opportunities are not attractive enough. While waiting for attractive opportunities, the fund invests in arbitrage opportunities between the cash and futures equity markets and special situations arbitrage where open offers / delisting / merger events have been announced. Investments are also made in money market / debt securities while waiting for deployment in core equity investments.",
+      "equity_holdings": [
+        {
+          "name": "HDFC Bank Limited",
+          "sector": "Banks",
+          "weight_pct": 8.03
+        },
+        {
+          "name": "Power Grid Corporation of India Limited",
+          "sector": "Power",
+          "weight_pct": 5.91
+        },
+        {
+          "name": "ICICI Bank Limited",
+          "sector": "Banks",
+          "weight_pct": 4.85
+        },
+        {
+          "name": "Bajaj Holdings & Investment Limited",
+          "sector": "Finance",
+          "weight_pct": 4.71
+        },
+        {
+          "name": "Coal India Limited",
+          "sector": "Consumable Fuels",
+          "weight_pct": 4.7
+        },
+        {
+          "name": "ITC Limited",
+          "sector": "Diversified FMCG",
+          "weight_pct": 4.51
+        },
+        {
+          "name": "Kotak Mahindra Bank Limited",
+          "sector": "Banks",
+          "weight_pct": 3.98
+        },
+        {
+          "name": "Mahindra & Mahindra Limited",
+          "sector": "Automobiles",
+          "weight_pct": 3.6
+        },
+        {
+          "name": "Bharti Airtel Limited",
+          "sector": "Telecom - Services",
+          "weight_pct": 3.43
+        },
+        {
+          "name": "Maruti Suzuki India Limited",
+          "sector": "Automobiles",
+          "weight_pct": 3.37
+        },
+        {
+          "name": "Axis Bank Limited",
+          "sector": "Banks",
+          "weight_pct": 3.28
+        },
+        {
+          "name": "HCL Technologies Limited",
+          "sector": "IT - Software",
+          "weight_pct": 2.48
+        },
+        {
+          "name": "Infosys Limited",
+          "sector": "IT - Software",
+          "weight_pct": 2.12
+        },
+        {
+          "name": "Dr. Reddy's Laboratories Limited",
+          "sector": "Pharmaceuticals & Biotechnology",
+          "weight_pct": 1.27
+        },
+        {
+          "name": "Cipla Limited",
+          "sector": "Pharmaceuticals & Biotechnology",
+          "weight_pct": 1.27
+        },
+        {
+          "name": "Zydus Lifesciences Limited",
+          "sector": "Pharmaceuticals & Biotechnology",
+          "weight_pct": 1.26
+        },
+        {
+          "name": "Indian Energy Exchange Limited",
+          "sector": "Capital Markets",
+          "weight_pct": 0.87
+        },
+        {
+          "name": "Balkrishna Industries Limited",
+          "sector": "Auto Components",
+          "weight_pct": 0.75
+        },
+        {
+          "name": "Zydus Wellness Limited",
+          "sector": "Food Products",
+          "weight_pct": 0.73
+        },
+        {
+          "name": "Tata Consultancy Services Limited",
+          "sector": "IT - Software",
+          "weight_pct": 0.68
+        },
+        {
+          "name": "Multi Commodity Exchange of India Limited",
+          "sector": "Capital Markets",
+          "weight_pct": 0.62
+        },
+        {
+          "name": "EID Parry India Limited",
+          "sector": "Food Products",
+          "weight_pct": 0.46
+        },
+        {
+          "name": "Narayana Hrudayalaya Limited",
+          "sector": "Healthcare Services",
+          "weight_pct": 0.3
+        },
+        {
+          "name": "Central Depository Services (India) Limited",
+          "sector": "Capital Markets",
+          "weight_pct": 0.28
+        },
+        {
+          "name": "ICRA Limited",
+          "sector": "Capital Markets",
+          "weight_pct": 0.14
+        },
+        {
+          "name": "Maharashtra Scooters Limited",
+          "sector": "Finance",
+          "weight_pct": 0.09
+        },
+        {
+          "name": "Indus Towers Limited",
+          "sector": "Telecom - Services",
+          "weight_pct": 0.02
+        },
+        {
+          "name": "Nesco Limited",
+          "sector": "Commercial Services & Supplies",
+          "weight_pct": 0.02
+        },
+        {
+          "name": "Swaraj Engines Limited",
+          "sector": "Industrial Products",
+          "weight_pct": 0.01
+        },
+        {
+          "name": "Alphabet Inc A",
+          "sector": "Computer Software",
+          "weight_pct": 4.17
+        },
+        {
+          "name": "Meta Platforms Registered Shares A",
+          "sector": "Computer Software",
+          "weight_pct": 2.64
+        },
+        {
+          "name": "Microsoft Corp",
+          "sector": "Computer Software",
+          "weight_pct": 2.49
+        },
+        {
+          "name": "Amazon Com Inc",
+          "sector": "Catalog/Specialty Distribution",
+          "weight_pct": 2.21
+        },
+        {
+          "name": "Embassy Office Parks REIT",
+          "sector": "Realty",
+          "weight_pct": 0.57
+        },
+        {
+          "name": "Brookfield India Real Estate Trust",
+          "sector": "Realty",
+          "weight_pct": 0.11
+        },
+        {
+          "name": "Mindspace Business Parks REIT",
+          "sector": "Realty",
+          "weight_pct": 0.03
+        }
+      ],
+      "debt_holdings": [
+        {
+          "name": "Kotak Mahindra Bank Limited",
+          "instrument_type": "CD",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.51,
+          "maturity_date": "24/09/2026"
+        },
+        {
+          "name": "Axis Bank Limited",
+          "instrument_type": "CD",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.48,
+          "maturity_date": "11/08/2026"
+        },
+        {
+          "name": "Bank of Baroda",
+          "instrument_type": "CD",
+          "rating": "IND A1+",
+          "weight_pct": 0.48,
+          "maturity_date": "16/09/2026"
+        },
+        {
+          "name": "Canara Bank",
+          "instrument_type": "CD",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.45,
+          "maturity_date": "12/06/2026"
+        },
+        {
+          "name": "Punjab National Bank",
+          "instrument_type": "CD",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.42,
+          "maturity_date": "05/12/2025"
+        },
+        {
+          "name": "Union Bank of India",
+          "instrument_type": "CD",
+          "rating": "ICRA A1+",
+          "weight_pct": 0.39,
+          "maturity_date": "25/06/2026"
+        },
+        {
+          "name": "HDFC Bank Limited",
+          "instrument_type": "CD",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.37,
+          "maturity_date": "10/09/2026"
+        },
+        {
+          "name": "National Bank For Agriculture and Rural Development",
+          "instrument_type": "CD",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.36,
+          "maturity_date": "18/09/2026"
+        },
+        {
+          "name": "Small Industries Development Bank of India",
+          "instrument_type": "CD",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.3,
+          "maturity_date": "05/05/2026"
+        },
+        {
+          "name": "HDFC Bank Limited",
+          "instrument_type": "CD",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.29,
+          "maturity_date": "24/06/2026"
+        },
+        {
+          "name": "Canara Bank",
+          "instrument_type": "CD",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.26,
+          "maturity_date": "11/11/2026"
+        },
+        {
+          "name": "Indian Bank",
+          "instrument_type": "CD",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.25,
+          "maturity_date": "12/06/2026"
+        },
+        {
+          "name": "National Bank For Agriculture and Rural Development",
+          "instrument_type": "CD",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.24,
+          "maturity_date": "22/01/2026"
+        },
+        {
+          "name": "Bank of Baroda",
+          "instrument_type": "CD",
+          "rating": "IND A1+",
+          "weight_pct": 0.24,
+          "maturity_date": "23/07/2026"
+        },
+        {
+          "name": "Indian Bank",
+          "instrument_type": "CD",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.23,
+          "maturity_date": "06/03/2026"
+        },
+        {
+          "name": "Axis Bank Limited",
+          "instrument_type": "CD",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.22,
+          "maturity_date": "11/06/2026"
+        },
+        {
+          "name": "Indian Bank",
+          "instrument_type": "CD",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.22,
+          "maturity_date": "28/07/2026"
+        },
+        {
+          "name": "Small Industries Development Bank of India",
+          "instrument_type": "CD",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.22,
+          "maturity_date": "24/09/2026"
+        },
+        {
+          "name": "Small Industries Development Bank of India",
+          "instrument_type": "CD",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.22,
+          "maturity_date": "13/10/2026"
+        },
+        {
+          "name": "Indian Bank",
+          "instrument_type": "CD",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.22,
+          "maturity_date": "30/10/2026"
+        },
+        {
+          "name": "Canara Bank",
+          "instrument_type": "CD",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.19,
+          "maturity_date": "27/02/2026"
+        },
+        {
+          "name": "Bank of Baroda",
+          "instrument_type": "CD",
+          "rating": "IND A1+",
+          "weight_pct": 0.18,
+          "maturity_date": "16/10/2026"
+        },
+        {
+          "name": "National Bank For Agriculture and Rural Development",
+          "instrument_type": "CD",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.17,
+          "maturity_date": "20/01/2026"
+        },
+        {
+          "name": "HDFC Bank Limited",
+          "instrument_type": "CD",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.17,
+          "maturity_date": "19/05/2026"
+        },
+        {
+          "name": "Kotak Mahindra Bank Limited",
+          "instrument_type": "CD",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.15,
+          "maturity_date": "04/12/2025"
+        },
+        {
+          "name": "Punjab National Bank",
+          "instrument_type": "CD",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.15,
+          "maturity_date": "08/01/2026"
+        },
+        {
+          "name": "Union Bank of India",
+          "instrument_type": "CD",
+          "rating": "ICRA A1+",
+          "weight_pct": 0.15,
+          "maturity_date": "16/01/2026"
+        },
+        {
+          "name": "Punjab National Bank",
+          "instrument_type": "CD",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.15,
+          "maturity_date": "18/03/2026"
+        },
+        {
+          "name": "Indian Bank",
+          "instrument_type": "CD",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.15,
+          "maturity_date": "06/05/2026"
+        },
+        {
+          "name": "Kotak Mahindra Bank Limited",
+          "instrument_type": "CD",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.15,
+          "maturity_date": "25/05/2026"
+        },
+        {
+          "name": "Axis Bank Limited",
+          "instrument_type": "CD",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.15,
+          "maturity_date": "12/06/2026"
+        },
+        {
+          "name": "Kotak Mahindra Bank Limited",
+          "instrument_type": "CD",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.13,
+          "maturity_date": "11/12/2025"
+        },
+        {
+          "name": "HDFC Bank Limited",
+          "instrument_type": "CD",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.13,
+          "maturity_date": "24/03/2026"
+        },
+        {
+          "name": "Axis Bank Limited",
+          "instrument_type": "CD",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.13,
+          "maturity_date": "25/06/2026"
+        },
+        {
+          "name": "Small Industries Development Bank of India",
+          "instrument_type": "CD",
+          "rating": "CARE A1+",
+          "weight_pct": 0.11,
+          "maturity_date": "13/01/2026"
+        },
+        {
+          "name": "Small Industries Development Bank of India",
+          "instrument_type": "CD",
+          "rating": "CARE A1+",
+          "weight_pct": 0.11,
+          "maturity_date": "09/07/2026"
+        },
+        {
+          "name": "Bank of Baroda",
+          "instrument_type": "CD",
+          "rating": "IND A1+",
+          "weight_pct": 0.11,
+          "maturity_date": "25/11/2026"
+        },
+        {
+          "name": "Union Bank of India",
+          "instrument_type": "CD",
+          "rating": "ICRA A1+",
+          "weight_pct": 0.08,
+          "maturity_date": "05/12/2025"
+        },
+        {
+          "name": "Punjab National Bank",
+          "instrument_type": "CD",
+          "rating": "CARE A1+",
+          "weight_pct": 0.08,
+          "maturity_date": "16/01/2026"
+        },
+        {
+          "name": "Kotak Mahindra Bank Limited",
+          "instrument_type": "CD",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.08,
+          "maturity_date": "13/03/2026"
+        },
+        {
+          "name": "Bank of Baroda",
+          "instrument_type": "CD",
+          "rating": "IND A1+",
+          "weight_pct": 0.07,
+          "maturity_date": "25/05/2026"
+        },
+        {
+          "name": "HDFC Bank Limited",
+          "instrument_type": "CD",
+          "rating": "CARE A1+",
+          "weight_pct": 0.07,
+          "maturity_date": "04/06/2026"
+        },
+        {
+          "name": "HDFC Bank Limited",
+          "instrument_type": "CD",
+          "rating": "CARE A1+",
+          "weight_pct": 0.07,
+          "maturity_date": "12/06/2026"
+        },
+        {
+          "name": "Axis Bank Limited",
+          "instrument_type": "CD",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.07,
+          "maturity_date": "10/08/2026"
+        },
+        {
+          "name": "Small Industries Development Bank of India",
+          "instrument_type": "CD",
+          "rating": "CARE A1+",
+          "weight_pct": 0.07,
+          "maturity_date": "10/11/2026"
+        },
+        {
+          "name": "HDFC Bank Limited",
+          "instrument_type": "CD",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.07,
+          "maturity_date": "13/11/2026"
+        },
+        {
+          "name": "Punjab National Bank",
+          "instrument_type": "CD",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.06,
+          "maturity_date": "26/02/2026"
+        },
+        {
+          "name": "Indian Bank",
+          "instrument_type": "CD",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.04,
+          "maturity_date": "08/01/2026"
+        },
+        {
+          "name": "Union Bank of India",
+          "instrument_type": "CD",
+          "rating": "IND A1+",
+          "weight_pct": 0.04,
+          "maturity_date": "29/01/2026"
+        },
+        {
+          "name": "National Bank For Agriculture and Rural Development",
+          "instrument_type": "CP",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.33,
+          "maturity_date": "25/06/2026"
+        },
+        {
+          "name": "Bajaj Finance Limited",
+          "instrument_type": "CP",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.22,
+          "maturity_date": "18/06/2026"
+        },
+        {
+          "name": "Bajaj Finance Limited",
+          "instrument_type": "CP",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.15,
+          "maturity_date": "06/05/2026"
+        },
+        {
+          "name": "Bajaj Finance Limited",
+          "instrument_type": "CP",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.15,
+          "maturity_date": "26/05/2026"
+        },
+        {
+          "name": "ICICI Securities Limited",
+          "instrument_type": "CP",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.09,
+          "maturity_date": "15/06/2026"
+        },
+        {
+          "name": "Kotak Securities Limited",
+          "instrument_type": "CP",
+          "rating": "ICRA A1+",
+          "weight_pct": 0.08,
+          "maturity_date": "13/02/2026"
+        },
+        {
+          "name": "Bajaj Finance Limited",
+          "instrument_type": "CP",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.07,
+          "maturity_date": "07/05/2026"
+        },
+        {
+          "name": "Parag Parikh Liquid Fund - Direct Plan - Growth",
+          "instrument_type": "Mutual Fund Unit",
+          "rating": null,
+          "weight_pct": 0.51,
+          "maturity_date": null
+        },
+        {
+          "name": "364 Days Tbill",
+          "instrument_type": "T-Bill",
+          "rating": "Sovereign",
+          "weight_pct": 0.26,
+          "maturity_date": "15/10/2026"
+        },
+        {
+          "name": "364 Days Tbill",
+          "instrument_type": "T-Bill",
+          "rating": "Sovereign",
+          "weight_pct": 0.23,
+          "maturity_date": "04/12/2025"
+        },
+        {
+          "name": "364 Days Tbill",
+          "instrument_type": "T-Bill",
+          "rating": "Sovereign",
+          "weight_pct": 0.15,
+          "maturity_date": "29/01/2026"
+        },
+        {
+          "name": "364 Days Tbill",
+          "instrument_type": "T-Bill",
+          "rating": "Sovereign",
+          "weight_pct": 0.08,
+          "maturity_date": "30/07/2026"
+        },
+        {
+          "name": "364 Days Tbill",
+          "instrument_type": "T-Bill",
+          "rating": "Sovereign",
+          "weight_pct": 0.08,
+          "maturity_date": "16/04/2026"
+        },
+        {
+          "name": "TREPS Including Cash & Cash Equivalent",
+          "instrument_type": "Cash & Cash Equivalent",
+          "rating": null,
+          "weight_pct": 8.67,
+          "maturity_date": null
+        }
+      ],
+      "asset_allocation": {
+        "Equity": 75.96,
+        "Arbitrage and Special Situations": 3.04,
+        "Debt and Money Market Instruments": 21.0
+      },
+      "inception_date": "May 24, 2013",
+      "plans_offered": "Direct, Regular",
+      "option": "Growth",
+      "nav_date": "Nov 28, 2025",
+      "returns": [
+        {
+          "period": "SI",
+          "fund_return": 19.69,
+          "benchmark_return": 15.2,
+          "category_avg_return": null
+        },
+        {
+          "period": "1Y",
+          "fund_return": 9.52,
+          "benchmark_return": 6.58,
+          "category_avg_return": null
+        },
+        {
+          "period": "3Y",
+          "fund_return": 21.87,
+          "benchmark_return": 15.6,
+          "category_avg_return": null
+        },
+        {
+          "period": "5Y",
+          "fund_return": 21.77,
+          "benchmark_return": 18.61,
+          "category_avg_return": null
+        },
+        {
+          "period": "10Y",
+          "fund_return": 18.22,
+          "benchmark_return": 14.87,
+          "category_avg_return": null
+        }
+      ],
+      "sip_returns": [
+        {
+          "period": "SI",
+          "total_invested": 1510000,
+          "market_value": 5735229,
+          "return_pct": 19.58
+        },
+        {
+          "period": "1Y",
+          "total_invested": 120000,
+          "market_value": 127921,
+          "return_pct": 12.64
+        },
+        {
+          "period": "3Y",
+          "total_invested": 360000,
+          "market_value": 474397,
+          "return_pct": 18.85
+        },
+        {
+          "period": "5Y",
+          "total_invested": 600000,
+          "market_value": 962667,
+          "return_pct": 19.02
+        },
+        {
+          "period": "10Y",
+          "total_invested": 1200000,
+          "market_value": 3490553,
+          "return_pct": 20.27
+        }
+      ],
+      "additional_info": {
+        "lumpsum_returns_all_plans": [
+          {
+            "period": "SI",
+            "date_range": "Since Inception (May 24, 2013)",
+            "ppfcf_regular": 18.85,
+            "ppfcf_direct": 19.69,
+            "nifty500_tri": 15.2,
+            "nifty50_tri": 13.92
+          },
+          {
+            "period": "1Y",
+            "date_range": "Nov 29, 2024 to Nov 28, 2025 (Last 1 Year)",
+            "ppfcf_regular": 8.8,
+            "ppfcf_direct": 9.52,
+            "nifty500_tri": 6.58,
+            "nifty50_tri": 9.97
+          },
+          {
+            "period": "3Y",
+            "date_range": "Nov 30, 2022 to Nov 28, 2025 (Last 3 Years)",
+            "ppfcf_regular": 20.99,
+            "ppfcf_direct": 21.87,
+            "nifty500_tri": 15.6,
+            "nifty50_tri": 13.1
+          },
+          {
+            "period": "5Y",
+            "date_range": "Nov 27, 2020 to Nov 28, 2025 (Last 5 Years)",
+            "ppfcf_regular": 20.76,
+            "ppfcf_direct": 21.77,
+            "nifty500_tri": 18.61,
+            "nifty50_tri": 16.46
+          },
+          {
+            "period": "10Y",
+            "date_range": "Nov 30, 2015 to Nov 28, 2025 (Last 10 Years)",
+            "ppfcf_regular": 17.32,
+            "ppfcf_direct": 18.22,
+            "nifty500_tri": 14.87,
+            "nifty50_tri": 14.08
+          }
+        ],
+        "lumpsum_value_of_investment": [
+          {
+            "period": "SI",
+            "date_range": "Since Inception (May 24, 2013)",
+            "ppfcf_regular_value": 86971,
+            "ppfcf_direct_value": 95002,
+            "nifty500_tri_value": 58812,
+            "nifty50_tri_value": 51173
+          },
+          {
+            "period": "1Y",
+            "date_range": "Nov 29, 2024 to Nov 28, 2025 (Last 1 Year)",
+            "ppfcf_regular_value": 10877,
+            "ppfcf_direct_value": 10949,
+            "nifty500_tri_value": 10656,
+            "nifty50_tri_value": 10994
+          },
+          {
+            "period": "3Y",
+            "date_range": "Nov 30, 2022 to Nov 28, 2025 (Last 3 Years)",
+            "ppfcf_regular_value": 17701,
+            "ppfcf_direct_value": 18090,
+            "nifty500_tri_value": 15441,
+            "nifty50_tri_value": 14461
+          },
+          {
+            "period": "5Y",
+            "date_range": "Nov 27, 2020 to Nov 28, 2025 (Last 5 Years)",
+            "ppfcf_regular_value": 25705,
+            "ppfcf_direct_value": 26807,
+            "nifty500_tri_value": 23499,
+            "nifty50_tri_value": 21446
+          },
+          {
+            "period": "10Y",
+            "date_range": "Nov 30, 2015 to Nov 28, 2025 (Last 10 Years)",
+            "ppfcf_regular_value": 49417,
+            "ppfcf_direct_value": 53326,
+            "nifty500_tri_value": 40013,
+            "nifty50_tri_value": 37349
+          }
+        ],
+        "rolling_returns_metrics": {
+          "3_years": [
+            {
+              "scheme": "Parag Parikh Flexi Cap Fund - Reg - Growth",
+              "average": 18.31,
+              "maximum": 36.29,
+              "minimum": 0.07,
+              "std_deviation": 5.72
+            },
+            {
+              "scheme": "Parag Parikh Flexi Cap Fund - Direct - Growth",
+              "average": 19.2,
+              "maximum": 37.64,
+              "minimum": 0.74,
+              "std_deviation": 5.9
+            },
+            {
+              "scheme": "Tier I Benchmark Index - Nifty 500 TRI",
+              "average": 14.9,
+              "maximum": 33.5,
+              "minimum": -6.31,
+              "std_deviation": 5.75
+            }
+          ],
+          "5_years": [
+            {
+              "scheme": "Parag Parikh Flexi Cap Fund - Reg - Growth",
+              "average": 18.52,
+              "maximum": 32.75,
+              "minimum": 3.44,
+              "std_deviation": 5.02
+            },
+            {
+              "scheme": "Parag Parikh Flexi Cap Fund - Direct - Growth",
+              "average": 19.42,
+              "maximum": 33.93,
+              "minimum": 4.09,
+              "std_deviation": 5.16
+            },
+            {
+              "scheme": "Tier I Benchmark Index - Nifty 500 TRI",
+              "average": 14.65,
+              "maximum": 28.87,
+              "minimum": -1.05,
+              "std_deviation": 4.94
+            }
+          ],
+          "10_years": [
+            {
+              "scheme": "Parag Parikh Flexi Cap Fund - Reg - Growth",
+              "average": 18.34,
+              "maximum": 20.6,
+              "minimum": 16.35,
+              "std_deviation": 0.91
+            },
+            {
+              "scheme": "Parag Parikh Flexi Cap Fund - Direct - Growth",
+              "average": 19.22,
+              "maximum": 21.48,
+              "minimum": 17.23,
+              "std_deviation": 0.9
+            },
+            {
+              "scheme": "Tier I Benchmark Index - Nifty 500 TRI",
+              "average": 14.82,
+              "maximum": 17.02,
+              "minimum": 11.71,
+              "std_deviation": 1.11
+            }
+          ]
+        },
+        "rolling_returns_footnote": "- Returns are calculated since inception with daily rolling frequency for the 3, 5 and 10 years period. (PPFCF)",
+        "sip_returns_all_plans": [
+          {
+            "period": "SI",
+            "date_range": "Since Inception from May 24, 2013",
+            "total_amount_invested": 1510000,
+            "market_value_regular_plan": 5380286,
+            "market_value_direct_plan": 5735229,
+            "regular_plan_returns_annualised": 18.68,
+            "direct_plan_returns_annualised": 19.58,
+            "nifty500_tri_returns_annualised": 15.3,
+            "nifty50_tri_returns_annualised": 14.15
+          },
+          {
+            "period": "1Y",
+            "date_range": "Nov 29, 2024 to Nov 28, 2025 (Last 1 Year)",
+            "total_amount_invested": 120000,
+            "market_value_regular_plan": 127472,
+            "market_value_direct_plan": 127921,
+            "regular_plan_returns_annualised": 11.91,
+            "direct_plan_returns_annualised": 12.64,
+            "nifty500_tri_returns_annualised": 15.28,
+            "nifty50_tri_returns_annualised": 17.34
+          },
+          {
+            "period": "3Y",
+            "date_range": "Nov 30, 2022 to Nov 28, 2025 (Last 3 Years)",
+            "total_amount_invested": 360000,
+            "market_value_regular_plan": 468813,
+            "market_value_direct_plan": 474397,
+            "regular_plan_returns_annualised": 18.0,
+            "direct_plan_returns_annualised": 18.85,
+            "nifty500_tri_returns_annualised": 15.37,
+            "nifty50_tri_returns_annualised": 14.21
+          },
+          {
+            "period": "5Y",
+            "date_range": "Nov 27, 2020 to Nov 28, 2025 (Last 5 Years)",
+            "total_amount_invested": 600000,
+            "market_value_regular_plan": 941300,
+            "market_value_direct_plan": 962667,
+            "regular_plan_returns_annualised": 18.1,
+            "direct_plan_returns_annualised": 19.02,
+            "nifty500_tri_returns_annualised": 15.66,
+            "nifty50_tri_returns_annualised": 14.05
+          },
+          {
+            "period": "10Y",
+            "date_range": "Nov 30, 2015 to Nov 28, 2025 (Last 10 Years)",
+            "total_amount_invested": 1200000,
+            "market_value_regular_plan": 3315379,
+            "market_value_direct_plan": 3490553,
+            "regular_plan_returns_annualised": 19.32,
+            "direct_plan_returns_annualised": 20.27,
+            "nifty500_tri_returns_annualised": 15.87,
+            "nifty50_tri_returns_annualised": 14.8
+          }
+        ],
+        "insider_holdings": {
+          "aum_crores": 612.8,
+          "date": "Nov 28, 2025",
+          "units_held": 1540177.55,
+          "aum_in_rs": 146319793.19,
+          "scheme": "Parag Parikh Flexi Cap Fund - Direct Plan"
+        },
+        "insider_holdings_context": "The combined holding of 'Insiders' in Parag Parikh Flexi Cap Fund amounts to ₹ 612.80 Crores of AUM as at Nov 28, 2025. Total number of units held in Parag Parikh Flexi Cap Fund as per SEBI vide its Master Circular For Mutual Funds dated June 27, 2024 (Alignment of interest of Designated Employees of Asset Management Companies (AMCs) with the Unitholders of the Mutual Fund Schemes) as at Nov 28, 2025.",
+        "factsheet_page_number": 4
+      },
+      "fund_managers": [
+        {
+          "name": "Mr. Rajeev Thakkar"
+        },
+        {
+          "name": "Mr. Tejas Soman",
+          "managing_since": "September 1, 2025",
+          "qualification": "Fund Manager – Debt"
+        },
+        {
+          "name": "Mr. Raunak Onkar"
+        },
+        {
+          "name": "Mr. Raj Mehta",
+          "managing_since": "September 1, 2025",
+          "qualification": "Fund Manager- Equity"
+        },
+        {
+          "name": "Mr. Rukun Tarachandani"
+        },
+        {
+          "name": "Ms. Mansi Kariya"
+        },
+        {
+          "name": "Ms. Aishwarya Dhar",
+          "managing_since": "September 1, 2025",
+          "qualification": "Fund Manager – Debt"
+        }
+      ],
+      "benchmark": "Nifty 500 TRI",
+      "risk_level": "Very High"
+    },
+    {
+      "fund_name": "Parag Parikh Flexi Cap Fund (PPFCF)",
+      "fund_type": "Open-ended",
+      "scheme_type": "Open-ended dynamic Equity scheme",
+      "category": "Flexi Cap Fund",
+      "investment_objective": "To seek to generate long-term capital growth from an actively managed portfolio primarily of Equity and Equity Related Securities. Scheme shall invest in Indian equities, and related instruments and debt foreign equities and related instruments and debt securities. However, there is no assurance that the investment objective of the Scheme will be achieved and does not assure or guarantee any returns.",
+      "benchmark": "NIFTY 500 (TRI)",
+      "inception_date": "May 24, 2013",
+      "plans_offered": "Direct, Regular",
+      "nav": 95.0019,
+      "nav_date": "Nov 28, 2025",
+      "aum_crores": 129782.54,
+      "monthly_avg_aum": 127493.38,
+      "expense_ratio": 0.63,
+      "exit_load": "In respect of each purchase / switch-in of Units, 10% of the units (\"the limit\") may be redeemed without any exit load from the date of allotment. Any redemption or switch-out in excess of the limit shall be subject to the following exit load: 2.00% if the investment is redeemed on or before 365 days from the date of allotment of units. 1.00% if the investment is redeemed after 365 days but on or before 730 days from the date of allotment of units. No Exit Load will be charged if investment is redeemed after 730 days from the date of allotment of units. No exit load will be charged, in case of switch transactions between Regular Plan and Direct Plan of the Scheme for existing as well as prospective investors. Above exit load structure is applicable prospectively, for all investments (including SIP/STP and SWP registered) with effect from 15th Nov 2021. Any exit load charged (net off GST, if any) shall be credited back to the Scheme.",
+      "min_sip": 1000,
+      "min_lumpsum": 1000,
+      "min_additional": 1000,
+      "fund_managers": [
+        {
+          "name": "Mr. Rajeev Thakkar",
+          "managing_since": "Since Inception",
+          "qualification": "Chief Investment Officer - Equity and Director"
+        },
+        {
+          "name": "Mr. Raunak Onkar",
+          "managing_since": "Since Inception",
+          "qualification": "Fund Manager Dedicated for Overseas Securities"
+        },
+        {
+          "name": "Mr. Raj Mehta",
+          "managing_since": "Since September 1, 2025",
+          "qualification": "Executive Vice President & Fund Manager - Equity"
+        },
+        {
+          "name": "Mr. Rukun Tarachandani",
+          "managing_since": "Since May 16, 2022",
+          "qualification": "Executive Vice President & Fund Manager - Equity"
+        },
+        {
+          "name": "Mr. Tejas Soman",
+          "managing_since": "Since September 1, 2025",
+          "qualification": "Chief Investment Officer - Debt"
+        },
+        {
+          "name": "Ms. Mansi Kariya",
+          "managing_since": "Since December 22, 2023",
+          "qualification": "Associate Vice President & Fund Manager- Debt"
+        },
+        {
+          "name": "Ms. Aishwarya Dhar",
+          "managing_since": "Since September 1, 2025",
+          "qualification": "Senior Manager & Fund Manager- Debt"
+        }
+      ],
+      "returns": [
+        {
+          "period": "SI",
+          "fund_return": 19.69,
+          "benchmark_return": 15.2,
+          "additional_info": {
+            "fund_return_regular": 18.85,
+            "additional_benchmark_nifty_50_return": 13.92
+          }
+        },
+        {
+          "period": "1Y",
+          "fund_return": 9.52,
+          "benchmark_return": 6.58,
+          "additional_info": {
+            "fund_return_regular": 8.8,
+            "additional_benchmark_nifty_50_return": 9.97
+          }
+        }
+      ],
+      "sector_allocation": {
+        "Banks": 20.14,
+        "Debt and Money Market Instruments": 12.33,
+        "Computer Software": 9.3,
+        "Cash & Cash Equivalent": 8.67,
+        "Automobiles": 6.97,
+        "Power": 5.91,
+        "IT - Software": 5.28,
+        "Finance": 4.8,
+        "Consumable Fuels": 4.7,
+        "Diversified FMCG": 4.51,
+        "Pharmaceuticals & Biotechnology": 3.8,
+        "Telecom - Services": 3.45,
+        "Arbitrage/Special Situation": 3.04,
+        "Catalog/Specialty Distribution": 2.21,
+        "Capital Markets": 1.91,
+        "Food Products": 1.19,
+        "Auto Components": 0.75,
+        "Realty": 0.71,
+        "Healthcare Services": 0.3,
+        "Commercial Services & Supplies": 0.02,
+        "Industrial Products": 0.01
+      },
+      "risk_metrics": {
+        "beta": 0.57,
+        "sharpe_ratio": 1.66,
+        "standard_deviation": 8.41,
+        "portfolio_turnover_excl_arbitrage": 12.67,
+        "portfolio_turnover_incl_arbitrage": 40.14
+      },
+      "additional_info": {
+        "nav_regular_growth": 86.9707,
+        "nav_regular_idcw": 86.9706,
+        "nav_direct_idcw": 95.0017,
+        "expense_ratio_regular_plan": 1.28,
+        "min_sip_quarterly": 3000,
+        "risk_free_rate_assumed": "5.59% (FBIL Overnight MIBOR as on Nov 28, 2025)",
+        "suitability_note": "This Scheme is Suitable for Investors who can remain invested for minimum 5 years!",
+        "foreign_investment_note": "Fresh Investment in foreign securities were temporarily suspended from February 2, 2022. Further, SEBI vide its letter SEBI/HO/OW/IIMD-II/DOF3/P/25095/2022 dated June 17, 2022 has permitted the AMCs to resume subscription and make investments in overseas funds / securities upto the headroom available without breaching the overseas investment limit as of February 01, 2022."
+      }
+    },
+    {
+      "fund_name": "Parag Parikh ELSS Tax Saver Fund",
+      "fund_type": "Open-ended",
+      "scheme_type": "An open-ended equity linked savings scheme with a statutory lock in of 3 years and tax benefit.",
+      "category": "ELSS",
+      "investment_objective": "The investment objective of the Scheme is to generate long-term capital appreciation through a diversified portfolio of equity and equity related instruments. (80% of total assets in accordance with Equity Linked Saving Scheme, 2005 notified by Ministry of Finance) However, there can be no assurance or guarantee that the investment objective of the Scheme would be achieved.",
+      "benchmark": "NIFTY 500 (TRI)",
+      "inception_date": "July 24, 2019",
+      "plans_offered": "Regular, Direct",
+      "plan_type": "Direct",
+      "nav": 34.5782,
+      "nav_date": "Nov 28, 2025",
+      "aum_crores": 5866.92,
+      "monthly_avg_aum": 5828.92,
+      "expense_ratio": 0.62,
+      "exit_load": "NIL",
+      "min_sip": 1000,
+      "min_lumpsum": 500,
+      "min_additional": 500,
+      "fund_managers": [
+        {
+          "name": "Mr. Rajeev Thakkar",
+          "managing_since": "Since Inception",
+          "qualification": "Chief Investment Officer - Equity and Director"
+        },
+        {
+          "name": "Mr. Raunak Onkar",
+          "managing_since": "Since Inception",
+          "qualification": "Fund Manager & Research Head"
+        },
+        {
+          "name": "Mr. Raj Mehta",
+          "managing_since": "Since September 1, 2025",
+          "qualification": "Executive Vice President & Fund Manager - Equity"
+        },
+        {
+          "name": "Mr. Rukun Tarachandani",
+          "managing_since": "Since May 16, 2022",
+          "qualification": "Executive Vice President & Fund Manager - Equity"
+        },
+        {
+          "name": "Mr. Tejas Soman",
+          "managing_since": "Since September 1, 2025",
+          "qualification": "Chief Investment Officer - Debt"
+        },
+        {
+          "name": "Ms. Aishwarya Dhar",
+          "managing_since": "Since September 1, 2025",
+          "qualification": "Senior Manager & Fund Manager- Debt"
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "HDFC Bank Limited",
+          "sector": "Banks",
+          "weight_pct": 8.2
+        },
+        {
+          "name": "Bajaj Holdings & Investment Limited",
+          "sector": "Finance",
+          "weight_pct": 6.64
+        },
+        {
+          "name": "Power Grid Corporation of India Limited",
+          "sector": "Power",
+          "weight_pct": 5.99
+        },
+        {
+          "name": "Maharashtra Scooters Limited",
+          "sector": "Finance",
+          "weight_pct": 5.91
+        },
+        {
+          "name": "Coal India Limited",
+          "sector": "Consumable Fuels",
+          "weight_pct": 5.26
+        },
+        {
+          "name": "ITC Limited",
+          "sector": "Diversified FMCG",
+          "weight_pct": 5.01
+        },
+        {
+          "name": "ICICI Bank Limited",
+          "sector": "Banks",
+          "weight_pct": 4.82
+        },
+        {
+          "name": "Maruti Suzuki India Limited",
+          "sector": "Automobiles",
+          "weight_pct": 4.31
+        },
+        {
+          "name": "Kotak Mahindra Bank Limited",
+          "sector": "Banks",
+          "weight_pct": 4.21
+        },
+        {
+          "name": "Mahindra & Mahindra Limited",
+          "sector": "Automobiles",
+          "weight_pct": 3.99
+        },
+        {
+          "name": "Bharti Airtel Limited",
+          "sector": "Telecom - Services",
+          "weight_pct": 3.75
+        },
+        {
+          "name": "HCL Technologies Limited",
+          "sector": "IT - Software",
+          "weight_pct": 3.65
+        },
+        {
+          "name": "Infosys Limited",
+          "sector": "IT - Software",
+          "weight_pct": 3.57
+        },
+        {
+          "name": "Axis Bank Limited",
+          "sector": "Banks",
+          "weight_pct": 3.49
+        },
+        {
+          "name": "CCL Products (India) Limited",
+          "sector": "Agricultural Food & other Products",
+          "weight_pct": 2.41
+        },
+        {
+          "name": "CMS Info System Limited",
+          "sector": "Commercial Services & Supplies",
+          "weight_pct": 2.25
+        },
+        {
+          "name": "Wipro Limited",
+          "sector": "IT - Software",
+          "weight_pct": 2.1
+        },
+        {
+          "name": "Tata Consultancy Services Limited",
+          "sector": "IT - Software",
+          "weight_pct": 1.82
+        },
+        {
+          "name": "Dr. Reddy's Laboratories Limited",
+          "sector": "Pharmaceuticals & Biotechnology",
+          "weight_pct": 1.31
+        },
+        {
+          "name": "Zydus Lifesciences Limited",
+          "sector": "Pharmaceuticals & Biotechnology",
+          "weight_pct": 1.29
+        },
+        {
+          "name": "Cipla Limited",
+          "sector": "Pharmaceuticals & Biotechnology",
+          "weight_pct": 1.26
+        },
+        {
+          "name": "Balkrishna Industries Limited",
+          "sector": "Auto Components",
+          "weight_pct": 0.97
+        },
+        {
+          "name": "Indian Energy Exchange Limited",
+          "sector": "Capital Markets",
+          "weight_pct": 0.94
+        },
+        {
+          "name": "Zydus Wellness Limited",
+          "sector": "Food Products",
+          "weight_pct": 0.83
+        },
+        {
+          "name": "Multi Commodity Exchange of India Limited",
+          "sector": "Capital Markets",
+          "weight_pct": 0.54
+        },
+        {
+          "name": "EID Parry India Limited",
+          "sector": "Food Products",
+          "weight_pct": 0.49
+        },
+        {
+          "name": "Narayana Hrudayalaya Limited",
+          "sector": "Healthcare Services",
+          "weight_pct": 0.35
+        },
+        {
+          "name": "Central Depository Services (India) Limited",
+          "sector": "Capital Markets",
+          "weight_pct": 0.28
+        },
+        {
+          "name": "Swaraj Engines Limited",
+          "sector": "Industrial Products",
+          "weight_pct": 0.2
+        },
+        {
+          "name": "VST Industries Limited",
+          "sector": "Cigarettes & Tobacco Products",
+          "weight_pct": 0.13
+        },
+        {
+          "name": "Indus Towers Limited",
+          "sector": "Telecom - Services",
+          "weight_pct": 0.07
+        },
+        {
+          "name": "ICRA Limited",
+          "sector": "Capital Markets",
+          "weight_pct": 0.06
+        },
+        {
+          "name": "Nesco Limited",
+          "sector": "Commercial Services & Supplies",
+          "weight_pct": 0.03
+        }
+      ],
+      "debt_holdings": [
+        {
+          "name": "Kotak Mahindra Bank Limited",
+          "instrument_type": "Certificate of Deposit",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.85,
+          "maturity_date": "15/01/2026"
+        },
+        {
+          "name": "HDFC Bank Limited",
+          "instrument_type": "Certificate of Deposit",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.84,
+          "maturity_date": "24/03/2026"
+        },
+        {
+          "name": "Small Industries Development Bank of India",
+          "instrument_type": "Certificate of Deposit",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.83,
+          "maturity_date": "05/05/2026"
+        },
+        {
+          "name": "Bank of Baroda",
+          "instrument_type": "Certificate of Deposit",
+          "rating": "IND A1+",
+          "weight_pct": 0.81,
+          "maturity_date": "16/10/2026"
+        },
+        {
+          "name": "Canara Bank",
+          "instrument_type": "Certificate of Deposit",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.8,
+          "maturity_date": "11/11/2026"
+        },
+        {
+          "name": "Punjab National Bank",
+          "instrument_type": "Certificate of Deposit",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.42,
+          "maturity_date": "08/01/2026"
+        },
+        {
+          "name": "Small Industries Development Bank of India",
+          "instrument_type": "Certificate of Deposit",
+          "rating": "CARE A1+",
+          "weight_pct": 0.42,
+          "maturity_date": "13/01/2026"
+        },
+        {
+          "name": "National Bank For Agriculture and Rural Development",
+          "instrument_type": "Certificate of Deposit",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.42,
+          "maturity_date": "20/01/2026"
+        },
+        {
+          "name": "National Bank For Agriculture and Rural Development",
+          "instrument_type": "Certificate of Deposit",
+          "rating": "ICRA A1+",
+          "weight_pct": 0.42,
+          "maturity_date": "17/02/2026"
+        },
+        {
+          "name": "Kotak Mahindra Bank Limited",
+          "instrument_type": "Certificate of Deposit",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.42,
+          "maturity_date": "18/02/2026"
+        },
+        {
+          "name": "Axis Bank Limited",
+          "instrument_type": "Certificate of Deposit",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.41,
+          "maturity_date": "11/06/2026"
+        },
+        {
+          "name": "Indian Bank",
+          "instrument_type": "Certificate of Deposit",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.41,
+          "maturity_date": "12/06/2026"
+        },
+        {
+          "name": "Union Bank of India",
+          "instrument_type": "Certificate of Deposit",
+          "rating": "ICRA A1+",
+          "weight_pct": 0.41,
+          "maturity_date": "25/06/2026"
+        },
+        {
+          "name": "Bank of Baroda",
+          "instrument_type": "Certificate of Deposit",
+          "rating": "IND A1+",
+          "weight_pct": 0.41,
+          "maturity_date": "23/07/2026"
+        },
+        {
+          "name": "Bajaj Finance Limited",
+          "instrument_type": "Commercial Paper",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.82,
+          "maturity_date": "18/06/2026"
+        },
+        {
+          "name": "ICICI Securities Limited",
+          "instrument_type": "Commercial Paper",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.82,
+          "maturity_date": "15/06/2026"
+        },
+        {
+          "name": "Kotak Securities Limited",
+          "instrument_type": "Commercial Paper",
+          "rating": "ICRA A1+",
+          "weight_pct": 0.42,
+          "maturity_date": "13/02/2026"
+        },
+        {
+          "name": "REC Limited",
+          "instrument_type": "Commercial Paper",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.41,
+          "maturity_date": "10/06/2026"
+        },
+        {
+          "name": "National Bank For Agriculture and Rural Development",
+          "instrument_type": "Commercial Paper",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.41,
+          "maturity_date": "25/06/2026"
+        },
+        {
+          "name": "364 Days Tbill (MD 29/01/2026)",
+          "instrument_type": "Treasury Bill",
+          "rating": "Sovereign",
+          "weight_pct": 0.17,
+          "maturity_date": "29/01/2026"
+        },
+        {
+          "name": "364 Days Tbill (MD 30/07/2026)",
+          "instrument_type": "Treasury Bill",
+          "rating": "Sovereign",
+          "weight_pct": 0.08,
+          "maturity_date": "30/07/2026"
+        },
+        {
+          "name": "TRP_011225",
+          "instrument_type": "Debt and Money Market Instruments",
+          "rating": null,
+          "weight_pct": 2.87,
+          "maturity_date": null
+        }
+      ],
+      "sector_allocation": {
+        "Banks": 20.72,
+        "Finance": 12.55,
+        "IT - Software": 11.14,
+        "Debt and Money Market Instruments": 11.0,
+        "Automobiles": 8.3,
+        "Power": 5.99,
+        "Consumable Fuels": 5.26,
+        "Diversified FMCG": 5.01,
+        "Pharmaceuticals & Biotechnology": 3.86,
+        "Telecom - Services": 3.82,
+        "Cash & Cash Equivalent": 2.87,
+        "Agricultural Food & other Products": 2.41,
+        "Commercial Services & Supplies": 2.28,
+        "Capital Markets": 1.82,
+        "Food Products": 1.32,
+        "Auto Components": 0.97,
+        "Healthcare Services": 0.35,
+        "Industrial Products": 0.2,
+        "Cigarettes & Tobacco Products": 0.13
+      },
+      "asset_allocation": {
+        "Equity": 86.13,
+        "Debt": 13.87
+      },
+      "debt_indicators": {},
+      "risk_metrics": {
+        "beta": 0.66,
+        "sharpe_ratio": 1.05,
+        "standard_deviation": 9.38,
+        "rolling_average_3y": 21.77,
+        "rolling_maximum_3y": 35.78,
+        "rolling_minimum_3y": 14.07,
+        "standard_deviation_3y": 3.85,
+        "rolling_average_5y": 23.79,
+        "rolling_maximum_5y": 30.79,
+        "rolling_minimum_5y": 19.45,
+        "standard_deviation_5y": 2.38
+      },
+      "lock_in_period": "3 years",
+      "portfolio_turnover": 13.11,
+      "option": "Growth",
+      "returns": [
+        {
+          "period": "SI",
+          "fund_return": 20.12,
+          "benchmark_return": 17.53,
+          "additional_benchmark_return": 15.55,
+          "value_of_10k_investment": 32047
+        },
+        {
+          "period": "1Y",
+          "fund_return": 5.67,
+          "benchmark_return": 6.58,
+          "additional_benchmark_return": 9.97,
+          "value_of_10k_investment": 10566
+        },
+        {
+          "period": "3Y",
+          "fund_return": 16.07,
+          "benchmark_return": 15.6,
+          "additional_benchmark_return": 13.1,
+          "value_of_10k_investment": 15629
+        },
+        {
+          "period": "5Y",
+          "fund_return": 19.65,
+          "benchmark_return": 18.61,
+          "additional_benchmark_return": 16.46,
+          "value_of_10k_investment": 24550
+        }
+      ],
+      "sip_returns": [
+        {
+          "period": "SI",
+          "total_invested": 770000,
+          "market_value": 1422588,
+          "fund_return_annualised": 18.95,
+          "benchmark_return_annualised": 17.83,
+          "additional_benchmark_return_annualised": 15.94
+        },
+        {
+          "period": "1Y",
+          "total_invested": 120000,
+          "market_value": 124966,
+          "fund_return_annualised": 7.87,
+          "benchmark_return_annualised": 15.28,
+          "additional_benchmark_return_annualised": 17.34
+        },
+        {
+          "period": "3Y",
+          "total_invested": 360000,
+          "market_value": 445534,
+          "fund_return_annualised": 14.41,
+          "benchmark_return_annualised": 15.37,
+          "additional_benchmark_return_annualised": 14.21
+        },
+        {
+          "period": "5Y",
+          "total_invested": 600000,
+          "market_value": 899138,
+          "fund_return_annualised": 16.22,
+          "benchmark_return_annualised": 15.66,
+          "additional_benchmark_return_annualised": 14.05
+        },
+        {
+          "period": "SI",
+          "total_invested": 770000,
+          "market_value": 1490520,
+          "fund_return_annualised": 20.4,
+          "benchmark_return_annualised": 17.83,
+          "additional_benchmark_return_annualised": 15.94
+        },
+        {
+          "period": "1Y",
+          "total_invested": 120000,
+          "market_value": 125704,
+          "fund_return_annualised": 9.06,
+          "benchmark_return_annualised": 15.28,
+          "additional_benchmark_return_annualised": 17.34
+        },
+        {
+          "period": "3Y",
+          "total_invested": 360000,
+          "market_value": 453814,
+          "fund_return_annualised": 15.7,
+          "benchmark_return_annualised": 15.37,
+          "additional_benchmark_return_annualised": 14.21
+        },
+        {
+          "period": "5Y",
+          "total_invested": 600000,
+          "market_value": 929829,
+          "fund_return_annualised": 17.6,
+          "benchmark_return_annualised": 15.66,
+          "additional_benchmark_return_annualised": 14.05
+        }
+      ],
+      "additional_info": {
+        "cagr_since_inception": 20.12,
+        "cagr_1y": 5.67,
+        "aum_in_rupees": 6713318.98,
+        "factsheet_page_number": 6
+      },
+      "units": 194148.88,
+      "risk_level": "Very High"
+    },
+    {
+      "fund_name": "Parag Parikh Dynamic Asset Allocation Fund (PPDAAF)",
+      "fund_type": "Open-ended",
+      "scheme_type": "An open-ended dynamic asset allocation fund",
+      "investment_objective": "The investment objective of the Scheme is to generate income/long-term capital appreciation by investing in equity, equity related instruments, fixed income instruments. The allocation between equity instruments and fixed income will be managed dynamically so as to provide investors with long term capital appreciation while managing downside risk. However, there is no assurance that the investment objective of the Scheme will be achieved and the Scheme does not assure or guarantee any returns.",
+      "benchmark": "CRISIL Hybrid 50+50 - Moderate Index",
+      "inception_date": "February 27, 2024",
+      "plans_offered": "Regular, Direct",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "nav": 11.5089,
+      "nav_date": "Nov 28, 2025",
+      "aum_crores": 2704.76,
+      "monthly_avg_aum": 2695.83,
+      "expense_ratio": 0.33,
+      "exit_load": "In respect of each purchase / switch-in of Units, 10% of the units (\"thelimit\") may be redeemed without any exit load from the date of allotment. Any redemption or switch-out in excess of the limit shall be subject to thefollowing exit load: -Exit load of 1.00% is payable if Units are redeemed / switched-outwithin 1 year from the date of allotment of units. -No Exit Load is payable if Units are redeemed / switched-out after 1year from the date of allotment. Any exit load charged (net off GST, if any) shall be credited back to the Scheme.",
+      "min_sip": 1000,
+      "min_lumpsum": 5000,
+      "min_additional": 500,
+      "fund_managers": [
+        {
+          "name": "Mr. Rajeev Thakkar",
+          "managing_since": "Since Inception",
+          "qualification": "Chief Investment Officer - Equity and Director"
+        },
+        {
+          "name": "Mr. Raunak Onkar",
+          "managing_since": "Since Inception",
+          "qualification": "Fund Manager & Research Head"
+        },
+        {
+          "name": "Mr. Raj Mehta",
+          "managing_since": "September 1, 2025",
+          "qualification": "Executive Vice President & Fund Manager - Equity"
+        },
+        {
+          "name": "Mr. Rukun Tarachandani",
+          "managing_since": "Since Inception",
+          "qualification": "Executive Vice President & Fund Manager - Equity"
+        },
+        {
+          "name": "Mr. Tejas Soman",
+          "managing_since": "September 1, 2025",
+          "qualification": "Chief Investment Officer - Debt"
+        },
+        {
+          "name": "Ms. Mansi Kariya",
+          "managing_since": "Since Inception",
+          "qualification": "Associate Vice President & Fund Manager - Debt"
+        }
+      ],
+      "returns": [
+        {
+          "period": "SI",
+          "fund_return": 8.34,
+          "benchmark_return": 9.64
+        },
+        {
+          "period": "1Y",
+          "fund_return": 5.91,
+          "benchmark_return": 7.6
+        }
+      ],
+      "sector_allocation": {
+        "Arbitrage/Special Situation": 24.15,
+        "Consumable Fuels": 2.51,
+        "Diversified FMCG": 2.5,
+        "Power": 2.5,
+        "Gas": 2.49,
+        "Industrial Products": 0.98
+      },
+      "asset_allocation": {
+        "Equity": 37.43,
+        "Debt": 55.92,
+        "Cash & Equivalents": 1.89
+      },
+      "composition_by_rating": {
+        "Sovereign": 47.86,
+        "AAA": 8.06
+      },
+      "debt_indicators": {
+        "ytm": 6.86,
+        "modified_duration": 3.8002,
+        "macaulay_duration": 3.9417,
+        "average_maturity": 4.81
+      },
+      "additional_info": {
+        "suitability": "This Scheme is Suitable for Investors who can remain invested for minimum 3 years!",
+        "nav_regular_growth": 11.4478,
+        "nav_regular_idcw": 10.3344,
+        "nav_direct_idcw": 10.536,
+        "expense_ratio_regular": 0.63,
+        "entry_load": "Not Applicable",
+        "additional_benchmark": "Nifty 50 TRI",
+        "si_nifty_50_tri_return": 11.33,
+        "1y_nifty_50_tri_return": 9.97,
+        "asset_allocation_other_categories": {
+          "Mutual Fund Units": 4.76
+        },
+        "asset_allocation_by_rating_other_categories": {
+          "Mutual Fund Units": 4.76,
+          "TREPS, Net Receivables & Payables": 1.89,
+          "Equity and Equity Related Instruments": 37.43
+        },
+        "quantitative_indicators_notes": {
+          "average_maturity_note": "Calculated on amount invest in debt securities (including accrued interest), deployment of funds in TREPS & Reverse Repo and net receivables/payables.",
+          "modified_duration_note": "All the above ratios are computed excluding investment in CDMDF units",
+          "ytm_note": "YTM is calculated on the basis of annualised yield for all securities; the Yield to Maturity (YTM) percentage presented are based on actual values and not indicative.",
+          "ytm_plan_applicability": "Applicable for both regular and direct plan",
+          "macaulay_duration_note": "All the above ratios are computed excluding investment in CDMDF units"
+        }
+      }
+    },
+    {
+      "fund_name": "Parag Parikh Dynamic Asset Allocation Fund",
+      "fund_type": "Open-ended",
+      "scheme_type": "Dynamic Asset Allocation Fund",
+      "equity_holdings": [
+        {
+          "name": "Coal India Limited",
+          "sector": "Consumable Fuels",
+          "weight_pct": 2.51
+        },
+        {
+          "name": "ITC Limited",
+          "sector": "Diversified FMCG",
+          "weight_pct": 2.5
+        },
+        {
+          "name": "Power Grid Corporation of India Limited",
+          "sector": "Power",
+          "weight_pct": 2.5
+        },
+        {
+          "name": "Petronet LNG Limited",
+          "sector": "Gas",
+          "weight_pct": 2.49
+        },
+        {
+          "name": "Nesco Limited",
+          "sector": "Commercial Services & Supplies",
+          "weight_pct": 1.08
+        },
+        {
+          "name": "REC Limited",
+          "sector": "Finance",
+          "weight_pct": 1.01
+        },
+        {
+          "name": "Swaraj Engines Limited",
+          "sector": "Industrial Products",
+          "weight_pct": 0.98
+        },
+        {
+          "name": "Nirlon Limited",
+          "sector": "Commercial Services & Supplies",
+          "weight_pct": 0.11
+        },
+        {
+          "name": "Indus Towers Limited",
+          "sector": "Telecom - Services",
+          "weight_pct": 0.06
+        },
+        {
+          "name": "VST Industries Limited",
+          "sector": "Cigarettes & Tobacco Products",
+          "weight_pct": 0.04
+        }
+      ],
+      "debt_holdings": [
+        {
+          "name": "6.95% Tamilnadu SDL",
+          "instrument_type": "State Development Loan",
+          "rating": "Sovereign",
+          "weight_pct": 2.96,
+          "maturity_date": "17/02/2031"
+        },
+        {
+          "name": "7.72% Maharashtra SDL",
+          "instrument_type": "State Development Loan",
+          "rating": "Sovereign",
+          "weight_pct": 2.87,
+          "maturity_date": "01/03/2031"
+        },
+        {
+          "name": "7.6% Karnataka SDL",
+          "instrument_type": "State Development Loan",
+          "rating": "Sovereign",
+          "weight_pct": 2.66,
+          "maturity_date": "04/01/2033"
+        },
+        {
+          "name": "7.61% Gujarat SDL",
+          "instrument_type": "State Development Loan",
+          "rating": "Sovereign",
+          "weight_pct": 1.9,
+          "maturity_date": "03/08/2032"
+        },
+        {
+          "name": "7.08% Uttar Pradesh SDL",
+          "instrument_type": "State Development Loan",
+          "rating": "Sovereign",
+          "weight_pct": 1.86,
+          "maturity_date": "17/02/2031"
+        },
+        {
+          "name": "7.01% Gujarat SDL",
+          "instrument_type": "State Development Loan",
+          "rating": "Sovereign",
+          "weight_pct": 1.86,
+          "maturity_date": "03/09/2031"
+        },
+        {
+          "name": "7.39% Tamilnadu SDL",
+          "instrument_type": "State Development Loan",
+          "rating": "Sovereign",
+          "weight_pct": 1.51,
+          "maturity_date": "12/06/2032"
+        },
+        {
+          "name": "7.81% Gujarat SDL",
+          "instrument_type": "State Development Loan",
+          "rating": "Sovereign",
+          "weight_pct": 1.35,
+          "maturity_date": "12/10/2032"
+        },
+        {
+          "name": "7.69% Maharashtra SDL",
+          "instrument_type": "State Development Loan",
+          "rating": "Sovereign",
+          "weight_pct": 1.34,
+          "maturity_date": "15/03/2031"
+        },
+        {
+          "name": "6.91% Maharashtra SDL",
+          "instrument_type": "State Development Loan",
+          "rating": "Sovereign",
+          "weight_pct": 1.28,
+          "maturity_date": "15/09/2033"
+        },
+        {
+          "name": "Other Government Securities",
+          "instrument_type": "Government Securities",
+          "rating": "Sovereign",
+          "weight_pct": 27.72
+        },
+        {
+          "name": "364 Days Tbill",
+          "instrument_type": "Treasury Bill",
+          "rating": "Sovereign",
+          "weight_pct": 0.37,
+          "maturity_date": "29/01/2026"
+        },
+        {
+          "name": "364 Days Tbill",
+          "instrument_type": "Treasury Bill",
+          "rating": "Sovereign",
+          "weight_pct": 0.18,
+          "maturity_date": "30/07/2026"
+        },
+        {
+          "name": "7.95% LIC Housing Finance Ltd NCD",
+          "instrument_type": "Corporate Bond",
+          "rating": "CRISIL AAA",
+          "weight_pct": 0.94,
+          "maturity_date": "29/01/2028"
+        },
+        {
+          "name": "7.57% LIC Housing Finance Ltd NCD",
+          "instrument_type": "Corporate Bond",
+          "rating": "CRISIL AAA",
+          "weight_pct": 0.94,
+          "maturity_date": "18/10/2029"
+        },
+        {
+          "name": "7.34% Small Industries Development Bank of India NCD",
+          "instrument_type": "Corporate Bond",
+          "rating": "CRISIL AAA",
+          "weight_pct": 0.94,
+          "maturity_date": "26/02/2029"
+        },
+        {
+          "name": "7.74% LIC Housing Finance Ltd NCD",
+          "instrument_type": "Corporate Bond",
+          "rating": "CRISIL AAA",
+          "weight_pct": 0.94,
+          "maturity_date": "11/02/2028"
+        },
+        {
+          "name": "7.3763% Bajaj Finance Ltd NCD",
+          "instrument_type": "Corporate Bond",
+          "rating": "CRISIL AAA",
+          "weight_pct": 0.93,
+          "maturity_date": "26/06/2028"
+        },
+        {
+          "name": "7.2337% Bajaj Finance Ltd NCD",
+          "instrument_type": "Corporate Bond",
+          "rating": "CRISIL AAA",
+          "weight_pct": 0.93,
+          "maturity_date": "28/06/2027"
+        },
+        {
+          "name": "7.38% Bajaj Finance Ltd NCD",
+          "instrument_type": "Corporate Bond",
+          "rating": "CRISIL AAA",
+          "weight_pct": 0.93,
+          "maturity_date": "28/06/2030"
+        },
+        {
+          "name": "7.64% National Bank For Agriculture and Rural Development NCD",
+          "instrument_type": "Corporate Bond",
+          "rating": "ICRA AAA",
+          "weight_pct": 0.38,
+          "maturity_date": "06/12/2029"
+        },
+        {
+          "name": "7.58% REC Ltd NCD",
+          "instrument_type": "Corporate Bond",
+          "rating": "ICRA AAA",
+          "weight_pct": 0.38,
+          "maturity_date": "31/05/2029"
+        },
+        {
+          "name": "7.07% IndiGrid Infra NCD",
+          "instrument_type": "Corporate Bond",
+          "rating": "CRISIL AAA",
+          "weight_pct": 0.37,
+          "maturity_date": "20/06/2030"
+        },
+        {
+          "name": "7.95% REC Ltd NCD",
+          "instrument_type": "Corporate Bond",
+          "rating": "CRISIL AAA",
+          "weight_pct": 0.19,
+          "maturity_date": "12/03/2027"
+        },
+        {
+          "name": "7.87% IndiGRID Infra Trust",
+          "instrument_type": "Corporate Bond",
+          "rating": "CRISIL AAA",
+          "weight_pct": 0.19,
+          "maturity_date": "24/02/2027"
+        }
+      ],
+      "asset_allocation": {
+        "Equity": 13.28,
+        "Arbitrage": 24.15,
+        "Government Securities / State Development Loans (SDLs)": 47.31,
+        "Treasury Bills": 0.55,
+        "Corporate Bond/NCD": 8.06,
+        "Mutual Fund Units": 4.76,
+        "TREPS Including Cash & Cash Equivalent and Net Current Asset": 1.89
+      },
+      "benchmark": "CRISIL Hybrid 50+50 - Moderate Index",
+      "inception_date": "Feb 27, 2024",
+      "plans_offered": "Direct, Regular",
+      "option": "Growth",
+      "returns": [
+        {
+          "period": "SI",
+          "plan_type": "Regular",
+          "fund_return": 8.02,
+          "benchmark_return": 9.64,
+          "index_return": 11.33
+        },
+        {
+          "period": "SI",
+          "plan_type": "Direct",
+          "fund_return": 8.34,
+          "benchmark_return": 9.64,
+          "index_return": 11.33
+        },
+        {
+          "period": "1Y",
+          "plan_type": "Regular",
+          "fund_return": 5.59,
+          "benchmark_return": 7.6,
+          "index_return": 9.97
+        },
+        {
+          "period": "1Y",
+          "plan_type": "Direct",
+          "fund_return": 5.91,
+          "benchmark_return": 7.6,
+          "index_return": 9.97
+        }
+      ],
+      "sip_returns": [
+        {
+          "period": "SI",
+          "plan_type": "Regular",
+          "total_invested": 220000,
+          "market_value": 233216,
+          "return_pct": 6.31
+        },
+        {
+          "period": "SI",
+          "plan_type": "Direct",
+          "total_invested": 220000,
+          "market_value": 233904,
+          "return_pct": 6.63
+        },
+        {
+          "period": "SI",
+          "entity_type": "Benchmark",
+          "entity_name": "CRISIL Hybrid 50+50 - Moderate Index",
+          "return_pct": 8.68
+        },
+        {
+          "period": "SI",
+          "entity_type": "Index",
+          "entity_name": "Nifty 50 TRI",
+          "return_pct": 11.18
+        },
+        {
+          "period": "1Y",
+          "plan_type": "Regular",
+          "total_invested": 120000,
+          "market_value": 123337,
+          "return_pct": 5.27
+        },
+        {
+          "period": "1Y",
+          "plan_type": "Direct",
+          "total_invested": 120000,
+          "market_value": 123539,
+          "return_pct": 5.59
+        },
+        {
+          "period": "1Y",
+          "entity_type": "Benchmark",
+          "entity_name": "CRISIL Hybrid 50+50 - Moderate Index",
+          "return_pct": 11.01
+        },
+        {
+          "period": "1Y",
+          "entity_type": "Index",
+          "entity_name": "Nifty 50 TRI",
+          "return_pct": 17.22
+        }
+      ],
+      "dividend_history": [
+        {
+          "record_date": "Nov 24, 2025",
+          "payout_date": "Nov 24, 2025",
+          "direct_retail_payout": 0.0,
+          "direct_corporate_payout": 0.0,
+          "regular_retail_payout": 0.0,
+          "regular_corporate_payout": 0.0,
+          "face_value": 10.0,
+          "nav_per_unit_ex_idcw_regular": 10.326,
+          "nav_per_unit_ex_idcw_direct": 10.527,
+          "nav_per_unit_cum_idcw_regular": 10.326,
+          "nav_per_unit_cum_idcw_direct": 10.527
+        },
+        {
+          "record_date": "Oct 27, 2025",
+          "payout_date": "Oct 27, 2025",
+          "direct_retail_payout": 0.0,
+          "direct_corporate_payout": 0.0,
+          "regular_retail_payout": 0.0,
+          "regular_corporate_payout": 0.0,
+          "face_value": 10.0,
+          "nav_per_unit_ex_idcw_regular": 10.3468,
+          "nav_per_unit_ex_idcw_direct": 10.5458,
+          "nav_per_unit_cum_idcw_regular": 10.3468,
+          "nav_per_unit_cum_idcw_direct": 10.5458
+        },
+        {
+          "record_date": "Sep 29, 2025",
+          "payout_date": "Sep 29, 2025",
+          "direct_retail_payout": 0.0,
+          "direct_corporate_payout": 0.0,
+          "regular_retail_payout": 0.0019,
+          "regular_corporate_payout": 0.0019,
+          "face_value": 10.0,
+          "nav_per_unit_ex_idcw_regular": 10.2413,
+          "nav_per_unit_ex_idcw_direct": 10.4359,
+          "nav_per_unit_cum_idcw_regular": 10.2433,
+          "nav_per_unit_cum_idcw_direct": 10.4359
+        }
+      ],
+      "additional_info": {
+        "lumpsum_investment_value": [
+          {
+            "period": "SI",
+            "initial_investment": 10000,
+            "plan_type": "Regular",
+            "final_value": 11448
+          },
+          {
+            "period": "SI",
+            "initial_investment": 10000,
+            "plan_type": "Direct",
+            "final_value": 11509
+          },
+          {
+            "period": "SI",
+            "initial_investment": 10000,
+            "entity_type": "Benchmark",
+            "entity_name": "CRISIL Hybrid 50+50 - Moderate Index",
+            "final_value": 11750
+          },
+          {
+            "period": "SI",
+            "initial_investment": 10000,
+            "entity_type": "Index",
+            "entity_name": "Nifty 50 TRI",
+            "final_value": 12071
+          },
+          {
+            "period": "1Y",
+            "initial_investment": 10000,
+            "plan_type": "Regular",
+            "final_value": 10557
+          },
+          {
+            "period": "1Y",
+            "initial_investment": 10000,
+            "plan_type": "Direct",
+            "final_value": 10589
+          },
+          {
+            "period": "1Y",
+            "initial_investment": 10000,
+            "entity_type": "Benchmark",
+            "entity_name": "CRISIL Hybrid 50+50 - Moderate Index",
+            "final_value": 10758
+          },
+          {
+            "period": "1Y",
+            "initial_investment": 10000,
+            "entity_type": "Index",
+            "entity_name": "Nifty 50 TRI",
+            "final_value": 10994
+          }
+        ],
+        "insider_holdings_details": [
+          {
+            "scheme_name": "Parag Parikh Dynamic Asset Allocation Fund - Direct Plan Growth",
+            "units": 89396.79,
+            "aum_rs": 1028858.73
+          }
+        ],
+        "factsheet_page_number": 9,
+        "entry_load": "Not Applicable",
+        "instrument_allocation_details": [
+          {
+            "type_of_instruments": "Equities & Equity related instruments",
+            "normal_allocation_pct_of_net_assets": "0-100",
+            "risk_profile": "Very High"
+          },
+          {
+            "type_of_instruments": "Debt securities & Money Market instruments including Units of Debt oriented mutual fund schemes",
+            "normal_allocation_pct_of_net_assets": "0-100",
+            "risk_profile": "Low to Moderate"
+          }
+        ],
+        "key_features_investment_strategy": {
+          "fixed_income_investments": [
+            "A relatively wide mandate permits us to include both, 'accrual' and 'duration' related instruments in our portfolio.",
+            "We will retain the flexibility to invest in the entire range of debt securities - Sovereign, State Government, PSU and corporate securities across all maturities - (including securitised debt) and money market instruments.",
+            "Investment in debt securities will be guided by credit quality, liquidity, interest rates and their outlook."
+          ],
+          "equity_investments": [
+            "Focus on choosing stocks possessing a 'margin-of-safety'.",
+            "Preference for stocks with strong cash flows (higher Dividend payout / buybacks).",
+            "Avail of 'special situations' as well as arbitrage opportunities, whenever they arise."
+          ]
+        },
+        "taxation_info": "Investors should be aware that the fiscal rules/ tax laws may change and there can be no guarantee that the current tax position may continue indefinitely. In view of the individual nature of tax implications, investors are advised to consult their professional tax advisor.",
+        "note": "Please refer to the Scheme Information Document of the Scheme for detailed asset allocation"
+      },
+      "category": "Dynamic Asset Allocation Fund",
+      "fund_managers": [
+        {
+          "name": "Mr. Rajeev Thakkar"
+        },
+        {
+          "name": "Mr. Tejas Soman",
+          "managing_since": "September 1, 2025",
+          "qualification": "Fund Manager – Debt"
+        },
+        {
+          "name": "Mr. Raunak Onkar"
+        },
+        {
+          "name": "Mr. Raj Mehta",
+          "managing_since": "September 1, 2025",
+          "qualification": "Fund Manager- Equity"
+        },
+        {
+          "name": "Mr. Rukun Tarachandani"
+        },
+        {
+          "name": "Ms. Mansi Kariya"
+        }
+      ],
+      "investment_objective": "Capital Appreciation & Income generation over medium to long term. Investment in equity and equity related instruments as well as debt and money market instruments while managing risk through active asset allocation.",
+      "risk_level": "Moderate",
+      "exit_load": "In respect of each purchase / switch-in of Units, 10% of the units (\"the limit\") may be redeemed without any exit load from the date of allotment. Any redemption or switch-out in excess of the limit shall be subject to the following exit load: - Exit load of 1.00% is payable if Units are redeemed / switched-out within 1 year from the date of allotment of units. - No Exit Load is payable if Units are redeemed / switched-out after 1 year from the date of allotment. Any exit load charged (net off GST, if any) shall be credited back to the Scheme."
+    },
+    {
+      "fund_name": "Parag Parikh Conservative Hybrid Fund (PPCHF)",
+      "fund_type": "Open-ended",
+      "scheme_type": "Open-ended hybrid scheme investing predominantly in debt instruments",
+      "category": "Conservative Hybrid Fund",
+      "investment_objective": "To generate regular income through investments predominantly in debt and money market instruments. The Scheme also seeks to generate long term capital appreciation from the portion of the portfolio invested in equity and equity related instruments. However, there is no assurance or guarantee that the investment objective of the Scheme will be achieved.",
+      "benchmark": "CRISIL Hybrid 85+15 Conservative Index TRI",
+      "inception_date": "May 26, 2021",
+      "plans_offered": "Direct, Regular",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "nav": 15.5803,
+      "nav_date": "Nov 28, 2025",
+      "aum_crores": 3167.68,
+      "monthly_avg_aum": 3138.06,
+      "expense_ratio": 0.34,
+      "exit_load": "In respect of each purchase / switch-in of Units, 10% of the units (\"the limit\") may be redeemed without any exit load from the date of allotment. Any redemption or switch-out in excess of the limit shall be subject to the following exit load: Exit load of 1.00% is payable if Units are redeemed / switched-out within 1 year from the date of allotment of units. No Exit Load is payable if Units are redeemed / switched-out after 1 year from the date of allotment. Any exit load charged (net off GST, if any) shall be credited back to the Scheme.",
+      "min_sip": 1000,
+      "min_lumpsum": 5000,
+      "min_additional": 1000,
+      "fund_managers": [
+        {
+          "name": "Mr. Rajeev Thakkar",
+          "qualification": "Chief Investment Officer - Equity and Director",
+          "managing_since": "Since Inception"
+        },
+        {
+          "name": "Mr. Raunak Onkar",
+          "qualification": "Fund Manager & Research Head",
+          "managing_since": "Since Inception"
+        },
+        {
+          "name": "Mr. Raj Mehta",
+          "qualification": "Executive Vice President & Fund Manager - Equity",
+          "managing_since": "September 1, 2025"
+        },
+        {
+          "name": "Mr. Rukun Tarachandani",
+          "qualification": "Executive Vice President & Fund Manager - Equity",
+          "managing_since": "May 16, 2022"
+        },
+        {
+          "name": "Mr. Tejas Soman",
+          "qualification": "Chief Investment Officer - Debt",
+          "managing_since": "September 1, 2025"
+        },
+        {
+          "name": "Ms. Mansi Kariya",
+          "qualification": "Associate Vice President & Fund Manager- Debt",
+          "managing_since": "December 22, 2023"
+        }
+      ],
+      "returns": [
+        {
+          "period": "SI",
+          "fund_return": 10.33,
+          "benchmark_return": 7.52,
+          "additional_benchmark_return": 5.29
+        },
+        {
+          "period": "1Y",
+          "fund_return": 7.67,
+          "benchmark_return": 7.3,
+          "additional_benchmark_return": 7.09
+        }
+      ],
+      "asset_allocation": {
+        "Equity": 12.82,
+        "Debt": 74.87,
+        "Cash & Equivalents": 1.99,
+        "Other": 10.32
+      },
+      "composition_by_rating": {
+        "AAA & Equivalent": 10.42,
+        "Sovereign": 64.36,
+        "Other": 25.37
+      },
+      "debt_indicators": {
+        "ytm": 6.93,
+        "modified_duration": 4.0766,
+        "macaulay_duration": 4.2286,
+        "average_maturity": 5.14
+      },
+      "additional_info": {
+        "additional_benchmark_name": "CRISIL 10 year GILT Index",
+        "suitable_for_investment_period": "minimum 3 years"
+      }
+    },
+    {
+      "fund_name": "Parag Parikh Conservative Hybrid Fund",
+      "fund_type": "Open-ended",
+      "scheme_type": "An open-ended hybrid scheme investing predominantly in debt instruments",
+      "equity_holdings": [
+        {
+          "name": "Coal India Limited",
+          "sector": "Consumable Fuels",
+          "weight_pct": 2.01
+        },
+        {
+          "name": "ITC Limited",
+          "sector": "Diversified FMCG",
+          "weight_pct": 2.01
+        },
+        {
+          "name": "Petronet LNG Limited",
+          "sector": "Gas",
+          "weight_pct": 1.98
+        },
+        {
+          "name": "Power Grid Corporation of India Limited",
+          "sector": "Power",
+          "weight_pct": 1.97
+        },
+        {
+          "name": "REC Limited",
+          "sector": "Finance",
+          "weight_pct": 1.01
+        },
+        {
+          "name": "Swaraj Engines Limited",
+          "sector": "Industrial Products",
+          "weight_pct": 0.73
+        },
+        {
+          "name": "Indus Towers Limited",
+          "sector": "Telecom - Services",
+          "weight_pct": 0.08
+        },
+        {
+          "name": "Embassy Office Parks REIT",
+          "sector": "Realty",
+          "instrument_type": "REIT",
+          "weight_pct": 4.4
+        },
+        {
+          "name": "Brookfield India Real Estate Trust",
+          "sector": "Realty",
+          "instrument_type": "REIT",
+          "weight_pct": 4.16
+        },
+        {
+          "name": "Mindspace Business Parks REIT",
+          "sector": "Realty",
+          "instrument_type": "REIT",
+          "weight_pct": 0.72
+        }
+      ],
+      "debt_holdings": [
+        {
+          "name": "7.3763% Bajaj Finance NCD",
+          "instrument_type": "Corporate Bond",
+          "rating": "CRISIL AAA",
+          "weight_pct": 1.59,
+          "maturity_date": "26/06/2028"
+        },
+        {
+          "name": "7.58% REC Ltd NCD Ser 234B",
+          "instrument_type": "Corporate Bond",
+          "rating": "ICRA AAA",
+          "weight_pct": 1.29,
+          "maturity_date": "31/05/2029"
+        },
+        {
+          "name": "7.64% National Bank For Agriculture and Rural Development NCD",
+          "instrument_type": "Corporate Bond",
+          "rating": "ICRA AAA",
+          "weight_pct": 0.81,
+          "maturity_date": "06/12/2029"
+        },
+        {
+          "name": "7.75% LIC Housing Finance Ltd NCD",
+          "instrument_type": "Corporate Bond",
+          "rating": "CRISIL AAA",
+          "weight_pct": 0.81,
+          "maturity_date": "23/08/2029"
+        },
+        {
+          "name": "7.40 % National Bank For Agriculture and Rural Development NCD",
+          "instrument_type": "Corporate Bond",
+          "rating": "CRISIL AAA",
+          "weight_pct": 0.81,
+          "maturity_date": "29/04/2030"
+        },
+        {
+          "name": "8.12% Bajaj Finance Ltd NCD",
+          "instrument_type": "Corporate Bond",
+          "rating": "CRISIL AAA",
+          "weight_pct": 0.8,
+          "maturity_date": "10/09/2027"
+        },
+        {
+          "name": "7.34% Small Industries Development Bank of India NCD",
+          "instrument_type": "Corporate Bond",
+          "rating": "CRISIL AAA",
+          "weight_pct": 0.8,
+          "maturity_date": "26/02/2029"
+        },
+        {
+          "name": "7.07% LIC Housing Finance Ltd NCD",
+          "instrument_type": "Corporate Bond",
+          "rating": "CRISIL AAA",
+          "weight_pct": 0.79,
+          "maturity_date": "29/04/2030"
+        },
+        {
+          "name": "7.38% Bajaj Finance Ltd NCD",
+          "instrument_type": "Corporate Bond",
+          "rating": "CRISIL AAA",
+          "weight_pct": 0.79,
+          "maturity_date": "28/06/2030"
+        },
+        {
+          "name": "7.74% LIC Housing Finance Ltd NCD",
+          "instrument_type": "Corporate Bond",
+          "rating": "CRISIL AAA",
+          "weight_pct": 0.64,
+          "maturity_date": "11/02/2028"
+        },
+        {
+          "name": "7.07% IndiGrid Inf NCD SRAF",
+          "instrument_type": "Corporate Bond",
+          "rating": "CRISIL AAA",
+          "weight_pct": 0.48,
+          "maturity_date": "20/06/2030"
+        },
+        {
+          "name": "8.37% REC Ltd NCD Ser 169",
+          "instrument_type": "Corporate Bond",
+          "rating": "CRISIL AAA",
+          "weight_pct": 0.33,
+          "maturity_date": "07/12/2028"
+        },
+        {
+          "name": "7.95% LIC Housing Finance Ltd NCD",
+          "instrument_type": "Corporate Bond",
+          "rating": "CRISIL AAA",
+          "weight_pct": 0.16,
+          "maturity_date": "29/01/2028"
+        },
+        {
+          "name": "7.7% IndiGRID Infra Trust Ser 3",
+          "instrument_type": "Corporate Bond",
+          "rating": "CRISIL AAA",
+          "weight_pct": 0.16,
+          "maturity_date": "06/05/2028"
+        },
+        {
+          "name": "7.87% IndiGRID Infra Trust Ser Y",
+          "instrument_type": "Corporate Bond",
+          "rating": "CRISIL AAA",
+          "weight_pct": 0.16,
+          "maturity_date": "24/02/2027"
+        },
+        {
+          "name": "7.08% Uttar Pradesh SDL",
+          "instrument_type": "G-Sec/SDL",
+          "rating": "Sovereign",
+          "weight_pct": 4.76,
+          "maturity_date": "17/02/2031"
+        },
+        {
+          "name": "7.72% Maharashtra SDL",
+          "instrument_type": "G-Sec/SDL",
+          "rating": "Sovereign",
+          "weight_pct": 4.08,
+          "maturity_date": "01/03/2031"
+        },
+        {
+          "name": "7.08% Karnataka SDL",
+          "instrument_type": "G-Sec/SDL",
+          "rating": "Sovereign",
+          "weight_pct": 3.18,
+          "maturity_date": "12/08/2031"
+        },
+        {
+          "name": "7.82% Tamilnadu SDL",
+          "instrument_type": "G-Sec/SDL",
+          "rating": "Sovereign",
+          "weight_pct": 2.8,
+          "maturity_date": "27/10/2032"
+        },
+        {
+          "name": "7.93% Uttar Pradesh SDL",
+          "instrument_type": "G-Sec/SDL",
+          "rating": "Sovereign",
+          "weight_pct": 2.47,
+          "maturity_date": "24/03/2030"
+        },
+        {
+          "name": "7.76% Maharashtra SDL",
+          "instrument_type": "G-Sec/SDL",
+          "rating": "Sovereign",
+          "weight_pct": 2.47,
+          "maturity_date": "04/10/2030"
+        },
+        {
+          "name": "6.78% Maharashtra SDL",
+          "instrument_type": "G-Sec/SDL",
+          "rating": "Sovereign",
+          "weight_pct": 1.73,
+          "maturity_date": "25/05/2031"
+        },
+        {
+          "name": "7.61% Gujarat SDL",
+          "instrument_type": "G-Sec/SDL",
+          "rating": "Sovereign",
+          "weight_pct": 1.63,
+          "maturity_date": "03/08/2032"
+        },
+        {
+          "name": "7.02% GOI",
+          "instrument_type": "G-Sec/SDL",
+          "rating": "Sovereign",
+          "weight_pct": 1.62,
+          "maturity_date": "18/06/2031"
+        },
+        {
+          "name": "7.39% Tamilnadu SDL",
+          "instrument_type": "G-Sec/SDL",
+          "rating": "Sovereign",
+          "weight_pct": 1.61,
+          "maturity_date": "12/06/2032"
+        },
+        {
+          "name": "Other Government Securities",
+          "instrument_type": "G-Sec/SDL",
+          "rating": "Sovereign",
+          "weight_pct": 37.71
+        },
+        {
+          "name": "364 Days Tbill",
+          "instrument_type": "Treasury Bill",
+          "rating": "Sovereign",
+          "weight_pct": 0.15,
+          "maturity_date": "30/07/2026"
+        }
+      ],
+      "asset_allocation": {
+        "Equity": 12.82,
+        "Units issued by REITs & InvITs": 9.28,
+        "Corporate Bond": 10.42,
+        "Government securities/State Development Loans (SDLs)": 64.06,
+        "Treasury Bills": 0.15,
+        "Mutual Fund Units": 1.04,
+        "Corporate Debt Market Development Fund A2": 0.24,
+        "TREPS and Other Receivables and Payables": 1.99
+      },
+      "benchmark": "CRISIL Hybrid 85+15 Conservative Index",
+      "inception_date": "May 26, 2021",
+      "plans_offered": "Direct, Regular",
+      "option": "Growth",
+      "returns": [
+        {
+          "period": "SI",
+          "plan_type": "Regular",
+          "fund_return": 10.0,
+          "benchmark_return": 7.52,
+          "additional_info": {
+            "additional_benchmark_name": "CRISIL 10 year Gilt Index",
+            "additional_benchmark_return": 5.29,
+            "value_of_10000_investment": 15372
+          }
+        },
+        {
+          "period": "1Y",
+          "plan_type": "Regular",
+          "fund_return": 7.34,
+          "benchmark_return": 7.3,
+          "additional_info": {
+            "additional_benchmark_name": "CRISIL 10 year Gilt Index",
+            "additional_benchmark_return": 7.09,
+            "value_of_10000_investment": 10732
+          }
+        },
+        {
+          "period": "3Y",
+          "plan_type": "Regular",
+          "fund_return": 11.17,
+          "benchmark_return": 8.89,
+          "additional_info": {
+            "additional_benchmark_name": "CRISIL 10 year Gilt Index",
+            "additional_benchmark_return": 8.07,
+            "value_of_10000_investment": 13734
+          }
+        },
+        {
+          "period": "SI",
+          "plan_type": "Direct",
+          "fund_return": 10.33,
+          "benchmark_return": 7.52,
+          "additional_info": {
+            "additional_benchmark_name": "CRISIL 10 year Gilt Index",
+            "additional_benchmark_return": 5.29,
+            "value_of_10000_investment": 15580
+          }
+        },
+        {
+          "period": "1Y",
+          "plan_type": "Direct",
+          "fund_return": 7.67,
+          "benchmark_return": 7.3,
+          "additional_info": {
+            "additional_benchmark_name": "CRISIL 10 year Gilt Index",
+            "additional_benchmark_return": 7.09,
+            "value_of_10000_investment": 10764
+          }
+        },
+        {
+          "period": "3Y",
+          "plan_type": "Direct",
+          "fund_return": 11.5,
+          "benchmark_return": 8.89,
+          "additional_info": {
+            "additional_benchmark_name": "CRISIL 10 year Gilt Index",
+            "additional_benchmark_return": 8.07,
+            "value_of_10000_investment": 13857
+          }
+        }
+      ],
+      "sip_returns": [
+        {
+          "period": "SI",
+          "plan_type": "Regular",
+          "total_invested": 550000,
+          "market_value": 697969,
+          "return_pct": 10.39
+        },
+        {
+          "period": "1Y",
+          "plan_type": "Regular",
+          "total_invested": 120000,
+          "market_value": 124546,
+          "return_pct": 7.2
+        },
+        {
+          "period": "3Y",
+          "plan_type": "Regular",
+          "total_invested": 360000,
+          "market_value": 419617,
+          "return_pct": 10.25
+        },
+        {
+          "period": "SI",
+          "plan_type": "Direct",
+          "total_invested": 550000,
+          "market_value": 703209,
+          "return_pct": 10.72
+        },
+        {
+          "period": "1Y",
+          "plan_type": "Direct",
+          "total_invested": 120000,
+          "market_value": 124746,
+          "return_pct": 7.52
+        },
+        {
+          "period": "3Y",
+          "plan_type": "Direct",
+          "total_invested": 360000,
+          "market_value": 421656,
+          "return_pct": 10.59
+        },
+        {
+          "period": "SI",
+          "benchmark_name": "CRISIL Hybrid 85+15 Conservative Index",
+          "total_invested": 550000,
+          "return_pct": 8.35
+        },
+        {
+          "period": "1Y",
+          "benchmark_name": "CRISIL Hybrid 85+15 Conservative Index",
+          "total_invested": 120000,
+          "return_pct": 7.46
+        },
+        {
+          "period": "3Y",
+          "benchmark_name": "CRISIL Hybrid 85+15 Conservative Index",
+          "total_invested": 360000,
+          "return_pct": 8.77
+        },
+        {
+          "period": "SI",
+          "benchmark_name": "CRISIL 10 year Gilt Index",
+          "total_invested": 550000,
+          "return_pct": 7.08
+        },
+        {
+          "period": "1Y",
+          "benchmark_name": "CRISIL 10 year Gilt Index",
+          "total_invested": 120000,
+          "return_pct": 4.87
+        },
+        {
+          "period": "3Y",
+          "benchmark_name": "CRISIL 10 year Gilt Index",
+          "total_invested": 360000,
+          "return_pct": 7.74
+        }
+      ],
+      "dividend_history": [
+        {
+          "record_date": "Nov 24, 2025",
+          "payout_date": "Nov 24, 2025",
+          "plan_type": "Direct",
+          "option": "Retail",
+          "amount": 0.058,
+          "face_value": 10.0,
+          "nav_ex_idcw": 11.0786,
+          "nav_cum_idcw": 11.1366
+        },
+        {
+          "record_date": "Nov 24, 2025",
+          "payout_date": "Nov 24, 2025",
+          "plan_type": "Direct",
+          "option": "Corporate",
+          "amount": 0.058,
+          "face_value": 10.0,
+          "nav_ex_idcw": 11.0786,
+          "nav_cum_idcw": 11.1366
+        },
+        {
+          "record_date": "Nov 24, 2025",
+          "payout_date": "Nov 24, 2025",
+          "plan_type": "Regular",
+          "option": "Retail",
+          "amount": 0.0765,
+          "face_value": 10.0,
+          "nav_ex_idcw": 10.8572,
+          "nav_cum_idcw": 10.9337
+        },
+        {
+          "record_date": "Nov 24, 2025",
+          "payout_date": "Nov 24, 2025",
+          "plan_type": "Regular",
+          "option": "Corporate",
+          "amount": 0.0765,
+          "face_value": 10.0,
+          "nav_ex_idcw": 10.8572,
+          "nav_cum_idcw": 10.9337
+        },
+        {
+          "record_date": "Oct 27, 2025",
+          "payout_date": "Oct 27, 2025",
+          "plan_type": "Direct",
+          "option": "Retail",
+          "amount": 0.02,
+          "face_value": 10.0,
+          "nav_ex_idcw": 11.1702,
+          "nav_cum_idcw": 11.1902
+        },
+        {
+          "record_date": "Oct 27, 2025",
+          "payout_date": "Oct 27, 2025",
+          "plan_type": "Direct",
+          "option": "Corporate",
+          "amount": 0.02,
+          "face_value": 10.0,
+          "nav_ex_idcw": 11.1702,
+          "nav_cum_idcw": 11.1902
+        },
+        {
+          "record_date": "Oct 27, 2025",
+          "payout_date": "Oct 27, 2025",
+          "plan_type": "Regular",
+          "option": "Retail",
+          "amount": 0.0245,
+          "face_value": 10.0,
+          "nav_ex_idcw": 10.9692,
+          "nav_cum_idcw": 10.9938
+        },
+        {
+          "record_date": "Oct 27, 2025",
+          "payout_date": "Oct 27, 2025",
+          "plan_type": "Regular",
+          "option": "Corporate",
+          "amount": 0.0245,
+          "face_value": 10.0,
+          "nav_ex_idcw": 10.9692,
+          "nav_cum_idcw": 10.9938
+        },
+        {
+          "record_date": "Sep 29, 2025",
+          "payout_date": "Sep 29, 2025",
+          "plan_type": "Direct",
+          "option": "Retail",
+          "amount": 0.0461,
+          "face_value": 10.0,
+          "nav_ex_idcw": 11.0523,
+          "nav_cum_idcw": 11.0984
+        },
+        {
+          "record_date": "Sep 29, 2025",
+          "payout_date": "Sep 29, 2025",
+          "plan_type": "Direct",
+          "option": "Corporate",
+          "amount": 0.0461,
+          "face_value": 10.0,
+          "nav_ex_idcw": 11.0523,
+          "nav_cum_idcw": 11.0984
+        },
+        {
+          "record_date": "Sep 29, 2025",
+          "payout_date": "Sep 29, 2025",
+          "plan_type": "Regular",
+          "option": "Retail",
+          "amount": 0.0352,
+          "face_value": 10.0,
+          "nav_ex_idcw": 10.8607,
+          "nav_cum_idcw": 10.8959
+        },
+        {
+          "record_date": "Sep 29, 2025",
+          "payout_date": "Sep 29, 2025",
+          "plan_type": "Regular",
+          "option": "Corporate",
+          "amount": 0.0352,
+          "face_value": 10.0,
+          "nav_ex_idcw": 10.8607,
+          "nav_cum_idcw": 10.8959
+        }
+      ],
+      "additional_info": {
+        "lumpsum_performance_notes": [
+          "Since inception returns are calculated on Rs. 10 (allotment price)",
+          "Point-to-point returns for a ₹10,000 lump sum investment made on the specified initial date and redeemed on the specified final date reflect growth based on prevailing NAVs of the Direct and Regular Plan – Growth Options"
+        ],
+        "rolling_returns_data": [
+          {
+            "period": "1Y",
+            "plan_type": "Regular",
+            "option": "Growth",
+            "average": 10.79,
+            "maximum": 19.36,
+            "minimum": 3.88,
+            "std_deviation": 4.16
+          },
+          {
+            "period": "1Y",
+            "plan_type": "Direct",
+            "option": "Growth",
+            "average": 11.12,
+            "maximum": 19.72,
+            "minimum": 4.19,
+            "std_deviation": 4.17
+          },
+          {
+            "period": "1Y",
+            "benchmark_name": "CRISIL Hybrid 85+15 Conservative Index",
+            "average": 7.82,
+            "maximum": 13.91,
+            "minimum": -0.31,
+            "std_deviation": 3.63
+          },
+          {
+            "period": "3Y",
+            "plan_type": "Regular",
+            "option": "Growth",
+            "average": 11.42,
+            "maximum": 12.68,
+            "minimum": 10.37,
+            "std_deviation": 0.52
+          },
+          {
+            "period": "3Y",
+            "plan_type": "Direct",
+            "option": "Growth",
+            "average": 11.75,
+            "maximum": 13.02,
+            "minimum": 10.7,
+            "std_deviation": 0.52
+          },
+          {
+            "period": "3Y",
+            "benchmark_name": "CRISIL Hybrid 85+15 Conservative Index",
+            "average": 8.4,
+            "maximum": 10.58,
+            "minimum": 6.86,
+            "std_deviation": 1.02
+          }
+        ],
+        "sip_calculation_note": "Returns are calculated since inception with daily rolling frequency for 1 year and 3 years period. (PPCHF)",
+        "dividend_note": "Pursuant to the payout of Dividend/Income Distribution cum Capital Withdrawal (IDCW), the Net Asset Value (NAV) of the scheme will fall to the extent of the payout and statutory levy, if any.",
+        "insiders_holding": {
+          "amount_crores": 10.38,
+          "as_at_date": "Nov 28, 2025",
+          "details": [
+            {
+              "scheme": "Parag Parikh Conservative Hybrid Fund - Direct Plan Growth",
+              "units": 303650.6,
+              "aum_in_rs": 4730967.02
+            }
+          ]
+        },
+        "factsheet_page_number": 12
+      },
+      "category": "Conservative Hybrid Fund",
+      "fund_managers": [
+        {
+          "name": "Mr. Rajeev Thakkar"
+        },
+        {
+          "name": "Mr. Tejas Soman",
+          "managing_since": "September 1, 2025",
+          "qualification": "Fund Manager – Debt"
+        },
+        {
+          "name": "Mr. Raunak Onkar"
+        },
+        {
+          "name": "Mr. Raj Mehta",
+          "managing_since": "September 1, 2025",
+          "qualification": "Fund Manager- Equity"
+        },
+        {
+          "name": "Mr. Rukun Tarachandani"
+        },
+        {
+          "name": "Ms. Mansi Kariya"
+        }
+      ],
+      "investment_objective": "To generate regular income through investments predominantly in debt and money market instruments. Long term capital appreciation from the portion of equity investments under the scheme.",
+      "risk_level": "Moderately High"
+    },
+    {
+      "fund_name": "Parag Parikh Arbitrage Fund (PPAF)",
+      "fund_type": "Open-ended",
+      "scheme_type": "An open-ended scheme investing in arbitrage opportunities",
+      "investment_objective": "The investment objective of the scheme is to generate capital appreciation and income by predominantly investing in arbitrage opportunities in the cash and derivatives segment of the equity market, and by investing the balance in debt and money market instruments. However, there is no assurance that the investment objective of the Scheme will be achieved and the Scheme does not assure or guarantee any returns.",
+      "benchmark": "Nifty 50 Arbitrage (TRI)",
+      "inception_date": "November 2, 2023",
+      "plans_offered": "Direct, Regular",
+      "nav": 11.5506,
+      "nav_date": "Nov 28, 2025",
+      "aum_crores": 1971.16,
+      "monthly_avg_aum": 1952.61,
+      "expense_ratio": 0.3,
+      "exit_load": "In respect of each purchase / switch-in of units, an Exit Load of 0.25% is payable if Units are redeemed / switched-out within 30 days from the date of allotment. No Exit Load is payable if Units are redeemed / switched-out after 30 days from the date of allotment. Any exit load charged (net off GST, if any) shall be credited back to the Scheme. No exit load will be charged, in case of switch transactions between Plans. i.e Regular Plan and Direct Plan. Any exit load charged (net off GST, if any) shall be credited back to the Scheme.",
+      "min_sip": 1000,
+      "min_lumpsum": 1000,
+      "min_additional": 1000,
+      "fund_managers": [
+        {
+          "name": "Mr. Rajeev Thakkar",
+          "qualification": "Chief Investment Officer - Equity and Director",
+          "managing_since": "Since Inception"
+        },
+        {
+          "name": "Mr. Raunak Onkar",
+          "qualification": "Fund Manager & Research Head",
+          "managing_since": "Since Inception"
+        },
+        {
+          "name": "Mr. Raj Mehta",
+          "qualification": "Executive Vice President & Fund Manager - Equity",
+          "managing_since": "September 1, 2025"
+        },
+        {
+          "name": "Mr. Rukun Tarachandani",
+          "qualification": "Executive Vice President & Fund Manager - Equity",
+          "managing_since": "Since Inception"
+        },
+        {
+          "name": "Mr. Tejas Soman",
+          "qualification": "Chief Investment Officer - Debt",
+          "managing_since": "September 1, 2025"
+        },
+        {
+          "name": "Ms. Aishwarya Dhar",
+          "qualification": "Senior Manager & Fund Manager- Debt",
+          "managing_since": "September 1, 2025"
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "Kotak Mahindra Bank Limited",
+          "sector": "Banks",
+          "weight_pct": 2.6
+        },
+        {
+          "name": "Vodafone Idea Limited",
+          "sector": "Telecom - Services",
+          "weight_pct": 0.52
+        },
+        {
+          "name": "RBL Bank Limited",
+          "sector": "Banks",
+          "weight_pct": 0.39
+        },
+        {
+          "name": "Power Finance Corporation Limited",
+          "sector": "Finance",
+          "weight_pct": 0.39
+        },
+        {
+          "name": "HDFC Bank Limited",
+          "sector": "Banks",
+          "weight_pct": 4.58
+        },
+        {
+          "name": "Bharti Airtel Limited",
+          "sector": "Telecom - Services",
+          "weight_pct": 4.42
+        },
+        {
+          "name": "Axis Bank Limited",
+          "sector": "Banks",
+          "weight_pct": 4.15
+        },
+        {
+          "name": "Reliance Industries Limited",
+          "sector": "Petroleum Products",
+          "weight_pct": 4.05
+        },
+        {
+          "name": "ICICI Bank Limited",
+          "sector": "Banks",
+          "weight_pct": 3.25
+        },
+        {
+          "name": "State Bank of India",
+          "sector": "Banks",
+          "weight_pct": 3.15
+        },
+        {
+          "name": "Other Equity",
+          "sector": null,
+          "weight_pct": 48.25
+        }
+      ],
+      "debt_holdings": [
+        {
+          "name": "Small Industries Development Bank of India",
+          "instrument_type": "Certificate of Deposit",
+          "rating": "CARE A1+",
+          "weight_pct": 2.44,
+          "maturity_date": "09/07/2026"
+        },
+        {
+          "name": "Axis Bank Limited",
+          "instrument_type": "Certificate of Deposit",
+          "rating": "CRISIL A1+",
+          "weight_pct": 2.43,
+          "maturity_date": "11/08/2026"
+        },
+        {
+          "name": "HDFC Bank Limited",
+          "instrument_type": "Certificate of Deposit",
+          "rating": "CRISIL A1+",
+          "weight_pct": 1.23,
+          "maturity_date": "24/06/2026"
+        },
+        {
+          "name": "HDFC Bank Limited",
+          "instrument_type": "Certificate of Deposit",
+          "rating": "CRISIL A1+",
+          "weight_pct": 1.21,
+          "maturity_date": "11/09/2026"
+        },
+        {
+          "name": "Kotak Securities Limited",
+          "instrument_type": "Commercial Paper",
+          "rating": "ICRA A1+",
+          "weight_pct": 1.25,
+          "maturity_date": "13/02/2026"
+        },
+        {
+          "name": "National Bank For Agriculture and Rural Development",
+          "instrument_type": "Commercial Paper",
+          "rating": "CRISIL A1+",
+          "weight_pct": 1.22,
+          "maturity_date": "25/06/2026"
+        },
+        {
+          "name": "Bajaj Finance Limited",
+          "instrument_type": "Commercial Paper",
+          "rating": "CRISIL A1+",
+          "weight_pct": 1.22,
+          "maturity_date": "18/06/2026"
+        },
+        {
+          "name": "ICICI Securities Limited",
+          "instrument_type": "Commercial Paper",
+          "rating": "CRISIL A1+",
+          "weight_pct": 1.22,
+          "maturity_date": "15/06/2026"
+        },
+        {
+          "name": "364 Days Tbill",
+          "instrument_type": "Treasury Bill",
+          "rating": "Sovereign",
+          "weight_pct": 0.5,
+          "maturity_date": "29/01/2026"
+        }
+      ],
+      "sector_allocation": {
+        "Banks": 27.69,
+        "Other Equity": 17.02,
+        "Debt and Money Market Instruments": 12.72,
+        "Mutual Fund Units": 10.63,
+        "Finance": 5.73,
+        "Telecom - Services": 5.02,
+        "Petroleum Products": 4.09,
+        "Aerospace & Defense": 3.67,
+        "Electrical Equipment": 2.92,
+        "Automobiles": 2.83,
+        "Ferrous Metals": 2.44,
+        "Retailing": 2.27,
+        "Minerals & Mining": 2.07,
+        "Cash & Cash Equivalent": 0.9
+      },
+      "asset_allocation": {
+        "Equity": 75.75,
+        "Debt": 12.72,
+        "Mutual Fund Units": 10.63,
+        "Cash & Equivalents": 0.9
+      },
+      "debt_indicators": {
+        "ytm": 6.12,
+        "modified_duration": 0.338,
+        "macaulay_duration": 0.3593,
+        "average_maturity": 0.3618
+      },
+      "additional_info": {
+        "Additional Benchmark": "CRISIL 1 Year T-Bill Index",
+        "Minimum Application / Additional Purchase Amount": "New Purchase: ₹ 1000 and in multiples of ₹ 1 thereafter. Additional Purchase: ₹1000 and in multiples of ₹ 1 thereafter.",
+        "Minimum SIP Investment Amount": "Monthly SIP: ₹ 1000 and Quarterly SIP ₹ 3000",
+        "Entry Load": "Not Applicable",
+        "Outstanding Derivative exposure": "76.26%",
+        "Quantitative Indicators Notes": "*Calculated on amount invest in debt securities (including accrued interest), deployment of funds in TREPS & Reverse Repo and net receivables/payables. ^YTM is calculated on the basis of annualised yield for all securities; the Yield to Maturity (YTM) percentage presented are based on actual values and not indicative. $ Applicable for both regular and direct plan"
+      }
+    },
+    {
+      "fund_name": "Parag Parikh Arbitrage Fund",
+      "fund_type": "Open-ended",
+      "investment_objective": "An open-ended scheme investing in arbitrage opportunities",
+      "category": "Arbitrage Fund",
+      "benchmark": "Nifty 50 Arbitrage (TRI)",
+      "returns": [
+        {
+          "period": "SI",
+          "fund_return": 7.2,
+          "benchmark_return": 7.53,
+          "category_avg_return": 7.0
+        },
+        {
+          "period": "1Y",
+          "fund_return": 6.65,
+          "benchmark_return": 7.58,
+          "category_avg_return": 6.41
+        }
+      ],
+      "sip_returns": [
+        {
+          "period": "SI",
+          "total_invested": 250000,
+          "market_value": 268615,
+          "return_pct": 6.84
+        },
+        {
+          "period": "1Y",
+          "total_invested": 120000,
+          "market_value": 124001,
+          "return_pct": 6.33
+        }
+      ],
+      "instrument_composition": {
+        "Equity and Equity Related Instruments": 75.75,
+        "CP and CD": 12.22,
+        "Mutual Fund Units": 10.63,
+        "TREPS, Net receivables & Payables and Net Current Asset": 0.9,
+        "G-Sec,SDL and T-Bill": 0.5
+      },
+      "composition_by_rating": {
+        "Equity and Equity Related Instruments": 75.75,
+        "AAA/A1+": 12.22,
+        "Mutual Fund Units": 10.63,
+        "TREPS, Net receivables & Payables and Net Current Asset": 0.9,
+        "Sovereign": 0.5
+      },
+      "fund_managers": [
+        {
+          "name": "Mr. Rajeev Thakkar"
+        },
+        {
+          "name": "Mr. Tejas Soman",
+          "managing_since": "September 1, 2025",
+          "qualification": "Fund Manager – Debt"
+        },
+        {
+          "name": "Mr. Raunak Onkar"
+        },
+        {
+          "name": "Mr. Raj Mehta",
+          "managing_since": "September 1, 2025",
+          "qualification": "Fund Manager- Equity"
+        },
+        {
+          "name": "Mr. Rukun Tarachandani"
+        },
+        {
+          "name": "Ms. Aishwarya Dhar",
+          "managing_since": "September 1, 2025",
+          "qualification": "Fund Manager – Debt"
+        }
+      ],
+      "additional_info": {
+        "factsheet_page_number": 14
+      },
+      "scheme_type": "An open-ended scheme investing in arbitrage opportunities.",
+      "risk_level": "Low"
+    },
+    {
+      "fund_name": "Parag Parikh Liquid Fund (PPLF)",
+      "fund_type": "Open-ended",
+      "scheme_type": "Liquid scheme",
+      "category": "Liquid Fund",
+      "investment_objective": "To deliver reasonable market related returns with lower risk and high liquidity through judicious investments in money market and debt instruments. However, there is no assurance that the investment objective of the scheme will be achieved and the scheme does not assure or guarantee any returns.",
+      "benchmark": "CRISIL Liquid Debt A-I Index",
+      "inception_date": "May 11, 2018",
+      "plans_offered": "Direct, Regular",
+      "nav_date": "Nov 30, 2025",
+      "aum_crores": 5075.3,
+      "monthly_avg_aum": 4417.01,
+      "min_sip": 1000,
+      "min_lumpsum": 5000,
+      "min_additional": 1000,
+      "exit_load": "Entry Load: Not Applicable. Exit load as a % of redemption / switch proceeds: Day 1: 0.0070%, Day 2: 0.0065%, Day 3: 0.0060%, Day 4: 0.0055%, Day 5: 0.0050%, Day 6: 0.0045%, Day 7 onwards: 0.0000%.",
+      "fund_managers": [
+        {
+          "name": "Mr. Tejas Soman",
+          "managing_since": "September 1, 2025"
+        },
+        {
+          "name": "Ms. Mansi Kariya",
+          "managing_since": "December 22, 2023"
+        },
+        {
+          "name": "Ms. Aishwarya Dhar",
+          "managing_since": "September 1, 2025"
+        }
+      ],
+      "asset_allocation": {
+        "TREPS, Net receivables & Payables and Net Current Asset": 5.18,
+        "Treasury Bills": 17.47,
+        "Commercial Paper": 21.52,
+        "Certificate of Deposit": 54.64,
+        "Non Convertible Debentures": 0.99,
+        "Corporate Debt Market Development Fund A2": 0.2
+      },
+      "composition_by_rating": {
+        "TREPS, Net receivables & Payables and Net Current Asset": 5.18,
+        "Corporate Debt Market Development Fund A2": 0.2,
+        "Sovereign": 17.47,
+        "A1+/AAA": 77.15
+      },
+      "debt_indicators": {
+        "ytm": 5.84,
+        "modified_duration": 0.1406,
+        "macaulay_duration": 0.1488,
+        "average_maturity": 55.26
+      },
+      "dividend_history": [
+        {
+          "record_date": "Nov 24, 2025",
+          "direct_retail": 4.4295,
+          "direct_corporate": 4.4295,
+          "regular_retail": 4.3524,
+          "regular_corporate": 4.3524,
+          "face_value": 1000,
+          "regular_nav_ex_idcw": 1003,
+          "direct_nav_ex_idcw": 1003,
+          "regular_nav_cum_idcw": 1007.3524,
+          "direct_nav_cum_idcw": 1007.4295
+        },
+        {
+          "record_date": "Oct 27, 2025",
+          "direct_retail": 4.5072,
+          "direct_corporate": 4.5072,
+          "regular_retail": 4.4301,
+          "regular_corporate": 4.4301,
+          "face_value": 1000,
+          "regular_nav_ex_idcw": 1003,
+          "direct_nav_ex_idcw": 1003,
+          "regular_nav_cum_idcw": 1007.4301,
+          "direct_nav_cum_idcw": 1007.5072
+        },
+        {
+          "record_date": "Sep 29, 2025",
+          "direct_retail": 5.1624,
+          "direct_corporate": 5.1624,
+          "regular_retail": 5.0651,
+          "regular_corporate": 5.0651,
+          "face_value": 1000,
+          "regular_nav_ex_idcw": 1003,
+          "direct_nav_ex_idcw": 1003,
+          "regular_nav_cum_idcw": 1008.0651,
+          "direct_nav_cum_idcw": 1008.1624
+        }
+      ]
+    },
+    {
+      "fund_name": "Parag Parikh Liquid Fund",
+      "fund_type": "Open-ended",
+      "scheme_type": "Liquid scheme",
+      "category": "Liquid Fund",
+      "plan_type": "Regular",
+      "benchmark": "CRISIL Liquid Debt A-I Index",
+      "inception_date": "May 11, 2018",
+      "debt_holdings": [
+        {
+          "name": "91 Days Tbill",
+          "instrument_type": "Treasury Bill",
+          "rating": "Sovereign",
+          "weight_pct": 6.34,
+          "maturity_date": "06/02/2026"
+        },
+        {
+          "name": "91 Days Tbill",
+          "instrument_type": "Treasury Bill",
+          "rating": "Sovereign",
+          "weight_pct": 4.38,
+          "maturity_date": "26/02/2026"
+        },
+        {
+          "name": "182 Days Tbill",
+          "instrument_type": "Treasury Bill",
+          "rating": "Sovereign",
+          "weight_pct": 1.47,
+          "maturity_date": "18/12/2025"
+        },
+        {
+          "name": "364 Days Tbill",
+          "instrument_type": "Treasury Bill",
+          "rating": "Sovereign",
+          "weight_pct": 1.46,
+          "maturity_date": "05/02/2026"
+        },
+        {
+          "name": "91 Days Tbill",
+          "instrument_type": "Treasury Bill",
+          "rating": "Sovereign",
+          "weight_pct": 1.37,
+          "maturity_date": "02/01/2026"
+        },
+        {
+          "name": "182 Days Tbill",
+          "instrument_type": "Treasury Bill",
+          "rating": "Sovereign",
+          "weight_pct": 0.98,
+          "maturity_date": "08/01/2026"
+        },
+        {
+          "name": "91 Days Tbill",
+          "instrument_type": "Treasury Bill",
+          "rating": "Sovereign",
+          "weight_pct": 0.49,
+          "maturity_date": "11/12/2025"
+        },
+        {
+          "name": "91 Days Tbill",
+          "instrument_type": "Treasury Bill",
+          "rating": "Sovereign",
+          "weight_pct": 0.49,
+          "maturity_date": "08/01/2026"
+        },
+        {
+          "name": "182 Days Tbill",
+          "instrument_type": "Treasury Bill",
+          "rating": "Sovereign",
+          "weight_pct": 0.49,
+          "maturity_date": "12/02/2026"
+        },
+        {
+          "name": "7.7201% LIC Housing Finance Limited",
+          "instrument_type": "Non Convertible Debenture",
+          "rating": "CRISIL AAA",
+          "weight_pct": 0.99,
+          "maturity_date": "12/02/2026"
+        },
+        {
+          "name": "Indian Oil Corporation Limited",
+          "instrument_type": "Commercial Paper",
+          "rating": "CRISIL A1+",
+          "weight_pct": 2.95,
+          "maturity_date": "04/12/2025"
+        },
+        {
+          "name": "Power Finance Corporation Limited",
+          "instrument_type": "Commercial Paper",
+          "rating": "CRISIL A1+",
+          "weight_pct": 2.95,
+          "maturity_date": "15/12/2025"
+        },
+        {
+          "name": "Indian Oil Corporation Limited",
+          "instrument_type": "Commercial Paper",
+          "rating": "CRISIL A1+",
+          "weight_pct": 1.96,
+          "maturity_date": "19/12/2025"
+        },
+        {
+          "name": "Kotak Securities Limited",
+          "instrument_type": "Commercial Paper",
+          "rating": "CRISIL A1+",
+          "weight_pct": 1.95,
+          "maturity_date": "06/02/2026"
+        },
+        {
+          "name": "HDFC Securities Limited",
+          "instrument_type": "Commercial Paper",
+          "rating": "CARE A1+",
+          "weight_pct": 1.95,
+          "maturity_date": "11/02/2026"
+        },
+        {
+          "name": "Small Industries Development Bank of India",
+          "instrument_type": "Commercial Paper",
+          "rating": "CRISIL A1+",
+          "weight_pct": 1.94,
+          "maturity_date": "24/02/2026"
+        },
+        {
+          "name": "National Bank For Agriculture and Rural Development",
+          "instrument_type": "Commercial Paper",
+          "rating": "CRISIL A1+",
+          "weight_pct": 1.47,
+          "maturity_date": "19/12/2025"
+        },
+        {
+          "name": "LIC Housing Finance Limited",
+          "instrument_type": "Commercial Paper",
+          "rating": "CRISIL A1+",
+          "weight_pct": 1.46,
+          "maturity_date": "18/02/2026"
+        },
+        {
+          "name": "Bajaj Finance Limited",
+          "instrument_type": "Commercial Paper",
+          "rating": "CRISIL A1+",
+          "weight_pct": 1.46,
+          "maturity_date": "24/02/2026"
+        },
+        {
+          "name": "Indian Oil Corporation Limited",
+          "instrument_type": "Commercial Paper",
+          "rating": "ICRA A1+",
+          "weight_pct": 0.98,
+          "maturity_date": "16/12/2025"
+        },
+        {
+          "name": "Indian Oil Corporation Limited",
+          "instrument_type": "Commercial Paper",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.98,
+          "maturity_date": "24/12/2025"
+        },
+        {
+          "name": "Bajaj Finance Limited",
+          "instrument_type": "Commercial Paper",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.98,
+          "maturity_date": "13/01/2026"
+        },
+        {
+          "name": "Small Industries Development Bank of India",
+          "instrument_type": "Commercial Paper",
+          "rating": "CARE A1+",
+          "weight_pct": 0.49,
+          "maturity_date": "23/01/2026"
+        },
+        {
+          "name": "Bajaj Finance Limited",
+          "instrument_type": "Commercial Paper",
+          "rating": "ICRA A1+",
+          "weight_pct": 0.49,
+          "maturity_date": "12/02/2026"
+        },
+        {
+          "name": "Union Bank of India",
+          "instrument_type": "Commercial Paper",
+          "rating": "IND A1+",
+          "weight_pct": 2.92,
+          "maturity_date": "20/02/2026"
+        },
+        {
+          "name": "Small Industries Development Bank of India",
+          "instrument_type": "Commercial Paper",
+          "rating": "CRISIL A1+",
+          "weight_pct": 2.44,
+          "maturity_date": "04/02/2026"
+        },
+        {
+          "name": "National Bank For Agriculture and Rural Development",
+          "instrument_type": "Commercial Paper",
+          "rating": "ICRA A1+",
+          "weight_pct": 2.43,
+          "maturity_date": "17/02/2026"
+        },
+        {
+          "name": "Canara Bank",
+          "instrument_type": "Commercial Paper",
+          "rating": "CRISIL A1+",
+          "weight_pct": 2.43,
+          "maturity_date": "27/02/2026"
+        },
+        {
+          "name": "Axis Bank Limited",
+          "instrument_type": "Commercial Paper",
+          "rating": "CRISIL A1+",
+          "weight_pct": 1.97,
+          "maturity_date": "16/12/2025"
+        },
+        {
+          "name": "Axis Bank Limited",
+          "instrument_type": "Commercial Paper",
+          "rating": "CRISIL A1+",
+          "weight_pct": 1.97,
+          "maturity_date": "17/12/2025"
+        },
+        {
+          "name": "HDFC Bank Limited",
+          "instrument_type": "Commercial Paper",
+          "rating": "CARE A1+",
+          "weight_pct": 1.96,
+          "maturity_date": "18/12/2025"
+        },
+        {
+          "name": "HDFC Bank Limited",
+          "instrument_type": "Commercial Paper",
+          "rating": "CARE A1+",
+          "weight_pct": 1.96,
+          "maturity_date": "22/12/2025"
+        },
+        {
+          "name": "Union Bank of India",
+          "instrument_type": "Commercial Paper",
+          "rating": "ICRA A1+",
+          "weight_pct": 1.96,
+          "maturity_date": "23/12/2025"
+        },
+        {
+          "name": "Indian Bank",
+          "instrument_type": "Commercial Paper",
+          "rating": "CRISIL A1+",
+          "weight_pct": 1.95,
+          "maturity_date": "04/02/2026"
+        },
+        {
+          "name": "Small Industries Development Bank of India",
+          "instrument_type": "Commercial Paper",
+          "rating": "CRISIL A1+",
+          "weight_pct": 1.95,
+          "maturity_date": "06/02/2026"
+        },
+        {
+          "name": "Bank of Baroda",
+          "instrument_type": "Commercial Paper",
+          "rating": "IND A1+",
+          "weight_pct": 1.95,
+          "maturity_date": "09/02/2026"
+        },
+        {
+          "name": "Indian Bank",
+          "instrument_type": "Commercial Paper",
+          "rating": "CRISIL A1+",
+          "weight_pct": 1.95,
+          "maturity_date": "13/02/2026"
+        },
+        {
+          "name": "HDFC Bank Limited",
+          "instrument_type": "Commercial Paper",
+          "rating": "CRISIL A1+",
+          "weight_pct": 1.95,
+          "maturity_date": "18/02/2026"
+        },
+        {
+          "name": "Canara Bank",
+          "instrument_type": "Commercial Paper",
+          "rating": "CRISIL A1+",
+          "weight_pct": 1.47,
+          "maturity_date": "26/12/2025"
+        },
+        {
+          "name": "Bank of Baroda",
+          "instrument_type": "Commercial Paper",
+          "rating": "IND A1+",
+          "weight_pct": 1.46,
+          "maturity_date": "06/02/2026"
+        },
+        {
+          "name": "Union Bank of India",
+          "instrument_type": "Commercial Paper",
+          "rating": "CRISIL A1+",
+          "weight_pct": 1.46,
+          "maturity_date": "25/02/2026"
+        },
+        {
+          "name": "Union Bank of India",
+          "instrument_type": "Commercial Paper",
+          "rating": "IND A1+",
+          "weight_pct": 0.98,
+          "maturity_date": "18/12/2025"
+        },
+        {
+          "name": "Bank of Baroda",
+          "instrument_type": "Commercial Paper",
+          "rating": "IND A1+",
+          "weight_pct": 0.98,
+          "maturity_date": "26/12/2025"
+        },
+        {
+          "name": "National Bank For Agriculture and Rural Development",
+          "instrument_type": "Commercial Paper",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.98,
+          "maturity_date": "22/01/2026"
+        },
+        {
+          "name": "Union Bank of India",
+          "instrument_type": "Commercial Paper",
+          "rating": "IND A1+",
+          "weight_pct": 0.98,
+          "maturity_date": "02/02/2026"
+        },
+        {
+          "name": "Axis Bank Limited",
+          "instrument_type": "Commercial Paper",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.97,
+          "maturity_date": "04/02/2026"
+        },
+        {
+          "name": "HDFC Bank Limited",
+          "instrument_type": "Commercial Paper",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.97,
+          "maturity_date": "25/02/2026"
+        },
+        {
+          "name": "Small Industries Development Bank of India",
+          "instrument_type": "Commercial Paper",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.97,
+          "maturity_date": "27/02/2026"
+        },
+        {
+          "name": "Canara Bank",
+          "instrument_type": "Commercial Paper",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.49,
+          "maturity_date": "12/12/2025"
+        },
+        {
+          "name": "National Bank For Agriculture and Rural Development",
+          "instrument_type": "Commercial Paper",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.49,
+          "maturity_date": "20/01/2026"
+        },
+        {
+          "name": "HDFC Bank Limited",
+          "instrument_type": "Commercial Paper",
+          "rating": "CARE A1+",
+          "weight_pct": 0.49,
+          "maturity_date": "04/02/2026"
+        },
+        {
+          "name": "National Bank For Agriculture and Rural Development",
+          "instrument_type": "Commercial Paper",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.49,
+          "maturity_date": "05/02/2026"
+        },
+        {
+          "name": "Kotak Mahindra Bank Limited",
+          "instrument_type": "Commercial Paper",
+          "rating": "CRISIL A1+",
+          "weight_pct": 0.49,
+          "maturity_date": "18/02/2026"
+        },
+        {
+          "name": "Punjab National Bank",
+          "instrument_type": "Certificate of Deposit",
+          "rating": "CRISIL A1+",
+          "weight_pct": 4.37,
+          "maturity_date": "26/02/2026"
+        },
+        {
+          "name": "Bank of Baroda",
+          "instrument_type": "Certificate of Deposit",
+          "rating": "IND A1+",
+          "weight_pct": 3.89,
+          "maturity_date": "23/02/2026"
+        },
+        {
+          "name": "Punjab National Bank",
+          "instrument_type": "Certificate of Deposit",
+          "rating": "CRISIL A1+",
+          "weight_pct": 2.92,
+          "maturity_date": "13/02/2026"
+        },
+        {
+          "name": "Corporate Debt Market Development Fund - Class A2 Units",
+          "instrument_type": "Corporate Debt Market Development Fund",
+          "rating": null,
+          "weight_pct": 0.2,
+          "maturity_date": null
+        },
+        {
+          "name": "TRP_031125",
+          "instrument_type": "Reverse Repo / TREPS",
+          "rating": null,
+          "weight_pct": 5.18,
+          "maturity_date": null
+        }
+      ],
+      "returns": [
+        {
+          "period": "SI",
+          "fund_return": 5.35,
+          "benchmark_return": 5.84,
+          "additional_benchmark_return": 6.07
+        },
+        {
+          "period": "7D",
+          "fund_return": 5.55,
+          "benchmark_return": 5.56,
+          "additional_benchmark_return": 6.33
+        },
+        {
+          "period": "15D",
+          "fund_return": 5.64,
+          "benchmark_return": 5.6,
+          "additional_benchmark_return": 4.9
+        },
+        {
+          "period": "1M",
+          "fund_return": 5.72,
+          "benchmark_return": 5.7,
+          "additional_benchmark_return": 4.74
+        },
+        {
+          "period": "3M",
+          "fund_return": 5.59,
+          "benchmark_return": 5.7,
+          "additional_benchmark_return": 4.7
+        },
+        {
+          "period": "6M",
+          "fund_return": 5.67,
+          "benchmark_return": 5.79,
+          "additional_benchmark_return": 4.53
+        },
+        {
+          "period": "1Y",
+          "fund_return": 6.32,
+          "benchmark_return": 6.5,
+          "additional_benchmark_return": 6.41
+        },
+        {
+          "period": "3Y",
+          "fund_return": 6.6,
+          "benchmark_return": 6.95,
+          "additional_benchmark_return": 6.98
+        },
+        {
+          "period": "5Y",
+          "fund_return": 5.42,
+          "benchmark_return": 5.8,
+          "additional_benchmark_return": 5.62
+        }
+      ],
+      "additional_info": {
+        "value_of_investment_data": [
+          {
+            "period": "SI",
+            "pplf_regular": 14826,
+            "pplf_direct": 14940,
+            "crisil_liquid_debt_ai_index": 15362,
+            "crisil_1_year_tbill_index": 15614
+          },
+          {
+            "period": "7D",
+            "pplf_regular": 10011,
+            "pplf_direct": 10011,
+            "crisil_liquid_debt_ai_index": 10011,
+            "crisil_1_year_tbill_index": 10012
+          },
+          {
+            "period": "15D",
+            "pplf_regular": 10023,
+            "pplf_direct": 10024,
+            "crisil_liquid_debt_ai_index": 10023,
+            "crisil_1_year_tbill_index": 10020
+          },
+          {
+            "period": "1M",
+            "pplf_regular": 10047,
+            "pplf_direct": 10048,
+            "crisil_liquid_debt_ai_index": 10047,
+            "crisil_1_year_tbill_index": 10039
+          },
+          {
+            "period": "3M",
+            "pplf_regular": 10139,
+            "pplf_direct": 10142,
+            "crisil_liquid_debt_ai_index": 10142,
+            "crisil_1_year_tbill_index": 10117
+          },
+          {
+            "period": "6M",
+            "pplf_regular": 10284,
+            "pplf_direct": 10290,
+            "crisil_liquid_debt_ai_index": 10290,
+            "crisil_1_year_tbill_index": 10227
+          },
+          {
+            "period": "1Y",
+            "pplf_regular": 10632,
+            "pplf_direct": 10642,
+            "crisil_liquid_debt_ai_index": 10650,
+            "crisil_1_year_tbill_index": 10641
+          },
+          {
+            "period": "3Y",
+            "pplf_regular": 12115,
+            "pplf_direct": 12151,
+            "crisil_liquid_debt_ai_index": 12237,
+            "crisil_1_year_tbill_index": 12245
+          },
+          {
+            "period": "5Y",
+            "pplf_regular": 13019,
+            "pplf_direct": 13084,
+            "crisil_liquid_debt_ai_index": 13256,
+            "crisil_1_year_tbill_index": 13146
+          }
+        ],
+        "factsheet_page_number": 16,
+        "prc_matrix": {
+          "Credit Risk": {
+            "Relatively Low (Class A)": {
+              "Relatively Low (Class I)": "A-I",
+              "Moderate (Class II)": null,
+              "Relatively High (Class III)": null
+            },
+            "Moderate (Class B)": {
+              "Relatively Low (Class I)": null,
+              "Moderate (Class II)": null,
+              "Relatively High (Class III)": null
+            },
+            "Relatively High (Class C)": {
+              "Relatively Low (Class I)": null,
+              "Moderate (Class II)": null,
+              "Relatively High (Class III)": null
+            }
+          },
+          "Interest Rate Risk": {
+            "Relatively Low (Class I)": {
+              "Relatively Low (Class A)": "A-I"
+            }
+          }
+        },
+        "prc_description": "A-I - A Scheme with Relatively Low Interest Rate Risk and Relatively Low Credit Risk"
+      },
+      "fund_managers": [
+        {
+          "name": "Mr. Tejas Soman",
+          "managing_since": "September 1, 2025",
+          "qualification": "Fund Manager – Debt"
+        },
+        {
+          "name": "Ms. Mansi Kariya"
+        },
+        {
+          "name": "Ms. Aishwarya Dhar",
+          "managing_since": "September 1, 2025",
+          "qualification": "Fund Manager – Debt"
+        }
+      ],
+      "investment_objective": "Income over the short term. Investments in Debt/money market instruments",
+      "risk_level": "Low to Moderate"
+    },
+    {
+      "fund_name": "PPFAS Equity Scheme (Generic)",
+      "investment_objective": "Long term capital appreciation; Investment predominantly in equity and equity related securities.",
+      "risk_level": "Very High",
+      "additional_info": {
+        "ideal_investor_profile": [
+          "Understand that equity investments are ideal investments only for the long-term",
+          "Prefer simple investment solutions rather than complex ones",
+          "Welcome, rather than fear, stock market volatility"
+        ],
+        "product_suitability_note": "Investors should consult their financial advisers if in doubt about whether the product is suitable for them."
+      }
+    }
+  ],
+  "amc_info": {
+    "amc_name": "PPFAS Asset Management Private Limited",
+    "factsheet_date": "November 2025",
+    "registered_office": "81/82, 8th Floor, Sakhar Bhavan, Ramnath Goenka Marg, 230, Nariman Point, Mumbai - 400 021, Maharashtra, India.",
+    "website": "www.amc.ppfas.com"
+  },
+  "pages_processed": 24,
+  "source_pdf": "ppfas-mf-factsheet-for-November-2025.pdf",
+  "amc_slug": "ppfas",
+  "extracted_at": "2026-02-17T13:56:07"
+}

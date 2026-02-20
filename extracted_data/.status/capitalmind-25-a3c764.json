@@ -1,0 +1,25 @@
+{
+  "status": "done",
+  "amc": "capitalmind-25-a3c764",
+  "file": "Capitalmind_Factsheet_Nov_25_a45053c764.pdf",
+  "schemes": 2,
+  "exitCode": 0,
+  "completedAt": "2026-02-19T11:33:49.566Z",
+  "logs": [
+    "============================================================\r\n  Gemini 2.5 Flash — Factsheet Extractor\r\n============================================================\r\n  Model:  gemini-2.5-flash\r\n  Source: D:\\OCR\\OCR\\Factsheets\r\n  Output: D:\\OCR\\OCR\\extracted_data\r\n\r\n  Processing 1 AMC(s)\r\n\r\n[1/1] capitalmind-25-a3c764\r\n  📄 PDF: Capitalmind_Factsheet_Nov_25_a45053c764.pdf\r\n  🖼 Converting PDF to images...\r\n  📸 14 pages\r\n    Page 1/14...",
+    "✅ (0 schemes)\r\n    Page 2/14...",
+    "✅ (2 schemes)\r\n    Page 3/14...",
+    "✅ (0 schemes)\r\n    Page 4/14...",
+    "✅ (0 schemes)\r\n    Page 5/14...",
+    "JSON parse error (attempt 1): Expecting ',' delimiter: line 182 column 5 (char 7233)\r\n✅ (0 schemes)\r\n    Page 6/14...",
+    "✅ (0 schemes)\r\n    Page 7/14...",
+    "✅ (0 schemes)\r\n    Page 8/14...",
+    "✅ (0 schemes)\r\n    Page 9/14...",
+    "✅ (0 schemes)\r\n    Page 10/14...",
+    "✅ (2 schemes)\r\n    Page 11/14...",
+    "✅ (1 scheme)\r\n    Page 12/14...",
+    "✅ (1 scheme)\r\n    Page 13/14...",
+    "✅ (0 schemes)\r\n    Page 14/14...",
+    "✅ (0 schemes)\r\n  🔗 Merging 14 pages...\r\n  💾 Saved: capitalmind-25-a3c764.json (2 schemes)\r\n\r\n============================================================\r\n  EXTRACTION SUMMARY\r\n============================================================\r\n  ✅ capitalmind-25-a3c764: OK (2 schemes)\r\n\r\n  Total schemes extracted: 2\r\n  Output directory: D:\\OCR\\OCR\\extracted_data"
+  ]
+}
