@@ -81,7 +81,7 @@ export default function AdminPage() {
         handleFile(e.dataTransfer.files[0]);
     };
 
-    // Upload and extract (background with polling)
+    // Upload PDF to S3
     const handleExtract = async () => {
         if (!file || !amcName.trim()) {
             setStatus({ type: "error", message: "Please select a PDF and enter an AMC name" });
@@ -90,7 +90,7 @@ export default function AdminPage() {
 
         const currentSlug = slugify(amcName);
         setExtracting(true);
-        setStatus({ type: "info", message: "Uploading PDF..." });
+        setStatus({ type: "info", message: "Uploading PDF to S3..." });
 
         try {
             const formData = new FormData();
@@ -106,29 +106,14 @@ export default function AdminPage() {
                 return;
             }
 
-            setStatus({ type: "info", message: "Extraction started... polling for updates" });
-
-            const pollInterval = setInterval(async () => {
-                try {
-                    const statusRes = await fetch(`/api/extract?amc=${currentSlug}`);
-                    const statusData = await statusRes.json();
-
-                    if (statusData.status === "extracting") {
-                        setStatus({ type: "info", message: `⏳ Extracting "${currentSlug}"...`, details: statusData.logs });
-                    } else if (statusData.status === "done") {
-                        clearInterval(pollInterval);
-                        setStatus({ type: "success", message: `✅ Extracted ${statusData.schemes} schemes from "${statusData.amc}"`, details: statusData.logs });
-                        setFile(null);
-                        setAmcName("");
-                        setExtracting(false);
-                        fetchAmcs();
-                    } else if (statusData.status === "failed") {
-                        clearInterval(pollInterval);
-                        setStatus({ type: "error", message: `❌ Extraction failed (exit code: ${statusData.exitCode})`, details: statusData.logs });
-                        setExtracting(false);
-                    }
-                } catch { }
-            }, 3000);
+            setStatus({
+                type: "success",
+                message: `✅ PDF uploaded to S3 for "${currentSlug}" (${data.sizeMB} MB). Run extraction locally with: python gemini_extractor.py --amc ${currentSlug}`,
+            });
+            setFile(null);
+            setAmcName("");
+            setExtracting(false);
+            fetchAmcs();
         } catch (e) {
             setStatus({ type: "error", message: e.message || "Network error" });
             setExtracting(false);
@@ -225,9 +210,9 @@ export default function AdminPage() {
                             {/* Extract Button */}
                             <button className={styles.extractBtn} onClick={handleExtract} disabled={extracting || !file || !amcName.trim()}>
                                 {extracting ? (
-                                    <><span className={styles.spinner} /> Extracting... (this may take a few minutes)</>
+                                    <><span className={styles.spinner} /> Uploading...</>
                                 ) : (
-                                    <>🚀 Upload & Extract</>
+                                    <>🚀 Upload to S3</>
                                 )}
                             </button>
 
