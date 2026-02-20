@@ -2,11 +2,8 @@
 const nextConfig = {
     output: "standalone",
     experimental: {
-        serverActions: true,
-    },
-    api: {
-        bodyParser: {
-            sizeLimit: "100mb",
+        serverActions: {
+            bodySizeLimit: "100mb",
         },
     },
 };
