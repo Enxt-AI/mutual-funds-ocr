@@ -33,6 +33,7 @@ export default function AdminPage() {
     // AMC state
     const [amcs, setAmcs] = useState([]);
     const [loading, setLoading] = useState(true);
+    const [deleting, setDeleting] = useState(null);
 
     // Upload state
     const [file, setFile] = useState(null);
@@ -55,6 +56,31 @@ export default function AdminPage() {
     }, []);
 
     useEffect(() => { fetchAmcs(); }, [fetchAmcs]);
+
+    // Delete an AMC
+    const handleDeleteAmc = async (slug) => {
+        if (!window.confirm(`Are you sure you want to delete "${slug}"? This will permanently remove it from S3 storage.`)) {
+            return;
+        }
+        setDeleting(slug);
+        try {
+            const res = await fetch("/api/amcs/delete", {
+                method: "DELETE",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ slug }),
+            });
+            const data = await res.json();
+            if (res.ok && data.success) {
+                setAmcs(prev => prev.filter(a => a.slug !== slug));
+            } else {
+                alert(data.error || "Failed to delete AMC");
+            }
+        } catch (e) {
+            alert("Network error: " + e.message);
+        } finally {
+            setDeleting(null);
+        }
+    };
 
     // Handle file drop/select
     const handleFile = (f) => {
@@ -261,7 +287,17 @@ export default function AdminPage() {
                                         <div key={amc.slug} className={styles.amcItem}>
                                             <div className={styles.amcItemHeader}>
                                                 <span className={styles.amcSlug}>{amc.slug}</span>
-                                                <span className={styles.amcSchemes}>{amc.schemes} schemes</span>
+                                                <div className={styles.amcHeaderRight}>
+                                                    <span className={styles.amcSchemes}>{amc.schemes} schemes</span>
+                                                    <button
+                                                        className={styles.deleteBtn}
+                                                        title={`Delete ${amc.slug}`}
+                                                        disabled={deleting === amc.slug}
+                                                        onClick={() => handleDeleteAmc(amc.slug)}
+                                                    >
+                                                        {deleting === amc.slug ? <span className={styles.deleteSpinner} /> : "🗑️"}
+                                                    </button>
+                                                </div>
                                             </div>
                                             {amc.name && <div className={styles.amcFullName}>{amc.name}</div>}
                                             <div className={styles.amcMeta}>

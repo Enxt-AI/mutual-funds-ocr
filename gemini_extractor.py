@@ -29,9 +29,9 @@ import fitz  # PyMuPDF
 
 # ─── Configuration ────────────────────────────────────────────────────
 BASE_DIR = Path(__file__).resolve().parent
-FACTSHEETS_DIR = BASE_DIR / "Factsheets"
-OUTPUT_DIR = BASE_DIR / "website" / "data"
-OUTPUT_DIR.mkdir(exist_ok=True)
+FACTSHEETS_DIR = Path(os.getenv("FACTSHEETS_PATH", str(BASE_DIR / "Factsheets")))
+OUTPUT_DIR = Path(os.getenv("OUTPUT_PATH", str(BASE_DIR / "website" / "data")))
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 API_KEY = os.getenv("GEMINI_API_KEY")
 if not API_KEY:
@@ -39,7 +39,7 @@ if not API_KEY:
     sys.exit(1)
 
 client = genai.Client(api_key=API_KEY)
-MODEL = "gemini-2.5-flash"
+MODEL = "gemini-2.5-pro"
 
 # Rendering settings
 DPI = 250  # High DPI for best extraction quality
@@ -378,7 +378,7 @@ def extract_page_with_gemini(uploaded_file) -> dict:
             if text is None:
                 # Empty response — likely rate limit or model overload, wait longer
                 wait = 30 * (attempt + 1)
-                print(f"      Empty response (attempt {attempt + 1}/{MAX_RETRIES}), waiting {wait}s...")
+                print(f"      Empty response (attempt {attempt + 1}/{MAX_RETRIES}), waiting {wait}s...", flush=True)
                 if attempt < MAX_RETRIES - 1:
                     time.sleep(wait)
                     continue
@@ -395,23 +395,23 @@ def extract_page_with_gemini(uploaded_file) -> dict:
             return json.loads(text)
 
         except json.JSONDecodeError as e:
-            print(f"      JSON parse error (attempt {attempt + 1}): {e}")
+            print(f"      JSON parse error (attempt {attempt + 1}): {e}", flush=True)
             # Try to repair truncated JSON before retrying
             repaired = _try_repair_json(text)
             if repaired is not None:
-                print(f"      ✅ Repaired truncated JSON successfully")
+                print(f"      ✅ Repaired truncated JSON successfully", flush=True)
                 return repaired
             if attempt < MAX_RETRIES - 1:
                 time.sleep(2)  # Short delay, then retry with fresh API call
             else:
-                print(f"      Returning raw text as fallback")
+                print(f"      Returning raw text as fallback", flush=True)
                 return {"raw_text": text, "parse_error": str(e)}
 
         except Exception as e:
             delay = BASE_DELAY * (2 ** attempt)
-            print(f"      API error (attempt {attempt + 1}): {e}")
+            print(f"      API error (attempt {attempt + 1}): {e}", flush=True)
             if attempt < MAX_RETRIES - 1:
-                print(f"      Retrying in {delay}s...")
+                print(f"      Retrying in {delay}s...", flush=True)
                 time.sleep(delay)
             else:
                 raise

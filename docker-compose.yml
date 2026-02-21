@@ -1,0 +1,78 @@
+# ─── Mutual Funds OCR – Docker Compose ──────────────────────────
+# Services:
+#   website   → Public-facing Next.js app       (port 3000)
+#   admin     → Admin panel Next.js app          (port 3001)
+#
+# Both containers include Python 3 so they can spawn
+# gemini_extractor.py when users upload factsheet PDFs.
+#
+# Usage:
+#   docker-compose up --build          # Build & start both services
+#   docker-compose up --build website  # Start website only
+#   docker-compose up --build admin    # Start admin only
+#
+# Env vars are loaded from the root .env file automatically.
+# ─────────────────────────────────────────────────────────────────
+
+services:
+  # ─── Website (Public) ───────────────────────────────────────
+  website:
+    build:
+      context: .
+      dockerfile: website/Dockerfile
+    container_name: mf-website
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - HOSTNAME=0.0.0.0
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+      - AWS_REGION=${AWS_REGION}
+      - S3_BUCKET_NAME=${S3_BUCKET_NAME}
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      # Docker paths for the extractor
+      - EXTRACTOR_SCRIPT=/extractor/gemini_extractor.py
+      - FACTSHEETS_PATH=/data/factsheets
+      - OUTPUT_PATH=/data/output
+    volumes:
+      - website-data:/data/output
+      - factsheets:/data/factsheets
+    restart: unless-stopped
+
+  # ─── Admin Panel (Private) ─────────────────────────────────
+  admin:
+    build:
+      context: .
+      dockerfile: admin/Dockerfile
+    container_name: mf-admin
+    ports:
+      - "3001:3001"
+    environment:
+      - NODE_ENV=production
+      - PORT=3001
+      - HOSTNAME=0.0.0.0
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+      - AWS_REGION=${AWS_REGION}
+      - S3_BUCKET_NAME=${S3_BUCKET_NAME}
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      # Docker paths for the extractor
+      - EXTRACTOR_SCRIPT=/extractor/gemini_extractor.py
+      - FACTSHEETS_PATH=/data/factsheets
+      - OUTPUT_PATH=/data/output
+      # Shared data dir for local file cleanup on AMC delete
+      - WEBSITE_DATA_DIR=/data/output
+    volumes:
+      - website-data:/data/output
+      - factsheets:/data/factsheets
+    depends_on:
+      - website
+    restart: unless-stopped
+
+volumes:
+  website-data:
+    driver: local
+  factsheets:
+    driver: local

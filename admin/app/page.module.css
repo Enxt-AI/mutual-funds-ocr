@@ -474,6 +474,48 @@
     border-radius: 10px;
 }
 
+.amcHeaderRight {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.deleteBtn {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(239, 68, 68, 0.1);
+    color: #ef4444;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    padding: 0;
+    line-height: 1;
+}
+
+.deleteBtn:hover:not(:disabled) {
+    background: rgba(239, 68, 68, 0.25);
+    transform: scale(1.1);
+}
+
+.deleteBtn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.deleteSpinner {
+    width: 14px;
+    height: 14px;
+    border: 2px solid rgba(239, 68, 68, 0.3);
+    border-top-color: #ef4444;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
 .amcFullName {
     font-size: 12px;
     color: var(--text-secondary);

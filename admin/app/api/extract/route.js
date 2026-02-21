@@ -5,10 +5,10 @@ import { spawn } from "child_process";
 
 export const dynamic = "force-dynamic";
 
-const PROJECT_ROOT = path.join(process.cwd(), "..");
-const FACTSHEETS_DIR = path.join(PROJECT_ROOT, "Factsheets");
-const EXTRACTOR_SCRIPT = path.join(PROJECT_ROOT, "gemini_extractor.py");
-const OUTPUT_DIR = path.join(PROJECT_ROOT, "website", "data");
+const PROJECT_ROOT = process.env.PROJECT_ROOT || path.join(process.cwd(), "..");
+const FACTSHEETS_DIR = process.env.FACTSHEETS_PATH || path.join(PROJECT_ROOT, "Factsheets");
+const EXTRACTOR_SCRIPT = process.env.EXTRACTOR_SCRIPT || path.join(PROJECT_ROOT, "gemini_extractor.py");
+const OUTPUT_DIR = process.env.OUTPUT_PATH || path.join(PROJECT_ROOT, "website", "data");
 
 // In-memory status tracking for active extractions
 const extractionStatus = new Map();
