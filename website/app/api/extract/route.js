@@ -5,12 +5,12 @@ import { spawn } from "child_process";
 
 export const dynamic = "force-dynamic";
 
-// Paths relative to project root (website/)
-const PROJECT_ROOT = path.join(process.cwd(), "..");
-const FACTSHEETS_DIR = path.join(PROJECT_ROOT, "factsheets");
-const EXTRACTED_DIR = path.join(PROJECT_ROOT, "extracted_data");
-const EXTRACTOR_SCRIPT = path.join(PROJECT_ROOT, "gemini_extractor.py");
-const STATUS_DIR = path.join(PROJECT_ROOT, "extracted_data", ".status");
+// Paths — env vars for Docker, fallback for local dev
+const PROJECT_ROOT = process.env.PROJECT_ROOT || path.join(process.cwd(), "..");
+const FACTSHEETS_DIR = process.env.FACTSHEETS_PATH || path.join(PROJECT_ROOT, "factsheets");
+const EXTRACTED_DIR = process.env.OUTPUT_PATH || path.join(PROJECT_ROOT, "extracted_data");
+const EXTRACTOR_SCRIPT = process.env.EXTRACTOR_SCRIPT || path.join(PROJECT_ROOT, "gemini_extractor.py");
+const STATUS_DIR = path.join(EXTRACTED_DIR, ".status");
 
 function getStatusFile(slug) {
     return path.join(STATUS_DIR, `${slug}.json`);

@@ -1,0 +1,4164 @@
+{
+  "schemes": [
+    {
+      "fund_name": "Taurus Ethical Fund",
+      "scheme_type": "An Open-ended equity scheme following an ethical theme.",
+      "investment_objective": "Long term capital appreciation. Investment in equity & equity related instruments of companies following an Ethical Set of Principles.",
+      "benchmark": "BSE 500 Shariah TRI",
+      "risk_level": "Very High",
+      "inception_date": "April 6, 2009",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "nav": 146.85,
+      "aum_crores": 365.51,
+      "monthly_avg_aum": 359.66,
+      "expense_ratio": 0.91,
+      "exit_load": "Upto any amount (Including SIP): 1% if exited on or before 365 days. Nil if exited after 365 days.",
+      "min_lumpsum": 500,
+      "min_additional": 1,
+      "fund_managers": [
+        {
+          "name": "Mr. Anuj Kapil",
+          "managing_since": "November 01, 2022",
+          "experience": "19 yrs"
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "Reliance Industries Ltd.",
+          "sector": "Oil, Gas & Consumable Fuels",
+          "weight_pct": 8.39
+        },
+        {
+          "name": "Tata Consultancy Services Ltd.",
+          "sector": "Information Technology",
+          "weight_pct": 6.33
+        },
+        {
+          "name": "Infosys Ltd.",
+          "sector": "Information Technology",
+          "weight_pct": 5.2
+        },
+        {
+          "name": "Coal India Ltd.",
+          "sector": "Oil, Gas & Consumable Fuels",
+          "weight_pct": 4.32
+        },
+        {
+          "name": "Bharat Petroleum Corporation Ltd.",
+          "sector": "Oil, Gas & Consumable Fuels",
+          "weight_pct": 3.06
+        },
+        {
+          "name": "Polycab India Ltd.",
+          "sector": "Capital Goods",
+          "weight_pct": 3.0
+        },
+        {
+          "name": "Colgate Palmolive (India) Ltd.",
+          "sector": "Fast Moving Consumer Goods",
+          "weight_pct": 2.76
+        },
+        {
+          "name": "Mahindra & Mahindra Ltd.",
+          "sector": "Automobile and Auto Components",
+          "weight_pct": 2.71
+        },
+        {
+          "name": "Hindustan Unilever Ltd.",
+          "sector": "Fast Moving Consumer Goods",
+          "weight_pct": 2.63
+        },
+        {
+          "name": "HCL Technologies Ltd.",
+          "sector": "Information Technology",
+          "weight_pct": 2.57
+        },
+        {
+          "name": "Laurus Labs Ltd.",
+          "sector": "Healthcare",
+          "weight_pct": 2.54
+        },
+        {
+          "name": "Oracle Financial Services Software Ltd.",
+          "sector": "Information Technology",
+          "weight_pct": 2.51
+        },
+        {
+          "name": "Tube Investment of India Ltd.",
+          "sector": "Automobile and Auto Components",
+          "weight_pct": 2.5
+        },
+        {
+          "name": "Hero MotoCorp Ltd.",
+          "sector": "Automobile and Auto Components",
+          "weight_pct": 2.44
+        },
+        {
+          "name": "Cipla Ltd.",
+          "sector": "Healthcare",
+          "weight_pct": 2.44
+        },
+        {
+          "name": "Petronet LNG Ltd.",
+          "sector": "Oil, Gas & Consumable Fuels",
+          "weight_pct": 2.18
+        },
+        {
+          "name": "Larsen & Toubro Ltd.",
+          "sector": "Construction",
+          "weight_pct": 2.14
+        },
+        {
+          "name": "Bharat Forge Ltd.",
+          "sector": "Automobile and Auto Components",
+          "weight_pct": 2.08
+        },
+        {
+          "name": "Glaxosmithkline Pharmaceuticals Ltd.",
+          "sector": "Healthcare",
+          "weight_pct": 1.95
+        },
+        {
+          "name": "Torrent Power Ltd.",
+          "sector": "Power",
+          "weight_pct": 1.93
+        },
+        {
+          "name": "Hindalco Industries Ltd.",
+          "sector": "Metals & Mining",
+          "weight_pct": 1.91
+        },
+        {
+          "name": "ACC Ltd.",
+          "sector": "Construction Materials",
+          "weight_pct": 1.84
+        },
+        {
+          "name": "Grasim Industries Ltd.",
+          "sector": "Construction Materials",
+          "weight_pct": 1.79
+        },
+        {
+          "name": "Balkrishna Industries Ltd.",
+          "sector": "Automobile and Auto Components",
+          "weight_pct": 1.77
+        },
+        {
+          "name": "Marico Ltd.",
+          "sector": "Fast Moving Consumer Goods",
+          "weight_pct": 1.63
+        },
+        {
+          "name": "Linde India Ltd.",
+          "sector": "Chemicals",
+          "weight_pct": 1.56
+        },
+        {
+          "name": "Persistent Systems Ltd.",
+          "sector": "Information Technology",
+          "weight_pct": 1.47
+        },
+        {
+          "name": "Castrol India Ltd.",
+          "sector": "Oil, Gas & Consumable Fuels",
+          "weight_pct": 1.46
+        },
+        {
+          "name": "Aurobindo Pharma Ltd.",
+          "sector": "Healthcare",
+          "weight_pct": 1.46
+        },
+        {
+          "name": "Samvardhana Motherson International Ltd.",
+          "sector": "Automobile and Auto Components",
+          "weight_pct": 1.41
+        },
+        {
+          "name": "Eveready Industries India Limited",
+          "sector": "Fast Moving Consumer Goods",
+          "weight_pct": 1.39
+        },
+        {
+          "name": "Computer Age Management Services Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 1.3
+        },
+        {
+          "name": "Tata Technologies Ltd.",
+          "sector": "Information Technology",
+          "weight_pct": 1.28
+        },
+        {
+          "name": "Astral Ltd.",
+          "sector": "Capital Goods",
+          "weight_pct": 1.27
+        },
+        {
+          "name": "Jupiter Life Line Hospitals Ltd.",
+          "sector": "Healthcare",
+          "weight_pct": 1.23
+        },
+        {
+          "name": "Endurance Technologies Ltd.",
+          "sector": "Automobile and Auto Components",
+          "weight_pct": 1.19
+        },
+        {
+          "name": "Mahanagar Gas Ltd.",
+          "sector": "Oil, Gas & Consumable Fuels",
+          "weight_pct": 1.18
+        },
+        {
+          "name": "Dr. Reddy's Laboratories Ltd.",
+          "sector": "Healthcare",
+          "weight_pct": 1.06
+        },
+        {
+          "name": "L&T Technology Services Ltd.",
+          "sector": "Information Technology",
+          "weight_pct": 1.06
+        },
+        {
+          "name": "Coforge Ltd.",
+          "sector": "Information Technology",
+          "weight_pct": 1.05
+        },
+        {
+          "name": "Voltamp Transformers Ltd.",
+          "sector": "Capital Goods",
+          "weight_pct": 1.01
+        },
+        {
+          "name": "Cera Sanitaryware Ltd.",
+          "sector": "Consumer Durables",
+          "weight_pct": 0.91
+        },
+        {
+          "name": "PI Industries Ltd",
+          "sector": "Chemicals",
+          "weight_pct": 0.81
+        },
+        {
+          "name": "Birlasoft Ltd.",
+          "sector": "Information Technology",
+          "weight_pct": 0.62
+        },
+        {
+          "name": "Jindal Steel Ltd.",
+          "sector": "Metals & Mining",
+          "weight_pct": 0.54
+        },
+        {
+          "name": "Dixon Technologies (India) Pvt Ltd.",
+          "sector": "Consumer Durables",
+          "weight_pct": 0.53
+        },
+        {
+          "name": "Time Technoplast Ltd.",
+          "sector": "Capital Goods",
+          "weight_pct": 0.5
+        },
+        {
+          "name": "Alembic Pharmaceuticals Ltd.",
+          "sector": "Healthcare",
+          "weight_pct": 0.49
+        },
+        {
+          "name": "Finolex Cables Ltd.",
+          "sector": "Capital Goods",
+          "weight_pct": 0.48
+        },
+        {
+          "name": "Godrej Consumer Products Ltd.",
+          "sector": "Fast Moving Consumer Goods",
+          "weight_pct": 0.48
+        },
+        {
+          "name": "Zydus Lifesciences Ltd.",
+          "sector": "Healthcare",
+          "weight_pct": 0.39
+        }
+      ],
+      "sector_allocation": {
+        "Information Technology": 22.08,
+        "Oil, Gas & Consumable Fuels": 20.59,
+        "Automobile and Auto Components": 14.09,
+        "Healthcare": 11.56,
+        "Fast Moving Consumer Goods": 8.89,
+        "Capital Goods": 6.25,
+        "Construction Materials": 3.63,
+        "Metals & Mining": 2.45,
+        "Chemicals": 2.37,
+        "Construction": 2.14,
+        "Power": 1.93,
+        "Consumer Durables": 1.43,
+        "Financial Services": 1.3
+      },
+      "asset_allocation": {
+        "Equity": 98.71,
+        "Cash & Equivalents": 1.29
+      },
+      "market_cap_allocation": {
+        "Large Cap": 47.36,
+        "Mid Cap": 38.32,
+        "Small Cap": 13.04
+      },
+      "risk_metrics": {
+        "beta": 0.96,
+        "sharpe_ratio": 0.52,
+        "standard_deviation": 14.3
+      },
+      "portfolio_turnover": 0.92
+    },
+    {
+      "fund_name": "TAURUS FLEXI CAP FUND DIRECT",
+      "benchmark": "BSE 500 TRI"
+    },
+    {
+      "fund_name": "TAURUS ETHICAL FUND DIRECT",
+      "benchmark": "BSE 500 SHARIAH TRI"
+    },
+    {
+      "fund_name": "TAURUS MIDCAP FUND DIRECT – NIFTY MIDCAP 150 TRI",
+      "benchmark": "Nifty Midcap 150 TRI",
+      "plan_type": "Direct"
+    },
+    {
+      "fund_name": "TAURUS ELSS TAX SAVER FUND DIRECT – BSE 500 TRI",
+      "benchmark": "BSE 500 TRI",
+      "plan_type": "Direct"
+    },
+    {
+      "fund_name": "TAURUS LARGE CAP FUND DIRECT – BSE 100 TRI",
+      "benchmark": "BSE 100 TRI",
+      "plan_type": "Direct"
+    },
+    {
+      "fund_name": "TAURUS BANKING & FINANCIAL SERVICES FUND DIRECT – BSE BANKEX TRI",
+      "benchmark": "BSE Bankex TRI",
+      "plan_type": "Direct"
+    },
+    {
+      "fund_name": "TAURUS INFRASTRUCTURE FUND DIRECT – NIFTY INFRASTRUCTURE TRI",
+      "benchmark": "Nifty Infrastructure TRI",
+      "plan_type": "Direct"
+    },
+    {
+      "fund_name": "TAURUS NIFTY 50 INDEX FUND DIRECT – NIFTY 50 TRI",
+      "benchmark": "Nifty 50 TRI",
+      "plan_type": "Direct"
+    },
+    {
+      "fund_name": "Taurus Flexi Cap Fund",
+      "scheme_type": "An open-ended dynamic equity scheme investing across large cap, mid cap, small cap stocks",
+      "investment_objective": "Long term capital appreciation. Investment in equity & equity related instruments - flexi-cap in nature.",
+      "benchmark": "BSE 500 TRI",
+      "risk_level": "Very High",
+      "fund_type": "Open-ended",
+      "category": "Flexi Cap Fund",
+      "inception_date": "January 29, 1994",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "fund_standard_name": "Taurus Starshare (Multi Cap) Fund",
+      "nav": 239.0,
+      "aum_crores": 365.35,
+      "monthly_avg_aum": 364.97,
+      "expense_ratio": 2.56,
+      "exit_load": "1% if exited on or before 365 days. Nil if exited after 365 days",
+      "min_lumpsum": 500,
+      "min_additional": 1,
+      "sip_available": true,
+      "fund_managers": [
+        {
+          "name": "Mr. Anuj Kapil",
+          "managing_since": "June 13, 2023",
+          "experience": "19 yrs"
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "HDFC Bank Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 9.84
+        },
+        {
+          "name": "ITC Ltd.",
+          "sector": "Fast Moving Consumer Goods",
+          "weight_pct": 7.7
+        },
+        {
+          "name": "Mahindra & Mahindra Ltd.",
+          "sector": "Automobile and Auto Components",
+          "weight_pct": 5.05
+        },
+        {
+          "name": "ICICI Bank Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 4.42
+        },
+        {
+          "name": "Axis Bank Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 3.95
+        },
+        {
+          "name": "Bharti Airtel Ltd.",
+          "sector": "Telecommunication",
+          "weight_pct": 3.89
+        },
+        {
+          "name": "Narayana Hrudayalaya Ltd.",
+          "sector": "Healthcare",
+          "weight_pct": 3.44
+        },
+        {
+          "name": "State Bank of India",
+          "sector": "Financial Services",
+          "weight_pct": 3.19
+        },
+        {
+          "name": "Kotak Mahindra Bank Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 2.88
+        },
+        {
+          "name": "Reliance Industries Ltd.",
+          "sector": "Oil, Gas & Consumable Fuels",
+          "weight_pct": 2.83
+        },
+        {
+          "name": "Divi's Laboratories Ltd.",
+          "sector": "Healthcare",
+          "weight_pct": 2.71
+        },
+        {
+          "name": "Coal India Ltd.",
+          "sector": "Oil, Gas & Consumable Fuels",
+          "weight_pct": 2.64
+        },
+        {
+          "name": "Samhi Hotels Ltd.",
+          "sector": "Consumer Services",
+          "weight_pct": 2.62
+        },
+        {
+          "name": "Power Grid Corporation of India Ltd.",
+          "sector": "Power",
+          "weight_pct": 2.42
+        },
+        {
+          "name": "AU Small Finance Bank Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 2.25
+        },
+        {
+          "name": "Bajaj Holdings & Investment Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 2.17
+        },
+        {
+          "name": "Thangamayil Jewellery Ltd.",
+          "sector": "Consumer Durables",
+          "weight_pct": 2.14
+        },
+        {
+          "name": "Ambika Cotton Mills Ltd.",
+          "sector": "Textiles",
+          "weight_pct": 2.05
+        },
+        {
+          "name": "Regaal Resources Ltd.",
+          "sector": "Fast Moving Consumer Goods",
+          "weight_pct": 1.94
+        },
+        {
+          "name": "Transrail Lighting Ltd.",
+          "sector": "Capital Goods",
+          "weight_pct": 1.9
+        },
+        {
+          "name": "Deepak Fertilizers & Petrochemicals Corporation Ltd.",
+          "sector": "Chemicals",
+          "weight_pct": 1.83
+        },
+        {
+          "name": "Power Finance Corporation Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 1.81
+        },
+        {
+          "name": "Maruti Suzuki India Ltd.",
+          "sector": "Automobile and Auto Components",
+          "weight_pct": 1.73
+        },
+        {
+          "name": "KEI Industries Ltd.",
+          "sector": "Capital Goods",
+          "weight_pct": 1.65
+        },
+        {
+          "name": "Punjab National Bank",
+          "sector": "Financial Services",
+          "weight_pct": 1.58
+        },
+        {
+          "name": "HCL Technologies Ltd.",
+          "sector": "Information Technology",
+          "weight_pct": 1.51
+        },
+        {
+          "name": "Vikran Engineering Ltd.",
+          "sector": "Construction",
+          "weight_pct": 1.5
+        },
+        {
+          "name": "Equiyitas Small Finance Bank Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 1.5
+        },
+        {
+          "name": "Computer Age Management Services Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 1.49
+        },
+        {
+          "name": "Aarti Pharmalabs Ltd",
+          "sector": "Healthcare",
+          "weight_pct": 1.38
+        },
+        {
+          "name": "Voltamp Transformers Ltd.",
+          "sector": "Capital Goods",
+          "weight_pct": 1.33
+        },
+        {
+          "name": "Grasim Industries Ltd.",
+          "sector": "Construction Materials",
+          "weight_pct": 1.24
+        },
+        {
+          "name": "Fedbank Financial Services Limited",
+          "sector": "Financial Services",
+          "weight_pct": 1.21
+        },
+        {
+          "name": "Kalpataru Ltd.",
+          "sector": "Realty",
+          "weight_pct": 1.13
+        },
+        {
+          "name": "Garden Reach Shipbuilders & Engineers Ltd.",
+          "sector": "Capital Goods",
+          "weight_pct": 1.09
+        },
+        {
+          "name": "Cipla Ltd.",
+          "sector": "Healthcare",
+          "weight_pct": 0.95
+        },
+        {
+          "name": "Infosys Ltd.",
+          "sector": "Information Technology",
+          "weight_pct": 0.91
+        },
+        {
+          "name": "Vodafone Idea Ltd.",
+          "sector": "Telecommunication",
+          "weight_pct": 0.9
+        },
+        {
+          "name": "Colgate Palmolive (India) Ltd.",
+          "sector": "Fast Moving Consumer Goods",
+          "weight_pct": 0.87
+        },
+        {
+          "name": "Indian Energy Exchange Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 0.86
+        },
+        {
+          "name": "Linde India Ltd.",
+          "sector": "Chemicals",
+          "weight_pct": 0.85
+        },
+        {
+          "name": "S.J.S. Enterprises Ltd.",
+          "sector": "Automobile and Auto Components",
+          "weight_pct": 0.84
+        },
+        {
+          "name": "Steel Authority of India Ltd.",
+          "sector": "Metals & Mining",
+          "weight_pct": 0.53
+        },
+        {
+          "name": "Chemtech Industrial Valves Ltd.",
+          "sector": "Capital Goods",
+          "weight_pct": 0.28
+        },
+        {
+          "name": "Vikram Solar Ltd.",
+          "sector": "Capital Goods",
+          "weight_pct": 0.02
+        },
+        {
+          "name": "Wellwin Industry Ltd.",
+          "sector": "#N/A",
+          "weight_pct": 0.0
+        },
+        {
+          "name": "Cash & Cash Equivalent",
+          "sector": "Cash & Cash Equivalent",
+          "weight_pct": 1.0
+        }
+      ],
+      "sector_allocation": {
+        "Financial Services": 37.14,
+        "Fast Moving Consumer Goods": 10.5,
+        "Healthcare": 8.48,
+        "Automobile and Auto Components": 7.62,
+        "Capital Goods": 6.26,
+        "Oil, Gas & Consumable Fuels": 5.47,
+        "Telecommunication": 4.79,
+        "Chemicals": 2.68,
+        "Consumer Services": 2.62,
+        "Information Technology": 2.43,
+        "Power": 2.42,
+        "Consumer Durables": 2.14,
+        "Textiles": 2.05,
+        "Construction": 1.5,
+        "Construction Materials": 1.24,
+        "Realty": 1.13,
+        "Metals & Mining": 0.53
+      },
+      "asset_allocation": {
+        "Equity": 99.0,
+        "Cash & Equivalents": 1.0
+      },
+      "market_cap_allocation": {
+        "Large Cap": 63.41,
+        "Mid Cap": 10.48,
+        "Small Cap": 25.1,
+        "Cash": 1.0
+      },
+      "risk_metrics": {
+        "beta": 0.98,
+        "sharpe_ratio": 0.6,
+        "standard_deviation": 13.64
+      },
+      "dividend_history": [
+        {
+          "date": "February 2020",
+          "regular_plan_dividend": 0.5,
+          "direct_plan_dividend": 0.5
+        },
+        {
+          "date": "January 2020",
+          "regular_plan_dividend": 0.5,
+          "direct_plan_dividend": 0.5
+        },
+        {
+          "date": "December 2019",
+          "regular_plan_dividend": 0.5,
+          "direct_plan_dividend": 0.5
+        },
+        {
+          "date": "February 2020",
+          "regular_plan_dividend": 0.5,
+          "direct_plan_dividend": 0.5
+        },
+        {
+          "date": "January 2020",
+          "regular_plan_dividend": 0.5,
+          "direct_plan_dividend": 0.5
+        },
+        {
+          "date": "December 2019",
+          "regular_plan_dividend": 0.5,
+          "direct_plan_dividend": 0.5
+        },
+        {
+          "date": "February 2020",
+          "regular_plan_dividend": 0.5,
+          "direct_plan_dividend": 0.5
+        },
+        {
+          "date": "January 2020",
+          "regular_plan_dividend": 0.5,
+          "direct_plan_dividend": 0.5
+        },
+        {
+          "date": "December 2019",
+          "regular_plan_dividend": 0.5,
+          "direct_plan_dividend": 0.5
+        },
+        {
+          "date": "February 2020",
+          "regular_plan_dividend": 0.5,
+          "direct_plan_dividend": 0.5
+        },
+        {
+          "date": "January 2020",
+          "regular_plan_dividend": 0.5,
+          "direct_plan_dividend": 0.5
+        },
+        {
+          "date": "December 2019",
+          "regular_plan_dividend": 0.5,
+          "direct_plan_dividend": 0.5
+        }
+      ],
+      "portfolio_turnover": 0.85
+    },
+    {
+      "fund_name": "Taurus Large Cap Fund",
+      "scheme_type": "An open ended equity scheme predominately investing in large cap stocks.",
+      "investment_objective": "Long term capital appreciation. Investment in equity & equity related instruments - focus on large cap stocks.",
+      "benchmark": "BSE 100 TRI",
+      "risk_level": "Very High",
+      "fund_standard_name": "Taurus Largecap Equity Fund",
+      "category": "Large Cap Fund",
+      "inception_date": "1995-02-28",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "nav": 173.13,
+      "aum_crores": 52.3,
+      "monthly_avg_aum": 51.85,
+      "expense_ratio": 2.41,
+      "exit_load": "1% if exited on or before 365 days. Nil, if exited after 365 days",
+      "min_lumpsum": 500,
+      "min_additional": 1,
+      "min_sip": 500,
+      "fund_managers": [
+        {
+          "name": "Mr. Anuj Kapil",
+          "managing_since": "2023-06-13",
+          "experience": "19 yrs"
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "HDFC Bank Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 8.3
+        },
+        {
+          "name": "ITC Ltd.",
+          "sector": "Fast Moving Consumer Goods",
+          "weight_pct": 8.01
+        },
+        {
+          "name": "State Bank of India",
+          "sector": "Financial Services",
+          "weight_pct": 6.15
+        },
+        {
+          "name": "ICICI Bank Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 5.96
+        },
+        {
+          "name": "Reliance Industries Ltd.",
+          "sector": "Oil, Gas & Consumable Fuels",
+          "weight_pct": 5.5
+        },
+        {
+          "name": "Bharti Airtel Ltd.",
+          "sector": "Telecommunication",
+          "weight_pct": 4.88
+        },
+        {
+          "name": "Divi's Laboratories Ltd.",
+          "sector": "Healthcare",
+          "weight_pct": 4.69
+        },
+        {
+          "name": "Mahindra & Mahindra Ltd.",
+          "sector": "Automobile and Auto Components",
+          "weight_pct": 4.08
+        },
+        {
+          "name": "Mazagon Dock Shipbuilders Ltd.",
+          "sector": "Capital Goods",
+          "weight_pct": 3.79
+        },
+        {
+          "name": "Axis Bank Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 3.45
+        },
+        {
+          "name": "TATA Capital Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 3.23
+        },
+        {
+          "name": "Power Grid Corporation of India Ltd.",
+          "sector": "Power",
+          "weight_pct": 3.0
+        },
+        {
+          "name": "Oil & Natural Gas Corporation Ltd.",
+          "sector": "Oil, Gas & Consumable Fuels",
+          "weight_pct": 2.85
+        },
+        {
+          "name": "Cipla Ltd.",
+          "sector": "Healthcare",
+          "weight_pct": 2.77
+        },
+        {
+          "name": "HCL Technologies Ltd.",
+          "sector": "Information Technology",
+          "weight_pct": 2.45
+        },
+        {
+          "name": "Bajaj Finance Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 2.4
+        },
+        {
+          "name": "Coal India Ltd.",
+          "sector": "Oil, Gas & Consumable Fuels",
+          "weight_pct": 2.31
+        },
+        {
+          "name": "Indian Oil Corporation Ltd.",
+          "sector": "Oil, Gas & Consumable Fuels",
+          "weight_pct": 2.31
+        },
+        {
+          "name": "Bajaj Finserv Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 2.24
+        },
+        {
+          "name": "Laurus Labs Ltd.",
+          "sector": "Healthcare",
+          "weight_pct": 2.08
+        },
+        {
+          "name": "Samvardhana Motherson International Ltd.",
+          "sector": "Automobile and Auto Components",
+          "weight_pct": 1.92
+        },
+        {
+          "name": "Grasim Industries Ltd.",
+          "sector": "Construction Materials",
+          "weight_pct": 1.8
+        },
+        {
+          "name": "Infosys Ltd.",
+          "sector": "Information Technology",
+          "weight_pct": 1.74
+        },
+        {
+          "name": "Power Finance Corporation Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 1.56
+        },
+        {
+          "name": "Larsen & Toubro Ltd.",
+          "sector": "Construction",
+          "weight_pct": 1.45
+        },
+        {
+          "name": "Bank of Baroda",
+          "sector": "Financial Services",
+          "weight_pct": 1.39
+        },
+        {
+          "name": "Maruti Suzuki India Ltd.",
+          "sector": "Automobile and Auto Components",
+          "weight_pct": 1.35
+        },
+        {
+          "name": "Tata Consultancy Services Ltd.",
+          "sector": "Information Technology",
+          "weight_pct": 1.26
+        },
+        {
+          "name": "Vikram Solar Ltd.",
+          "sector": "Capital Goods",
+          "weight_pct": 1.14
+        },
+        {
+          "name": "Sun Pharmaceutical Industries Ltd.",
+          "sector": "Healthcare",
+          "weight_pct": 1.08
+        },
+        {
+          "name": "Titan Company Ltd.",
+          "sector": "Consumer Durables",
+          "weight_pct": 1.04
+        },
+        {
+          "name": "Steel Authority of India Ltd.",
+          "sector": "Metals & Mining",
+          "weight_pct": 0.99
+        },
+        {
+          "name": "General Insurance Corporation Of India",
+          "sector": "Financial Services",
+          "weight_pct": 0.87
+        }
+      ],
+      "sector_allocation": {
+        "Financial Services": 35.53,
+        "Oil, Gas & Consumable Fuels": 12.96,
+        "Healthcare": 10.62,
+        "Fast Moving Consumer Goods": 8.01,
+        "Automobile and Auto Components": 7.35,
+        "Information Technology": 5.45,
+        "Capital Goods": 4.93,
+        "Telecommunication": 4.88,
+        "Power": 3.0,
+        "Construction Materials": 1.8,
+        "Construction": 1.45,
+        "Consumer Durables": 1.04,
+        "Metals & Mining": 0.99
+      },
+      "asset_allocation": {
+        "Equity": 98.02,
+        "Cash & Equivalents": 1.98
+      },
+      "market_cap_allocation": {
+        "Large Cap": 92.94,
+        "Mid Cap": 3.94,
+        "Small Cap": 1.14
+      },
+      "risk_metrics": {
+        "beta": 1.04,
+        "sharpe_ratio": 0.61,
+        "standard_deviation": 13.77
+      },
+      "dividend_history": [
+        {
+          "month_year": "January 2018",
+          "regular_plan_dividend_per_unit": 3.0,
+          "direct_plan_dividend_per_unit": 3.0
+        },
+        {
+          "month_year": "November 2017",
+          "regular_plan_dividend_per_unit": 12.0,
+          "direct_plan_dividend_per_unit": 12.0
+        },
+        {
+          "month_year": "July 2017",
+          "regular_plan_dividend_per_unit": 5.35,
+          "direct_plan_dividend_per_unit": 5.35
+        }
+      ],
+      "portfolio_turnover": 0.93
+    },
+    {
+      "fund_name": "Taurus Mid Cap Fund",
+      "scheme_type": "An Open ended equity scheme predominantly investing in mid-cap stocks.",
+      "investment_objective": "Long term capital appreciation. Investment in equity & equity related instruments predominantly investing in mid cap stocks.",
+      "benchmark": "Nifty Midcap 150 TRI",
+      "risk_level": "Very High",
+      "fund_standard_name": "Taurus Discovery (Midcap) Fund",
+      "category": "Mid Cap Fund",
+      "inception_date": "September 5, 1994",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "nav": 129.81,
+      "aum_crores": 131.84,
+      "monthly_avg_aum": 132.63,
+      "expense_ratio": 2.07,
+      "exit_load": "Upto any amount (Including SIP): \n• 1% if exited on or before 365 days. \n• Nil, if exited after 365 days",
+      "min_lumpsum": 500,
+      "fund_managers": [
+        {
+          "name": "Mr. Anuj Kapil",
+          "managing_since": "November 15, 2023",
+          "experience": "19 yrs"
+        },
+        {
+          "name": "Mr. Hemanshu Srivastava",
+          "managing_since": "July 18, 2024",
+          "experience": "12 yrs"
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "Coforge Ltd.",
+          "sector": "Information Technology",
+          "weight_pct": 4.79
+        },
+        {
+          "name": "Linde India Ltd.",
+          "sector": "Chemicals",
+          "weight_pct": 4.59
+        },
+        {
+          "name": "Pace Digitek Ltd.",
+          "sector": "Telecommunication",
+          "weight_pct": 4.44
+        },
+        {
+          "name": "Aurobindo Pharma Ltd.",
+          "sector": "Healthcare",
+          "weight_pct": 3.81
+        },
+        {
+          "name": "Petronet LNG Ltd.",
+          "sector": "Oil, Gas & Consumable Fuels",
+          "weight_pct": 3.61
+        },
+        {
+          "name": "Bank Of India",
+          "sector": "Financial Services",
+          "weight_pct": 3.58
+        },
+        {
+          "name": "The Federal Bank Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 3.58
+        },
+        {
+          "name": "Hindustan Petroleum Corporation Ltd.",
+          "sector": "Oil, Gas & Consumable Fuels",
+          "weight_pct": 3.58
+        },
+        {
+          "name": "PI Industries Ltd",
+          "sector": "Chemicals",
+          "weight_pct": 3.48
+        },
+        {
+          "name": "LIC Housing Finance Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 3.48
+        },
+        {
+          "name": "Container Corporation of India Ltd.",
+          "sector": "Services",
+          "weight_pct": 3.39
+        },
+        {
+          "name": "Regaal Resources Ltd.",
+          "sector": "Fast Moving Consumer Goods",
+          "weight_pct": 3.18
+        },
+        {
+          "name": "Deepak Nitrite Ltd.",
+          "sector": "Chemicals",
+          "weight_pct": 3.07
+        },
+        {
+          "name": "GMR Airports Ltd.",
+          "sector": "Services",
+          "weight_pct": 2.88
+        },
+        {
+          "name": "Swiggy Ltd.",
+          "sector": "Consumer Services",
+          "weight_pct": 2.87
+        },
+        {
+          "name": "Vodafone Idea Ltd.",
+          "sector": "Telecommunication",
+          "weight_pct": 2.74
+        },
+        {
+          "name": "Persistent Systems Ltd.",
+          "sector": "Information Technology",
+          "weight_pct": 2.73
+        },
+        {
+          "name": "Exide Industries Ltd.",
+          "sector": "Automobile and Auto Components",
+          "weight_pct": 2.36
+        },
+        {
+          "name": "Abbott India Ltd.",
+          "sector": "Healthcare",
+          "weight_pct": 2.28
+        },
+        {
+          "name": "Kalpataru Ltd.",
+          "sector": "Realty",
+          "weight_pct": 2.27
+        },
+        {
+          "name": "Indian Energy Exchange Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 2.22
+        },
+        {
+          "name": "Bharat Heavy Electricals Ltd.",
+          "sector": "Capital Goods",
+          "weight_pct": 2.22
+        },
+        {
+          "name": "Astral Ltd.",
+          "sector": "Capital Goods",
+          "weight_pct": 2.18
+        },
+        {
+          "name": "Inox Wind Ltd.",
+          "sector": "Capital Goods",
+          "weight_pct": 2.16
+        },
+        {
+          "name": "Samhi Hotels Ltd.",
+          "sector": "Consumer Services",
+          "weight_pct": 2.01
+        },
+        {
+          "name": "Colgate Palmolive (India) Ltd.",
+          "sector": "Fast Moving Consumer Goods",
+          "weight_pct": 1.94
+        },
+        {
+          "name": "The Indian Hotels Company Ltd.",
+          "sector": "Consumer Services",
+          "weight_pct": 1.69
+        },
+        {
+          "name": "REC Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 1.66
+        },
+        {
+          "name": "AU Small Finance Bank Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 1.61
+        },
+        {
+          "name": "ACC Ltd.",
+          "sector": "Construction Materials",
+          "weight_pct": 1.58
+        },
+        {
+          "name": "Glaxosmithkline Pharmaceuticals Ltd.",
+          "sector": "Healthcare",
+          "weight_pct": 1.48
+        },
+        {
+          "name": "METRO BRANDS LTD.",
+          "sector": "Consumer Durables",
+          "weight_pct": 1.44
+        },
+        {
+          "name": "HDFC Asset Management Company Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 1.41
+        },
+        {
+          "name": "Balkrishna Industries Ltd.",
+          "sector": "Automobile and Auto Components",
+          "weight_pct": 1.33
+        },
+        {
+          "name": "Schaeffler India Ltd.",
+          "sector": "Automobile and Auto Components",
+          "weight_pct": 1.29
+        },
+        {
+          "name": "Endurance Technologies Ltd.",
+          "sector": "Automobile and Auto Components",
+          "weight_pct": 1.25
+        },
+        {
+          "name": "Torrent Power Ltd.",
+          "sector": "Power",
+          "weight_pct": 0.96
+        },
+        {
+          "name": "Chemtech Industrial Valves Ltd.",
+          "sector": "Capital Goods",
+          "weight_pct": 0.72
+        },
+        {
+          "name": "ITC Ltd.",
+          "sector": "Fast Moving Consumer Goods",
+          "weight_pct": 0.43
+        },
+        {
+          "name": "Bharat Dynamics Ltd.",
+          "sector": "Capital Goods",
+          "weight_pct": 0.4
+        }
+      ],
+      "sector_allocation": {
+        "Financial Services": 17.54,
+        "Chemicals": 11.14,
+        "Capital Goods": 7.67,
+        "Healthcare": 7.57,
+        "Information Technology": 7.51,
+        "Oil, Gas & Consumable Fuels": 7.18,
+        "Telecommunication": 7.17,
+        "Consumer Services": 6.57,
+        "Services": 6.27,
+        "Automobile and Auto Components": 6.22,
+        "Fast Moving Consumer Goods": 5.55,
+        "Realty": 2.27,
+        "Construction Materials": 1.58,
+        "Consumer Durables": 1.44,
+        "Power": 0.96
+      },
+      "asset_allocation": {
+        "Equity": 96.67,
+        "Cash & Equivalents": 3.33
+      },
+      "market_cap_allocation": {
+        "Large Cap": 3.78,
+        "Mid Cap": 71.57,
+        "Small Cap": 21.31,
+        "Cash": 3.33
+      },
+      "risk_metrics": {
+        "beta": 0.99,
+        "sharpe_ratio": 0.69,
+        "standard_deviation": 16.42
+      },
+      "dividend_history": [
+        {
+          "date": "December 2016",
+          "regular_plan_dividend_per_unit": 3.5,
+          "direct_plan_dividend_per_unit": 3.5
+        }
+      ],
+      "portfolio_turnover": 0.83,
+      "portfolio_stats": {
+        "total_stocks": 40,
+        "top_10_holdings_pct": 38.92,
+        "top_5_holdings_pct": 21.22,
+        "top_3_sectors_pct": 36.35
+      }
+    },
+    {
+      "fund_name": "Taurus Nifty 50 Index Fund",
+      "scheme_type": "An open ended scheme replicating / tracking Nifty 50 index.",
+      "investment_objective": "Long term capital appreciation. Investment in equity securities by replicating Nifty 50.",
+      "benchmark": "Nifty 50 TRI",
+      "risk_level": "Very High",
+      "category": "Index Fund",
+      "inception_date": "June 19, 2010",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "nav": 53.12,
+      "aum_crores": 6.61,
+      "monthly_avg_aum": 6.44,
+      "expense_ratio": 0.8,
+      "exit_load": "1% if exited on or before 365 days, Nil, if exited after 365 days",
+      "min_lumpsum": 500,
+      "min_additional": 1,
+      "fund_managers": [
+        {
+          "name": "Mr. Anuj Kapil",
+          "managing_since": "w.e.f August 07, 2023",
+          "experience": "19 yrs"
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "HDFC Bank Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 12.63
+        },
+        {
+          "name": "Reliance Industries Ltd.",
+          "sector": "Oil, Gas & Consumable Fuels",
+          "weight_pct": 8.71
+        },
+        {
+          "name": "ICICI Bank Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 8.13
+        },
+        {
+          "name": "Bharti Airtel Ltd.",
+          "sector": "Telecommunication",
+          "weight_pct": 4.7
+        },
+        {
+          "name": "Infosys Ltd.",
+          "sector": "Information Technology",
+          "weight_pct": 4.61
+        },
+        {
+          "name": "Larsen & Toubro Ltd.",
+          "sector": "Construction",
+          "weight_pct": 3.92
+        },
+        {
+          "name": "State Bank of India",
+          "sector": "Financial Services",
+          "weight_pct": 3.33
+        },
+        {
+          "name": "ITC Ltd.",
+          "sector": "Fast Moving Consumer Goods",
+          "weight_pct": 3.2
+        },
+        {
+          "name": "Axis Bank Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 3.01
+        },
+        {
+          "name": "Mahindra & Mahindra Ltd.",
+          "sector": "Automobile and Auto Components",
+          "weight_pct": 2.73
+        },
+        {
+          "name": "Tata Consultancy Services Ltd.",
+          "sector": "Information Technology",
+          "weight_pct": 2.63
+        },
+        {
+          "name": "Kotak Mahindra Bank Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 2.56
+        },
+        {
+          "name": "Bajaj Finance Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 2.27
+        },
+        {
+          "name": "Hindustan Unilever Ltd.",
+          "sector": "Fast Moving Consumer Goods",
+          "weight_pct": 1.8
+        },
+        {
+          "name": "Maruti Suzuki India Ltd.",
+          "sector": "Automobile and Auto Components",
+          "weight_pct": 1.71
+        },
+        {
+          "name": "Sun Pharmaceutical Industries Ltd.",
+          "sector": "Healthcare",
+          "weight_pct": 1.58
+        },
+        {
+          "name": "HCL Technologies Ltd.",
+          "sector": "Information Technology",
+          "weight_pct": 1.41
+        },
+        {
+          "name": "Titan Company Ltd.",
+          "sector": "Consumer Durables",
+          "weight_pct": 1.32
+        },
+        {
+          "name": "NTPC Ltd.",
+          "sector": "Power",
+          "weight_pct": 1.27
+        },
+        {
+          "name": "Bharat Electronics Ltd.",
+          "sector": "Capital Goods",
+          "weight_pct": 1.21
+        },
+        {
+          "name": "Tata Steel Ltd.",
+          "sector": "Metals & Mining",
+          "weight_pct": 1.14
+        },
+        {
+          "name": "Ultratech Cement Ltd.",
+          "sector": "Construction Materials",
+          "weight_pct": 1.12
+        },
+        {
+          "name": "Asian Paints Ltd.",
+          "sector": "Consumer Durables",
+          "weight_pct": 1.07
+        },
+        {
+          "name": "Interglobe Aviation Ltd.",
+          "sector": "Services",
+          "weight_pct": 1.06
+        },
+        {
+          "name": "Power Grid Corporation of India Ltd.",
+          "sector": "Power",
+          "weight_pct": 1.0
+        },
+        {
+          "name": "Bajaj Finserv Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 0.98
+        },
+        {
+          "name": "Shriram Finance Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 0.98
+        },
+        {
+          "name": "Hindalco Industries Ltd.",
+          "sector": "Metals & Mining",
+          "weight_pct": 0.96
+        },
+        {
+          "name": "Adani Port and Special Economic Zone Ltd.",
+          "sector": "Services",
+          "weight_pct": 0.92
+        },
+        {
+          "name": "JSW Steel Ltd.",
+          "sector": "Metals & Mining",
+          "weight_pct": 0.89
+        },
+        {
+          "name": "Grasim Industries Ltd.",
+          "sector": "Construction Materials",
+          "weight_pct": 0.86
+        },
+        {
+          "name": "Bajaj Auto Ltd.",
+          "sector": "Automobile and Auto Components",
+          "weight_pct": 0.82
+        },
+        {
+          "name": "Jio Financial Services Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 0.82
+        },
+        {
+          "name": "Eicher Motors Ltd.",
+          "sector": "Automobile and Auto Components",
+          "weight_pct": 0.8
+        },
+        {
+          "name": "Tech Mahindra Ltd.",
+          "sector": "Information Technology",
+          "weight_pct": 0.79
+        },
+        {
+          "name": "Oil & Natural Gas Corporation Ltd.",
+          "sector": "Oil, Gas & Consumable Fuels",
+          "weight_pct": 0.78
+        },
+        {
+          "name": "Trent Ltd.",
+          "sector": "Consumer Services",
+          "weight_pct": 0.77
+        },
+        {
+          "name": "Nestle India Ltd.",
+          "sector": "Fast Moving Consumer Goods",
+          "weight_pct": 0.74
+        },
+        {
+          "name": "SBI Life Insurance Company Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 0.72
+        },
+        {
+          "name": "Max Healthcare Institute Ltd.",
+          "sector": "Healthcare",
+          "weight_pct": 0.71
+        },
+        {
+          "name": "Cipla Ltd.",
+          "sector": "Healthcare",
+          "weight_pct": 0.71
+        },
+        {
+          "name": "Coal India Ltd.",
+          "sector": "Oil, Gas & Consumable Fuels",
+          "weight_pct": 0.7
+        },
+        {
+          "name": "HDFC Life Insurance Co. Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 0.67
+        },
+        {
+          "name": "Dr. Reddy's Laboratories Ltd.",
+          "sector": "Healthcare",
+          "weight_pct": 0.63
+        },
+        {
+          "name": "Tata Consumer Products Ltd.",
+          "sector": "Fast Moving Consumer Goods",
+          "weight_pct": 0.63
+        },
+        {
+          "name": "Tata Motors Passenger Vehicles Ltd.",
+          "sector": "Automobile and Auto Components",
+          "weight_pct": 0.61
+        },
+        {
+          "name": "Apollo Hospitals Enterprise Ltd.",
+          "sector": "Healthcare",
+          "weight_pct": 0.61
+        },
+        {
+          "name": "Wipro Ltd.",
+          "sector": "Information Technology",
+          "weight_pct": 0.58
+        },
+        {
+          "name": "Adani Enterprises Ltd.",
+          "sector": "Metals & Mining",
+          "weight_pct": 0.49
+        },
+        {
+          "name": "Adani Enterprises Ltd._Rights",
+          "sector": "Metals & Mining",
+          "weight_pct": 0.01
+        }
+      ],
+      "sector_allocation": {
+        "Financial Services": 36.11,
+        "Oil, Gas & Consumable Fuels": 10.18,
+        "Information Technology": 10.03,
+        "Automobile and Auto Components": 6.68,
+        "Fast Moving Consumer Goods": 6.36,
+        "Telecommunication": 4.7,
+        "Healthcare": 4.24,
+        "Construction": 3.92,
+        "Metals & Mining": 3.49,
+        "Consumer Services": 2.49,
+        "Consumer Durables": 2.39,
+        "Power": 2.27,
+        "Construction Materials": 1.98,
+        "Services": 1.97,
+        "Capital Goods": 1.21
+      },
+      "asset_allocation": {
+        "Equity": 98.02,
+        "Cash & Equivalents": 1.98
+      },
+      "risk_metrics": {
+        "sharpe_ratio": 0.53,
+        "standard_deviation": 11.56,
+        "beta": 0.99,
+        "tracking_error": 0.23
+      },
+      "dividend_history": [
+        {
+          "date": "March 2018",
+          "regular_plan_dividend_per_unit": 6.7,
+          "direct_plan_dividend_per_unit": 1.0
+        }
+      ],
+      "portfolio_turnover": "0.12"
+    },
+    {
+      "fund_name": "Taurus ELSS Tax Saver Fund",
+      "scheme_type": "An open ended equity linked saving scheme with a statutory lock in of 3 years and tax benefit",
+      "investment_objective": "Long term capital appreciation. Investment in equity & equity related instruments.",
+      "benchmark": "BSE 500 TRI",
+      "risk_level": "Very High",
+      "lock_in_period": "3 years",
+      "fund_standard_name": "TAURUS ELSS TAX SAVER FUND (earlier known as Taurus Tax Shield)",
+      "fund_type": "Open-ended",
+      "category": "ELSS",
+      "inception_date": "March 31, 1996",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "nav": 204.45,
+      "aum_crores": 77.6,
+      "monthly_avg_aum": 78.29,
+      "expense_ratio": 1.79,
+      "exit_load": "NA (lock - in period of 3 years)",
+      "min_sip": 500,
+      "min_lumpsum": 500,
+      "min_additional": 500,
+      "fund_managers": [
+        {
+          "name": "Mr. Anuj Kapil",
+          "managing_since": "w.e.f August 07, 2023",
+          "experience": "19 yrs"
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "HDFC Bank Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 9.93
+        },
+        {
+          "name": "ITC Ltd.",
+          "sector": "Fast Moving Consumer Goods",
+          "weight_pct": 7.71
+        },
+        {
+          "name": "Bajaj Holdings & Investment Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 7.7
+        },
+        {
+          "name": "ICICI Bank Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 7.48
+        },
+        {
+          "name": "Narayana Hrudayalaya Ltd.",
+          "sector": "Healthcare",
+          "weight_pct": 5.84
+        },
+        {
+          "name": "Pace Digitek Ltd.",
+          "sector": "Telecommunication",
+          "weight_pct": 5.02
+        },
+        {
+          "name": "Indian Energy Exchange Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 4.85
+        },
+        {
+          "name": "Axis Bank Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 4.73
+        },
+        {
+          "name": "Power Grid Corporation of India Ltd.",
+          "sector": "Power",
+          "weight_pct": 4.0
+        },
+        {
+          "name": "Mahindra & Mahindra Ltd.",
+          "sector": "Automobile and Auto Components",
+          "weight_pct": 3.55
+        },
+        {
+          "name": "Coal India Ltd.",
+          "sector": "Oil, Gas & Consumable Fuels",
+          "weight_pct": 3.15
+        },
+        {
+          "name": "Zydus Wellness Ltd.",
+          "sector": "Fast Moving Consumer Goods",
+          "weight_pct": 3.05
+        },
+        {
+          "name": "HCL Technologies Ltd.",
+          "sector": "Information Technology",
+          "weight_pct": 2.98
+        },
+        {
+          "name": "Cipla Ltd.",
+          "sector": "Healthcare",
+          "weight_pct": 2.72
+        },
+        {
+          "name": "Bharti Airtel Ltd.",
+          "sector": "Telecommunication",
+          "weight_pct": 2.4
+        },
+        {
+          "name": "Voltamp Transformers Ltd.",
+          "sector": "Capital Goods",
+          "weight_pct": 2.39
+        },
+        {
+          "name": "Infosys Ltd.",
+          "sector": "Information Technology",
+          "weight_pct": 2.13
+        },
+        {
+          "name": "Oracle Financial Services Software Ltd.",
+          "sector": "Information Technology",
+          "weight_pct": 2.0
+        },
+        {
+          "name": "Hindustan Petroleum Corporation Ltd.",
+          "sector": "Oil, Gas & Consumable Fuels",
+          "weight_pct": 1.89
+        },
+        {
+          "name": "Mazagon Dock Shipbuilders Ltd.",
+          "sector": "Capital Goods",
+          "weight_pct": 1.88
+        },
+        {
+          "name": "Power Finance Corporation Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 1.63
+        },
+        {
+          "name": "Divi's Laboratories Ltd.",
+          "sector": "Healthcare",
+          "weight_pct": 1.61
+        },
+        {
+          "name": "Samvardhana Motherson International Ltd.",
+          "sector": "Automobile and Auto Components",
+          "weight_pct": 1.61
+        },
+        {
+          "name": "Vikram Solar Ltd.",
+          "sector": "Capital Goods",
+          "weight_pct": 1.53
+        },
+        {
+          "name": "Grasim Industries Ltd.",
+          "sector": "Construction Materials",
+          "weight_pct": 1.41
+        },
+        {
+          "name": "ACC Ltd.",
+          "sector": "Construction Materials",
+          "weight_pct": 1.36
+        },
+        {
+          "name": "Life Insurance Corporation Of India",
+          "sector": "Financial Services",
+          "weight_pct": 0.92
+        },
+        {
+          "name": "NMDC Ltd.",
+          "sector": "Metals & Mining",
+          "weight_pct": 0.91
+        },
+        {
+          "name": "Chemtech Industrial Valves Ltd.",
+          "sector": "Capital Goods",
+          "weight_pct": 0.61
+        },
+        {
+          "name": "Tech Mahindra Ltd.",
+          "sector": "Information Technology",
+          "weight_pct": 0.54
+        },
+        {
+          "name": "Globus Spirits Ltd.",
+          "sector": "Fast Moving Consumer Goods",
+          "weight_pct": 0.24
+        }
+      ],
+      "sector_allocation": {
+        "Financial Services": 37.24,
+        "Fast Moving Consumer Goods": 11.0,
+        "Healthcare": 10.17,
+        "Information Technology": 7.64,
+        "Telecommunication": 7.43,
+        "Capital Goods": 6.41,
+        "Automobile and Auto Components": 5.16,
+        "Oil, Gas & Consumable Fuels": 5.03,
+        "Power": 4.0,
+        "Construction Materials": 2.77,
+        "Metals & Mining": 0.91
+      },
+      "asset_allocation": {
+        "Equity": 97.75,
+        "Cash & Equivalents": 2.25
+      },
+      "market_cap_allocation": {
+        "Large Cap": 68.07,
+        "Mid Cap": 11.99,
+        "Small Cap": 17.69,
+        "Cash": 2.25
+      },
+      "turnover_ratio": 0.82,
+      "portfolio_concentration": {
+        "total_stocks": 31,
+        "top_10_stocks_pct": 60.81,
+        "top_5_stocks_pct": 38.66,
+        "top_3_sectors_pct": 58.41
+      },
+      "risk_metrics": {
+        "beta": 0.78,
+        "sharpe_ratio": 0.88,
+        "standard_deviation": 11.45
+      }
+    },
+    {
+      "fund_name": "Taurus Infrastructure Fund",
+      "scheme_type": "An Open ended equity scheme investing in Infrastructure sector.",
+      "investment_objective": "Long term capital appreciation. Investment in equity & equity related instruments of companies from Infrastructure Sector.",
+      "benchmark": "Nifty Infrastructure Index TRI",
+      "risk_level": "Very High",
+      "category": "Infrastructure Fund",
+      "inception_date": "March 5, 2007",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "nav": 73.08,
+      "aum_crores": 9.31,
+      "monthly_avg_aum": 9.51,
+      "expense_ratio": 1.91,
+      "exit_load": "1% if exited on or before 365 days, Nil, if exited after 365 days",
+      "min_sip": 500,
+      "min_lumpsum": 500,
+      "min_additional": 1,
+      "fund_managers": [
+        {
+          "name": "Mr. Anuj Kapil",
+          "managing_since": "November 15, 2023",
+          "experience": "19 yrs"
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "Bharti Airtel Ltd.",
+          "sector": "Telecommunication",
+          "weight_pct": 11.05
+        },
+        {
+          "name": "Reliance Industries Ltd.",
+          "sector": "Oil, Gas & Consumable Fuels",
+          "weight_pct": 8.08
+        },
+        {
+          "name": "Larsen & Toubro Ltd.",
+          "sector": "Construction",
+          "weight_pct": 7.51
+        },
+        {
+          "name": "Power Grid Corporation of India Ltd.",
+          "sector": "Power",
+          "weight_pct": 4.89
+        },
+        {
+          "name": "AFCONS Infrastructure Ltd.",
+          "sector": "Construction",
+          "weight_pct": 3.73
+        },
+        {
+          "name": "Steel Authority of India Ltd.",
+          "sector": "Metals & Mining",
+          "weight_pct": 3.55
+        },
+        {
+          "name": "Ultratech Cement Ltd.",
+          "sector": "Construction Materials",
+          "weight_pct": 3.49
+        },
+        {
+          "name": "NTPC Ltd.",
+          "sector": "Power",
+          "weight_pct": 3.08
+        },
+        {
+          "name": "Grasim Industries Ltd.",
+          "sector": "Construction Materials",
+          "weight_pct": 2.98
+        },
+        {
+          "name": "Interglobe Aviation Ltd.",
+          "sector": "Services",
+          "weight_pct": 2.97
+        },
+        {
+          "name": "Oil & Natural Gas Corporation Ltd.",
+          "sector": "Oil, Gas & Consumable Fuels",
+          "weight_pct": 2.95
+        },
+        {
+          "name": "Vodafone Idea Ltd.",
+          "sector": "Telecommunication",
+          "weight_pct": 2.73
+        },
+        {
+          "name": "Bharat Petroleum Corporation Ltd.",
+          "sector": "Oil, Gas & Consumable Fuels",
+          "weight_pct": 2.66
+        },
+        {
+          "name": "BEML Ltd.",
+          "sector": "Capital Goods",
+          "weight_pct": 2.61
+        },
+        {
+          "name": "Le Travenues Technology Ltd.",
+          "sector": "Consumer Services",
+          "weight_pct": 2.6
+        },
+        {
+          "name": "Salzer Electronics Ltd.",
+          "sector": "Capital Goods",
+          "weight_pct": 2.56
+        },
+        {
+          "name": "Indian Oil Corporation Ltd.",
+          "sector": "Oil, Gas & Consumable Fuels",
+          "weight_pct": 2.54
+        },
+        {
+          "name": "Chemtech Industrial Valves Ltd.",
+          "sector": "Capital Goods",
+          "weight_pct": 2.54
+        },
+        {
+          "name": "Apeejay Surrendra Park Hotels Ltd.",
+          "sector": "Consumer Services",
+          "weight_pct": 2.51
+        },
+        {
+          "name": "Kalpataru Ltd.",
+          "sector": "Realty",
+          "weight_pct": 2.4
+        },
+        {
+          "name": "Hindustan Petroleum Corporation Ltd.",
+          "sector": "Oil, Gas & Consumable Fuels",
+          "weight_pct": 2.31
+        },
+        {
+          "name": "Mazagon Dock Shipbuilders Ltd.",
+          "sector": "Capital Goods",
+          "weight_pct": 2.29
+        },
+        {
+          "name": "Samhi Hotels Ltd.",
+          "sector": "Consumer Services",
+          "weight_pct": 2.19
+        },
+        {
+          "name": "Ahluwalia Contracts (India) Ltd.",
+          "sector": "Construction",
+          "weight_pct": 2.14
+        },
+        {
+          "name": "Rites Ltd.",
+          "sector": "Construction",
+          "weight_pct": 2.14
+        },
+        {
+          "name": "Mahindra & Mahindra Ltd.",
+          "sector": "Automobile and Auto Components",
+          "weight_pct": 2.11
+        },
+        {
+          "name": "Voltamp Transformers Ltd.",
+          "sector": "Capital Goods",
+          "weight_pct": 1.95
+        },
+        {
+          "name": "Indian Energy Exchange Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 1.71
+        },
+        {
+          "name": "Finolex Cables Ltd.",
+          "sector": "Capital Goods",
+          "weight_pct": 1.53
+        },
+        {
+          "name": "Nesco Ltd.",
+          "sector": "Services",
+          "weight_pct": 1.12
+        },
+        {
+          "name": "Samvardhana Motherson International Ltd.",
+          "sector": "Automobile and Auto Components",
+          "weight_pct": 1.06
+        },
+        {
+          "name": "DLF Ltd.",
+          "sector": "Realty",
+          "weight_pct": 0.63
+        },
+        {
+          "name": "Vikram Solar Ltd.",
+          "sector": "Capital Goods",
+          "weight_pct": 0.36
+        }
+      ],
+      "sector_allocation": {
+        "Oil, Gas & Consumable Fuels": 18.53,
+        "Construction": 15.52,
+        "Capital Goods": 13.84,
+        "Telecommunication": 13.78,
+        "Power": 7.97,
+        "Consumer Services": 7.3,
+        "Construction Materials": 6.47,
+        "Services": 4.09,
+        "Metals & Mining": 3.55,
+        "Automobile and Auto Components": 3.17,
+        "Realty": 3.03,
+        "Financial Services": 1.71
+      },
+      "asset_allocation": {
+        "Equity": 98.96,
+        "Cash & Equivalents": 1.04
+      },
+      "market_cap_allocation": {
+        "Large Cap": 60.89,
+        "Small Cap": 29.48,
+        "Mid Cap": 8.59,
+        "Cash": 1.04
+      },
+      "risk_metrics": {
+        "sharpe_ratio": 0.81,
+        "beta": 0.92,
+        "standard_deviation": 16.3
+      },
+      "portfolio_turnover": 0.68
+    },
+    {
+      "fund_name": "Taurus Banking & Financial Services Fund",
+      "scheme_type": "An open ended equity scheme investing in stocks belonging to Banking & Financial Services (BFSI) sector.",
+      "investment_objective": "Long term capital appreciation. Investment in equity & equity related instruments of companies from Banking & Financial sector.",
+      "benchmark": "BSE Bankex TRI",
+      "risk_level": "Very High"
+    },
+    {
+      "fund_name": "TAURUS BANKING & FINANCIAL SERVICES FUND - Regular Plan",
+      "scheme_type": "An open ended equity scheme investing in stocks belonging to Banking & Financial Services (BFSI) sector.",
+      "investment_objective": "The primary objective of the Scheme is to generate capital appreciation through a portfolio that invests predominantly in equity and equity related instruments of Banking, Financial and Non Banking Financial Companies that form a part of the BFSI Sector.",
+      "benchmark": "BSE Bankex TRI",
+      "inception_date": "2012-05-22",
+      "plan_type": "Regular",
+      "nav": [
+        {
+          "option": "IDCW",
+          "value": 49.99
+        },
+        {
+          "option": "Growth",
+          "value": 55.84
+        }
+      ],
+      "aum_crores": 12.17,
+      "monthly_avg_aum": 12.07,
+      "expense_ratio": 2.43,
+      "exit_load": "Upto any amount (Including SIP): 1% if exited on or before 365 days, Nil, if exited after 365 days. Switch: Exit load applicability for switch transaction will be as per the Switch Out (From scheme).",
+      "min_lumpsum": 500,
+      "min_additional": 1,
+      "fund_managers": [
+        {
+          "name": "Mr. Anuj Kapil",
+          "managing_since": "2023-06-13",
+          "experience": "19 yrs"
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "HDFC Bank Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 19.5
+        },
+        {
+          "name": "ICICI Bank Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 19.32
+        },
+        {
+          "name": "State Bank of India",
+          "sector": "Financial Services",
+          "weight_pct": 12.37
+        },
+        {
+          "name": "Axis Bank Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 11.92
+        },
+        {
+          "name": "Kotak Mahindra Bank Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 9.23
+        },
+        {
+          "name": "Power Finance Corporation Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 5.2
+        },
+        {
+          "name": "Bajaj Finance Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 3.82
+        },
+        {
+          "name": "Bajaj Holdings & Investment Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 2.83
+        },
+        {
+          "name": "LIC Housing Finance Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 2.27
+        },
+        {
+          "name": "The Karnataka Bank Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 1.88
+        },
+        {
+          "name": "General Insurance Corporation Of India",
+          "sector": "Financial Services",
+          "weight_pct": 1.81
+        },
+        {
+          "name": "Indian Energy Exchange Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 1.46
+        },
+        {
+          "name": "Bank of Baroda",
+          "sector": "Financial Services",
+          "weight_pct": 1.39
+        },
+        {
+          "name": "DAM Capital Advisors Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 1.17
+        },
+        {
+          "name": "Life Insurance Corporation Of India",
+          "sector": "Financial Services",
+          "weight_pct": 1.02
+        },
+        {
+          "name": "AU Small Finance Bank Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 0.84
+        },
+        {
+          "name": "Canara Bank",
+          "sector": "Financial Services",
+          "weight_pct": 0.53
+        }
+      ],
+      "sector_allocation": {
+        "Financial Services": 96.57
+      },
+      "asset_allocation": {
+        "Equity": 96.57,
+        "Cash & Equivalents": 3.43
+      },
+      "market_cap_allocation": {
+        "Large Cap": 86.61,
+        "Mid Cap": 5.45,
+        "Small Cap": 4.51,
+        "Cash": 3.43
+      },
+      "risk_metrics": {
+        "sharpe_ratio": 0.61,
+        "beta": 0.93,
+        "standard_deviation": 12.54
+      },
+      "portfolio_turnover": "0.53",
+      "sip_returns": [
+        {
+          "period": "SI",
+          "total_invested": 1620000,
+          "market_value": 4223010,
+          "return_pct": 13.18,
+          "benchmark_return_pct": 16.98,
+          "additional_benchmark_name": "Nifty 50 TRI",
+          "additional_benchmark_return_pct": 14.49
+        },
+        {
+          "period": "7Y",
+          "total_invested": 840000,
+          "market_value": 1375510,
+          "return_pct": 14.38,
+          "benchmark_return_pct": 12.78,
+          "additional_benchmark_name": "Nifty 50 TRI",
+          "additional_benchmark_return_pct": 15.68
+        },
+        {
+          "period": "5Y",
+          "total_invested": 600000,
+          "market_value": 843450,
+          "return_pct": 13.62,
+          "benchmark_return_pct": 15.45,
+          "additional_benchmark_name": "Nifty 50 TRI",
+          "additional_benchmark_return_pct": 14.04
+        },
+        {
+          "period": "3Y",
+          "total_invested": 360000,
+          "market_value": 437550,
+          "return_pct": 13.14,
+          "benchmark_return_pct": 11.69,
+          "additional_benchmark_name": "Nifty 50 TRI",
+          "additional_benchmark_return_pct": 14.17
+        },
+        {
+          "period": "1Y",
+          "total_invested": 120000,
+          "market_value": 130070,
+          "return_pct": 16.16,
+          "benchmark_return_pct": 13.91,
+          "additional_benchmark_name": "Nifty 50 TRI",
+          "additional_benchmark_return_pct": 17.23
+        }
+      ]
+    },
+    {
+      "fund_name": "TAURUS BANKING & FINANCIAL SERVICES FUND - Direct Plan",
+      "scheme_type": "An open ended equity scheme investing in stocks belonging to Banking & Financial Services (BFSI) sector.",
+      "investment_objective": "The primary objective of the Scheme is to generate capital appreciation through a portfolio that invests predominantly in equity and equity related instruments of Banking, Financial and Non Banking Financial Companies that form a part of the BFSI Sector.",
+      "benchmark": "BSE Bankex TRI",
+      "inception_date": "2012-05-22",
+      "plan_type": "Direct",
+      "nav": [
+        {
+          "option": "IDCW",
+          "value": 61.88
+        },
+        {
+          "option": "Growth",
+          "value": 62.6
+        }
+      ],
+      "aum_crores": 12.17,
+      "monthly_avg_aum": 12.07,
+      "expense_ratio": 1.57,
+      "exit_load": "Upto any amount (Including SIP): 1% if exited on or before 365 days, Nil, if exited after 365 days. Switch: Exit load applicability for switch transaction will be as per the Switch Out (From scheme).",
+      "min_lumpsum": 500,
+      "min_additional": 1,
+      "fund_managers": [
+        {
+          "name": "Mr. Anuj Kapil",
+          "managing_since": "2023-06-13",
+          "experience": "19 yrs"
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "HDFC Bank Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 19.5
+        },
+        {
+          "name": "ICICI Bank Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 19.32
+        },
+        {
+          "name": "State Bank of India",
+          "sector": "Financial Services",
+          "weight_pct": 12.37
+        },
+        {
+          "name": "Axis Bank Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 11.92
+        },
+        {
+          "name": "Kotak Mahindra Bank Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 9.23
+        },
+        {
+          "name": "Power Finance Corporation Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 5.2
+        },
+        {
+          "name": "Bajaj Finance Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 3.82
+        },
+        {
+          "name": "Bajaj Holdings & Investment Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 2.83
+        },
+        {
+          "name": "LIC Housing Finance Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 2.27
+        },
+        {
+          "name": "The Karnataka Bank Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 1.88
+        },
+        {
+          "name": "General Insurance Corporation Of India",
+          "sector": "Financial Services",
+          "weight_pct": 1.81
+        },
+        {
+          "name": "Indian Energy Exchange Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 1.46
+        },
+        {
+          "name": "Bank of Baroda",
+          "sector": "Financial Services",
+          "weight_pct": 1.39
+        },
+        {
+          "name": "DAM Capital Advisors Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 1.17
+        },
+        {
+          "name": "Life Insurance Corporation Of India",
+          "sector": "Financial Services",
+          "weight_pct": 1.02
+        },
+        {
+          "name": "AU Small Finance Bank Ltd.",
+          "sector": "Financial Services",
+          "weight_pct": 0.84
+        },
+        {
+          "name": "Canara Bank",
+          "sector": "Financial Services",
+          "weight_pct": 0.53
+        }
+      ],
+      "sector_allocation": {
+        "Financial Services": 96.57
+      },
+      "asset_allocation": {
+        "Equity": 96.57,
+        "Cash & Equivalents": 3.43
+      },
+      "market_cap_allocation": {
+        "Large Cap": 86.61,
+        "Mid Cap": 5.45,
+        "Small Cap": 4.51,
+        "Cash": 3.43
+      },
+      "portfolio_turnover": "0.53",
+      "sip_returns": [
+        {
+          "period": "SI",
+          "total_invested": 1550000,
+          "market_value": 4118890,
+          "return_pct": 14.27,
+          "benchmark_return_pct": 16.98,
+          "additional_benchmark_name": "Nifty 50 TRI",
+          "additional_benchmark_return_pct": 14.49
+        },
+        {
+          "period": "7Y",
+          "total_invested": 840000,
+          "market_value": 1444480,
+          "return_pct": 15.24,
+          "benchmark_return_pct": 12.78,
+          "additional_benchmark_name": "Nifty 50 TRI",
+          "additional_benchmark_return_pct": 15.68
+        },
+        {
+          "period": "5Y",
+          "total_invested": 600000,
+          "market_value": 862070,
+          "return_pct": 14.51,
+          "benchmark_return_pct": 15.45,
+          "additional_benchmark_name": "Nifty 50 TRI",
+          "additional_benchmark_return_pct": 14.04
+        },
+        {
+          "period": "3Y",
+          "total_invested": 360000,
+          "market_value": 443210,
+          "return_pct": 14.04,
+          "benchmark_return_pct": 11.69,
+          "additional_benchmark_name": "Nifty 50 TRI",
+          "additional_benchmark_return_pct": 14.17
+        },
+        {
+          "period": "1Y",
+          "total_invested": 120000,
+          "market_value": 130680,
+          "return_pct": 17.15,
+          "benchmark_return_pct": 13.91,
+          "additional_benchmark_name": "Nifty 50 TRI",
+          "additional_benchmark_return_pct": 17.23
+        }
+      ]
+    },
+    {
+      "fund_name": "Taurus Flexi Cap Fund - Regular Plan Growth Option",
+      "category": "Flexi Cap Fund",
+      "benchmark": "BSE 500 TRI (Benchmark)",
+      "plan_type": "Regular",
+      "option": "Growth",
+      "fund_managers": [
+        {
+          "name": "Mr. Anuj Kapil",
+          "qualification": "MBA & PGDBM",
+          "experience": "19 years"
+        },
+        {
+          "name": "Mr. Hemanshu Srivastava",
+          "qualification": "MBA, B.E. in Biotechnology"
+        }
+      ],
+      "returns": [
+        {
+          "period": "1Y",
+          "fund_return": 0.45,
+          "benchmark_return": 7.09,
+          "additional_benchmark_return": 10.93,
+          "current_value_of_10000": {
+            "fund": 10044.61,
+            "benchmark": 10709.24,
+            "additional_benchmark": 11093.38
+          }
+        },
+        {
+          "period": "3Y",
+          "fund_return": 13.88,
+          "benchmark_return": 15.64,
+          "additional_benchmark_return": 13.47,
+          "current_value_of_10000": {
+            "fund": 14772.32,
+            "benchmark": 15465.13,
+            "additional_benchmark": 14608.33
+          }
+        },
+        {
+          "period": "5Y",
+          "fund_return": 15.49,
+          "benchmark_return": 18.6,
+          "additional_benchmark_return": 16.46,
+          "current_value_of_10000": {
+            "fund": 20565.9,
+            "benchmark": 23461.2,
+            "additional_benchmark": 21427.69
+          }
+        },
+        {
+          "period": "SI",
+          "fund_return": 10.34,
+          "benchmark_return": null,
+          "additional_benchmark_return": 11.39,
+          "current_value_of_10000": {
+            "fund": 229680.0,
+            "benchmark": null,
+            "additional_benchmark": 310242.13
+          }
+        }
+      ]
+    },
+    {
+      "fund_name": "Taurus Flexi Cap Fund - Direct Plan Growth Option",
+      "category": "Flexi Cap Fund",
+      "benchmark": "BSE 500 TRI (Benchmark)",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "fund_managers": [
+        {
+          "name": "Mr. Anuj Kapil",
+          "qualification": "MBA & PGDBM",
+          "experience": "19 years"
+        },
+        {
+          "name": "Mr. Hemanshu Srivastava",
+          "qualification": "MBA, B.E. in Biotechnology"
+        }
+      ],
+      "returns": [
+        {
+          "period": "1Y",
+          "fund_return": 0.51,
+          "benchmark_return": 7.09,
+          "additional_benchmark_return": 10.93,
+          "current_value_of_10000": {
+            "fund": 10051.31,
+            "benchmark": 10709.24,
+            "additional_benchmark": 11093.38
+          }
+        },
+        {
+          "period": "3Y",
+          "fund_return": 13.94,
+          "benchmark_return": 15.64,
+          "additional_benchmark_return": 13.47,
+          "current_value_of_10000": {
+            "fund": 14797.85,
+            "benchmark": 15465.13,
+            "additional_benchmark": 14608.33
+          }
+        },
+        {
+          "period": "5Y",
+          "fund_return": 15.55,
+          "benchmark_return": 18.6,
+          "additional_benchmark_return": 16.46,
+          "current_value_of_10000": {
+            "fund": 20619.45,
+            "benchmark": 23461.2,
+            "additional_benchmark": 21427.69
+          }
+        },
+        {
+          "period": "SI",
+          "fund_return": 10.67,
+          "benchmark_return": 14.52,
+          "additional_benchmark_return": 13.48,
+          "current_value_of_10000": {
+            "fund": 37332.08,
+            "benchmark": 56355.28,
+            "additional_benchmark": 51190.08
+          }
+        }
+      ]
+    },
+    {
+      "fund_name": "Taurus Large Cap Fund - Regular Plan Growth Option",
+      "category": "Large Cap Fund",
+      "benchmark": "BSE 100 TRI (Benchmark)",
+      "plan_type": "Regular",
+      "option": "Growth",
+      "fund_managers": [
+        {
+          "name": "Mr. Anuj Kapil",
+          "qualification": "MBA & PGDBM",
+          "experience": "19 years"
+        },
+        {
+          "name": "Mr. Hemanshu Srivastava",
+          "qualification": "MBA, B.E. in Biotechnology"
+        }
+      ],
+      "returns": [
+        {
+          "period": "1Y",
+          "fund_return": 5.49,
+          "benchmark_return": 9.51,
+          "additional_benchmark_return": 10.93,
+          "current_value_of_10000": {
+            "fund": 10548.93,
+            "benchmark": 10951.41,
+            "additional_benchmark": 11093.38
+          }
+        },
+        {
+          "period": "3Y",
+          "fund_return": 14.26,
+          "benchmark_return": 14.71,
+          "additional_benchmark_return": 13.47,
+          "current_value_of_10000": {
+            "fund": 14924.26,
+            "benchmark": 15092.64,
+            "additional_benchmark": 14608.33
+          }
+        },
+        {
+          "period": "5Y",
+          "fund_return": 15.53,
+          "benchmark_return": 17.51,
+          "additional_benchmark_return": 16.46,
+          "current_value_of_10000": {
+            "fund": 20596.98,
+            "benchmark": 22402.41,
+            "additional_benchmark": 21427.69
+          }
+        },
+        {
+          "period": "SI",
+          "fund_return": 10.84,
+          "benchmark_return": null,
+          "additional_benchmark_return": 12.63,
+          "current_value_of_10000": {
+            "fund": 163540.0,
+            "benchmark": 357437.69,
+            "additional_benchmark": 388721.22
+          }
+        },
+        {
+          "period": "7Y",
+          "fund_return": 14.55,
+          "benchmark_return": 15.22
+        }
+      ],
+      "sip_returns": [
+        {
+          "period": "SI",
+          "total_invested": 3600000,
+          "market_value": 40126950,
+          "return_pct": 13
+        },
+        {
+          "period": "7Y",
+          "total_invested": 840000,
+          "market_value": 1383830,
+          "return_pct": 14.55
+        },
+        {
+          "period": "5Y",
+          "total_invested": 600000,
+          "market_value": 851220,
+          "return_pct": 13.99
+        },
+        {
+          "period": "3Y",
+          "total_invested": 360000,
+          "market_value": 445560,
+          "return_pct": 14.41
+        },
+        {
+          "period": "1Y",
+          "total_invested": 120000,
+          "market_value": 128760,
+          "return_pct": 14.01
+        }
+      ],
+      "additional_info": {
+        "sip_investment_amount_pm": 10000,
+        "nifty_50_tri_cagr": [
+          {
+            "period": "SI",
+            "return_pct": 14.49
+          },
+          {
+            "period": "7Y",
+            "return_pct": 15.68
+          },
+          {
+            "period": "5Y",
+            "return_pct": 14.04
+          },
+          {
+            "period": "3Y",
+            "return_pct": 14.17
+          },
+          {
+            "period": "1Y",
+            "return_pct": 17.23
+          }
+        ]
+      }
+    },
+    {
+      "fund_name": "Taurus Large Cap Fund - Direct Plan Growth Option",
+      "category": "Large Cap Fund",
+      "benchmark": "BSE 100 TRI (Benchmark)",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "fund_managers": [
+        {
+          "name": "Mr. Anuj Kapil",
+          "qualification": "MBA & PGDBM",
+          "experience": "19 years"
+        },
+        {
+          "name": "Mr. Hemanshu Srivastava",
+          "qualification": "MBA, B.E. in Biotechnology"
+        }
+      ],
+      "returns": [
+        {
+          "period": "1Y",
+          "fund_return": 5.68,
+          "benchmark_return": 9.51,
+          "additional_benchmark_return": 10.93,
+          "current_value_of_10000": {
+            "fund": 10568.31,
+            "benchmark": 10951.41,
+            "additional_benchmark": 11093.38
+          }
+        },
+        {
+          "period": "3Y",
+          "fund_return": 14.41,
+          "benchmark_return": 14.71,
+          "additional_benchmark_return": 13.47,
+          "current_value_of_10000": {
+            "fund": 14980.53,
+            "benchmark": 15092.64,
+            "additional_benchmark": 14608.33
+          }
+        },
+        {
+          "period": "5Y",
+          "fund_return": 15.65,
+          "benchmark_return": 17.51,
+          "additional_benchmark_return": 16.46,
+          "current_value_of_10000": {
+            "fund": 20706.85,
+            "benchmark": 22402.41,
+            "additional_benchmark": 21427.69
+          }
+        },
+        {
+          "period": "SI",
+          "fund_return": 11.05,
+          "benchmark_return": 13.9,
+          "additional_benchmark_return": 13.46,
+          "current_value_of_10000": {
+            "fund": 38888.14,
+            "benchmark": 52186.86,
+            "additional_benchmark": 51051.98
+          }
+        },
+        {
+          "period": "7Y",
+          "fund_return": 14.63,
+          "benchmark_return": 15.22
+        }
+      ],
+      "sip_returns": [
+        {
+          "period": "SI",
+          "total_invested": 1540000,
+          "market_value": 3531270,
+          "return_pct": 12.11
+        },
+        {
+          "period": "7Y",
+          "total_invested": 840000,
+          "market_value": 1413550,
+          "return_pct": 14.63
+        },
+        {
+          "period": "5Y",
+          "total_invested": 600000,
+          "market_value": 854180,
+          "return_pct": 14.13
+        },
+        {
+          "period": "3Y",
+          "total_invested": 360000,
+          "market_value": 446620,
+          "return_pct": 14.58
+        },
+        {
+          "period": "1Y",
+          "total_invested": 120000,
+          "market_value": 128890,
+          "return_pct": 14.22
+        }
+      ],
+      "additional_info": {
+        "sip_investment_amount_pm": 10000,
+        "nifty_50_tri_cagr": [
+          {
+            "period": "SI",
+            "return_pct": 14.49
+          },
+          {
+            "period": "7Y",
+            "return_pct": 15.68
+          },
+          {
+            "period": "5Y",
+            "return_pct": 14.04
+          },
+          {
+            "period": "3Y",
+            "return_pct": 14.17
+          },
+          {
+            "period": "1Y",
+            "return_pct": 17.23
+          }
+        ]
+      }
+    },
+    {
+      "fund_name": "Taurus Ethical Fund - Regular Plan Growth Option",
+      "plan_type": "Regular",
+      "option": "Growth",
+      "benchmark": "BSE 500 Shariah TRI (Benchmark)",
+      "returns": [
+        {
+          "period": "1Y",
+          "fund_return": -0.95,
+          "current_value_of_10000_fund": 9904.57,
+          "benchmark_return": 2.22,
+          "current_value_of_10000_benchmark": 10221.81,
+          "additional_benchmark_return": 10.93,
+          "current_value_of_10000_additional_benchmark": 11093.38
+        },
+        {
+          "period": "3Y",
+          "fund_return": 13.74,
+          "current_value_of_10000_fund": 14720.3,
+          "benchmark_return": 12.06,
+          "current_value_of_10000_benchmark": 14072.32,
+          "additional_benchmark_return": 13.47,
+          "current_value_of_10000_additional_benchmark": 14608.33
+        },
+        {
+          "period": "5Y",
+          "fund_return": 15.57,
+          "current_value_of_10000_fund": 20634.64,
+          "benchmark_return": 15.46,
+          "current_value_of_10000_benchmark": 20517.3,
+          "additional_benchmark_return": 16.46,
+          "current_value_of_10000_additional_benchmark": 21427.69
+        },
+        {
+          "period": "SI",
+          "fund_return": 16.61,
+          "current_value_of_10000_fund": 129730.0,
+          "benchmark_return": 16.05,
+          "current_value_of_10000_benchmark": 116148.16,
+          "additional_benchmark_return": 14.71,
+          "current_value_of_10000_additional_benchmark": 98346.73
+        }
+      ],
+      "additional_benchmark": "Nifty 50 TRI (Additional Benchmark)"
+    },
+    {
+      "fund_name": "Taurus Ethical Fund - Direct Plan Growth Option",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "benchmark": "BSE 500 Shariah TRI (Benchmark)",
+      "returns": [
+        {
+          "period": "1Y",
+          "fund_return": 0.44,
+          "current_value_of_10000_fund": 10043.77,
+          "benchmark_return": 2.22,
+          "current_value_of_10000_benchmark": 10221.81,
+          "additional_benchmark_return": 10.93,
+          "current_value_of_10000_additional_benchmark": 11093.38
+        },
+        {
+          "period": "3Y",
+          "fund_return": 15.21,
+          "current_value_of_10000_fund": 15300.06,
+          "benchmark_return": 12.06,
+          "current_value_of_10000_benchmark": 14072.32,
+          "additional_benchmark_return": 13.47,
+          "current_value_of_10000_additional_benchmark": 14608.33
+        },
+        {
+          "period": "5Y",
+          "fund_return": 16.9,
+          "current_value_of_10000_fund": 21849.43,
+          "benchmark_return": 15.46,
+          "current_value_of_10000_benchmark": 20517.3,
+          "additional_benchmark_return": 16.46,
+          "current_value_of_10000_additional_benchmark": 21427.69
+        },
+        {
+          "period": "SI",
+          "fund_return": 15.18,
+          "current_value_of_10000_fund": 62595.91,
+          "benchmark_return": 15.37,
+          "current_value_of_10000_benchmark": 61461.1,
+          "additional_benchmark_return": 13.48,
+          "current_value_of_10000_additional_benchmark": 51190.08
+        }
+      ],
+      "additional_benchmark": "Nifty 50 TRI (Additional Benchmark)"
+    },
+    {
+      "fund_name": "Taurus Banking & Financial Services Fund - Regular Plan Growth Option",
+      "plan_type": "Regular",
+      "option": "Growth",
+      "benchmark": "BSE Bankex Index TRI (Benchmark)",
+      "returns": [
+        {
+          "period": "1Y",
+          "fund_return": 9.92,
+          "current_value_of_10000_fund": 10992.13,
+          "benchmark_return": 14.31,
+          "current_value_of_10000_benchmark": 11430.97,
+          "additional_benchmark_return": 10.93,
+          "current_value_of_10000_additional_benchmark": 11093.38
+        },
+        {
+          "period": "3Y",
+          "fund_return": 12.24,
+          "current_value_of_10000_fund": 14143.87,
+          "benchmark_return": 11.89,
+          "current_value_of_10000_benchmark": 14006.24,
+          "additional_benchmark_return": 13.47,
+          "current_value_of_10000_additional_benchmark": 14608.33
+        },
+        {
+          "period": "5Y",
+          "fund_return": 14.49,
+          "current_value_of_10000_fund": 19689.7,
+          "benchmark_return": 15.42,
+          "current_value_of_10000_benchmark": 20486.13,
+          "additional_benchmark_return": 16.46,
+          "current_value_of_10000_additional_benchmark": 21427.69
+        },
+        {
+          "period": "SI",
+          "fund_return": 13.56,
+          "current_value_of_10000_fund": 55840.0,
+          "benchmark_return": 15.48,
+          "current_value_of_10000_benchmark": 69852.88,
+          "additional_benchmark_return": 14.69,
+          "current_value_of_10000_additional_benchmark": 63868.52
+        }
+      ],
+      "additional_benchmark": "Nifty 50 TRI (Additional Benchmark)"
+    },
+    {
+      "fund_name": "Taurus Banking & Financial Services Fund - Direct Plan Growth Option",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "benchmark": "BSE Bankex Index TRI (Benchmark)",
+      "returns": [
+        {
+          "period": "1Y",
+          "fund_return": 10.84,
+          "current_value_of_10000_fund": 11083.57,
+          "benchmark_return": 14.31,
+          "current_value_of_10000_benchmark": 11430.97,
+          "additional_benchmark_return": 10.93,
+          "current_value_of_10000_additional_benchmark": 11093.38
+        },
+        {
+          "period": "3Y",
+          "fund_return": 13.11,
+          "current_value_of_10000_fund": 14477.34,
+          "benchmark_return": 11.89,
+          "current_value_of_10000_benchmark": 14006.24,
+          "additional_benchmark_return": 13.47,
+          "current_value_of_10000_additional_benchmark": 14608.33
+        },
+        {
+          "period": "5Y",
+          "fund_return": 15.39,
+          "current_value_of_10000_fund": 20470.9,
+          "benchmark_return": 15.42,
+          "current_value_of_10000_benchmark": 20486.13,
+          "additional_benchmark_return": 16.46,
+          "current_value_of_10000_additional_benchmark": 21427.69
+        },
+        {
+          "period": "SI",
+          "fund_return": 12.38,
+          "current_value_of_10000_fund": 45860.81,
+          "benchmark_return": 13.32,
+          "current_value_of_10000_benchmark": 49613.61,
+          "additional_benchmark_return": 13.46,
+          "current_value_of_10000_additional_benchmark": 51051.98
+        }
+      ],
+      "additional_benchmark": "Nifty 50 TRI (Additional Benchmark)"
+    },
+    {
+      "fund_name": "Taurus ELSS Tax Saver Fund - Regular Plan Growth Option",
+      "category": "ELSS",
+      "benchmark": "BSE 500 TRI",
+      "plan_type": "Regular",
+      "option": "Growth",
+      "returns": [
+        {
+          "period": "1Y",
+          "fund_return": 2.2,
+          "benchmark_return": 7.09
+        },
+        {
+          "period": "3Y",
+          "fund_return": 16.11,
+          "benchmark_return": 15.64
+        },
+        {
+          "period": "5Y",
+          "fund_return": 16.58,
+          "benchmark_return": 18.6
+        },
+        {
+          "period": "SI",
+          "fund_return": 11.94,
+          "benchmark_return": null
+        }
+      ]
+    },
+    {
+      "fund_name": "Taurus ELSS Tax Saver Fund - Direct Plan Growth Option",
+      "category": "ELSS",
+      "benchmark": "BSE 500 TRI",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "returns": [
+        {
+          "period": "1Y",
+          "fund_return": 2.83,
+          "benchmark_return": 7.09
+        },
+        {
+          "period": "3Y",
+          "fund_return": 16.85,
+          "benchmark_return": 15.64
+        },
+        {
+          "period": "5Y",
+          "fund_return": 17.33,
+          "benchmark_return": 18.6
+        },
+        {
+          "period": "SI",
+          "fund_return": 13.68,
+          "benchmark_return": 14.52
+        }
+      ]
+    },
+    {
+      "fund_name": "Taurus Nifty 50 Index Fund - Regular Plan Growth Option",
+      "category": "Index Fund",
+      "benchmark": "Nifty 50 TRI",
+      "plan_type": "Regular",
+      "option": "Growth",
+      "returns": [
+        {
+          "period": "1Y",
+          "fund_return": 9.78,
+          "benchmark_return": 10.93
+        },
+        {
+          "period": "3Y",
+          "fund_return": 12.02,
+          "benchmark_return": 13.47
+        },
+        {
+          "period": "5Y",
+          "fund_return": 15.4,
+          "benchmark_return": 16.46
+        },
+        {
+          "period": "SI",
+          "fund_return": 10.95,
+          "benchmark_return": 12.3
+        }
+      ]
+    },
+    {
+      "fund_name": "Taurus Nifty 50 Index Fund - Direct Plan Growth Option",
+      "category": "Index Fund",
+      "benchmark": "Nifty 50 TRI",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "returns": [
+        {
+          "period": "1Y",
+          "fund_return": 10.1,
+          "benchmark_return": 10.93
+        },
+        {
+          "period": "3Y",
+          "fund_return": 12.35,
+          "benchmark_return": 13.47
+        },
+        {
+          "period": "5Y",
+          "fund_return": 15.71,
+          "benchmark_return": 16.46
+        },
+        {
+          "period": "SI",
+          "fund_return": 12.77,
+          "benchmark_return": 13.46
+        }
+      ]
+    },
+    {
+      "fund_name": "Taurus Mid Cap Fund - Regular Plan Growth Option",
+      "category": "Mid Cap Fund",
+      "plan_type": "Regular",
+      "option": "Growth",
+      "returns": [
+        {
+          "period": "1Y",
+          "fund_return": 0.9,
+          "benchmark_return": 8.09
+        },
+        {
+          "period": "3Y",
+          "fund_return": 16.31,
+          "benchmark_return": 23.73
+        },
+        {
+          "period": "5Y",
+          "fund_return": 18.66,
+          "benchmark_return": 25.48
+        },
+        {
+          "period": "SI",
+          "fund_return": 8.36,
+          "benchmark_return": null
+        }
+      ],
+      "raw_tables": [
+        {
+          "table_name": "Scheme Performance",
+          "data": [
+            {
+              "Particulars": "Scheme",
+              "1Y_CAGR_pct": 0.9,
+              "1Y_Current_Value_Rs_10000": 10090.4,
+              "3Y_CAGR_pct": 16.31,
+              "3Y_Current_Value_Rs_10000": 15739.01,
+              "5Y_CAGR_pct": 18.66,
+              "5Y_Current_Value_Rs_10000": 23543.62,
+              "SI_CAGR_pct": 8.36,
+              "SI_Current_Value_Rs_10000": 122780.0
+            },
+            {
+              "Particulars": "Nifty Midcap 150 TRI (Benchmark)",
+              "1Y_CAGR_pct": 8.09,
+              "1Y_Current_Value_Rs_10000": 10808.79,
+              "3Y_CAGR_pct": 23.73,
+              "3Y_Current_Value_Rs_10000": 18942.29,
+              "5Y_CAGR_pct": 25.48,
+              "5Y_Current_Value_Rs_10000": 31103.69,
+              "SI_CAGR_pct": null,
+              "SI_Current_Value_Rs_10000": null
+            },
+            {
+              "Particulars": "Nifty 50 TRI (Additional Benchmark)",
+              "1Y_CAGR_pct": 10.93,
+              "1Y_Current_Value_Rs_10000": 11093.38,
+              "3Y_CAGR_pct": 13.47,
+              "3Y_Current_Value_Rs_10000": 14608.33,
+              "5Y_CAGR_pct": 16.46,
+              "5Y_Current_Value_Rs_10000": 21427.69,
+              "SI_CAGR_pct": 11.39,
+              "SI_Current_Value_Rs_10000": 291409.12
+            }
+          ]
+        }
+      ],
+      "benchmark": "Nifty Midcap 150 TRI",
+      "sip_returns": [
+        {
+          "period": "SI",
+          "total_invested": 3530000,
+          "market_value": 42605010,
+          "return_pct": 13.61,
+          "benchmark_return_pct": 17.58,
+          "additional_benchmark_name": "Nifty 50 TRI",
+          "additional_benchmark_return_pct": 14.49
+        },
+        {
+          "period": "7Y",
+          "total_invested": 840000,
+          "market_value": 1534110,
+          "return_pct": 17.49,
+          "benchmark_return_pct": 24.04,
+          "additional_benchmark_name": "Nifty 50 TRI",
+          "additional_benchmark_return_pct": 15.68
+        },
+        {
+          "period": "5Y",
+          "total_invested": 600000,
+          "market_value": 864880,
+          "return_pct": 14.64,
+          "benchmark_return_pct": 21.6,
+          "additional_benchmark_name": "Nifty 50 TRI",
+          "additional_benchmark_return_pct": 14.04
+        },
+        {
+          "period": "3Y",
+          "total_invested": 360000,
+          "market_value": 428350,
+          "return_pct": 11.67,
+          "benchmark_return_pct": 20.41,
+          "additional_benchmark_name": "Nifty 50 TRI",
+          "additional_benchmark_return_pct": 14.17
+        },
+        {
+          "period": "1Y",
+          "total_invested": 120000,
+          "market_value": 126480,
+          "return_pct": 10.3,
+          "benchmark_return_pct": 18.22,
+          "additional_benchmark_name": "Nifty 50 TRI",
+          "additional_benchmark_return_pct": 17.23
+        }
+      ]
+    },
+    {
+      "fund_name": "Taurus Mid Cap Fund - Direct Plan Growth Option",
+      "category": "Mid Cap Fund",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "returns": [
+        {
+          "period": "1Y",
+          "fund_return": 1.34,
+          "benchmark_return": 8.09
+        },
+        {
+          "period": "3Y",
+          "fund_return": 16.75,
+          "benchmark_return": 23.73
+        },
+        {
+          "period": "5Y",
+          "fund_return": 19.1,
+          "benchmark_return": 25.48
+        },
+        {
+          "period": "SI",
+          "fund_return": 16.63,
+          "benchmark_return": 18.92
+        }
+      ],
+      "raw_tables": [
+        {
+          "table_name": "Scheme Performance",
+          "data": [
+            {
+              "Particulars": "Scheme",
+              "1Y_CAGR_pct": 1.34,
+              "1Y_Current_Value_Rs_10000": 10134.28,
+              "3Y_CAGR_pct": 16.75,
+              "3Y_Current_Value_Rs_10000": 15921.75,
+              "5Y_CAGR_pct": 19.1,
+              "5Y_Current_Value_Rs_10000": 23985.59,
+              "SI_CAGR_pct": 16.63,
+              "SI_Current_Value_Rs_10000": 73297.57
+            },
+            {
+              "Particulars": "Nifty Midcap 150 TRI (Benchmark)",
+              "1Y_CAGR_pct": 8.09,
+              "1Y_Current_Value_Rs_10000": 10808.79,
+              "3Y_CAGR_pct": 23.73,
+              "3Y_Current_Value_Rs_10000": 18942.29,
+              "5Y_CAGR_pct": 25.48,
+              "5Y_Current_Value_Rs_10000": 31103.69,
+              "SI_CAGR_pct": 18.92,
+              "SI_Current_Value_Rs_10000": 93690.84
+            },
+            {
+              "Particulars": "Nifty 50 TRI (Additional Benchmark)",
+              "1Y_CAGR_pct": 10.93,
+              "1Y_Current_Value_Rs_10000": 11093.38,
+              "3Y_CAGR_pct": 13.47,
+              "3Y_Current_Value_Rs_10000": 14608.33,
+              "5Y_CAGR_pct": 16.46,
+              "5Y_Current_Value_Rs_10000": 21427.69,
+              "SI_CAGR_pct": 13.48,
+              "SI_Current_Value_Rs_10000": 51190.08
+            }
+          ]
+        }
+      ],
+      "benchmark": "Nifty Midcap 150 TRI",
+      "sip_returns": [
+        {
+          "period": "SI",
+          "total_invested": 1540000,
+          "market_value": 4992190,
+          "return_pct": 16.94,
+          "benchmark_return_pct": 17.58,
+          "additional_benchmark_name": "Nifty 50 TRI",
+          "additional_benchmark_return_pct": 14.49
+        },
+        {
+          "period": "7Y",
+          "total_invested": 840000,
+          "market_value": 1589250,
+          "return_pct": 17.92,
+          "benchmark_return_pct": 24.04,
+          "additional_benchmark_name": "Nifty 50 TRI",
+          "additional_benchmark_return_pct": 15.68
+        },
+        {
+          "period": "5Y",
+          "total_invested": 600000,
+          "market_value": 874510,
+          "return_pct": 15.09,
+          "benchmark_return_pct": 21.6,
+          "additional_benchmark_name": "Nifty 50 TRI",
+          "additional_benchmark_return_pct": 14.04
+        },
+        {
+          "period": "3Y",
+          "total_invested": 360000,
+          "market_value": 431240,
+          "return_pct": 12.14,
+          "benchmark_return_pct": 20.41,
+          "additional_benchmark_name": "Nifty 50 TRI",
+          "additional_benchmark_return_pct": 14.17
+        },
+        {
+          "period": "1Y",
+          "total_invested": 120000,
+          "market_value": 126770,
+          "return_pct": 10.78,
+          "benchmark_return_pct": 18.22,
+          "additional_benchmark_name": "Nifty 50 TRI",
+          "additional_benchmark_return_pct": 17.23
+        }
+      ]
+    },
+    {
+      "fund_name": "Taurus Infrastructure Fund - Regular Plan Growth Option",
+      "category": "Infrastructure Fund",
+      "plan_type": "Regular",
+      "option": "Growth",
+      "returns": [
+        {
+          "period": "1Y",
+          "fund_return": -0.89,
+          "benchmark_return": 13.23
+        },
+        {
+          "period": "3Y",
+          "fund_return": 18.17,
+          "benchmark_return": 22.35
+        },
+        {
+          "period": "5Y",
+          "fund_return": 21.16,
+          "benchmark_return": 24.34
+        },
+        {
+          "period": "SI",
+          "fund_return": 10.76,
+          "benchmark_return": 8.05
+        }
+      ],
+      "raw_tables": [
+        {
+          "table_name": "Scheme Performance",
+          "data": [
+            {
+              "Particulars": "Scheme",
+              "1Y_CAGR_pct": -0.89,
+              "1Y_Current_Value_Rs_10000": 9911.07,
+              "3Y_CAGR_pct": 18.17,
+              "3Y_Current_Value_Rs_10000": 16508.01,
+              "5Y_CAGR_pct": 21.16,
+              "5Y_Current_Value_Rs_10000": 26136.1,
+              "SI_CAGR_pct": 10.76,
+              "SI_Current_Value_Rs_10000": 67980.0
+            },
+            {
+              "Particulars": "Nifty Infrastructure Index TRI (Benchmark)",
+              "1Y_CAGR_pct": 13.23,
+              "1Y_Current_Value_Rs_10000": 11322.68,
+              "3Y_CAGR_pct": 22.35,
+              "3Y_Current_Value_Rs_10000": 18313.91,
+              "5Y_CAGR_pct": 24.34,
+              "5Y_Current_Value_Rs_10000": 29720.97,
+              "SI_CAGR_pct": 8.05,
+              "SI_Current_Value_Rs_10000": 42707.92
+            },
+            {
+              "Particulars": "Nifty 50 TRI (Additional Benchmark)",
+              "1Y_CAGR_pct": 10.93,
+              "1Y_Current_Value_Rs_10000": 11093.38,
+              "3Y_CAGR_pct": 13.47,
+              "3Y_Current_Value_Rs_10000": 14608.33,
+              "5Y_CAGR_pct": 16.46,
+              "5Y_Current_Value_Rs_10000": 21427.69,
+              "SI_CAGR_pct": 12.55,
+              "SI_Current_Value_Rs_10000": 91693.9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fund_name": "Taurus Infrastructure Fund - Direct Plan Growth Option",
+      "category": "Infrastructure Fund",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "returns": [
+        {
+          "period": "1Y",
+          "fund_return": -0.37,
+          "benchmark_return": 13.23
+        },
+        {
+          "period": "3Y",
+          "fund_return": 18.73,
+          "benchmark_return": 22.35
+        },
+        {
+          "period": "5Y",
+          "fund_return": 21.7,
+          "benchmark_return": 24.34
+        },
+        {
+          "period": "SI",
+          "fund_return": 14.37,
+          "benchmark_return": 12.09
+        }
+      ],
+      "raw_tables": [
+        {
+          "table_name": "Scheme Performance",
+          "data": [
+            {
+              "Particulars": "Scheme",
+              "1Y_CAGR_pct": -0.37,
+              "1Y_Current_Value_Rs_10000": 9963.19,
+              "3Y_CAGR_pct": 18.73,
+              "3Y_Current_Value_Rs_10000": 16746.1,
+              "5Y_CAGR_pct": 21.7,
+              "5Y_Current_Value_Rs_10000": 26730.07,
+              "SI_CAGR_pct": 14.37,
+              "SI_Current_Value_Rs_10000": 57004.68
+            },
+            {
+              "Particulars": "Nifty Infrastructure Index TRI (Benchmark)",
+              "1Y_CAGR_pct": 13.23,
+              "1Y_Current_Value_Rs_10000": 11322.68,
+              "3Y_CAGR_pct": 22.35,
+              "3Y_Current_Value_Rs_10000": 18313.91,
+              "5Y_CAGR_pct": 24.34,
+              "5Y_Current_Value_Rs_10000": 29720.97,
+              "SI_CAGR_pct": 12.09,
+              "SI_Current_Value_Rs_10000": 43677.61
+            },
+            {
+              "Particulars": "Nifty 50 TRI (Additional Benchmark)",
+              "1Y_CAGR_pct": 10.93,
+              "1Y_Current_Value_Rs_10000": 11093.38,
+              "3Y_CAGR_pct": 13.47,
+              "3Y_Current_Value_Rs_10000": 14608.33,
+              "5Y_CAGR_pct": 16.46,
+              "5Y_Current_Value_Rs_10000": 21427.69,
+              "SI_CAGR_pct": 13.48,
+              "SI_Current_Value_Rs_10000": 51190.08
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fund_name": "Taurus Flexi Cap Fund - Regular Plan",
+      "category": "Flexi Cap Fund",
+      "benchmark": "BSE 500 TRI",
+      "plan_type": "Regular",
+      "returns": [
+        {
+          "period": "SI",
+          "fund_return": 14.2,
+          "benchmark_return": 7.89
+        },
+        {
+          "period": "7Y",
+          "fund_return": 13.61,
+          "benchmark_return": 16.03
+        },
+        {
+          "period": "5Y",
+          "fund_return": 12.76,
+          "benchmark_return": 18.64
+        },
+        {
+          "period": "3Y",
+          "fund_return": 11.75,
+          "benchmark_return": 15.28
+        },
+        {
+          "period": "1Y",
+          "fund_return": 8.49,
+          "benchmark_return": 6.27
+        }
+      ],
+      "sip_returns": [
+        {
+          "period": "SI",
+          "total_invested": 3490000,
+          "market_value": 47976390,
+          "return_pct": 14.2
+        },
+        {
+          "period": "7Y",
+          "total_invested": 840000,
+          "market_value": 1338610,
+          "return_pct": 13.61
+        },
+        {
+          "period": "5Y",
+          "total_invested": 600000,
+          "market_value": 825670,
+          "return_pct": 12.76
+        },
+        {
+          "period": "3Y",
+          "total_invested": 360000,
+          "market_value": 428850,
+          "return_pct": 11.75
+        },
+        {
+          "period": "1Y",
+          "total_invested": 120000,
+          "market_value": 125350,
+          "return_pct": 8.49
+        }
+      ],
+      "additional_info": {
+        "sip_investment_amount_pm": 10000,
+        "nifty_50_tri_cagr": [
+          {
+            "period": "SI",
+            "return_pct": 14.49
+          },
+          {
+            "period": "7Y",
+            "return_pct": 15.68
+          },
+          {
+            "period": "5Y",
+            "return_pct": 14.04
+          },
+          {
+            "period": "3Y",
+            "return_pct": 14.17
+          },
+          {
+            "period": "1Y",
+            "return_pct": 17.23
+          }
+        ]
+      }
+    },
+    {
+      "fund_name": "Taurus Flexi Cap Fund - Direct Plan",
+      "category": "Flexi Cap Fund",
+      "benchmark": "BSE 500 TRI",
+      "plan_type": "Direct",
+      "returns": [
+        {
+          "period": "SI",
+          "fund_return": 11.31,
+          "benchmark_return": 7.89
+        },
+        {
+          "period": "7Y",
+          "fund_return": 13.61,
+          "benchmark_return": 16.03
+        },
+        {
+          "period": "5Y",
+          "fund_return": 12.82,
+          "benchmark_return": 18.64
+        },
+        {
+          "period": "3Y",
+          "fund_return": 11.82,
+          "benchmark_return": 15.28
+        },
+        {
+          "period": "1Y",
+          "fund_return": 8.57,
+          "benchmark_return": 6.27
+        }
+      ],
+      "sip_returns": [
+        {
+          "period": "SI",
+          "total_invested": 1540000,
+          "market_value": 3336130,
+          "return_pct": 11.31
+        },
+        {
+          "period": "7Y",
+          "total_invested": 840000,
+          "market_value": 1363220,
+          "return_pct": 13.61
+        },
+        {
+          "period": "5Y",
+          "total_invested": 600000,
+          "market_value": 826950,
+          "return_pct": 12.82
+        },
+        {
+          "period": "3Y",
+          "total_invested": 360000,
+          "market_value": 429280,
+          "return_pct": 11.82
+        },
+        {
+          "period": "1Y",
+          "total_invested": 120000,
+          "market_value": 125400,
+          "return_pct": 8.57
+        }
+      ],
+      "additional_info": {
+        "sip_investment_amount_pm": 10000,
+        "nifty_50_tri_cagr": [
+          {
+            "period": "SI",
+            "return_pct": 14.49
+          },
+          {
+            "period": "7Y",
+            "return_pct": 15.68
+          },
+          {
+            "period": "5Y",
+            "return_pct": 14.04
+          },
+          {
+            "period": "3Y",
+            "return_pct": 14.17
+          },
+          {
+            "period": "1Y",
+            "return_pct": 17.23
+          }
+        ]
+      }
+    },
+    {
+      "fund_name": "Taurus Ethical Fund - Regular Plan",
+      "category": "Ethical Fund",
+      "benchmark": "BSE 500 Shariah TRI",
+      "plan_type": "Regular",
+      "returns": [
+        {
+          "period": "SI",
+          "fund_return": 13.54,
+          "benchmark_return": 2.6
+        },
+        {
+          "period": "7Y",
+          "fund_return": 14.98,
+          "benchmark_return": 15.45
+        },
+        {
+          "period": "5Y",
+          "fund_return": 12.77,
+          "benchmark_return": 15.49
+        },
+        {
+          "period": "3Y",
+          "fund_return": 11.97,
+          "benchmark_return": 11.62
+        },
+        {
+          "period": "1Y",
+          "fund_return": 8.13,
+          "benchmark_return": 1.36
+        }
+      ],
+      "sip_returns": [
+        {
+          "period": "SI",
+          "total_invested": 2000000,
+          "market_value": 6954350,
+          "return_pct": 13.54
+        },
+        {
+          "period": "7Y",
+          "total_invested": 840000,
+          "market_value": 1404830,
+          "return_pct": 14.98
+        },
+        {
+          "period": "5Y",
+          "total_invested": 600000,
+          "market_value": 825870,
+          "return_pct": 12.77
+        },
+        {
+          "period": "3Y",
+          "total_invested": 360000,
+          "market_value": 430210,
+          "return_pct": 11.97
+        },
+        {
+          "period": "1Y",
+          "total_invested": 120000,
+          "market_value": 125130,
+          "return_pct": 8.13
+        }
+      ],
+      "additional_info": {
+        "sip_investment_amount_pm": 10000,
+        "nifty_50_tri_cagr": [
+          {
+            "period": "SI",
+            "return_pct": 14.49
+          },
+          {
+            "period": "7Y",
+            "return_pct": 15.68
+          },
+          {
+            "period": "5Y",
+            "return_pct": 14.04
+          },
+          {
+            "period": "3Y",
+            "return_pct": 14.17
+          },
+          {
+            "period": "1Y",
+            "return_pct": 17.23
+          }
+        ]
+      }
+    },
+    {
+      "fund_name": "Taurus Ethical Fund - Direct Plan",
+      "category": "Ethical Fund",
+      "benchmark": "BSE 500 Shariah TRI",
+      "plan_type": "Direct",
+      "returns": [
+        {
+          "period": "SI",
+          "fund_return": 15.03,
+          "benchmark_return": 2.6
+        },
+        {
+          "period": "7Y",
+          "fund_return": 16.36,
+          "benchmark_return": 15.45
+        },
+        {
+          "period": "5Y",
+          "fund_return": 14.19,
+          "benchmark_return": 15.49
+        },
+        {
+          "period": "3Y",
+          "fund_return": 13.49,
+          "benchmark_return": 11.62
+        },
+        {
+          "period": "1Y",
+          "fund_return": 9.63,
+          "benchmark_return": 1.36
+        }
+      ],
+      "sip_returns": [
+        {
+          "period": "SI",
+          "total_invested": 1540000,
+          "market_value": 4352290,
+          "return_pct": 15.03
+        },
+        {
+          "period": "7Y",
+          "total_invested": 840000,
+          "market_value": 1503330,
+          "return_pct": 16.36
+        },
+        {
+          "period": "5Y",
+          "total_invested": 600000,
+          "market_value": 855370,
+          "return_pct": 14.19
+        },
+        {
+          "period": "3Y",
+          "total_invested": 360000,
+          "market_value": 439710,
+          "return_pct": 13.49
+        },
+        {
+          "period": "1Y",
+          "total_invested": 120000,
+          "market_value": 126060,
+          "return_pct": 9.63
+        }
+      ],
+      "additional_info": {
+        "sip_investment_amount_pm": 10000,
+        "nifty_50_tri_cagr": [
+          {
+            "period": "SI",
+            "return_pct": 14.49
+          },
+          {
+            "period": "7Y",
+            "return_pct": 15.68
+          },
+          {
+            "period": "5Y",
+            "return_pct": 14.04
+          },
+          {
+            "period": "3Y",
+            "return_pct": 14.17
+          },
+          {
+            "period": "1Y",
+            "return_pct": 17.23
+          }
+        ]
+      }
+    },
+    {
+      "fund_name": "Taurus Infrastructure Fund - Regular Plan",
+      "category": "Infrastructure Fund",
+      "benchmark": "Nifty Infrastructure Index TRI",
+      "plan_type": "Regular",
+      "returns": [
+        {
+          "period": "SI",
+          "fund_return": 13.23,
+          "benchmark_return": 11.07
+        },
+        {
+          "period": "7Y",
+          "fund_return": 18.22,
+          "benchmark_return": 21.96
+        },
+        {
+          "period": "5Y",
+          "fund_return": 16.37,
+          "benchmark_return": 21.12
+        },
+        {
+          "period": "3Y",
+          "fund_return": 13.95,
+          "benchmark_return": 20.5
+        },
+        {
+          "period": "1Y",
+          "fund_return": 8.79,
+          "benchmark_return": 21.07
+        }
+      ],
+      "sip_returns": [
+        {
+          "period": "SI",
+          "total_invested": 2250000,
+          "market_value": 8918460,
+          "return_pct": 13.23
+        },
+        {
+          "period": "7Y",
+          "total_invested": 840000,
+          "market_value": 1574140,
+          "return_pct": 18.22
+        },
+        {
+          "period": "5Y",
+          "total_invested": 600000,
+          "market_value": 902300,
+          "return_pct": 16.37
+        },
+        {
+          "period": "3Y",
+          "total_invested": 360000,
+          "market_value": 442630,
+          "return_pct": 13.95
+        },
+        {
+          "period": "1Y",
+          "total_invested": 120000,
+          "market_value": 125540,
+          "return_pct": 8.79
+        }
+      ],
+      "additional_info": {
+        "sip_investment_amount_pm": 10000,
+        "nifty_50_tri_cagr": [
+          {
+            "period": "SI",
+            "return_pct": 14.49
+          },
+          {
+            "period": "7Y",
+            "return_pct": 15.68
+          },
+          {
+            "period": "5Y",
+            "return_pct": 14.04
+          },
+          {
+            "period": "3Y",
+            "return_pct": 14.17
+          },
+          {
+            "period": "1Y",
+            "return_pct": 17.23
+          }
+        ]
+      }
+    },
+    {
+      "fund_name": "Taurus Infrastructure Fund - Direct Plan",
+      "category": "Infrastructure Fund",
+      "benchmark": "Nifty Infrastructure Index TRI",
+      "plan_type": "Direct",
+      "returns": [
+        {
+          "period": "SI",
+          "fund_return": 16.16,
+          "benchmark_return": 11.07
+        },
+        {
+          "period": "7Y",
+          "fund_return": 18.69,
+          "benchmark_return": 21.96
+        },
+        {
+          "period": "5Y",
+          "fund_return": 16.92,
+          "benchmark_return": 21.12
+        },
+        {
+          "period": "3Y",
+          "fund_return": 14.52,
+          "benchmark_return": 20.5
+        },
+        {
+          "period": "1Y",
+          "fund_return": 9.34,
+          "benchmark_return": 21.07
+        }
+      ],
+      "sip_returns": [
+        {
+          "period": "SI",
+          "total_invested": 1540000,
+          "market_value": 4719560,
+          "return_pct": 16.16
+        },
+        {
+          "period": "7Y",
+          "total_invested": 840000,
+          "market_value": 1633200,
+          "return_pct": 18.69
+        },
+        {
+          "period": "5Y",
+          "total_invested": 600000,
+          "market_value": 914480,
+          "return_pct": 16.92
+        },
+        {
+          "period": "3Y",
+          "total_invested": 360000,
+          "market_value": 446230,
+          "return_pct": 14.52
+        },
+        {
+          "period": "1Y",
+          "total_invested": 120000,
+          "market_value": 125880,
+          "return_pct": 9.34
+        }
+      ],
+      "additional_info": {
+        "sip_investment_amount_pm": 10000,
+        "nifty_50_tri_cagr": [
+          {
+            "period": "SI",
+            "return_pct": 14.49
+          },
+          {
+            "period": "7Y",
+            "return_pct": 15.68
+          },
+          {
+            "period": "5Y",
+            "return_pct": 14.04
+          },
+          {
+            "period": "3Y",
+            "return_pct": 14.17
+          },
+          {
+            "period": "1Y",
+            "return_pct": 17.23
+          }
+        ]
+      }
+    },
+    {
+      "fund_name": "Taurus ELSS Tax Saver Fund - Regular Plan",
+      "plan_type": "Regular",
+      "benchmark": "BSE 500 TRI",
+      "sip_returns": [
+        {
+          "period": "SI",
+          "total_invested": 3550000,
+          "market_value": 45044330,
+          "return_pct": 14.17,
+          "benchmark_return_pct": 7.89,
+          "additional_benchmark_name": "Nifty 50 TRI",
+          "additional_benchmark_return_pct": 14.49
+        },
+        {
+          "period": "7Y",
+          "total_invested": 840000,
+          "market_value": 1430650,
+          "return_pct": 15.5,
+          "benchmark_return_pct": 16.03,
+          "additional_benchmark_name": "Nifty 50 TRI",
+          "additional_benchmark_return_pct": 15.68
+        },
+        {
+          "period": "5Y",
+          "total_invested": 600000,
+          "market_value": 861010,
+          "return_pct": 14.46,
+          "benchmark_return_pct": 18.64,
+          "additional_benchmark_name": "Nifty 50 TRI",
+          "additional_benchmark_return_pct": 14.04
+        },
+        {
+          "period": "3Y",
+          "total_invested": 360000,
+          "market_value": 435870,
+          "return_pct": 12.88,
+          "benchmark_return_pct": 15.28,
+          "additional_benchmark_name": "Nifty 50 TRI",
+          "additional_benchmark_return_pct": 14.17
+        },
+        {
+          "period": "1Y",
+          "total_invested": 120000,
+          "market_value": 124030,
+          "return_pct": 6.38,
+          "benchmark_return_pct": 6.27,
+          "additional_benchmark_name": "Nifty 50 TRI",
+          "additional_benchmark_return_pct": 17.23
+        }
+      ]
+    },
+    {
+      "fund_name": "Taurus ELSS Tax Saver Fund - Direct Plan",
+      "plan_type": "Direct",
+      "benchmark": "BSE 500 TRI",
+      "sip_returns": [
+        {
+          "period": "SI",
+          "total_invested": 1540000,
+          "market_value": 4249530,
+          "return_pct": 14.7,
+          "benchmark_return_pct": 7.89,
+          "additional_benchmark_name": "Nifty 50 TRI",
+          "additional_benchmark_return_pct": 14.49
+        },
+        {
+          "period": "7Y",
+          "total_invested": 840000,
+          "market_value": 1495750,
+          "return_pct": 16.22,
+          "benchmark_return_pct": 16.03,
+          "additional_benchmark_name": "Nifty 50 TRI",
+          "additional_benchmark_return_pct": 15.68
+        },
+        {
+          "period": "5Y",
+          "total_invested": 600000,
+          "market_value": 876910,
+          "return_pct": 15.2,
+          "benchmark_return_pct": 18.64,
+          "additional_benchmark_name": "Nifty 50 TRI",
+          "additional_benchmark_return_pct": 14.04
+        },
+        {
+          "period": "3Y",
+          "total_invested": 360000,
+          "market_value": 440420,
+          "return_pct": 13.6,
+          "benchmark_return_pct": 15.28,
+          "additional_benchmark_name": "Nifty 50 TRI",
+          "additional_benchmark_return_pct": 14.17
+        },
+        {
+          "period": "1Y",
+          "total_invested": 120000,
+          "market_value": 124400,
+          "return_pct": 7.05,
+          "benchmark_return_pct": 6.27,
+          "additional_benchmark_name": "Nifty 50 TRI",
+          "additional_benchmark_return_pct": 17.23
+        }
+      ]
+    },
+    {
+      "fund_name": "Taurus Nifty 50 Index Fund - Regular Plan",
+      "plan_type": "Regular",
+      "benchmark": "Nifty 50 TRI",
+      "sip_returns": [
+        {
+          "period": "SI",
+          "total_invested": 1860000,
+          "market_value": 5284330,
+          "return_pct": 12.5,
+          "benchmark_return_pct": 14.49
+        },
+        {
+          "period": "7Y",
+          "total_invested": 840000,
+          "market_value": 1380840,
+          "return_pct": 14.49,
+          "benchmark_return_pct": 15.68
+        },
+        {
+          "period": "5Y",
+          "total_invested": 600000,
+          "market_value": 824300,
+          "return_pct": 12.69,
+          "benchmark_return_pct": 14.04
+        },
+        {
+          "period": "3Y",
+          "total_invested": 360000,
+          "market_value": 435390,
+          "return_pct": 12.8,
+          "benchmark_return_pct": 14.17
+        },
+        {
+          "period": "1Y",
+          "total_invested": 120000,
+          "market_value": 130040,
+          "return_pct": 16.1,
+          "benchmark_return_pct": 17.23
+        }
+      ]
+    },
+    {
+      "fund_name": "Taurus Nifty 50 Index Fund - Direct Plan",
+      "plan_type": "Direct",
+      "benchmark": "Nifty 50 TRI",
+      "sip_returns": [
+        {
+          "period": "SI",
+          "total_invested": 1540000,
+          "market_value": 3895660,
+          "return_pct": 13.49,
+          "benchmark_return_pct": 14.49
+        },
+        {
+          "period": "7Y",
+          "total_invested": 840000,
+          "market_value": 1420650,
+          "return_pct": 14.77,
+          "benchmark_return_pct": 15.68
+        },
+        {
+          "period": "5Y",
+          "total_invested": 600000,
+          "market_value": 830650,
+          "return_pct": 13.0,
+          "benchmark_return_pct": 14.04
+        },
+        {
+          "period": "3Y",
+          "total_invested": 360000,
+          "market_value": 437240,
+          "return_pct": 13.1,
+          "benchmark_return_pct": 14.17
+        },
+        {
+          "period": "1Y",
+          "total_invested": 120000,
+          "market_value": 130230,
+          "return_pct": 16.41,
+          "benchmark_return_pct": 17.23
+        }
+      ]
+    }
+  ],
+  "amc_info": {
+    "amc_name": "TAURUS ASSET MANAGEMENT COMPANY LIMITED",
+    "factsheet_date": "November 2025",
+    "website": "www.taurusmutualfund.com",
+    "as_on_date": "28th November 2025",
+    "registered_office": "401 & 402, 4th Floor, Jaisingh Business Centre, Sahar Road, Andheri (E), Mumbai - 400 099.",
+    "email": "customercare@taurusmutualfund.com",
+    "phone": "022 6624 2700 (Board)",
+    "toll_free_number": "1800 108 1111",
+    "cin": "U67190MH1993PLC073154",
+    "branch_offices": [
+      {
+        "city": "Ahmedabad",
+        "address": "Taurus Asset Management Co. Ltd. Office No 607, 6th Floor, 323 Corporate Park, Near Girish Coldring Cross Road, C. G. Road, Navarangpura, Ahmedabad-380009",
+        "phone": "99090 84565"
+      },
+      {
+        "city": "Chennai",
+        "address": "Taurus Asset Management Co. Ltd. 4th Floor (4R), East Coast Chambers, No. 92, G. N. Chetty Road, T. Nagar, Chennai-600017",
+        "phone": "044-42634538 / 044-42634538"
+      },
+      {
+        "city": "Gurugram",
+        "address": "Taurus Asset Management Co. Ltd. 2nd Floor, Plot No. 31, Echelon Institutional Area, Sector-32, Gurugram, Haryana - 122001",
+        "phone": "0124-4531500"
+      }
+    ]
+  },
+  "pages_processed": 26,
+  "source_pdf": "Taurus_Factsheet_November_2025.pdf",
+  "amc_slug": "taurus-ember",
+  "extracted_at": "2026-02-21T14:42:04"
+}

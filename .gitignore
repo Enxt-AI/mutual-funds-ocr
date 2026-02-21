@@ -18,6 +18,7 @@ node_modules/
 # Extracted data checkpoints & status
 website/data/.checkpoints/
 website/data/.status/
+Factsheets/
 
 # OS files
 Thumbs.db
