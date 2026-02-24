@@ -19,6 +19,7 @@ node_modules/
 website/data/.checkpoints/
 website/data/.status/
 Factsheets/
+Scraped Factsheets/
 
 # OS files
 Thumbs.db
