@@ -24,6 +24,7 @@ function formatDate(iso) {
 
 const TABS = [
     { id: "factsheet", label: "Upload Factsheet", icon: "📄" },
+    { id: "pipeline", label: "Scrape & Extract", icon: "🔄" },
     { id: "nse", label: "NSE Index Data", icon: "📈" },
 ];
 
@@ -42,6 +43,16 @@ export default function AdminPage() {
     const [status, setStatus] = useState(null);
     const [dragOver, setDragOver] = useState(false);
 
+    // Pipeline state
+    const [pipelineAmcs, setPipelineAmcs] = useState([]);
+    const [pipelineAmcsLoading, setPipelineAmcsLoading] = useState(false);
+    const [selectedAmcs, setSelectedAmcs] = useState(new Set());
+    const [pipelineRunning, setPipelineRunning] = useState(false);
+    const [pipelineStatus, setPipelineStatus] = useState(null);
+    const [pipelineLogs, setPipelineLogs] = useState([]);
+    const [pipelineEvents, setPipelineEvents] = useState([]);
+    const [pipelineScrapeOnly, setPipelineScrapeOnly] = useState(false);
+
     // NSE processing state
     const [nseProcessing, setNseProcessing] = useState(false);
     const [nseStatus, setNseStatus] = useState(null);
@@ -56,6 +67,84 @@ export default function AdminPage() {
     }, []);
 
     useEffect(() => { fetchAmcs(); }, [fetchAmcs]);
+
+    // Fetch available pipeline AMCs when tab is switched to pipeline
+    useEffect(() => {
+        if (activeTab === "pipeline" && pipelineAmcs.length === 0 && !pipelineAmcsLoading) {
+            setPipelineAmcsLoading(true);
+            fetch("/api/pipeline?list=true")
+                .then(res => res.json())
+                .then(data => {
+                    if (!data.error) {
+                        const amcList = Object.entries(data).map(([slug, info]) => ({
+                            slug,
+                            displayName: info.display_name,
+                            spider: info.spider,
+                        }));
+                        amcList.sort((a, b) => a.displayName.localeCompare(b.displayName));
+                        setPipelineAmcs(amcList);
+                    }
+                })
+                .catch(() => { })
+                .finally(() => setPipelineAmcsLoading(false));
+        }
+    }, [activeTab, pipelineAmcs.length, pipelineAmcsLoading]);
+
+    // Pipeline status polling
+    useEffect(() => {
+        if (!pipelineRunning) return;
+        const interval = setInterval(async () => {
+            try {
+                const res = await fetch("/api/pipeline");
+                const data = await res.json();
+                setPipelineStatus(data);
+                setPipelineLogs(data.logs || []);
+                setPipelineEvents(data.events || []);
+                if (data.status === "done" || data.status === "failed") {
+                    setPipelineRunning(false);
+                    fetchAmcs();
+                }
+            } catch { }
+        }, 2500);
+        return () => clearInterval(interval);
+    }, [pipelineRunning, fetchAmcs]);
+
+    // Start pipeline
+    const handleStartPipeline = async () => {
+        if (selectedAmcs.size === 0) return;
+        setPipelineRunning(true);
+        setPipelineStatus(null);
+        setPipelineLogs([]);
+        setPipelineEvents([]);
+        try {
+            const amcs = selectedAmcs.size === pipelineAmcs.length ? "all" : [...selectedAmcs];
+            const res = await fetch("/api/pipeline", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ amcs, scrapeOnly: pipelineScrapeOnly }),
+            });
+            const data = await res.json();
+            if (!res.ok) {
+                setPipelineRunning(false);
+                setPipelineStatus({ status: "failed", logs: [data.error || "Failed to start pipeline"] });
+            }
+        } catch (e) {
+            setPipelineRunning(false);
+            setPipelineStatus({ status: "failed", logs: [e.message] });
+        }
+    };
+
+    const toggleAmc = (slug) => {
+        setSelectedAmcs(prev => {
+            const next = new Set(prev);
+            if (next.has(slug)) next.delete(slug);
+            else next.add(slug);
+            return next;
+        });
+    };
+
+    const selectAllAmcs = () => setSelectedAmcs(new Set(pipelineAmcs.map(a => a.slug)));
+    const deselectAllAmcs = () => setSelectedAmcs(new Set());
 
     // Delete an AMC
     const handleDeleteAmc = async (slug) => {
@@ -307,6 +396,130 @@ export default function AdminPage() {
                                         </div>
                                     ))}
                                 </div>
+                            )}
+                        </div>
+                    </>
+                )}
+
+                {/* ========== PIPELINE TAB ========== */}
+                {activeTab === "pipeline" && (
+                    <>
+                        <div className={styles.pageHeader}>
+                            <h1 className={styles.pageTitle}>Scrape & Extract</h1>
+                            <p className={styles.pageSubtitle}>Download factsheets via Scrapy &amp; extract data with Gemini OCR</p>
+                        </div>
+
+                        <div className={styles.uploadCard}>
+                            {/* Mode Toggle */}
+                            <div className={styles.pipelineToggle}>
+                                <label className={styles.toggleLabel}>
+                                    <input
+                                        type="checkbox"
+                                        checked={pipelineScrapeOnly}
+                                        onChange={() => setPipelineScrapeOnly(p => !p)}
+                                        disabled={pipelineRunning}
+                                    />
+                                    <span>Skip OCR</span>
+                                    <span className={styles.toggleHint}>
+                                        {pipelineScrapeOnly ? "Download PDFs only — no OCR or S3 upload" : "Download → Gemini OCR → Save JSON → Upload to S3"}
+                                    </span>
+                                </label>
+                            </div>
+
+                            {/* AMC Selection */}
+                            <div className={styles.amcSelection}>
+                                <div className={styles.amcSelectionHeader}>
+                                    <span className={styles.amcSelectionTitle}>
+                                        Select AMCs ({selectedAmcs.size}/{pipelineAmcs.length})
+                                    </span>
+                                    <div className={styles.amcSelectionActions}>
+                                        <button className={styles.linkBtn} onClick={selectAllAmcs} disabled={pipelineRunning}>Select All</button>
+                                        <button className={styles.linkBtn} onClick={deselectAllAmcs} disabled={pipelineRunning}>Deselect All</button>
+                                    </div>
+                                </div>
+
+                                {pipelineAmcsLoading ? (
+                                    <div className={styles.loadingText}>Loading AMC list...</div>
+                                ) : (
+                                    <div className={styles.amcChecklist}>
+                                        {pipelineAmcs.map(amc => {
+                                            const amcEvent = pipelineEvents.filter(e => e.amc === amc.slug).slice(-1)[0];
+                                            const statusEmoji = amcEvent
+                                                ? amcEvent.event === "amc_done"
+                                                    ? amcEvent.status === "done" || amcEvent.status === "scraped" ? "✅" : "❌"
+                                                    : amcEvent.event === "amc_start" || amcEvent.event === "step_start" ? "⏳" : ""
+                                                : "";
+                                            return (
+                                                <label key={amc.slug} className={styles.amcCheckItem}>
+                                                    <input
+                                                        type="checkbox"
+                                                        checked={selectedAmcs.has(amc.slug)}
+                                                        onChange={() => toggleAmc(amc.slug)}
+                                                        disabled={pipelineRunning}
+                                                    />
+                                                    <span className={styles.amcCheckName}>{amc.displayName}</span>
+                                                    {statusEmoji && <span className={styles.amcCheckStatus}>{statusEmoji}</span>}
+                                                </label>
+                                            );
+                                        })}
+                                    </div>
+                                )}
+                            </div>
+
+                            {/* Run Pipeline Button */}
+                            <button
+                                className={styles.extractBtn}
+                                style={{ background: "linear-gradient(135deg, #f59e0b, #f97316)" }}
+                                disabled={pipelineRunning || selectedAmcs.size === 0}
+                                onClick={handleStartPipeline}
+                            >
+                                {pipelineRunning ? (
+                                    <><span className={styles.spinner} /> Pipeline Running...</>
+                                ) : (
+                                    <>🚀 {pipelineScrapeOnly ? "Download Factsheets" : "Run Full Pipeline"} ({selectedAmcs.size} AMC{selectedAmcs.size !== 1 ? "s" : ""})</>
+                                )}
+                            </button>
+
+                            {/* Progress */}
+                            {pipelineStatus && pipelineStatus.status !== "idle" && (
+                                <div className={styles.pipelineProgress}>
+                                    <div className={styles.progressHeader}>
+                                        <span className={styles.progressLabel}>
+                                            {pipelineStatus.status === "running" ? "⏳ Running" : pipelineStatus.status === "done" ? "✅ Completed" : "❌ Failed"}
+                                        </span>
+                                        {pipelineStatus.progress && pipelineStatus.progress.total > 0 && (
+                                            <span className={styles.progressCount}>
+                                                {(pipelineStatus.progress.done || 0) + (pipelineStatus.progress.failed || 0)} / {pipelineStatus.progress.total}
+                                            </span>
+                                        )}
+                                    </div>
+                                    {pipelineStatus.progress && pipelineStatus.progress.total > 0 && (
+                                        <div className={styles.progressBar}>
+                                            <div
+                                                className={styles.progressBarFill}
+                                                style={{
+                                                    width: `${(((pipelineStatus.progress.done || 0) + (pipelineStatus.progress.failed || 0)) / pipelineStatus.progress.total) * 100}%`,
+                                                }}
+                                            />
+                                        </div>
+                                    )}
+                                    {pipelineStatus.currentAmc && pipelineStatus.status === "running" && (
+                                        <div className={styles.currentAmcInfo}>
+                                            Processing: <strong>{pipelineStatus.currentAmc}</strong>
+                                            {pipelineStatus.currentStep && (
+                                                <span className={styles.stepBadge}>{pipelineStatus.currentStep}</span>
+                                            )}
+                                        </div>
+                                    )}
+                                </div>
+                            )}
+
+                            {/* Logs */}
+                            {pipelineLogs.length > 0 && (
+                                <details className={styles.logDetails} open={pipelineRunning}>
+                                    <summary>Pipeline logs ({pipelineLogs.length} lines)</summary>
+                                    <pre className={styles.logPre}>{pipelineLogs.join("\n")}</pre>
+                                </details>
                             )}
                         </div>
                     </>
