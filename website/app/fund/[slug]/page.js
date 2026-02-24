@@ -561,13 +561,26 @@ export default function FundDetailPage() {
                         {Object.entries(riskMetrics).map(([key, val]) => {
                             if (val == null) return null;
                             const label = key.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
-                            const isGood = (key === "sharpe_ratio" && val > 1) || (key === "alpha" && val > 0) || (key === "sortino_ratio" && val > 1) || (key === "r_squared" && val > 0.8);
+
+                            // Handle nested objects like {fund: 0.99, benchmark: 1.0}
+                            let displayVal;
+                            if (typeof val === "object" && val !== null && !Array.isArray(val)) {
+                                const parts = Object.entries(val)
+                                    .map(([k, v]) => `${k.replace(/\b\w/g, c => c.toUpperCase())}: ${v}`)
+                                    .join(" | ");
+                                displayVal = parts;
+                            } else {
+                                displayVal = String(val);
+                            }
+
+                            const numVal = typeof val === "number" ? val : (typeof val === "object" && val?.fund != null ? val.fund : null);
+                            const isGood = (key === "sharpe_ratio" && numVal > 1) || (key === "alpha" && numVal > 0) || (key === "sortino_ratio" && numVal > 1) || (key === "r_squared" && numVal > 0.8);
                             const isBad = key === "max_drawdown";
                             return (
                                 <div key={key} className={styles.riskMetricCard}>
                                     <span className={styles.riskMetricLabel}>{label}</span>
                                     <span className={`${styles.riskMetricVal} ${isBad ? "negative" : isGood ? "positive" : ""}`}>
-                                        {val}
+                                        {displayVal}
                                     </span>
                                 </div>
                             );
