@@ -198,6 +198,19 @@
   font-weight: 800;
   color: white;
   flex-shrink: 0;
+  overflow: hidden;
+}
+
+.amcLogo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 4px;
+}
+
+.amcIconWithLogo {
+  background: white;
+  border: 1px solid var(--border-color);
 }
 
 .amcInfo {
@@ -344,6 +357,20 @@
   margin-bottom: 10px;
 }
 
+.fundAmcWithLogo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.fundCardLogo {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  flex-shrink: 0;
+  border-radius: 4px;
+}
+
 .fundAmc {
   font-size: 12px;
   font-weight: 600;
@@ -476,6 +503,15 @@
     height: 36px;
     font-size: 16px;
     border-radius: 8px;
+  }
+
+  .amcLogo {
+    padding: 3px;
+  }
+
+  .fundCardLogo {
+    width: 16px;
+    height: 16px;
   }
 
   .amcName {

@@ -49,6 +49,28 @@
     text-decoration: underline;
 }
 
+.fundAmcHeader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.fundAmcHeaderLogo {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+.fundAmcHeaderName {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--accent-blue);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
 .fundTitle {
     font-size: 32px;
     font-weight: 800;
@@ -237,23 +259,24 @@
 .riskometer {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 6px;
 }
 
-.riskMeter {
-    display: flex;
-    gap: 3px;
+.riskometerLarge {
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
 }
 
-.riskSegment {
-    width: 16px;
-    height: 8px;
-    border-radius: 2px;
+.riskGauge {
+    display: block;
+    flex-shrink: 0;
 }
 
 .riskLabel {
     font-size: 12px;
     font-weight: 700;
+    white-space: nowrap;
 }
 
 /* ===== FUND MANAGERS ===== */
