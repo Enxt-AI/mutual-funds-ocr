@@ -378,7 +378,6 @@ def extract_page_with_gemini(uploaded_file) -> dict:
             if text is None:
                 # Empty response — likely rate limit or model overload, wait longer
                 wait = 30 * (attempt + 1)
-                print(f"      Empty response (attempt {attempt + 1}/{MAX_RETRIES}), waiting {wait}s...", flush=True)
                 if attempt < MAX_RETRIES - 1:
                     time.sleep(wait)
                     continue
@@ -395,7 +394,7 @@ def extract_page_with_gemini(uploaded_file) -> dict:
             return json.loads(text)
 
         except json.JSONDecodeError as e:
-            print(f"      JSON parse error (attempt {attempt + 1}): {e}", flush=True)
+
             # Try to repair truncated JSON before retrying
             repaired = _try_repair_json(text)
             if repaired is not None:
@@ -409,9 +408,7 @@ def extract_page_with_gemini(uploaded_file) -> dict:
 
         except Exception as e:
             delay = BASE_DELAY * (2 ** attempt)
-            print(f"      API error (attempt {attempt + 1}): {e}", flush=True)
             if attempt < MAX_RETRIES - 1:
-                print(f"      Retrying in {delay}s...", flush=True)
                 time.sleep(delay)
             else:
                 raise

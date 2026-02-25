@@ -197,6 +197,137 @@
     height: auto;
 }
 
+/* ===== CHART LEGEND ===== */
+.chartLegend {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 12px;
+    padding: 8px 0;
+}
+
+.legendItem {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.legendDot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+/* ===== ALPHA BANNER ===== */
+.alphaBanner {
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    background: var(--bg-card);
+}
+
+.alphaBannerHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.alphaBenchName {
+    font-size: 13px;
+    color: var(--text-muted);
+    font-weight: 600;
+    background: var(--bg-secondary);
+    padding: 4px 12px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+}
+
+.alphaCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.alphaCard {
+    padding: 20px;
+    border-radius: var(--radius-md);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+}
+
+.alphaPositive {
+    background: rgba(16, 185, 129, 0.08);
+    border: 1px solid rgba(16, 185, 129, 0.25);
+}
+
+.alphaNegative {
+    background: rgba(239, 68, 68, 0.08);
+    border: 1px solid rgba(239, 68, 68, 0.25);
+}
+
+.alphaLabel {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    color: var(--text-muted);
+}
+
+.alphaValue {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.alphaPositive .alphaValue {
+    color: #10b981;
+}
+
+.alphaNegative .alphaValue {
+    color: #ef4444;
+}
+
+.alphaDetail {
+    font-size: 12px;
+    color: var(--text-secondary);
+}
+
+/* ===== COMPARISON BARS ===== */
+.comparisonBars {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    min-width: 120px;
+}
+
+.compBarRow {
+    height: 8px;
+    border-radius: 4px;
+    background: var(--bg-secondary);
+    overflow: hidden;
+}
+
+.compBarFund {
+    height: 100%;
+    border-radius: 4px;
+    background: linear-gradient(90deg, #10b981, #34d399);
+    transition: width 0.6s ease;
+}
+
+.compBarBench {
+    height: 100%;
+    border-radius: 4px;
+    background: linear-gradient(90deg, #3b82f6, #60a5fa);
+    transition: width 0.6s ease;
+}
+
 /* ===== TABLE ===== */
 .tableWrap {
     overflow-x: auto;
@@ -353,6 +484,20 @@
 .riskMetricVal {
     font-size: 24px;
     font-weight: 800;
+}
+
+.calcBadge {
+    display: inline-block;
+    font-size: 9px;
+    font-weight: 700;
+    background: rgba(99, 102, 241, 0.15);
+    color: #818cf8;
+    padding: 1px 5px;
+    border-radius: 4px;
+    margin-left: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    vertical-align: middle;
 }
 
 /* ===== SIP CALCULATOR ===== */
@@ -721,5 +866,17 @@
 
     .managerGrid {
         grid-template-columns: 1fr;
+    }
+
+    .alphaCards {
+        grid-template-columns: 1fr;
+    }
+
+    .alphaValue {
+        font-size: 22px;
+    }
+
+    .comparisonBars {
+        min-width: 80px;
     }
 }

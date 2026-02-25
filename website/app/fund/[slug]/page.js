@@ -71,63 +71,246 @@ function filterByPeriod(data, period) {
     return data.filter((d) => new Date(d.date) >= from);
 }
 
-// Simple SVG chart component
-function NavChart({ data, benchmarkLabel }) {
-    if (!data || !data.length) return <div className={styles.noData}>No NAV data available</div>;
-    const w = 800, h = 300, padX = 50, padY = 30;
-    const minNav = Math.min(...data.map((d) => d.nav));
-    const maxNav = Math.max(...data.map((d) => d.nav));
+/**
+ * Compute risk metrics from fund NAV series and benchmark index series.
+ * Both should be arrays of { date, nav } sorted oldest-first.
+ * Returns object with: beta, alpha, sharpe_ratio, standard_deviation, r_squared,
+ *   treynor_ratio, sortino_ratio, information_ratio, tracking_error
+ */
+function computeRiskMetrics(fundNavData, benchmarkData) {
+    if (!fundNavData?.length || !benchmarkData?.length) return null;
+
+    // Build date-indexed maps
+    const fundMap = new Map(fundNavData.map(d => [d.date, d.nav]));
+    const benchMap = new Map(benchmarkData.map(d => [d.date, d.nav]));
+
+    // Find common dates (sorted)
+    const commonDates = [...fundMap.keys()].filter(d => benchMap.has(d)).sort();
+    if (commonDates.length < 30) return null; // Need at least 30 data points
+
+    // Compute daily log returns
+    const fundReturns = [];
+    const benchReturns = [];
+    const excessReturns = []; // fund - benchmark
+
+    for (let i = 1; i < commonDates.length; i++) {
+        const fPrev = fundMap.get(commonDates[i - 1]);
+        const fCurr = fundMap.get(commonDates[i]);
+        const bPrev = benchMap.get(commonDates[i - 1]);
+        const bCurr = benchMap.get(commonDates[i]);
+
+        if (fPrev > 0 && bPrev > 0) {
+            const fr = Math.log(fCurr / fPrev);
+            const br = Math.log(bCurr / bPrev);
+            fundReturns.push(fr);
+            benchReturns.push(br);
+            excessReturns.push(fr - br);
+        }
+    }
+
+    if (fundReturns.length < 20) return null;
+
+    const n = fundReturns.length;
+    const mean = arr => arr.reduce((s, v) => s + v, 0) / arr.length;
+    const variance = arr => { const m = mean(arr); return arr.reduce((s, v) => s + (v - m) ** 2, 0) / (arr.length - 1); };
+
+    const fundMean = mean(fundReturns);
+    const benchMean = mean(benchReturns);
+    const fundVar = variance(fundReturns);
+    const benchVar = variance(benchReturns);
+    const fundStd = Math.sqrt(fundVar);
+
+    // Covariance
+    let cov = 0;
+    for (let i = 0; i < n; i++) {
+        cov += (fundReturns[i] - fundMean) * (benchReturns[i] - benchMean);
+    }
+    cov /= (n - 1);
+
+    // Beta = Cov(fund, bench) / Var(bench)
+    const beta = benchVar > 0 ? cov / benchVar : null;
+
+    // Annualized values (252 trading days)
+    const annualFundReturn = fundMean * 252;
+    const annualBenchReturn = benchMean * 252;
+    const annualStdDev = fundStd * Math.sqrt(252);
+
+    // Risk-free rate (India 1Y T-bill ≈ 6.5%)
+    const rf = 0.065;
+
+    // Alpha (Jensen's) = Fund Return - [Rf + Beta * (Bench Return - Rf)]
+    const alpha = beta != null ? annualFundReturn - (rf + beta * (annualBenchReturn - rf)) : null;
+
+    // Sharpe Ratio = (Fund Return - Rf) / StdDev
+    const sharpe = annualStdDev > 0 ? (annualFundReturn - rf) / annualStdDev : null;
+
+    // Correlation & R²
+    const benchStd = Math.sqrt(benchVar);
+    const correlation = (fundStd > 0 && benchStd > 0) ? cov / (fundStd * benchStd) : null;
+    const rSquared = correlation != null ? correlation ** 2 : null;
+
+    // Treynor Ratio = (Fund Return - Rf) / Beta
+    const treynor = beta != null && beta !== 0 ? (annualFundReturn - rf) / beta : null;
+
+    // Sortino Ratio - uses downside deviation
+    const dailyRf = rf / 252;
+    const downsideReturns = fundReturns.filter(r => r < dailyRf).map(r => (r - dailyRf) ** 2);
+    const downsideDev = downsideReturns.length > 0 ? Math.sqrt(downsideReturns.reduce((s, v) => s + v, 0) / downsideReturns.length) * Math.sqrt(252) : null;
+    const sortino = downsideDev != null && downsideDev > 0 ? (annualFundReturn - rf) / downsideDev : null;
+
+    // Tracking Error = StdDev of excess returns (annualized)
+    const trackingError = Math.sqrt(variance(excessReturns)) * Math.sqrt(252);
+
+    // Information Ratio = (Fund Return - Bench Return) / Tracking Error
+    const infoRatio = trackingError > 0 ? (annualFundReturn - annualBenchReturn) / trackingError : null;
+
+    return {
+        beta: beta != null ? +beta.toFixed(2) : null,
+        alpha: alpha != null ? +(alpha * 100).toFixed(2) : null, // as percentage
+        sharpe_ratio: sharpe != null ? +sharpe.toFixed(2) : null,
+        standard_deviation: annualStdDev > 0 ? +(annualStdDev * 100).toFixed(2) : null, // as percentage
+        r_squared: rSquared != null ? +rSquared.toFixed(4) : null,
+        treynor_ratio: treynor != null ? +treynor.toFixed(2) : null,
+        sortino_ratio: sortino != null ? +sortino.toFixed(2) : null,
+        information_ratio: infoRatio != null ? +infoRatio.toFixed(2) : null,
+        tracking_error: trackingError > 0 ? +(trackingError * 100).toFixed(2) : null, // as percentage
+    };
+}
+
+// Dual-line SVG chart: Fund NAV vs Benchmark (both normalized to base 100)
+function NavChart({ data, fundNavData, benchmarkLabel, fundLabel }) {
+    const hasBenchmark = data && data.length > 0;
+    const hasFundNav = fundNavData && fundNavData.length > 0;
+    if (!hasBenchmark && !hasFundNav) return <div className={styles.noData}>No chart data available</div>;
+
+    const w = 800, h = 320, padX = 50, padY = 30, padBottom = 45;
+
+    // Normalize both datasets to base 100 and align date ranges
+    function normalize(points) {
+        if (!points || !points.length) return [];
+        const base = points[0].nav;
+        if (!base) return points;
+        return points.map(p => ({ date: p.date, nav: (p.nav / base) * 100 }));
+    }
+
+    const normBench = normalize(data || []);
+    const normFund = normalize(fundNavData || []);
+
+    // Find overlapping date range if both exist
+    let benchFiltered = normBench;
+    let fundFiltered = normFund;
+
+    if (hasBenchmark && hasFundNav) {
+        const benchDates = new Set(normBench.map(d => d.date));
+        const fundDates = new Set(normFund.map(d => d.date));
+        // Find common start date
+        const allBenchDates = normBench.map(d => d.date).sort();
+        const allFundDates = normFund.map(d => d.date).sort();
+        const startDate = allBenchDates[0] > allFundDates[0] ? allBenchDates[0] : allFundDates[0];
+        benchFiltered = normBench.filter(d => d.date >= startDate);
+        fundFiltered = normFund.filter(d => d.date >= startDate);
+        // Re-normalize after filtering
+        if (benchFiltered.length > 0) {
+            const base = benchFiltered[0].nav;
+            benchFiltered = benchFiltered.map(p => ({ date: p.date, nav: (p.nav / base) * 100 }));
+        }
+        if (fundFiltered.length > 0) {
+            const base = fundFiltered[0].nav;
+            fundFiltered = fundFiltered.map(p => ({ date: p.date, nav: (p.nav / base) * 100 }));
+        }
+    }
+
+    // Compute global Y range
+    const allNavs = [...benchFiltered.map(d => d.nav), ...fundFiltered.map(d => d.nav)];
+    const minNav = Math.min(...allNavs);
+    const maxNav = Math.max(...allNavs);
     const range = maxNav - minNav || 1;
 
-    const points = data.map((d, i) => {
-        const x = padX + (i / (data.length - 1)) * (w - padX * 2);
-        const y = padY + (1 - (d.nav - minNav) / range) * (h - padY * 2);
-        return `${x},${y}`;
-    });
+    function toPolyline(pts) {
+        if (!pts.length) return "";
+        return pts.map((d, i) => {
+            const x = padX + (i / Math.max(pts.length - 1, 1)) * (w - padX * 2);
+            const y = padY + (1 - (d.nav - minNav) / range) * (h - padY - padBottom);
+            return `${x},${y}`;
+        }).join(" ");
+    }
 
-    const polyline = points.join(" ");
-    const areaPoints = `${padX},${h - padY} ${polyline} ${padX + ((data.length - 1) / (data.length - 1)) * (w - padX * 2)},${h - padY}`;
+    const benchPolyline = toPolyline(benchFiltered);
+    const fundPolyline = toPolyline(fundFiltered);
 
-    const startNav = data[0].nav;
-    const endNav = data[data.length - 1].nav;
-    const isPositive = endNav >= startNav;
-    const strokeColor = isPositive ? "#10b981" : "#ef4444";
+    // Area under fund line
+    const primaryData = hasFundNav ? fundFiltered : benchFiltered;
+    const primaryPoly = hasFundNav ? fundPolyline : benchPolyline;
+    const endX = padX + ((primaryData.length - 1) / Math.max(primaryData.length - 1, 1)) * (w - padX * 2);
+    const areaPoints = primaryData.length > 0 ? `${padX},${h - padBottom} ${primaryPoly} ${endX},${h - padBottom}` : "";
 
+    // Y labels
     const yLabels = [];
     for (let i = 0; i <= 4; i++) {
         const val = minNav + (range * i) / 4;
-        const y = padY + (1 - i / 4) * (h - padY * 2);
+        const y = padY + (1 - i / 4) * (h - padY - padBottom);
         yLabels.push({ val: val.toFixed(0), y });
     }
 
+    // X labels from primary dataset
+    const xData = primaryData.length > 0 ? primaryData : benchFiltered;
     const xLabels = [];
-    const step = Math.floor(data.length / 5) || 1;
-    for (let i = 0; i < data.length; i += step) {
-        const x = padX + (i / (data.length - 1)) * (w - padX * 2);
-        const d = new Date(data[i].date);
+    const step = Math.floor(xData.length / 5) || 1;
+    for (let i = 0; i < xData.length; i += step) {
+        const x = padX + (i / Math.max(xData.length - 1, 1)) * (w - padX * 2);
+        const d = new Date(xData[i].date);
         xLabels.push({ label: d.toLocaleDateString("en-IN", { month: "short", year: "2-digit" }), x });
     }
 
     return (
-        <svg viewBox={`0 0 ${w} ${h}`} className={styles.chartSvg}>
-            <defs>
-                <linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor={strokeColor} stopOpacity="0.3" />
-                    <stop offset="100%" stopColor={strokeColor} stopOpacity="0" />
-                </linearGradient>
-            </defs>
-            {yLabels.map((l, i) => (
-                <g key={i}>
-                    <line x1={padX} y1={l.y} x2={w - padX} y2={l.y} stroke="rgba(255,255,255,0.05)" />
-                    <text x={padX - 8} y={l.y + 4} fill="#64748b" fontSize="11" textAnchor="end">{l.val}</text>
-                </g>
-            ))}
-            {xLabels.map((l, i) => (
-                <text key={i} x={l.x} y={h - 6} fill="#64748b" fontSize="11" textAnchor="middle">{l.label}</text>
-            ))}
-            <polygon points={areaPoints} fill="url(#areaGrad)" />
-            <polyline points={polyline} fill="none" stroke={strokeColor} strokeWidth="2" strokeLinejoin="round" />
-        </svg>
+        <div>
+            <svg viewBox={`0 0 ${w} ${h}`} className={styles.chartSvg}>
+                <defs>
+                    <linearGradient id="fundAreaGrad" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stopColor="#10b981" stopOpacity="0.15" />
+                        <stop offset="100%" stopColor="#10b981" stopOpacity="0" />
+                    </linearGradient>
+                </defs>
+                {yLabels.map((l, i) => (
+                    <g key={i}>
+                        <line x1={padX} y1={l.y} x2={w - padX} y2={l.y} stroke="rgba(255,255,255,0.05)" />
+                        <text x={padX - 8} y={l.y + 4} fill="#64748b" fontSize="11" textAnchor="end">{l.val}</text>
+                    </g>
+                ))}
+                {xLabels.map((l, i) => (
+                    <text key={i} x={l.x} y={h - 10} fill="#64748b" fontSize="11" textAnchor="middle">{l.label}</text>
+                ))}
+                {/* Area fill under fund line */}
+                {hasFundNav && areaPoints && <polygon points={areaPoints} fill="url(#fundAreaGrad)" />}
+                {/* Benchmark line (blue, dashed) */}
+                {hasBenchmark && (
+                    <polyline points={benchPolyline} fill="none" stroke="#3b82f6" strokeWidth="1.8"
+                        strokeDasharray={hasFundNav ? "6,3" : "0"} strokeLinejoin="round" opacity={hasFundNav ? 0.7 : 1} />
+                )}
+                {/* Fund NAV line (green, solid) */}
+                {hasFundNav && (
+                    <polyline points={fundPolyline} fill="none" stroke="#10b981" strokeWidth="2.2" strokeLinejoin="round" />
+                )}
+            </svg>
+            {/* Legend */}
+            <div className={styles.chartLegend}>
+                {hasFundNav && (
+                    <div className={styles.legendItem}>
+                        <span className={styles.legendDot} style={{ background: "#10b981" }} />
+                        <span>{fundLabel || "Fund NAV"}</span>
+                    </div>
+                )}
+                {hasBenchmark && (
+                    <div className={styles.legendItem}>
+                        <span className={styles.legendDot} style={{ background: "#3b82f6" }} />
+                        <span>{benchmarkLabel || "Benchmark"}</span>
+                    </div>
+                )}
+                <div className={styles.legendItem} style={{ color: "var(--text-muted)", fontSize: 11 }}>
+                    Normalized to base 100
+                </div>
+            </div>
+        </div>
     );
 }
 
@@ -320,9 +503,36 @@ export default function FundDetailPage() {
     const { navMap } = useNavData(fund ? [fund] : []);
     const liveNav = navMap[fund?.slug];
 
+    // Fetch historical NAV for this fund from mfapi.in
+    const [fundNavHistory, setFundNavHistory] = useState([]);
+    useEffect(() => {
+        if (!fund) return;
+        // Try AMFI code first, then fall back to searching by fund name
+        const code = liveNav?.code;
+        const url = code
+            ? `/api/nav/history?code=${code}`
+            : `/api/nav/history?search=${encodeURIComponent(fund.fund_name)}`;
+
+        fetch(url)
+            .then(res => res.json())
+            .then(data => {
+                if (data.data && data.data.length > 0) {
+                    setFundNavHistory(data.data);
+                }
+            })
+            .catch(() => { });
+    }, [liveNav?.code, fund?.fund_name]);
+
     // Get real benchmark data for this fund
     const benchmark = useMemo(() => getBenchmarkData(fund?.benchmark), [fund?.benchmark]);
     const chartData = filterByPeriod(benchmark.points, chartPeriod);
+    const fundChartData = filterByPeriod(fundNavHistory, chartPeriod);
+
+    // Compute risk metrics from historical data (fallback for OCR-extracted metrics)
+    const calculatedMetrics = useMemo(
+        () => computeRiskMetrics(fundNavHistory, benchmark.points),
+        [fundNavHistory, benchmark.points]
+    );
 
     const sectorColors = ["#3b82f6", "#8b5cf6", "#06b6d4", "#10b981", "#f59e0b", "#ef4444", "#ec4899", "#f97316", "#14b8a6", "#6366f1"];
     const capColors = ["#3b82f6", "#8b5cf6", "#f59e0b", "#10b981"];
@@ -422,10 +632,53 @@ export default function FundDetailPage() {
                 </div>
             </section>
 
-            {/* ===== BENCHMARK CHART ===== */}
+            {/* ===== ALPHA SUMMARY BANNER ===== */}
+            {returns.length > 0 && (() => {
+                const r1Y = returns.find(r => r.period === "1Y");
+                const r3Y = returns.find(r => r.period === "3Y");
+                const alpha1Y = (r1Y?.fund_return != null && r1Y?.benchmark_return != null) ? r1Y.fund_return - r1Y.benchmark_return : null;
+                const alpha3Y = (r3Y?.fund_return != null && r3Y?.benchmark_return != null) ? r3Y.fund_return - r3Y.benchmark_return : null;
+                if (alpha1Y == null && alpha3Y == null) return null;
+                return (
+                    <section className={`card ${styles.section} ${styles.alphaBanner}`}>
+                        <div className={styles.alphaBannerHeader}>
+                            <h2 className="section-title">⚡ Benchmark Comparison</h2>
+                            <span className={styles.alphaBenchName}>
+                                vs {fund.benchmark || benchmark.name}
+                            </span>
+                        </div>
+                        <div className={styles.alphaCards}>
+                            {alpha1Y != null && (
+                                <div className={`${styles.alphaCard} ${alpha1Y >= 0 ? styles.alphaPositive : styles.alphaNegative}`}>
+                                    <span className={styles.alphaLabel}>1 Year Alpha</span>
+                                    <span className={styles.alphaValue}>
+                                        {alpha1Y >= 0 ? "▲" : "▼"} {alpha1Y >= 0 ? "+" : ""}{alpha1Y.toFixed(2)}%
+                                    </span>
+                                    <span className={styles.alphaDetail}>
+                                        Fund {safe(r1Y.fund_return, "%")} vs Benchmark {safe(r1Y.benchmark_return, "%")}
+                                    </span>
+                                </div>
+                            )}
+                            {alpha3Y != null && (
+                                <div className={`${styles.alphaCard} ${alpha3Y >= 0 ? styles.alphaPositive : styles.alphaNegative}`}>
+                                    <span className={styles.alphaLabel}>3 Year Alpha</span>
+                                    <span className={styles.alphaValue}>
+                                        {alpha3Y >= 0 ? "▲" : "▼"} {alpha3Y >= 0 ? "+" : ""}{alpha3Y.toFixed(2)}%
+                                    </span>
+                                    <span className={styles.alphaDetail}>
+                                        Fund {safe(r3Y.fund_return, "%")} vs Benchmark {safe(r3Y.benchmark_return, "%")}
+                                    </span>
+                                </div>
+                            )}
+                        </div>
+                    </section>
+                );
+            })()}
+
+            {/* ===== FUND vs BENCHMARK CHART ===== */}
             <section className={`card ${styles.section}`}>
                 <div className={styles.sectionHeader}>
-                    <h2 className="section-title">📈 {benchmark.name} Performance</h2>
+                    <h2 className="section-title">📈 Fund vs Benchmark</h2>
                     <div className="pill-tabs">
                         {CHART_PERIODS.map((p) => (
                             <button key={p} className={`pill-tab ${chartPeriod === p ? "active" : ""}`} onClick={() => setChartPeriod(p)}>
@@ -434,50 +687,67 @@ export default function FundDetailPage() {
                         ))}
                     </div>
                 </div>
-                <NavChart data={chartData} benchmarkLabel={benchmark.name} />
+                <NavChart data={chartData} fundNavData={fundChartData} benchmarkLabel={benchmark.name} fundLabel={fund.fund_name} />
             </section>
 
             {/* ===== RETURNS TABLE ===== */}
-            {returns.length > 0 && (
-                <section className={`card ${styles.section}`}>
-                    <h2 className="section-title">📊 Returns Comparison</h2>
-                    <div className={styles.tableWrap}>
-                        <table className="data-table">
-                            <thead>
-                                <tr>
-                                    <th>Period</th>
-                                    <th>Fund Return</th>
-                                    <th>Benchmark</th>
-                                    {returns.some(r => r.additional_benchmark_return != null) && (
-                                        <th>Addl. Benchmark</th>
-                                    )}
-                                    <th>vs Benchmark</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {returns.map((r) => {
-                                    const diff = (r.fund_return != null && r.benchmark_return != null) ? r.fund_return - r.benchmark_return : null;
-                                    return (
-                                        <tr key={r.period}>
-                                            <td style={{ fontWeight: 600 }}>{r.period}</td>
-                                            <td className={r.fund_return >= 0 ? "positive" : "negative"} style={{ fontWeight: 700 }}>
-                                                {safe(r.fund_return, "%")}
-                                            </td>
-                                            <td>{safe(r.benchmark_return, "%")}</td>
-                                            {returns.some(ret => ret.additional_benchmark_return != null) && (
-                                                <td>{safe(r.additional_benchmark_return, "%")}</td>
-                                            )}
-                                            <td className={diff != null ? (diff >= 0 ? "positive" : "negative") : ""} style={{ fontWeight: 600 }}>
-                                                {diff != null ? `${diff >= 0 ? "+" : ""}${diff.toFixed(2)}%` : "—"}
-                                            </td>
-                                        </tr>
-                                    );
-                                })}
-                            </tbody>
-                        </table>
-                    </div>
-                </section>
-            )}
+            {returns.length > 0 && (() => {
+                const maxReturn = Math.max(...returns.map(r => Math.max(Math.abs(r.fund_return || 0), Math.abs(r.benchmark_return || 0))));
+                const barScale = maxReturn > 0 ? 100 / maxReturn : 1;
+                return (
+                    <section className={`card ${styles.section}`}>
+                        <h2 className="section-title">📊 Returns Comparison</h2>
+                        <div className={styles.tableWrap}>
+                            <table className="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Period</th>
+                                        <th>Fund Return</th>
+                                        <th>Benchmark</th>
+                                        {returns.some(r => r.additional_benchmark_return != null) && (
+                                            <th>Addl. Benchmark</th>
+                                        )}
+                                        <th>Alpha</th>
+                                        <th style={{ minWidth: 160 }}>Comparison</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {returns.map((r) => {
+                                        const diff = (r.fund_return != null && r.benchmark_return != null) ? r.fund_return - r.benchmark_return : null;
+                                        const fundW = r.fund_return != null ? Math.abs(r.fund_return) * barScale : 0;
+                                        const benchW = r.benchmark_return != null ? Math.abs(r.benchmark_return) * barScale : 0;
+                                        return (
+                                            <tr key={r.period}>
+                                                <td style={{ fontWeight: 600 }}>{r.period}</td>
+                                                <td className={r.fund_return >= 0 ? "positive" : "negative"} style={{ fontWeight: 700 }}>
+                                                    {safe(r.fund_return, "%")}
+                                                </td>
+                                                <td>{safe(r.benchmark_return, "%")}</td>
+                                                {returns.some(ret => ret.additional_benchmark_return != null) && (
+                                                    <td>{safe(r.additional_benchmark_return, "%")}</td>
+                                                )}
+                                                <td className={diff != null ? (diff >= 0 ? "positive" : "negative") : ""} style={{ fontWeight: 600 }}>
+                                                    {diff != null ? `${diff >= 0 ? "+" : ""}${diff.toFixed(2)}%` : "—"}
+                                                </td>
+                                                <td>
+                                                    <div className={styles.comparisonBars}>
+                                                        <div className={styles.compBarRow}>
+                                                            <div className={styles.compBarFund} style={{ width: `${Math.max(fundW, 2)}%` }} />
+                                                        </div>
+                                                        <div className={styles.compBarRow}>
+                                                            <div className={styles.compBarBench} style={{ width: `${Math.max(benchW, 2)}%` }} />
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        );
+                                    })}
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                );
+            })()}
 
             {/* ===== TWO-COLUMN: HOLDINGS + ALLOCATIONS ===== */}
             <div className={styles.twoCol}>
@@ -611,40 +881,77 @@ export default function FundDetailPage() {
             )}
 
             {/* ===== RISK METRICS ===== */}
-            {Object.keys(riskMetrics).length > 0 && Object.values(riskMetrics).some(v => v != null) && (
-                <section className={`card ${styles.section}`}>
-                    <h2 className="section-title">⚡ Risk Metrics</h2>
-                    <div className={styles.riskGrid}>
-                        {Object.entries(riskMetrics).map(([key, val]) => {
-                            if (val == null) return null;
-                            const label = key.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+            {(() => {
+                // Merge OCR-extracted risk metrics with calculated ones
+                const ocrMetrics = riskMetrics || {};
+                const hasOcr = Object.keys(ocrMetrics).length > 0 && Object.values(ocrMetrics).some(v => v != null);
+                const hasCalc = calculatedMetrics != null;
+                if (!hasOcr && !hasCalc) return null;
 
-                            // Handle nested objects like {fund: 0.99, benchmark: 1.0}
-                            let displayVal;
-                            if (typeof val === "object" && val !== null && !Array.isArray(val)) {
-                                const parts = Object.entries(val)
-                                    .map(([k, v]) => `${k.replace(/\b\w/g, c => c.toUpperCase())}: ${v}`)
-                                    .join(" | ");
-                                displayVal = parts;
-                            } else {
-                                displayVal = String(val);
-                            }
+                // Order of display
+                const metricOrder = ["beta", "alpha", "sharpe_ratio", "standard_deviation", "r_squared",
+                    "treynor_ratio", "sortino_ratio", "information_ratio", "tracking_error", "max_drawdown"];
 
-                            const numVal = typeof val === "number" ? val : (typeof val === "object" && val?.fund != null ? val.fund : null);
-                            const isGood = (key === "sharpe_ratio" && numVal > 1) || (key === "alpha" && numVal > 0) || (key === "sortino_ratio" && numVal > 1) || (key === "r_squared" && numVal > 0.8);
-                            const isBad = key === "max_drawdown";
-                            return (
-                                <div key={key} className={styles.riskMetricCard}>
-                                    <span className={styles.riskMetricLabel}>{label}</span>
-                                    <span className={`${styles.riskMetricVal} ${isBad ? "negative" : isGood ? "positive" : ""}`}>
-                                        {displayVal}
-                                    </span>
-                                </div>
-                            );
-                        })}
-                    </div>
-                </section>
-            )}
+                // Build merged entries: OCR takes priority, calculated fills gaps
+                const merged = {};
+                for (const key of metricOrder) {
+                    const ocrVal = ocrMetrics[key];
+                    const calcVal = hasCalc ? calculatedMetrics[key] : null;
+                    if (ocrVal != null) {
+                        merged[key] = { val: ocrVal, source: "factsheet" };
+                    } else if (calcVal != null) {
+                        merged[key] = { val: calcVal, source: "calculated" };
+                    }
+                }
+                // Also include any OCR-only keys not in our standard list
+                for (const key of Object.keys(ocrMetrics)) {
+                    if (!merged[key] && ocrMetrics[key] != null) {
+                        merged[key] = { val: ocrMetrics[key], source: "factsheet" };
+                    }
+                }
+
+                if (Object.keys(merged).length === 0) return null;
+
+                return (
+                    <section className={`card ${styles.section}`}>
+                        <h2 className="section-title">⚡ Risk Metrics</h2>
+                        <div className={styles.riskGrid}>
+                            {Object.entries(merged).map(([key, { val, source }]) => {
+                                const label = key.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+
+                                let displayVal;
+                                if (typeof val === "object" && val !== null && !Array.isArray(val)) {
+                                    const parts = Object.entries(val)
+                                        .map(([k, v]) => `${k.replace(/\b\w/g, c => c.toUpperCase())}: ${v}`)
+                                        .join(" | ");
+                                    displayVal = parts;
+                                } else {
+                                    displayVal = String(val);
+                                }
+
+                                const numVal = typeof val === "number" ? val : (typeof val === "object" && val?.fund != null ? val.fund : null);
+                                const isGood = (key === "sharpe_ratio" && numVal > 1) || (key === "alpha" && numVal > 0) || (key === "sortino_ratio" && numVal > 1) || (key === "r_squared" && numVal > 0.8);
+                                const isBad = key === "max_drawdown";
+                                const suffix = key === "standard_deviation" || key === "tracking_error" || key === "alpha" ? "%" : "";
+
+                                return (
+                                    <div key={key} className={styles.riskMetricCard}>
+                                        <span className={styles.riskMetricLabel}>
+                                            {label}
+                                            {source === "calculated" && (
+                                                <span className={styles.calcBadge} title="Computed from historical NAV data">Calc</span>
+                                            )}
+                                        </span>
+                                        <span className={`${styles.riskMetricVal} ${isBad ? "negative" : isGood ? "positive" : ""}`}>
+                                            {displayVal}{suffix}
+                                        </span>
+                                    </div>
+                                );
+                            })}
+                        </div>
+                    </section>
+                );
+            })()}
 
             {/* ===== SIP RETURNS (from factsheet) ===== */}
             {fund.sip_returns && fund.sip_returns.length > 0 && (
