@@ -285,22 +285,42 @@ def emit(event_type, **kwargs):
 
 
 def run_spider(spider_name: str) -> tuple[bool, str]:
-    """Run a Scrapy spider. Returns (success, output_text)."""
+    """Run a Scrapy spider. Returns (success, output_text).
+    
+    Streams output line-by-line so the admin panel shows spider progress.
+    """
     cmd = ["scrapy", "crawl", spider_name]
     try:
-        result = subprocess.run(
+        proc = subprocess.Popen(
             cmd,
             cwd=str(SCRAPY_PROJECT),
-            capture_output=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
             text=True,
-            timeout=120,
-            env={**os.environ, "PYTHONIOENCODING": "utf-8"},
+            encoding="utf-8",
+            errors="replace",
+            bufsize=1,  # Line-buffered
+            env={**os.environ, "PYTHONIOENCODING": "utf-8", "PYTHONUNBUFFERED": "1"},
         )
-        output = result.stdout + result.stderr
-        success = result.returncode == 0
-        return success, output
-    except subprocess.TimeoutExpired:
-        return False, "Spider timed out after 120 seconds"
+
+        output_lines = []
+        start_time = time.time()
+        timeout = 1200000000
+
+        for line in iter(proc.stdout.readline, ""):
+            line = line.rstrip("\n\r")
+            if line:
+                output_lines.append(line)
+                print(f"    [Scrapy] {line}", flush=True)
+
+            if time.time() - start_time > timeout:
+                proc.kill()
+                output_lines.append(f"TIMEOUT: Killed after {timeout}s")
+                return False, "\n".join(output_lines)
+
+        proc.wait()
+        return proc.returncode == 0, "\n".join(output_lines)
+
     except Exception as e:
         return False, f"Spider error: {e}"
 
