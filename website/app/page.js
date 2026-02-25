@@ -4,6 +4,7 @@ import { useState, useMemo, useEffect, Suspense } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { useNavData } from "./hooks/useNavData";
+import { getAmcLogoUrl, getAmcInitial } from "../lib/amcLogos";
 import styles from "./page.module.css";
 
 function getRiskColor(risk) {
@@ -189,14 +190,20 @@ function HomeContent() {
               const isExpanded = expandedAmcs.has(amcName);
               const amcTotalAUM = amcFunds.reduce((sum, f) => sum + (f.aum_crores || 0), 0);
               const categories = [...new Set(amcFunds.map(f => f.category).filter(Boolean))];
+              const amcSlug = amcFunds[0]?.amc_slug;
+              const logoUrl = getAmcLogoUrl(amcSlug);
 
               return (
                 <div key={amcName} className={`${styles.amcGroup} ${isExpanded ? styles.amcGroupExpanded : ""}`}>
                   {/* AMC Header */}
                   <button className={styles.amcHeader} onClick={() => toggleAmc(amcName)}>
                     <div className={styles.amcHeaderLeft}>
-                      <div className={styles.amcIcon}>
-                        {amcName.charAt(0).toUpperCase()}
+                      <div className={`${styles.amcIcon} ${logoUrl ? styles.amcIconWithLogo : ""}`}>
+                        {logoUrl ? (
+                          <img src={logoUrl} alt={amcName} className={styles.amcLogo} />
+                        ) : (
+                          getAmcInitial(amcName)
+                        )}
                       </div>
                       <div className={styles.amcInfo}>
                         <h3 className={styles.amcName}>{amcName}</h3>
@@ -233,7 +240,15 @@ function HomeContent() {
                         {amcFunds.map((fund, idx) => (
                           <Link href={`/fund/${fund.slug}`} key={idx} className={styles.fundCard}>
                             <div className={styles.fundCardHeader}>
-                              <div className={styles.fundAmc}>{fund.amc || "—"}</div>
+                              <div className={styles.fundAmcWithLogo}>
+                                {(() => {
+                                  const cardLogoUrl = getAmcLogoUrl(fund.amc_slug);
+                                  return cardLogoUrl ? (
+                                    <img src={cardLogoUrl} alt={fund.amc} className={styles.fundCardLogo} />
+                                  ) : null;
+                                })()}
+                                <span className={styles.fundAmc}>{fund.amc || "—"}</span>
+                              </div>
                               <span className={styles.fundRisk} style={{ color: getRiskColor(fund.risk_level) }}>
                                 {fund.risk_level || "—"}
                               </span>

@@ -1,0 +1,3684 @@
+{
+  "schemes": [
+    {
+      "fund_name": "360 ONE FOCUSED FUND",
+      "fund_standard_name": "360 ONE Focused Equity Fund",
+      "scheme_type": "An open ended equity scheme investing in maximum 30 multicap stocks",
+      "category": "Focused Fund",
+      "investment_objective": "The investment objective of the scheme is to generate long term capital appreciation for investors from a portfolio of equity and equity related securities. However there can be no assurance or guarantee that the investment objective of the scheme would be achieved.",
+      "benchmark": "BSE 500 TRI",
+      "inception_date": "October 30, 2014",
+      "plans_offered": [
+        "Regular",
+        "Direct"
+      ],
+      "options_offered": [
+        "Growth",
+        "IDCW"
+      ],
+      "nav": 52.6568,
+      "nav_date": "January 30, 2026",
+      "aum_crores": 6852.54,
+      "monthly_avg_aum": 7025.57,
+      "expense_ratio": 0.8,
+      "exit_load": "1% - if redeemed/switched out, on or before 12 months from the date of allotment w.e.f April 02, 2019.",
+      "min_lumpsum": 1000,
+      "min_additional": 1000,
+      "min_sip": 1000,
+      "risk_level": "Very High",
+      "fund_managers": [
+        {
+          "name": "Mr. Mayur Patel",
+          "experience": "Mr. Mayur Patel has 20 years of work experience including investment management and research experience of more than 18 years."
+        },
+        {
+          "name": "Mr. Ashish Ongari",
+          "experience": "Mr. Ashish has overall six years of experience in financial services, specializing in algorithmic trading and quantitative research. He holds a B.Tech from NITK, Surathkal, and has previously worked as a trader at Capitalmind and a quant analyst at Investmint. His expertise lies in factor investing, systematic trading, and portfolio optimization."
+        }
+      ],
+      "returns": [
+        {
+          "period": "1Y",
+          "plan": "Direct - Growth",
+          "fund_return": 6.78,
+          "benchmark_return": 7.74,
+          "additional_benchmark_return": 7.42,
+          "fund_return_ptp": 10678,
+          "benchmark_return_ptp": 10774,
+          "additional_benchmark_return_ptp": 10742
+        },
+        {
+          "period": "3Y",
+          "plan": "Direct - Growth",
+          "fund_return": 16.35,
+          "benchmark_return": 16.41,
+          "additional_benchmark_return": 12.77,
+          "fund_return_ptp": 15756,
+          "benchmark_return_ptp": 15780,
+          "additional_benchmark_return_ptp": 14346
+        },
+        {
+          "period": "5Y",
+          "plan": "Direct - Growth",
+          "fund_return": 16.58,
+          "benchmark_return": 16.44,
+          "additional_benchmark_return": 13.56,
+          "fund_return_ptp": 21542,
+          "benchmark_return_ptp": 21410,
+          "additional_benchmark_return_ptp": 18889
+        },
+        {
+          "period": "10Y",
+          "plan": "Direct - Growth",
+          "fund_return": 17.79,
+          "benchmark_return": 15.13,
+          "additional_benchmark_return": 14.11,
+          "fund_return_ptp": 51479,
+          "benchmark_return_ptp": 40972,
+          "additional_benchmark_return_ptp": 37476
+        },
+        {
+          "period": "SI",
+          "plan": "Direct - Growth",
+          "fund_return": 15.91,
+          "benchmark_return": 13.08,
+          "additional_benchmark_return": 11.65,
+          "fund_return_ptp": 52758,
+          "benchmark_return_ptp": 39941,
+          "additional_benchmark_return_ptp": 34612
+        },
+        {
+          "period": "1Y",
+          "plan": "Regular - Growth",
+          "fund_return": 5.7,
+          "benchmark_return": 7.74,
+          "additional_benchmark_return": 7.42,
+          "fund_return_ptp": 10570,
+          "benchmark_return_ptp": 10774,
+          "additional_benchmark_return_ptp": 10742
+        },
+        {
+          "period": "3Y",
+          "plan": "Regular - Growth",
+          "fund_return": 15.21,
+          "benchmark_return": 16.41,
+          "additional_benchmark_return": 12.77,
+          "fund_return_ptp": 15298,
+          "benchmark_return_ptp": 15780,
+          "additional_benchmark_return_ptp": 14346
+        },
+        {
+          "period": "5Y",
+          "plan": "Regular - Growth",
+          "fund_return": 15.4,
+          "benchmark_return": 16.44,
+          "additional_benchmark_return": 13.56,
+          "fund_return_ptp": 20476,
+          "benchmark_return_ptp": 21410,
+          "additional_benchmark_return_ptp": 18889
+        },
+        {
+          "period": "10Y",
+          "plan": "Regular - Growth",
+          "fund_return": 16.44,
+          "benchmark_return": 15.13,
+          "additional_benchmark_return": 14.11,
+          "fund_return_ptp": 45875,
+          "benchmark_return_ptp": 40972,
+          "additional_benchmark_return_ptp": 37476
+        },
+        {
+          "period": "SI",
+          "plan": "Regular - Growth",
+          "fund_return": 14.57,
+          "benchmark_return": 13.08,
+          "additional_benchmark_return": 11.65,
+          "fund_return_ptp": 46283,
+          "benchmark_return_ptp": 39941,
+          "additional_benchmark_return_ptp": 34612
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "ICICI Bank Limited",
+          "sector": "Financial Services",
+          "weight_pct": 8.34
+        },
+        {
+          "name": "HDFC Bank Limited",
+          "sector": "Financial Services",
+          "weight_pct": 8.11
+        },
+        {
+          "name": "Bharti Airtel Limited",
+          "sector": "Telecommunication",
+          "weight_pct": 6.09
+        },
+        {
+          "name": "Indus Towers Limited",
+          "sector": "Telecommunication",
+          "weight_pct": 5.77
+        },
+        {
+          "name": "Cholamandalam Investment and Finance Company Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 5.14
+        },
+        {
+          "name": "Larsen & Toubro Limited",
+          "sector": "Construction",
+          "weight_pct": 4.62
+        },
+        {
+          "name": "Bajaj Finance Limited",
+          "sector": "Financial Services",
+          "weight_pct": 4.59
+        },
+        {
+          "name": "Vedanta Limited",
+          "sector": "Metals & Mining",
+          "weight_pct": 4.13
+        },
+        {
+          "name": "Tata Motors Ltd",
+          "sector": "Capital Goods",
+          "weight_pct": 4.02
+        },
+        {
+          "name": "Infosys Limited",
+          "sector": "Information Technology",
+          "weight_pct": 3.97
+        },
+        {
+          "name": "Motherson Sumi Wiring India Limited",
+          "sector": "Automobile and Auto Components",
+          "weight_pct": 3.6
+        },
+        {
+          "name": "GE Vernova T&D India Limited",
+          "sector": "Capital Goods",
+          "weight_pct": 3.51
+        },
+        {
+          "name": "The Indian Hotels Company Limited",
+          "sector": "Consumer Services",
+          "weight_pct": 3.4
+        },
+        {
+          "name": "Eternal Limited",
+          "sector": "Consumer Services",
+          "weight_pct": 3.22
+        },
+        {
+          "name": "CG Power and Industrial Solutions Limited",
+          "sector": "Capital Goods",
+          "weight_pct": 2.86
+        },
+        {
+          "name": "Shriram Finance Limited",
+          "sector": "Financial Services",
+          "weight_pct": 2.82
+        },
+        {
+          "name": "Premier Energies Limited",
+          "sector": "Capital Goods",
+          "weight_pct": 2.67
+        },
+        {
+          "name": "Titan Company Limited",
+          "sector": "Consumer Durables",
+          "weight_pct": 2.31
+        },
+        {
+          "name": "Divi's Laboratories Limited",
+          "sector": "Healthcare",
+          "weight_pct": 2.15
+        },
+        {
+          "name": "Aegis Vopak Terminals Limited",
+          "sector": "Oil Gas & Consumable Fuels",
+          "weight_pct": 1.91
+        },
+        {
+          "name": "Hero MotoCorp Limited",
+          "sector": "Automobile and Auto Components",
+          "weight_pct": 1.84
+        },
+        {
+          "name": "SIS Limited",
+          "sector": "Consumer Services",
+          "weight_pct": 1.47
+        },
+        {
+          "name": "PhysicsWallah Limited",
+          "sector": "Consumer Services",
+          "weight_pct": 1.39
+        },
+        {
+          "name": "Crompton Greaves Consumer Electricals Limited",
+          "sector": "Consumer Durables",
+          "weight_pct": 1.37
+        },
+        {
+          "name": "Coforge Limited",
+          "sector": "Information Technology",
+          "weight_pct": 1.24
+        },
+        {
+          "name": "Tech Mahindra Limited",
+          "sector": "Information Technology",
+          "weight_pct": 1.07
+        },
+        {
+          "name": "Sumitomo Chemical India Limited",
+          "sector": "Chemicals",
+          "weight_pct": 0.94
+        },
+        {
+          "name": "Bharti Airtel Limited",
+          "sector": "Telecommunication",
+          "weight_pct": 0.23
+        }
+      ],
+      "sector_allocation": {
+        "Financial Services": 33.67,
+        "Capital Goods": 13.05,
+        "Telecommunication": 12.09,
+        "Consumer Services": 9.49,
+        "Information Technology": 6.29,
+        "Automobile and Auto Components": 5.45,
+        "Construction": 4.62,
+        "Metals & Mining": 4.13,
+        "Consumer Durables": 3.68,
+        "Healthcare": 2.15,
+        "Oil Gas & Consumable Fuels": 1.91,
+        "Chemicals": 0.94
+      },
+      "asset_allocation": {
+        "Equity": 97.46,
+        "Cash & Equivalents": 2.54
+      },
+      "market_cap_allocation": {
+        "Large Cap": 73.58,
+        "Mid Cap": 14.59,
+        "Small Cap": 9.3
+      },
+      "risk_metrics": {
+        "beta": 0.89,
+        "sharpe_ratio": 0.79,
+        "standard_deviation": 11.93,
+        "r_squared": 0.92,
+        "treynor_ratio": 0.88,
+        "benchmark": {
+          "standard_deviation": 12.85,
+          "sharpe_ratio": 0.82,
+          "beta": 1.0,
+          "treynor_ratio": 0.88
+        }
+      },
+      "sip_returns": [
+        {
+          "period": "1Y",
+          "total_invested": 120000,
+          "market_value": 121365,
+          "return_pct": 2.12,
+          "benchmark_market_value": 123424,
+          "benchmark_return_pct": 5.35,
+          "additional_benchmark_market_value": 123171,
+          "additional_benchmark_return_pct": 4.95
+        },
+        {
+          "period": "3Y",
+          "total_invested": 360000,
+          "market_value": 408866,
+          "return_pct": 8.45,
+          "benchmark_market_value": 423183,
+          "benchmark_return_pct": 10.79,
+          "additional_benchmark_market_value": 411844,
+          "additional_benchmark_return_pct": 8.94
+        },
+        {
+          "period": "5Y",
+          "total_invested": 600000,
+          "market_value": 805543,
+          "return_pct": 11.73,
+          "benchmark_market_value": 827288,
+          "benchmark_return_pct": 12.81,
+          "additional_benchmark_market_value": 783922,
+          "additional_benchmark_return_pct": 10.64
+        },
+        {
+          "period": "10Y",
+          "total_invested": 1200000,
+          "market_value": 2729707,
+          "return_pct": 15.69,
+          "benchmark_market_value": 2599514,
+          "benchmark_return_pct": 14.78,
+          "additional_benchmark_market_value": 2416461,
+          "additional_benchmark_return_pct": 13.42
+        },
+        {
+          "period": "SI",
+          "total_invested": 1350000,
+          "market_value": 3373103,
+          "return_pct": 15.37,
+          "benchmark_market_value": 3171983,
+          "benchmark_return_pct": 14.37,
+          "additional_benchmark_market_value": 2928551,
+          "additional_benchmark_return_pct": 13.07
+        }
+      ],
+      "portfolio_turnover": "0.50 times",
+      "additional_info": {
+        "bloomberg_code": "IIFGRRG IN",
+        "dematerialization": "D-Mat Option Available",
+        "navs": {
+          "Regular - Growth": 46.2016,
+          "Regular - IDCW": 40.8791,
+          "Direct - Growth": 52.6568,
+          "Direct - IDCW": 52.1198
+        },
+        "expense_ratios": {
+          "Regular Plan": 1.79,
+          "Direct Plan": 0.8
+        },
+        "sip_options": {
+          "Weekly": "₹1,000 per instalment for a minimum period of 6 weeks - any business day between Monday to Friday. Default day will be Tuesday.",
+          "Fortnightly": "₹1,000 per instalment for a minimum period of 6 fortnights - 2nd and 16th of every month",
+          "Monthly": "₹1,000 per instalment for a minimum period of 6 months - Any date 1st to 28th (Default - 7th of every month)",
+          "Quarterly": "₹1,000 per instalment for a minimum period of 6 quarters - Any date 1st to 28th (Default - 7th)"
+        },
+        "portfolio_date": "January 31, 2026",
+        "aum_date": "January 31, 2026",
+        "benchmark_risk_level": "Very High"
+      }
+    },
+    {
+      "fund_name": "360 ONE FLEXICAP FUND",
+      "fund_type": "open - ended",
+      "scheme_type": "dynamic equity scheme",
+      "category": "Flexicap Fund",
+      "investment_objective": "The investment objective of the scheme is to generate long-term capital appreciation by primarily investing in equity and equity related securities across the entire market capitalization range and investing the remaining portion in debt and money market instruments. However, there can be no assurance or guarantee that the investment objective of the scheme would be achieved.",
+      "benchmark": "BSE 500 TRI",
+      "inception_date": "June 30, 2023",
+      "plans_offered": [
+        "Regular",
+        "Direct",
+        "Regular",
+        "Direct"
+      ],
+      "plan_type": "Regular",
+      "option": "Growth",
+      "nav": 14.7075,
+      "nav_date": "January 30, 2026",
+      "aum_crores": 2015.44,
+      "monthly_avg_aum": 2035.84,
+      "expense_ratio": 1.99,
+      "exit_load": "For redemption/switchout of units before 365 days from the date of allotment - 1% of the applicable NAV For redemption/switched-out of units on or after 365 days from the date of allotment - NIL",
+      "min_lumpsum": 1000,
+      "min_additional": 1000,
+      "sip_available": true,
+      "risk_level": "Very High",
+      "fund_managers": [
+        {
+          "name": "Mr. Mayur Patel",
+          "experience": "20 years of work experience including investment management and research experience of more than 18 years."
+        },
+        {
+          "name": "Mr. Ashish Ongari",
+          "experience": "Mr. Ashish has overall six years of experience in financial services, specializing in algorithmic trading and quantitative research. He holds a B.Tech from NITK, Surathkal, and has previously worked as a trader at Capitalmind and a quant analyst at Investmint. His expertise lies in factor investing, systematic trading, and portfolio optimization."
+        }
+      ],
+      "returns": [
+        {
+          "period": "1Y",
+          "fund_return": 4.14,
+          "benchmark_return": 7.74,
+          "ptp_value": 10414
+        },
+        {
+          "period": "SI",
+          "fund_return": 16.11,
+          "benchmark_return": 14.79,
+          "ptp_value": 14726
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "HDFC Bank Limited",
+          "sector": "Financial Services",
+          "weight_pct": 5.43
+        },
+        {
+          "name": "ICICI Bank Limited",
+          "sector": "Financial Services",
+          "weight_pct": 4.17
+        },
+        {
+          "name": "Larsen & Toubro Limited",
+          "sector": "Construction",
+          "weight_pct": 3.98
+        },
+        {
+          "name": "Indus Towers Limited",
+          "sector": "Telecommunication",
+          "weight_pct": 3.92
+        },
+        {
+          "name": "GE Vernova T&D India Limited",
+          "sector": "Capital Goods",
+          "weight_pct": 3.72
+        },
+        {
+          "name": "Bajaj Finance Limited",
+          "sector": "Financial Services",
+          "weight_pct": 3.67
+        },
+        {
+          "name": "Tata Motors Ltd",
+          "sector": "Capital Goods",
+          "weight_pct": 3.46
+        },
+        {
+          "name": "Cholamandalam Investment and Finance Company Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 3.41
+        },
+        {
+          "name": "Bharti Airtel Limited",
+          "sector": "Telecommunication",
+          "weight_pct": 3.15
+        },
+        {
+          "name": "Axis Bank Limited",
+          "sector": "Financial Services",
+          "weight_pct": 3.04
+        },
+        {
+          "name": "Multi Commodity Exchange of India Limited",
+          "sector": "Financial Services",
+          "weight_pct": 2.83
+        },
+        {
+          "name": "The Indian Hotels Company Limited",
+          "sector": "Consumer Services",
+          "weight_pct": 2.81
+        },
+        {
+          "name": "Motherson Sumi Wiring India Limited",
+          "sector": "Automobile and Auto Components",
+          "weight_pct": 2.78
+        },
+        {
+          "name": "Vedanta Limited",
+          "sector": "Metals & Mining",
+          "weight_pct": 2.76
+        },
+        {
+          "name": "Eternal Limited",
+          "sector": "Consumer Services",
+          "weight_pct": 2.64
+        },
+        {
+          "name": "Shriram Finance Limited",
+          "sector": "Financial Services",
+          "weight_pct": 2.47
+        },
+        {
+          "name": "Tech Mahindra Limited",
+          "sector": "Information Technology",
+          "weight_pct": 2.25
+        },
+        {
+          "name": "Hindustan Aeronautics Limited",
+          "sector": "Capital Goods",
+          "weight_pct": 2.14
+        },
+        {
+          "name": "Britannia Industries Limited",
+          "sector": "Fast Moving Consumer Goods",
+          "weight_pct": 2.03
+        },
+        {
+          "name": "Maruti Suzuki India Limited",
+          "sector": "Automobile and Auto Components",
+          "weight_pct": 2.0
+        },
+        {
+          "name": "SBI Cards and Payment Services Limited",
+          "sector": "Financial Services",
+          "weight_pct": 1.96
+        },
+        {
+          "name": "Coforge Limited",
+          "sector": "Information Technology",
+          "weight_pct": 1.94
+        },
+        {
+          "name": "Reliance Industries Limited",
+          "sector": "Oil Gas & Consumable Fuels",
+          "weight_pct": 1.93
+        },
+        {
+          "name": "Titan Company Limited",
+          "sector": "Consumer Durables",
+          "weight_pct": 1.87
+        },
+        {
+          "name": "Premier Energies Limited",
+          "sector": "Capital Goods",
+          "weight_pct": 1.86
+        },
+        {
+          "name": "Infosys Limited",
+          "sector": "Information Technology",
+          "weight_pct": 1.85
+        },
+        {
+          "name": "Abbott India Limited",
+          "sector": "Healthcare",
+          "weight_pct": 1.83
+        },
+        {
+          "name": "Aegis Vopak Terminals Limited",
+          "sector": "Oil Gas & Consumable Fuels",
+          "weight_pct": 1.72
+        },
+        {
+          "name": "CG Power and Industrial Solutions Limited",
+          "sector": "Capital Goods",
+          "weight_pct": 1.65
+        },
+        {
+          "name": "State Bank of India",
+          "sector": "Financial Services",
+          "weight_pct": 1.64
+        },
+        {
+          "name": "Hero MotoCorp Limited",
+          "sector": "Automobile and Auto Components",
+          "weight_pct": 1.57
+        },
+        {
+          "name": "Gravita India Limited",
+          "sector": "Metals & Mining",
+          "weight_pct": 1.49
+        },
+        {
+          "name": "Divi's Laboratories Limited",
+          "sector": "Healthcare",
+          "weight_pct": 1.38
+        },
+        {
+          "name": "Emmvee Photovoltaic Power Private Limited",
+          "sector": "Capital Goods",
+          "weight_pct": 1.31
+        },
+        {
+          "name": "ICICI Prudential Asset Management Company Limited",
+          "sector": "Financial Services",
+          "weight_pct": 1.18
+        },
+        {
+          "name": "Gk Energy Limited",
+          "sector": "Construction",
+          "weight_pct": 1.17
+        },
+        {
+          "name": "PhysicsWallah Limited",
+          "sector": "Consumer Services",
+          "weight_pct": 1.11
+        },
+        {
+          "name": "Global Health Limited",
+          "sector": "Healthcare",
+          "weight_pct": 1.11
+        },
+        {
+          "name": "Oswal Pumps Limited",
+          "sector": "Capital Goods",
+          "weight_pct": 0.99
+        },
+        {
+          "name": "Crompton Greaves Consumer Electricals Limited",
+          "sector": "Consumer Durables",
+          "weight_pct": 0.86
+        },
+        {
+          "name": "Capital Small Finance Bank Limited",
+          "sector": "Financial Services",
+          "weight_pct": 0.73
+        },
+        {
+          "name": "Sumitomo Chemical India Limited",
+          "sector": "Chemicals",
+          "weight_pct": 0.71
+        },
+        {
+          "name": "Vedant Fashions Limited",
+          "sector": "Consumer Services",
+          "weight_pct": 0.69
+        },
+        {
+          "name": "Bajaj Consumer Care Limited",
+          "sector": "Fast Moving Consumer Goods",
+          "weight_pct": 0.66
+        },
+        {
+          "name": "SIS Limited",
+          "sector": "Consumer Services",
+          "weight_pct": 0.56
+        },
+        {
+          "name": "Aegis Logistics Limited",
+          "sector": "Oil Gas & Consumable Fuels",
+          "weight_pct": 0.46
+        },
+        {
+          "name": "Anthem Biosciences Limited",
+          "sector": "Healthcare",
+          "weight_pct": 0.46
+        }
+      ],
+      "sector_allocation": {
+        "Financial Services": 30.52,
+        "Capital Goods": 15.12,
+        "Consumer Services": 7.82,
+        "Telecommunication": 7.06,
+        "Automobile and Auto Components": 6.36,
+        "Information Technology": 6.04,
+        "Construction": 5.15,
+        "Healthcare": 4.78,
+        "Metals & Mining": 4.25,
+        "Oil Gas & Consumable Fuels": 4.12,
+        "Consumer Durables": 2.73,
+        "Fast Moving Consumer Goods": 2.69,
+        "Chemicals": 0.71
+      },
+      "asset_allocation": {
+        "Equity": 97.33,
+        "Cash & Equivalents": 2.66
+      },
+      "market_cap_allocation": {
+        "Large Cap": 62.47,
+        "Mid Cap": 20.73,
+        "Small Cap": 14.13
+      },
+      "risk_metrics": {
+        "standard_deviation": "NA",
+        "sharpe_ratio": "NA",
+        "beta": "NA",
+        "r_squared": "NA",
+        "treynor_ratio": "NA"
+      },
+      "sip_returns": [
+        {
+          "period": "1Y",
+          "total_invested": 120000,
+          "market_value": 120420,
+          "return_pct": 0.65
+        },
+        {
+          "period": "SI",
+          "total_invested": 310000,
+          "market_value": 341705,
+          "return_pct": 7.48
+        }
+      ],
+      "portfolio_turnover": "0.48 times"
+    },
+    {
+      "fund_name": "360 ONE Quant Fund",
+      "scheme_type": "An open-ended equity scheme investing based on quant theme",
+      "investment_objective": "The investment objective of the scheme is to generate long term capital appreciation for investors from a portfolio of equity and equity related securities based on a quant theme. However, there can be no assurance or guarantee that the investment objective of the Scheme would be achieved.",
+      "benchmark": "BSE 200 TRI",
+      "inception_date": "2021-11-29",
+      "plans_offered": "Regular & Direct",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "nav": 20.2355,
+      "nav_date": "2026-01-30",
+      "aum_crores": 876.75,
+      "monthly_avg_aum": 889.39,
+      "expense_ratio": 0.62,
+      "exit_load": "1% - if redeemed/switched out, on or before 12 onths from the date of allotment",
+      "min_sip": 1000,
+      "min_lumpsum": 1000,
+      "min_additional": 1000,
+      "sip_available": true,
+      "risk_level": "Very High",
+      "fund_managers": [
+        {
+          "name": "Mr. Ashish Ongari",
+          "qualification": "B.Tech from NITK, Surathkal",
+          "experience": "overall six years of experience in financial services"
+        }
+      ],
+      "returns": [
+        {
+          "period": "1Y",
+          "fund_return": 9.97,
+          "benchmark_return": 8.55
+        },
+        {
+          "period": "3Y",
+          "fund_return": 25.62,
+          "benchmark_return": 16.18
+        },
+        {
+          "period": "SI",
+          "fund_return": 18.4,
+          "benchmark_return": 12.41
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "Ashok Leyland Limited",
+          "sector": "Capital Goods",
+          "weight_pct": 4.2
+        },
+        {
+          "name": "Muthoot Finance Limited",
+          "sector": "Financial Services",
+          "weight_pct": 3.62
+        },
+        {
+          "name": "APL Apollo Tubes Limited",
+          "sector": "Capital Goods",
+          "weight_pct": 3.45
+        },
+        {
+          "name": "Torrent Pharmaceuticals Limited",
+          "sector": "Healthcare",
+          "weight_pct": 3.31
+        },
+        {
+          "name": "Bharat Electronics Limited",
+          "sector": "Capital Goods",
+          "weight_pct": 3.3
+        },
+        {
+          "name": "TVS Motor Company Limited",
+          "sector": "Automobile and Auto Components",
+          "weight_pct": 3.17
+        },
+        {
+          "name": "Coromandel International Limited",
+          "sector": "Chemicals",
+          "weight_pct": 3.16
+        },
+        {
+          "name": "Eicher Motors Limited",
+          "sector": "Automobile and Auto Components",
+          "weight_pct": 3.11
+        },
+        {
+          "name": "Bharat Petroleum Corporation Limited",
+          "sector": "Oil Gas & Consumable Fuels",
+          "weight_pct": 3.07
+        },
+        {
+          "name": "SBI Life Insurance Company Limited",
+          "sector": "Financial Services",
+          "weight_pct": 3.05
+        },
+        {
+          "name": "Marico Limited",
+          "sector": "Fast Moving Consumer Goods",
+          "weight_pct": 3.05
+        },
+        {
+          "name": "Britannia Industries Limited",
+          "sector": "Fast Moving Consumer Goods",
+          "weight_pct": 3.01
+        },
+        {
+          "name": "HDFC Life Insurance Company Limited",
+          "sector": "Financial Services",
+          "weight_pct": 2.95
+        },
+        {
+          "name": "Mahindra & Mahindra Limited",
+          "sector": "Automobile and Auto Components",
+          "weight_pct": 2.95
+        },
+        {
+          "name": "Solar Industries India Limited",
+          "sector": "Chemicals",
+          "weight_pct": 2.92
+        },
+        {
+          "name": "UNO Minda Limited",
+          "sector": "Automobile and Auto Components",
+          "weight_pct": 2.91
+        },
+        {
+          "name": "Hindustan Unilever Limited",
+          "sector": "Fast Moving Consumer Goods",
+          "weight_pct": 2.89
+        },
+        {
+          "name": "Cholamandalam Investment and Finance Company Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 2.87
+        },
+        {
+          "name": "SRF Limited",
+          "sector": "Chemicals",
+          "weight_pct": 2.85
+        },
+        {
+          "name": "HDFC Asset Management Company Limited",
+          "sector": "Financial Services",
+          "weight_pct": 2.83
+        },
+        {
+          "name": "HDFC Bank Limited",
+          "sector": "Financial Services",
+          "weight_pct": 2.8
+        },
+        {
+          "name": "Bajaj Finserv Limited",
+          "sector": "Financial Services",
+          "weight_pct": 2.78
+        },
+        {
+          "name": "Schaeffler India Limited",
+          "sector": "Automobile and Auto Components",
+          "weight_pct": 2.78
+        },
+        {
+          "name": "Coforge Limited",
+          "sector": "Information Technology",
+          "weight_pct": 2.76
+        },
+        {
+          "name": "Divi's Laboratories Limited",
+          "sector": "Healthcare",
+          "weight_pct": 2.74
+        },
+        {
+          "name": "Hindustan Petroleum Corporation Limited",
+          "sector": "Oil Gas & Consumable Fuels",
+          "weight_pct": 2.73
+        },
+        {
+          "name": "Maruti Suzuki India Limited",
+          "sector": "Automobile and Auto Components",
+          "weight_pct": 2.71
+        },
+        {
+          "name": "Zydus Lifesciences Limited",
+          "sector": "Healthcare",
+          "weight_pct": 2.7
+        },
+        {
+          "name": "Polycab India Limited",
+          "sector": "Capital Goods",
+          "weight_pct": 2.69
+        },
+        {
+          "name": "Bajaj Finance Limited",
+          "sector": "Financial Services",
+          "weight_pct": 2.66
+        },
+        {
+          "name": "SBI Cards and Payment Services Limited",
+          "sector": "Financial Services",
+          "weight_pct": 2.56
+        },
+        {
+          "name": "Cummins India Limited",
+          "sector": "Capital Goods",
+          "weight_pct": 2.45
+        },
+        {
+          "name": "Hero MotoCorp Limited",
+          "sector": "Automobile and Auto Components",
+          "weight_pct": 2.03
+        },
+        {
+          "name": "UPL Limited",
+          "sector": "Chemicals",
+          "weight_pct": 1.17
+        },
+        {
+          "name": "Abbott India Limited",
+          "sector": "Healthcare",
+          "weight_pct": 0.81
+        },
+        {
+          "name": "Mphasis Limited",
+          "sector": "Information Technology",
+          "weight_pct": 0.3
+        },
+        {
+          "name": "Kwality Walls (India) Limited",
+          "sector": "Fast Moving Consumer Goods",
+          "weight_pct": 0.05
+        }
+      ],
+      "sector_allocation": {
+        "Financial Services": 26.13,
+        "Automobile and Auto Components": 19.66,
+        "Capital Goods": 16.09,
+        "Chemicals": 10.09,
+        "Healthcare": 9.56,
+        "Fast Moving Consumer Goods": 8.99,
+        "Oil Gas & Consumable Fuels": 5.8,
+        "Information Technology": 3.06
+      },
+      "asset_allocation": {
+        "Equity": 99.33,
+        "Cash & Equivalents": 0.62
+      },
+      "market_cap_allocation": {
+        "Large Cap": 63.9,
+        "Mid Cap": 35.43
+      },
+      "risk_metrics": {
+        "beta": 1.2,
+        "sharpe_ratio": 1.11,
+        "standard_deviation": 15.64,
+        "r_squared": 0.9,
+        "treynor_ratio": 1.21
+      },
+      "portfolio_turnover": "1.09 times",
+      "sip_returns": [
+        {
+          "period": "1Y",
+          "total_invested": 120000,
+          "market_value": 123483,
+          "return_pct": 5.44
+        },
+        {
+          "period": "3Y",
+          "total_invested": 360000,
+          "market_value": 448286,
+          "return_pct": 14.78
+        },
+        {
+          "period": "SI",
+          "total_invested": 500000,
+          "market_value": 719337,
+          "return_pct": 17.63
+        }
+      ]
+    },
+    {
+      "fund_name": "360 ONE ELSS TAX SAVER NIFTY 50 INDEX FUND",
+      "scheme_type": "An open-ended Passive Equity Linked Saving Scheme with a statutory lock-in period of 3 years and tax benefit, replicating/tracking the Nifty 50 index",
+      "category": "ELSS",
+      "investment_objective": "The investment objective of scheme is to invest in stocks comprising the Nifty 50 Index in the same proportion as in the Index to achieve returns equivalent to the Total Returns Index of Nifty 50 Index (subject to tracking error), while offering deduction on such investment made in the scheme under section 80C of the Incometax Act, 1961. It also seeks to distribute income periodically depending on distributable surplus. There is no assurance or guarantee that the investment objective of the Scheme would be achieved Investments in this scheme would be subject to a statutory lock-in of 3 years from the date of allotment to avail Section 80C benefits.",
+      "benchmark": "NIFTY 50 TRI",
+      "inception_date": "2022-12-28",
+      "plans_offered": [
+        "Regular",
+        "Direct",
+        "Regular",
+        "Direct",
+        "Regular",
+        "Direct",
+        "Regular",
+        "Direct"
+      ],
+      "plan_type": "Direct",
+      "option": "Growth",
+      "nav": 14.2932,
+      "nav_date": "2026-01-30",
+      "aum_crores": 79.94,
+      "monthly_avg_aum": 84.35,
+      "expense_ratio": 0.27,
+      "exit_load": "NIL",
+      "min_sip": 500,
+      "min_lumpsum": 500,
+      "min_additional": 500,
+      "sip_available": true,
+      "risk_level": "Very High",
+      "fund_managers": [
+        {
+          "name": "Mr. Ashish Ongari",
+          "managing_since": "2025-04-26",
+          "experience": "Mr. Ashish has overall six years of experience in financial services, specializing in algorithmic trading and quantitative research. He holds a B.Tech from NITK, Surathkal, and has previously worked as a trader at Capitalmind and a quant analyst at Investmint. His expertise lies in factor investing, systematic trading, and portfolio optimization."
+        }
+      ],
+      "returns": [
+        {
+          "period": "1Y",
+          "fund_return": 8.62,
+          "benchmark_return": 8.97
+        },
+        {
+          "period": "3Y",
+          "fund_return": 13.64,
+          "benchmark_return": 14.08
+        },
+        {
+          "period": "SI",
+          "fund_return": 12.25,
+          "benchmark_return": 12.7
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "HDFC Bank Limited",
+          "sector": "Financial Services",
+          "weight_pct": 12.23
+        },
+        {
+          "name": "ICICI Bank Limited",
+          "sector": "Financial Services",
+          "weight_pct": 8.33
+        },
+        {
+          "name": "Reliance Industries Limited",
+          "sector": "Oil Gas & Consumable Fuels",
+          "weight_pct": 8.12
+        },
+        {
+          "name": "Infosys Limited",
+          "sector": "Information Technology",
+          "weight_pct": 4.96
+        },
+        {
+          "name": "Bharti Airtel Limited",
+          "sector": "Telecommunication",
+          "weight_pct": 4.67
+        },
+        {
+          "name": "Larsen & Toubro Limited",
+          "sector": "Construction",
+          "weight_pct": 3.98
+        },
+        {
+          "name": "State Bank of India",
+          "sector": "Financial Services",
+          "weight_pct": 3.85
+        },
+        {
+          "name": "Axis Bank Limited",
+          "sector": "Financial Services",
+          "weight_pct": 3.38
+        },
+        {
+          "name": "Tata Consultancy Services Limited",
+          "sector": "Information Technology",
+          "weight_pct": 2.75
+        },
+        {
+          "name": "ITC Limited",
+          "sector": "Fast Moving Consumer Goods",
+          "weight_pct": 2.67
+        },
+        {
+          "name": "Mahindra & Mahindra Limited",
+          "sector": "Automobile and Auto Components",
+          "weight_pct": 2.63
+        },
+        {
+          "name": "Kotak Mahindra Bank Limited",
+          "sector": "Financial Services",
+          "weight_pct": 2.58
+        },
+        {
+          "name": "Bajaj Finance Limited",
+          "sector": "Financial Services",
+          "weight_pct": 2.13
+        },
+        {
+          "name": "Hindustan Unilever Limited",
+          "sector": "Fast Moving Consumer Goods",
+          "weight_pct": 1.81
+        },
+        {
+          "name": "Eternal Limited",
+          "sector": "Consumer Services",
+          "weight_pct": 1.66
+        },
+        {
+          "name": "Maruti Suzuki India Limited",
+          "sector": "Automobile and Auto Components",
+          "weight_pct": 1.65
+        },
+        {
+          "name": "HCL Technologies Limited",
+          "sector": "Information Technology",
+          "weight_pct": 1.54
+        },
+        {
+          "name": "NTPC Limited",
+          "sector": "Power",
+          "weight_pct": 1.45
+        },
+        {
+          "name": "Sun Pharmaceutical Industries Limited",
+          "sector": "Healthcare",
+          "weight_pct": 1.45
+        },
+        {
+          "name": "Titan Company Limited",
+          "sector": "Consumer Durables",
+          "weight_pct": 1.41
+        },
+        {
+          "name": "Bharat Electronics Limited",
+          "sector": "Capital Goods",
+          "weight_pct": 1.38
+        },
+        {
+          "name": "Tata Steel Limited",
+          "sector": "Metals & Mining",
+          "weight_pct": 1.38
+        },
+        {
+          "name": "UltraTech Cement Limited",
+          "sector": "Construction Materials",
+          "weight_pct": 1.29
+        },
+        {
+          "name": "Shriram Finance Limited",
+          "sector": "Financial Services",
+          "weight_pct": 1.23
+        },
+        {
+          "name": "Hindalco Industries Limited",
+          "sector": "Metals & Mining",
+          "weight_pct": 1.2
+        },
+        {
+          "name": "Power Grid Corporation of India Limited",
+          "sector": "Power",
+          "weight_pct": 1.0
+        },
+        {
+          "name": "JSW Steel Limited",
+          "sector": "Metals & Mining",
+          "weight_pct": 0.98
+        },
+        {
+          "name": "Bajaj Finserv Limited",
+          "sector": "Financial Services",
+          "weight_pct": 0.96
+        },
+        {
+          "name": "Tech Mahindra Limited",
+          "sector": "Information Technology",
+          "weight_pct": 0.95
+        },
+        {
+          "name": "Asian Paints Limited",
+          "sector": "Consumer Durables",
+          "weight_pct": 0.95
+        },
+        {
+          "name": "Grasim Industries Limited",
+          "sector": "Construction Materials",
+          "weight_pct": 0.93
+        },
+        {
+          "name": "Bajaj Auto Limited",
+          "sector": "Automobile and Auto Components",
+          "weight_pct": 0.91
+        },
+        {
+          "name": "Oil & Natural Gas Corporation Limited",
+          "sector": "Oil Gas & Consumable Fuels",
+          "weight_pct": 0.9
+        },
+        {
+          "name": "InterGlobe Aviation Limited",
+          "sector": "Services",
+          "weight_pct": 0.87
+        },
+        {
+          "name": "Coal India Limited",
+          "sector": "Oil Gas & Consumable Fuels",
+          "weight_pct": 0.86
+        },
+        {
+          "name": "Adani Ports and Special Economic Zone Limited",
+          "sector": "Services",
+          "weight_pct": 0.85
+        },
+        {
+          "name": "Eicher Motors Limited",
+          "sector": "Automobile and Auto Components",
+          "weight_pct": 0.84
+        },
+        {
+          "name": "Nestle India Limited",
+          "sector": "Fast Moving Consumer Goods",
+          "weight_pct": 0.82
+        },
+        {
+          "name": "SBI Life Insurance Company Limited",
+          "sector": "Financial Services",
+          "weight_pct": 0.77
+        },
+        {
+          "name": "Trent Limited",
+          "sector": "Consumer Services",
+          "weight_pct": 0.72
+        },
+        {
+          "name": "Jio Financial Services Limited",
+          "sector": "Financial Services",
+          "weight_pct": 0.72
+        },
+        {
+          "name": "HDFC Life Insurance Company Limited",
+          "sector": "Financial Services",
+          "weight_pct": 0.68
+        },
+        {
+          "name": "Cipla Limited",
+          "sector": "Healthcare",
+          "weight_pct": 0.64
+        },
+        {
+          "name": "Dr. Reddy's Laboratories Limited",
+          "sector": "Healthcare",
+          "weight_pct": 0.64
+        },
+        {
+          "name": "Tata Consumer Products Limited",
+          "sector": "Fast Moving Consumer Goods",
+          "weight_pct": 0.64
+        },
+        {
+          "name": "Tata Motors Passenger Vehicles Limited",
+          "sector": "Automobile and Auto Components",
+          "weight_pct": 0.63
+        },
+        {
+          "name": "Max Healthcare Institute Limited",
+          "sector": "Healthcare",
+          "weight_pct": 0.61
+        },
+        {
+          "name": "Apollo Hospitals Enterprise Limited",
+          "sector": "Healthcare",
+          "weight_pct": 0.61
+        },
+        {
+          "name": "Wipro Limited",
+          "sector": "Information Technology",
+          "weight_pct": 0.58
+        },
+        {
+          "name": "Adani Enterprises Limited",
+          "sector": "Metals & Mining",
+          "weight_pct": 0.45
+        },
+        {
+          "name": "Kwality Walls (India) Limited",
+          "sector": "Fast Moving Consumer Goods",
+          "weight_pct": 0.04
+        }
+      ],
+      "sector_allocation": {
+        "Financial Services": 36.85,
+        "Information Technology": 10.78,
+        "Oil Gas & Consumable Fuels": 9.89,
+        "Automobile and Auto Components": 6.66,
+        "Fast Moving Consumer Goods": 5.98,
+        "Telecommunication": 4.67,
+        "Metals & Mining": 4.01,
+        "Construction": 3.98,
+        "Healthcare": 3.95,
+        "Power": 2.45,
+        "Consumer Services": 2.39,
+        "Consumer Durables": 2.36,
+        "Construction Materials": 2.22,
+        "Services": 1.72,
+        "Capital Goods": 1.38
+      },
+      "asset_allocation": {
+        "Equity & Equity Related": 99.29,
+        "TREPS": 0.73,
+        "Net Receivables / (Payables)": -0.01
+      },
+      "risk_metrics": {
+        "beta": 0.99,
+        "sharpe_ratio": 0.68,
+        "standard_deviation": 11.29,
+        "r_squared": 1.0,
+        "treynor_ratio": 0.64,
+        "tracking_error": 0.13
+      },
+      "lock_in_period": "3 years",
+      "portfolio_turnover": "0.18 times",
+      "sip_returns": [
+        {
+          "period": "1Y",
+          "total_invested": 120000,
+          "market_value": 124017,
+          "return_pct": 6.28,
+          "benchmark_value": 124387,
+          "benchmark_return_pct": 6.87,
+          "additional_benchmark_value": 124466,
+          "additional_benchmark_return_pct": 6.99
+        },
+        {
+          "period": "3Y",
+          "total_invested": 360000,
+          "market_value": 416576,
+          "return_pct": 9.72,
+          "benchmark_value": 420515,
+          "benchmark_return_pct": 10.36,
+          "additional_benchmark_value": 419512,
+          "additional_benchmark_return_pct": 10.2
+        },
+        {
+          "period": "SI",
+          "total_invested": 370000,
+          "market_value": 430787,
+          "return_pct": 9.86,
+          "benchmark_value": 435007,
+          "benchmark_return_pct": 10.51,
+          "additional_benchmark_value": 433960,
+          "additional_benchmark_return_pct": 10.34
+        }
+      ]
+    },
+    {
+      "fund_name": "360 ONE BALANCED HYBRID FUND",
+      "scheme_type": "An open ended balanced scheme investing in equity and debt instruments",
+      "category": "Balanced Hybrid Fund",
+      "investment_objective": "The Investment Objective of the fund is to generate long term capital appreciation/income by investing in equity and debt instruments. However, there is no assurance or guarantee that the investment objective of the Scheme will be achieved. The Scheme does not assure or guarantee any returns.",
+      "benchmark": "Nifty 50 Hybrid : Composite Debt 50:50 Index",
+      "inception_date": "September 25, 2023",
+      "plans_offered": "Regular & Direct",
+      "option": "Growth & IDCW",
+      "exit_load": "- Redemption / switch-out of 10% of Units allotted on or before completion of 12 months from the date of allotment- NIL exit load.\n- Redemption/ switch out in excess of the 10% of Units allotted on or before completion of 12 months from the date of allotment -1.00% exit load.\n- Nil - if redeemed / switched out after 12 months from the date of allotment",
+      "min_sip": 1000,
+      "min_lumpsum": 1000,
+      "min_additional": 1000,
+      "fund_managers": [
+        {
+          "name": "Mr. Mayur Patel",
+          "experience": "20 years of work experience including investment management and research experience of more than 18 years.",
+          "role": "Equity"
+        },
+        {
+          "name": "Mr. Ashish Ongari",
+          "experience": "over six years of experience in financial services, specializing in algorithmic trading and quantitative research.",
+          "role": "Equity (Co-Fund Manager)"
+        },
+        {
+          "name": "Mr. Milan Mody",
+          "experience": "over 20 years of work experience in the Fixed Income market.",
+          "role": "Debt"
+        },
+        {
+          "name": "Mr. Viral Mehta",
+          "managing_since": "w.e.f October 06, 2025",
+          "experience": "brings experience across Credit and Equity.",
+          "role": "Debt (Co-Fund Manager)"
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "HDFC Bank Limited",
+          "sector": "Financial Services",
+          "weight_pct": 2.63
+        },
+        {
+          "name": "ICICI Bank Limited",
+          "sector": "Financial Services",
+          "weight_pct": 2.03
+        },
+        {
+          "name": "Bajaj Finance Limited",
+          "sector": "Financial Services",
+          "weight_pct": 1.78
+        },
+        {
+          "name": "GE Vernova T&D India Limited",
+          "sector": "Capital Goods",
+          "weight_pct": 1.69
+        },
+        {
+          "name": "Cholamandalam Investment and Finance Company Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 1.64
+        },
+        {
+          "name": "Indus Towers Limited",
+          "sector": "Telecommunication",
+          "weight_pct": 1.57
+        },
+        {
+          "name": "Larsen & Toubro Limited",
+          "sector": "Construction",
+          "weight_pct": 1.56
+        },
+        {
+          "name": "Vedanta Limited",
+          "sector": "Metals & Mining",
+          "weight_pct": 1.43
+        },
+        {
+          "name": "Bharti Airtel Limited",
+          "sector": "Telecommunication",
+          "weight_pct": 1.38
+        },
+        {
+          "name": "Multi Commodity Exchange of India",
+          "sector": "Financial Services",
+          "weight_pct": 1.35
+        },
+        {
+          "name": "Motherson Sumi Wiring India Limited",
+          "sector": "Automobile and Auto Components",
+          "weight_pct": 1.33
+        },
+        {
+          "name": "Tata Motors Ltd",
+          "sector": "Capital Goods",
+          "weight_pct": 1.31
+        },
+        {
+          "name": "Axis Bank Limited",
+          "sector": "Financial Services",
+          "weight_pct": 1.21
+        },
+        {
+          "name": "Eternal Limited",
+          "sector": "Consumer Services",
+          "weight_pct": 1.18
+        },
+        {
+          "name": "Tech Mahindra Limited",
+          "sector": "Information Technology",
+          "weight_pct": 1.09
+        },
+        {
+          "name": "Shriram Finance Limited",
+          "sector": "Financial Services",
+          "weight_pct": 1.06
+        },
+        {
+          "name": "The Indian Hotels Company Limited",
+          "sector": "Consumer Services",
+          "weight_pct": 1.04
+        },
+        {
+          "name": "Hindustan Aeronautics Limited",
+          "sector": "Capital Goods",
+          "weight_pct": 1.02
+        },
+        {
+          "name": "Reliance Industries Limited",
+          "sector": "Oil Gas & Consumable Fuels",
+          "weight_pct": 0.98
+        },
+        {
+          "name": "Infosys Limited",
+          "sector": "Information Technology",
+          "weight_pct": 0.93
+        },
+        {
+          "name": "Coforge Limited",
+          "sector": "Information Technology",
+          "weight_pct": 0.93
+        },
+        {
+          "name": "Titan Company Limited",
+          "sector": "Consumer Durables",
+          "weight_pct": 0.92
+        },
+        {
+          "name": "Premier Energies Limited",
+          "sector": "Capital Goods",
+          "weight_pct": 0.89
+        },
+        {
+          "name": "CG Power and Industrial Solutions Limited",
+          "sector": "Capital Goods",
+          "weight_pct": 0.89
+        },
+        {
+          "name": "SBI Cards and Payment Services Limited",
+          "sector": "Financial Services",
+          "weight_pct": 0.88
+        },
+        {
+          "name": "Britannia Industries Limited",
+          "sector": "Fast Moving Consumer Goods",
+          "weight_pct": 0.86
+        },
+        {
+          "name": "Aegis Vopak Terminals Limited",
+          "sector": "Oil Gas & Consumable Fuels",
+          "weight_pct": 0.79
+        },
+        {
+          "name": "Maruti Suzuki India Limited",
+          "sector": "Automobile and Auto Components",
+          "weight_pct": 0.78
+        },
+        {
+          "name": "Abbott India Limited",
+          "sector": "Healthcare",
+          "weight_pct": 0.69
+        },
+        {
+          "name": "Hero MotoCorp Limited",
+          "sector": "Automobile and Auto Components",
+          "weight_pct": 0.69
+        },
+        {
+          "name": "Divi's Laboratories Limited",
+          "sector": "Healthcare",
+          "weight_pct": 0.61
+        },
+        {
+          "name": "Gravita India Limited",
+          "sector": "Metals & Mining",
+          "weight_pct": 0.6
+        },
+        {
+          "name": "Aegis Logistics Limited",
+          "sector": "Oil Gas & Consumable Fuels",
+          "weight_pct": 0.49
+        },
+        {
+          "name": "Global Health Limited",
+          "sector": "Healthcare",
+          "weight_pct": 0.47
+        },
+        {
+          "name": "Crompton Greaves Consumer Electricals Limited",
+          "sector": "Consumer Durables",
+          "weight_pct": 0.44
+        },
+        {
+          "name": "Sumitomo Chemical India Limited",
+          "sector": "Chemicals",
+          "weight_pct": 0.41
+        },
+        {
+          "name": "Emmvee Photovoltaic Power Limited",
+          "sector": "Capital Goods",
+          "weight_pct": 0.41
+        },
+        {
+          "name": "Capital Small Finance Bank Limited",
+          "sector": "Financial Services",
+          "weight_pct": 0.39
+        },
+        {
+          "name": "Oswal Pumps Limited",
+          "sector": "Capital Goods",
+          "weight_pct": 0.38
+        },
+        {
+          "name": "SIS Limited",
+          "sector": "Consumer Services",
+          "weight_pct": 0.35
+        },
+        {
+          "name": "Vedant Fashions Limited",
+          "sector": "Consumer Services",
+          "weight_pct": 0.35
+        },
+        {
+          "name": "Bajaj Consumer Care Limited",
+          "sector": "Fast Moving Consumer Goods",
+          "weight_pct": 0.3
+        },
+        {
+          "name": "Gk Energy Limited",
+          "sector": "Construction",
+          "weight_pct": 0.3
+        },
+        {
+          "name": "Kirloskar Ferrous Industries Limited",
+          "sector": "Metals & Mining",
+          "weight_pct": 0.22
+        }
+      ],
+      "debt_holdings": [
+        {
+          "name": "7.37% Government of India",
+          "instrument_type": "G-Sec",
+          "rating": "SOVEREIGN",
+          "weight_pct": 3.23
+        },
+        {
+          "name": "7.1% Government of India",
+          "instrument_type": "G-Sec",
+          "rating": "SOVEREIGN",
+          "weight_pct": 3.21
+        },
+        {
+          "name": "7.32% Government of India",
+          "instrument_type": "G-Sec",
+          "rating": "SOVEREIGN",
+          "weight_pct": 2.59
+        },
+        {
+          "name": "6.79% Government of India",
+          "instrument_type": "G-Sec",
+          "rating": "SOVEREIGN",
+          "weight_pct": 1.25
+        },
+        {
+          "name": "6.68% Government of India",
+          "instrument_type": "G-Sec",
+          "rating": "SOVEREIGN",
+          "weight_pct": 1.2
+        },
+        {
+          "name": "7.06% Government of India",
+          "instrument_type": "G-Sec",
+          "rating": "SOVEREIGN",
+          "weight_pct": 0.64
+        },
+        {
+          "name": "7.1% Government of India",
+          "instrument_type": "G-Sec",
+          "rating": "SOVEREIGN",
+          "weight_pct": 0.64
+        },
+        {
+          "name": "6.01% Government of India",
+          "instrument_type": "G-Sec",
+          "rating": "SOVEREIGN",
+          "weight_pct": 0.62
+        },
+        {
+          "name": "6.33% Government of India",
+          "instrument_type": "G-Sec",
+          "rating": "SOVEREIGN",
+          "weight_pct": 0.61
+        },
+        {
+          "name": "6.99% State Government Securities",
+          "instrument_type": "G-Sec",
+          "rating": "SOVEREIGN",
+          "weight_pct": 0.59
+        },
+        {
+          "name": "7.46% REC Limited",
+          "instrument_type": "Corporate Bond",
+          "rating": "CRISIL AAA",
+          "weight_pct": 4.4
+        },
+        {
+          "name": "7.96% Mindspace Business Parks REIT",
+          "instrument_type": "Corporate Bond",
+          "rating": "CRISIL AAA",
+          "weight_pct": 3.17
+        },
+        {
+          "name": "7.73% Embassy Office Parks REIT",
+          "instrument_type": "Corporate Bond",
+          "rating": "CRISIL AAA",
+          "weight_pct": 3.15
+        },
+        {
+          "name": "7.45% Power Finance Corporation Limited",
+          "instrument_type": "Corporate Bond",
+          "rating": "CRISIL AAA",
+          "weight_pct": 3.14
+        },
+        {
+          "name": "7.62% National Bank For Agriculture and Rural Development",
+          "instrument_type": "Corporate Bond",
+          "rating": "CRISIL AAA",
+          "weight_pct": 3.14
+        },
+        {
+          "name": "7.73% Tata Capital Housing Finance Limited",
+          "instrument_type": "Corporate Bond",
+          "rating": "CRISIL AAA",
+          "weight_pct": 3.14
+        },
+        {
+          "name": "6.4% Jamnagar Utilities & Power Private Limited",
+          "instrument_type": "Corporate Bond",
+          "rating": "CRISIL AAA",
+          "weight_pct": 3.09
+        },
+        {
+          "name": "7.9% LIC Housing Finance Limited",
+          "instrument_type": "Corporate Bond",
+          "rating": "CRISIL AAA",
+          "weight_pct": 2.51
+        },
+        {
+          "name": "7.78% Sundaram Home Finance Limited",
+          "instrument_type": "Corporate Bond",
+          "rating": "ICRA AAA",
+          "weight_pct": 2.51
+        },
+        {
+          "name": "7.77% HDFC Bank Limited",
+          "instrument_type": "Corporate Bond",
+          "rating": "CRISIL AAA",
+          "weight_pct": 1.88
+        },
+        {
+          "name": "8.32% Power Grid Corporation of India Limited",
+          "instrument_type": "Corporate Bond",
+          "rating": "CRISIL AAA",
+          "weight_pct": 1.43
+        },
+        {
+          "name": "8.65% Cholamandalam Investment and Finance Company Ltd",
+          "instrument_type": "Corporate Bond",
+          "rating": "ICRA AA+",
+          "weight_pct": 1.28
+        },
+        {
+          "name": "7.87% LIC Housing Finance Limited",
+          "instrument_type": "Corporate Bond",
+          "rating": "CRISIL AAA",
+          "weight_pct": 1.26
+        },
+        {
+          "name": "7.62% National Bank For Agriculture and Rural Development",
+          "instrument_type": "Corporate Bond",
+          "rating": "CRISIL AAA",
+          "weight_pct": 1.26
+        },
+        {
+          "name": "7.35% Embassy Office Parks REIT",
+          "instrument_type": "Corporate Bond",
+          "rating": "CRISIL AAA",
+          "weight_pct": 1.25
+        },
+        {
+          "name": "6.75% Sikka Ports and Terminals Limited",
+          "instrument_type": "Corporate Bond",
+          "rating": "CRISIL AAA",
+          "weight_pct": 1.24
+        },
+        {
+          "name": "6.9601% Mindspace Business Parks REIT",
+          "instrument_type": "Corporate Bond",
+          "rating": "ICRA AAA",
+          "weight_pct": 1.05
+        },
+        {
+          "name": "6.9% Housing & Urban Development Corporation",
+          "instrument_type": "Corporate Bond",
+          "rating": "ICRA AAA",
+          "weight_pct": 0.86
+        },
+        {
+          "name": "7.5343% PNB Housing Finance Limited",
+          "instrument_type": "Corporate Bond",
+          "rating": "CARE AA+",
+          "weight_pct": 0.68
+        },
+        {
+          "name": "8.6% Cholamandalam Investment and Finance Company Ltd",
+          "instrument_type": "Corporate Bond",
+          "rating": "ICRA AA+",
+          "weight_pct": 0.51
+        },
+        {
+          "name": "8.52% Muthoot Finance Limited",
+          "instrument_type": "Corporate Bond",
+          "rating": "CRISIL AA+",
+          "weight_pct": 0.13
+        },
+        {
+          "name": "6.78% Indian Railway Finance Corporation Limited",
+          "instrument_type": "Corporate Bond",
+          "rating": "CRISIL AAA",
+          "weight_pct": 0.12
+        },
+        {
+          "name": "TREPS",
+          "instrument_type": "Money Market Instrument",
+          "weight_pct": 0.62
+        },
+        {
+          "name": "Net Receivables / (Payables)",
+          "instrument_type": "Cash & Equivalents",
+          "weight_pct": 1.35
+        }
+      ],
+      "sector_allocation": {
+        "Financial Services": 12.95,
+        "Capital Goods": 6.58,
+        "Telecommunication": 2.95,
+        "Information Technology": 2.95,
+        "Consumer Services": 2.92,
+        "Automobile and Auto Components": 2.81,
+        "Oil Gas & Consumable Fuels": 2.26,
+        "Metals & Mining": 2.25,
+        "Construction": 1.86,
+        "Healthcare": 1.77,
+        "Consumer Durables": 1.36,
+        "Fast Moving Consumer Goods": 1.16,
+        "Chemicals": 0.41
+      },
+      "market_cap_allocation": {
+        "Large Cap": 63.98,
+        "Mid Cap": 20.03,
+        "Small Cap": 15.99
+      },
+      "composition_by_rating": {
+        "AAA": 69.22,
+        "Sovereign": 26.13,
+        "AA+": 4.64
+      },
+      "instrument_composition": {
+        "Equity": 42.24,
+        "NCD/Bonds": 41.21,
+        "Govt. Securities": 14.58,
+        "TREPS/ Net Current Asset": 1.98
+      },
+      "maturity_profile": {
+        "0-1 Year": 4.34,
+        "1-3 Years": 24.39,
+        "3-7 Years": 22.76,
+        "7+ Years": 4.29
+      },
+      "portfolio_turnover": "0.52 times",
+      "plan_type": "Regular",
+      "nav": 12.6047,
+      "nav_date": "January 30, 2026",
+      "aum_crores": 801.83,
+      "monthly_avg_aum": 817.29
+    },
+    {
+      "fund_name": "360 ONE Balanced Hybrid Fund - Reg - Growth",
+      "fund_type": "open ended",
+      "scheme_type": "An open ended balanced scheme investing in equity and debt instruments",
+      "category": "Balanced Hybrid Fund",
+      "investment_objective": "To create wealth and income in the long term; Investment in equity and equity-related securities and fixed income instruments.",
+      "benchmark": "Nifty 50 Hybrid Composite Debt 50:50 Index",
+      "inception_date": "25 September 2023",
+      "plan_type": "Regular",
+      "option": "Growth",
+      "nav": 12.6047,
+      "nav_date": "January 30, 2026",
+      "aum_crores": 801.83,
+      "monthly_avg_aum": 817.29,
+      "expense_ratio": 1.94,
+      "risk_level": "High",
+      "returns": [
+        {
+          "period": "1Y",
+          "fund_return": 4.66,
+          "fund_ptp_rs": 10466,
+          "benchmark_return": 7.02,
+          "benchmark_ptp_rs": 10702,
+          "additional_benchmark_return": 8.97,
+          "additional_benchmark_ptp_rs": 10897
+        },
+        {
+          "period": "3Y"
+        },
+        {
+          "period": "5Y"
+        },
+        {
+          "period": "SI",
+          "fund_return": 10.35,
+          "fund_ptp_rs": 12609,
+          "benchmark_return": 9.8,
+          "benchmark_ptp_rs": 12461,
+          "additional_benchmark_return": 12.59,
+          "additional_benchmark_ptp_rs": 13220
+        }
+      ],
+      "debt_indicators": {
+        "annualised_portfolio_ytm": 7.11,
+        "macaulay_duration": 2.77,
+        "residual_maturity": 3.3
+      },
+      "sip_returns": [
+        {
+          "period": "1Y",
+          "total_invested": 120000,
+          "market_value": 121140,
+          "return_pct": 1.77,
+          "benchmark_market_value": 122978,
+          "benchmark_return_pct": 4.65,
+          "additional_benchmark_market_value": 124387,
+          "additional_benchmark_return_pct": 6.87
+        },
+        {
+          "period": "SI",
+          "total_invested": 280000,
+          "market_value": 298346,
+          "return_pct": 5.35,
+          "benchmark_market_value": 303401,
+          "benchmark_return_pct": 6.8,
+          "additional_benchmark_market_value": 306904,
+          "additional_benchmark_return_pct": 7.8
+        }
+      ]
+    },
+    {
+      "fund_name": "360 ONE Balanced Hybrid Fund - Dir - Growth",
+      "fund_type": "open ended",
+      "scheme_type": "An open ended balanced scheme investing in equity and debt instruments",
+      "category": "Balanced Hybrid Fund",
+      "investment_objective": "To create wealth and income in the long term; Investment in equity and equity-related securities and fixed income instruments.",
+      "benchmark": "Nifty 50 Hybrid Composite Debt 50:50 Index",
+      "inception_date": "25 September 2023",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "nav": 13.0541,
+      "nav_date": "January 30, 2026",
+      "aum_crores": 801.83,
+      "monthly_avg_aum": 817.29,
+      "expense_ratio": 0.45,
+      "risk_level": "High",
+      "returns": [
+        {
+          "period": "1Y",
+          "fund_return": 6.21,
+          "fund_ptp_rs": 10621,
+          "benchmark_return": 7.02,
+          "benchmark_ptp_rs": 10702,
+          "additional_benchmark_return": 8.97,
+          "additional_benchmark_ptp_rs": 10897
+        },
+        {
+          "period": "3Y"
+        },
+        {
+          "period": "5Y"
+        },
+        {
+          "period": "SI",
+          "fund_return": 12.01,
+          "fund_ptp_rs": 13059,
+          "benchmark_return": 9.8,
+          "benchmark_ptp_rs": 12461,
+          "additional_benchmark_return": 12.59,
+          "additional_benchmark_ptp_rs": 13220
+        }
+      ],
+      "debt_indicators": {
+        "annualised_portfolio_ytm": 7.11,
+        "macaulay_duration": 2.77,
+        "residual_maturity": 3.3
+      }
+    },
+    {
+      "fund_name": "360 ONE MULTI ASSET ALLOCATION FUND",
+      "scheme_type": "An open ended scheme investing in Equity & Equity Related Instruments, Debt & Money Market Securities, Gold/Silver related instruments and in units of REITs & InvITs",
+      "investment_objective": "The Investment Objective of the Scheme is to provide the investors an opportunity to invest in an actively managed portfolio of multiple asset classes. However, there is no assurance that the investment objective of the Scheme will be realized and the Scheme does not assure or guarantee any returns.",
+      "benchmark": "BSE 500 TRI - 25% + NIFTY Composite Debt Index - 45% + Domestic prices of Gold and Silver (30%)",
+      "inception_date": "August 20, 2025",
+      "plans_offered": "Regular & Direct",
+      "option": "Growth & IDCW",
+      "exit_load": "1. If units of the Scheme are redeemed/switched-out within 12 months from the date of allotment: • Upto 10% of the units: No exit load will be levied • Above 10% of the units: exit load of 1% will be levied 2. If units of the Scheme are redeemed/switched-out after 12 months from the date of allotment. No exit will be levied.",
+      "min_lumpsum": 1000,
+      "min_additional": 1000,
+      "fund_managers": [
+        {
+          "name": "Mr. Mayur Patel",
+          "role": "Fund Manager Equity",
+          "experience": "Mr. Mayur Patel has 20 years of work experience including investment management and research experience of more than 18 years."
+        },
+        {
+          "name": "Mr. Milan Mody",
+          "role": "Fund Manager Debt",
+          "experience": "Mr. Mody has over 20 years of work experience in the Fixed Income market."
+        },
+        {
+          "name": "Mr. Viral Mehta",
+          "role": "Co- Fund Manager Debt",
+          "managing_since": "w.e.f October 06, 2025",
+          "experience": "Mr. Mehta brings experience across Credit and Equity. He began his career in Credit at Aditya Birla Capital and Axis Bank, honing his credit appraisal expertise, and later transitioned to Equity Research roles at PPFAS Mutual Fund and Edelweiss Global Wealth, deepening his skills in business analysis and financial modelling. This blend gives him a holistic market perspective, combining credit discipline with equity foresight."
+        },
+        {
+          "name": "Mr. Rahul Khetawat",
+          "role": "Fund Manager Commodity",
+          "experience": "Mr. Khetawat has over 14 years of experience of handling multiple asset classes including Forex."
+        },
+        {
+          "name": "Mr. Ashish Ongari",
+          "role": "Co- Fund Manager Equity & Commodities",
+          "experience": "Mr. Ashish has overall six years of experience in financial services, specializing in algorithmic trading and quantitative research. He holds a B.Tech from NITK, Surathkal, and has previously worked as a trader at Capitalmind and a quant analyst at Investmint. His expertise lies in factor investing, systematic trading, and portfolio optimization."
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "Brookfield India Real Estate Trust",
+          "sector": "Realty",
+          "weight_pct": 2.11
+        },
+        {
+          "name": "ICICI Bank Limited",
+          "sector": "Banks",
+          "weight_pct": 1.85
+        },
+        {
+          "name": "Indus Towers Limited",
+          "sector": "Telecom - Services",
+          "weight_pct": 1.53
+        },
+        {
+          "name": "Cholamandalam Investment and Finance Company Ltd",
+          "sector": "Finance",
+          "weight_pct": 1.33
+        },
+        {
+          "name": "Bharti Airtel Limited",
+          "sector": "Telecom - Services",
+          "weight_pct": 1.28
+        },
+        {
+          "name": "Tata Motors Ltd",
+          "sector": "Agricultural, Commercial & Construction Vehicles",
+          "weight_pct": 1.17
+        },
+        {
+          "name": "Axis Bank Limited",
+          "sector": "Banks",
+          "weight_pct": 1.15
+        },
+        {
+          "name": "Bajaj Finance Limited",
+          "sector": "Finance",
+          "weight_pct": 1.05
+        },
+        {
+          "name": "HDFC Bank Limited",
+          "sector": "Banks",
+          "weight_pct": 1.03
+        },
+        {
+          "name": "Britannia Industries Limited",
+          "sector": "Food Products",
+          "weight_pct": 0.94
+        },
+        {
+          "name": "GE Vernova T&D India Limited",
+          "sector": "Electrical Equipment",
+          "weight_pct": 0.92
+        },
+        {
+          "name": "Titan Company Limited",
+          "sector": "Consumer Durables",
+          "weight_pct": 0.91
+        },
+        {
+          "name": "Larsen & Toubro Limited",
+          "sector": "Construction",
+          "weight_pct": 0.89
+        },
+        {
+          "name": "Motherson Sumi Wiring India Limited",
+          "sector": "Auto Components",
+          "weight_pct": 0.88
+        },
+        {
+          "name": "Maruti Suzuki India Limited",
+          "sector": "Automobiles",
+          "weight_pct": 0.84
+        },
+        {
+          "name": "Vedanta Limited",
+          "sector": "Diversified Metals",
+          "weight_pct": 0.82
+        },
+        {
+          "name": "Shriram Finance Limited",
+          "sector": "Finance",
+          "weight_pct": 0.81
+        },
+        {
+          "name": "The Indian Hotels Company Limited",
+          "sector": "Leisure Services",
+          "weight_pct": 0.77
+        },
+        {
+          "name": "Eternal Limited",
+          "sector": "Retailing",
+          "weight_pct": 0.75
+        },
+        {
+          "name": "Premier Energies Limited",
+          "sector": "Electrical Equipment",
+          "weight_pct": 0.64
+        },
+        {
+          "name": "Tech Mahindra Limited",
+          "sector": "IT - Software",
+          "weight_pct": 0.63
+        },
+        {
+          "name": "CG Power and Industrial Solutions Limited",
+          "sector": "Electrical Equipment",
+          "weight_pct": 0.62
+        },
+        {
+          "name": "Divi's Laboratories Limited",
+          "sector": "Pharmaceuticals & Biotechnology",
+          "weight_pct": 0.53
+        },
+        {
+          "name": "Coforge Limited",
+          "sector": "IT - Software",
+          "weight_pct": 0.41
+        },
+        {
+          "name": "Aegis Vopak Terminals Limited",
+          "sector": "Oil",
+          "weight_pct": 0.41
+        },
+        {
+          "name": "Capital Infra Trust",
+          "sector": "Construction",
+          "weight_pct": 0.37
+        },
+        {
+          "name": "Hero MotoCorp Limited",
+          "sector": "Automobiles",
+          "weight_pct": 0.37
+        },
+        {
+          "name": "Infosys Limited",
+          "sector": "IT - Software",
+          "weight_pct": 0.35
+        },
+        {
+          "name": "Embassy Office Parks REIT",
+          "sector": "Realty",
+          "weight_pct": 0.33
+        },
+        {
+          "name": "GK Energy Limited",
+          "sector": "Construction",
+          "weight_pct": 0.33
+        },
+        {
+          "name": "PhysicsWallah Limited",
+          "sector": "Other Consumer Services",
+          "weight_pct": 0.32
+        },
+        {
+          "name": "Emmvee Photovoltaic Power Limited",
+          "sector": "Electrical Equipment",
+          "weight_pct": 0.31
+        },
+        {
+          "name": "Crompton Greaves Consumer Electricals Limited",
+          "sector": "Consumer Durables",
+          "weight_pct": 0.26
+        },
+        {
+          "name": "Sumitomo Chemical India Limited",
+          "sector": "Fertilizers & Agrochemicals",
+          "weight_pct": 0.21
+        },
+        {
+          "name": "Bajaj Consumer Care Limited",
+          "sector": "Personal Products",
+          "weight_pct": 0.16
+        }
+      ],
+      "debt_holdings": [
+        {
+          "name": "6.33% Government of India",
+          "instrument_type": "Government Securities",
+          "rating": "SOVEREIGN",
+          "weight_pct": 2.81
+        },
+        {
+          "name": "6.68% Government of India",
+          "instrument_type": "Government Securities",
+          "rating": "SOVEREIGN",
+          "weight_pct": 2.78
+        },
+        {
+          "name": "6.01% Government of India",
+          "instrument_type": "Government Securities",
+          "rating": "SOVEREIGN",
+          "weight_pct": 2.13
+        },
+        {
+          "name": "7.24% Government of India",
+          "instrument_type": "Government Securities",
+          "rating": "SOVEREIGN",
+          "weight_pct": 2.13
+        },
+        {
+          "name": "7.32% Government of India",
+          "instrument_type": "Government Securities",
+          "rating": "SOVEREIGN",
+          "weight_pct": 1.5
+        },
+        {
+          "name": "7.02% Government of India",
+          "instrument_type": "Government Securities",
+          "rating": "SOVEREIGN",
+          "weight_pct": 1.47
+        },
+        {
+          "name": "7.23% Government of India",
+          "instrument_type": "Government Securities",
+          "rating": "SOVEREIGN",
+          "weight_pct": 1.46
+        },
+        {
+          "name": "6.79% Government of India",
+          "instrument_type": "Government Securities",
+          "rating": "SOVEREIGN",
+          "weight_pct": 1.45
+        },
+        {
+          "name": "6.72% State Government Securities",
+          "instrument_type": "Government Securities",
+          "rating": "SOVEREIGN",
+          "weight_pct": 1.36
+        },
+        {
+          "name": "6.9% Government of India",
+          "instrument_type": "Government Securities",
+          "rating": "SOVEREIGN",
+          "weight_pct": 1.35
+        },
+        {
+          "name": "7.64% National Bank For Agriculture and Rural Development",
+          "instrument_type": "Non-Convertible Debentures/Bonds",
+          "rating": "ICRA AAA",
+          "weight_pct": 2.91
+        },
+        {
+          "name": "7.5343% PNB Housing Finance Limited",
+          "instrument_type": "Non-Convertible Debentures/Bonds",
+          "rating": "CARE AA+",
+          "weight_pct": 2.73
+        },
+        {
+          "name": "6.9% Housing & Urban Development Corporation Limited",
+          "instrument_type": "Non-Convertible Debentures/Bonds",
+          "rating": "ICRA AAA",
+          "weight_pct": 2.27
+        },
+        {
+          "name": "6.9601% Mindspace Business Parks REIT",
+          "instrument_type": "Non-Convertible Debentures/Bonds",
+          "rating": "ICRA AAA",
+          "weight_pct": 1.43
+        },
+        {
+          "name": "8.32% Power Grid Corporation of India Limited",
+          "instrument_type": "Non-Convertible Debentures/Bonds",
+          "rating": "CRISIL AAA",
+          "weight_pct": 1.2
+        },
+        {
+          "name": "8.52% Muthoot Finance Limited",
+          "instrument_type": "Non-Convertible Debentures/Bonds",
+          "rating": "CRISIL AA+",
+          "weight_pct": 1.17
+        },
+        {
+          "name": "7.95% Mindspace Business Parks REIT",
+          "instrument_type": "Non-Convertible Debentures/Bonds",
+          "rating": "CRISIL AAA",
+          "weight_pct": 1.16
+        },
+        {
+          "name": "7.68% Small Industries Dev Bank of India",
+          "instrument_type": "Non-Convertible Debentures/Bonds",
+          "rating": "CRISIL AAA",
+          "weight_pct": 1.16
+        },
+        {
+          "name": "6.78% Indian Railway Finance Corporation Limited",
+          "instrument_type": "Non-Convertible Debentures/Bonds",
+          "rating": "CRISIL AAA",
+          "weight_pct": 1.13
+        },
+        {
+          "name": "9.25% SK Finance Limited",
+          "instrument_type": "Non-Convertible Debentures/Bonds",
+          "rating": "ICRA AA-",
+          "weight_pct": 0.84
+        },
+        {
+          "name": "360 One Gold Exchange Traded Fund",
+          "instrument_type": "Exchange Traded Funds",
+          "rating": "Others",
+          "weight_pct": 27.64
+        },
+        {
+          "name": "360 One Silver Exchange traded fund",
+          "instrument_type": "Exchange Traded Funds",
+          "rating": "Others",
+          "weight_pct": 2.04
+        }
+      ],
+      "sector_allocation": {
+        "Financial Services": 7.23,
+        "Capital Goods": 3.66,
+        "Telecommunication": 2.81,
+        "Realty": 2.44,
+        "Automobile and Auto Components": 2.1,
+        "Consumer Services": 1.84,
+        "Construction": 1.59,
+        "Information Technology": 1.39,
+        "Consumer Durables": 1.17,
+        "Fast Moving Consumer Goods": 1.1,
+        "Metals & Mining": 0.82,
+        "Healthcare": 0.53,
+        "Oil Gas & Consumable Fuels": 0.41,
+        "Chemicals": 0.21
+      },
+      "market_cap_allocation": {
+        "Large Cap": 66.3,
+        "Mid Cap": 15.19,
+        "Small Cap": 18.5
+      },
+      "composition_by_rating": {
+        "Sovereign": 55.12,
+        "AAA": 30.71,
+        "AA+": 11.65,
+        "AA-": 2.51
+      },
+      "instrument_composition": {
+        "Government Securities": 18.45,
+        "Exchange Traded Funds": 29.67,
+        "Equity": 27.3,
+        "NCD/Bonds": 16.01,
+        "TREPS/ Net Current Asset": 8.56
+      },
+      "maturity_profile": {
+        "1-3 Years": 5.76,
+        "3-7 Years": 15.36,
+        "7+ Years": 13.35
+      },
+      "category": "Multi Asset Allocation Fund",
+      "plan_type": "Regular",
+      "nav": 12.0651,
+      "nav_date": "2026-01-30",
+      "aum_crores": 346.62,
+      "monthly_avg_aum": 313.78,
+      "expense_ratio": 1.99,
+      "risk_level": "High",
+      "debt_indicators": {
+        "annualised_portfolio_ytm": 6.94,
+        "macaulay_duration": 4.5,
+        "residual_maturity": 7.26
+      }
+    },
+    {
+      "fund_name": "360 ONE Dynamic Bond Fund",
+      "scheme_type": "An open-ended dynamic debt scheme investing across duration.",
+      "category": "Dynamic Bond Fund",
+      "investment_objective": "The investment objective of the scheme is to generate income and long term gains by investing in a range of debt and money market instruments of various maturities. The scheme will seek to flexibly manage its investment across the maturity spectrum with a view to optimize the risk return proposition for the investors.",
+      "benchmark": "CRISIL Dynamic Bond A-III Index",
+      "inception_date": "June 24, 2013",
+      "plans_offered": "Regular & Direct",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "nav": 24.6683,
+      "nav_date": "January 30, 2026",
+      "aum_crores": 625.33,
+      "monthly_avg_aum": 621.91,
+      "expense_ratio": 0.27,
+      "exit_load": "NIL",
+      "min_lumpsum": 10000,
+      "min_additional": 1000,
+      "risk_level": "Moderately High",
+      "fund_managers": [
+        {
+          "name": "Mr. Milan Mody"
+        },
+        {
+          "name": "Mr. Viral Mehta",
+          "managing_since": "w.e.f October 06, 2025"
+        }
+      ],
+      "returns": [
+        {
+          "period": "1Y",
+          "fund_return": 7.98,
+          "fund_ptp": 10798,
+          "benchmark_return": 5.54,
+          "benchmark_ptp": 10554,
+          "additional_benchmark_return": 5.18,
+          "additional_benchmark_ptp": 10518
+        },
+        {
+          "period": "3Y",
+          "fund_return": 8.46,
+          "fund_ptp": 12761,
+          "benchmark_return": 7.3,
+          "benchmark_ptp": 12355,
+          "additional_benchmark_return": 7.73,
+          "additional_benchmark_ptp": 12504
+        },
+        {
+          "period": "5Y",
+          "fund_return": 7.12,
+          "fund_ptp": 14108,
+          "benchmark_return": 5.64,
+          "benchmark_ptp": 13156,
+          "additional_benchmark_return": 4.98,
+          "additional_benchmark_ptp": 12750
+        },
+        {
+          "period": "10Y",
+          "fund_return": 7.41,
+          "fund_ptp": 20449,
+          "benchmark_return": 7.42,
+          "benchmark_ptp": 20477,
+          "additional_benchmark_return": 6.46,
+          "additional_benchmark_ptp": 18710
+        },
+        {
+          "period": "SI",
+          "fund_return": 7.43,
+          "fund_ptp": 24688,
+          "benchmark_return": 7.56,
+          "benchmark_ptp": 25076,
+          "additional_benchmark_return": 6.29,
+          "additional_benchmark_ptp": 21575
+        }
+      ],
+      "debt_holdings": [
+        {
+          "name": "Embassy Office Parks REIT",
+          "instrument_type": "REIT/InvIT Instruments",
+          "rating": "Realty",
+          "weight_pct": 4.83
+        },
+        {
+          "name": "Capital Infra Trust",
+          "instrument_type": "REIT/InvIT Instruments",
+          "rating": "Construction",
+          "weight_pct": 2.98
+        },
+        {
+          "name": "Brookfield India Real Estate Trust",
+          "instrument_type": "REIT/InvIT Instruments",
+          "rating": "Realty",
+          "weight_pct": 0.96
+        },
+        {
+          "name": "Mindspace Business Parks REIT",
+          "instrument_type": "REIT/InvIT Instruments",
+          "rating": "Realty",
+          "weight_pct": 0.88
+        },
+        {
+          "name": "7.26% Government of India",
+          "instrument_type": "Government Securities",
+          "rating": "SOVEREIGN",
+          "weight_pct": 10.72
+        },
+        {
+          "name": "7.18% Government of India",
+          "instrument_type": "Government Securities",
+          "rating": "SOVEREIGN",
+          "weight_pct": 6.52
+        },
+        {
+          "name": "7.41% Government of India",
+          "instrument_type": "Government Securities",
+          "rating": "SOVEREIGN",
+          "weight_pct": 4.99
+        },
+        {
+          "name": "7.23% Government of India",
+          "instrument_type": "Government Securities",
+          "rating": "SOVEREIGN",
+          "weight_pct": 4.06
+        },
+        {
+          "name": "7.64% State Government Securities",
+          "instrument_type": "Government Securities",
+          "rating": "SOVEREIGN",
+          "weight_pct": 4.05
+        },
+        {
+          "name": "7.6% State Government Securities",
+          "instrument_type": "Government Securities",
+          "rating": "SOVEREIGN",
+          "weight_pct": 4.04
+        },
+        {
+          "name": "7.71% State Government Securities",
+          "instrument_type": "Government Securities",
+          "rating": "SOVEREIGN",
+          "weight_pct": 2.45
+        },
+        {
+          "name": "7.74% State Government Securities",
+          "instrument_type": "Government Securities",
+          "rating": "SOVEREIGN",
+          "weight_pct": 2.45
+        },
+        {
+          "name": "7.74% State Government Securities",
+          "instrument_type": "Government Securities",
+          "rating": "SOVEREIGN",
+          "weight_pct": 1.64
+        },
+        {
+          "name": "7.66% State Government Securities",
+          "instrument_type": "Government Securities",
+          "rating": "SOVEREIGN",
+          "weight_pct": 1.62
+        },
+        {
+          "name": "6.54% Government of India",
+          "instrument_type": "Government Securities",
+          "rating": "SOVEREIGN",
+          "weight_pct": 1.08
+        },
+        {
+          "name": "6.01% Government of India",
+          "instrument_type": "Government Securities",
+          "rating": "SOVEREIGN",
+          "weight_pct": 0.82
+        },
+        {
+          "name": "7.24% Government of India",
+          "instrument_type": "Government Securities",
+          "rating": "SOVEREIGN",
+          "weight_pct": 0.8
+        },
+        {
+          "name": "6.68% Government of India",
+          "instrument_type": "Government Securities",
+          "rating": "SOVEREIGN",
+          "weight_pct": 0.77
+        },
+        {
+          "name": "6.01% Government of India",
+          "instrument_type": "Government Securities",
+          "rating": "SOVEREIGN",
+          "weight_pct": 0.39
+        },
+        {
+          "name": "7.24% Government of India",
+          "instrument_type": "Government Securities",
+          "rating": "SOVEREIGN",
+          "weight_pct": 0.39
+        },
+        {
+          "name": "6.4% Jamnagar Utilities & Power Private Limited",
+          "instrument_type": "Non-Convertible Debentures/Bonds",
+          "rating": "CRISIL AAA",
+          "weight_pct": 4.76
+        },
+        {
+          "name": "8.025% LIC Housing Finance Limited",
+          "instrument_type": "Non-Convertible Debentures/Bonds",
+          "rating": "CRISIL AAA",
+          "weight_pct": 4.11
+        },
+        {
+          "name": "7.8% HDFC Bank Limited",
+          "instrument_type": "Non-Convertible Debentures/Bonds",
+          "rating": "CRISIL AAA",
+          "weight_pct": 4.06
+        },
+        {
+          "name": "8.05% PNB Housing Finance Limited",
+          "instrument_type": "Non-Convertible Debentures/Bonds",
+          "rating": "CARE AA+",
+          "weight_pct": 4.06
+        },
+        {
+          "name": "7.73% Embassy Office Parks REIT",
+          "instrument_type": "Non-Convertible Debentures/Bonds",
+          "rating": "CRISIL AAA",
+          "weight_pct": 4.04
+        },
+        {
+          "name": "8.2% Muthoot Finance Limited",
+          "instrument_type": "Non-Convertible Debentures/Bonds",
+          "rating": "CRISIL AA+",
+          "weight_pct": 4.01
+        },
+        {
+          "name": "9.25% SK Finance Limited",
+          "instrument_type": "Non-Convertible Debentures/Bonds",
+          "rating": "ICRA AA-",
+          "weight_pct": 4.01
+        },
+        {
+          "name": "8.65% Cholamandalam Investment and Finance Company Ltd",
+          "instrument_type": "Non-Convertible Debentures/Bonds",
+          "rating": "ICRA AA+",
+          "weight_pct": 2.45
+        },
+        {
+          "name": "7.87% LIC Housing Finance Limited",
+          "instrument_type": "Non-Convertible Debentures/Bonds",
+          "rating": "CRISIL AAA",
+          "weight_pct": 2.43
+        },
+        {
+          "name": "6.9601% Mindspace Business Parks REIT",
+          "instrument_type": "Non-Convertible Debentures/Bonds",
+          "rating": "ICRA AAA",
+          "weight_pct": 1.58
+        },
+        {
+          "name": "6.9% Housing & Urban Development Corporation Limited",
+          "instrument_type": "Non-Convertible Debentures/Bonds",
+          "rating": "ICRA AAA",
+          "weight_pct": 1.57
+        },
+        {
+          "name": "7.95% Mindspace Business Parks REIT",
+          "instrument_type": "Non-Convertible Debentures/Bonds",
+          "rating": "CRISIL AAA",
+          "weight_pct": 0.97
+        },
+        {
+          "name": "8.6% Cholamandalam Investment and Finance Company Ltd",
+          "instrument_type": "Non-Convertible Debentures/Bonds",
+          "rating": "ICRA AA+",
+          "weight_pct": 0.16
+        },
+        {
+          "name": "7.68% Small Industries Dev Bank of India",
+          "instrument_type": "Non-Convertible Debentures/Bonds",
+          "rating": "CRISIL AAA",
+          "weight_pct": 0.16
+        },
+        {
+          "name": "Corporate Debt Market Development Fund",
+          "instrument_type": "Corporate Debt Market Development Fund",
+          "rating": "Unsecured Security",
+          "weight_pct": 0.36
+        },
+        {
+          "name": "TREPS",
+          "instrument_type": "TREPS",
+          "weight_pct": 2.32
+        },
+        {
+          "name": "Net Receivables / (Payables)",
+          "instrument_type": "Net Receivables / (Payables)",
+          "weight_pct": 2.48
+        }
+      ],
+      "composition_by_rating": {
+        "Sovereign": 54.95,
+        "AAA": 27.8,
+        "AA+": 12.55,
+        "AA-": 4.71
+      },
+      "instrument_composition": {
+        "Govt. Securities": 46.81,
+        "NCD/Bonds": 38.37,
+        "REIT/InvIT Instruments": 9.65,
+        "Current Asset": 4.81,
+        "CDMDF": 0.36
+      },
+      "maturity_profile": {
+        ">7yr": 37.1,
+        ">3<=7yr": 35.62,
+        ">1<=3yr": 7.7,
+        ">0<=1yr": 4.76
+      },
+      "debt_indicators": {
+        "annualised_portfolio_ytm": 7.38,
+        "macaulay_duration": 4.53,
+        "residual_maturity": 6.39
+      },
+      "dividend_history": [
+        {
+          "plan": "Monthly IDCW Plan",
+          "date": "27-Jan-26",
+          "face_value": 10,
+          "gross_idcw_per_unit": 0.05,
+          "regular_plan_nav_ex_idcw": 12.9357,
+          "direct_plan_nav_ex_idcw": 13.9984
+        },
+        {
+          "plan": "Monthly IDCW Plan",
+          "date": "30-Dec-25",
+          "face_value": 10,
+          "gross_idcw_per_unit": 0.05,
+          "regular_plan_nav_ex_idcw": 12.9718,
+          "direct_plan_nav_ex_idcw": 14.0306
+        },
+        {
+          "plan": "Monthly IDCW Plan",
+          "date": "25-Nov-25",
+          "face_value": 10,
+          "gross_idcw_per_unit": 0.05,
+          "regular_plan_nav_ex_idcw": 13.0392,
+          "direct_plan_nav_ex_idcw": 14.0961
+        },
+        {
+          "plan": "Quarterly IDCW Plan",
+          "date": "04-Jun-15",
+          "face_value": 10,
+          "gross_idcw_per_unit": 0.4,
+          "regular_plan_nav_ex_idcw": 11.4678,
+          "direct_plan_nav_ex_idcw": 11.5708
+        },
+        {
+          "plan": "HalfYearly IDCW Plan",
+          "date": "04-Jun-15",
+          "face_value": 10,
+          "gross_idcw_per_unit": 0.4,
+          "regular_plan_nav_ex_idcw": 11.4678
+        },
+        {
+          "plan": "Monthly IDCW Plan",
+          "date": "27-Jan-26",
+          "face_value": 10,
+          "gross_idcw_per_unit": 0.05,
+          "regular_plan_nav_ex_idcw": 12.9357,
+          "direct_plan_nav_ex_idcw": 13.9984
+        },
+        {
+          "plan": "Monthly IDCW Plan",
+          "date": "30-Dec-25",
+          "face_value": 10,
+          "gross_idcw_per_unit": 0.05,
+          "regular_plan_nav_ex_idcw": 12.9718,
+          "direct_plan_nav_ex_idcw": 14.0306
+        },
+        {
+          "plan": "Monthly IDCW Plan",
+          "date": "25-Nov-25",
+          "face_value": 10,
+          "gross_idcw_per_unit": 0.05,
+          "regular_plan_nav_ex_idcw": 13.0392,
+          "direct_plan_nav_ex_idcw": 14.0961
+        },
+        {
+          "plan": "Quarterly IDCW Plan",
+          "date": "04-Jun-15",
+          "face_value": 10,
+          "gross_idcw_per_unit": 0.4,
+          "regular_plan_nav_ex_idcw": 11.4678,
+          "direct_plan_nav_ex_idcw": 11.5708
+        },
+        {
+          "plan": "HalfYearly IDCW Plan",
+          "date": "04-Jun-15",
+          "face_value": 10,
+          "gross_idcw_per_unit": 0.4,
+          "regular_plan_nav_ex_idcw": 11.4678
+        }
+      ],
+      "additional_info": {
+        "bloomberg_code": "IIFDBDBIN",
+        "options_offered": "Growth & IDCW",
+        "weekly_sip_option": "₹1000 per instalment for a minimum period of 6 weeks - any business day between Monday to Friday. Default day will be Tuesday.",
+        "fortnightly_sip_option": "₹1000 per instalment for a minimum period of 6 fortnights - 2nd and 16th of every month",
+        "monthly_sip_option": "₹1000 per instalment for a minimum period of 6 months - Any date 1st to 28th (Default - 7th of every month)",
+        "quarterly_sip_option": "₹1,500 per instalment for a minimum period of 4 quarters- Any date 1st to 28th (Default - 7th)",
+        "entry_load": "NIL",
+        "dematerialization": "D-Mat Option Available",
+        "asset_allocation_ranges": {
+          "Debt Market": "0% to 100%",
+          "Money Market": "0% to 100%",
+          "InvITs": "0% to 10%"
+        },
+        "additional_benchmark": "CRISIL 10Yr Gilt Index",
+        "benchmark_risk_level": "Moderate",
+        "navs_as_on_jan_30_2026": {
+          "Regular Plan Growth": 23.3481,
+          "Regular Plan Bonus": 23.348,
+          "Regular Quarterly IDCW": 22.531,
+          "Regular Half Yearly IDCW": 22.5308,
+          "Regular Monthly IDCW": 12.9662,
+          "Direct Plan Growth": 24.6683,
+          "Direct Monthly IDCW": 14.0316,
+          "Direct Quarterly IDCW": 22.7604
+        },
+        "interest_rate_risk": "Relatively High (Class III)",
+        "credit_risk": "Relatively High (Class C)"
+      }
+    },
+    {
+      "fund_name": "360 ONE Liquid Fund - Regular Plan",
+      "fund_type": "Open-ended",
+      "scheme_type": "An open-ended liquid scheme. A relatively low interest rate risk and moderate credit risk",
+      "category": "Liquid Fund",
+      "investment_objective": "To provide liquidity with reasonable returns commensurate with low risk through a portfolio of money market and debt securities with residual maturity of up to 91 days. However, there can be no assurance that the investment objective of the scheme will be achieved.",
+      "benchmark": "CRISIL Liquid Debt A-I Index",
+      "inception_date": "2013-11-13",
+      "plans_offered": [
+        "Regular",
+        "Direct"
+      ],
+      "plan_type": "Regular",
+      "option": "Growth",
+      "nav": 2075.5464,
+      "nav_date": "2026-01-30",
+      "aum_crores": 1257.7,
+      "monthly_avg_aum": 1094.16,
+      "expense_ratio": 0.32,
+      "exit_load": "Exit load as a % of redemption proceeds: Day 1: 0.0070%, Day 2: 0.0065%, Day 3: 0.0060%, Day 4: 0.0055%, Day 5: 0.0050%, Day 6: 0.0045%, Day 7 Onwards: 0.0000%",
+      "min_lumpsum": 5000,
+      "min_additional": 1000,
+      "sip_available": true,
+      "risk_level": "Low to Moderate",
+      "fund_managers": [
+        {
+          "name": "Mr. Milan Mody",
+          "experience": "over 20 years of work experience in the Fixed Income market."
+        },
+        {
+          "name": "Mr. Viral Mehta",
+          "managing_since": "2025-10-06"
+        }
+      ],
+      "returns": [
+        {
+          "period": "7D",
+          "fund_return": 5.66,
+          "benchmark_return": 5.77,
+          "additional_benchmark_return": 3.57
+        },
+        {
+          "period": "15D",
+          "fund_return": 4.63,
+          "benchmark_return": 5.35,
+          "additional_benchmark_return": 1.8
+        },
+        {
+          "period": "1M",
+          "fund_return": 4.78,
+          "benchmark_return": 5.2,
+          "additional_benchmark_return": 1.59
+        },
+        {
+          "period": "3M",
+          "fund_return": 5.39,
+          "benchmark_return": 5.59,
+          "additional_benchmark_return": 3.48
+        },
+        {
+          "period": "6M",
+          "fund_return": 5.47,
+          "benchmark_return": 5.66,
+          "additional_benchmark_return": 3.86
+        },
+        {
+          "period": "1Y",
+          "fund_return": 6.11,
+          "benchmark_return": 6.26,
+          "additional_benchmark_return": 5.75
+        },
+        {
+          "period": "3Y",
+          "fund_return": 6.75,
+          "benchmark_return": 6.9,
+          "additional_benchmark_return": 6.73
+        },
+        {
+          "period": "5Y",
+          "fund_return": 5.65,
+          "benchmark_return": 5.89,
+          "additional_benchmark_return": 5.64
+        },
+        {
+          "period": "10Y",
+          "fund_return": 5.74,
+          "benchmark_return": 6.1,
+          "additional_benchmark_return": 6.12
+        },
+        {
+          "period": "SI",
+          "fund_return": 6.16,
+          "benchmark_return": 6.57,
+          "additional_benchmark_return": 6.52
+        }
+      ],
+      "debt_holdings": [
+        {
+          "name": "Punjab National Bank",
+          "instrument_type": "Certificate of Deposit",
+          "rating": "CRISIL A1+",
+          "weight_pct": 7.9
+        },
+        {
+          "name": "Kotak Mahindra Bank Limited",
+          "instrument_type": "Certificate of Deposit",
+          "rating": "CRISIL A1+",
+          "weight_pct": 5.94
+        },
+        {
+          "name": "National Bank For Agriculture and Rural Development",
+          "instrument_type": "Certificate of Deposit",
+          "rating": "CRISIL A1+",
+          "weight_pct": 5.92
+        },
+        {
+          "name": "Union Bank of India",
+          "instrument_type": "Certificate of Deposit",
+          "rating": "ICRA A1+",
+          "weight_pct": 5.92
+        },
+        {
+          "name": "Small Industries Dev Bank of India",
+          "instrument_type": "Certificate of Deposit",
+          "rating": "CARE A1+",
+          "weight_pct": 5.91
+        },
+        {
+          "name": "State Bank of India",
+          "instrument_type": "Certificate of Deposit",
+          "rating": "CRISIL A1+",
+          "weight_pct": 5.91
+        },
+        {
+          "name": "Kotak Securities Limited",
+          "instrument_type": "Commercial Paper",
+          "rating": "CRISIL A1+/ CRA A1+",
+          "weight_pct": 5.91
+        },
+        {
+          "name": "Bank of Baroda",
+          "instrument_type": "Certificate of Deposit",
+          "rating": "FITCH A1+",
+          "weight_pct": 3.95
+        },
+        {
+          "name": "IDFC First Bank Limited",
+          "instrument_type": "Certificate of Deposit",
+          "rating": "CRISIL A1+",
+          "weight_pct": 3.94
+        },
+        {
+          "name": "Godrej Consumer Products Limited",
+          "instrument_type": "Commercial Paper",
+          "rating": "ICRA A1+",
+          "weight_pct": 3.94
+        },
+        {
+          "name": "Godrej Industries Limited",
+          "instrument_type": "Commercial Paper",
+          "rating": "CRISIL A1+",
+          "weight_pct": 3.94
+        },
+        {
+          "name": "HDFC Bank Limited",
+          "instrument_type": "Certificate of Deposit",
+          "rating": "CRISIL A1+",
+          "weight_pct": 3.93
+        },
+        {
+          "name": "Indian Bank",
+          "instrument_type": "Certificate of Deposit",
+          "rating": "CRISIL A1+",
+          "weight_pct": 3.91
+        },
+        {
+          "name": "Axis Bank Limited",
+          "instrument_type": "Certificate of Deposit",
+          "rating": "CRISIL A1+",
+          "weight_pct": 2.35
+        },
+        {
+          "name": "Reliance Retail Ventures Limited",
+          "instrument_type": "Commercial Paper",
+          "rating": "CRISIL A1+",
+          "weight_pct": 1.98
+        },
+        {
+          "name": "Godrej Finance Limited",
+          "instrument_type": "Commercial Paper",
+          "rating": "CRISIL A1+",
+          "weight_pct": 1.98
+        },
+        {
+          "name": "ICICI Securities Limited",
+          "instrument_type": "Commercial Paper",
+          "rating": "CRISIL A1+",
+          "weight_pct": 1.97
+        },
+        {
+          "name": "Bajaj Finance Limited",
+          "instrument_type": "Commercial Paper",
+          "rating": "CRISIL A1+",
+          "weight_pct": 1.95
+        },
+        {
+          "name": "91 Days Tbill",
+          "instrument_type": "Treasury Bill",
+          "rating": "SOVEREIGN",
+          "weight_pct": 7.86
+        },
+        {
+          "name": "364 Days Tbill",
+          "instrument_type": "Treasury Bill",
+          "rating": "SOVEREIGN",
+          "weight_pct": 5.95
+        },
+        {
+          "name": "182 Days Tbill",
+          "instrument_type": "Treasury Bill",
+          "rating": "SOVEREIGN",
+          "weight_pct": 1.98
+        },
+        {
+          "name": "Corporate Debt Market Development Fund",
+          "instrument_type": "Corporate Debt Market Development Fund",
+          "weight_pct": 0.24
+        },
+        {
+          "name": "Reverse Repo /TREPS",
+          "instrument_type": "Cash & Equivalents",
+          "weight_pct": 8.63
+        },
+        {
+          "name": "Net Receivables / (Payables)",
+          "instrument_type": "Cash & Equivalents",
+          "weight_pct": -1.9
+        }
+      ],
+      "asset_allocation": {
+        "Money market and debt instruments with residual maturity up to 91 days": "0% to 100%"
+      },
+      "composition_by_rating": {
+        "A1+": 83.03,
+        "Sovereign": 16.97
+      },
+      "instrument_composition": {
+        "Certificate of Deposit": 55.57,
+        "Commercial Paper": 21.66,
+        "Treasury Bill": 15.79,
+        "TREPS/ Net Current Asset": 6.73,
+        "CDMDF": 0.24
+      },
+      "maturity_profile": {
+        ">60D": 17.64,
+        ">30<=60D": 53.2,
+        ">15<=30D": 15.84,
+        "0<=15D": 6.35
+      },
+      "debt_indicators": {
+        "macaulay_duration": 44.81,
+        "residual_maturity": 44.98,
+        "annualised_portfolio_ytm": 6.45
+      }
+    },
+    {
+      "fund_name": "360 ONE Liquid Fund - Direct Plan",
+      "fund_type": "Open-ended",
+      "scheme_type": "An open-ended liquid scheme. A relatively low interest rate risk and moderate credit risk",
+      "category": "Liquid Fund",
+      "investment_objective": "To provide liquidity with reasonable returns commensurate with low risk through a portfolio of money market and debt securities with residual maturity of up to 91 days. However, there can be no assurance that the investment objective of the scheme will be achieved.",
+      "benchmark": "CRISIL Liquid Debt A-I Index",
+      "inception_date": "2013-11-13",
+      "plans_offered": [
+        "Regular",
+        "Direct"
+      ],
+      "plan_type": "Direct",
+      "option": "Growth",
+      "nav": 2089.6041,
+      "nav_date": "2026-01-30",
+      "aum_crores": 1257.7,
+      "monthly_avg_aum": 1094.16,
+      "expense_ratio": 0.2,
+      "exit_load": "Exit load as a % of redemption proceeds: Day 1: 0.0070%, Day 2: 0.0065%, Day 3: 0.0060%, Day 4: 0.0055%, Day 5: 0.0050%, Day 6: 0.0045%, Day 7 Onwards: 0.0000%",
+      "min_lumpsum": 5000,
+      "min_additional": 1000,
+      "sip_available": true,
+      "risk_level": "Low to Moderate",
+      "fund_managers": [
+        {
+          "name": "Mr. Milan Mody",
+          "experience": "over 20 years of work experience in the Fixed Income market."
+        },
+        {
+          "name": "Mr. Viral Mehta",
+          "managing_since": "2025-10-06"
+        }
+      ],
+      "returns": [
+        {
+          "period": "7D",
+          "fund_return": 5.78,
+          "benchmark_return": 5.77,
+          "additional_benchmark_return": 3.57
+        },
+        {
+          "period": "15D",
+          "fund_return": 4.74,
+          "benchmark_return": 5.35,
+          "additional_benchmark_return": 1.8
+        },
+        {
+          "period": "1M",
+          "fund_return": 4.89,
+          "benchmark_return": 5.2,
+          "additional_benchmark_return": 1.59
+        },
+        {
+          "period": "3M",
+          "fund_return": 5.51,
+          "benchmark_return": 5.59,
+          "additional_benchmark_return": 3.48
+        },
+        {
+          "period": "6M",
+          "fund_return": 5.59,
+          "benchmark_return": 5.66,
+          "additional_benchmark_return": 3.86
+        },
+        {
+          "period": "1Y",
+          "fund_return": 6.23,
+          "benchmark_return": 6.26,
+          "additional_benchmark_return": 5.75
+        },
+        {
+          "period": "3Y",
+          "fund_return": 6.83,
+          "benchmark_return": 6.9,
+          "additional_benchmark_return": 6.73
+        },
+        {
+          "period": "5Y",
+          "fund_return": 5.71,
+          "benchmark_return": 5.89,
+          "additional_benchmark_return": 5.64
+        },
+        {
+          "period": "10Y",
+          "fund_return": 5.8,
+          "benchmark_return": 6.1,
+          "additional_benchmark_return": 6.12
+        },
+        {
+          "period": "SI",
+          "fund_return": 6.22,
+          "benchmark_return": 6.57,
+          "additional_benchmark_return": 6.52
+        }
+      ],
+      "debt_holdings": [
+        {
+          "name": "Punjab National Bank",
+          "instrument_type": "Certificate of Deposit",
+          "rating": "CRISIL A1+",
+          "weight_pct": 7.9
+        },
+        {
+          "name": "Kotak Mahindra Bank Limited",
+          "instrument_type": "Certificate of Deposit",
+          "rating": "CRISIL A1+",
+          "weight_pct": 5.94
+        },
+        {
+          "name": "National Bank For Agriculture and Rural Development",
+          "instrument_type": "Certificate of Deposit",
+          "rating": "CRISIL A1+",
+          "weight_pct": 5.92
+        },
+        {
+          "name": "Union Bank of India",
+          "instrument_type": "Certificate of Deposit",
+          "rating": "ICRA A1+",
+          "weight_pct": 5.92
+        },
+        {
+          "name": "Small Industries Dev Bank of India",
+          "instrument_type": "Certificate of Deposit",
+          "rating": "CARE A1+",
+          "weight_pct": 5.91
+        },
+        {
+          "name": "State Bank of India",
+          "instrument_type": "Certificate of Deposit",
+          "rating": "CRISIL A1+",
+          "weight_pct": 5.91
+        },
+        {
+          "name": "Kotak Securities Limited",
+          "instrument_type": "Commercial Paper",
+          "rating": "CRISIL A1+/ CRA A1+",
+          "weight_pct": 5.91
+        },
+        {
+          "name": "Bank of Baroda",
+          "instrument_type": "Certificate of Deposit",
+          "rating": "FITCH A1+",
+          "weight_pct": 3.95
+        },
+        {
+          "name": "IDFC First Bank Limited",
+          "instrument_type": "Certificate of Deposit",
+          "rating": "CRISIL A1+",
+          "weight_pct": 3.94
+        },
+        {
+          "name": "Godrej Consumer Products Limited",
+          "instrument_type": "Commercial Paper",
+          "rating": "ICRA A1+",
+          "weight_pct": 3.94
+        },
+        {
+          "name": "Godrej Industries Limited",
+          "instrument_type": "Commercial Paper",
+          "rating": "CRISIL A1+",
+          "weight_pct": 3.94
+        },
+        {
+          "name": "HDFC Bank Limited",
+          "instrument_type": "Certificate of Deposit",
+          "rating": "CRISIL A1+",
+          "weight_pct": 3.93
+        },
+        {
+          "name": "Indian Bank",
+          "instrument_type": "Certificate of Deposit",
+          "rating": "CRISIL A1+",
+          "weight_pct": 3.91
+        },
+        {
+          "name": "Axis Bank Limited",
+          "instrument_type": "Certificate of Deposit",
+          "rating": "CRISIL A1+",
+          "weight_pct": 2.35
+        },
+        {
+          "name": "Reliance Retail Ventures Limited",
+          "instrument_type": "Commercial Paper",
+          "rating": "CRISIL A1+",
+          "weight_pct": 1.98
+        },
+        {
+          "name": "Godrej Finance Limited",
+          "instrument_type": "Commercial Paper",
+          "rating": "CRISIL A1+",
+          "weight_pct": 1.98
+        },
+        {
+          "name": "ICICI Securities Limited",
+          "instrument_type": "Commercial Paper",
+          "rating": "CRISIL A1+",
+          "weight_pct": 1.97
+        },
+        {
+          "name": "Bajaj Finance Limited",
+          "instrument_type": "Commercial Paper",
+          "rating": "CRISIL A1+",
+          "weight_pct": 1.95
+        },
+        {
+          "name": "91 Days Tbill",
+          "instrument_type": "Treasury Bill",
+          "rating": "SOVEREIGN",
+          "weight_pct": 7.86
+        },
+        {
+          "name": "364 Days Tbill",
+          "instrument_type": "Treasury Bill",
+          "rating": "SOVEREIGN",
+          "weight_pct": 5.95
+        },
+        {
+          "name": "182 Days Tbill",
+          "instrument_type": "Treasury Bill",
+          "rating": "SOVEREIGN",
+          "weight_pct": 1.98
+        },
+        {
+          "name": "Corporate Debt Market Development Fund",
+          "instrument_type": "Corporate Debt Market Development Fund",
+          "weight_pct": 0.24
+        },
+        {
+          "name": "Reverse Repo /TREPS",
+          "instrument_type": "Cash & Equivalents",
+          "weight_pct": 8.63
+        },
+        {
+          "name": "Net Receivables / (Payables)",
+          "instrument_type": "Cash & Equivalents",
+          "weight_pct": -1.9
+        }
+      ],
+      "asset_allocation": {
+        "Money market and debt instruments with residual maturity up to 91 days": "0% to 100%"
+      },
+      "composition_by_rating": {
+        "A1+": 83.03,
+        "Sovereign": 16.97
+      },
+      "instrument_composition": {
+        "Certificate of Deposit": 55.57,
+        "Commercial Paper": 21.66,
+        "Treasury Bill": 15.79,
+        "TREPS/ Net Current Asset": 6.73,
+        "CDMDF": 0.24
+      },
+      "maturity_profile": {
+        ">60D": 17.64,
+        ">30<=60D": 53.2,
+        ">15<=30D": 15.84,
+        "0<=15D": 6.35
+      },
+      "debt_indicators": {
+        "macaulay_duration": 44.81,
+        "residual_maturity": 44.98,
+        "annualised_portfolio_ytm": 6.45
+      }
+    },
+    {
+      "fund_name": "360 ONE OVERNIGHT FUND",
+      "fund_type": "Open-ended",
+      "scheme_type": "An open-ended debt scheme investing in overnight securities.",
+      "category": "Overnight Fund",
+      "investment_objective": "The investment objective of the Scheme is to generate reasonable returns commensurate with low risk and providing high level of liquidity, through investments made in debt and money market securities having maturity of 1 business day. However, there can be no assurance or guarantee that the investment objective of the scheme would be achieved.",
+      "benchmark": "NIFTY 1D Rate Index",
+      "inception_date": "July 10, 2025",
+      "plans_offered": [
+        "Regular",
+        "Direct",
+        "Regular",
+        "Direct"
+      ],
+      "plan_type": "Regular",
+      "option": "Growth",
+      "nav": 1030.2845,
+      "nav_date": "January 30, 2026",
+      "aum_crores": 221.52,
+      "monthly_avg_aum": 198.06,
+      "expense_ratio": 0.15,
+      "exit_load": "NIL",
+      "min_sip": 1000,
+      "min_lumpsum": 5000,
+      "min_additional": 1000,
+      "risk_level": "Low",
+      "fund_managers": [
+        {
+          "name": "Mr. Milan Mody",
+          "experience": "over 20 years of work experience in the Fixed Income market."
+        },
+        {
+          "name": "Mr. Viral Mehta",
+          "managing_since": "October 06, 2025"
+        }
+      ],
+      "returns": [
+        {
+          "period": "7D",
+          "fund_return": 5.22,
+          "ptp_value": 10006,
+          "benchmark_return": 5.15,
+          "benchmark_ptp_value": 10006,
+          "additional_benchmark_return": 3.57,
+          "additional_benchmark_ptp_value": 10004
+        },
+        {
+          "period": "15D",
+          "fund_return": 4.88,
+          "ptp_value": 10011,
+          "benchmark_return": 5.16,
+          "benchmark_ptp_value": 10012,
+          "additional_benchmark_return": 1.8,
+          "additional_benchmark_ptp_value": 10004
+        },
+        {
+          "period": "1M",
+          "fund_return": 5.09,
+          "ptp_value": 10024,
+          "benchmark_return": 5.2,
+          "benchmark_ptp_value": 10025,
+          "additional_benchmark_return": 1.59,
+          "additional_benchmark_ptp_value": 10008
+        },
+        {
+          "period": "3M",
+          "fund_return": 5.25,
+          "ptp_value": 10132,
+          "benchmark_return": 5.25,
+          "benchmark_ptp_value": 10132,
+          "additional_benchmark_return": 3.48,
+          "additional_benchmark_ptp_value": 10088
+        },
+        {
+          "period": "6M",
+          "fund_return": 5.35,
+          "ptp_value": 10270,
+          "benchmark_return": 5.37,
+          "benchmark_ptp_value": 10271,
+          "additional_benchmark_return": 3.86,
+          "additional_benchmark_ptp_value": 10195
+        },
+        {
+          "period": "SI",
+          "fund_return": 5.49,
+          "ptp_value": 10305,
+          "benchmark_return": 5.48,
+          "benchmark_ptp_value": 10304,
+          "additional_benchmark_return": 4.0,
+          "additional_benchmark_ptp_value": 10223
+        }
+      ],
+      "debt_holdings": [
+        {
+          "name": "TREPS$ / Reverse Repo",
+          "weight_pct": 99.96
+        },
+        {
+          "name": "Net Receivables / (Payables)",
+          "weight_pct": 0.04
+        }
+      ],
+      "asset_allocation": {
+        "Overnight Securities": "0% to 100%"
+      },
+      "instrument_composition": {
+        "TREPS/ Net Current Asset": 100.0
+      },
+      "debt_indicators": {
+        "annualised_portfolio_ytm": 5.46,
+        "macaulay_duration": 0.0,
+        "residual_maturity": 2.0
+      },
+      "additional_info": {
+        "interest_rate_risk": "Relatively Low (Class I)",
+        "credit_risk": "Relatively Low (Class A)"
+      }
+    },
+    {
+      "fund_name": "360 ONE GOLD ETF",
+      "scheme_type": "An open-ended exchange traded fund replicating/tracking domestic prices of Gold.",
+      "investment_objective": "The investment objective of the scheme is to generate returns that are in line with the performance of physical gold in domestic prices, subject to tracking error. However, there is no assurance that the investment objective of the Scheme will be realized and the Scheme does not assure or guarantee any returns.",
+      "benchmark": "Domestic Prices of Gold",
+      "inception_date": "March 07, 2025",
+      "plans_offered": "The Scheme does not offer any Plans for investment.",
+      "option": "The Scheme does not offer any Options for investment.",
+      "isin": "INF579M01BB5",
+      "nav": 159.7715,
+      "nav_date": "January 30, 2026",
+      "aum_crores": 157.99,
+      "monthly_avg_aum": 132.3,
+      "expense_ratio": 0.43,
+      "plan_type": "Regular",
+      "exit_load": "NIL",
+      "min_lumpsum": "lot of 1 unit and in multiples thereof",
+      "min_additional": "lot of 1 unit and in multiples thereof",
+      "risk_level": "High",
+      "fund_managers": [
+        {
+          "name": "Mr. Rahul Khetawat",
+          "experience": "over 14 years of experience of handling multiple asset classes including Forex."
+        }
+      ],
+      "returns": [
+        {
+          "period": "6M",
+          "fund_return": 64.6,
+          "benchmark_return": 67.63,
+          "ptp_fund_return_inr": 15692,
+          "ptp_benchmark_return_inr": 15953
+        },
+        {
+          "period": "1Y",
+          "fund_return": null,
+          "benchmark_return": null,
+          "ptp_fund_return_inr": null,
+          "ptp_benchmark_return_inr": null
+        },
+        {
+          "period": "3Y",
+          "fund_return": null,
+          "benchmark_return": null,
+          "ptp_fund_return_inr": null,
+          "ptp_benchmark_return_inr": null
+        },
+        {
+          "period": "5Y",
+          "fund_return": null,
+          "benchmark_return": null,
+          "ptp_fund_return_inr": null,
+          "ptp_benchmark_return_inr": null
+        },
+        {
+          "period": "SI",
+          "fund_return": 86.37,
+          "benchmark_return": 91.75,
+          "ptp_fund_return_inr": 17557,
+          "ptp_benchmark_return_inr": 18015
+        }
+      ],
+      "instrument_composition": {
+        "Gold": 97.91,
+        "TREPS/ Net Current Asset": 2.09
+      },
+      "risk_metrics": {
+        "tracking_error": 0.7
+      },
+      "portfolio_turnover": "0.14 times",
+      "additional_info": {
+        "entry_load": "NIL",
+        "dematerialization": "D-Mat Option Available",
+        "exchange_listed": "NSE,BSE",
+        "exchange_symbol_scripe_code": "GOLD360, 544375",
+        "mandated_asset_allocation": {
+          "Gold and gold related instrument": "95% to 100%",
+          "Debt Market": "0% to 5%",
+          "Money Market": "0% to 5%"
+        },
+        "portfolio_composition": {
+          "date": "January 31, 2026",
+          "holdings": [
+            {
+              "name": "Gold",
+              "weight_pct": 97.91
+            },
+            {
+              "name": "TREPS",
+              "weight_pct": 0.11
+            },
+            {
+              "name": "Net Receivables / (Payables)",
+              "weight_pct": 1.98
+            }
+          ]
+        },
+        "product_suitability": "THIS PRODUCT IS SUITABLE FOR INVESTORS WHO ARE SEEKING* Long term capital appreciation; Investment in gold in order to generate returns similar to the performance of the gold, subject to tracking errors.",
+        "benchmark_risk_level": "High",
+        "benchmark_risk_meter_text": "The risk of the benchmark is High As per AMFI Tier I Benchmark i.e. Domestic prices of Gold",
+        "returns_footnote": "Point to Point (PTP) returns in ₹ is based on standard investment of ₹10,000; Since Inception date is 07-March-2025; *Domestic Price of Gold. Managed by the fund manager since 07 March 2025. The performance of the scheme is benchmarked to the Total Return variant of the Index."
+      }
+    },
+    {
+      "fund_name": "360 ONE SILVER ETF",
+      "scheme_type": "An open-ended exchange traded fund replicating/tracking domestic prices of Silver.",
+      "investment_objective": "The investment objective of the scheme is to generate returns that are in line with the performance of physical Silver in domestic prices, subject to tracking error. However, there is no assurance that the investment objective of the Scheme will be realized and the Scheme does not assure or guarantee any returns.",
+      "benchmark": "Domestic Prices of Silver",
+      "inception_date": "March 28, 2025",
+      "plans_offered": "The Scheme does not offer any Plans for investment.",
+      "plan_type": "Regular",
+      "option": "The Scheme does not offer any Options for investment.",
+      "isin": "INF579M01BC3",
+      "nav": 323.3388,
+      "nav_date": "January 30, 2026",
+      "aum_crores": 69.06,
+      "monthly_avg_aum": 52.43,
+      "expense_ratio": 0.41,
+      "exit_load": "NIL",
+      "min_lumpsum": "lot of 1 unit and in multiples thereof",
+      "min_additional": "lot of 1 unit and in multiples thereof",
+      "risk_level": "Very High",
+      "fund_managers": [
+        {
+          "name": "Mr. Rahul Khetawat",
+          "experience": "Mr. Khetawat has over 14 years of experience of handling multiple asset classes including Forex."
+        }
+      ],
+      "returns": [
+        {
+          "period": "6M",
+          "fund_return": 195.28,
+          "benchmark_return": 202.98
+        },
+        {
+          "period": "1Y",
+          "fund_return": null,
+          "benchmark_return": null
+        },
+        {
+          "period": "3Y",
+          "fund_return": null,
+          "benchmark_return": null
+        },
+        {
+          "period": "5Y",
+          "fund_return": null,
+          "benchmark_return": null
+        },
+        {
+          "period": "SI",
+          "fund_return": 221.11,
+          "benchmark_return": 231.0
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "Silver",
+          "weight_pct": 97.81
+        },
+        {
+          "name": "TREPS",
+          "weight_pct": 1.64
+        },
+        {
+          "name": "Net Receivables / (Payables)",
+          "weight_pct": 0.55
+        }
+      ],
+      "instrument_composition": {
+        "SILVER": 97.81,
+        "TREPS/ Net Current Asset": 2.19
+      },
+      "risk_metrics": {
+        "tracking_error": 1.1
+      },
+      "portfolio_turnover": "2.45 times"
+    },
+    {
+      "fund_name": "360 ONE Liquid Fund",
+      "additional_info": {
+        "interest_rate_risk": "Relatively Low (Class I)",
+        "credit_risk": "Moderate (Class B)"
+      }
+    }
+  ],
+  "amc_info": {
+    "amc_name": "360 ONE Asset Management",
+    "factsheet_date": "February 2026"
+  },
+  "pages_processed": 21,
+  "source_pdf": "360ONE-MF-February 2026.pdf",
+  "amc_slug": "360-one",
+  "extracted_at": "2026-02-25T10:57:18"
+}

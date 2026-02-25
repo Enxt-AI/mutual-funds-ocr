@@ -4,6 +4,7 @@ import { useState, useMemo, useEffect } from "react";
 import { useParams } from "next/navigation";
 import indexData from "../../data/indices.json";
 import { useNavData } from "../../hooks/useNavData";
+import { getAmcLogoUrl } from "../../../lib/amcLogos";
 import styles from "./page.module.css";
 
 // Map fund benchmark names to available index data keys
@@ -130,22 +131,67 @@ function NavChart({ data, benchmarkLabel }) {
     );
 }
 
-// Risk-o-meter component
-function Riskometer({ level }) {
+// Risk-o-meter gauge component (semicircular speedometer)
+function Riskometer({ level, size = "small" }) {
     if (!level) return null;
     const levels = ["Low", "Moderately Low", "Moderate", "Moderately High", "High", "Very High"];
     const idx = levels.indexOf(level);
     const colors = ["#10b981", "#34d399", "#f59e0b", "#f97316", "#ef4444", "#dc2626"];
     if (idx === -1) return <span className="badge badge-blue">{level}</span>;
+
+    const isLarge = size === "large";
+    const w = isLarge ? 200 : 100;
+    const h = isLarge ? 120 : 60;
+    const cx = w / 2;
+    const cy = isLarge ? 100 : 52;
+    const r = isLarge ? 80 : 40;
+    const strokeW = isLarge ? 14 : 8;
+    const segments = 6;
+    const gap = 3; // degrees gap between segments
+    const totalArc = 180 - (segments - 1) * gap;
+    const segArc = totalArc / segments;
+
+    // Build arc segments
+    const arcs = [];
+    for (let i = 0; i < segments; i++) {
+        const startAngle = 180 + i * (segArc + gap);
+        const endAngle = startAngle + segArc;
+        const startRad = (startAngle * Math.PI) / 180;
+        const endRad = (endAngle * Math.PI) / 180;
+        const x1 = cx + r * Math.cos(startRad);
+        const y1 = cy + r * Math.sin(startRad);
+        const x2 = cx + r * Math.cos(endRad);
+        const y2 = cy + r * Math.sin(endRad);
+        arcs.push(
+            <path
+                key={i}
+                d={`M ${x1} ${y1} A ${r} ${r} 0 0 1 ${x2} ${y2}`}
+                fill="none"
+                stroke={i <= idx ? colors[i] : "var(--bg-secondary)"}
+                strokeWidth={strokeW}
+                strokeLinecap="round"
+                opacity={i <= idx ? 1 : 0.3}
+            />
+        );
+    }
+
+    // Needle angle: point to middle of active segment
+    const needleAngle = 180 + idx * (segArc + gap) + segArc / 2;
+    const needleRad = (needleAngle * Math.PI) / 180;
+    const needleLen = r - (isLarge ? 20 : 10);
+    const nx = cx + needleLen * Math.cos(needleRad);
+    const ny = cy + needleLen * Math.sin(needleRad);
+
     return (
-        <div className={styles.riskometer}>
-            <div className={styles.riskMeter}>
-                {levels.map((l, i) => (
-                    <div key={i} className={`${styles.riskSegment} ${i <= idx ? styles.riskActive : ""}`}
-                        style={{ background: i <= idx ? colors[i] : "var(--bg-secondary)" }}
-                    />
-                ))}
-            </div>
+        <div className={`${styles.riskometer} ${isLarge ? styles.riskometerLarge : ""}`}>
+            <svg viewBox={`0 0 ${w} ${h}`} className={styles.riskGauge} style={{ width: w, height: h }}>
+                {arcs}
+                {/* Needle */}
+                <line x1={cx} y1={cy} x2={nx} y2={ny}
+                    stroke={colors[idx]} strokeWidth={isLarge ? 2.5 : 1.5} strokeLinecap="round" />
+                {/* Center dot */}
+                <circle cx={cx} cy={cy} r={isLarge ? 5 : 3} fill={colors[idx]} />
+            </svg>
             <span className={styles.riskLabel} style={{ color: colors[idx] }}>{level}</span>
         </div>
     );
@@ -319,6 +365,17 @@ export default function FundDetailPage() {
                         <div className={styles.breadcrumb}>
                             <a href="/">Mutual Funds</a> / <span>{fund.category || "Fund"}</span>
                         </div>
+                        {fund.amc && (
+                            <div className={styles.fundAmcHeader}>
+                                {(() => {
+                                    const logoUrl = getAmcLogoUrl(fund.amc_slug);
+                                    return logoUrl ? (
+                                        <img src={logoUrl} alt={fund.amc} className={styles.fundAmcHeaderLogo} />
+                                    ) : null;
+                                })()}
+                                <span className={styles.fundAmcHeaderName}>{fund.amc}</span>
+                            </div>
+                        )}
                         <h1 className={styles.fundTitle}>{fund.fund_name}</h1>
                         <div className={styles.fundMeta}>
                             <span className="badge badge-blue">{fund.plan_type || "Direct"} Plan</span>
