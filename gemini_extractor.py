@@ -379,6 +379,7 @@ def extract_page_with_gemini(uploaded_file) -> dict:
                 # Empty response — likely rate limit or model overload, wait longer
                 wait = 30 * (attempt + 1)
                 if attempt < MAX_RETRIES - 1:
+                    print(f"      ⏳ Retrying in {wait}s...", flush=True)
                     time.sleep(wait)
                     continue
                 raise RuntimeError("Gemini returned empty response after all retries")
@@ -409,6 +410,7 @@ def extract_page_with_gemini(uploaded_file) -> dict:
         except Exception as e:
             delay = BASE_DELAY * (2 ** attempt)
             if attempt < MAX_RETRIES - 1:
+                print(f"      ⏳ Retrying in {delay}s...", flush=True)
                 time.sleep(delay)
             else:
                 raise
@@ -579,55 +581,44 @@ def process_amc(amc_folder: Path, force: bool = False) -> dict | None:
 
         print(f"    Page {page_num}/{total_pages}...", end=" ", flush=True)
 
-        max_retries = 3
-        for attempt in range(1, max_retries + 1):
-            try:
-                # Upload via Files API
-                uploaded = upload_to_gemini(img_path)
+        try:
+            # Upload via Files API
+            uploaded = upload_to_gemini(img_path)
 
-                # Extract with Gemini
-                result = extract_page_with_gemini(uploaded)
+            # Extract with Gemini (has its own 5-retry logic)
+            result = extract_page_with_gemini(uploaded)
 
-                # Normalize: Gemini sometimes returns a list instead of dict
-                if isinstance(result, list):
-                    result = {"schemes": result}
-                elif not isinstance(result, dict):
-                    result = {"schemes": [], "raw": str(result)}
+            # Normalize: Gemini sometimes returns a list instead of dict
+            if isinstance(result, list):
+                result = {"schemes": result}
+            elif not isinstance(result, dict):
+                result = {"schemes": [], "raw": str(result)}
 
-                # Count schemes found
-                schemes_count = len(result.get("schemes", []))
-                print(f"✅ ({schemes_count} scheme{'s' if schemes_count != 1 else ''})")
+            # Count schemes found
+            schemes_count = len(result.get("schemes", []))
+            print(f"✅ ({schemes_count} scheme{'s' if schemes_count != 1 else ''})")
 
-                # Cleanup uploaded file
-                cleanup_uploaded_file(uploaded)
+            # Cleanup uploaded file
+            cleanup_uploaded_file(uploaded)
 
-                # Save checkpoint immediately
-                completed_pages[page_key] = result
-                checkpoint_data["pages"] = completed_pages
-                checkpoint_data["total_pages"] = total_pages
-                checkpoint_data["source_pdf"] = pdf_path.name
-                checkpoint_file.write_text(
-                    json.dumps(checkpoint_data, indent=2, ensure_ascii=False),
-                    encoding="utf-8",
-                )
+            # Save checkpoint immediately
+            completed_pages[page_key] = result
+            checkpoint_data["pages"] = completed_pages
+            checkpoint_data["total_pages"] = total_pages
+            checkpoint_data["source_pdf"] = pdf_path.name
+            checkpoint_file.write_text(
+                json.dumps(checkpoint_data, indent=2, ensure_ascii=False),
+                encoding="utf-8",
+            )
 
-                # Small delay between pages to respect rate limits
-                if i < len(image_paths) - 1:
-                    time.sleep(1)
+            # Small delay between pages to respect rate limits
+            if i < len(image_paths) - 1:
+                time.sleep(1)
 
-                break  # Success — exit retry loop
-
-            except Exception as e:
-                if attempt < max_retries:
-                    delay = 5 * (2 ** (attempt - 1))  # 5s, 10s, 20s
-                    print(f"⚠ attempt {attempt}/{max_retries} failed: {e}")
-                    print(f"      Retrying in {delay}s...", end=" ", flush=True)
-                    time.sleep(delay)
-                else:
-                    print(f"❌ Failed after {max_retries} attempts: {e}")
-                    traceback.print_exc()
-                    # Don't save error pages to checkpoint — they'll be retried on restart
-                    print(f"    ⚠ Page {page_num} will be retried on next run")
+        except Exception as e:
+            print(f"❌ Failed: {e}")
+            traceback.print_exc()
+            print(f"    ⚠ Page {page_num} will be retried on next run")
 
     # Cleanup temp images
     for img_path in image_paths:

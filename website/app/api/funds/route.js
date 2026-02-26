@@ -1,5 +1,7 @@
 import { NextResponse } from "next/server";
 import { listJsonFiles, getJsonFile } from "../../../lib/s3Utils";
+import fs from "fs";
+import path from "path";
 
 export const dynamic = "force-dynamic"; // Never cache — always read fresh data
 
@@ -8,8 +10,27 @@ let _cache = null;
 let _cacheTime = 0;
 const CACHE_TTL = 60 * 1000; // 60 seconds
 
+// Local data directory (fallback when S3 is unavailable)
+const LOCAL_DATA_DIR = path.join(process.cwd(), "data");
+
+/**
+ * Read all AMC JSON files from local data/ directory.
+ * Returns array of { slug, data } objects.
+ */
+function loadLocalFunds() {
+    if (!fs.existsSync(LOCAL_DATA_DIR)) return [];
+    const files = fs.readdirSync(LOCAL_DATA_DIR).filter(f => f.endsWith(".json") && f !== "indices.json");
+    return files.map(f => {
+        try {
+            const raw = fs.readFileSync(path.join(LOCAL_DATA_DIR, f), "utf-8");
+            return { slug: f.replace(".json", ""), data: JSON.parse(raw) };
+        } catch { return null; }
+    }).filter(Boolean);
+}
+
 /**
  * Slugify a fund name for URL routing.
+
  */
 function slugify(text) {
     if (!text) return "";
@@ -148,24 +169,96 @@ export async function GET() {
             return NextResponse.json(_cache);
         }
 
-        const s3Files = await listJsonFiles("funds/");
-        if (s3Files.length === 0) {
+        let amcDataList = []; // Array of { slug, data }
+
+        // Try S3 first
+        try {
+            const s3Files = await listJsonFiles("funds/");
+            if (s3Files.length > 0) {
+                const fetchPromises = s3Files.map(f => getJsonFile(f.key).catch(() => null));
+                const allData = await Promise.all(fetchPromises);
+                for (let i = 0; i < s3Files.length; i++) {
+                    if (allData[i]) {
+                        amcDataList.push({
+                            slug: s3Files[i].key.replace("funds/", "").replace(".json", ""),
+                            data: allData[i],
+                        });
+                    }
+                }
+                console.log(`[Funds API] Loaded ${amcDataList.length} AMCs from S3`);
+            }
+        } catch (s3Error) {
+            console.warn("[Funds API] S3 unavailable, falling back to local files:", s3Error.Code || s3Error.message);
+        }
+
+        // Fallback to local files if S3 returned nothing
+        if (amcDataList.length === 0) {
+            amcDataList = loadLocalFunds();
+            if (amcDataList.length > 0) {
+                console.log(`[Funds API] Loaded ${amcDataList.length} AMCs from local data/`);
+            }
+        }
+
+        if (amcDataList.length === 0) {
             return NextResponse.json([]);
         }
 
         const allFunds = [];
 
-        // Fetch all AMC JSONs from S3 in parallel
-        const fetchPromises = s3Files.map(f => getJsonFile(f.key).catch(() => null));
-        const allData = await Promise.all(fetchPromises);
-
-        for (let i = 0; i < s3Files.length; i++) {
-            const data = allData[i];
-            if (!data) continue;
-
-            const amcSlug = s3Files[i].key.replace("funds/", "").replace(".json", "");
+        for (const { slug: amcSlug, data } of amcDataList) {
             const amcName = data.amc_info?.amc_name || amcNameFromSlug(amcSlug);
-            const schemes = data.schemes || [];
+            const rawSchemes = data.schemes || [];
+
+            // Pre-process: merge return-only entries into their parent scheme.
+            // OCR sometimes extracts the returns table as separate "schemes" with names like
+            // "Fund Name - Direct Plan - Growth Option" that have returns but no AUM/NAV/holdings.
+            const fullSchemes = [];
+            const returnOnlyEntries = [];
+
+            for (const s of rawSchemes) {
+                const hasSubstance = s.aum_crores != null || s.nav != null ||
+                    (s.equity_holdings && s.equity_holdings.length > 0) ||
+                    (s.debt_holdings && s.debt_holdings.length > 0) ||
+                    (s.sector_allocation && Object.keys(s.sector_allocation).length > 0);
+
+                if (!hasSubstance && s.returns && s.returns.length > 0) {
+                    returnOnlyEntries.push(s);
+                } else {
+                    fullSchemes.push(s);
+                }
+            }
+
+            // Try to merge each return-only entry's returns into a matching full scheme
+            for (const retEntry of returnOnlyEntries) {
+                const retName = cleanFundName(retEntry.fund_name || "").toLowerCase();
+                // Find parent: the full scheme whose cleaned name is a prefix of the return entry name
+                let bestMatch = null;
+                let bestLen = 0;
+                for (const full of fullSchemes) {
+                    const fullName = cleanFundName(full.fund_name || "").toLowerCase();
+                    if (retName.startsWith(fullName) && fullName.length > bestLen) {
+                        bestMatch = full;
+                        bestLen = fullName.length;
+                    }
+                }
+
+                if (bestMatch) {
+                    // Append returns to the parent
+                    if (!bestMatch.returns) bestMatch.returns = [];
+                    for (const r of retEntry.returns) {
+                        // Tag with plan_type from the return entry if available
+                        const tagged = { ...r };
+                        if (!tagged.plan_type && retEntry.plan_type) tagged.plan_type = retEntry.plan_type;
+                        if (!tagged.plan && retEntry.plan_type) tagged.plan = retEntry.plan_type;
+                        bestMatch.returns.push(tagged);
+                    }
+                } else {
+                    // No match found — keep as its own scheme
+                    fullSchemes.push(retEntry);
+                }
+            }
+
+            const schemes = fullSchemes;
 
             for (const scheme of schemes) {
                 const displayName = cleanFundName(scheme.fund_name || "");
@@ -216,7 +309,7 @@ export async function GET() {
 
         return NextResponse.json(allFunds);
     } catch (e) {
-        console.error("Error loading funds from S3:", e);
+        console.error("Error loading funds:", e);
         return NextResponse.json([], { status: 500 });
     }
 }

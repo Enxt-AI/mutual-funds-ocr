@@ -1,0 +1,1790 @@
+{
+  "schemes": [
+    {
+      "fund_name": "JioBlackRock Flexi Cap Fund",
+      "category": "Flexi Cap Fund",
+      "scheme_type": "An open-ended dynamic equity scheme investing across large cap, mid cap, small cap stocks.",
+      "investment_objective": "The investment objective of the Scheme is to generate long term capital appreciation by investing in equity and equity related instruments across market capitalization. There is no assurance that the investment objective of the Scheme will be achieved.",
+      "benchmark": "Nifty 500 Index (TRI)",
+      "inception_date": "13th October 2025",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "nav": 10.0,
+      "nav_date": "30th January 2026",
+      "aum_crores": 2613,
+      "monthly_avg_aum": 2560,
+      "expense_ratio": 0.5,
+      "exit_load": "Nil",
+      "min_sip": 500,
+      "min_lumpsum": 500,
+      "fund_managers": [
+        {
+          "name": "Ms. Tanvi Kacherla",
+          "managing_since": "October 2025",
+          "experience": "14 Years"
+        },
+        {
+          "name": "Mr. Sahil Chaudhary",
+          "managing_since": "October 2025",
+          "experience": "14 Years"
+        },
+        {
+          "name": "Ms. Tanvi Kacheria",
+          "managing_since": "Oct-25"
+        }
+      ],
+      "portfolio_turnover": 72.74,
+      "equity_holdings": [
+        {
+          "name": "HDFC Bank Ltd",
+          "sector": "Banks",
+          "weight_pct": 8.8
+        },
+        {
+          "name": "ICICI Bank Ltd",
+          "sector": "Banks",
+          "weight_pct": 6.17
+        },
+        {
+          "name": "Bharti Airtel Ltd",
+          "sector": "Telecom - Services",
+          "weight_pct": 4.15
+        },
+        {
+          "name": "Infosys Ltd",
+          "sector": "IT - Software",
+          "weight_pct": 3.98
+        },
+        {
+          "name": "State Bank Of India",
+          "sector": "Banks",
+          "weight_pct": 3.76
+        },
+        {
+          "name": "Larsen & Toubro Ltd",
+          "sector": "Construction",
+          "weight_pct": 3.61
+        },
+        {
+          "name": "Reliance Industries Ltd",
+          "sector": "Petroleum Products",
+          "weight_pct": 3.36
+        },
+        {
+          "name": "ITC Ltd",
+          "sector": "Diversified FMCG",
+          "weight_pct": 2.39
+        },
+        {
+          "name": "Titan Co Ltd",
+          "sector": "Consumer Durables",
+          "weight_pct": 2.14
+        },
+        {
+          "name": "HCL Technologies Ltd",
+          "sector": "IT - Software",
+          "weight_pct": 2.0
+        }
+      ],
+      "sector_allocation": {
+        "Banks": 23.51,
+        "IT - Software": 8.66,
+        "Petroleum Products": 7.78,
+        "Automobiles": 4.52,
+        "Telecom - Services": 4.31,
+        "Construction": 4.06,
+        "Capital Markets": 3.65,
+        "Insurance": 3.31,
+        "Pharmaceuticals & Biotechnology": 3.11,
+        "Food Products": 2.91,
+        "Industrial Products": 2.72,
+        "Retailing": 2.66,
+        "Ferrous Metals": 2.63,
+        "Diversified FMCG": 2.39,
+        "Consumer Durables": 2.37,
+        "Auto Components": 2.09,
+        "Diversified Metals": 1.98,
+        "Transport Infrastructure": 1.88,
+        "Transport Services": 1.51,
+        "Beverages": 1.3,
+        "Chemicals & Petrochemicals": 1.29,
+        "Cement & Cement Products": 1.27,
+        "Aerospace & Defense": 1.14,
+        "Power": 1.07,
+        "Agricultural Food & Other Products": 1.05,
+        "Healthcare Services": 0.89,
+        "Cash*": 0.89,
+        "Non - Ferrous Metals": 0.85,
+        "Fertilizers & Agrochemicals": 0.8,
+        "Other Utilities": 0.69,
+        "Entertainment": 0.58,
+        "Finance": 0.44,
+        "Industrial Manufacturing": 0.32,
+        "Gas": 0.3,
+        "Realty": 0.22,
+        "Oil": 0.2,
+        "IT - Services": 0.2,
+        "Telecom - Equipment & Accessories": 0.13,
+        "Electrical Equipment": 0.1,
+        "Agricultural, Commercial & Construction Vehicles": 0.09,
+        "Commercial Services & Supplies": 0.08,
+        "Textiles & Apparels": 0.05
+      },
+      "risk_level": "Very High"
+    },
+    {
+      "fund_name": "JioBlackRock Overnight Fund",
+      "scheme_type": "An open ended debt scheme investing in overnight securities.",
+      "category": "Overnight Fund",
+      "investment_objective": "The investment objective of the Scheme is to generate regular income through investment in a portfolio comprising of debt and money market instruments with overnight maturity. There is no assurance that the investment objective of the Scheme will be achieved.",
+      "benchmark": "Nifty 1D Rate Index",
+      "inception_date": "4th July 2025",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "nav": 1031.6141,
+      "nav_date": "31st January 2026",
+      "aum_crores": 651,
+      "monthly_avg_aum": 852,
+      "expense_ratio": 0.06,
+      "exit_load": "Nil",
+      "min_sip": 500,
+      "min_lumpsum": 500,
+      "fund_managers": [
+        {
+          "name": "Mr. Vikrant Mehta",
+          "managing_since": "July 2025",
+          "experience": "30 Years"
+        },
+        {
+          "name": "Mr. Siddharth Deb",
+          "managing_since": "July 2025",
+          "experience": "19 Years"
+        },
+        {
+          "name": "Mr. Arun Ramachandran",
+          "managing_since": "July 2025",
+          "experience": "19 Years"
+        },
+        {
+          "name": "Vikrant Mehta"
+        },
+        {
+          "name": "Arun R"
+        },
+        {
+          "name": "Siddharth Deb"
+        }
+      ],
+      "debt_indicators": {
+        "ytm": 5.42,
+        "modified_duration": 2.3,
+        "macaulay_duration": 2.4,
+        "average_maturity": 2.4
+      },
+      "plans_offered": "Direct",
+      "returns": [
+        {
+          "period": "7 Days",
+          "fund_return": 5.24,
+          "benchmark_return": 5.15,
+          "additional_benchmark_return": 4.39
+        },
+        {
+          "period": "15 Days",
+          "fund_return": 5.27,
+          "benchmark_return": 5.16,
+          "additional_benchmark_return": 2.05
+        },
+        {
+          "period": "1M",
+          "fund_return": 5.3,
+          "benchmark_return": 5.19,
+          "additional_benchmark_return": 2.84
+        },
+        {
+          "period": "6M",
+          "fund_return": 5.42,
+          "benchmark_return": 5.41,
+          "additional_benchmark_return": 5.12
+        },
+        {
+          "period": "SI",
+          "fund_return": 5.47,
+          "benchmark_return": 5.38,
+          "additional_benchmark_return": 5.16
+        }
+      ],
+      "debt_holdings": [
+        {
+          "name": "5.40% GS REPO020226",
+          "instrument_type": "Cash*",
+          "rating": "Cash*",
+          "weight_pct": 42.88
+        },
+        {
+          "name": "5.50% GS REPO020226",
+          "instrument_type": "Cash*",
+          "rating": "Cash*",
+          "weight_pct": 22.36
+        },
+        {
+          "name": "5.45% GS REPO020226",
+          "instrument_type": "Cash*",
+          "rating": "Cash*",
+          "weight_pct": 15.01
+        },
+        {
+          "name": "5.44% GS REPO020226",
+          "instrument_type": "Cash*",
+          "rating": "Cash*",
+          "weight_pct": 7.84
+        },
+        {
+          "name": "5.43% GS REPO020226",
+          "instrument_type": "Cash*",
+          "rating": "Cash*",
+          "weight_pct": 6.91
+        },
+        {
+          "name": "91 DTB (06-FEB-2026)",
+          "instrument_type": "T-Bills",
+          "rating": "Sovereign",
+          "weight_pct": 2.3
+        },
+        {
+          "name": "182 DTB (12-FEB-2026)",
+          "instrument_type": "T-Bills",
+          "rating": "Sovereign",
+          "weight_pct": 1.53
+        },
+        {
+          "name": "91 DTB (26-FEB-2026)",
+          "instrument_type": "T-Bills",
+          "rating": "Sovereign",
+          "weight_pct": 0.77
+        },
+        {
+          "name": "TREP_020226",
+          "instrument_type": "TREPS",
+          "rating": "Cash*",
+          "weight_pct": 0.29
+        },
+        {
+          "name": "CASH",
+          "instrument_type": "Cash*",
+          "rating": "Cash*",
+          "weight_pct": 0.17
+        }
+      ],
+      "composition_by_rating": {
+        "Cash, Cash Equivalents & Net Current Assets": 95.4,
+        "Sovereign": 4.6
+      },
+      "instrument_composition": {
+        "Cash, Cash Equivalents & Net Current Assets": 95.4,
+        "G-Sec and T-Bill": 4.6
+      },
+      "additional_info": {
+        "additional_benchmark_name": "Nifty 1-Year T-Bill Index"
+      },
+      "risk_level": "Low",
+      "benchmark_risk_level": "Low",
+      "potential_risk_class_matrix": {
+        "classification": "A-I",
+        "credit_risk": "Relatively Low (Class A)",
+        "interest_rate_risk": "Relatively Low (Class I)"
+      }
+    },
+    {
+      "fund_name": "JioBlackRock Liquid Fund",
+      "scheme_type": "An open ended Liquid Scheme.",
+      "category": "Liquid Fund",
+      "investment_objective": "The investment objective of the Scheme is to generate regular income through investment in a portfolio comprising of money market and debt instruments with residual maturity up to 91 days. There is no assurance that the investment objective of the Scheme will be achieved.",
+      "benchmark": "Nifty Liquid Index A-I",
+      "inception_date": "4th July 2025",
+      "plans_offered": [
+        "Direct - Growth",
+        "Direct - IDCW Daily",
+        "Direct - IDCW Weekly"
+      ],
+      "plan_type": "Direct",
+      "nav": 1033.8644,
+      "nav_date": "31st January 2026",
+      "aum_crores": 8789,
+      "monthly_avg_aum": 7962,
+      "expense_ratio": 0.1,
+      "exit_load": "Up to Day 1: 0.0070%, Day 2: 0.0065%, Day 3: 0.0060%, Day 4: 0.0055%, Day 5: 0.0050%, Day 6: 0.0045%, Day 7 Onwards: 0.0000%",
+      "min_sip": 500,
+      "min_lumpsum": 500,
+      "fund_managers": [
+        {
+          "name": "Mr. Vikrant Mehta",
+          "managing_since": "July 2025",
+          "experience": "30 Years"
+        },
+        {
+          "name": "Mr. Siddharth Deb",
+          "managing_since": "July 2025",
+          "experience": "19 Years"
+        },
+        {
+          "name": "Mr. Arun Ramachandran",
+          "managing_since": "July 2025",
+          "experience": "19 Years"
+        },
+        {
+          "name": "Vikrant Mehta"
+        },
+        {
+          "name": "Arun R"
+        },
+        {
+          "name": "Siddharth Deb"
+        }
+      ],
+      "debt_indicators": {
+        "ytm": 6.47,
+        "modified_duration": 36.8,
+        "macaulay_duration": 39.0,
+        "average_maturity": 39.0
+      },
+      "option": "Growth",
+      "debt_holdings": [
+        {
+          "name": "91 DTB (30-apr-2026)",
+          "instrument_type": "T-Bills",
+          "rating": "Sovereign",
+          "weight_pct": 7.75
+        },
+        {
+          "name": "SIDBOI CP 20-mar-26",
+          "instrument_type": "CP",
+          "rating": "A1+",
+          "weight_pct": 5.58
+        },
+        {
+          "name": "Canara Bank CD 24-feb-26",
+          "instrument_type": "CD",
+          "rating": "A1+",
+          "weight_pct": 3.97
+        },
+        {
+          "name": "91 DTB (23-apr-2026)",
+          "instrument_type": "T-Bills",
+          "rating": "Sovereign",
+          "weight_pct": 3.2
+        },
+        {
+          "name": "Bajaj Finance Ltd Cp 16-mar-26",
+          "instrument_type": "CP",
+          "rating": "A1+",
+          "weight_pct": 3.1
+        },
+        {
+          "name": "364 DTB (12-mar-2026)",
+          "instrument_type": "T-Bills",
+          "rating": "Sovereign",
+          "weight_pct": 2.83
+        },
+        {
+          "name": "Bank Of Baroda Cd 24-feb-26",
+          "instrument_type": "CD",
+          "rating": "A1+",
+          "weight_pct": 2.44
+        },
+        {
+          "name": "ICICI Home Finance Co Ltd Cp 11-feb-26",
+          "instrument_type": "CP",
+          "rating": "A1+",
+          "weight_pct": 2.27
+        },
+        {
+          "name": "Godrej Housing Finance Ltd Cp 13-feb-26",
+          "instrument_type": "CP",
+          "rating": "A1+",
+          "weight_pct": 2.27
+        },
+        {
+          "name": "Axis Bank Ltd Cd 18-feb-26",
+          "instrument_type": "CD",
+          "rating": "A1+",
+          "weight_pct": 2.27
+        }
+      ],
+      "composition_by_rating": {
+        "AAA / A1+": 78.09,
+        "Sovereign": 15.81,
+        "Cash, Cash Equivalents & Net Current Assets": 6.1
+      },
+      "instrument_composition": {
+        "CD": 41.4,
+        "CP": 36.69,
+        "G-Sec and T-Bill": 15.81,
+        "Cash, Cash Equivalents & Net Current Assets": 5.9,
+        "CDMDF": 0.2
+      },
+      "returns": [
+        {
+          "period": "7D",
+          "fund_return": 6.04,
+          "benchmark_return": 6.03,
+          "additional_benchmark_return": 4.39
+        },
+        {
+          "period": "15D",
+          "fund_return": 5.51,
+          "benchmark_return": 5.3,
+          "additional_benchmark_return": 2.05
+        },
+        {
+          "period": "1M",
+          "fund_return": 5.27,
+          "benchmark_return": 5.04,
+          "additional_benchmark_return": 2.84
+        },
+        {
+          "period": "6M",
+          "fund_return": 5.85,
+          "benchmark_return": 5.71,
+          "additional_benchmark_return": 5.12
+        },
+        {
+          "period": "SI",
+          "fund_return": 5.86,
+          "benchmark_return": 5.65,
+          "additional_benchmark_return": 5.16
+        },
+        {
+          "period": "7 Days",
+          "fund_return": 6.04,
+          "benchmark_return": 6.03,
+          "additional_benchmark_return": 4.39,
+          "value_of_10000_invested": {
+            "scheme": 10012,
+            "benchmark": 10012,
+            "additional_benchmark": 10008
+          }
+        },
+        {
+          "period": "15 Days",
+          "fund_return": 5.51,
+          "benchmark_return": 5.3,
+          "additional_benchmark_return": 2.05,
+          "value_of_10000_invested": {
+            "scheme": 10023,
+            "benchmark": 10022,
+            "additional_benchmark": 10008
+          }
+        }
+      ],
+      "value_of_10000_invested": [
+        {
+          "period": "7 Days",
+          "scheme": 10012,
+          "benchmark": 10012,
+          "additional_benchmark": 10008
+        },
+        {
+          "period": "15 Days",
+          "scheme": 10023,
+          "benchmark": 10022,
+          "additional_benchmark": 10008
+        },
+        {
+          "period": "1 Month",
+          "scheme": 10043,
+          "benchmark": 10041,
+          "additional_benchmark": 10023
+        },
+        {
+          "period": "6 Months",
+          "scheme": 10293,
+          "benchmark": 10286,
+          "additional_benchmark": 10256
+        },
+        {
+          "period": "Since Inception",
+          "scheme": 10339,
+          "benchmark": 10326,
+          "additional_benchmark": 10299
+        }
+      ],
+      "additional_info": {
+        "additional_benchmark_name": "Nifty 1-Year T-Bill Index",
+        "benchmark_risk_level": "Low to Moderate",
+        "potential_risk_class_matrix": {
+          "fund_name": "JioBlackRock Liquid Fund",
+          "credit_risk_levels": [
+            "Relatively Low (Class A)",
+            "Moderate (Class B)",
+            "Relatively High (Class C)"
+          ],
+          "interest_rate_risk_levels": [
+            "Relatively Low (Class I)",
+            "Moderate (Class II)",
+            "Relatively High (Class III)"
+          ],
+          "matrix": [
+            {
+              "credit_risk": "Relatively Low (Class A)",
+              "interest_rate_risk": "Relatively Low (Class I)",
+              "value": "A-I"
+            }
+          ]
+        }
+      },
+      "risk_level": "Low to Moderate"
+    },
+    {
+      "fund_name": "JioBlackRock Money Market Fund",
+      "fund_type": "Open-ended",
+      "scheme_type": "An open ended debt scheme investing in money market instruments.",
+      "category": "Money Market Fund",
+      "investment_objective": "The investment objective of the Scheme is to generate regular income through investment in a portfolio comprising of money market instruments with residual maturity up to 1 year. There is no assurance that the investment objective of the Scheme will be achieved.",
+      "benchmark": "Nifty Money Market Index A-I",
+      "inception_date": "4th July 2025",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "nav": 1033.1335,
+      "nav_date": "30th January 2026",
+      "aum_crores": 2958,
+      "monthly_avg_aum": 3028,
+      "expense_ratio": 0.15,
+      "exit_load": "Nil",
+      "min_sip": 500,
+      "min_lumpsum": 500,
+      "sip_available": true,
+      "fund_managers": [
+        {
+          "name": "Mr. Vikrant Mehta",
+          "managing_since": "July 2025",
+          "experience": "Total Experience 30 Years"
+        },
+        {
+          "name": "Mr. Siddharth Deb",
+          "managing_since": "July 2025",
+          "experience": "Total Experience 19 Years"
+        },
+        {
+          "name": "Mr. Arun Ramachandran",
+          "managing_since": "July 2025",
+          "experience": "Total Experience 19 Years"
+        },
+        {
+          "name": "Vikrant Mehta"
+        },
+        {
+          "name": "Arun R"
+        },
+        {
+          "name": "Siddharth Deb"
+        }
+      ],
+      "debt_indicators": {
+        "ytm": 6.54,
+        "modified_duration": 78.5,
+        "macaulay_duration": 83.6,
+        "average_maturity": 83.6
+      },
+      "debt_holdings": [
+        {
+          "name": "TREP_020226",
+          "instrument_type": "Cash*",
+          "rating": "Cash*",
+          "weight_pct": 10.64
+        },
+        {
+          "name": "NTPC Ltd Cp 10-Mar-26",
+          "instrument_type": "CP",
+          "rating": "A1+",
+          "weight_pct": 6.72
+        },
+        {
+          "name": "HDFC Bank Ltd Cd 12-Mar-26",
+          "instrument_type": "CD",
+          "rating": "A1+",
+          "weight_pct": 5.03
+        },
+        {
+          "name": "LIC Housing Finance Ltd CP 18-Mar-26",
+          "instrument_type": "CP",
+          "rating": "A1+",
+          "weight_pct": 5.03
+        },
+        {
+          "name": "5.63% GOI 2026 (12-Apr-2026)",
+          "instrument_type": "G-Secs",
+          "rating": "Sovereign",
+          "weight_pct": 4.99
+        },
+        {
+          "name": "364 DTB (21-Jan-2027)",
+          "instrument_type": "T-Bills",
+          "rating": "Sovereign",
+          "weight_pct": 4.8
+        },
+        {
+          "name": "Bank Of Baroda CD 11-Mar-26",
+          "instrument_type": "CD",
+          "rating": "A1+",
+          "weight_pct": 4.2
+        },
+        {
+          "name": "Power Finance Corporation Ltd CP 15-Apr-26",
+          "instrument_type": "CP",
+          "rating": "A1+",
+          "weight_pct": 4.16
+        },
+        {
+          "name": "HDFC Bank Ltd CD 24- Mar-26",
+          "instrument_type": "CD",
+          "rating": "A1+",
+          "weight_pct": 3.99
+        },
+        {
+          "name": "Punjab National Bank CD 09-Mar-26",
+          "instrument_type": "CD",
+          "rating": "A1+",
+          "weight_pct": 3.36
+        }
+      ],
+      "composition_by_rating": {
+        "AAA / A1+": 77.35,
+        "Sovereign": 12.21,
+        "Cash, Cash Equivalents & Net Current Assets": 10.44
+      },
+      "instrument_composition": {
+        "CD": 40.48,
+        "CP": 36.87,
+        "G-Sec and T-Bill": 12.21,
+        "Cash, Cash Equivalents & Net Current Assets": 10.18,
+        "CDMDF": 0.26
+      },
+      "returns": [
+        {
+          "period": "7D",
+          "fund_return": 5.51,
+          "benchmark_return": 5.72,
+          "additional_benchmark_return": 4.39
+        },
+        {
+          "period": "15D",
+          "fund_return": 5.01,
+          "benchmark_return": 5.08,
+          "additional_benchmark_return": 2.7
+        },
+        {
+          "period": "1M",
+          "fund_return": 4.38,
+          "benchmark_return": 4.28,
+          "additional_benchmark_return": 2.98
+        },
+        {
+          "period": "6M",
+          "fund_return": 5.76,
+          "benchmark_return": 5.57,
+          "additional_benchmark_return": 5.23
+        },
+        {
+          "period": "SI",
+          "fund_return": 5.76,
+          "benchmark_return": 5.53,
+          "additional_benchmark_return": 5.19
+        },
+        {
+          "period": "7 Days",
+          "fund_return": 5.51,
+          "benchmark_return": 5.72,
+          "additional_benchmark_return": 4.39,
+          "value_of_10000_invested": {
+            "scheme": 10011,
+            "benchmark": 10011,
+            "additional_benchmark": 10008
+          }
+        },
+        {
+          "period": "15 Days",
+          "fund_return": 5.01,
+          "benchmark_return": 5.08,
+          "additional_benchmark_return": 2.7,
+          "value_of_10000_invested": {
+            "scheme": 10021,
+            "benchmark": 10021,
+            "additional_benchmark": 10011
+          }
+        }
+      ],
+      "additional_info": {
+        "value_of_10000_invested": [
+          {
+            "period": "7 Days",
+            "scheme": 10011,
+            "benchmark": 10011,
+            "additional_benchmark": 10008
+          },
+          {
+            "period": "15 Days",
+            "scheme": 10021,
+            "benchmark": 10021,
+            "additional_benchmark": 10011
+          },
+          {
+            "period": "1 Month",
+            "scheme": 10036,
+            "benchmark": 10035,
+            "additional_benchmark": 10025
+          },
+          {
+            "period": "6 Months",
+            "scheme": 10288,
+            "benchmark": 10279,
+            "additional_benchmark": 10262
+          },
+          {
+            "period": "Since Inception",
+            "scheme": 10331,
+            "benchmark": 10318,
+            "additional_benchmark": 10299
+          }
+        ],
+        "additional_benchmark": "Nifty 1-Year T-Bill Index",
+        "footnotes": [
+          "CP: Commercial Paper. CD: Certificate of Deposit. T-Bill: Treasury Bill. G-Sec: Government Security",
+          "*Cash, Cash Equivalents and Net Current Assets"
+        ],
+        "page_number": 11,
+        "additional_benchmark_name": "Nifty 1-Year T-Bill Index",
+        "benchmark_risk_level": "Low to Moderate",
+        "potential_risk_class_matrix": {
+          "fund_name": "JioBlackRock Money Market Fund",
+          "credit_risk_levels": [
+            "Relatively Low (Class A)",
+            "Moderate (Class B)",
+            "Relatively High (Class C)"
+          ],
+          "interest_rate_risk_levels": [
+            "Relatively Low (Class I)",
+            "Moderate (Class II)",
+            "Relatively High (Class III)"
+          ],
+          "matrix": [
+            {
+              "credit_risk": "Moderate (Class B)",
+              "interest_rate_risk": "Relatively Low (Class I)",
+              "value": "B-I"
+            }
+          ]
+        }
+      },
+      "risk_level": "Low to Moderate"
+    },
+    {
+      "fund_name": "JioBlackRock Low Duration Fund",
+      "scheme_type": "An open ended low duration debt scheme investing in instruments such that the Macaulay duration of the portfolio is between 6 months to 12 months.",
+      "category": "Low Duration Fund",
+      "investment_objective": "The investment objective of the Scheme is to generate income through investment in debt and money market instruments such that the Macaulay duration of the portfolio is between 6 months to 12 months. There is no assurance that the investment objective of the Scheme will be achieved.",
+      "benchmark": "Nifty Low Duration Debt Index A-I",
+      "inception_date": "19th January 2026",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "nav": 1002.497,
+      "nav_date": "30th January 2026",
+      "aum_crores": 331,
+      "monthly_avg_aum": 140,
+      "expense_ratio": 0.2,
+      "exit_load": "Nil",
+      "min_sip": 500,
+      "min_lumpsum": 500,
+      "fund_managers": [
+        {
+          "name": "Mr. Vikrant Mehta",
+          "managing_since": "January 2026",
+          "experience": "30 Years"
+        },
+        {
+          "name": "Mr. Siddharth Deb",
+          "managing_since": "January 2026",
+          "experience": "19 Years"
+        },
+        {
+          "name": "Mr. Arun Ramachandran",
+          "managing_since": "January 2026",
+          "experience": "19 Years"
+        }
+      ],
+      "debt_indicators": {
+        "ytm": 6.73,
+        "modified_duration": 199.6,
+        "macaulay_duration": 213.6,
+        "average_maturity": 217.8
+      },
+      "debt_holdings": [
+        {
+          "name": "7.80% NBFARD 15-Mar-27",
+          "instrument_type": "CB",
+          "rating": "AAA",
+          "weight_pct": 8.11
+        },
+        {
+          "name": "6.65% LIC Housing Finance Ltd 15-Feb-27",
+          "instrument_type": "CB",
+          "rating": "AAA",
+          "weight_pct": 7.98
+        },
+        {
+          "name": "7.37% Power Finance Corporation Ltd 22-May-26",
+          "instrument_type": "CB",
+          "rating": "AAA",
+          "weight_pct": 7.92
+        },
+        {
+          "name": "Kotak Mahindra Bank Ltd CD 27-Feb-26",
+          "instrument_type": "CD",
+          "rating": "A1+",
+          "weight_pct": 7.51
+        },
+        {
+          "name": "ICICI Securities Ltd CP 27-Feb-26",
+          "instrument_type": "CP",
+          "rating": "A1+",
+          "weight_pct": 7.51
+        },
+        {
+          "name": "Axis Bank Ltd CD 04-Mar-26",
+          "instrument_type": "CD",
+          "rating": "A1+",
+          "weight_pct": 7.5
+        },
+        {
+          "name": "182 DTB (08-May-2026)",
+          "instrument_type": "T-Bills",
+          "rating": "Sovereign",
+          "weight_pct": 7.44
+        },
+        {
+          "name": "TREP_020226",
+          "instrument_type": "Cash*",
+          "rating": "Cash*",
+          "weight_pct": 7.17
+        },
+        {
+          "name": "Union Bank Of India CD 19-Jan-27",
+          "instrument_type": "CD",
+          "rating": "A1+",
+          "weight_pct": 7.07
+        },
+        {
+          "name": "Indian Bank Cd 22-jan-27",
+          "instrument_type": "CD",
+          "rating": "A1+",
+          "weight_pct": 7.06
+        }
+      ],
+      "composition_by_rating": {
+        "AAA / A1+": 81.82,
+        "Sovereign": 13.39,
+        "Cash, Cash Equivalents & Net Current Assets": 4.78
+      },
+      "instrument_composition": {
+        "CD": 50.3,
+        "Corporate Bonds": 24.02,
+        "G-Sec and T-Bill": 13.39,
+        "CP": 7.51,
+        "Cash, Cash Equivalents & Net Current Assets": 4.78
+      },
+      "risk_level": "Low to Moderate",
+      "benchmark_risk_level": "Low to Moderate",
+      "potential_risk_class_matrix": {
+        "fund_name_in_matrix": "JioBlackRock Money Market Fund",
+        "credit_risk": "Moderate (Class B)",
+        "interest_rate_risk": "Relatively High (Class III)",
+        "class": "B-III"
+      }
+    },
+    {
+      "fund_name": "JioBlackRock Short Duration Fund",
+      "fund_type": "Open-ended",
+      "scheme_type": "An open ended short term debt scheme investing in instruments such that the Macaulay duration of the portfolio is between 1 year to 3 years. A relatively high interest rate risk and moderate credit risk.",
+      "category": "Short Duration Fund",
+      "investment_objective": "The investment objective of the Scheme is to generate income through investment in money market and debt instruments such that the Macaulay duration of the portfolio is between 1 year to 3 years. There is no assurance that the investment objective of the Scheme will be achieved.",
+      "benchmark": "Nifty Short Duration Debt Index A-II",
+      "inception_date": "19th January 2026",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "nav": 1002.6696,
+      "nav_date": "30th January 2026",
+      "aum_crores": 269,
+      "monthly_avg_aum": 115,
+      "expense_ratio": 0.2,
+      "exit_load": "Nil",
+      "min_sip": 500,
+      "min_lumpsum": 500,
+      "sip_available": true,
+      "fund_managers": [
+        {
+          "name": "Mr. Vikrant Mehta",
+          "managing_since": "January 2026",
+          "experience": "30 Years"
+        },
+        {
+          "name": "Mr. Siddharth Deb",
+          "managing_since": "January 2026",
+          "experience": "19 Years"
+        },
+        {
+          "name": "Mr. Arun Ramachandran",
+          "managing_since": "January 2026",
+          "experience": "19 Years"
+        }
+      ],
+      "debt_indicators": {
+        "ytm": 6.4,
+        "modified_duration": "118.8 days",
+        "macaulay_duration": "127.1 days",
+        "average_maturity": "129.8 days"
+      },
+      "debt_holdings": [
+        {
+          "name": "TREP_020226",
+          "instrument_type": "Cash*",
+          "rating": "Cash*",
+          "weight_pct": 25.8
+        },
+        {
+          "name": "7.64% REC Ltd 30-Apr-27",
+          "instrument_type": "CB",
+          "rating": "AAA",
+          "weight_pct": 9.89,
+          "maturity_date": "30-Apr-27"
+        },
+        {
+          "name": "Indian Bank CD 06-Mar-26",
+          "instrument_type": "CD",
+          "rating": "A1+",
+          "weight_pct": 9.25,
+          "maturity_date": "06-Mar-26"
+        },
+        {
+          "name": "Punjab National Bank CD 18-Mar-26",
+          "instrument_type": "CD",
+          "rating": "A1+",
+          "weight_pct": 9.23,
+          "maturity_date": "18-Mar-26"
+        },
+        {
+          "name": "LIC Housing Finance Ltd CP 18-Mar-26",
+          "instrument_type": "CP",
+          "rating": "A1+",
+          "weight_pct": 9.23,
+          "maturity_date": "18-Mar-26"
+        },
+        {
+          "name": "HDFC Bank Ltd CD 24-Mar-26",
+          "instrument_type": "CD",
+          "rating": "A1+",
+          "weight_pct": 9.22,
+          "maturity_date": "24-Mar-26"
+        },
+        {
+          "name": "Bajaj Finance Ltd CP 25-Mar-26",
+          "instrument_type": "CP",
+          "rating": "A1+",
+          "weight_pct": 9.22,
+          "maturity_date": "25-Mar-26"
+        },
+        {
+          "name": "Canara Bank CD 28-Jan-27",
+          "instrument_type": "CD",
+          "rating": "A1+",
+          "weight_pct": 8.7,
+          "maturity_date": "28-Jan-27"
+        },
+        {
+          "name": "SIDBOI CD 29-Jan-27",
+          "instrument_type": "CD",
+          "rating": "A1+",
+          "weight_pct": 8.69,
+          "maturity_date": "29-Jan-27"
+        },
+        {
+          "name": "Net Current Assets",
+          "instrument_type": "Cash*",
+          "rating": "Cash*",
+          "weight_pct": 0.74
+        }
+      ],
+      "composition_by_rating": {
+        "AAA / A1+": 73.43,
+        "Cash, Cash Equivalents & Net Current Assets": 26.57
+      },
+      "instrument_composition": {
+        "CD": 45.09,
+        "Cash, Cash Equivalents & Net Current Assets": 26.57,
+        "CP": 18.45,
+        "Corporate Bonds": 9.89
+      },
+      "risk_level": "Low to Moderate",
+      "benchmark_risk_level": "Low to Moderate",
+      "potential_risk_class_matrix": {
+        "fund_name_in_matrix": "JioBlackRock Money Market Fund",
+        "credit_risk": "Moderate (Class B)",
+        "interest_rate_risk": "Relatively High (Class III)",
+        "class": "B-III"
+      }
+    },
+    {
+      "fund_name": "JioBlackRock Arbitrage Fund",
+      "fund_type": "Open-ended",
+      "scheme_type": "An open ended scheme investing in arbitrage opportunities.",
+      "category": "Arbitrage Fund",
+      "investment_objective": "The investment objective of the Scheme is to generate capital appreciation and income by predominantly investing in arbitrage opportunities in the cash and derivatives segment of the equity market, and by investing the balance in debt and money market instruments. There is no assurance that the investment objective of the Scheme will be achieved.",
+      "benchmark": "Nifty 50 Arbitrage (TRI)",
+      "inception_date": "16th December 2025",
+      "plans_offered": "Direct - Growth",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "nav": 10.0995,
+      "nav_date": "30th January 2026",
+      "aum_crores": 298,
+      "monthly_avg_aum": 271,
+      "expense_ratio": 0.22,
+      "exit_load": "0.25%, Nil after 15 Days*",
+      "min_sip": 500,
+      "min_lumpsum": 500,
+      "fund_managers": [
+        {
+          "name": "Mr. Arun Ramachandran",
+          "managing_since": "December 2025",
+          "experience": "19 Years"
+        },
+        {
+          "name": "Mr. Siddharth Deb",
+          "managing_since": "December 2025",
+          "experience": "19 Years"
+        },
+        {
+          "name": "Mr. Haresh Mehta",
+          "managing_since": "December 2025",
+          "experience": "18 Years"
+        },
+        {
+          "name": "Mr. Anand Shah",
+          "managing_since": "December 2025",
+          "experience": "23 Years"
+        }
+      ],
+      "debt_indicators": {
+        "ytm": 6.4,
+        "modified_duration": 34.6,
+        "macaulay_duration": 36.9,
+        "average_maturity": 36.9
+      },
+      "equity_holdings": [
+        {
+          "name": "HDFC Bank Ltd",
+          "sector": "Banks",
+          "weight_pct": 7.98
+        },
+        {
+          "name": "Reliance Industries Ltd",
+          "sector": "Petroleum Products",
+          "weight_pct": 7.06
+        },
+        {
+          "name": "Multi Commodity Exchange Of India Ltd",
+          "sector": "Capital Markets",
+          "weight_pct": 4.39
+        },
+        {
+          "name": "ICICI Bank Ltd",
+          "sector": "Banks",
+          "weight_pct": 3.96
+        },
+        {
+          "name": "Kotak Mahindra Bank Ltd",
+          "sector": "Banks",
+          "weight_pct": 3.36
+        },
+        {
+          "name": "ITC Ltd",
+          "sector": "Diversified FMCG",
+          "weight_pct": 3.02
+        }
+      ],
+      "debt_holdings": [
+        {
+          "name": "TREP_020226",
+          "instrument_type": "Cash Equivalent",
+          "weight_pct": 12.31
+        },
+        {
+          "name": "Jioblackrock Money Market Fund-Direct Plan-Growth Option",
+          "instrument_type": "Mutual Fund",
+          "weight_pct": 7.44
+        },
+        {
+          "name": "Punjab National Bank Cd 24-mar-26",
+          "instrument_type": "CD",
+          "weight_pct": 7.33,
+          "maturity_date": "2026-03-24"
+        },
+        {
+          "name": "Jioblackrock Liquid Fund - Direct Plan - Growth",
+          "instrument_type": "Mutual Fund",
+          "weight_pct": 4.48
+        }
+      ],
+      "composition_by_rating": {
+        "Equity Shares": 70.7,
+        "AAA / A1+": 13.5,
+        "Mutual Fund Units": 11.91,
+        "Cash, Cash Equivalents & Net Current Assets": 3.89
+      },
+      "instrument_composition": {
+        "Equity Shares": 70.7,
+        "Mutual Fund Units": 11.91,
+        "CD": 9.09,
+        "CP": 4.41,
+        "Cash, Cash Equivalents & Net Current Assets": 3.89
+      },
+      "risk_level": "Low",
+      "additional_info": {
+        "benchmark_risk_level": "Low",
+        "suitability_statement": "This product is suitable for investors who are seeking*"
+      }
+    },
+    {
+      "fund_name": "JioBlackRock Nifty 50 Index Fund",
+      "fund_type": "Open-ended",
+      "scheme_type": "An open-ended scheme replicating/ tracking the Nifty 50 Index.",
+      "category": "Index Fund",
+      "investment_objective": "Passive investment in equity and equity related securities replicating the composition of Nifty 50 Index, subject to tracking errors. There is no assurance that the investment objective of the Scheme will be achieved.",
+      "benchmark": "Nifty 500 Index (TRI)",
+      "inception_date": "18th August 2025",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "nav": 10.18,
+      "nav_date": "30th January 2026",
+      "aum_crores": 189,
+      "monthly_avg_aum": 183,
+      "expense_ratio": 0.1,
+      "exit_load": "Nil",
+      "min_sip": 500,
+      "min_lumpsum": 500,
+      "fund_managers": [
+        {
+          "name": "Ms. Tanvi Kacherla",
+          "managing_since": "August 2025",
+          "experience": "14 Years"
+        },
+        {
+          "name": "Mr. Anand Shah",
+          "managing_since": "August 2025",
+          "experience": "23 Years"
+        },
+        {
+          "name": "Mr. Haresh Mehta",
+          "managing_since": "August 2025",
+          "experience": "18 Years"
+        },
+        {
+          "name": "Ms. Tanvi Kacheria",
+          "managing_since": "Aug-25"
+        }
+      ],
+      "risk_metrics": {
+        "tracking_error": 0.05
+      },
+      "portfolio_turnover": "2.81%",
+      "equity_holdings": [
+        {
+          "name": "HDFC Bank Ltd",
+          "sector": "Banks",
+          "weight_pct": 12.29
+        },
+        {
+          "name": "ICICI Bank Ltd",
+          "sector": "Banks",
+          "weight_pct": 8.37
+        },
+        {
+          "name": "Reliance Industries Ltd",
+          "sector": "Petroleum Products",
+          "weight_pct": 8.15
+        },
+        {
+          "name": "Infosys Ltd",
+          "sector": "IT - Software",
+          "weight_pct": 4.97
+        },
+        {
+          "name": "Bharti Airtel Ltd",
+          "sector": "Telecom - Services",
+          "weight_pct": 4.74
+        },
+        {
+          "name": "Larsen & Toubro Ltd",
+          "sector": "Construction",
+          "weight_pct": 3.99
+        },
+        {
+          "name": "State Bank Of India",
+          "sector": "Banks",
+          "weight_pct": 3.86
+        },
+        {
+          "name": "Axis Bank Ltd",
+          "sector": "Banks",
+          "weight_pct": 3.4
+        },
+        {
+          "name": "Tata Consultancy Services Ltd",
+          "sector": "IT - Software",
+          "weight_pct": 2.76
+        },
+        {
+          "name": "ITC Ltd",
+          "sector": "Diversified FMCG",
+          "weight_pct": 2.68
+        }
+      ],
+      "sector_allocation": {
+        "Banks": 30.51,
+        "IT - Software": 10.82,
+        "Petroleum Products": 8.15,
+        "Automobiles": 6.71,
+        "Finance": 5.06,
+        "Telecom - Services": 4.74,
+        "Diversified FMCG": 4.5,
+        "Construction": 3.99,
+        "Pharmaceuticals & Biotechnology": 2.75,
+        "Power": 2.46,
+        "Retailing": 2.43,
+        "Consumer Durables": 2.37,
+        "Ferrous Metals": 2.37,
+        "Cement & Cement Products": 2.23,
+        "Insurance": 1.45,
+        "Aerospace & Defense": 1.39,
+        "Healthcare Services": 1.23,
+        "Non - Ferrous Metals": 1.2,
+        "Transport Infrastructure": 0.91,
+        "Oil": 0.9,
+        "Transport Services": 0.9,
+        "Consumable Fuels": 0.87,
+        "Food Products": 0.85,
+        "Agricultural Food & Other Products": 0.64,
+        "Metals & Minerals Trading": 0.45,
+        "Cash*": 0.12
+      },
+      "risk_level": "Very High"
+    },
+    {
+      "fund_name": "JioBlackRock Nifty Next 50 Index Fund",
+      "fund_type": "Open-ended",
+      "category": "Index Fund",
+      "investment_objective": "Passive investment in equity and equity related securities replicating the composition of Nifty Next 50 Index,subject to tracking errors. There is no assurance that the Investment Objective of the Scheme will be achieved.",
+      "benchmark": "Nifty Next 50 Index (TRI)",
+      "inception_date": "18th August 2025",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "nav": 10.06,
+      "nav_date": "30th January 2026",
+      "aum_crores": 158,
+      "monthly_avg_aum": 154,
+      "expense_ratio": 0.15,
+      "exit_load": "Nil",
+      "min_sip": 500,
+      "min_lumpsum": 500,
+      "fund_managers": [
+        {
+          "name": "Ms. Tanvi Kacheria",
+          "managing_since": "August 2025",
+          "experience": "14 Years"
+        },
+        {
+          "name": "Mr. Anand Shah",
+          "managing_since": "August 2025",
+          "experience": "23 Years"
+        },
+        {
+          "name": "Mr. Haresh Mehta",
+          "managing_since": "August 2025",
+          "experience": "18 Years"
+        }
+      ],
+      "risk_metrics": {
+        "tracking_error": 0.07
+      },
+      "portfolio_turnover": "6.17%",
+      "equity_holdings": [
+        {
+          "name": "Vedanta Ltd",
+          "sector": "Diversified Metals",
+          "weight_pct": 5.1
+        },
+        {
+          "name": "Hindustan Aeronautics Ltd",
+          "sector": "Aerospace & Defense",
+          "weight_pct": 3.87
+        },
+        {
+          "name": "Tvs Motor Co Ltd",
+          "sector": "Automobiles",
+          "weight_pct": 3.81
+        },
+        {
+          "name": "Divi's Laboratories Ltd",
+          "sector": "Pharmaceuticals & Biotechnology",
+          "weight_pct": 3.39
+        },
+        {
+          "name": "Bharat Petroleum Corporation Ltd",
+          "sector": "Petroleum Products",
+          "weight_pct": 3.12
+        },
+        {
+          "name": "Britannia Industries Ltd",
+          "sector": "Food Products",
+          "weight_pct": 3.05
+        },
+        {
+          "name": "Cholamandalam Investment And Finance Co Ltd",
+          "sector": "Finance",
+          "weight_pct": 3.04
+        },
+        {
+          "name": "Varun Beverages Ltd",
+          "sector": "Beverages",
+          "weight_pct": 2.84
+        },
+        {
+          "name": "Tata Power Co Ltd",
+          "sector": "Power",
+          "weight_pct": 2.71
+        },
+        {
+          "name": "Indian Oil Corporation Ltd",
+          "sector": "Petroleum Products",
+          "weight_pct": 2.69
+        }
+      ],
+      "sector_allocation": {
+        "Finance": 10.87,
+        "Power": 8.68,
+        "Banks": 6.55,
+        "Pharmaceuticals & Biotechnology": 6.2,
+        "Petroleum Products": 5.81,
+        "Electrical Equipment": 5.24,
+        "Automobiles": 5.21,
+        "Diversified Metals": 5.1,
+        "Beverages": 4.62,
+        "Retailing": 4.54,
+        "Aerospace & Defense": 3.87,
+        "Auto Components": 3.61,
+        "Chemicals & Petrochemicals": 3.41,
+        "Food Products": 3.05,
+        "Realty": 3.0,
+        "Cement & Cement Products": 2.96,
+        "Insurance": 2.74,
+        "Leisure Services": 2.61,
+        "IT - Software": 2.44,
+        "Personal Products": 2.05,
+        "Gas": 1.99,
+        "Ferrous Metals": 1.87,
+        "Consumer Durables": 1.43,
+        "Non - Ferrous Metals": 1.2,
+        "Industrial Manufacturing": 0.86,
+        "Cash": 0.1
+      },
+      "risk_level": "Very High"
+    },
+    {
+      "fund_name": "JioBlackRock Nifty Midcap 150 Index Fund",
+      "fund_type": "Open-ended",
+      "scheme_type": "An open-ended scheme replicating/ tracking the Nifty Midcap 150 Index.",
+      "category": "Index Fund",
+      "investment_objective": "Passive investment in equity and equity related securities replicating the composition of Nifty Midcap 150 Index, subject to tracking errors. There is no assurance that the investment objective of the Scheme will be achieved.",
+      "benchmark": "Nifty Midcap 150 Index (TRI)",
+      "inception_date": "18th August 2025",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "nav": 10.1,
+      "nav_date": "30th January 2026",
+      "aum_crores": 201,
+      "monthly_avg_aum": 196,
+      "expense_ratio": 0.15,
+      "exit_load": "Nil",
+      "min_sip": 500,
+      "min_lumpsum": 500,
+      "fund_managers": [
+        {
+          "name": "Ms. Tanvi Kacheria",
+          "managing_since": "August 2025",
+          "experience": "14 Years"
+        },
+        {
+          "name": "Mr. Anand Shah",
+          "managing_since": "August 2025",
+          "experience": "23 Years"
+        },
+        {
+          "name": "Mr. Haresh Mehta",
+          "managing_since": "August 2025",
+          "experience": "18 Years"
+        }
+      ],
+      "risk_metrics": {
+        "tracking_error": 0.09
+      },
+      "portfolio_turnover": "10.93%",
+      "equity_holdings": [
+        {
+          "name": "BSE Ltd",
+          "sector": "Capital Markets",
+          "weight_pct": 3.07
+        },
+        {
+          "name": "Hero Motocorp Ltd",
+          "sector": "Automobiles",
+          "weight_pct": 1.93
+        },
+        {
+          "name": "Federal Bank Ltd",
+          "sector": "Banks",
+          "weight_pct": 1.9
+        },
+        {
+          "name": "Persistent Systems Ltd",
+          "sector": "IT - Software",
+          "weight_pct": 1.76
+        },
+        {
+          "name": "Indusind Bank Ltd",
+          "sector": "Banks",
+          "weight_pct": 1.59
+        },
+        {
+          "name": "Suzlon Energy Ltd",
+          "sector": "Electrical Equipment",
+          "weight_pct": 1.55
+        },
+        {
+          "name": "Indus Towers Ltd",
+          "sector": "Telecom - Services",
+          "weight_pct": 1.54
+        },
+        {
+          "name": "PB Fintech Ltd",
+          "sector": "Financial Technology (Fintech)",
+          "weight_pct": 1.52
+        },
+        {
+          "name": "Ashok Leyland Ltd",
+          "sector": "Agricultural, Commercial & Construction Vehicles",
+          "weight_pct": 1.51
+        },
+        {
+          "name": "Cummins India Ltd",
+          "sector": "Industrial Products",
+          "weight_pct": 1.49
+        }
+      ],
+      "sector_allocation": {
+        "Banks": 10.55,
+        "Pharmaceuticals & Biotechnology": 6.88,
+        "Finance": 6.17,
+        "Capital Markets": 5.95,
+        "IT - Software": 5.82,
+        "Electrical Equipment": 5.78,
+        "Industrial Products": 5.66,
+        "Auto Components": 5.54,
+        "Consumer Durables": 3.33,
+        "Telecom - Services": 3.18,
+        "Financial Technology (Fintech)": 2.76,
+        "Retailing": 2.7,
+        "Fertilizers & Agrochemicals": 2.62,
+        "Realty": 2.6,
+        "Insurance": 2.23,
+        "Chemicals & Petrochemicals": 2.09,
+        "Power": 1.96,
+        "Automobiles": 1.93,
+        "Personal Products": 1.85,
+        "Agricultural, Commercial & Construction Vehicles": 1.81,
+        "Agricultural Food & Other Products": 1.76,
+        "Healthcare Services": 1.67,
+        "Gas": 1.51,
+        "Leisure Services": 1.48,
+        "Cement & Cement Products": 1.33,
+        "Ferrous Metals": 1.29,
+        "Minerals & Mining": 1.14,
+        "Transport Infrastructure": 1.12,
+        "Petroleum Products": 1.1,
+        "Non - Ferrous Metals": 0.93,
+        "Textiles & Apparels": 0.83,
+        "Oil": 0.75,
+        "Construction": 0.75,
+        "Industrial Manufacturing": 0.57,
+        "IT - Services": 0.57,
+        "Transport Services": 0.47,
+        "Aerospace & Defense": 0.38,
+        "Diversified": 0.37,
+        "Beverages": 0.28,
+        "Cigarettes & Tobacco Products": 0.22,
+        "Cash": 0.06
+      },
+      "risk_level": "Very High"
+    },
+    {
+      "fund_name": "JioBlackRock Nifty Smallcap 250 Index Fund",
+      "scheme_type": "An open-ended scheme replicating/ tracking the Nifty Smallcap 250 Index.",
+      "category": "Index Fund",
+      "investment_objective": "Passive investment in equity and equity related securities replicating the composition of Nifty Smallcap 250 Index, subject to tracking errors. There is no assurance that the investment objective of the Scheme will be achieved.",
+      "benchmark": "Nifty Smallcap 250 Index (TRI)",
+      "inception_date": "18th August 2025",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "nav": 9.33,
+      "nav_date": "30th January 2026",
+      "aum_crores": 237,
+      "monthly_avg_aum": 229,
+      "expense_ratio": 0.15,
+      "exit_load": "Nil",
+      "min_sip": 500,
+      "min_lumpsum": 500,
+      "fund_managers": [
+        {
+          "name": "Ms. Tanvi Kacheria",
+          "managing_since": "August 2025",
+          "experience": "14 Years"
+        },
+        {
+          "name": "Mr. Anand Shah",
+          "managing_since": "August 2025",
+          "experience": "23 Years"
+        },
+        {
+          "name": "Mr. Haresh Mehta",
+          "managing_since": "August 2025",
+          "experience": "18 Years"
+        }
+      ],
+      "risk_metrics": {
+        "tracking_error": 0.11
+      },
+      "portfolio_turnover": 8.22,
+      "equity_holdings": [
+        {
+          "name": "Multi Commodity Exchange Of India Ltd",
+          "sector": "Capital Markets",
+          "weight_pct": 3.39
+        },
+        {
+          "name": "Laurus Labs Ltd",
+          "sector": "Pharmaceuticals & Biotechnology",
+          "weight_pct": 1.97
+        },
+        {
+          "name": "Karur Vysya Bank Ltd",
+          "sector": "Banks",
+          "weight_pct": 1.5
+        },
+        {
+          "name": "Central Depository Services (India) Ltd",
+          "sector": "Capital Markets",
+          "weight_pct": 1.24
+        },
+        {
+          "name": "Delhivery Ltd",
+          "sector": "Transport Services",
+          "weight_pct": 1.21
+        },
+        {
+          "name": "Hindustan Copper Ltd",
+          "sector": "Non - Ferrous Metals",
+          "weight_pct": 1.18
+        },
+        {
+          "name": "Navin Fluorine International Ltd",
+          "sector": "Chemicals & Petrochemicals",
+          "weight_pct": 1.18
+        },
+        {
+          "name": "Radico Khaitan Ltd",
+          "sector": "Beverages",
+          "weight_pct": 1.16
+        },
+        {
+          "name": "City Union Bank Ltd",
+          "sector": "Banks",
+          "weight_pct": 1.15
+        },
+        {
+          "name": "RBL Bank Ltd",
+          "sector": "Banks",
+          "weight_pct": 0.95
+        }
+      ],
+      "sector_allocation": {
+        "Pharmaceuticals & Biotechnology": 9.8,
+        "Finance": 9.64,
+        "Capital Markets": 9.3,
+        "Industrial Products": 6.84,
+        "Chemicals & Petrochemicals": 5.04,
+        "Auto Components": 4.76,
+        "Banks": 4.74,
+        "Healthcare Services": 3.9,
+        "Consumer Durables": 3.87,
+        "Construction": 3.2,
+        "Leisure Services": 2.3,
+        "Transport Services": 2.21,
+        "IT - Software": 2.16,
+        "Commercial Services & Supplies": 2.12,
+        "IT - Services": 2.09,
+        "Power": 2.04,
+        "Industrial Manufacturing": 2.01,
+        "Automobiles": 1.48,
+        "Realty": 1.48,
+        "Electrical Equipment": 1.39,
+        "Retailing": 1.29,
+        "Gas": 1.26,
+        "Insurance": 1.25,
+        "Cement & Cement Products": 1.22,
+        "Entertainment": 1.2,
+        "Aerospace & Defense": 1.19,
+        "Non - Ferrous Metals": 1.18,
+        "Beverages": 1.16,
+        "Personal Products": 1.08,
+        "Agricultural Food & Other Products": 1.05,
+        "Food Products": 1.02,
+        "Fertilizers & Agrochemicals": 1.02,
+        "Petroleum Products": 0.85,
+        "Textiles & Apparels": 0.71,
+        "Telecom - Services": 0.67,
+        "Agricultural, Commercial & Construction Vehicles": 0.54,
+        "Minerals & Mining": 0.52,
+        "Ferrous Metals": 0.49,
+        "Household Products": 0.4,
+        "Paper, Forest & Jute Products": 0.35,
+        "Healthcare Equipment & Supplies": 0.31,
+        "Telecom - Equipment & Accessories": 0.29,
+        "Diversified": 0.25,
+        "Oil": 0.17,
+        "Cash*": 0.15
+      },
+      "risk_level": "Very High",
+      "benchmark_risk_level": "Very High"
+    },
+    {
+      "fund_name": "JioBlackRock Nifty 8-13 yr G-Sec Index Fund",
+      "scheme_type": "An open-ended scheme replicating / tracking the Nifty 8-13 yr G-Sec Index.",
+      "category": "Index Fund",
+      "investment_objective": "Passive investment in gilt securities replicating the composition of Nifty 8-13 yr G-Sec Index, subject to tracking errors. There is no assurance that the investment objective of the Scheme will be achieved.",
+      "benchmark": "Nifty 8-13 yr G-Sec Index",
+      "inception_date": "18th August 2025",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "nav": 10.16,
+      "nav_date": "30th January 2026",
+      "aum_crores": 28,
+      "monthly_avg_aum": 28,
+      "expense_ratio": 0.1,
+      "exit_load": "Nil",
+      "min_sip": 500,
+      "min_lumpsum": 500,
+      "fund_managers": [
+        {
+          "name": "Mr. Vikrant Mehta",
+          "managing_since": "August 2025",
+          "experience": "30 Years"
+        },
+        {
+          "name": "Mr. Siddharth Deb",
+          "managing_since": "August 2025",
+          "experience": "19 Years"
+        },
+        {
+          "name": "Mr. Arun Ramachandran",
+          "managing_since": "August 2025",
+          "experience": "19 Years"
+        }
+      ],
+      "debt_indicators": {
+        "ytm": 6.7,
+        "modified_duration": 6.7,
+        "macaulay_duration": 7.0,
+        "average_maturity": 9.3
+      },
+      "risk_metrics": {
+        "tracking_error": 0.25
+      },
+      "debt_holdings": [
+        {
+          "name": "6.48% GOI 2035 (06-OCT-2035)",
+          "instrument_type": "G-Secs",
+          "rating": "Sovereign",
+          "weight_pct": 49.31
+        },
+        {
+          "name": "6.33% GOI 2035 (05-MAY-2035)",
+          "instrument_type": "G-Secs",
+          "rating": "Sovereign",
+          "weight_pct": 27.53
+        },
+        {
+          "name": "6.79% GOI 2034 (07-OCT-2034)",
+          "instrument_type": "G-Secs",
+          "rating": "Sovereign",
+          "weight_pct": 22.98
+        },
+        {
+          "name": "TREP_020226",
+          "instrument_type": "Cash*",
+          "rating": "Cash*",
+          "weight_pct": 0.53
+        },
+        {
+          "name": "CASH",
+          "instrument_type": "Cash*",
+          "rating": "Cash*",
+          "weight_pct": 0.02
+        },
+        {
+          "name": "Net Current Assets",
+          "instrument_type": "Cash*",
+          "rating": "Cash*",
+          "weight_pct": -0.37
+        }
+      ],
+      "composition_by_rating": {
+        "Sovereign": 99.83,
+        "Cash, Cash Equivalents & Net Current Assets": 0.17
+      },
+      "instrument_composition": {
+        "G-Sec and T-Bill": 99.83,
+        "Cash, Cash Equivalents & Net Current Assets": 0.17
+      },
+      "risk_level": "Moderate",
+      "benchmark_risk_level": "Moderate",
+      "potential_risk_class_matrix": {
+        "classification": "A-III",
+        "credit_risk": "Relatively Low (Class A)",
+        "interest_rate_risk": "Relatively High (Class III)"
+      }
+    },
+    {
+      "fund_name": "JioBlackRock Sector Rotation Fund",
+      "investment_objective": "Long-Term Capital Appreciation. Investment in equity and equity related instruments following sector rotation theme.",
+      "benchmark": "Nifty 500 Index (TRI)",
+      "risk_level": "Very High",
+      "benchmark_risk_level": "Very High"
+    }
+  ],
+  "amc_info": {
+    "amc_name": "Jio BlackRock Mutual Fund",
+    "factsheet_date": "31st January, 2026"
+  },
+  "pages_processed": 37,
+  "source_pdf": "jio-black-rock-mutual-fund-factsheet-jan-2026.pdf",
+  "amc_slug": "jio-blackrock-mutual-fund",
+  "extracted_at": "2026-02-25T16:12:43"
+}

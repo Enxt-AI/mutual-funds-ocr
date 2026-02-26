@@ -16,6 +16,7 @@ const BENCHMARK_MAP = {
     "nifty next 50": "nifty-next-50",
     "nifty 100": "nifty-100",
     "bse 100": "nifty-100",
+    "bse 500": "nifty-500",
     "bse sensex": "sensex",
     "s&p bse sensex": "sensex",
     "sensex": "sensex",
@@ -463,8 +464,19 @@ function MorningstarRating({ rating }) {
     );
 }
 
-// Safe value formatters
-const safe = (val, suffix = "", prefix = "") => val != null ? `${prefix}${val}${suffix}` : "—";
+// Safe value formatters — handles objects/arrays that would crash React
+const safeText = (val) => {
+    if (val == null) return "—";
+    if (typeof val === "string" || typeof val === "number" || typeof val === "boolean") return String(val);
+    if (Array.isArray(val)) return val.map(v => typeof v === "object" ? JSON.stringify(v) : String(v)).join(", ");
+    if (typeof val === "object") return Object.entries(val).map(([k, v]) => `${k}: ${v}`).join(", ");
+    return String(val);
+};
+const safe = (val, suffix = "", prefix = "") => {
+    if (val == null) return "—";
+    if (typeof val === "object") return safeText(val);
+    return `${prefix}${val}${suffix}`;
+};
 const safeMoney = (val) => val != null ? `₹${Number(val).toLocaleString("en-IN")}` : "—";
 const safeDate = (dateStr) => {
     if (!dateStr) return "—";
@@ -507,20 +519,43 @@ export default function FundDetailPage() {
     const [fundNavHistory, setFundNavHistory] = useState([]);
     useEffect(() => {
         if (!fund) return;
-        // Try AMFI code first, then fall back to searching by fund name
-        const code = liveNav?.code;
-        const url = code
-            ? `/api/nav/history?code=${code}`
-            : `/api/nav/history?search=${encodeURIComponent(fund.fund_name)}`;
+        let cancelled = false;
 
-        fetch(url)
-            .then(res => res.json())
-            .then(data => {
-                if (data.data && data.data.length > 0) {
-                    setFundNavHistory(data.data);
-                }
-            })
-            .catch(() => { });
+        async function fetchNav() {
+            // Try AMFI code first
+            if (liveNav?.code) {
+                try {
+                    const res = await fetch(`/api/nav/history?code=${liveNav.code}`);
+                    const data = await res.json();
+                    if (!cancelled && data.data?.length > 0) {
+                        setFundNavHistory(data.data);
+                        return;
+                    }
+                } catch { }
+            }
+
+            // Fall back to searching by name — try multiple terms
+            const searchTerms = [
+                fund.fund_standard_name,
+                fund.fund_name,
+                fund.fund_name?.replace(/\s+(fund|scheme)$/i, ""),
+            ].filter(Boolean);
+
+            for (const term of searchTerms) {
+                try {
+                    const searchTerm = term.includes("Direct") ? term : `${term} Direct`;
+                    const res = await fetch(`/api/nav/history?search=${encodeURIComponent(searchTerm)}`);
+                    const data = await res.json();
+                    if (!cancelled && data.data?.length > 0) {
+                        setFundNavHistory(data.data);
+                        return;
+                    }
+                } catch { }
+            }
+        }
+
+        fetchNav();
+        return () => { cancelled = true; };
     }, [liveNav?.code, fund?.fund_name]);
 
     // Get real benchmark data for this fund
@@ -1149,7 +1184,7 @@ export default function FundDetailPage() {
                     </div>
                     <div className={styles.infoItem}>
                         <span className={styles.infoLabel}>Benchmark</span>
-                        <span className={styles.infoValue}>{fund.benchmark || "—"}</span>
+                        <span className={styles.infoValue}>{safeText(fund.benchmark)}</span>
                     </div>
                     <div className={styles.infoItem}>
                         <span className={styles.infoLabel}>Category</span>
@@ -1165,29 +1200,29 @@ export default function FundDetailPage() {
                     </div>
                     <div className={styles.infoItem}>
                         <span className={styles.infoLabel}>Plans Offered</span>
-                        <span className={styles.infoValue}>{fund.plans_offered || "—"}</span>
+                        <span className={styles.infoValue}>{safeText(fund.plans_offered)}</span>
                     </div>
                     {fund.isin && (
                         <div className={styles.infoItem}>
                             <span className={styles.infoLabel}>ISIN</span>
-                            <span className={styles.infoValue}>{fund.isin}</span>
+                            <span className={styles.infoValue}>{safeText(fund.isin)}</span>
                         </div>
                     )}
                     {fund.amfi_code && (
                         <div className={styles.infoItem}>
                             <span className={styles.infoLabel}>AMFI Code</span>
-                            <span className={styles.infoValue}>{fund.amfi_code}</span>
+                            <span className={styles.infoValue}>{safeText(fund.amfi_code)}</span>
                         </div>
                     )}
                     {fund.registrar && (
                         <div className={styles.infoItem}>
                             <span className={styles.infoLabel}>Registrar</span>
-                            <span className={styles.infoValue}>{fund.registrar}</span>
+                            <span className={styles.infoValue}>{safeText(fund.registrar)}</span>
                         </div>
                     )}
                     <div className={styles.infoItem}>
                         <span className={styles.infoLabel}>Exit Load</span>
-                        <span className={styles.infoValue}>{fund.exit_load || "—"}</span>
+                        <span className={styles.infoValue}>{safeText(fund.exit_load)}</span>
                     </div>
                     <div className={styles.infoItem}>
                         <span className={styles.infoLabel}>Min SIP</span>
@@ -1216,7 +1251,7 @@ export default function FundDetailPage() {
                     {(fund.turnover_ratio != null || fund.portfolio_turnover != null) && (
                         <div className={styles.infoItem}>
                             <span className={styles.infoLabel}>Turnover Ratio</span>
-                            <span className={styles.infoValue}>{fund.turnover_ratio ?? fund.portfolio_turnover ?? "—"}</span>
+                            <span className={styles.infoValue}>{safeText(fund.turnover_ratio ?? fund.portfolio_turnover)}</span>
                         </div>
                     )}
                     {fund.lock_in_period && (

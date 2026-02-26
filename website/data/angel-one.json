@@ -1,0 +1,1014 @@
+{
+  "schemes": [
+    {
+      "fund_name": "Angel One Nifty Total Market Index Fund",
+      "fund_type": "open-ended",
+      "scheme_type": "An open-ended scheme replicating/tracking Nifty Total Market Index",
+      "investment_objective": "The investment objective of the Scheme is to replicate Nifty Total Market Index with an aim to provide returns before expenses that track the total return of Nifty Total Market Index, subject to Tracking Errors. However, there can be no assurance or guarantee that the investment objective of the Scheme will be achieved.",
+      "benchmark": "Nifty Total Market TRI (Total Return Index)",
+      "inception_date": "28th February 2025",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "nav": 11.6391,
+      "nav_date": "30th January, 2026",
+      "aum_crores": 54.04,
+      "monthly_avg_aum": 54.27,
+      "expense_ratio": 0.28,
+      "exit_load": "Nil",
+      "entry_load": "NA",
+      "min_sip": 250,
+      "min_lumpsum": 1000,
+      "min_additional": 1000,
+      "sip_available": true,
+      "fund_managers": [
+        {
+          "name": "Mr. Mehul Dama",
+          "managing_since": "February 2025",
+          "experience": "19 years"
+        },
+        {
+          "name": "Mr. Kewal Shah",
+          "managing_since": "February 2025",
+          "experience": "10 years"
+        }
+      ],
+      "risk_metrics": {
+        "tracking_error": 0.06
+      },
+      "risk_level": "Very High",
+      "equity_holdings": [
+        {
+          "name": "HDFC Bank Limited",
+          "weight_pct": 7.06
+        },
+        {
+          "name": "ICICI Bank Limited",
+          "weight_pct": 4.8
+        },
+        {
+          "name": "Reliance Industries Limited",
+          "weight_pct": 4.68
+        },
+        {
+          "name": "Infosys Limited",
+          "weight_pct": 2.85
+        },
+        {
+          "name": "Bharti Airtel Limited",
+          "weight_pct": 2.72
+        },
+        {
+          "name": "Larsen & Toubro Limited",
+          "weight_pct": 2.29
+        },
+        {
+          "name": "State Bank of India",
+          "weight_pct": 2.22
+        },
+        {
+          "name": "Axis Bank Limited",
+          "weight_pct": 1.95
+        },
+        {
+          "name": "Tata Consultancy Services Limited",
+          "weight_pct": 1.58
+        },
+        {
+          "name": "ITC Limited",
+          "weight_pct": 1.54
+        },
+        {
+          "name": "Others",
+          "weight_pct": 68.34
+        }
+      ],
+      "sector_allocation": {
+        "Banks": 20.89,
+        "IT - Software": 7.83,
+        "Finance": 6.28,
+        "Petroleum Products": 5.62,
+        "Automobiles": 4.93,
+        "Pharmaceuticals & Biotechnology": 4.72,
+        "Telecom - Services": 3.38,
+        "Power": 3.02,
+        "Construction": 2.92,
+        "Consumer Durables": 2.74,
+        "Others": 37.67
+      },
+      "asset_allocation": {
+        "Equity & Equity Related Holdings": 100.04,
+        "Short Term Debt & Net Current Assets": -0.04
+      },
+      "category": "Index Fund"
+    },
+    {
+      "fund_name": "Angel One Nifty 50 Index Fund",
+      "fund_type": "Open-ended",
+      "scheme_type": "An open-ended scheme replicating/tracking Nifty 50 Index",
+      "investment_objective": "The investment objective of the Scheme is to replicate Nifty 50 Index with an aim to provide returns before expenses, that track the total return of Nifty 50 Index, subject to Tracking Errors. However, there can be no assurance or guarantee that the investment objective of the Scheme will be achieved.",
+      "benchmark": "Nifty 50 TRI (Total Return Index)",
+      "inception_date": "22nd May 2025",
+      "plans_offered": [
+        "Direct",
+        "Regular"
+      ],
+      "plan_type": "Direct",
+      "option": "Growth",
+      "nav": 10.3631,
+      "nav_date": "30th January, 2026",
+      "aum_crores": 31.6,
+      "monthly_avg_aum": 31.76,
+      "expense_ratio": 0.2,
+      "exit_load": "Nil",
+      "min_lumpsum": 1000,
+      "min_additional": 1000,
+      "sip_available": true,
+      "fund_managers": [
+        {
+          "name": "Mr. Mehul Dama",
+          "managing_since": "May 2025",
+          "experience": "19 years"
+        },
+        {
+          "name": "Mr. Kewal Shah",
+          "managing_since": "May 2025",
+          "experience": "10 years"
+        }
+      ],
+      "risk_metrics": {
+        "tracking_error": 0.09
+      },
+      "additional_info": {
+        "aum_date": "31st January, 2026",
+        "expense_ratio_date": "31st January, 2026",
+        "tracking_error_date": "30th January, 2026",
+        "entry_load": "NA",
+        "regular_plan_details": {
+          "nav": 10.3271,
+          "expense_ratio": 0.7,
+          "tracking_error": 0.1
+        },
+        "sip_options": [
+          {
+            "frequency": "Daily",
+            "min_amount": 250,
+            "min_installments": 30
+          },
+          {
+            "frequency": "Weekly",
+            "min_amount": 500,
+            "min_installments": 12
+          },
+          {
+            "frequency": "Fortnightly",
+            "min_amount": 500,
+            "min_installments": 12
+          },
+          {
+            "frequency": "Monthly",
+            "min_amount": 1000,
+            "min_installments": 12
+          },
+          {
+            "frequency": "Quarterly",
+            "min_amount": 3000,
+            "min_installments": 4
+          }
+        ]
+      },
+      "risk_level": "Very High",
+      "equity_holdings": [
+        {
+          "name": "HDFC Bank Limited",
+          "weight_pct": 12.29
+        },
+        {
+          "name": "ICICI Bank Limited",
+          "weight_pct": 8.37
+        },
+        {
+          "name": "Reliance Industries Limited",
+          "weight_pct": 8.15
+        },
+        {
+          "name": "Infosys Limited",
+          "weight_pct": 4.97
+        },
+        {
+          "name": "Bharti Airtel Limited",
+          "weight_pct": 4.74
+        },
+        {
+          "name": "Larsen & Toubro Limited",
+          "weight_pct": 3.99
+        },
+        {
+          "name": "State Bank of India",
+          "weight_pct": 3.87
+        },
+        {
+          "name": "Axis Bank Limited",
+          "weight_pct": 3.4
+        },
+        {
+          "name": "Tata Consultancy Services Limited",
+          "weight_pct": 2.76
+        },
+        {
+          "name": "ITC Limited",
+          "weight_pct": 2.68
+        }
+      ],
+      "sector_allocation": {
+        "Banks": 30.52,
+        "IT - Software": 10.82,
+        "Petroleum Products": 8.15,
+        "Automobiles": 6.71,
+        "Finance": 5.06,
+        "Telecom - Services": 4.74,
+        "Diversified FMCG": 4.51,
+        "Construction": 3.99,
+        "Pharmaceuticals & Biotechnology": 2.75,
+        "Power": 2.46,
+        "Others": 20.29
+      },
+      "asset_allocation": {
+        "Total Equity & Equity Related Holdings": 99.92,
+        "Short Term Debt & Net Current Assets": 0.08
+      },
+      "category": "Index Fund"
+    },
+    {
+      "fund_name": "Angel One Gold ETF FOF",
+      "fund_type": "Open-ended",
+      "scheme_type": "An open-ended fund of fund scheme investing in units of Angel One Gold ETF",
+      "investment_objective": "The investment objective of the Scheme is to seek to generate returns by investing in units of Angel One Gold ETF. However, there can be no assurance or guarantee that the investment objective of the Scheme will be achieved.",
+      "benchmark": "An open-ended fund of fund scheme investing in units of Angel One Gold ETF",
+      "inception_date": "10th September 2025",
+      "plans_offered": [
+        "Direct",
+        "Regular"
+      ],
+      "plan_type": "Direct",
+      "option": "Growth",
+      "nav": 14.7165,
+      "nav_date": "30th January, 2026",
+      "aum_crores": 31.39,
+      "monthly_avg_aum": 27.38,
+      "expense_ratio": 0.18,
+      "exit_load": "Nil",
+      "min_lumpsum": 500,
+      "min_additional": 500,
+      "sip_available": true,
+      "fund_managers": [
+        {
+          "name": "Mr. Mehul Dama",
+          "managing_since": "Sep 2025",
+          "experience": "19 years"
+        },
+        {
+          "name": "Mr. Kewal Shah",
+          "managing_since": "Sep 2025",
+          "experience": "10 years"
+        }
+      ],
+      "asset_allocation": {
+        "Angel One Gold ETF": 99.38,
+        "Short Term Debt (TREPS)": 1.83,
+        "Net Current Assets": -1.22
+      },
+      "risk_level": "High",
+      "category": "Fund Of Fund (FOF)"
+    },
+    {
+      "fund_name": "Angel One Nifty Total Market Momentum Quality 50 Index Fund",
+      "scheme_type": "An open-ended scheme replicating/ tracking Nifty Total Market Momentum Quality 50 Index",
+      "investment_objective": "The investment objective of the Scheme is to replicate Nifty Total Market Momentum Quality 50 Index with an aim to provide returns before expenses, that track the total return of Nifty Total Market Momentum Quality 50 Index, subject to tracking errors. However, there can be no assurance or guarantee that the investment objective of the Scheme will be achieved.",
+      "benchmark": "Nifty Total Market Momentum Quality 50 TRI (Total Return Index)",
+      "inception_date": "21st November 2025",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "nav": 9.53,
+      "nav_date": "30th January, 2026",
+      "aum_crores": 32.45,
+      "monthly_avg_aum": 32.28,
+      "expense_ratio": 0.34,
+      "exit_load": "Nil",
+      "min_lumpsum": 1000,
+      "min_additional": 1000,
+      "sip_available": true,
+      "fund_managers": [
+        {
+          "name": "Mr. Mehul Dama",
+          "managing_since": "November 2025",
+          "experience": "19 years"
+        },
+        {
+          "name": "Mr. Kewal Shah",
+          "managing_since": "November 2025",
+          "experience": "10 years"
+        }
+      ],
+      "risk_metrics": {
+        "tracking_error": 0.44
+      },
+      "risk_level": "Very High",
+      "equity_holdings": [
+        {
+          "name": "Bharat Electronics Limited",
+          "weight_pct": 5.63
+        },
+        {
+          "name": "BSE Ltd",
+          "weight_pct": 5.28
+        },
+        {
+          "name": "Multi Commodity Exchange of India Ltd.",
+          "weight_pct": 5.14
+        },
+        {
+          "name": "Hero MotoCorp Limited",
+          "weight_pct": 4.91
+        },
+        {
+          "name": "Eicher Motors Limited",
+          "weight_pct": 4.86
+        },
+        {
+          "name": "Britannia Industries Limited",
+          "weight_pct": 4.86
+        },
+        {
+          "name": "Bajaj Finance Limited",
+          "weight_pct": 4.65
+        },
+        {
+          "name": "Asian Paints Limited",
+          "weight_pct": 4.42
+        },
+        {
+          "name": "Maruti Suzuki India Limited",
+          "weight_pct": 4.4
+        },
+        {
+          "name": "Muthoot Finance Limited",
+          "weight_pct": 4.37
+        },
+        {
+          "name": "Others",
+          "weight_pct": 51.48
+        }
+      ],
+      "sector_allocation": {
+        "Capital Markets": 16.64,
+        "Automobiles": 15.03,
+        "Finance": 9.41,
+        "Industrial Products": 6.9,
+        "Banks": 6.35,
+        "IT - Software": 6.35,
+        "Aerospace & Defense": 6.09,
+        "Electrical Equipment": 5.1,
+        "Food Products": 5.01,
+        "Consumer Durables": 4.42,
+        "Others": 18.7
+      },
+      "asset_allocation": {
+        "Equity & Equity Related Holdings": 100.0,
+        "Short Term Debt & Net Current Assets": 0.0
+      },
+      "category": "Index Fund"
+    },
+    {
+      "fund_name": "Angel One Nifty Total Market ETF",
+      "fund_type": "Open-ended",
+      "scheme_type": "An open-ended scheme replicating/tracking Nifty Total Market Index",
+      "investment_objective": "The investment objective of the Scheme is to replicate Nifty Total Market Index with an aim to provide returns before expenses that track the total return of Nifty Total Market Index, subject to Tracking Errors. However, there can be no assurance or guarantee that the investment objective of the Scheme will be achieved.",
+      "benchmark": "Nifty Total Market TRI (Total Return Index)",
+      "inception_date": "28th February 2025",
+      "isin": "INF1J2R01015",
+      "nav": 11.6501,
+      "nav_date": "30th January, 2026",
+      "aum_crores": 42.57,
+      "monthly_avg_aum": 43.91,
+      "expense_ratio": 0.28,
+      "fund_managers": [
+        {
+          "name": "Mr. Mehul Dama",
+          "managing_since": "February 2025",
+          "experience": "Overall Experience: 19 years"
+        },
+        {
+          "name": "Mr. Kewal Shah",
+          "managing_since": "February 2025",
+          "experience": "Overall Experience: 10 years"
+        }
+      ],
+      "risk_metrics": {
+        "tracking_error": 0.03
+      },
+      "risk_level": "Very High",
+      "equity_holdings": [
+        {
+          "name": "HDFC Bank Limited",
+          "weight_pct": 7.05
+        },
+        {
+          "name": "ICICI Bank Limited",
+          "weight_pct": 4.8
+        },
+        {
+          "name": "Reliance Industries Limited",
+          "weight_pct": 4.67
+        },
+        {
+          "name": "Infosys Limited",
+          "weight_pct": 2.85
+        },
+        {
+          "name": "Bharti Airtel Limited",
+          "weight_pct": 2.72
+        },
+        {
+          "name": "Larsen & Toubro Limited",
+          "weight_pct": 2.29
+        },
+        {
+          "name": "State Bank of India",
+          "weight_pct": 2.22
+        },
+        {
+          "name": "Axis Bank Limited",
+          "weight_pct": 1.95
+        },
+        {
+          "name": "Tata Consultancy Services Limited",
+          "weight_pct": 1.58
+        },
+        {
+          "name": "ITC Limited",
+          "weight_pct": 1.54
+        },
+        {
+          "name": "Others",
+          "weight_pct": 68.28
+        }
+      ],
+      "sector_allocation": {
+        "Banks": 20.87,
+        "IT - Software": 7.82,
+        "Finance": 6.27,
+        "Petroleum Products": 5.62,
+        "Automobiles": 4.93,
+        "Pharmaceuticals & Biotechnology": 4.71,
+        "Telecom - Services": 3.38,
+        "Power": 3.02,
+        "Construction": 2.92,
+        "Consumer Durables": 2.74,
+        "Others": 37.73
+      },
+      "asset_allocation": {
+        "Total Equity & Equity Related Holdings": 99.95,
+        "Short Term Debt & Net Current Assets": 0.05
+      },
+      "category": "Exchange Traded Fund (ETF)"
+    },
+    {
+      "fund_name": "Angel One Nifty 50 ETF",
+      "fund_type": "Open-ended",
+      "scheme_type": "An open-ended scheme replicating/ tracking Nifty 50 Index",
+      "investment_objective": "The investment objective of the Scheme is to replicate Nifty 50 Index with an aim to provide returns before expenses that track the total return of Nifty 50 Index, subject to Tracking Errors. However, there can be no assurance or guarantee that the investment objective of the Scheme will be achieved.",
+      "benchmark": "Nifty 50 TRI (Total Return Index)",
+      "inception_date": "22nd May 2025",
+      "isin": "INF1J2R01064",
+      "nav": 10.3797,
+      "nav_date": "30th January, 2026",
+      "aum_crores": 16.09,
+      "monthly_avg_aum": 14.79,
+      "expense_ratio": 0.09,
+      "fund_managers": [
+        {
+          "name": "Mr. Mehul Dama",
+          "managing_since": "May 2025",
+          "experience": "19 years"
+        },
+        {
+          "name": "Mr. Kewal Shah",
+          "managing_since": "May 2025",
+          "experience": "10 years"
+        }
+      ],
+      "risk_metrics": {
+        "tracking_error": 0.05
+      },
+      "risk_level": "Very High",
+      "equity_holdings": [
+        {
+          "name": "HDFC Bank Limited",
+          "weight_pct": 12.29
+        },
+        {
+          "name": "ICICI Bank Limited",
+          "weight_pct": 8.37
+        },
+        {
+          "name": "Reliance Industries Limited",
+          "weight_pct": 8.15
+        },
+        {
+          "name": "Infosys Limited",
+          "weight_pct": 4.97
+        },
+        {
+          "name": "Bharti Airtel Limited",
+          "weight_pct": 4.74
+        },
+        {
+          "name": "Larsen & Toubro Limited",
+          "weight_pct": 3.99
+        },
+        {
+          "name": "State Bank of India",
+          "weight_pct": 3.86
+        },
+        {
+          "name": "Axis Bank Limited",
+          "weight_pct": 3.4
+        },
+        {
+          "name": "Tata Consultancy Services Limited",
+          "weight_pct": 2.76
+        },
+        {
+          "name": "ITC Limited",
+          "weight_pct": 2.68
+        },
+        {
+          "name": "Others",
+          "weight_pct": 44.67
+        }
+      ],
+      "sector_allocation": {
+        "Banks": 30.51,
+        "IT - Software": 10.82,
+        "Petroleum Products": 8.15,
+        "Automobiles": 6.71,
+        "Finance": 5.06,
+        "Telecom - Services": 4.74,
+        "Diversified FMCG": 4.51,
+        "Construction": 3.99,
+        "Pharmaceuticals & Biotechnology": 2.75,
+        "Power": 2.46,
+        "Others": 20.31
+      },
+      "asset_allocation": {
+        "Total Equity & Equity Related Holdings": 99.88,
+        "Short Term Debt & Net Current Assets": 0.12
+      },
+      "category": "Exchange Traded Fund (ETF)"
+    },
+    {
+      "fund_name": "Angel One Gold ETF",
+      "fund_type": "Open-ended",
+      "scheme_type": "An open-ended scheme replicating/ tracking domestic price of Gold",
+      "investment_objective": "The investment objective of the Scheme is to generate returns corresponding to the domestic price of gold before expenses, subject to tracking errors by investing in physical gold and gold related instruments. However, there can be no assurance or guarantee that the investment objective of the Scheme will be achieved.",
+      "benchmark": "Domestic price of Gold",
+      "inception_date": "5th September 2025",
+      "isin": "INF1J2R01114",
+      "nav": 15.2812,
+      "nav_date": "30th January, 2026",
+      "aum_crores": 86.52,
+      "monthly_avg_aum": 61.36,
+      "expense_ratio": 0.35,
+      "fund_managers": [
+        {
+          "name": "Mr. Mehul Dama",
+          "managing_since": "managing scheme since September 2025",
+          "experience": "Overall Experience: 19 years"
+        },
+        {
+          "name": "Mr. Kewal Shah",
+          "managing_since": "managing scheme since September 2025",
+          "experience": "Overall Experience: 10 years"
+        }
+      ],
+      "risk_metrics": {
+        "tracking_error": 0.66
+      },
+      "risk_level": "High",
+      "instrument_composition": {
+        "Gold": 97.58,
+        "Short Term Debt (TREPS)": 0.0,
+        "Net Current Assets": 2.42
+      },
+      "category": "Exchange Traded Fund (ETF)"
+    },
+    {
+      "fund_name": "Angel One Nifty Total Market Momentum Quality 50 ETF",
+      "scheme_type": "An open-ended scheme replicating/ tracking Nifty Total Market Momentum Quality 50 Index",
+      "investment_objective": "The investment objective of the Scheme is to replicate Nifty Total Market Momentum Quality 50 Index with an aim to provide returns before expenses, that track the total return of Nifty Total Market Momentum Quality 50 Index, subject to tracking errors. However, there can be no assurance or guarantee that the investment objective of the Scheme will be achieved.",
+      "benchmark": "Nifty Total Market Momentum Quality 50 TRI (Total Return Index)",
+      "inception_date": "21st November 2025",
+      "isin": "INF1J2R01148",
+      "nav": 9.5303,
+      "nav_date": "30th January, 2026",
+      "aum_crores": 6.26,
+      "monthly_avg_aum": 5.76,
+      "expense_ratio": 0.34,
+      "fund_managers": [
+        {
+          "name": "Mr. Mehul Dama",
+          "managing_since": "November 2025",
+          "experience": "Overall Experience: 19 years"
+        },
+        {
+          "name": "Mr. Kewal Shah",
+          "managing_since": "November 2025",
+          "experience": "Overall Experience: 10 years"
+        }
+      ],
+      "risk_metrics": {
+        "tracking_error": 0.49
+      },
+      "additional_info": {
+        "nse_symbol": "AONETMMQ50",
+        "aum_date": "31st January, 2026",
+        "tracking_error_date": "30th January, 2026",
+        "expense_ratio_date": "31st January, 2026",
+        "investment_options": {
+          "direct_with_amc": "Create / Redeem in exchange of Portfolio Deposit and Cash component in Creation Unit Size of 2,50,000 units of the Scheme and in multiples thereafter",
+          "on_the_exchange": "1 unit and in multiples thereafter"
+        }
+      },
+      "risk_level": "Very High",
+      "equity_holdings": [
+        {
+          "name": "Bharat Electronics Limited",
+          "weight_pct": 5.62
+        },
+        {
+          "name": "BSE Ltd",
+          "weight_pct": 5.27
+        },
+        {
+          "name": "Multi Commodity Exchange of India Ltd.",
+          "weight_pct": 5.13
+        },
+        {
+          "name": "Hero MotoCorp Limited",
+          "weight_pct": 4.9
+        },
+        {
+          "name": "Britannia Industries Limited",
+          "weight_pct": 4.85
+        },
+        {
+          "name": "Eicher Motors Limited",
+          "weight_pct": 4.85
+        },
+        {
+          "name": "Bajaj Finance Limited",
+          "weight_pct": 4.64
+        },
+        {
+          "name": "Asian Paints Limited",
+          "weight_pct": 4.41
+        },
+        {
+          "name": "Maruti Suzuki India Limited",
+          "weight_pct": 4.38
+        },
+        {
+          "name": "Muthoot Finance Limited",
+          "weight_pct": 4.36
+        },
+        {
+          "name": "Others",
+          "weight_pct": 51.43
+        }
+      ],
+      "sector_allocation": {
+        "Capital Markets": 16.61,
+        "Automobiles": 14.99,
+        "Finance": 9.38,
+        "Industrial Products": 6.89,
+        "Banks": 6.34,
+        "IT - Software": 6.33,
+        "Aerospace & Defense": 6.07,
+        "Electrical Equipment": 5.09,
+        "Food Products": 5.01,
+        "Consumer Durables": 4.41,
+        "Others": 18.88
+      },
+      "asset_allocation": {
+        "Equity & Equity Related Holdings": 99.85,
+        "Short Term Debt & Net Current Assets": 0.15
+      },
+      "category": "Exchange Traded Fund (ETF)"
+    },
+    {
+      "fund_name": "Angel One Nifty 1D Rate Liquid ETF - Growth",
+      "scheme_type": "An open-ended Exchange Traded Fund replicating/tracking Nifty 1D Rate Index. A relatively low interest rate risk and relatively low credit risk scheme",
+      "investment_objective": "The investment objective of the Scheme is to seek to provide current income, commensurate with low risk while providing a high level of liquidity through a portfolio of Tri-Party Repo on Government Securities or T-bills / Repo & Reverse Repo. The Scheme will provide returns before expenses, that track the total returns of Nifty 1D Rate Index, subject to tracking errors. However, there is no guarantee or assurance that the investment objective of the Scheme would be achieved.",
+      "benchmark": "Nifty 1D Rate Index",
+      "inception_date": "25th March 2025",
+      "option": "Growth",
+      "isin": "INF1J2R01056",
+      "nav": 1045.1369,
+      "nav_date": "30th January, 2026",
+      "aum_crores": 273.85,
+      "monthly_avg_aum": 245.94,
+      "expense_ratio": 0.27,
+      "fund_managers": [
+        {
+          "name": "Mr. Mehul Dama",
+          "managing_since": "March 2025",
+          "experience": "19 years"
+        },
+        {
+          "name": "Mr. Kewal Shah",
+          "managing_since": "March 2025",
+          "experience": "10 years"
+        }
+      ],
+      "debt_indicators": {
+        "modified_duration": "1 day",
+        "macaulay_duration": "1 day",
+        "residual_maturity": "1 day",
+        "annualised_portfolio_ytm": 5.36
+      },
+      "risk_metrics": {
+        "tracking_error": 0.04
+      },
+      "risk_level": "Low",
+      "instrument_composition": {
+        "Short Term Debt (TREPS)": 99.81,
+        "Net Current Asset": 0.19
+      },
+      "category": "Exchange Traded Fund (ETF)"
+    },
+    {
+      "fund_name": "Angel One Nifty Total Market Index Fund - Direct Plan - Growth Option",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "benchmark": "Nifty Total Market TRI",
+      "inception_date": "28th February 2025",
+      "returns": [
+        {
+          "period": "6M",
+          "fund_return": 0.9,
+          "benchmark_return": 1.2,
+          "additional_benchmark_return": 5.26
+        },
+        {
+          "period": "SI",
+          "fund_return": 17.81,
+          "benchmark_return": 18.26,
+          "additional_benchmark_return": 17.02
+        }
+      ],
+      "investment_value_of_10000": [
+        {
+          "period": "6M",
+          "fund_value": 10045,
+          "benchmark_value": 10060,
+          "additional_benchmark_value": 10264
+        },
+        {
+          "period": "SI",
+          "fund_value": 11639,
+          "benchmark_value": 11681,
+          "additional_benchmark_value": 11567
+        }
+      ]
+    },
+    {
+      "fund_name": "Angel One Nifty Total Market Index Fund - Regular Plan - Growth Option",
+      "plan_type": "Regular",
+      "option": "Growth",
+      "benchmark": "Nifty Total Market TRI",
+      "inception_date": "28th February 2025",
+      "returns": [
+        {
+          "period": "6M",
+          "fund_return": 0.15,
+          "benchmark_return": 1.2,
+          "additional_benchmark_return": 5.26
+        },
+        {
+          "period": "SI",
+          "fund_return": 16.93,
+          "benchmark_return": 18.26,
+          "additional_benchmark_return": 17.02
+        }
+      ],
+      "investment_value_of_10000": [
+        {
+          "period": "6M",
+          "fund_value": 10008,
+          "benchmark_value": 10060,
+          "additional_benchmark_value": 10264
+        },
+        {
+          "period": "SI",
+          "fund_value": 11559,
+          "benchmark_value": 11681,
+          "additional_benchmark_value": 11567
+        }
+      ]
+    },
+    {
+      "fund_name": "Angel One Nifty 50 Index Fund - Direct Plan - Growth Option",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "benchmark": "Nifty 50 TRI",
+      "inception_date": "22nd May 2025",
+      "returns": [
+        {
+          "period": "6M",
+          "fund_return": 4.99,
+          "benchmark_return": 5.26,
+          "additional_benchmark_return": 3.39
+        },
+        {
+          "period": "SI",
+          "fund_return": 5.24,
+          "benchmark_return": 5.63,
+          "additional_benchmark_return": 3.82
+        }
+      ],
+      "investment_value_of_10000": [
+        {
+          "period": "6M",
+          "fund_value": 10250,
+          "benchmark_value": 10264,
+          "additional_benchmark_value": 10170
+        },
+        {
+          "period": "SI",
+          "fund_value": 10363,
+          "benchmark_value": 10390,
+          "additional_benchmark_value": 10265
+        }
+      ]
+    },
+    {
+      "fund_name": "Angel One Nifty 50 Index Fund - Regular Plan - Growth Option",
+      "plan_type": "Regular",
+      "option": "Growth",
+      "benchmark": "Nifty 50 TRI",
+      "inception_date": "22nd May 2025",
+      "returns": [
+        {
+          "period": "6M",
+          "fund_return": 4.48,
+          "benchmark_return": 5.26,
+          "additional_benchmark_return": 3.39
+        },
+        {
+          "period": "SI",
+          "fund_return": 4.72,
+          "benchmark_return": 5.63,
+          "additional_benchmark_return": 3.82
+        }
+      ],
+      "investment_value_of_10000": [
+        {
+          "period": "6M",
+          "fund_value": 10224,
+          "benchmark_value": 10264,
+          "additional_benchmark_value": 10170
+        },
+        {
+          "period": "SI",
+          "fund_value": 10327,
+          "benchmark_value": 10390,
+          "additional_benchmark_value": 10265
+        }
+      ]
+    },
+    {
+      "fund_name": "Angel One Nifty Total Market ETF (NSE SYMBOL: AONETOTAL)",
+      "benchmark": "Nifty Total Market TRI",
+      "inception_date": "28th February 2025",
+      "returns": [
+        {
+          "period": "6M",
+          "fund_return": 0.96,
+          "benchmark_return": 1.2,
+          "additional_benchmark_return": 5.26
+        },
+        {
+          "period": "SI",
+          "fund_return": 17.93,
+          "benchmark_return": 18.26,
+          "additional_benchmark_return": 17.02
+        }
+      ],
+      "investment_value_of_10000": [
+        {
+          "period": "6M",
+          "fund_value": 10048,
+          "benchmark_value": 10060,
+          "additional_benchmark_value": 10264
+        },
+        {
+          "period": "SI",
+          "fund_value": 11650,
+          "benchmark_value": 11681,
+          "additional_benchmark_value": 11567
+        }
+      ]
+    },
+    {
+      "fund_name": "Angel One Nifty 50 ETF (NSE SYMBOL: AONENIFTY)",
+      "benchmark": "Nifty 50 TRI",
+      "inception_date": "22nd May 2025",
+      "returns": [
+        {
+          "period": "6M",
+          "fund_return": 5.15,
+          "benchmark_return": 5.26,
+          "additional_benchmark_return": 3.39
+        },
+        {
+          "period": "SI",
+          "fund_return": 5.48,
+          "benchmark_return": 5.63,
+          "additional_benchmark_return": 3.82
+        }
+      ],
+      "investment_value_of_10000": [
+        {
+          "period": "6M",
+          "fund_value": 10258,
+          "benchmark_value": 10264,
+          "additional_benchmark_value": 10170
+        },
+        {
+          "period": "SI",
+          "fund_value": 10380,
+          "benchmark_value": 10390,
+          "additional_benchmark_value": 10265
+        }
+      ]
+    },
+    {
+      "fund_name": "Angel One Nifty 1D Rate Liquid ETF - Growth (NSE SYMBOL: AONELIQUID)",
+      "benchmark": "Nifty 1D Rate Index",
+      "inception_date": "25th March 2025",
+      "option": "Growth",
+      "fund_managers": [
+        {
+          "name": "Mr. Mehul Dama",
+          "managing_since": "since inception"
+        },
+        {
+          "name": "Mr. Kewal Shah",
+          "managing_since": "since inception"
+        }
+      ],
+      "returns": [
+        {
+          "period": "7 Days",
+          "fund_return": 4.95,
+          "benchmark_return": 5.15,
+          "additional_benchmark_return": 4.39
+        },
+        {
+          "period": "15 Days",
+          "fund_return": 5.04,
+          "benchmark_return": 5.22,
+          "additional_benchmark_return": 3.28
+        },
+        {
+          "period": "30 Days",
+          "fund_return": 5.02,
+          "benchmark_return": 5.2,
+          "additional_benchmark_return": 2.98
+        },
+        {
+          "period": "6 Months",
+          "fund_return": 5.13,
+          "benchmark_return": 5.37,
+          "additional_benchmark_return": 5.11
+        },
+        {
+          "period": "SI",
+          "fund_return": 5.3,
+          "benchmark_return": 5.55,
+          "additional_benchmark_return": 6.34
+        }
+      ]
+    }
+  ],
+  "amc_info": {
+    "amc_name": "Angel One Asset Management Company Limited",
+    "factsheet_date": "31st January, 2026",
+    "registered_office": "G1, Ground Floor, Ackruti Trade Centre, Road No. 7, Kondivita, MIDC, Andheri East, Mumbai - 400 093.",
+    "website": "www.angelonemf.com"
+  },
+  "pages_processed": 25,
+  "source_pdf": "Factsheet-Angel-One-Mutual-Fund-Schemes-Jan-2026.pdf",
+  "amc_slug": "angel-one",
+  "extracted_at": "2026-02-25T16:29:24"
+}
