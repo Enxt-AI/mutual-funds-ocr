@@ -1,0 +1,3474 @@
+{
+  "schemes": [
+    {
+      "fund_name": "Helios Flexi Cap Fund",
+      "fund_type": "Open-ended",
+      "scheme_type": "Open-ended dynamic equity scheme investing across large cap, mid cap & small cap stocks",
+      "category": "Flexi Cap Fund",
+      "investment_objective": "Long term Wealth creation. Investment predominantly in equity and equity related instruments across large cap, mid cap and small cap stocks.",
+      "benchmark": "Nifty 500 Total Return Index (TRI)",
+      "risk_level": "Very High",
+      "inception_date": "13th November 2023",
+      "plans_offered": [
+        "Direct Plan",
+        "Regular Plan"
+      ],
+      "nav_data": [
+        {
+          "plan_type": "Regular Plan",
+          "option": "IDCW Option",
+          "nav": 14.37
+        },
+        {
+          "plan_type": "Regular Plan",
+          "option": "Growth Option",
+          "nav": 14.37
+        },
+        {
+          "plan_type": "Direct Plan",
+          "option": "IDCW Option",
+          "nav": 14.84
+        },
+        {
+          "plan_type": "Direct Plan",
+          "option": "Growth Option",
+          "nav": 14.84
+        }
+      ],
+      "nav_date": "January 30, 2026",
+      "aum_crores": 5939.87,
+      "monthly_avg_aum": 5895.95,
+      "expense_ratios": [
+        {
+          "plan_type": "Regular Plan",
+          "ratio": 1.79
+        },
+        {
+          "plan_type": "Direct Plan",
+          "ratio": 0.45
+        }
+      ],
+      "exit_load": "(i) If units redeemed or switched out are upto 10% (limit) of the units purchased or switched in within 3 months from the date of allotment – Nil\n(ii) If units redeemed or switched out are over and above the limit within 3 months from the date of allotment – 1% of the applicable NAV\n(iii) If redeemed/switched out after 3 months from the date of allotment – Nil",
+      "min_lumpsum": 5000,
+      "min_additional": 1000,
+      "fund_managers": [
+        {
+          "name": "Mr. Alok Bahl",
+          "managing_since": "Since Inception",
+          "experience": "Overall 33 years of experience"
+        },
+        {
+          "name": "Mr. Pratik Singh",
+          "managing_since": "Since April 20, 2024",
+          "experience": "Overall 10 years of experience"
+        },
+        {
+          "name": "Alok Bahl",
+          "managing_since": "Since inception of the respective schemes"
+        },
+        {
+          "name": "Pratik Singh",
+          "managing_since": "April 20, 2024"
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "HDFC BANK LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 4.78
+        },
+        {
+          "name": "ICICI BANK LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 4.62
+        },
+        {
+          "name": "RELIANCE INDUSTRIES LTD.",
+          "sector": "OIL, GAS & CONSUMABLE FUELS",
+          "weight_pct": 4.52
+        },
+        {
+          "name": "ADANI PORTS AND SPECIAL ECONOMIC ZONE LTD.",
+          "sector": "SERVICES",
+          "weight_pct": 4.03
+        },
+        {
+          "name": "ETERNAL LTD.",
+          "sector": "CONSUMER SERVICES",
+          "weight_pct": 3.97
+        },
+        {
+          "name": "BHARAT ELECTRONICS LTD.",
+          "sector": "CAPITAL GOODS",
+          "weight_pct": 2.92
+        },
+        {
+          "name": "HINDUSTAN PETROLEUM CORPORATION LTD.",
+          "sector": "OIL, GAS & CONSUMABLE FUELS",
+          "weight_pct": 2.88
+        },
+        {
+          "name": "ONE 97 COMMUNICATIONS LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 2.87
+        },
+        {
+          "name": "BHARTI AIRTEL LTD.",
+          "sector": "TELECOMMUNICATION",
+          "weight_pct": 2.83
+        },
+        {
+          "name": "LARSEN & TOUBRO LTD.",
+          "sector": "CONSTRUCTION",
+          "weight_pct": 2.79
+        },
+        {
+          "name": "STATE BANK OF INDIA",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 2.67
+        },
+        {
+          "name": "BAJAJ FINANCE LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 2.6
+        },
+        {
+          "name": "KOTAK MAHINDRA BANK LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 2.55
+        },
+        {
+          "name": "SHRIRAM FINANCE LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 2.24
+        },
+        {
+          "name": "ICICI PRUDENTIAL ASSET MANAGEMENT COMPANY LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 2.07
+        },
+        {
+          "name": "HERO MOTOCORP LTD.",
+          "sector": "AUTOMOBILE AND AUTO COMPONENTS",
+          "weight_pct": 2.06
+        },
+        {
+          "name": "MULTI COMMODITY EXCHANGE OF INDIA LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 1.89
+        },
+        {
+          "name": "360 ONE WAM LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 1.67
+        },
+        {
+          "name": "DELHIVERY LTD.",
+          "sector": "SERVICES",
+          "weight_pct": 1.62
+        },
+        {
+          "name": "SYRMA SGS TECHNOLOGY LTD.",
+          "sector": "CAPITAL GOODS",
+          "weight_pct": 1.56
+        },
+        {
+          "name": "CARTRADE TECH LTD.",
+          "sector": "CONSUMER SERVICES",
+          "weight_pct": 1.54
+        },
+        {
+          "name": "CUMMINS INDIA LTD.",
+          "sector": "CAPITAL GOODS",
+          "weight_pct": 1.49
+        },
+        {
+          "name": "ATHER ENERGY LTD.",
+          "sector": "AUTOMOBILE AND AUTO COMPONENTS",
+          "weight_pct": 1.48
+        },
+        {
+          "name": "TORRENT PHARMACEUTICALS LTD.",
+          "sector": "HEALTHCARE",
+          "weight_pct": 1.47
+        },
+        {
+          "name": "MOTILAL OSWAL FINANCIAL SERVICES LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 1.47
+        },
+        {
+          "name": "KPIT TECHNOLOGIES LTD.",
+          "sector": "INFORMATION TECHNOLOGY",
+          "weight_pct": 1.45
+        },
+        {
+          "name": "PB FINTECH LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 1.44
+        },
+        {
+          "name": "PHYSICSWALLAH LTD.",
+          "sector": "CONSUMER SERVICES",
+          "weight_pct": 1.39
+        },
+        {
+          "name": "FORTIS HEALTHCARE LTD.",
+          "sector": "HEALTHCARE",
+          "weight_pct": 1.39
+        },
+        {
+          "name": "PNB HOUSING FINANCE LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 1.27
+        },
+        {
+          "name": "REC LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 1.24
+        },
+        {
+          "name": "INDIAN OIL CORPORATION LTD.",
+          "sector": "OIL, GAS & CONSUMABLE FUELS",
+          "weight_pct": 1.23
+        },
+        {
+          "name": "VARUN BEVERAGES LTD.",
+          "sector": "FAST MOVING CONSUMER GOODS",
+          "weight_pct": 1.19
+        },
+        {
+          "name": "CHOLAMANDALAM INVESTMENT & FINANCE CO. LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 1.13
+        },
+        {
+          "name": "ABB INDIA LTD.",
+          "sector": "CAPITAL GOODS",
+          "weight_pct": 1.1
+        },
+        {
+          "name": "NBCC (INDIA) LTD.",
+          "sector": "CONSTRUCTION",
+          "weight_pct": 1.09
+        },
+        {
+          "name": "THE PHOENIX MILLS LTD.",
+          "sector": "REALTY",
+          "weight_pct": 1.06
+        },
+        {
+          "name": "JAIN RESOURCE RECYCLING LTD.",
+          "sector": "METALS & MINING",
+          "weight_pct": 1.06
+        },
+        {
+          "name": "MARICO LTD.",
+          "sector": "FAST MOVING CONSUMER GOODS",
+          "weight_pct": 1.05
+        },
+        {
+          "name": "DLF LTD.",
+          "sector": "REALTY",
+          "weight_pct": 1.02
+        },
+        {
+          "name": "NTPC LTD.",
+          "sector": "POWER",
+          "weight_pct": 0.97
+        },
+        {
+          "name": "MUTHOOT FINANCE LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 0.96
+        },
+        {
+          "name": "VISHAL MEGA MART LTD.",
+          "sector": "CONSUMER SERVICES",
+          "weight_pct": 0.91
+        },
+        {
+          "name": "SWIGGY LTD.",
+          "sector": "CONSUMER SERVICES",
+          "weight_pct": 0.9
+        },
+        {
+          "name": "THE INDIAN HOTELS COMPANY LTD.",
+          "sector": "CONSUMER SERVICES",
+          "weight_pct": 0.86
+        },
+        {
+          "name": "POWER GRID CORPORATION OF INDIA LTD.",
+          "sector": "POWER",
+          "weight_pct": 0.83
+        },
+        {
+          "name": "APOLLO HOSPITALS ENTERPRISE LTD.",
+          "sector": "HEALTHCARE",
+          "weight_pct": 0.82
+        },
+        {
+          "name": "HDFC ASSET MANAGEMENT CO. LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 0.81
+        },
+        {
+          "name": "BAJAJ AUTO LTD.",
+          "sector": "AUTOMOBILE AND AUTO COMPONENTS",
+          "weight_pct": 0.8
+        },
+        {
+          "name": "HITACHI ENERGY INDIA LTD.",
+          "sector": "CAPITAL GOODS",
+          "weight_pct": 0.79
+        },
+        {
+          "name": "ADANI ENERGY SOLUTIONS LTD.",
+          "sector": "POWER",
+          "weight_pct": 0.78
+        },
+        {
+          "name": "SIEMENS ENERGY INDIA LTD.",
+          "sector": "CAPITAL GOODS",
+          "weight_pct": 0.76
+        },
+        {
+          "name": "INDEGENE LTD.",
+          "sector": "HEALTHCARE",
+          "weight_pct": 0.74
+        },
+        {
+          "name": "LEMON TREE HOTELS LTD.",
+          "sector": "CONSUMER SERVICES",
+          "weight_pct": 0.71
+        },
+        {
+          "name": "K.P.R. MILL LTD.",
+          "sector": "TEXTILES",
+          "weight_pct": 0.63
+        },
+        {
+          "name": "TRAVEL FOOD SERVICES LTD.",
+          "sector": "CONSUMER SERVICES",
+          "weight_pct": 0.57
+        },
+        {
+          "name": "GOKALDAS EXPORTS LTD.",
+          "sector": "TEXTILES",
+          "weight_pct": 0.56
+        },
+        {
+          "name": "ITC HOTELS LTD.",
+          "sector": "CONSUMER SERVICES",
+          "weight_pct": 0.46
+        },
+        {
+          "name": "AADHAR HOUSING FINANCE LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 0.44
+        },
+        {
+          "name": "OSWAL PUMPS LTD.",
+          "sector": "CAPITAL GOODS",
+          "weight_pct": 0.34
+        },
+        {
+          "name": "V2 RETAIL LTD.",
+          "sector": "CONSUMER SERVICES",
+          "weight_pct": 0.31
+        },
+        {
+          "name": "SAREGAMA INDIA LTD.",
+          "sector": "MEDIA, ENTERTAINMENT & PUBLICATION",
+          "weight_pct": 0.3
+        },
+        {
+          "name": "ACUTAAS CHEMICALS LTD.",
+          "sector": "HEALTHCARE",
+          "weight_pct": 0.26
+        },
+        {
+          "name": "INDIA SHELTER FINANCE CORPORATION LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 0.25
+        }
+      ],
+      "other_holdings": [
+        {
+          "name": "TRIPARTY REPO",
+          "weight_pct": 1.94
+        },
+        {
+          "name": "CASH, CASH EQUIVALENTS AND OTHERS",
+          "weight_pct": -0.4
+        }
+      ],
+      "asset_allocation": {
+        "Equity": 98.46,
+        "Cash & Equivalents": 1.54,
+        "Debt": 1.94
+      },
+      "portfolio_turnover": 0.31,
+      "portfolio_stats": {
+        "equity_style": "Large Blend, Mid Blend"
+      },
+      "additional_info": {
+        "face_value_per_unit": 10,
+        "benchmark_risk_level": "Very High"
+      },
+      "sector_allocation": {
+        "FINANCIAL SERVICES": 36.97,
+        "CONSUMER SERVICES": 11.62,
+        "CAPITAL GOODS": 8.96,
+        "OIL, GAS & CONSUMABLE FUELS": 8.63,
+        "SERVICES": 5.65,
+        "HEALTHCARE": 4.68,
+        "AUTOMOBILE AND AUTO COMPONENTS": 4.34,
+        "CONSTRUCTION": 3.88,
+        "TELECOMMUNICATION": 2.83,
+        "POWER": 2.58,
+        "FAST MOVING CONSUMER GOODS": 2.24,
+        "REALTY": 2.08,
+        "TRIPARTY REPO": 1.94,
+        "INFORMATION TECHNOLOGY": 1.45,
+        "TEXTILES": 1.19,
+        "METALS & MINING": 1.06,
+        "MEDIA, ENTERTAINMENT & PUBLICATION": 0.3,
+        "CASH, CASH EQUIVALENTS AND OTHERS": -0.4
+      },
+      "market_cap_allocation": {
+        "Large Cap": 60.87,
+        "Mid Cap": 22.04,
+        "Small Cap": 15.55
+      }
+    },
+    {
+      "fund_name": "Helios Financial Services Fund",
+      "scheme_type": "An open-ended equity scheme investing in financial service sector.",
+      "category": "Sectoral Fund",
+      "investment_objective": "To generate long-term capital appreciation from a portfolio that is invested predominantly in equity and equity related securities of companies engaged in financial services. However, there is no assurance that the investment objective of the Scheme will be achieved.",
+      "benchmark": "NIFTY Financial Services Total Return Index(TRI)",
+      "inception_date": "24th June 2024",
+      "plans_offered": "Direct and Regular Plan, each with Growth and IDCW Option (Re-investment, Transfer, Pay-out Sub-Option)",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "nav": 11.9,
+      "nav_date": "January 30, 2026",
+      "aum_crores": 207.0,
+      "monthly_avg_aum": 209.82,
+      "expense_ratio": 0.86,
+      "exit_load": "(i) If units redeemed or switched out are upto 10% (limit) of the units purchased or switched in within 3 months from the date of allotment – Nil (ii) If units redeemed or switched out are over and above the limit within 3 months from the date of allotment – 1% of the applicable NAV (iii) If redeemed/switched out after 3 months from the date of allotment – Nil",
+      "min_lumpsum": 5000,
+      "min_additional": 1000,
+      "fund_managers": [
+        {
+          "name": "Mr. Alok Bahl",
+          "managing_since": "Since Inception",
+          "experience": "Overall 33 years of experience"
+        },
+        {
+          "name": "Mr. Pratik Singh",
+          "managing_since": "Since Inception",
+          "experience": "Overall 10 years of experience"
+        },
+        {
+          "name": "Alok Bahl",
+          "managing_since": "Since inception of the respective schemes"
+        },
+        {
+          "name": "Pratik Singh",
+          "managing_since": "April 20, 2024"
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "HDFC BANK LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 16.9
+        },
+        {
+          "name": "ICICI BANK LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 13.18
+        },
+        {
+          "name": "BAJAJ FINANCE LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 5.74
+        },
+        {
+          "name": "STATE BANK OF INDIA",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 5.65
+        },
+        {
+          "name": "ONE 97 COMMUNICATIONS LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 5.19
+        },
+        {
+          "name": "KOTAK MAHINDRA BANK LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 4.6
+        },
+        {
+          "name": "HDFC ASSET MANAGEMENT CO. LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 4.04
+        },
+        {
+          "name": "MULTI COMMODITY EXCHANGE OF INDIA LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 3.86
+        },
+        {
+          "name": "MUTHOOT FINANCE LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 3.76
+        },
+        {
+          "name": "SHRIRAM FINANCE LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 3.71
+        },
+        {
+          "name": "PNB HOUSING FINANCE LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 3.47
+        },
+        {
+          "name": "REC LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 3.34
+        },
+        {
+          "name": "MOTILAL OSWAL FINANCIAL SERVICES LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 3.28
+        },
+        {
+          "name": "COMPUTER AGE MANAGEMENT SERVICES LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 2.62
+        },
+        {
+          "name": "PB FINTECH LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 2.45
+        },
+        {
+          "name": "CHOLAMANDALAM INVESTMENT & FINANCE CO. LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 2.23
+        },
+        {
+          "name": "360 ONE WAM LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 1.75
+        },
+        {
+          "name": "ICICI PRUDENTIAL ASSET MANAGEMENT COMPANY LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 1.67
+        },
+        {
+          "name": "INDIA SHELTER FINANCE CORPORATION LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 1.66
+        },
+        {
+          "name": "ICICI LOMBARD GENERAL INSURANCE COMPANY LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 1.5
+        },
+        {
+          "name": "ANGEL ONE LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 1.43
+        },
+        {
+          "name": "AAVAS FINANCIERS LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 1.28
+        },
+        {
+          "name": "BILLIONBRAINS GARAGE VENTURES LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 0.8
+        },
+        {
+          "name": "EDELWEISS FINANCIAL SERVICES LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 0.72
+        },
+        {
+          "name": "AADHAR HOUSING FINANCE LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 0.67
+        },
+        {
+          "name": "IDFC FIRST BANK LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 0.53
+        }
+      ],
+      "asset_allocation": {
+        "Equity": 96.03,
+        "Debt": 0.98,
+        "Cash & Equivalents": 2.99,
+        "Large Cap": 61.48,
+        "Mid Cap": 22.7,
+        "Small Cap": 11.85,
+        "Triparty Repo": 2.99,
+        "Cash, Cash Equivalents and Others": 0.98
+      },
+      "portfolio_turnover": 0.31,
+      "portfolio_stats": {
+        "equity_style": "Large & Mid Cap Blend"
+      },
+      "additional_info": {
+        "face_value_per_unit": 10,
+        "entry_load": "NA",
+        "expense_ratio_details": [
+          {
+            "plan": "Regular Plan",
+            "ratio": 2.42
+          },
+          {
+            "plan": "Direct Plan",
+            "ratio": 0.86
+          }
+        ],
+        "nav_details": {
+          "date": "January 30, 2026",
+          "plans": [
+            {
+              "plan": "Regular Plan - IDCW Option",
+              "nav": 11.6
+            },
+            {
+              "plan": "Regular Plan - Growth Option",
+              "nav": 11.6
+            },
+            {
+              "plan": "Direct Plan - IDCW Option",
+              "nav": 11.9
+            },
+            {
+              "plan": "Direct Plan - Growth Option",
+              "nav": 11.9
+            }
+          ]
+        },
+        "portfolio_turnover_details": {
+          "equity_turnover_times": 0.31,
+          "total_turnover_times": 0.31
+        },
+        "style_box": {
+          "market_cap": [
+            "Large",
+            "Mid"
+          ],
+          "strategy": "Blend"
+        },
+        "benchmark_risk_level": "Very High"
+      },
+      "sector_allocation": {
+        "FINANCIAL SERVICES": 96.03,
+        "CASH, CASH EQUIVALENTS AND OTHERS": 2.99,
+        "TRIPARTY REPO": 0.98
+      },
+      "market_cap_allocation": {
+        "Large Cap": 61.48,
+        "Mid Cap": 22.7,
+        "Small Cap": 11.85
+      },
+      "risk_level": "Very High"
+    },
+    {
+      "fund_name": "Helios Large & Mid Cap Fund",
+      "fund_type": "open-ended",
+      "scheme_type": "An open-ended equity scheme investing in both large cap and mid cap stocks.",
+      "category": "Large & Mid Cap Fund",
+      "investment_objective": "The investment objective of the scheme is to generate long-term capital appreciation from a portfolio that is invested predominantly in equity and equity related securities of large cap and mid cap companies. However, there is no assurance that the investment objective of the Scheme will be achieved.",
+      "benchmark": "NIFTY Large Midcap 250 Total Return Index (TRI)",
+      "inception_date": "30th October 2024",
+      "plans_offered": "Direct and Regular Plan, each with Growth and IDCW Option (Re-investment, Transfer, Pay-out Sub-Option)",
+      "plan_type": "Regular",
+      "option": "IDCW",
+      "nav": 10.62,
+      "nav_date": "January 30, 2026",
+      "aum_crores": 681.24,
+      "monthly_avg_aum": 673.09,
+      "expense_ratio": 2.33,
+      "exit_load": "i) If units redeemed or switched out are upto 10% (limit) of the units purchased or switched in within 3 months from the date of allotment – Nil\nii) If units redeemed or switched out are over and above the limit within 3 months from the date of allotment – 1% of the applicable NAV\niii) If redeemed/switched out after 3 months from the date of allotment – Nil",
+      "min_lumpsum": 5000,
+      "min_additional": 1000,
+      "face_value": 10,
+      "fund_managers": [
+        {
+          "name": "Mr. Alok Bahl",
+          "managing_since": "Since Inception",
+          "experience": "Overall 33 years of experience"
+        },
+        {
+          "name": "Mr. Pratik Singh",
+          "managing_since": "Since Inception",
+          "experience": "Overall 10 years of experience"
+        },
+        {
+          "name": "Alok Bahl",
+          "managing_since": "Since inception of the respective schemes"
+        },
+        {
+          "name": "Pratik Singh",
+          "managing_since": "Since inception of the respective schemes"
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "HDFC BANK LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 4.93
+        },
+        {
+          "name": "ICICI BANK LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 4.8
+        },
+        {
+          "name": "RELIANCE INDUSTRIES LTD.",
+          "sector": "OIL, GAS & CONSUMABLE FUELS",
+          "weight_pct": 4.37
+        },
+        {
+          "name": "ETERNAL LTD.",
+          "sector": "CONSUMER SERVICES",
+          "weight_pct": 4.15
+        },
+        {
+          "name": "ADANI PORTS AND SPECIAL ECONOMIC ZONE LTD.",
+          "sector": "SERVICES",
+          "weight_pct": 4.01
+        },
+        {
+          "name": "LARSEN & TOUBRO LTD.",
+          "sector": "CONSTRUCTION",
+          "weight_pct": 3.66
+        },
+        {
+          "name": "HINDUSTAN PETROLEUM CORPORATION LTD.",
+          "sector": "OIL, GAS & CONSUMABLE FUELS",
+          "weight_pct": 3.27
+        },
+        {
+          "name": "BHARTI AIRTEL LTD.",
+          "sector": "TELECOMMUNICATION",
+          "weight_pct": 2.91
+        },
+        {
+          "name": "ONE 97 COMMUNICATIONS LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 2.86
+        },
+        {
+          "name": "BHARAT ELECTRONICS LTD.",
+          "sector": "CAPITAL GOODS",
+          "weight_pct": 2.78
+        },
+        {
+          "name": "BAJAJ FINANCE LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 2.65
+        },
+        {
+          "name": "STATE BANK OF INDIA",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 2.63
+        },
+        {
+          "name": "KOTAK MAHINDRA BANK LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 2.53
+        },
+        {
+          "name": "SHRIRAM FINANCE LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 2.5
+        },
+        {
+          "name": "MULTI COMMODITY EXCHANGE OF INDIA LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 2.34
+        },
+        {
+          "name": "ICICI PRUDENTIAL ASSET MANAGEMENT COMPANY LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 2.33
+        },
+        {
+          "name": "PB FINTECH LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 2.1
+        },
+        {
+          "name": "MARICO LTD.",
+          "sector": "FAST MOVING CONSUMER GOODS",
+          "weight_pct": 2.0
+        },
+        {
+          "name": "MUTHOOT FINANCE LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 1.98
+        },
+        {
+          "name": "THE PHOENIX MILLS LTD.",
+          "sector": "REALTY",
+          "weight_pct": 1.86
+        },
+        {
+          "name": "FORTIS HEALTHCARE LTD.",
+          "sector": "HEALTHCARE",
+          "weight_pct": 1.8
+        },
+        {
+          "name": "HERO MOTOCORP LTD.",
+          "sector": "AUTOMOBILE AND AUTO COMPONENTS",
+          "weight_pct": 1.77
+        },
+        {
+          "name": "CUMMINS INDIA LTD.",
+          "sector": "CAPITAL GOODS",
+          "weight_pct": 1.72
+        },
+        {
+          "name": "KPIT TECHNOLOGIES LTD.",
+          "sector": "INFORMATION TECHNOLOGY",
+          "weight_pct": 1.54
+        },
+        {
+          "name": "HDFC ASSET MANAGEMENT CO. LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 1.54
+        },
+        {
+          "name": "HITACHI ENERGY INDIA LTD.",
+          "sector": "CAPITAL GOODS",
+          "weight_pct": 1.51
+        },
+        {
+          "name": "DLF LTD.",
+          "sector": "REALTY",
+          "weight_pct": 1.49
+        },
+        {
+          "name": "TORRENT PHARMACEUTICALS LTD.",
+          "sector": "HEALTHCARE",
+          "weight_pct": 1.47
+        },
+        {
+          "name": "MOTILAL OSWAL FINANCIAL SERVICES LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 1.42
+        },
+        {
+          "name": "VISHAL MEGA MART LTD.",
+          "sector": "CONSUMER SERVICES",
+          "weight_pct": 1.41
+        },
+        {
+          "name": "BILLIONBRAINS GARAGE VENTURES LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 1.34
+        },
+        {
+          "name": "PHYSICSWALLAH LTD.",
+          "sector": "CONSUMER SERVICES",
+          "weight_pct": 1.31
+        },
+        {
+          "name": "REC LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 1.23
+        },
+        {
+          "name": "APOLLO HOSPITALS ENTERPRISE LTD.",
+          "sector": "HEALTHCARE",
+          "weight_pct": 1.21
+        },
+        {
+          "name": "UNO MINDA LTD.",
+          "sector": "AUTOMOBILE AND AUTO COMPONENTS",
+          "weight_pct": 1.18
+        },
+        {
+          "name": "INDIAN OIL CORPORATION LTD.",
+          "sector": "OIL, GAS & CONSUMABLE FUELS",
+          "weight_pct": 1.18
+        },
+        {
+          "name": "APL APOLLO TUBES LTD.",
+          "sector": "CAPITAL GOODS",
+          "weight_pct": 1.18
+        },
+        {
+          "name": "SWIGGY LTD.",
+          "sector": "CONSUMER SERVICES",
+          "weight_pct": 1.17
+        },
+        {
+          "name": "360 ONE WAM LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 1.09
+        },
+        {
+          "name": "NIPPON LIFE INDIA ASSET MANAGEMENT LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 0.98
+        },
+        {
+          "name": "THE INDIAN HOTELS COMPANY LTD.",
+          "sector": "CONSUMER SERVICES",
+          "weight_pct": 0.95
+        },
+        {
+          "name": "ENDURANCE TECHNOLOGIES LTD.",
+          "sector": "AUTOMOBILE AND AUTO COMPONENTS",
+          "weight_pct": 0.94
+        },
+        {
+          "name": "VARUN BEVERAGES LTD.",
+          "sector": "FAST MOVING CONSUMER GOODS",
+          "weight_pct": 0.8
+        },
+        {
+          "name": "SIEMENS ENERGY INDIA LTD.",
+          "sector": "CAPITAL GOODS",
+          "weight_pct": 0.8
+        },
+        {
+          "name": "NTPC LTD.",
+          "sector": "POWER",
+          "weight_pct": 0.79
+        },
+        {
+          "name": "APAR INDUSTRIES LTD.",
+          "sector": "CAPITAL GOODS",
+          "weight_pct": 0.75
+        },
+        {
+          "name": "K.P.R. MILL LTD.",
+          "sector": "TEXTILES",
+          "weight_pct": 0.71
+        },
+        {
+          "name": "ICICI LOMBARD GENERAL INSURANCE COMPANY LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 0.7
+        },
+        {
+          "name": "ADITYA BIRLA CAPITAL LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 0.67
+        },
+        {
+          "name": "SCHAEFFLER INDIA LTD.",
+          "sector": "AUTOMOBILE AND AUTO COMPONENTS",
+          "weight_pct": 0.65
+        },
+        {
+          "name": "ADANI ENERGY SOLUTIONS LTD.",
+          "sector": "POWER",
+          "weight_pct": 0.61
+        },
+        {
+          "name": "ABB INDIA LTD.",
+          "sector": "CAPITAL GOODS",
+          "weight_pct": 0.61
+        },
+        {
+          "name": "BAJAJ AUTO LTD.",
+          "sector": "AUTOMOBILE AND AUTO COMPONENTS",
+          "weight_pct": 0.6
+        },
+        {
+          "name": "GLAXOSMITHKLINE PHARMACEUTICALS LTD.",
+          "sector": "HEALTHCARE",
+          "weight_pct": 0.46
+        },
+        {
+          "name": "POWER GRID CORPORATION OF INDIA LTD.",
+          "sector": "POWER",
+          "weight_pct": 0.39
+        }
+      ],
+      "debt_holdings": [
+        {
+          "name": "TRIPARTY REPO",
+          "weight_pct": 1.84
+        }
+      ],
+      "asset_allocation": {
+        "Equity": 98.63,
+        "Debt": 1.84,
+        "Cash & Equivalents": -0.47
+      },
+      "portfolio_turnover": 0.24,
+      "portfolio_stats": {
+        "equity_style": "Large & Mid Cap Blend"
+      },
+      "sector_allocation": {
+        "FINANCIAL SERVICES": 40.62,
+        "CAPITAL GOODS": 9.35,
+        "CONSUMER SERVICES": 8.99,
+        "OIL, GAS & CONSUMABLE FUELS": 8.82,
+        "AUTOMOBILE AND AUTO COMPONENTS": 5.14,
+        "HEALTHCARE": 4.94,
+        "SERVICES": 4.01,
+        "CONSTRUCTION": 3.66,
+        "REALTY": 3.35,
+        "TELECOMMUNICATION": 2.91,
+        "FAST MOVING CONSUMER GOODS": 2.8,
+        "TRIPARTY REPO": 1.84,
+        "POWER": 1.79,
+        "INFORMATION TECHNOLOGY": 1.54,
+        "TEXTILES": 0.71,
+        "CASH, CASH EQUIVALENTS AND OTHERS": -0.47
+      },
+      "market_cap_allocation": {
+        "Large Cap": 62.16,
+        "Mid Cap": 34.93,
+        "Small Cap": 1.54,
+        "Triparty Repo": 1.84,
+        "Cash, Cash Equivalents and Others": -0.47
+      },
+      "risk_level": "Very High",
+      "additional_info": {
+        "benchmark_risk_level": "Very High"
+      }
+    },
+    {
+      "fund_name": "Helios Mid Cap Fund",
+      "fund_type": "open-ended",
+      "scheme_type": "Mid Cap Fund-An open-ended equity scheme predominantly investing in mid cap stocks.",
+      "category": "Mid Cap Fund",
+      "investment_objective": "The investment objective of the scheme is to generate long-term capital appreciation from a portfolio that is invested predominantly in equity and equity related securities of mid cap companies. However, there is no assurance that the investment objective of the Scheme will be achieved.",
+      "benchmark": "NIFTY Midcap 150 Total Return Index (TRI)",
+      "inception_date": "13th March 2025",
+      "plans_offered": "Direct and Regular Plan, each with Growth and IDCW Option (Re-investment, Transfer, Pay-out Sub-Option)",
+      "plan_type": "Regular",
+      "option": "IDCW Option",
+      "nav": 11.97,
+      "nav_date": "January 30, 2026",
+      "aum_crores": 1169.54,
+      "monthly_avg_aum": 1156.43,
+      "expense_ratio": 2.14,
+      "exit_load": "i) If units redeemed or switched out are upto 10% (limit) of the units purchased or switched in within 3 months from the date of allotment – Nil (ii) If units redeemed or switched out are over and above the limit within 3 months from the date of allotment – 1% of the applicable NAV (iii) If redeemed/switched out after 3 months from the date of allotment – Nil",
+      "min_lumpsum": 5000,
+      "min_additional": 1000,
+      "fund_managers": [
+        {
+          "name": "Mr. Alok Bahl",
+          "managing_since": "Since Inception",
+          "experience": "Overall 33 years of experience"
+        },
+        {
+          "name": "Mr. Pratik Singh",
+          "managing_since": "Since Inception",
+          "experience": "Overall 10 years of experience"
+        },
+        {
+          "name": "Alok Bahl",
+          "managing_since": "Since inception of the respective schemes"
+        },
+        {
+          "name": "Pratik Singh",
+          "managing_since": "Since inception of the respective schemes"
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "MULTI COMMODITY EXCHANGE OF INDIA LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 2.98
+        },
+        {
+          "name": "IDFC FIRST BANK LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 2.97
+        },
+        {
+          "name": "FORTIS HEALTHCARE LTD.",
+          "sector": "HEALTHCARE",
+          "weight_pct": 2.92
+        },
+        {
+          "name": "PB FINTECH LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 2.88
+        },
+        {
+          "name": "MARICO LTD.",
+          "sector": "FAST MOVING CONSUMER GOODS",
+          "weight_pct": 2.81
+        },
+        {
+          "name": "THE PHOENIX MILLS LTD.",
+          "sector": "REALTY",
+          "weight_pct": 2.77
+        },
+        {
+          "name": "ESCORTS KUBOTA LTD.",
+          "sector": "CAPITAL GOODS",
+          "weight_pct": 2.77
+        },
+        {
+          "name": "UNO MINDA LTD.",
+          "sector": "AUTOMOBILE AND AUTO COMPONENTS",
+          "weight_pct": 2.75
+        },
+        {
+          "name": "NIPPON LIFE INDIA ASSET MANAGEMENT LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 2.73
+        },
+        {
+          "name": "GMR AIRPORTS LTD.",
+          "sector": "SERVICES",
+          "weight_pct": 2.72
+        },
+        {
+          "name": "HINDUSTAN PETROLEUM CORPORATION LTD.",
+          "sector": "OIL, GAS & CONSUMABLE FUELS",
+          "weight_pct": 2.71
+        },
+        {
+          "name": "360 ONE WAM LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 2.67
+        },
+        {
+          "name": "ONE 97 COMMUNICATIONS LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 2.63
+        },
+        {
+          "name": "HITACHI ENERGY INDIA LTD.",
+          "sector": "CAPITAL GOODS",
+          "weight_pct": 2.57
+        },
+        {
+          "name": "SUNDARAM FINANCE LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 2.54
+        },
+        {
+          "name": "REC LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 2.39
+        },
+        {
+          "name": "MOTILAL OSWAL FINANCIAL SERVICES LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 2.31
+        },
+        {
+          "name": "ADITYA BIRLA CAPITAL LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 2.27
+        },
+        {
+          "name": "VISHAL MEGA MART LTD.",
+          "sector": "CONSUMER SERVICES",
+          "weight_pct": 2.08
+        },
+        {
+          "name": "SWIGGY LTD.",
+          "sector": "CONSUMER SERVICES",
+          "weight_pct": 1.96
+        },
+        {
+          "name": "MUTHOOT FINANCE LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 1.89
+        },
+        {
+          "name": "APL APOLLO TUBES LTD.",
+          "sector": "CAPITAL GOODS",
+          "weight_pct": 1.84
+        },
+        {
+          "name": "CUMMINS INDIA LTD.",
+          "sector": "CAPITAL GOODS",
+          "weight_pct": 1.77
+        },
+        {
+          "name": "PHYSICSWALLAH LTD.",
+          "sector": "CONSUMER SERVICES",
+          "weight_pct": 1.72
+        },
+        {
+          "name": "HERO MOTOCORP LTD.",
+          "sector": "AUTOMOBILE AND AUTO COMPONENTS",
+          "weight_pct": 1.64
+        },
+        {
+          "name": "ENDURANCE TECHNOLOGIES LTD.",
+          "sector": "AUTOMOBILE AND AUTO COMPONENTS",
+          "weight_pct": 1.63
+        },
+        {
+          "name": "BILLIONBRAINS GARAGE VENTURES LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 1.62
+        },
+        {
+          "name": "JB CHEMICALS & PHARMACEUTICALS LTD.",
+          "sector": "HEALTHCARE",
+          "weight_pct": 1.59
+        },
+        {
+          "name": "DELHIVERY LTD.",
+          "sector": "SERVICES",
+          "weight_pct": 1.58
+        },
+        {
+          "name": "CITY UNION BANK LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 1.54
+        },
+        {
+          "name": "KPIT TECHNOLOGIES LTD.",
+          "sector": "INFORMATION TECHNOLOGY",
+          "weight_pct": 1.51
+        },
+        {
+          "name": "ATHER ENERGY LTD.",
+          "sector": "AUTOMOBILE AND AUTO COMPONENTS",
+          "weight_pct": 1.44
+        },
+        {
+          "name": "JAIN RESOURCE RECYCLING LTD.",
+          "sector": "METALS & MINING",
+          "weight_pct": 1.41
+        },
+        {
+          "name": "NBCC (INDIA) LTD.",
+          "sector": "CONSTRUCTION",
+          "weight_pct": 1.4
+        },
+        {
+          "name": "ACUTAAS CHEMICALS LTD.",
+          "sector": "HEALTHCARE",
+          "weight_pct": 1.38
+        },
+        {
+          "name": "PIRAMAL PHARMA LTD.",
+          "sector": "HEALTHCARE",
+          "weight_pct": 1.29
+        },
+        {
+          "name": "SYRMA SGS TECHNOLOGY LTD.",
+          "sector": "CAPITAL GOODS",
+          "weight_pct": 1.25
+        },
+        {
+          "name": "CARTRADE TECH LTD.",
+          "sector": "CONSUMER SERVICES",
+          "weight_pct": 1.25
+        },
+        {
+          "name": "ANGEL ONE LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 1.21
+        },
+        {
+          "name": "LEMON TREE HOTELS LTD.",
+          "sector": "CONSUMER SERVICES",
+          "weight_pct": 1.16
+        },
+        {
+          "name": "PNB HOUSING FINANCE LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 1.06
+        },
+        {
+          "name": "SCHAEFFLER INDIA LTD.",
+          "sector": "AUTOMOBILE AND AUTO COMPONENTS",
+          "weight_pct": 1.05
+        },
+        {
+          "name": "RAINBOW CHILDREN'S MEDICARE LTD.",
+          "sector": "HEALTHCARE",
+          "weight_pct": 1.04
+        },
+        {
+          "name": "EDELWEISS FINANCIAL SERVICES LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 0.99
+        },
+        {
+          "name": "ITC HOTELS LTD.",
+          "sector": "CONSUMER SERVICES",
+          "weight_pct": 0.98
+        },
+        {
+          "name": "INDEGENE LTD.",
+          "sector": "HEALTHCARE",
+          "weight_pct": 0.98
+        },
+        {
+          "name": "ZF COMMERCIAL VEHICLE CONTROL SYSTEMS INDIA LTD.",
+          "sector": "AUTOMOBILE AND AUTO COMPONENTS",
+          "weight_pct": 0.94
+        },
+        {
+          "name": "BLACK BOX LTD.",
+          "sector": "INFORMATION TECHNOLOGY",
+          "weight_pct": 0.9
+        },
+        {
+          "name": "COMPUTER AGE MANAGEMENT SERVICES LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 0.87
+        },
+        {
+          "name": "RADICO KHAITAN LTD.",
+          "sector": "FAST MOVING CONSUMER GOODS",
+          "weight_pct": 0.83
+        },
+        {
+          "name": "AADHAR HOUSING FINANCE LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 0.73
+        },
+        {
+          "name": "LEELA PALACES HOTELS & RESORTS LTD.",
+          "sector": "CONSUMER SERVICES",
+          "weight_pct": 0.72
+        },
+        {
+          "name": "K.P.R. MILL LTD.",
+          "sector": "TEXTILES",
+          "weight_pct": 0.72
+        },
+        {
+          "name": "ICICI LOMBARD GENERAL INSURANCE COMPANY LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 0.66
+        },
+        {
+          "name": "ETHOS LTD.",
+          "sector": "CONSUMER DURABLES",
+          "weight_pct": 0.61
+        },
+        {
+          "name": "TIPS MUSIC LTD.",
+          "sector": "MEDIA, ENTERTAINMENT & PUBLICATION",
+          "weight_pct": 0.5
+        },
+        {
+          "name": "PARK MEDI WORLD LTD.",
+          "sector": "HEALTHCARE",
+          "weight_pct": 0.45
+        },
+        {
+          "name": "GOKALDAS EXPORTS LTD.",
+          "sector": "TEXTILES",
+          "weight_pct": 0.45
+        },
+        {
+          "name": "GLAXOSMITHKLINE PHARMACEUTICALS LTD.",
+          "sector": "HEALTHCARE",
+          "weight_pct": 0.42
+        },
+        {
+          "name": "V2 RETAIL LTD.",
+          "sector": "CONSUMER SERVICES",
+          "weight_pct": 0.39
+        },
+        {
+          "name": "TRAVEL FOOD SERVICES LTD.",
+          "sector": "CONSUMER SERVICES",
+          "weight_pct": 0.36
+        },
+        {
+          "name": "MAX FINANCIAL SERVICES LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 0.29
+        },
+        {
+          "name": "BHARTI HEXACOM LTD.",
+          "sector": "TELECOMMUNICATION",
+          "weight_pct": 0.26
+        },
+        {
+          "name": "DR. LAL PATH LABS LTD.",
+          "sector": "HEALTHCARE",
+          "weight_pct": 0.22
+        },
+        {
+          "name": "APAR INDUSTRIES LTD.",
+          "sector": "CAPITAL GOODS",
+          "weight_pct": 0.2
+        },
+        {
+          "name": "ASK AUTOMOTIVE LTD.",
+          "sector": "AUTOMOBILE AND AUTO COMPONENTS",
+          "weight_pct": 0.09
+        }
+      ],
+      "debt_holdings": [
+        {
+          "name": "TRIPARTY REPO",
+          "instrument_type": "Money Market Instrument",
+          "weight_pct": 0.69
+        }
+      ],
+      "asset_allocation": {
+        "Equity": 99.26,
+        "Debt": 0.69,
+        "Cash & Equivalents": 0.05,
+        "Mid Cap": 64.65,
+        "Small Cap": 29.31,
+        "Large Cap": 5.3,
+        "Triparty Repo": 0.69,
+        "Cash, Cash Equivalents and Others": 0.05
+      },
+      "portfolio_turnover": 0.27,
+      "portfolio_stats": {
+        "equity_style": "Mid Blend"
+      },
+      "face_value_per_unit": 10,
+      "sector_allocation": {
+        "FINANCIAL SERVICES": 37.23,
+        "CONSUMER SERVICES": 10.62,
+        "CAPITAL GOODS": 10.4,
+        "HEALTHCARE": 10.29,
+        "AUTOMOBILE AND AUTO COMPONENTS": 9.54,
+        "SERVICES": 4.3,
+        "FAST MOVING CONSUMER GOODS": 3.64,
+        "REALTY": 2.77,
+        "OIL, GAS & CONSUMABLE FUELS": 2.71,
+        "INFORMATION TECHNOLOGY": 2.41,
+        "METALS & MINING": 1.41,
+        "CONSTRUCTION": 1.4,
+        "TEXTILES": 1.17,
+        "TRIPARTY REPO": 0.69,
+        "CONSUMER DURABLES": 0.61,
+        "MEDIA, ENTERTAINMENT & PUBLICATION": 0.5,
+        "TELECOMMUNICATION": 0.26,
+        "CASH, CASH EQUIVALENTS AND OTHERS": 0.05
+      },
+      "market_cap_allocation": {
+        "Large Cap": 5.3,
+        "Mid Cap": 64.65,
+        "Small Cap": 29.31
+      },
+      "risk_level": "Very High",
+      "additional_info": {
+        "benchmark_risk_level": "Very High"
+      }
+    },
+    {
+      "fund_name": "Helios Small Cap Fund",
+      "fund_type": "open-ended",
+      "scheme_type": "Small Cap Fund – An open-ended equity scheme predominantly investing in small cap stocks",
+      "category": "Small Cap Fund",
+      "investment_objective": "The investment objective of the scheme is to generate long-term capital appreciation from a portfolio that is invested predominantly in equity and equity related securities of small cap companies. However, there is no assurance that the investment objective of the Scheme will be achieved.",
+      "benchmark": "NIFTY Small Cap 250 Total Return Index (TRI)",
+      "inception_date": "2025-11-27",
+      "plans_offered": "Direct and Regular Plan, each with Growth and IDCW Option (Re-investment, Transfer, Pay-out Sub-Option)",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "nav": 9.22,
+      "nav_date": "2026-01-30",
+      "aum_crores": 652.62,
+      "monthly_avg_aum": 630.39,
+      "expense_ratio": 0.73,
+      "exit_load": "i) If units redeemed or switched out within 3 months from the date of allotment – 1% of the applicable NAV (ii) If redeemed/switched out after 3 months from the date of allotment – Nil",
+      "min_lumpsum": 5000,
+      "min_additional": 1000,
+      "fund_managers": [
+        {
+          "name": "Mr. Alok Bahl",
+          "managing_since": "Since Inception",
+          "experience": "Overall 33 years of experience"
+        },
+        {
+          "name": "Mr. Pratik Singh",
+          "managing_since": "Since Inception",
+          "experience": "Overall 10 years of experience"
+        },
+        {
+          "name": "Alok Bahl",
+          "managing_since": "Since inception of the respective schemes"
+        },
+        {
+          "name": "Pratik Singh",
+          "managing_since": "Since inception of the respective schemes"
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "CARTRADE TECH LTD.",
+          "sector": "CONSUMER SERVICES",
+          "weight_pct": 2.13
+        },
+        {
+          "name": "BLACK BOX LTD.",
+          "sector": "INFORMATION TECHNOLOGY",
+          "weight_pct": 1.81
+        },
+        {
+          "name": "ZF COMMERCIAL VEHICLE CONTROL SYSTEMS INDIA LTD.",
+          "sector": "AUTOMOBILE AND AUTO COMPONENTS",
+          "weight_pct": 1.8
+        },
+        {
+          "name": "IDFC FIRST BANK LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 1.8
+        },
+        {
+          "name": "CRAFTSMAN AUTOMATION LTD.",
+          "sector": "AUTOMOBILE AND AUTO COMPONENTS",
+          "weight_pct": 1.8
+        },
+        {
+          "name": "MULTI COMMODITY EXCHANGE OF INDIA LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 1.79
+        },
+        {
+          "name": "REDINGTON LTD.",
+          "sector": "SERVICES",
+          "weight_pct": 1.78
+        },
+        {
+          "name": "MINDA CORPORATION LTD.",
+          "sector": "AUTOMOBILE AND AUTO COMPONENTS",
+          "weight_pct": 1.77
+        },
+        {
+          "name": "LEMON TREE HOTELS LTD.",
+          "sector": "CONSUMER SERVICES",
+          "weight_pct": 1.75
+        },
+        {
+          "name": "ESCORTS KUBOTA LTD.",
+          "sector": "CAPITAL GOODS",
+          "weight_pct": 1.74
+        },
+        {
+          "name": "JB CHEMICALS & PHARMACEUTICALS LTD.",
+          "sector": "HEALTHCARE",
+          "weight_pct": 1.72
+        },
+        {
+          "name": "PB FINTECH LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 1.7
+        },
+        {
+          "name": "AMAGI MEDIA LABS LTD.",
+          "sector": "INFORMATION TECHNOLOGY",
+          "weight_pct": 1.69
+        },
+        {
+          "name": "ACUTAAS CHEMICALS LTD.",
+          "sector": "HEALTHCARE",
+          "weight_pct": 1.69
+        },
+        {
+          "name": "GMR AIRPORTS LTD.",
+          "sector": "SERVICES",
+          "weight_pct": 1.68
+        },
+        {
+          "name": "CITY UNION BANK LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 1.68
+        },
+        {
+          "name": "THE PHOENIX MILLS LTD.",
+          "sector": "REALTY",
+          "weight_pct": 1.67
+        },
+        {
+          "name": "ONE 97 COMMUNICATIONS LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 1.67
+        },
+        {
+          "name": "NBCC (INDIA) LTD.",
+          "sector": "CONSTRUCTION",
+          "weight_pct": 1.67
+        },
+        {
+          "name": "HINDUSTAN PETROLEUM CORPORATION LTD.",
+          "sector": "OIL, GAS & CONSUMABLE FUELS",
+          "weight_pct": 1.66
+        },
+        {
+          "name": "SYRMA SGS TECHNOLOGY LTD.",
+          "sector": "CAPITAL GOODS",
+          "weight_pct": 1.65
+        },
+        {
+          "name": "DELHIVERY LTD.",
+          "sector": "SERVICES",
+          "weight_pct": 1.65
+        },
+        {
+          "name": "KPIT TECHNOLOGIES LTD.",
+          "sector": "INFORMATION TECHNOLOGY",
+          "weight_pct": 1.62
+        },
+        {
+          "name": "TD POWER SYSTEMS LTD.",
+          "sector": "CAPITAL GOODS",
+          "weight_pct": 1.61
+        },
+        {
+          "name": "ATHER ENERGY LTD.",
+          "sector": "AUTOMOBILE AND AUTO COMPONENTS",
+          "weight_pct": 1.61
+        },
+        {
+          "name": "LEELA PALACES HOTELS & RESORTS LTD.",
+          "sector": "CONSUMER SERVICES",
+          "weight_pct": 1.56
+        },
+        {
+          "name": "PHYSICSWALLAH LTD.",
+          "sector": "CONSUMER SERVICES",
+          "weight_pct": 1.54
+        },
+        {
+          "name": "MOTILAL OSWAL FINANCIAL SERVICES LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 1.52
+        },
+        {
+          "name": "MTAR TECHNOLOGIES LTD.",
+          "sector": "CAPITAL GOODS",
+          "weight_pct": 1.45
+        },
+        {
+          "name": "ALIVUS LIFE SCIENCES LTD.",
+          "sector": "HEALTHCARE",
+          "weight_pct": 1.45
+        },
+        {
+          "name": "INOX INDIA LTD.",
+          "sector": "CAPITAL GOODS",
+          "weight_pct": 1.39
+        },
+        {
+          "name": "COMPUTER AGE MANAGEMENT SERVICES LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 1.35
+        },
+        {
+          "name": "DODLA DAIRY LTD.",
+          "sector": "FAST MOVING CONSUMER GOODS",
+          "weight_pct": 1.33
+        },
+        {
+          "name": "SWIGGY LTD.",
+          "sector": "CONSUMER SERVICES",
+          "weight_pct": 1.31
+        },
+        {
+          "name": "TIPS MUSIC LTD.",
+          "sector": "MEDIA, ENTERTAINMENT & PUBLICATION",
+          "weight_pct": 1.28
+        },
+        {
+          "name": "CMS INFO SYSTEMS LTD.",
+          "sector": "SERVICES",
+          "weight_pct": 1.28
+        },
+        {
+          "name": "INDEGENE LTD.",
+          "sector": "HEALTHCARE",
+          "weight_pct": 1.27
+        },
+        {
+          "name": "EDELWEISS FINANCIAL SERVICES LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 1.27
+        },
+        {
+          "name": "MAHINDRA LIFESPACE DEVELOPERS LTD.",
+          "sector": "REALTY",
+          "weight_pct": 1.25
+        },
+        {
+          "name": "VOLTAMP TRANSFORMERS LTD.",
+          "sector": "CAPITAL GOODS",
+          "weight_pct": 1.24
+        },
+        {
+          "name": "AFFLE 3I LTD.",
+          "sector": "INFORMATION TECHNOLOGY",
+          "weight_pct": 1.24
+        },
+        {
+          "name": "AADHAR HOUSING FINANCE LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 1.24
+        },
+        {
+          "name": "PIRAMAL PHARMA LTD.",
+          "sector": "HEALTHCARE",
+          "weight_pct": 1.23
+        },
+        {
+          "name": "LE TRAVENUES TECHNOLOGY LTD.",
+          "sector": "CONSUMER SERVICES",
+          "weight_pct": 1.23
+        },
+        {
+          "name": "TIMKEN INDIA LTD.",
+          "sector": "CAPITAL GOODS",
+          "weight_pct": 1.22
+        },
+        {
+          "name": "INTELLECT DESIGN ARENA LTD.",
+          "sector": "INFORMATION TECHNOLOGY",
+          "weight_pct": 1.21
+        },
+        {
+          "name": "LUMAX AUTO TECHNOLOGIES LTD.",
+          "sector": "AUTOMOBILE AND AUTO COMPONENTS",
+          "weight_pct": 1.2
+        },
+        {
+          "name": "KFIN TECHNOLOGIES LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 1.2
+        },
+        {
+          "name": "PNB HOUSING FINANCE LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 1.19
+        },
+        {
+          "name": "AAVAS FINANCIERS LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 1.18
+        },
+        {
+          "name": "RAINBOW CHILDREN'S MEDICARE LTD.",
+          "sector": "HEALTHCARE",
+          "weight_pct": 1.17
+        },
+        {
+          "name": "ETHOS LTD.",
+          "sector": "CONSUMER DURABLES",
+          "weight_pct": 1.15
+        },
+        {
+          "name": "HEALTHCARE GLOBAL ENTERPRISES LTD.",
+          "sector": "HEALTHCARE",
+          "weight_pct": 1.12
+        },
+        {
+          "name": "APAR INDUSTRIES LTD.",
+          "sector": "CAPITAL GOODS",
+          "weight_pct": 1.11
+        },
+        {
+          "name": "PRUDENT CORPORATE ADVISORY SERVICES LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 1.07
+        },
+        {
+          "name": "BILLIONBRAINS GARAGE VENTURES LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 1.05
+        },
+        {
+          "name": "V2 RETAIL LTD.",
+          "sector": "CONSUMER SERVICES",
+          "weight_pct": 1.04
+        },
+        {
+          "name": "LATENT VIEW ANALYTICS LTD.",
+          "sector": "INFORMATION TECHNOLOGY",
+          "weight_pct": 1.04
+        },
+        {
+          "name": "ANGEL ONE LTD.",
+          "sector": "FINANCIAL SERVICES",
+          "weight_pct": 1.04
+        },
+        {
+          "name": "AFCONS INFRASTRUCTURE LTD.",
+          "sector": "CONSTRUCTION",
+          "weight_pct": 1.02
+        },
+        {
+          "name": "TRAVEL FOOD SERVICES LTD.",
+          "sector": "CONSUMER SERVICES",
+          "weight_pct": 0.99
+        },
+        {
+          "name": "CARRARO INDIA LTD.",
+          "sector": "AUTOMOBILE AND AUTO COMPONENTS",
+          "weight_pct": 0.99
+        },
+        {
+          "name": "GRAVITA INDIA LTD.",
+          "sector": "METALS & MINING",
+          "weight_pct": 0.94
+        },
+        {
+          "name": "SAFARI INDUSTRIES (INDIA) LTD.",
+          "sector": "CONSUMER DURABLES",
+          "weight_pct": 0.93
+        },
+        {
+          "name": "ALLIED BLENDERS AND DISTILLERS LTD.",
+          "sector": "FAST MOVING CONSUMER GOODS",
+          "weight_pct": 0.92
+        },
+        {
+          "name": "SHADOWFAX TECHNOLOGIES LTD.",
+          "sector": "SERVICES",
+          "weight_pct": 0.91
+        },
+        {
+          "name": "DATA PATTERNS (INDIA) LTD.",
+          "sector": "CAPITAL GOODS",
+          "weight_pct": 0.87
+        },
+        {
+          "name": "DR. LAL PATH LABS LTD.",
+          "sector": "HEALTHCARE",
+          "weight_pct": 0.82
+        },
+        {
+          "name": "GOKALDAS EXPORTS LTD.",
+          "sector": "TEXTILES",
+          "weight_pct": 0.81
+        },
+        {
+          "name": "CCL PRODUCTS (INDIA) LTD.",
+          "sector": "FAST MOVING CONSUMER GOODS",
+          "weight_pct": 0.73
+        },
+        {
+          "name": "QUESS CORP LTD.",
+          "sector": "SERVICES",
+          "weight_pct": 0.72
+        },
+        {
+          "name": "INGERSOLL RAND (INDIA) LTD.",
+          "sector": "CAPITAL GOODS",
+          "weight_pct": 0.66
+        },
+        {
+          "name": "PARK MEDI WORLD LTD.",
+          "sector": "HEALTHCARE",
+          "weight_pct": 0.65
+        },
+        {
+          "name": "COMMERCIAL VEHICLE CONTROL SYSTEMS INDIA LTD.",
+          "weight_pct": 1.8
+        }
+      ],
+      "debt_holdings": [
+        {
+          "name": "TRIPARTY REPO",
+          "weight_pct": 2.37
+        }
+      ],
+      "asset_allocation": {
+        "Equity": 97.52,
+        "Debt": 2.37,
+        "Cash & Equivalents": 0.11,
+        "SMALL CAP": 77.28,
+        "MID CAP": 20.24,
+        "TRIPARTY REPO": 2.37,
+        "CASH, CASH EQUIVALENTS AND OTHERS": 0.11
+      },
+      "portfolio_turnover": 0.02,
+      "portfolio_stats": {
+        "equity_style": "Small Blend"
+      },
+      "sector_allocation": {
+        "FINANCIAL SERVICES": 20.75,
+        "CAPITAL GOODS": 12.94,
+        "CONSUMER SERVICES": 11.55,
+        "HEALTHCARE": 11.12,
+        "AUTOMOBILE AND AUTO COMPONENTS": 9.17,
+        "INFORMATION TECHNOLOGY": 8.61,
+        "SERVICES": 8.02,
+        "FAST MOVING CONSUMER GOODS": 2.98,
+        "REALTY": 2.92,
+        "CONSTRUCTION": 2.69,
+        "TRIPARTY REPO": 2.37,
+        "CONSUMER DURABLES": 2.08,
+        "OIL, GAS & CONSUMABLE FUELS": 1.66,
+        "MEDIA, ENTERTAINMENT & PUBLICATION": 1.28,
+        "METALS & MINING": 0.94,
+        "TEXTILES": 0.81,
+        "CASH, CASH EQUIVALENTS AND OTHERS": 0.11
+      },
+      "additional_info": {
+        "performance_note": "Scheme has not completed 6 months, hence performance of this scheme is not disclosed.",
+        "benchmark_risk_level": "Very High"
+      },
+      "risk_level": "Very High"
+    },
+    {
+      "fund_name": "Helios Balanced Advantage Fund",
+      "scheme_type": "An open-ended dynamic asset allocation fund.",
+      "category": "Balanced Advantage Fund",
+      "investment_objective": "The investment objective of the scheme is to capitalize on the potential upside of equities while attempting to limit the downside by dynamically managing the portfolio through investment in equity & equity related instruments and active use of debt, money market instruments and derivatives. However, there is no assurance that the investment objective of the Scheme will be achieved.",
+      "benchmark": "CRISIL Hybrid 50+50 – Moderate Total Return Index (TRI)",
+      "inception_date": "2024-03-27",
+      "plans_offered": [
+        "Direct Plan",
+        "Regular Plan"
+      ],
+      "min_lumpsum": 5000,
+      "min_additional": 1000,
+      "entry_load": "NA",
+      "exit_load": "(i) If units redeemed or switched out are upto 10% (limit) of the units purchased or switched in within 3 months from the date of allotment – Nil\n(ii) If units redeemed or switched out are over and above the limit within 3 months from the date of allotment – 1% of the applicable NAV\n(iii) If units redeemed/switched out after 3 months from the date of allotment – Nil",
+      "face_value": 10,
+      "aum_crores": 312.32,
+      "monthly_avg_aum": 316.5,
+      "expense_ratios": [
+        {
+          "plan": "Regular Plan",
+          "ratio": 2.42
+        },
+        {
+          "plan": "Direct Plan",
+          "ratio": 0.91
+        }
+      ],
+      "navs": [
+        {
+          "plan_type": "Regular Plan",
+          "option": "IDCW Option",
+          "nav": 11.39,
+          "nav_date": "2026-01-30"
+        },
+        {
+          "plan_type": "Regular Plan",
+          "option": "Growth Option",
+          "nav": 11.38,
+          "nav_date": "2026-01-30"
+        },
+        {
+          "plan_type": "Direct Plan",
+          "option": "IDCW Option",
+          "nav": 11.72,
+          "nav_date": "2026-01-30"
+        },
+        {
+          "plan_type": "Direct Plan",
+          "option": "Growth Option",
+          "nav": 11.72,
+          "nav_date": "2026-01-30"
+        }
+      ],
+      "fund_managers": [
+        {
+          "name": "Mr. Alok Bahl",
+          "managing_for": "equities",
+          "managing_since": "Since Inception",
+          "experience": "Overall 33 years of experience"
+        },
+        {
+          "name": "Mr. Pratik Singh",
+          "managing_for": "equities",
+          "managing_since": "Since Inception",
+          "experience": "Overall 10 years of experience"
+        },
+        {
+          "name": "Mr. Utssav Modi",
+          "managing_for": "Fixed Income securities",
+          "managing_since": "Since Inception",
+          "experience": "Overall 11 years of experience"
+        }
+      ],
+      "portfolio_turnover": {
+        "equity_turnover": 0.56,
+        "total_turnover": 3.2
+      },
+      "portfolio_stats": {
+        "equity_style_box": {
+          "market_cap": "Large",
+          "style": "Blend"
+        },
+        "fixed_income_style_box": {
+          "credit_risk": "Low",
+          "duration_risk": "Short"
+        }
+      },
+      "portfolio_holdings": {
+        "date": "2026-01-31",
+        "equity": [
+          {
+            "name": "KOTAK MAHINDRA BANK LTD.",
+            "sector": "FINANCIAL SERVICES",
+            "weight_pct": 5.79,
+            "asset_description": "Equity/ Arbitrage",
+            "derivatives_hedging_pct": -2.44,
+            "net_equity_pct": 3.35
+          },
+          {
+            "name": "RELIANCE INDUSTRIES LTD.",
+            "sector": "OIL, GAS & CONSUMABLE FUELS",
+            "weight_pct": 4.73,
+            "asset_description": "Equity/ Arbitrage",
+            "derivatives_hedging_pct": -2.42,
+            "net_equity_pct": 2.31
+          },
+          {
+            "name": "ICICI BANK LTD.",
+            "sector": "FINANCIAL SERVICES",
+            "weight_pct": 4.68,
+            "asset_description": "Equity",
+            "net_equity_pct": 4.68
+          },
+          {
+            "name": "HINDUSTAN PETROLEUM CORPORATION LTD.",
+            "sector": "OIL, GAS & CONSUMABLE FUELS",
+            "weight_pct": 4.63,
+            "asset_description": "Equity",
+            "net_equity_pct": 4.63
+          },
+          {
+            "name": "HDFC BANK LTD.",
+            "sector": "FINANCIAL SERVICES",
+            "weight_pct": 4.49,
+            "asset_description": "Equity",
+            "net_equity_pct": 4.49
+          },
+          {
+            "name": "BHARTI AIRTEL LTD.",
+            "sector": "TELECOMMUNICATION",
+            "weight_pct": 3.52,
+            "asset_description": "Equity/ Arbitrage",
+            "derivatives_hedging_pct": -0.63,
+            "net_equity_pct": 2.89
+          },
+          {
+            "name": "ADANI PORTS AND SPECIAL ECONOMIC ZONE LTD.",
+            "sector": "SERVICES",
+            "weight_pct": 3.05,
+            "asset_description": "Equity",
+            "net_equity_pct": 3.05
+          },
+          {
+            "name": "SHRIRAM FINANCE LTD.",
+            "sector": "FINANCIAL SERVICES",
+            "weight_pct": 2.98,
+            "asset_description": "Equity",
+            "net_equity_pct": 2.98
+          },
+          {
+            "name": "ONE 97 COMMUNICATIONS LTD.",
+            "sector": "FINANCIAL SERVICES",
+            "weight_pct": 2.55,
+            "asset_description": "Equity",
+            "net_equity_pct": 2.55
+          },
+          {
+            "name": "REC LTD.",
+            "sector": "FINANCIAL SERVICES",
+            "weight_pct": 2.49,
+            "asset_description": "Equity",
+            "net_equity_pct": 2.49
+          },
+          {
+            "name": "ETERNAL LTD.",
+            "sector": "CONSUMER SERVICES",
+            "weight_pct": 2.38,
+            "asset_description": "Equity",
+            "net_equity_pct": 2.38
+          },
+          {
+            "name": "BHARAT ELECTRONICS LTD.",
+            "sector": "CAPITAL GOODS",
+            "weight_pct": 2.33,
+            "asset_description": "Equity",
+            "net_equity_pct": 2.33
+          },
+          {
+            "name": "BAJAJ FINANCE LTD.",
+            "sector": "FINANCIAL SERVICES",
+            "weight_pct": 1.98,
+            "asset_description": "Equity",
+            "net_equity_pct": 1.98
+          },
+          {
+            "name": "STATE BANK OF INDIA",
+            "sector": "FINANCIAL SERVICES",
+            "weight_pct": 1.93,
+            "asset_description": "Equity",
+            "net_equity_pct": 1.93
+          },
+          {
+            "name": "BANK OF BARODA",
+            "sector": "FINANCIAL SERVICES",
+            "weight_pct": 1.77,
+            "asset_description": "Arbitrage",
+            "derivatives_hedging_pct": -1.77,
+            "net_equity_pct": 0.0
+          },
+          {
+            "name": "DIVI'S LABORATORIES LTD.",
+            "sector": "HEALTHCARE",
+            "weight_pct": 1.63,
+            "asset_description": "Arbitrage",
+            "derivatives_hedging_pct": -1.63,
+            "net_equity_pct": 0.0
+          },
+          {
+            "name": "VARUN BEVERAGES LTD.",
+            "sector": "FAST MOVING CONSUMER GOODS",
+            "weight_pct": 1.48,
+            "asset_description": "Equity",
+            "net_equity_pct": 1.48
+          },
+          {
+            "name": "MUTHOOT FINANCE LTD.",
+            "sector": "FINANCIAL SERVICES",
+            "weight_pct": 1.38,
+            "asset_description": "Equity",
+            "net_equity_pct": 1.38
+          },
+          {
+            "name": "PB FINTECH LTD.",
+            "sector": "FINANCIAL SERVICES",
+            "weight_pct": 1.34,
+            "asset_description": "Equity",
+            "net_equity_pct": 1.34
+          },
+          {
+            "name": "DLF LTD.",
+            "sector": "REALTY",
+            "weight_pct": 1.27,
+            "asset_description": "Equity/ Arbitrage",
+            "derivatives_hedging_pct": -0.13,
+            "net_equity_pct": 1.14
+          },
+          {
+            "name": "BAJAJ AUTO LTD.",
+            "sector": "AUTOMOBILE AND AUTO COMPONENTS",
+            "weight_pct": 1.25,
+            "asset_description": "Equity",
+            "net_equity_pct": 1.25
+          },
+          {
+            "name": "TITAN COMPANY LTD.",
+            "sector": "CONSUMER DURABLES",
+            "weight_pct": 1.23,
+            "asset_description": "Arbitrage",
+            "derivatives_hedging_pct": -1.23,
+            "net_equity_pct": 0.0
+          },
+          {
+            "name": "NTPC LTD.",
+            "sector": "POWER",
+            "weight_pct": 1.21,
+            "asset_description": "Equity",
+            "net_equity_pct": 1.21
+          },
+          {
+            "name": "VODAFONE IDEA LTD.",
+            "sector": "TELECOMMUNICATION",
+            "weight_pct": 1.2,
+            "asset_description": "Arbitrage",
+            "derivatives_hedging_pct": -1.21,
+            "net_equity_pct": 0.0
+          },
+          {
+            "name": "ICICI PRUDENTIAL ASSET MANAGEMENT COMPANY LTD.",
+            "sector": "FINANCIAL SERVICES",
+            "weight_pct": 1.19,
+            "asset_description": "Equity",
+            "net_equity_pct": 1.19
+          },
+          {
+            "name": "HDFC ASSET MANAGEMENT CO. LTD.",
+            "sector": "FINANCIAL SERVICES",
+            "weight_pct": 1.18,
+            "asset_description": "Equity",
+            "net_equity_pct": 1.18
+          },
+          {
+            "name": "TORRENT PHARMACEUTICALS LTD.",
+            "sector": "HEALTHCARE",
+            "weight_pct": 1.16,
+            "asset_description": "Equity",
+            "net_equity_pct": 1.16
+          },
+          {
+            "name": "FORTIS HEALTHCARE LTD.",
+            "sector": "HEALTHCARE",
+            "weight_pct": 1.14,
+            "asset_description": "Equity",
+            "net_equity_pct": 1.14
+          },
+          {
+            "name": "MULTI COMMODITY EXCHANGE OF INDIA LTD.",
+            "sector": "FINANCIAL SERVICES",
+            "weight_pct": 1.09,
+            "asset_description": "Equity",
+            "net_equity_pct": 1.09
+          },
+          {
+            "name": "HERO MOTOCORP LTD.",
+            "sector": "AUTOMOBILE AND AUTO COMPONENTS",
+            "weight_pct": 1.05,
+            "asset_description": "Equity",
+            "net_equity_pct": 1.05
+          },
+          {
+            "name": "PNB HOUSING FINANCE LTD.",
+            "sector": "FINANCIAL SERVICES",
+            "weight_pct": 1.02,
+            "asset_description": "Equity",
+            "net_equity_pct": 1.02
+          },
+          {
+            "name": "APOLLO HOSPITALS ENTERPRISE LTD.",
+            "sector": "HEALTHCARE",
+            "weight_pct": 0.99,
+            "asset_description": "Equity",
+            "net_equity_pct": 0.99
+          },
+          {
+            "name": "ABB INDIA LTD.",
+            "sector": "CAPITAL GOODS",
+            "weight_pct": 0.93,
+            "asset_description": "Equity",
+            "net_equity_pct": 0.93
+          },
+          {
+            "name": "TATA MOTORS PASSENGER VEHICLES LTD.",
+            "sector": "AUTOMOBILE AND AUTO COMPONENTS",
+            "weight_pct": 0.92,
+            "asset_description": "Arbitrage",
+            "derivatives_hedging_pct": -0.93,
+            "net_equity_pct": 0.0
+          },
+          {
+            "name": "INDEGENE LTD.",
+            "sector": "HEALTHCARE",
+            "weight_pct": 0.92,
+            "asset_description": "Equity",
+            "net_equity_pct": 0.92
+          },
+          {
+            "name": "SIEMENS ENERGY INDIA LTD.",
+            "sector": "CAPITAL GOODS",
+            "weight_pct": 0.88,
+            "asset_description": "Equity",
+            "net_equity_pct": 0.88
+          },
+          {
+            "name": "360 ONE WAM LTD.",
+            "sector": "FINANCIAL SERVICES",
+            "weight_pct": 0.86,
+            "asset_description": "Arbitrage",
+            "derivatives_hedging_pct": -0.86,
+            "net_equity_pct": 0.0
+          },
+          {
+            "name": "TATA CONSULTANCY SERVICES LTD.",
+            "sector": "INFORMATION TECHNOLOGY",
+            "weight_pct": 0.85,
+            "asset_description": "Arbitrage",
+            "derivatives_hedging_pct": -0.85,
+            "net_equity_pct": 0.0
+          },
+          {
+            "name": "AXIS BANK LTD.",
+            "sector": "FINANCIAL SERVICES",
+            "weight_pct": 0.8,
+            "asset_description": "Arbitrage",
+            "derivatives_hedging_pct": -0.81,
+            "net_equity_pct": 0.0
+          },
+          {
+            "name": "PUNJAB NATIONAL BANK",
+            "sector": "FINANCIAL SERVICES",
+            "weight_pct": 0.79,
+            "asset_description": "Equity",
+            "net_equity_pct": 0.79
+          },
+          {
+            "name": "CHOLAMANDALAM INVESTMENT & FINANCE CO. LTD.",
+            "sector": "FINANCIAL SERVICES",
+            "weight_pct": 0.71,
+            "asset_description": "Equity",
+            "net_equity_pct": 0.71
+          },
+          {
+            "name": "LEMON TREE HOTELS LTD.",
+            "sector": "CONSUMER SERVICES",
+            "weight_pct": 0.69,
+            "asset_description": "Arbitrage",
+            "derivatives_hedging_pct": -0.7,
+            "net_equity_pct": 0.0
+          },
+          {
+            "name": "ITC LTD.",
+            "sector": "FAST MOVING CONSUMER GOODS",
+            "weight_pct": 0.66,
+            "asset_description": "Arbitrage",
+            "derivatives_hedging_pct": -0.66,
+            "net_equity_pct": 0.0
+          },
+          {
+            "name": "LIC HOUSING FINANCE LTD.",
+            "sector": "FINANCIAL SERVICES",
+            "weight_pct": 0.62,
+            "asset_description": "Arbitrage",
+            "derivatives_hedging_pct": -0.62,
+            "net_equity_pct": 0.0
+          },
+          {
+            "name": "MAHINDRA & MAHINDRA LTD.",
+            "sector": "AUTOMOBILE AND AUTO COMPONENTS",
+            "weight_pct": 0.61,
+            "asset_description": "Equity",
+            "net_equity_pct": 0.61
+          },
+          {
+            "name": "MOTILAL OSWAL FINANCIAL SERVICES LTD.",
+            "sector": "FINANCIAL SERVICES",
+            "weight_pct": 0.6,
+            "asset_description": "Equity",
+            "net_equity_pct": 0.6
+          },
+          {
+            "name": "ADANI ENERGY SOLUTIONS LTD.",
+            "sector": "POWER",
+            "weight_pct": 0.59,
+            "asset_description": "Arbitrage",
+            "derivatives_hedging_pct": -0.6,
+            "net_equity_pct": 0.0
+          },
+          {
+            "name": "JIO FINANCIAL SERVICES LTD.",
+            "sector": "FINANCIAL SERVICES",
+            "weight_pct": 0.58,
+            "asset_description": "Equity",
+            "net_equity_pct": 0.58
+          },
+          {
+            "name": "NBCC (INDIA) LTD.",
+            "sector": "CONSTRUCTION",
+            "weight_pct": 0.49,
+            "asset_description": "Equity",
+            "net_equity_pct": 0.49
+          },
+          {
+            "name": "VISHAL MEGA MART LTD.",
+            "sector": "CONSUMER SERVICES",
+            "weight_pct": 0.45,
+            "asset_description": "Equity",
+            "net_equity_pct": 0.45
+          },
+          {
+            "name": "POWER GRID CORPORATION OF INDIA LTD.",
+            "sector": "POWER",
+            "weight_pct": 0.45,
+            "asset_description": "Equity",
+            "net_equity_pct": 0.45
+          },
+          {
+            "name": "JAIN RESOURCE RECYCLING LTD.",
+            "sector": "METALS & MINING",
+            "weight_pct": 0.45,
+            "asset_description": "Equity",
+            "net_equity_pct": 0.45
+          },
+          {
+            "name": "AMBUJA CEMENTS LTD.",
+            "sector": "CONSTRUCTION MATERIALS",
+            "weight_pct": 0.39,
+            "asset_description": "Arbitrage",
+            "derivatives_hedging_pct": -0.4,
+            "net_equity_pct": 0.0
+          },
+          {
+            "name": "PATANJALI FOODS LTD.",
+            "sector": "FAST MOVING CONSUMER GOODS",
+            "weight_pct": 0.22,
+            "asset_description": "Arbitrage",
+            "derivatives_hedging_pct": -0.22,
+            "net_equity_pct": 0.0
+          }
+        ],
+        "debt": [
+          {
+            "name": "GOVERNMENT SECURITIES",
+            "weight_pct": 3.28
+          },
+          {
+            "name": "TREASURY BILLS",
+            "weight_pct": 3.19
+          }
+        ],
+        "cash_and_equivalents": [
+          {
+            "name": "TRIPARTY REPO",
+            "weight_pct": 7.85
+          },
+          {
+            "name": "CASH, CASH EQUIVALENTS AND OTHERS",
+            "weight_pct": 0.68
+          }
+        ],
+        "totals": {
+          "equity_net_equity_total": {
+            "gross_pct": 85.0,
+            "derivatives_hedging_pct": -18.11,
+            "net_equity_pct": 66.89
+          },
+          "grand_total": 100.0
+        }
+      },
+      "asset_allocation": {
+        "Equity / Net Equity": 85.0,
+        "Government Securities": 3.28,
+        "Treasury Bills": 3.19,
+        "Triparty Repo": 7.85,
+        "Cash, Cash Equivalents and Others": 0.68
+      },
+      "equity_holdings": [
+        {
+          "name": "ICICI BANK LTD.",
+          "weight_pct": 4.68
+        },
+        {
+          "name": "HINDUSTAN PETROLEUM CORPORATION LTD.",
+          "weight_pct": 4.63
+        },
+        {
+          "name": "HDFC BANK LTD.",
+          "weight_pct": 4.49
+        },
+        {
+          "name": "KOTAK MAHINDRA BANK LTD.",
+          "weight_pct": 3.35
+        },
+        {
+          "name": "ADANI PORTS AND SPECIAL ECONOMIC ZONE LTD.",
+          "weight_pct": 3.05
+        },
+        {
+          "name": "SHRIRAM FINANCE LTD.",
+          "weight_pct": 2.98
+        },
+        {
+          "name": "BHARTI AIRTEL LTD.",
+          "weight_pct": 2.89
+        },
+        {
+          "name": "ONE 97 COMMUNICATIONS LTD.",
+          "weight_pct": 2.55
+        },
+        {
+          "name": "REC LTD.",
+          "weight_pct": 2.49
+        },
+        {
+          "name": "RELIANCE INDUSTRIES LTD.",
+          "weight_pct": 2.31
+        }
+      ],
+      "sector_allocation": {
+        "FINANCIAL SERVICES": 41.04,
+        "OIL, GAS & CONSUMABLE FUELS": 9.36,
+        "TRIPARTY REPO": 7.85,
+        "DEBT": 6.47,
+        "HEALTHCARE": 5.84,
+        "TELECOMMUNICATION": 4.72,
+        "CAPITAL GOODS": 4.14,
+        "AUTOMOBILE AND AUTO COMPONENTS": 3.84,
+        "CONSUMER SERVICES": 3.58,
+        "SERVICES": 3.05,
+        "FAST MOVING CONSUMER GOODS": 2.39,
+        "POWER": 2.26,
+        "REALTY": 1.27,
+        "CONSUMER DURABLES": 1.23,
+        "INFORMATION TECHNOLOGY": 0.86,
+        "CASH, CASH EQUIVALENTS AND OTHERS": 0.68,
+        "CONSTRUCTION": 0.58,
+        "METALS & MINING": 0.45,
+        "CONSTRUCTION MATERIALS": 0.39
+      },
+      "market_cap_allocation": {
+        "Large Cap": 64.02,
+        "Mid Cap": 16.64,
+        "Small Cap": 4.34
+      },
+      "instrument_composition": {
+        "Equity Shares": 85.0,
+        "Triparty Repo": 7.85,
+        "Government Securities": 3.28,
+        "Treasury Bills": 3.19,
+        "Cash, Cash Equivalents and Others": 0.68
+      },
+      "fund_type": "Open-ended",
+      "risk_level": "Very High",
+      "additional_info": {
+        "benchmark_risk_level": "High"
+      }
+    },
+    {
+      "fund_name": "Helios Overnight Fund",
+      "scheme_type": "An open-ended debt scheme investing in overnight securities. Relatively Low Interest Rate Risk and Relatively Low Credit Risk.",
+      "category": "Overnight Fund",
+      "investment_objective": "The primary objective of the Scheme is to seek to generate returns commensurate with low risk and providing high level of liquidity, through investments made in debt and money market securities having maturity of 1 business day including TREPS (Tri-Party Repo) and Reverse Repo. However, there is no assurance that the investment objective of the Scheme will be achieved.",
+      "benchmark": "CRISIL Liquid Overnight Index",
+      "inception_date": "25th October 2023",
+      "plan_type": "Direct",
+      "option": "Growth Option",
+      "nav": 1146.3723,
+      "nav_date": "January 31, 2026",
+      "aum_crores": 282.32,
+      "monthly_avg_aum": 297.33,
+      "expense_ratio": 0.14,
+      "exit_load": "NIL",
+      "min_lumpsum": 5000,
+      "min_additional": 1000,
+      "fund_managers": [
+        {
+          "name": "Mr. Alok Bahl",
+          "managing_since": "Since Inception",
+          "experience": "Overall 33 years of experience"
+        },
+        {
+          "name": "Mr. Utssav Modi",
+          "managing_since": "Since Inception",
+          "experience": "Overall 11 years of experience"
+        },
+        {
+          "name": "Alok Bahl",
+          "managing_since": "Since inception of the respective schemes"
+        },
+        {
+          "name": "Utssav Modi",
+          "managing_since": "Since inception of the respective schemes"
+        }
+      ],
+      "debt_holdings": [
+        {
+          "name": "TRIPARTY REPO",
+          "rating": "CCIL-CLEARING CORPORATION OF INDIA LTD (CBLO)",
+          "weight_pct": 99.6
+        },
+        {
+          "name": "CASH, CASH EQUIVALENTS AND OTHERS",
+          "rating": "CASH, CASH EQUIVALENTS AND OTHERS",
+          "weight_pct": 0.4
+        }
+      ],
+      "instrument_composition": {
+        "TRIPARTY REPO": 99.6,
+        "CASH, CASH EQUIVALENTS AND OTHERS": 0.4
+      },
+      "debt_indicators": {
+        "ytm": 5.23,
+        "modified_duration": "1 day",
+        "macaulay_duration": "1 day",
+        "average_maturity": "1 day"
+      },
+      "risk_level": "Low",
+      "additional_info": {
+        "benchmark_risk_level": "Low",
+        "potential_risk_class": {
+          "title": "Potential Risk Class (PRC) of Helios Overnight Fund",
+          "value": "A-I",
+          "description": "A-I – A Scheme with Relatively Low Interest Rate Risk and Relatively Low Credit Risk.",
+          "matrix": {
+            "credit_risk_axis": {
+              "title": "Credit Risk of the scheme",
+              "levels": [
+                "Relatively Low (Class A)",
+                "Moderate (Class B)",
+                "Relatively High (Class C)"
+              ]
+            },
+            "interest_rate_risk_axis": {
+              "title": "Interest Rate Risk of the scheme",
+              "levels": [
+                "Relatively Low (Class I)",
+                "Moderate (Class II)",
+                "Relatively High (Class III)"
+              ]
+            }
+          },
+          "footnote": "The PRC matrix denotes the maximum risk that the respective Scheme can take i.e. maximum interest rate risk (measured by Macaulay Duration of the Scheme) and maximum credit risk (measured by credit risk value of the Scheme)."
+        }
+      }
+    },
+    {
+      "fund_name": "Helios Overnight Fund - Regular - Growth",
+      "category": "Overnight Fund",
+      "benchmark": "CRISIL Liquid Overnight Index",
+      "additional_benchmark": "CRISIL 1 Year T-Bill Index",
+      "inception_date": "25th October 2023",
+      "plan_type": "Regular",
+      "option": "Growth",
+      "returns": [
+        {
+          "period": "7D",
+          "fund_return": 4.96,
+          "benchmark_return": 5.16,
+          "additional_benchmark_return": 3.57,
+          "fund_value": 10010,
+          "benchmark_value": 10010,
+          "additional_benchmark_value": 10007
+        },
+        {
+          "period": "15D",
+          "fund_return": 4.98,
+          "benchmark_return": 5.17,
+          "additional_benchmark_return": 1.8,
+          "fund_value": 10020,
+          "benchmark_value": 10021,
+          "additional_benchmark_value": 10007
+        },
+        {
+          "period": "1M",
+          "fund_return": 5.04,
+          "benchmark_return": 5.2,
+          "additional_benchmark_return": 1.59,
+          "fund_value": 10043,
+          "benchmark_value": 10044,
+          "additional_benchmark_value": 10014
+        },
+        {
+          "period": "3M",
+          "fund_return": 5.06,
+          "benchmark_return": 5.25,
+          "additional_benchmark_return": 3.48,
+          "fund_value": 10127,
+          "benchmark_value": 10132,
+          "additional_benchmark_value": 10088
+        },
+        {
+          "period": "6M",
+          "fund_return": 5.17,
+          "benchmark_return": 5.37,
+          "additional_benchmark_return": 3.86,
+          "fund_value": 10261,
+          "benchmark_value": 10271,
+          "additional_benchmark_value": 10195
+        },
+        {
+          "period": "1Y",
+          "fund_return": 5.49,
+          "benchmark_return": 5.69,
+          "additional_benchmark_return": 5.75,
+          "fund_value": 10549,
+          "benchmark_value": 10569,
+          "additional_benchmark_value": 10575
+        },
+        {
+          "period": "SI",
+          "fund_return": 6.15,
+          "benchmark_return": 6.29,
+          "additional_benchmark_return": 6.7,
+          "fund_value": 11451,
+          "benchmark_value": 11486,
+          "additional_benchmark_value": 11586
+        }
+      ],
+      "additional_info": {
+        "face_value_per_unit": 1000,
+        "investment_value_base": 10000,
+        "returns_as_on": "31st January, 2026",
+        "additional_benchmark": "CRISIL 1 Year T-Bill Index",
+        "face_value": 1000,
+        "returns_as_on_date": "31st January, 2026"
+      },
+      "sip_returns": [
+        {
+          "period": "1Y",
+          "total_invested": 120000,
+          "market_value": 123430,
+          "return_pct": 5.31,
+          "benchmark_return_pct": 5.51,
+          "additional_benchmark_return_pct": 4.67,
+          "benchmark_market_value": 123562,
+          "additional_benchmark_market_value": 123023
+        },
+        {
+          "period": "SI",
+          "total_invested": 270000,
+          "market_value": 288556,
+          "return_pct": 5.8,
+          "benchmark_return_pct": 5.99,
+          "additional_benchmark_return_pct": 6.07,
+          "benchmark_market_value": 289173,
+          "additional_benchmark_market_value": 289446
+        }
+      ]
+    },
+    {
+      "fund_name": "Helios Overnight Fund - Direct - Growth",
+      "category": "Overnight Fund",
+      "benchmark": "CRISIL Liquid Overnight Index",
+      "additional_benchmark": "CRISIL 1 Year T-Bill Index",
+      "inception_date": "25th October 2023",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "returns": [
+        {
+          "period": "7D",
+          "fund_return": 5.01,
+          "benchmark_return": 5.16,
+          "additional_benchmark_return": 3.57,
+          "fund_value": 10010,
+          "benchmark_value": 10010,
+          "additional_benchmark_value": 10007
+        },
+        {
+          "period": "15D",
+          "fund_return": 5.03,
+          "benchmark_return": 5.17,
+          "additional_benchmark_return": 1.8,
+          "fund_value": 10021,
+          "benchmark_value": 10021,
+          "additional_benchmark_value": 10007
+        },
+        {
+          "period": "1M",
+          "fund_return": 5.09,
+          "benchmark_return": 5.2,
+          "additional_benchmark_return": 1.59,
+          "fund_value": 10043,
+          "benchmark_value": 10044,
+          "additional_benchmark_value": 10014
+        },
+        {
+          "period": "3M",
+          "fund_return": 5.11,
+          "benchmark_return": 5.25,
+          "additional_benchmark_return": 3.48,
+          "fund_value": 10129,
+          "benchmark_value": 10132,
+          "additional_benchmark_value": 10088
+        },
+        {
+          "period": "6M",
+          "fund_return": 5.22,
+          "benchmark_return": 5.37,
+          "additional_benchmark_return": 3.86,
+          "fund_value": 10263,
+          "benchmark_value": 10271,
+          "additional_benchmark_value": 10195
+        },
+        {
+          "period": "1Y",
+          "fund_return": 5.54,
+          "benchmark_return": 5.69,
+          "additional_benchmark_return": 5.75,
+          "fund_value": 10554,
+          "benchmark_value": 10569,
+          "additional_benchmark_value": 10575
+        },
+        {
+          "period": "SI",
+          "fund_return": 6.2,
+          "benchmark_return": 6.29,
+          "additional_benchmark_return": 6.7,
+          "fund_value": 11464,
+          "benchmark_value": 11486,
+          "additional_benchmark_value": 11586
+        }
+      ],
+      "additional_info": {
+        "face_value_per_unit": 1000,
+        "investment_value_base": 10000,
+        "returns_as_on": "31st January, 2026",
+        "additional_benchmark": "CRISIL 1 Year T-Bill Index",
+        "face_value": 1000,
+        "returns_as_on_date": "31st January, 2026"
+      },
+      "sip_returns": [
+        {
+          "period": "1Y",
+          "total_invested": 120000,
+          "market_value": 123464,
+          "return_pct": 5.37,
+          "benchmark_return_pct": 5.51,
+          "additional_benchmark_return_pct": 4.67,
+          "benchmark_market_value": 123562,
+          "additional_benchmark_market_value": 123023
+        },
+        {
+          "period": "SI",
+          "total_invested": 270000,
+          "market_value": 288728,
+          "return_pct": 5.85,
+          "benchmark_return_pct": 5.99,
+          "additional_benchmark_return_pct": 6.07,
+          "benchmark_market_value": 289173,
+          "additional_benchmark_market_value": 289446
+        }
+      ]
+    },
+    {
+      "fund_name": "Helios Flexi Cap Fund - Regular - Growth",
+      "category": "Flexi Cap Fund",
+      "benchmark": "NIFTY 500 Total Return Index (TRI)",
+      "additional_benchmark": "NIFTY 50 Total Return Index (TRI)",
+      "inception_date": "13th November 2023",
+      "plan_type": "Regular",
+      "option": "Growth",
+      "fund_managers": [
+        {
+          "name": "Pratik Singh",
+          "managing_since": "April 20, 2024"
+        }
+      ],
+      "returns": [
+        {
+          "period": "1Y",
+          "fund_return": 9.64,
+          "benchmark_return": 8.0,
+          "additional_benchmark_return": 9.0,
+          "fund_value": 10961,
+          "benchmark_value": 10798,
+          "additional_benchmark_value": 10897
+        },
+        {
+          "period": "SI",
+          "fund_return": 17.77,
+          "benchmark_return": 14.87,
+          "additional_benchmark_return": 13.93,
+          "fund_value": 14370,
+          "benchmark_value": 13597,
+          "additional_benchmark_value": 13351
+        }
+      ],
+      "additional_info": {
+        "face_value_per_unit": 10,
+        "investment_value_base": 10000,
+        "returns_as_on": "30th January, 2026",
+        "additional_benchmark": "NIFTY 50 Total Return Index(TRI)",
+        "face_value": 10,
+        "returns_as_on_date": "30th January, 2026"
+      },
+      "sip_returns": [
+        {
+          "period": "1Y",
+          "total_invested": 120000,
+          "market_value": 123081,
+          "return_pct": 4.81,
+          "benchmark_return_pct": 5.63,
+          "additional_benchmark_return_pct": 6.89,
+          "benchmark_market_value": 123608,
+          "additional_benchmark_market_value": 124409
+        },
+        {
+          "period": "SI",
+          "total_invested": 260000,
+          "market_value": 280257,
+          "return_pct": 6.83,
+          "benchmark_return_pct": 5.43,
+          "additional_benchmark_return_pct": 6.68,
+          "benchmark_market_value": 276035,
+          "additional_benchmark_market_value": 279796
+        }
+      ]
+    },
+    {
+      "fund_name": "Helios Flexi Cap Fund - Direct - Growth",
+      "category": "Flexi Cap Fund",
+      "benchmark": "NIFTY 500 Total Return Index (TRI)",
+      "additional_benchmark": "NIFTY 50 Total Return Index (TRI)",
+      "inception_date": "13th November 2023",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "fund_managers": [
+        {
+          "name": "Pratik Singh",
+          "managing_since": "April 20, 2024"
+        }
+      ],
+      "returns": [
+        {
+          "period": "1Y",
+          "fund_return": 11.11,
+          "benchmark_return": 8.0,
+          "additional_benchmark_return": 9.0,
+          "fund_value": 11108,
+          "benchmark_value": 10798,
+          "additional_benchmark_value": 10897
+        },
+        {
+          "period": "SI",
+          "fund_return": 19.49,
+          "benchmark_return": 14.87,
+          "additional_benchmark_return": 13.93,
+          "fund_value": 14840,
+          "benchmark_value": 13597,
+          "additional_benchmark_value": 13351
+        }
+      ],
+      "additional_info": {
+        "face_value_per_unit": 10,
+        "investment_value_base": 10000,
+        "returns_as_on": "30th January, 2026",
+        "additional_benchmark": "NIFTY 50 Total Return Index(TRI)",
+        "face_value": 10,
+        "returns_as_on_date": "30th January, 2026"
+      },
+      "sip_returns": [
+        {
+          "period": "1Y",
+          "total_invested": 120000,
+          "market_value": 123993,
+          "return_pct": 6.24,
+          "benchmark_return_pct": 5.63,
+          "additional_benchmark_return_pct": 6.89,
+          "benchmark_market_value": 123608,
+          "additional_benchmark_market_value": 124409
+        },
+        {
+          "period": "SI",
+          "total_invested": 260000,
+          "market_value": 284879,
+          "return_pct": 8.36,
+          "benchmark_return_pct": 5.43,
+          "additional_benchmark_return_pct": 6.68,
+          "benchmark_market_value": 276035,
+          "additional_benchmark_market_value": 279796
+        }
+      ]
+    },
+    {
+      "fund_name": "Helios Financial Services Fund - Regular - Growth",
+      "category": "Financial Services Fund",
+      "benchmark": "NIFTY Financial Services Total Return Index (TRI)",
+      "additional_benchmark": "NIFTY 50 Total Return Index (TRI)",
+      "inception_date": "24th June 2024",
+      "plan_type": "Regular",
+      "option": "Growth",
+      "returns": [
+        {
+          "period": "1Y",
+          "fund_return": 15.93,
+          "benchmark_return": 18.91,
+          "additional_benchmark_return": 9.0,
+          "fund_value": 11588,
+          "benchmark_value": 11885,
+          "additional_benchmark_value": 10897
+        },
+        {
+          "period": "SI",
+          "fund_return": 9.7,
+          "benchmark_return": 12.05,
+          "additional_benchmark_return": 5.82,
+          "fund_value": 11600,
+          "benchmark_value": 12000,
+          "additional_benchmark_value": 10949
+        }
+      ],
+      "additional_info": {
+        "face_value_per_unit": 10,
+        "investment_value_base": 10000,
+        "returns_as_on": "30th January, 2026",
+        "additional_benchmark": "NIFTY 50 Total Return Index (TRI)",
+        "face_value": 10,
+        "returns_as_on_date": "30th January, 2026"
+      },
+      "sip_returns": [
+        {
+          "period": "1Y",
+          "total_invested": 120000,
+          "market_value": 125906,
+          "return_pct": 9.27,
+          "benchmark_return_pct": 11.47,
+          "additional_benchmark_return_pct": 6.89,
+          "benchmark_market_value": 127287,
+          "additional_benchmark_market_value": 124409
+        },
+        {
+          "period": "SI",
+          "total_invested": 190000,
+          "market_value": 202263,
+          "return_pct": 7.76,
+          "benchmark_return_pct": 11.61,
+          "additional_benchmark_return_pct": 4.7,
+          "benchmark_market_value": 208407,
+          "additional_benchmark_market_value": 197429
+        }
+      ]
+    },
+    {
+      "fund_name": "Helios Financial Services Fund - Direct - Growth",
+      "category": "Financial Services Fund",
+      "benchmark": "NIFTY Financial Services Total Return Index (TRI)",
+      "additional_benchmark": "NIFTY 50 Total Return Index (TRI)",
+      "inception_date": "24th June 2024",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "returns": [
+        {
+          "period": "1Y",
+          "fund_return": 17.76,
+          "benchmark_return": 18.91,
+          "additional_benchmark_return": 9.0,
+          "fund_value": 11771,
+          "benchmark_value": 11885,
+          "additional_benchmark_value": 10897
+        },
+        {
+          "period": "SI",
+          "fund_return": 11.46,
+          "benchmark_return": 12.05,
+          "additional_benchmark_return": 5.82,
+          "fund_value": 11900,
+          "benchmark_value": 12000,
+          "additional_benchmark_value": 10949
+        }
+      ],
+      "additional_info": {
+        "face_value_per_unit": 10,
+        "investment_value_base": 10000,
+        "returns_as_on": "30th January, 2026",
+        "additional_benchmark": "NIFTY 50 Total Return Index (TRI)",
+        "face_value": 10,
+        "returns_as_on_date": "30th January, 2026"
+      },
+      "sip_returns": [
+        {
+          "period": "1Y",
+          "total_invested": 120000,
+          "market_value": 127019,
+          "return_pct": 11.05,
+          "benchmark_return_pct": 11.47,
+          "additional_benchmark_return_pct": 6.89,
+          "benchmark_market_value": 127287,
+          "additional_benchmark_market_value": 124409
+        },
+        {
+          "period": "SI",
+          "total_invested": 190000,
+          "market_value": 205004,
+          "return_pct": 9.48,
+          "benchmark_return_pct": 11.61,
+          "additional_benchmark_return_pct": 4.7,
+          "benchmark_market_value": 208407,
+          "additional_benchmark_market_value": 197429
+        }
+      ]
+    },
+    {
+      "fund_name": "Helios Large & Mid Cap Fund - Regular - Growth",
+      "benchmark": "NIFTY Large Midcap 250 Total Return Index (TRI)",
+      "inception_date": "30th October 2024",
+      "plan_type": "Regular",
+      "option": "Growth",
+      "returns": [
+        {
+          "period": "1Y",
+          "fund_return": 13.37,
+          "benchmark_return": 9.01,
+          "additional_benchmark_return": 9.0
+        },
+        {
+          "period": "SI",
+          "fund_return": 5.0,
+          "benchmark_return": 3.12,
+          "additional_benchmark_return": 4.33
+        }
+      ],
+      "investment_value_of_10000": [
+        {
+          "period": "1Y",
+          "fund_value": 11333,
+          "benchmark_value": 10898,
+          "additional_benchmark_value": 10897
+        },
+        {
+          "period": "SI",
+          "fund_value": 10630,
+          "benchmark_value": 10393,
+          "additional_benchmark_value": 10546
+        }
+      ],
+      "additional_info": {
+        "additional_benchmark": "NIFTY 50 Total Return Index (TRI)",
+        "notes": [
+          "Returns for 3 years and 5 years are not applicable.",
+          "Returns greater than 1 year are compounded annualized."
+        ],
+        "face_value": 10,
+        "returns_as_on_date": "30th January, 2026"
+      },
+      "sip_returns": [
+        {
+          "period": "1Y",
+          "total_invested": 120000,
+          "market_value": 125152,
+          "return_pct": 8.07,
+          "benchmark_return_pct": 7.2,
+          "additional_benchmark_return_pct": 6.89,
+          "benchmark_market_value": 124606,
+          "additional_benchmark_market_value": 124409
+        },
+        {
+          "period": "SI",
+          "total_invested": 150000,
+          "market_value": 156652,
+          "return_pct": 6.73,
+          "benchmark_return_pct": 5.79,
+          "additional_benchmark_return_pct": 6.4,
+          "benchmark_market_value": 155738,
+          "additional_benchmark_market_value": 156339
+        }
+      ]
+    },
+    {
+      "fund_name": "Helios Large & Mid Cap Fund - Direct - Growth",
+      "benchmark": "NIFTY Large Midcap 250 Total Return Index (TRI)",
+      "inception_date": "30th October 2024",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "returns": [
+        {
+          "period": "1Y",
+          "fund_return": 15.23,
+          "benchmark_return": 9.01,
+          "additional_benchmark_return": 9.0
+        },
+        {
+          "period": "SI",
+          "fund_return": 6.73,
+          "benchmark_return": 3.12,
+          "additional_benchmark_return": 4.33
+        }
+      ],
+      "investment_value_of_10000": [
+        {
+          "period": "1Y",
+          "fund_value": 11518,
+          "benchmark_value": 10898,
+          "additional_benchmark_value": 10897
+        },
+        {
+          "period": "SI",
+          "fund_value": 10850,
+          "benchmark_value": 10393,
+          "additional_benchmark_value": 10546
+        }
+      ],
+      "additional_info": {
+        "additional_benchmark": "NIFTY 50 Total Return Index (TRI)",
+        "notes": [
+          "Returns for 3 years and 5 years are not applicable.",
+          "Returns greater than 1 year are compounded annualized."
+        ],
+        "face_value": 10,
+        "returns_as_on_date": "30th January, 2026"
+      },
+      "sip_returns": [
+        {
+          "period": "1Y",
+          "total_invested": 120000,
+          "market_value": 126299,
+          "return_pct": 9.9,
+          "benchmark_return_pct": 7.2,
+          "additional_benchmark_return_pct": 6.89,
+          "benchmark_market_value": 124606,
+          "additional_benchmark_market_value": 124409
+        },
+        {
+          "period": "SI",
+          "total_invested": 150000,
+          "market_value": 158411,
+          "return_pct": 8.51,
+          "benchmark_return_pct": 5.79,
+          "additional_benchmark_return_pct": 6.4,
+          "benchmark_market_value": 155738,
+          "additional_benchmark_market_value": 156339
+        }
+      ]
+    },
+    {
+      "fund_name": "Helios Mid Cap Fund - Regular - Growth",
+      "benchmark": "NIFTY Midcap 150 Total Return Index (TRI)",
+      "inception_date": "13th March 2025",
+      "plan_type": "Regular",
+      "option": "Growth",
+      "returns": [
+        {
+          "period": "6M",
+          "fund_return": 0.33,
+          "benchmark_return": 1.7,
+          "additional_benchmark_return": 5.26
+        },
+        {
+          "period": "SI",
+          "fund_return": 22.26,
+          "benchmark_return": 23.34,
+          "additional_benchmark_return": 16.1
+        }
+      ],
+      "investment_value_of_10000": [
+        {
+          "period": "6M",
+          "fund_value": 10017,
+          "benchmark_value": 10085,
+          "additional_benchmark_value": 10264
+        },
+        {
+          "period": "SI",
+          "fund_value": 11970,
+          "benchmark_value": 12065,
+          "additional_benchmark_value": 11425
+        }
+      ],
+      "additional_info": {
+        "additional_benchmark": "NIFTY 50 Total Return Index (TRI)",
+        "notes": [
+          "Returns for 1 year, 3 years and 5 years are not applicable.",
+          "Returns less than 1 year period are simple annualized."
+        ]
+      }
+    },
+    {
+      "fund_name": "Helios Mid Cap Fund - Direct - Growth",
+      "benchmark": "NIFTY Midcap 150 Total Return Index (TRI)",
+      "inception_date": "13th March 2025",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "returns": [
+        {
+          "period": "6M",
+          "fund_return": 1.83,
+          "benchmark_return": 1.7,
+          "additional_benchmark_return": 5.26
+        },
+        {
+          "period": "SI",
+          "fund_return": 24.07,
+          "benchmark_return": 23.34,
+          "additional_benchmark_return": 16.1
+        }
+      ],
+      "investment_value_of_10000": [
+        {
+          "period": "6M",
+          "fund_value": 10092,
+          "benchmark_value": 10085,
+          "additional_benchmark_value": 10264
+        },
+        {
+          "period": "SI",
+          "fund_value": 12130,
+          "benchmark_value": 12065,
+          "additional_benchmark_value": 11425
+        }
+      ],
+      "additional_info": {
+        "additional_benchmark": "NIFTY 50 Total Return Index (TRI)",
+        "notes": [
+          "Returns for 1 year, 3 years and 5 years are not applicable.",
+          "Returns less than 1 year period are simple annualized."
+        ]
+      }
+    },
+    {
+      "fund_name": "Helios Balanced Advantage Fund - Regular - Growth",
+      "benchmark": "CRISIL Hybrid 50+50 – Moderate Total Return Index (TRI)",
+      "inception_date": "27th March 2024",
+      "plan_type": "Regular",
+      "option": "Growth",
+      "returns": [
+        {
+          "period": "1Y",
+          "fund_return": 6.97,
+          "benchmark_return": 7.43,
+          "additional_benchmark_return": 9.0
+        },
+        {
+          "period": "SI",
+          "fund_return": 7.25,
+          "benchmark_return": 8.14,
+          "additional_benchmark_return": 8.93
+        }
+      ],
+      "investment_value_of_10000": [
+        {
+          "period": "1Y",
+          "fund_value": 10695,
+          "benchmark_value": 10741,
+          "additional_benchmark_value": 10897
+        },
+        {
+          "period": "SI",
+          "fund_value": 11380,
+          "benchmark_value": 11554,
+          "additional_benchmark_value": 11711
+        }
+      ],
+      "additional_info": {
+        "additional_benchmark": "NIFTY 50 Total Return Index (TRI)",
+        "notes": [
+          "Returns for 3 years and 5 years are not applicable.",
+          "Returns greater than 1 year are compounded annualized."
+        ]
+      }
+    },
+    {
+      "fund_name": "Helios Balanced Advantage Fund - Direct - Growth",
+      "benchmark": "CRISIL Hybrid 50+50 – Moderate Total Return Index (TRI)",
+      "inception_date": "27th March 2024",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "returns": [
+        {
+          "period": "1Y",
+          "fund_return": 8.64,
+          "benchmark_return": 7.43,
+          "additional_benchmark_return": 9.0
+        },
+        {
+          "period": "SI",
+          "fund_return": 8.98,
+          "benchmark_return": 8.14,
+          "additional_benchmark_return": 8.93
+        }
+      ],
+      "investment_value_of_10000": [
+        {
+          "period": "1Y",
+          "fund_value": 10862,
+          "benchmark_value": 10741,
+          "additional_benchmark_value": 10897
+        },
+        {
+          "period": "SI",
+          "fund_value": 11720,
+          "benchmark_value": 11554,
+          "additional_benchmark_value": 11711
+        }
+      ],
+      "additional_info": {
+        "additional_benchmark": "NIFTY 50 Total Return Index (TRI)",
+        "notes": [
+          "Returns for 3 years and 5 years are not applicable.",
+          "Returns greater than 1 year are compounded annualized."
+        ]
+      }
+    },
+    {
+      "fund_name": "Helios Balanced Advantage Fund – Regular – Growth",
+      "benchmark": "CRISIL Hybrid 50+50 – Moderate Total Return Index (TRI)",
+      "inception_date": "27th March 2024",
+      "plan_type": "Regular",
+      "option": "Growth",
+      "fund_managers": [
+        {
+          "name": "Alok Bahl",
+          "managing_since": "Since inception of the respective schemes"
+        },
+        {
+          "name": "Pratik Singh",
+          "managing_since": "Since inception of the respective schemes"
+        },
+        {
+          "name": "Utssav Modi",
+          "managing_since": "Since inception of the respective schemes",
+          "other_schemes_managed": "(fixed income part)"
+        }
+      ],
+      "sip_returns": [
+        {
+          "period": "1Y",
+          "total_invested": 120000,
+          "fund_xirr_pct": 5.12,
+          "benchmark_xirr_pct": 5.4,
+          "additional_benchmark_xirr_pct": 6.89,
+          "fund_value": 123280,
+          "benchmark_value": 123488,
+          "additional_benchmark_value": 124409
+        },
+        {
+          "period": "SI",
+          "total_invested": 220000,
+          "fund_xirr_pct": 3.68,
+          "benchmark_xirr_pct": 5.36,
+          "additional_benchmark_xirr_pct": 5.43,
+          "fund_value": 227757,
+          "benchmark_value": 231398,
+          "additional_benchmark_value": 231499
+        }
+      ]
+    },
+    {
+      "fund_name": "Helios Balanced Advantage Fund – Direct – Growth",
+      "benchmark": "CRISIL Hybrid 50+50 – Moderate Total Return Index (TRI)",
+      "inception_date": "27th March 2024",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "fund_managers": [
+        {
+          "name": "Alok Bahl",
+          "managing_since": "Since inception of the respective schemes"
+        },
+        {
+          "name": "Pratik Singh",
+          "managing_since": "Since inception of the respective schemes"
+        },
+        {
+          "name": "Utssav Modi",
+          "managing_since": "Since inception of the respective schemes",
+          "other_schemes_managed": "(fixed income part)"
+        }
+      ],
+      "sip_returns": [
+        {
+          "period": "1Y",
+          "total_invested": 120000,
+          "fund_xirr_pct": 6.76,
+          "benchmark_xirr_pct": 5.4,
+          "additional_benchmark_xirr_pct": 6.89,
+          "fund_value": 124320,
+          "benchmark_value": 123488,
+          "additional_benchmark_value": 124409
+        },
+        {
+          "period": "SI",
+          "total_invested": 220000,
+          "fund_xirr_pct": 5.32,
+          "benchmark_xirr_pct": 5.36,
+          "additional_benchmark_xirr_pct": 5.43,
+          "fund_value": 231246,
+          "benchmark_value": 231398,
+          "additional_benchmark_value": 231499
+        }
+      ]
+    }
+  ],
+  "amc_info": {
+    "amc_name": "Helios",
+    "factsheet_date": "30th January, 2026",
+    "website": "www.heliosmf.in"
+  },
+  "pages_processed": 22,
+  "source_pdf": "Helios-Factsheet_January-2026.pdf",
+  "amc_slug": "helios-mutual-fund",
+  "extracted_at": "2026-02-25T15:47:50"
+}

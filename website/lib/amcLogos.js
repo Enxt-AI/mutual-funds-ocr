@@ -1,6 +1,8 @@
 /**
  * AMC Logo Mapping
- * Maps amc_slug to the logo filename in /logos/
+ * Maps amc_slug patterns to the logo filename in /logos/
+ * The keys are matched as partial prefixes against the actual amc_slug,
+ * so "helios" matches "helios-mutual-fund", "helios-mf", etc.
  */
 const AMC_LOGO_MAP = {
     "360-one": "360 ONE Mutual Fund.webp",
@@ -50,16 +52,33 @@ const AMC_LOGO_MAP = {
     "zerodha": "Zerodha Fund House.svg",
 };
 
+// Sort keys by length descending so longer (more specific) keys match first
+// e.g. "icici-prudential" matches before "iti"
+const SORTED_KEYS = Object.keys(AMC_LOGO_MAP).sort((a, b) => b.length - a.length);
+
 /**
  * Get the logo URL for a given AMC slug.
+ * Uses prefix matching so "helios-mutual-fund" matches the "helios" key.
  * Returns the path for use in <img src="...">.
  * Falls back to null if no logo mapping exists.
  */
 export function getAmcLogoUrl(amcSlug) {
     if (!amcSlug) return null;
-    const filename = AMC_LOGO_MAP[amcSlug];
-    if (!filename) return null;
-    return `/logos/${encodeURIComponent(filename)}`;
+    const slug = amcSlug.toLowerCase();
+
+    // Try exact match first (fastest)
+    if (AMC_LOGO_MAP[slug]) {
+        return `/logos/${encodeURIComponent(AMC_LOGO_MAP[slug])}`;
+    }
+
+    // Try prefix matching — check if slug starts with any map key
+    for (const key of SORTED_KEYS) {
+        if (slug.startsWith(key) || slug.includes(key)) {
+            return `/logos/${encodeURIComponent(AMC_LOGO_MAP[key])}`;
+        }
+    }
+
+    return null;
 }
 
 /**

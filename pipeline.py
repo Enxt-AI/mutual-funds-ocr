@@ -305,7 +305,7 @@ def run_spider(spider_name: str) -> tuple[bool, str]:
 
         output_lines = []
         start_time = time.time()
-        timeout = 1200000000
+        timeout = 86400
 
         for line in iter(proc.stdout.readline, ""):
             line = line.rstrip("\n\r")
@@ -379,7 +379,7 @@ def run_extractor(amc_slug: str, force: bool = False) -> tuple[bool, str]:
 
         output_lines = []
         start_time = time.time()
-        timeout = 1800  # 30 minutes for large PDFs
+        timeout = 86400  # 24 hours for large PDFs
 
         for line in iter(proc.stdout.readline, ""):
             line = line.rstrip("\n\r")
