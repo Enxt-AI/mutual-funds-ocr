@@ -451,6 +451,186 @@ function AllocationBar({ data, colors }) {
     );
 }
 
+// Donut / Pie chart for allocation data
+function DonutChart({ data, colors }) {
+    if (!data || Object.keys(data).length === 0) return <div className={styles.noData}>No data available</div>;
+    const entries = Object.entries(data).sort((a, b) => b[1] - a[1]);
+    const total = entries.reduce((s, [, v]) => s + v, 0);
+    const size = 180;
+    const cx = size / 2;
+    const cy = size / 2;
+    const radius = 70;
+    const stroke = 28;
+    const innerR = radius - stroke / 2;
+
+    // Build arc paths
+    let cumAngle = -90; // start from top
+    const arcs = entries.map(([name, val], i) => {
+        const pct = total > 0 ? val / total : 0;
+        const angle = pct * 360;
+        const startAngle = cumAngle;
+        const endAngle = cumAngle + angle;
+        cumAngle = endAngle;
+
+        const startRad = (startAngle * Math.PI) / 180;
+        const endRad = (endAngle * Math.PI) / 180;
+        const x1 = cx + radius * Math.cos(startRad);
+        const y1 = cy + radius * Math.sin(startRad);
+        const x2 = cx + radius * Math.cos(endRad);
+        const y2 = cy + radius * Math.sin(endRad);
+        const largeArc = angle > 180 ? 1 : 0;
+
+        // For a full circle (single item = 100%), draw two semicircles
+        if (pct >= 0.9999) {
+            const mx = cx + radius * Math.cos(((startAngle + 180) * Math.PI) / 180);
+            const my = cy + radius * Math.sin(((startAngle + 180) * Math.PI) / 180);
+            return {
+                name, val, color: colors[i % colors.length],
+                d: `M ${x1} ${y1} A ${radius} ${radius} 0 1 1 ${mx} ${my} A ${radius} ${radius} 0 1 1 ${x1} ${y1}`,
+            };
+        }
+
+        return {
+            name, val, color: colors[i % colors.length],
+            d: `M ${x1} ${y1} A ${radius} ${radius} 0 ${largeArc} 1 ${x2} ${y2}`,
+        };
+    });
+
+    return (
+        <div className={styles.donutWrap}>
+            <div className={styles.donutSvgWrap}>
+                <svg viewBox={`0 0 ${size} ${size}`} className={styles.donutSvg}>
+                    {/* Background circle */}
+                    <circle cx={cx} cy={cy} r={radius} fill="none" stroke="var(--bg-secondary)" strokeWidth={stroke} />
+                    {/* Segments */}
+                    {arcs.map((arc, i) => (
+                        <path
+                            key={i}
+                            d={arc.d}
+                            fill="none"
+                            stroke={arc.color}
+                            strokeWidth={stroke}
+                            strokeLinecap="butt"
+                            className={styles.donutSegment}
+                        />
+                    ))}
+                </svg>
+                {/* Center text */}
+                <div className={styles.donutCenter}>
+                    <span className={styles.donutCenterVal}>{total.toFixed(total % 1 === 0 ? 0 : 1)}%</span>
+                    <span className={styles.donutCenterLabel}>Total</span>
+                </div>
+            </div>
+            {/* Legend */}
+            <div className={styles.donutLegend}>
+                {entries.map(([name, val], i) => (
+                    <div key={name} className={styles.donutLegendItem}>
+                        <span className={styles.donutLegendDot} style={{ background: colors[i % colors.length] }} />
+                        <span className={styles.donutLegendName}>{name}</span>
+                        <span className={styles.donutLegendVal}>{val}%</span>
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
+}
+
+
+// Semi-circle / half-donut chart for allocation data
+function SemiCircleChart({ data, colors }) {
+    if (!data || Object.keys(data).length === 0) return <div className={styles.noData}>No data available</div>;
+    const entries = Object.entries(data).sort((a, b) => b[1] - a[1]);
+    const total = entries.reduce((s, [, v]) => s + v, 0);
+
+    const w = 260;
+    const h = 150;
+    const cx = w / 2;
+    const cy = 130;
+    const radius = 100;
+    const stroke = 30;
+    const gap = 2; // degrees gap between segments
+    const totalArc = 180 - (entries.length - 1) * gap;
+
+    let cumAngle = 180; // start from left
+    const arcs = entries.map(([name, val], i) => {
+        const pct = total > 0 ? val / total : 0;
+        const segArc = pct * totalArc;
+        const startAngle = cumAngle;
+        const endAngle = cumAngle + segArc;
+        cumAngle = endAngle + gap;
+
+        const startRad = (startAngle * Math.PI) / 180;
+        const endRad = (endAngle * Math.PI) / 180;
+        const midRad = ((startAngle + endAngle) / 2 * Math.PI) / 180;
+        const x1 = cx + radius * Math.cos(startRad);
+        const y1 = cy + radius * Math.sin(startRad);
+        const x2 = cx + radius * Math.cos(endRad);
+        const y2 = cy + radius * Math.sin(endRad);
+        const largeArc = segArc > 180 ? 1 : 0;
+        // Label position
+        const labelR = radius + stroke / 2 + 14;
+        const lx = cx + labelR * Math.cos(midRad);
+        const ly = cy + labelR * Math.sin(midRad);
+
+        return {
+            name, val, pct, color: colors[i % colors.length],
+            d: `M ${x1} ${y1} A ${radius} ${radius} 0 ${largeArc} 1 ${x2} ${y2}`,
+            lx, ly,
+        };
+    });
+
+    return (
+        <div className={styles.semiWrap}>
+            <div className={styles.semiSvgWrap}>
+                <svg viewBox={`0 0 ${w} ${h}`} className={styles.semiSvg}>
+                    {/* Background arc */}
+                    <path
+                        d={`M ${cx - radius} ${cy} A ${radius} ${radius} 0 0 1 ${cx + radius} ${cy}`}
+                        fill="none" stroke="var(--bg-secondary)" strokeWidth={stroke}
+                        strokeLinecap="round"
+                    />
+                    {/* Segments */}
+                    {arcs.map((arc, i) => (
+                        <path
+                            key={i}
+                            d={arc.d}
+                            fill="none"
+                            stroke={arc.color}
+                            strokeWidth={stroke}
+                            strokeLinecap="round"
+                            className={styles.semiSegment}
+                        />
+                    ))}
+                    {/* Percentage labels along arc */}
+                    {arcs.map((arc, i) => (
+                        <text
+                            key={`lbl-${i}`}
+                            x={arc.lx} y={arc.ly}
+                            textAnchor="middle"
+                            dominantBaseline="middle"
+                            fill={arc.color}
+                            fontSize="11"
+                            fontWeight="700"
+                        >
+                            {arc.val}%
+                        </text>
+                    ))}
+                </svg>
+            </div>
+            {/* Legend */}
+            <div className={styles.semiLegend}>
+                {entries.map(([name, val], i) => (
+                    <div key={name} className={styles.semiLegendItem}>
+                        <span className={styles.semiLegendDot} style={{ background: colors[i % colors.length] }} />
+                        <span className={styles.semiLegendName}>{name}</span>
+                        <span className={styles.semiLegendVal}>{val}%</span>
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
+}
+
 // Morningstar star rating component
 function MorningstarRating({ rating }) {
     if (!rating || rating < 1 || rating > 5) return null;
@@ -503,6 +683,7 @@ export default function FundDetailPage() {
     const fund = allFunds.find((f) => f.slug === slug);
 
     const [chartPeriod, setChartPeriod] = useState("1Y");
+    const [riskPeriod, setRiskPeriod] = useState("3Y");
     const [holdingTab, setHoldingTab] = useState(() => {
         if (!fund) return "equity";
         const hasEquity = fund.equity_holdings && fund.equity_holdings.length > 0;
@@ -563,11 +744,18 @@ export default function FundDetailPage() {
     const chartData = filterByPeriod(benchmark.points, chartPeriod);
     const fundChartData = filterByPeriod(fundNavHistory, chartPeriod);
 
-    // Compute risk metrics from historical data (fallback for OCR-extracted metrics)
-    const calculatedMetrics = useMemo(
-        () => computeRiskMetrics(fundNavHistory, benchmark.points),
-        [fundNavHistory, benchmark.points]
-    );
+    // Compute risk metrics per period (1Y, 3Y, 5Y) from historical data
+    const riskMetricsByPeriod = useMemo(() => {
+        const periods = ["1Y", "3Y", "5Y"];
+        const results = {};
+        for (const p of periods) {
+            const filteredFund = filterByPeriod(fundNavHistory, p);
+            const filteredBench = filterByPeriod(benchmark.points, p);
+            results[p] = computeRiskMetrics(filteredFund, filteredBench);
+        }
+        return results;
+    }, [fundNavHistory, benchmark.points]);
+    const calculatedMetrics = riskMetricsByPeriod[riskPeriod];
 
     const sectorColors = ["#3b82f6", "#8b5cf6", "#06b6d4", "#10b981", "#f59e0b", "#ef4444", "#ec4899", "#f97316", "#14b8a6", "#6366f1"];
     const capColors = ["#3b82f6", "#8b5cf6", "#f59e0b", "#10b981"];
@@ -630,85 +818,154 @@ export default function FundDetailPage() {
                         </div>
                     </div>
                 </div>
-                <div className={styles.headerCards}>
-                    <div className={styles.navCard}>
-                        <span className={styles.navLabel}>
-                            Current NAV {liveNav && <span className={styles.liveBadge}>LIVE</span>}
-                        </span>
-                        <div className={styles.navRow}>
-                            <span className={styles.navPrice}>
-                                {liveNav?.nav != null ? `₹${Number(liveNav.nav).toFixed(2)}` : fund.nav != null ? `₹${Number(fund.nav).toFixed(2)}` : "—"}
-                            </span>
-                        </div>
-                        <span className={styles.navDate}>
-                            {liveNav ? `as on ${liveNav.date}` : fund.nav_date ? `as on ${new Date(fund.nav_date).toLocaleDateString("en-IN", { day: "numeric", month: "short", year: "numeric" })}` : ""}
+                <div className={styles.statBar}>
+                    <div className={styles.statBarItem}>
+                        <span className={styles.statBarLabel}>NAV {liveNav && <span className={styles.liveBadge}>LIVE</span>}</span>
+                        <span className={styles.statBarValue} style={{ color: "var(--accent-blue)", fontSize: 28, fontWeight: 900 }}>
+                            {liveNav?.nav != null ? `₹${Number(liveNav.nav).toFixed(2)}` : fund.nav != null ? `₹${Number(fund.nav).toFixed(2)}` : "—"}
                         </span>
                     </div>
-                    <div className={styles.statCard}>
-                        <span className={styles.statLabel}>AUM</span>
-                        <span className={styles.statValue}>
-                            {fund.aum_crores ? `₹${(fund.aum_crores / 1000).toFixed(1)}K Cr` : "—"}
+                    <div className={styles.statBarDivider} />
+                    <div className={styles.statBarItem}>
+                        <span className={styles.statBarLabel}>AUM</span>
+                        <span className={styles.statBarValue}>{fund.aum_crores ? `₹${(fund.aum_crores / 1000).toFixed(1)}K Cr` : "—"}</span>
+                    </div>
+                    <div className={styles.statBarDivider} />
+                    <div className={styles.statBarItem}>
+                        <span className={styles.statBarLabel}>Expense Ratio</span>
+                        <span className={styles.statBarValue}>{safe(fund.expense_ratio, "%")}</span>
+                    </div>
+                    <div className={styles.statBarDivider} />
+                    <div className={styles.statBarItem}>
+                        <span className={styles.statBarLabel}>Fund Age</span>
+                        <span className={styles.statBarValue}>
+                            {(() => {
+                                if (fund.fund_age_years != null) return `${fund.fund_age_years}Y ${fund.fund_age_months || 0}M`;
+                                if (fund.inception_date) {
+                                    try {
+                                        const cleaned = fund.inception_date.replace(/(\d+)(st|nd|rd|th)/gi, "$1");
+                                        const d = new Date(cleaned);
+                                        if (!isNaN(d.getTime())) {
+                                            const now = new Date();
+                                            let years = now.getFullYear() - d.getFullYear();
+                                            let months = now.getMonth() - d.getMonth();
+                                            if (months < 0) { years--; months += 12; }
+                                            return `${years}Y ${months}M`;
+                                        }
+                                    } catch { }
+                                }
+                                return "—";
+                            })()}
                         </span>
                     </div>
-                    <div className={styles.statCard}>
-                        <span className={styles.statLabel}>Expense Ratio</span>
-                        <span className={styles.statValue}>{safe(fund.expense_ratio, "%")}</span>
-                    </div>
-                    <div className={styles.statCard}>
-                        <span className={styles.statLabel}>Fund Age</span>
-                        <span className={styles.statValue}>
-                            {fund.fund_age_years != null ? `${fund.fund_age_years}Y ${fund.fund_age_months || 0}M` : "—"}
-                        </span>
-                    </div>
-                    <div className={styles.statCard}>
-                        <span className={styles.statLabel}>Min SIP</span>
-                        <span className={styles.statValue}>{safeMoney(fund.min_sip)}</span>
+                    {fund.portfolio_stats?.pe_ratio != null && (
+                        <>
+                            <div className={styles.statBarDivider} />
+                            <div className={styles.statBarItem}>
+                                <span className={styles.statBarLabel}>P/E Ratio</span>
+                                <span className={styles.statBarValue}>{fund.portfolio_stats.pe_ratio}x</span>
+                            </div>
+                        </>
+                    )}
+                    {fund.portfolio_stats?.dividend_yield != null && (
+                        <>
+                            <div className={styles.statBarDivider} />
+                            <div className={styles.statBarItem}>
+                                <span className={styles.statBarLabel}>Div. Yield</span>
+                                <span className={styles.statBarValue}>{fund.portfolio_stats.dividend_yield}%</span>
+                            </div>
+                        </>
+                    )}
+                    <div className={styles.statBarDivider} />
+                    <div className={styles.statBarItem}>
+                        <span className={styles.statBarLabel}>Min SIP</span>
+                        <span className={styles.statBarValue}>{safeMoney(fund.min_sip)}</span>
                     </div>
                 </div>
             </section>
 
-            {/* ===== ALPHA SUMMARY BANNER ===== */}
-            {returns.length > 0 && (() => {
-                const r1Y = returns.find(r => r.period === "1Y");
-                const r3Y = returns.find(r => r.period === "3Y");
-                const alpha1Y = (r1Y?.fund_return != null && r1Y?.benchmark_return != null) ? r1Y.fund_return - r1Y.benchmark_return : null;
-                const alpha3Y = (r3Y?.fund_return != null && r3Y?.benchmark_return != null) ? r3Y.fund_return - r3Y.benchmark_return : null;
-                if (alpha1Y == null && alpha3Y == null) return null;
-                return (
-                    <section className={`card ${styles.section} ${styles.alphaBanner}`}>
-                        <div className={styles.alphaBannerHeader}>
-                            <h2 className="section-title">⚡ Benchmark Comparison</h2>
-                            <span className={styles.alphaBenchName}>
-                                vs {fund.benchmark || benchmark.name}
-                            </span>
-                        </div>
-                        <div className={styles.alphaCards}>
-                            {alpha1Y != null && (
-                                <div className={`${styles.alphaCard} ${alpha1Y >= 0 ? styles.alphaPositive : styles.alphaNegative}`}>
-                                    <span className={styles.alphaLabel}>1 Year Alpha</span>
-                                    <span className={styles.alphaValue}>
-                                        {alpha1Y >= 0 ? "▲" : "▼"} {alpha1Y >= 0 ? "+" : ""}{alpha1Y.toFixed(2)}%
-                                    </span>
-                                    <span className={styles.alphaDetail}>
-                                        Fund {safe(r1Y.fund_return, "%")} vs Benchmark {safe(r1Y.benchmark_return, "%")}
-                                    </span>
+            {/* ===== FUND MANAGERS ===== */}
+            {
+                managers.length > 0 && (
+                    <section className={`card ${styles.section}`}>
+                        <h2 className="section-title">👤 Fund Managers</h2>
+                        <div className={styles.managerGrid}>
+                            {managers.map((m, i) => (
+                                <div key={i} className={styles.managerCard}>
+                                    <div className={styles.managerAvatar}>
+                                        {m.name?.split(" ").filter(n => n.length > 0).map((n) => n[0]).join("").slice(0, 2)}
+                                    </div>
+                                    <div className={styles.managerInfo}>
+                                        <h4 className={styles.managerName}>{m.name}</h4>
+                                        {m.experience && <p className={styles.managerDetail}>Experience: {m.experience}</p>}
+                                        {m.qualification && <p className={styles.managerDetail}>{m.qualification}</p>}
+                                        {m.managing_since && (
+                                            <p className={styles.managerDetail}>
+                                                Managing since {(() => { try { return new Date(m.managing_since).toLocaleDateString("en-IN", { month: "short", year: "numeric" }); } catch { return m.managing_since; } })()}
+                                            </p>
+                                        )}
+                                        {m.other_schemes_managed && (
+                                            <div className={styles.schemeTags}>
+                                                {(Array.isArray(m.other_schemes_managed)
+                                                    ? m.other_schemes_managed
+                                                    : String(m.other_schemes_managed).split(",").map(s => s.trim())
+                                                ).filter(Boolean).slice(0, 5).map((s, j) => (
+                                                    <span key={j} className={styles.schemeTag}>{s}</span>
+                                                ))}
+                                            </div>
+                                        )}
+                                    </div>
                                 </div>
-                            )}
-                            {alpha3Y != null && (
-                                <div className={`${styles.alphaCard} ${alpha3Y >= 0 ? styles.alphaPositive : styles.alphaNegative}`}>
-                                    <span className={styles.alphaLabel}>3 Year Alpha</span>
-                                    <span className={styles.alphaValue}>
-                                        {alpha3Y >= 0 ? "▲" : "▼"} {alpha3Y >= 0 ? "+" : ""}{alpha3Y.toFixed(2)}%
-                                    </span>
-                                    <span className={styles.alphaDetail}>
-                                        Fund {safe(r3Y.fund_return, "%")} vs Benchmark {safe(r3Y.benchmark_return, "%")}
-                                    </span>
-                                </div>
-                            )}
+                            ))}
                         </div>
                     </section>
-                );
-            })()}
+                )
+            }
+
+            {/* ===== ALPHA SUMMARY BANNER ===== */}
+            {
+                returns.length > 0 && (() => {
+                    const r1Y = returns.find(r => r.period === "1Y");
+                    const r3Y = returns.find(r => r.period === "3Y");
+                    const alpha1Y = (r1Y?.fund_return != null && r1Y?.benchmark_return != null) ? r1Y.fund_return - r1Y.benchmark_return : null;
+                    const alpha3Y = (r3Y?.fund_return != null && r3Y?.benchmark_return != null) ? r3Y.fund_return - r3Y.benchmark_return : null;
+                    if (alpha1Y == null && alpha3Y == null) return null;
+                    return (
+                        <section className={`card ${styles.section} ${styles.alphaBanner}`}>
+                            <div className={styles.alphaBannerHeader}>
+                                <h2 className="section-title">⚡ Benchmark Comparison</h2>
+                                <span className={styles.alphaBenchName}>
+                                    vs {fund.benchmark || benchmark.name}
+                                </span>
+                            </div>
+                            <div className={styles.alphaCards}>
+                                {alpha1Y != null && (
+                                    <div className={`${styles.alphaCard} ${alpha1Y >= 0 ? styles.alphaPositive : styles.alphaNegative}`}>
+                                        <span className={styles.alphaLabel}>1 Year Alpha</span>
+                                        <span className={styles.alphaValue}>
+                                            {alpha1Y >= 0 ? "▲" : "▼"} {alpha1Y >= 0 ? "+" : ""}{alpha1Y.toFixed(2)}%
+                                        </span>
+                                        <span className={styles.alphaDetail}>
+                                            Fund {safe(r1Y.fund_return, "%")} vs Benchmark {safe(r1Y.benchmark_return, "%")}
+                                        </span>
+                                    </div>
+                                )}
+                                {alpha3Y != null && (
+                                    <div className={`${styles.alphaCard} ${alpha3Y >= 0 ? styles.alphaPositive : styles.alphaNegative}`}>
+                                        <span className={styles.alphaLabel}>3 Year Alpha</span>
+                                        <span className={styles.alphaValue}>
+                                            {alpha3Y >= 0 ? "▲" : "▼"} {alpha3Y >= 0 ? "+" : ""}{alpha3Y.toFixed(2)}%
+                                        </span>
+                                        <span className={styles.alphaDetail}>
+                                            Fund {safe(r3Y.fund_return, "%")} vs Benchmark {safe(r3Y.benchmark_return, "%")}
+                                        </span>
+                                    </div>
+                                )}
+                            </div>
+                        </section>
+                    );
+                })()
+            }
 
             {/* ===== FUND vs BENCHMARK CHART ===== */}
             <section className={`card ${styles.section}`}>
@@ -725,64 +982,113 @@ export default function FundDetailPage() {
                 <NavChart data={chartData} fundNavData={fundChartData} benchmarkLabel={benchmark.name} fundLabel={fund.fund_name} />
             </section>
 
-            {/* ===== RETURNS TABLE ===== */}
-            {returns.length > 0 && (() => {
-                const maxReturn = Math.max(...returns.map(r => Math.max(Math.abs(r.fund_return || 0), Math.abs(r.benchmark_return || 0))));
-                const barScale = maxReturn > 0 ? 100 / maxReturn : 1;
-                return (
-                    <section className={`card ${styles.section}`}>
-                        <h2 className="section-title">📊 Returns Comparison</h2>
-                        <div className={styles.tableWrap}>
-                            <table className="data-table">
-                                <thead>
-                                    <tr>
-                                        <th>Period</th>
-                                        <th>Fund Return</th>
-                                        <th>Benchmark</th>
-                                        {returns.some(r => r.additional_benchmark_return != null) && (
-                                            <th>Addl. Benchmark</th>
-                                        )}
-                                        <th>Alpha</th>
-                                        <th style={{ minWidth: 160 }}>Comparison</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
+            {/* ===== TRAILING RETURNS VERTICAL BAR CHART ===== */}
+            {
+                returns.length > 0 && (() => {
+                    const hasAddlBench = returns.some(r => r.additional_benchmark_return != null);
+                    const allVals = returns.flatMap(r => [r.fund_return, r.benchmark_return, hasAddlBench ? r.additional_benchmark_return : null].filter(v => v != null));
+                    const maxVal = Math.max(...allVals.map(Math.abs), 1);
+                    const minVal = Math.min(...allVals, 0);
+                    const hasNeg = minVal < 0;
+                    const range = maxVal + (hasNeg ? Math.abs(minVal) : 0);
+                    return (
+                        <section className={`card ${styles.section}`}>
+                            <h2 className="section-title">📊 Trailing Returns Comparison</h2>
+                            {/* Legend */}
+                            <div className={styles.trLegend}>
+                                <div className={styles.trLegendItem}><span className={styles.trLegendDot} style={{ background: "linear-gradient(135deg, #10b981, #34d399)" }} /><span>Fund</span></div>
+                                <div className={styles.trLegendItem}><span className={styles.trLegendDot} style={{ background: "linear-gradient(135deg, #3b82f6, #60a5fa)" }} /><span>{fund.benchmark || "Benchmark"}</span></div>
+                                {hasAddlBench && <div className={styles.trLegendItem}><span className={styles.trLegendDot} style={{ background: "linear-gradient(135deg, #8b5cf6, #a78bfa)" }} /><span>{fund.additional_benchmark || "Addl. Benchmark"}</span></div>}
+                            </div>
+                            {/* Vertical bar chart */}
+                            <div className={styles.trVChart}>
+                                {/* Y-axis gridlines */}
+                                <div className={styles.trVBarsArea}>
+                                    {[0, 25, 50, 75, 100].map(pct => (
+                                        <div key={pct} className={styles.trGridLine} style={{ bottom: `${hasNeg ? ((pct / 100) * maxVal / range) * 100 + (Math.abs(minVal) / range) * 100 * (pct === 0 ? 0 : 0) : pct}%` }}>
+                                        </div>
+                                    ))}
+                                    {/* Zero line when there are negative values */}
+                                    {hasNeg && (
+                                        <div className={styles.trZeroLine} style={{ bottom: `${(Math.abs(minVal) / range) * 100}%` }}>
+                                            <span className={styles.trZeroLabel}>0%</span>
+                                        </div>
+                                    )}
+                                </div>
+                                {/* Bar columns */}
+                                <div className={styles.trVColumns}>
                                     {returns.map((r) => {
                                         const diff = (r.fund_return != null && r.benchmark_return != null) ? r.fund_return - r.benchmark_return : null;
-                                        const fundW = r.fund_return != null ? Math.abs(r.fund_return) * barScale : 0;
-                                        const benchW = r.benchmark_return != null ? Math.abs(r.benchmark_return) * barScale : 0;
+                                        const barH = (val) => val != null ? (Math.abs(val) / maxVal) * 100 : 0;
                                         return (
-                                            <tr key={r.period}>
-                                                <td style={{ fontWeight: 600 }}>{r.period}</td>
-                                                <td className={r.fund_return >= 0 ? "positive" : "negative"} style={{ fontWeight: 700 }}>
-                                                    {safe(r.fund_return, "%")}
-                                                </td>
-                                                <td>{safe(r.benchmark_return, "%")}</td>
-                                                {returns.some(ret => ret.additional_benchmark_return != null) && (
-                                                    <td>{safe(r.additional_benchmark_return, "%")}</td>
-                                                )}
-                                                <td className={diff != null ? (diff >= 0 ? "positive" : "negative") : ""} style={{ fontWeight: 600 }}>
-                                                    {diff != null ? `${diff >= 0 ? "+" : ""}${diff.toFixed(2)}%` : "—"}
-                                                </td>
-                                                <td>
-                                                    <div className={styles.comparisonBars}>
-                                                        <div className={styles.compBarRow}>
-                                                            <div className={styles.compBarFund} style={{ width: `${Math.max(fundW, 2)}%` }} />
-                                                        </div>
-                                                        <div className={styles.compBarRow}>
-                                                            <div className={styles.compBarBench} style={{ width: `${Math.max(benchW, 2)}%` }} />
-                                                        </div>
+                                            <div key={r.period} className={styles.trVCol}>
+                                                {/* Bars container with value labels */}
+                                                <div className={styles.trVBarGroup}>
+                                                    {/* Fund bar */}
+                                                    <div className={styles.trVBarWrap}>
+                                                        <span className={`${styles.trVVal} ${(r.fund_return || 0) >= 0 ? "positive" : "negative"}`}>
+                                                            {r.fund_return != null ? `${r.fund_return}%` : ""}
+                                                        </span>
+                                                        <div
+                                                            className={styles.trVBar}
+                                                            style={{
+                                                                height: `${Math.max(barH(r.fund_return), 3)}%`,
+                                                                background: (r.fund_return || 0) >= 0
+                                                                    ? "linear-gradient(0deg, #059669, #34d399)"
+                                                                    : "linear-gradient(0deg, #f87171, #ef4444)",
+                                                            }}
+                                                        />
                                                     </div>
-                                                </td>
-                                            </tr>
+                                                    {/* Benchmark bar */}
+                                                    <div className={styles.trVBarWrap}>
+                                                        <span className={styles.trVVal}>
+                                                            {r.benchmark_return != null ? `${r.benchmark_return}%` : ""}
+                                                        </span>
+                                                        <div
+                                                            className={styles.trVBar}
+                                                            style={{
+                                                                height: `${Math.max(barH(r.benchmark_return), 3)}%`,
+                                                                background: (r.benchmark_return || 0) >= 0
+                                                                    ? "linear-gradient(0deg, #2563eb, #60a5fa)"
+                                                                    : "linear-gradient(0deg, #f87171, #ef4444)",
+                                                            }}
+                                                        />
+                                                    </div>
+                                                    {/* Additional benchmark bar */}
+                                                    {hasAddlBench && (
+                                                        <div className={styles.trVBarWrap}>
+                                                            <span className={styles.trVVal}>
+                                                                {r.additional_benchmark_return != null ? `${r.additional_benchmark_return}%` : ""}
+                                                            </span>
+                                                            <div
+                                                                className={styles.trVBar}
+                                                                style={{
+                                                                    height: `${Math.max(barH(r.additional_benchmark_return), 3)}%`,
+                                                                    background: (r.additional_benchmark_return || 0) >= 0
+                                                                        ? "linear-gradient(0deg, #7c3aed, #a78bfa)"
+                                                                        : "linear-gradient(0deg, #f87171, #ef4444)",
+                                                                }}
+                                                            />
+                                                        </div>
+                                                    )}
+                                                </div>
+                                                {/* Period label */}
+                                                <div className={styles.trVPeriod}>{r.period}</div>
+                                                {/* Alpha badge */}
+                                                {diff != null && (
+                                                    <span className={`${styles.trVAlpha} ${diff >= 0 ? styles.trAlphaPos : styles.trAlphaNeg}`}>
+                                                        {diff >= 0 ? "+" : ""}{diff.toFixed(1)}%
+                                                    </span>
+                                                )}
+                                            </div>
                                         );
                                     })}
-                                </tbody>
-                            </table>
-                        </div>
-                    </section>
-                );
-            })()}
+                                </div>
+                            </div>
+                        </section>
+                    );
+                })()
+            }
 
             {/* ===== TWO-COLUMN: HOLDINGS + ALLOCATIONS ===== */}
             <div className={styles.twoCol}>
@@ -848,7 +1154,7 @@ export default function FundDetailPage() {
                 <div className={styles.allocColumn}>
                     <section className={`card ${styles.section}`}>
                         <h2 className="section-title">🏦 Asset Allocation</h2>
-                        <AllocationBar data={fund.asset_allocation} colors={assetColors} />
+                        <DonutChart data={fund.asset_allocation} colors={assetColors} />
                     </section>
                     {fund.instrument_composition && Object.keys(fund.instrument_composition).length > 0 && (
                         <section className={`card ${styles.section}`}>
@@ -862,7 +1168,7 @@ export default function FundDetailPage() {
                     </section>
                     <section className={`card ${styles.section}`}>
                         <h2 className="section-title">📐 Market Cap</h2>
-                        <AllocationBar data={fund.market_cap_allocation} colors={capColors} />
+                        <SemiCircleChart data={fund.market_cap_allocation} colors={capColors} />
                     </section>
                     {fund.composition_by_rating && Object.keys(fund.composition_by_rating).length > 0 && (
                         <section className={`card ${styles.section}`}>
@@ -879,300 +1185,337 @@ export default function FundDetailPage() {
                 </div>
             </div>
 
-            {/* ===== FUND MANAGERS ===== */}
-            {managers.length > 0 && (
-                <section className={`card ${styles.section}`}>
-                    <h2 className="section-title">👤 Fund Managers</h2>
-                    <div className={styles.managerGrid}>
-                        {managers.map((m, i) => (
-                            <div key={i} className={styles.managerCard}>
-                                <div className={styles.managerAvatar}>
-                                    {m.name?.split(" ").filter(n => n.length > 0).map((n) => n[0]).join("").slice(0, 2)}
-                                </div>
-                                <div className={styles.managerInfo}>
-                                    <h4 className={styles.managerName}>{m.name}</h4>
-                                    {m.experience && <p className={styles.managerDetail}>Experience: {m.experience}</p>}
-                                    {m.qualification && <p className={styles.managerDetail}>{m.qualification}</p>}
-                                    {m.managing_since && (
-                                        <p className={styles.managerDetail}>
-                                            Managing since {(() => { try { return new Date(m.managing_since).toLocaleDateString("en-IN", { month: "short", year: "numeric" }); } catch { return m.managing_since; } })()}
-                                        </p>
-                                    )}
-                                    {m.other_schemes_managed && (
-                                        <div className={styles.schemeTags}>
-                                            {(Array.isArray(m.other_schemes_managed)
-                                                ? m.other_schemes_managed
-                                                : String(m.other_schemes_managed).split(",").map(s => s.trim())
-                                            ).filter(Boolean).slice(0, 5).map((s, j) => (
-                                                <span key={j} className={styles.schemeTag}>{s}</span>
-                                            ))}
-                                        </div>
-                                    )}
+
+            {/* ===== RISK ANALYSIS (Tabbed: 1Y / 3Y / 5Y) ===== */}
+            {
+                (() => {
+                    const RISK_PERIODS = ["1Y", "3Y", "5Y"];
+                    // Merge OCR-extracted risk metrics with calculated ones for the selected period
+                    const ocrMetrics = riskMetrics || {};
+                    const hasOcr = Object.keys(ocrMetrics).length > 0 && Object.values(ocrMetrics).some(v => v != null);
+                    const currentCalc = riskMetricsByPeriod[riskPeriod];
+                    const hasCalc = currentCalc != null;
+                    const hasAnyPeriod = RISK_PERIODS.some(p => riskMetricsByPeriod[p] != null);
+                    if (!hasOcr && !hasAnyPeriod) return null;
+
+                    // Order of display
+                    const metricOrder = ["beta", "alpha", "sharpe_ratio", "standard_deviation", "r_squared",
+                        "treynor_ratio", "sortino_ratio", "information_ratio", "tracking_error", "max_drawdown"];
+
+                    // Build merged entries: calculated per-period takes priority, OCR fills gaps
+                    const merged = {};
+                    for (const key of metricOrder) {
+                        const calcVal = hasCalc ? currentCalc[key] : null;
+                        const ocrVal = ocrMetrics[key];
+                        if (calcVal != null) {
+                            merged[key] = { val: calcVal, source: "calculated" };
+                        } else if (ocrVal != null) {
+                            merged[key] = { val: ocrVal, source: "factsheet" };
+                        }
+                    }
+                    // Also include any OCR-only keys not in our standard list
+                    for (const key of Object.keys(ocrMetrics)) {
+                        if (!merged[key] && ocrMetrics[key] != null) {
+                            merged[key] = { val: ocrMetrics[key], source: "factsheet" };
+                        }
+                    }
+
+                    if (Object.keys(merged).length === 0) return null;
+
+                    // Metric descriptions for tooltips
+                    const desc = {
+                        beta: "Sensitivity to market movements. 1 = moves with market",
+                        alpha: "Excess return over benchmark (risk-adjusted)",
+                        sharpe_ratio: "Risk-adjusted return. >1 is good, >2 is excellent",
+                        standard_deviation: "Volatility of returns. Lower = less risky",
+                        r_squared: "How closely fund tracks benchmark. 1 = perfect tracking",
+                        treynor_ratio: "Return per unit of systematic risk",
+                        sortino_ratio: "Like Sharpe but only penalizes downside. >1 is good",
+                        information_ratio: "Active return per unit of tracking error",
+                        tracking_error: "How much fund deviates from benchmark",
+                        max_drawdown: "Largest peak-to-trough decline"
+                    };
+
+                    return (
+                        <section className={`card ${styles.section}`}>
+                            <div className={styles.sectionHeader}>
+                                <h2 className="section-title">🛡️ Risk Analysis</h2>
+                                <div className="pill-tabs">
+                                    {RISK_PERIODS.map((p) => (
+                                        <button
+                                            key={p}
+                                            className={`pill-tab ${riskPeriod === p ? "active" : ""}`}
+                                            onClick={() => setRiskPeriod(p)}
+                                            disabled={!riskMetricsByPeriod[p]}
+                                            style={!riskMetricsByPeriod[p] ? { opacity: 0.4, cursor: "not-allowed" } : {}}
+                                        >
+                                            {p}
+                                        </button>
+                                    ))}
                                 </div>
                             </div>
-                        ))}
-                    </div>
-                </section>
-            )}
+                            <div className={styles.riskBars}>
+                                {Object.entries(merged).map(([key, { val, source }]) => {
+                                    const label = key.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
 
-            {/* ===== RISK METRICS ===== */}
-            {(() => {
-                // Merge OCR-extracted risk metrics with calculated ones
-                const ocrMetrics = riskMetrics || {};
-                const hasOcr = Object.keys(ocrMetrics).length > 0 && Object.values(ocrMetrics).some(v => v != null);
-                const hasCalc = calculatedMetrics != null;
-                if (!hasOcr && !hasCalc) return null;
+                                    let displayVal;
+                                    let numVal;
+                                    if (typeof val === "object" && val !== null && !Array.isArray(val)) {
+                                        const parts = Object.entries(val)
+                                            .map(([k, v]) => `${k.replace(/\b\w/g, c => c.toUpperCase())}: ${v}`)
+                                            .join(" | ");
+                                        displayVal = parts;
+                                        numVal = val.fund != null ? val.fund : null;
+                                    } else {
+                                        displayVal = String(val);
+                                        numVal = typeof val === "number" ? val : null;
+                                    }
 
-                // Order of display
-                const metricOrder = ["beta", "alpha", "sharpe_ratio", "standard_deviation", "r_squared",
-                    "treynor_ratio", "sortino_ratio", "information_ratio", "tracking_error", "max_drawdown"];
+                                    const isGood = (key === "sharpe_ratio" && numVal > 1) || (key === "alpha" && numVal > 0) || (key === "sortino_ratio" && numVal > 1) || (key === "r_squared" && numVal > 0.8) || (key === "information_ratio" && numVal > 0);
+                                    const isBad = key === "max_drawdown" || (key === "standard_deviation" && numVal > 20) || (key === "tracking_error" && numVal > 10);
+                                    const suffix = key === "standard_deviation" || key === "tracking_error" || key === "alpha" ? "%" : "";
 
-                // Build merged entries: OCR takes priority, calculated fills gaps
-                const merged = {};
-                for (const key of metricOrder) {
-                    const ocrVal = ocrMetrics[key];
-                    const calcVal = hasCalc ? calculatedMetrics[key] : null;
-                    if (ocrVal != null) {
-                        merged[key] = { val: ocrVal, source: "factsheet" };
-                    } else if (calcVal != null) {
-                        merged[key] = { val: calcVal, source: "calculated" };
-                    }
-                }
-                // Also include any OCR-only keys not in our standard list
-                for (const key of Object.keys(ocrMetrics)) {
-                    if (!merged[key] && ocrMetrics[key] != null) {
-                        merged[key] = { val: ocrMetrics[key], source: "factsheet" };
-                    }
-                }
+                                    // Determine bar scale based on metric type
+                                    const maxRef = {
+                                        beta: 2, alpha: 20, sharpe_ratio: 3, standard_deviation: 30,
+                                        r_squared: 1, treynor_ratio: 1, sortino_ratio: 3,
+                                        information_ratio: 2, tracking_error: 20, max_drawdown: 50
+                                    };
+                                    const maxScale = maxRef[key] || 10;
+                                    const barPct = numVal != null ? Math.min(Math.abs(numVal) / maxScale * 100, 100) : 0;
 
-                if (Object.keys(merged).length === 0) return null;
+                                    const barColor = isGood
+                                        ? "linear-gradient(90deg, #10b981, #34d399)"
+                                        : isBad
+                                            ? "linear-gradient(90deg, #ef4444, #f87171)"
+                                            : "linear-gradient(90deg, #6366f1, #818cf8)";
 
-                return (
-                    <section className={`card ${styles.section}`}>
-                        <h2 className="section-title">⚡ Risk Metrics</h2>
-                        <div className={styles.riskGrid}>
-                            {Object.entries(merged).map(([key, { val, source }]) => {
-                                const label = key.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
-
-                                let displayVal;
-                                if (typeof val === "object" && val !== null && !Array.isArray(val)) {
-                                    const parts = Object.entries(val)
-                                        .map(([k, v]) => `${k.replace(/\b\w/g, c => c.toUpperCase())}: ${v}`)
-                                        .join(" | ");
-                                    displayVal = parts;
-                                } else {
-                                    displayVal = String(val);
-                                }
-
-                                const numVal = typeof val === "number" ? val : (typeof val === "object" && val?.fund != null ? val.fund : null);
-                                const isGood = (key === "sharpe_ratio" && numVal > 1) || (key === "alpha" && numVal > 0) || (key === "sortino_ratio" && numVal > 1) || (key === "r_squared" && numVal > 0.8);
-                                const isBad = key === "max_drawdown";
-                                const suffix = key === "standard_deviation" || key === "tracking_error" || key === "alpha" ? "%" : "";
-
-                                return (
-                                    <div key={key} className={styles.riskMetricCard}>
-                                        <span className={styles.riskMetricLabel}>
-                                            {label}
-                                            {source === "calculated" && (
-                                                <span className={styles.calcBadge} title="Computed from historical NAV data">Calc</span>
-                                            )}
-                                        </span>
-                                        <span className={`${styles.riskMetricVal} ${isBad ? "negative" : isGood ? "positive" : ""}`}>
-                                            {displayVal}{suffix}
-                                        </span>
-                                    </div>
-                                );
-                            })}
-                        </div>
-                    </section>
-                );
-            })()}
+                                    return (
+                                        <div key={key} className={styles.riskBarRow} title={desc[key] || ""}>
+                                            <div className={styles.riskBarLabel}>
+                                                <span>{label}</span>
+                                                {source === "calculated" && (
+                                                    <span className={styles.calcBadge} title={`Computed from ${riskPeriod} historical NAV data`}>{riskPeriod}</span>
+                                                )}
+                                                {source === "factsheet" && (
+                                                    <span className={styles.calcBadge} style={{ background: "rgba(245, 158, 11, 0.15)", color: "#f59e0b" }} title="From factsheet">PDF</span>
+                                                )}
+                                            </div>
+                                            <div className={styles.riskBarTrack}>
+                                                <div
+                                                    className={styles.riskBarFill}
+                                                    style={{ width: `${Math.max(barPct, 2)}%`, background: barColor }}
+                                                />
+                                            </div>
+                                            <span className={`${styles.riskBarValue} ${isBad ? "negative" : isGood ? "positive" : ""}`}>
+                                                {displayVal}{suffix}
+                                            </span>
+                                        </div>
+                                    );
+                                })}
+                            </div>
+                        </section>
+                    );
+                })()
+            }
 
             {/* ===== SIP RETURNS (from factsheet) ===== */}
-            {fund.sip_returns && fund.sip_returns.length > 0 && (
-                <section className={`card ${styles.section}`}>
-                    <h2 className="section-title">💰 SIP Returns</h2>
-                    <div className={styles.tableWrap}>
-                        <table className="data-table">
-                            <thead>
-                                <tr>
-                                    <th>Period</th>
-                                    <th>Invested</th>
-                                    <th>Market Value</th>
-                                    <th>Return</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {fund.sip_returns.filter(s => !(s.scheme_name || "").toLowerCase().includes("benchmark")).map((s, i) => (
-                                    <tr key={i}>
-                                        <td style={{ fontWeight: 600 }}>{s.period}</td>
-                                        <td>{s.total_invested != null ? `₹${Number(s.total_invested).toLocaleString("en-IN")}` : "—"}</td>
-                                        <td>{s.market_value != null ? `₹${Number(s.market_value).toLocaleString("en-IN")}` : "—"}</td>
-                                        <td className={s.return_pct >= 0 ? "positive" : "negative"} style={{ fontWeight: 700 }}>
-                                            {s.return_pct != null ? `${s.return_pct}%` : "—"}
-                                        </td>
+            {
+                fund.sip_returns && fund.sip_returns.length > 0 && (
+                    <section className={`card ${styles.section}`}>
+                        <h2 className="section-title">💰 SIP Returns</h2>
+                        <div className={styles.tableWrap}>
+                            <table className="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Period</th>
+                                        <th>Invested</th>
+                                        <th>Market Value</th>
+                                        <th>Return</th>
                                     </tr>
-                                ))}
-                            </tbody>
-                        </table>
-                    </div>
-                </section>
-            )}
+                                </thead>
+                                <tbody>
+                                    {fund.sip_returns.filter(s => !(s.scheme_name || "").toLowerCase().includes("benchmark")).map((s, i) => (
+                                        <tr key={i}>
+                                            <td style={{ fontWeight: 600 }}>{s.period}</td>
+                                            <td>{s.total_invested != null ? `₹${Number(s.total_invested).toLocaleString("en-IN")}` : "—"}</td>
+                                            <td>{s.market_value != null ? `₹${Number(s.market_value).toLocaleString("en-IN")}` : "—"}</td>
+                                            <td className={s.return_pct >= 0 ? "positive" : "negative"} style={{ fontWeight: 700 }}>
+                                                {s.return_pct != null ? `${s.return_pct}%` : "—"}
+                                            </td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                )
+            }
 
             {/* ===== SIP CALCULATOR ===== */}
-            {returns.length > 0 && (
-                <section className={`card ${styles.section}`}>
-                    <h2 className="section-title">🧮 SIP Calculator</h2>
-                    <SIPCalculator fund={fund} />
-                </section>
-            )}
+            {
+                returns.length > 0 && (
+                    <section className={`card ${styles.section}`}>
+                        <h2 className="section-title">🧮 SIP Calculator</h2>
+                        <SIPCalculator fund={fund} />
+                    </section>
+                )
+            }
 
             {/* ===== KEY HIGHLIGHTS ===== */}
-            {fund.additional_info?.key_highlights && fund.additional_info.key_highlights.length > 0 && (
-                <section className={`card ${styles.section}`}>
-                    <h2 className="section-title">🌟 Key Highlights</h2>
-                    <div className={styles.highlightsList}>
-                        {fund.additional_info.key_highlights.map((h, i) => (
-                            <div key={i} className={styles.highlightItem}>
-                                <span className={styles.highlightIcon}>✦</span>
-                                <span>{h}</span>
-                            </div>
-                        ))}
-                    </div>
-                    {fund.additional_info.about_the_scheme && fund.additional_info.about_the_scheme.length > 0 && (
-                        <div style={{ marginTop: 16 }}>
-                            <h3 style={{ fontSize: 14, fontWeight: 600, color: "var(--text-secondary)", marginBottom: 10 }}>About the Scheme</h3>
-                            <div className={styles.highlightsList}>
-                                {fund.additional_info.about_the_scheme.map((item, i) => (
-                                    <div key={i} className={styles.highlightItem}>
-                                        <span className={styles.highlightIcon}>•</span>
-                                        <span>{item}</span>
-                                    </div>
-                                ))}
-                            </div>
+            {
+                fund.additional_info?.key_highlights && fund.additional_info.key_highlights.length > 0 && (
+                    <section className={`card ${styles.section}`}>
+                        <h2 className="section-title">🌟 Key Highlights</h2>
+                        <div className={styles.highlightsList}>
+                            {fund.additional_info.key_highlights.map((h, i) => (
+                                <div key={i} className={styles.highlightItem}>
+                                    <span className={styles.highlightIcon}>✦</span>
+                                    <span>{h}</span>
+                                </div>
+                            ))}
                         </div>
-                    )}
-                </section>
-            )}
+                        {fund.additional_info.about_the_scheme && fund.additional_info.about_the_scheme.length > 0 && (
+                            <div style={{ marginTop: 16 }}>
+                                <h3 style={{ fontSize: 14, fontWeight: 600, color: "var(--text-secondary)", marginBottom: 10 }}>About the Scheme</h3>
+                                <div className={styles.highlightsList}>
+                                    {fund.additional_info.about_the_scheme.map((item, i) => (
+                                        <div key={i} className={styles.highlightItem}>
+                                            <span className={styles.highlightIcon}>•</span>
+                                            <span>{item}</span>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        )}
+                    </section>
+                )
+            }
 
             {/* ===== ALLOCATION STRATEGY ===== */}
-            {(fund.additional_info?.equity_allocation_strategy || fund.additional_info?.fixed_income_allocation_strategy || fund.additional_info?.commodity_allocation_strategy) && (
-                <section className={`card ${styles.section}`}>
-                    <h2 className="section-title">🎯 Investment Strategy</h2>
-                    <div className={styles.strategyGrid}>
-                        {fund.additional_info.equity_allocation_strategy && (
-                            <div className={styles.strategyCard}>
-                                <div className={styles.strategyLabel}>Equity Strategy</div>
-                                <div className={styles.strategyText}>{fund.additional_info.equity_allocation_strategy}</div>
-                            </div>
-                        )}
-                        {fund.additional_info.fixed_income_allocation_strategy && (
-                            <div className={styles.strategyCard}>
-                                <div className={styles.strategyLabel}>Fixed Income Strategy</div>
-                                <div className={styles.strategyText}>{fund.additional_info.fixed_income_allocation_strategy}</div>
-                            </div>
-                        )}
-                        {fund.additional_info.commodity_allocation_strategy && (
-                            <div className={styles.strategyCard}>
-                                <div className={styles.strategyLabel}>Commodity Strategy</div>
-                                <div className={styles.strategyText}>{fund.additional_info.commodity_allocation_strategy}</div>
-                            </div>
-                        )}
-                    </div>
-                </section>
-            )}
-
-            {/* ===== PORTFOLIO ACTIVITY ===== */}
-            {(fund.additional_info?.stocks_new_entries?.length > 0 || fund.additional_info?.stocks_total_exits?.length > 0) && (
-                <section className={`card ${styles.section}`}>
-                    <h2 className="section-title">📋 Portfolio Activity</h2>
-                    <div className={styles.activityGrid}>
-                        {fund.additional_info.stocks_new_entries?.length > 0 && (
-                            <div className={styles.activityColumn}>
-                                <div className={styles.activityTitle} style={{ color: "#10b981" }}>↑ New Entries</div>
-                                {fund.additional_info.stocks_new_entries.map((s, i) => (
-                                    <div key={i} className={styles.activityEntry}>{s}</div>
-                                ))}
-                            </div>
-                        )}
-                        {fund.additional_info.stocks_total_exits?.length > 0 && (
-                            <div className={styles.activityColumn}>
-                                <div className={styles.activityTitle} style={{ color: "#ef4444" }}>↓ Exits</div>
-                                {fund.additional_info.stocks_total_exits.map((s, i) => (
-                                    <div key={i} className={styles.activityExit}>{s}</div>
-                                ))}
-                            </div>
-                        )}
-                    </div>
-                </section>
-            )}
-
-            {/* ===== PORTFOLIO STATISTICS ===== */}
-            {fund.portfolio_stats && Object.values(fund.portfolio_stats).some(v => v != null) && (
-                <section className={`card ${styles.section}`}>
-                    <h2 className="section-title">📈 Portfolio Statistics</h2>
-                    <div className={styles.statsGrid}>
-                        {fund.portfolio_stats.pe_ratio != null && (
-                            <div className={styles.statItem}>
-                                <span className={styles.statItemLabel}>P/E Ratio</span>
-                                <span className={styles.statItemValue}>{fund.portfolio_stats.pe_ratio}</span>
-                            </div>
-                        )}
-                        {fund.portfolio_stats.pb_ratio != null && (
-                            <div className={styles.statItem}>
-                                <span className={styles.statItemLabel}>P/B Ratio</span>
-                                <span className={styles.statItemValue}>{fund.portfolio_stats.pb_ratio}</span>
-                            </div>
-                        )}
-                        {fund.portfolio_stats.dividend_yield != null && (
-                            <div className={styles.statItem}>
-                                <span className={styles.statItemLabel}>Dividend Yield</span>
-                                <span className={styles.statItemValue}>{fund.portfolio_stats.dividend_yield}%</span>
-                            </div>
-                        )}
-                        {fund.portfolio_stats.roe != null && (
-                            <div className={styles.statItem}>
-                                <span className={styles.statItemLabel}>ROE</span>
-                                <span className={styles.statItemValue}>{fund.portfolio_stats.roe}%</span>
-                            </div>
-                        )}
-                        {fund.portfolio_stats.roa != null && (
-                            <div className={styles.statItem}>
-                                <span className={styles.statItemLabel}>ROA</span>
-                                <span className={styles.statItemValue}>{fund.portfolio_stats.roa}%</span>
-                            </div>
-                        )}
-                        {fund.portfolio_stats.avg_market_cap_cr != null && (
-                            <div className={styles.statItem}>
-                                <span className={styles.statItemLabel}>Avg Mkt Cap</span>
-                                <span className={styles.statItemValue}>₹{Number(fund.portfolio_stats.avg_market_cap_cr).toLocaleString("en-IN")} Cr</span>
-                            </div>
-                        )}
-                        {fund.portfolio_stats.equity_style && (
-                            <div className={styles.statItem}>
-                                <span className={styles.statItemLabel}>Equity Style</span>
-                                <span className={styles.statItemValue} style={{ fontSize: 14 }}>{fund.portfolio_stats.equity_style}</span>
-                            </div>
-                        )}
-                    </div>
-                    {(fund.additional_info?.portfolio_dividend_yield != null || fund.additional_info?.benchmark_dividend_yield != null) && (
-                        <div style={{ display: "flex", gap: 16, marginTop: 12 }}>
-                            {fund.additional_info.portfolio_dividend_yield != null && (
-                                <div className={styles.statItem} style={{ flex: 1 }}>
-                                    <span className={styles.statItemLabel}>Portfolio Div. Yield</span>
-                                    <span className={styles.statItemValue}>{fund.additional_info.portfolio_dividend_yield}%</span>
+            {
+                (fund.additional_info?.equity_allocation_strategy || fund.additional_info?.fixed_income_allocation_strategy || fund.additional_info?.commodity_allocation_strategy) && (
+                    <section className={`card ${styles.section}`}>
+                        <h2 className="section-title">🎯 Investment Strategy</h2>
+                        <div className={styles.strategyGrid}>
+                            {fund.additional_info.equity_allocation_strategy && (
+                                <div className={styles.strategyCard}>
+                                    <div className={styles.strategyLabel}>Equity Strategy</div>
+                                    <div className={styles.strategyText}>{fund.additional_info.equity_allocation_strategy}</div>
                                 </div>
                             )}
-                            {fund.additional_info.benchmark_dividend_yield != null && (
-                                <div className={styles.statItem} style={{ flex: 1 }}>
-                                    <span className={styles.statItemLabel}>Benchmark Div. Yield</span>
-                                    <span className={styles.statItemValue}>{fund.additional_info.benchmark_dividend_yield}%</span>
+                            {fund.additional_info.fixed_income_allocation_strategy && (
+                                <div className={styles.strategyCard}>
+                                    <div className={styles.strategyLabel}>Fixed Income Strategy</div>
+                                    <div className={styles.strategyText}>{fund.additional_info.fixed_income_allocation_strategy}</div>
+                                </div>
+                            )}
+                            {fund.additional_info.commodity_allocation_strategy && (
+                                <div className={styles.strategyCard}>
+                                    <div className={styles.strategyLabel}>Commodity Strategy</div>
+                                    <div className={styles.strategyText}>{fund.additional_info.commodity_allocation_strategy}</div>
                                 </div>
                             )}
                         </div>
-                    )}
-                </section>
-            )}
+                    </section>
+                )
+            }
+
+            {/* ===== PORTFOLIO ACTIVITY ===== */}
+            {
+                (fund.additional_info?.stocks_new_entries?.length > 0 || fund.additional_info?.stocks_total_exits?.length > 0) && (
+                    <section className={`card ${styles.section}`}>
+                        <h2 className="section-title">📋 Portfolio Activity</h2>
+                        <div className={styles.activityGrid}>
+                            {fund.additional_info.stocks_new_entries?.length > 0 && (
+                                <div className={styles.activityColumn}>
+                                    <div className={styles.activityTitle} style={{ color: "#10b981" }}>↑ New Entries</div>
+                                    {fund.additional_info.stocks_new_entries.map((s, i) => (
+                                        <div key={i} className={styles.activityEntry}>{s}</div>
+                                    ))}
+                                </div>
+                            )}
+                            {fund.additional_info.stocks_total_exits?.length > 0 && (
+                                <div className={styles.activityColumn}>
+                                    <div className={styles.activityTitle} style={{ color: "#ef4444" }}>↓ Exits</div>
+                                    {fund.additional_info.stocks_total_exits.map((s, i) => (
+                                        <div key={i} className={styles.activityExit}>{s}</div>
+                                    ))}
+                                </div>
+                            )}
+                        </div>
+                    </section>
+                )
+            }
+
+            {/* ===== PORTFOLIO STATISTICS ===== */}
+            {
+                fund.portfolio_stats && Object.values(fund.portfolio_stats).some(v => v != null) && (
+                    <section className={`card ${styles.section}`}>
+                        <h2 className="section-title">📈 Portfolio Statistics</h2>
+                        <div className={styles.statsGrid}>
+                            {fund.portfolio_stats.pe_ratio != null && (
+                                <div className={styles.statItem}>
+                                    <span className={styles.statItemLabel}>P/E Ratio</span>
+                                    <span className={styles.statItemValue}>{fund.portfolio_stats.pe_ratio}</span>
+                                </div>
+                            )}
+                            {fund.portfolio_stats.pb_ratio != null && (
+                                <div className={styles.statItem}>
+                                    <span className={styles.statItemLabel}>P/B Ratio</span>
+                                    <span className={styles.statItemValue}>{fund.portfolio_stats.pb_ratio}</span>
+                                </div>
+                            )}
+                            {fund.portfolio_stats.dividend_yield != null && (
+                                <div className={styles.statItem}>
+                                    <span className={styles.statItemLabel}>Dividend Yield</span>
+                                    <span className={styles.statItemValue}>{fund.portfolio_stats.dividend_yield}%</span>
+                                </div>
+                            )}
+                            {fund.portfolio_stats.roe != null && (
+                                <div className={styles.statItem}>
+                                    <span className={styles.statItemLabel}>ROE</span>
+                                    <span className={styles.statItemValue}>{fund.portfolio_stats.roe}%</span>
+                                </div>
+                            )}
+                            {fund.portfolio_stats.roa != null && (
+                                <div className={styles.statItem}>
+                                    <span className={styles.statItemLabel}>ROA</span>
+                                    <span className={styles.statItemValue}>{fund.portfolio_stats.roa}%</span>
+                                </div>
+                            )}
+                            {fund.portfolio_stats.avg_market_cap_cr != null && (
+                                <div className={styles.statItem}>
+                                    <span className={styles.statItemLabel}>Avg Mkt Cap</span>
+                                    <span className={styles.statItemValue}>₹{Number(fund.portfolio_stats.avg_market_cap_cr).toLocaleString("en-IN")} Cr</span>
+                                </div>
+                            )}
+                            {fund.portfolio_stats.equity_style && (
+                                <div className={styles.statItem}>
+                                    <span className={styles.statItemLabel}>Equity Style</span>
+                                    <span className={styles.statItemValue} style={{ fontSize: 14 }}>{fund.portfolio_stats.equity_style}</span>
+                                </div>
+                            )}
+                        </div>
+                        {(fund.additional_info?.portfolio_dividend_yield != null || fund.additional_info?.benchmark_dividend_yield != null) && (
+                            <div style={{ display: "flex", gap: 16, marginTop: 12 }}>
+                                {fund.additional_info.portfolio_dividend_yield != null && (
+                                    <div className={styles.statItem} style={{ flex: 1 }}>
+                                        <span className={styles.statItemLabel}>Portfolio Div. Yield</span>
+                                        <span className={styles.statItemValue}>{fund.additional_info.portfolio_dividend_yield}%</span>
+                                    </div>
+                                )}
+                                {fund.additional_info.benchmark_dividend_yield != null && (
+                                    <div className={styles.statItem} style={{ flex: 1 }}>
+                                        <span className={styles.statItemLabel}>Benchmark Div. Yield</span>
+                                        <span className={styles.statItemValue}>{fund.additional_info.benchmark_dividend_yield}%</span>
+                                    </div>
+                                )}
+                            </div>
+                        )}
+                    </section>
+                )
+            }
 
             {/* ===== FUND INFO ===== */}
             <section className={`card ${styles.section}`}>
@@ -1301,107 +1644,109 @@ export default function FundDetailPage() {
             </section>
 
             {/* ===== ADDITIONAL INFO (dynamic) ===== */}
-            {fund.additional_info && Object.keys(fund.additional_info).length > 0 && (() => {
-                const formatKey = (key) => key
-                    .replace(/_/g, " ")
-                    .replace(/\b\w/g, c => c.toUpperCase())
-                    .replace(/\bPtp\b/g, "PTP")
-                    .replace(/\bIsin\b/g, "ISIN")
-                    .replace(/\bNav\b/g, "NAV")
-                    .replace(/\bAum\b/g, "AUM");
+            {
+                fund.additional_info && Object.keys(fund.additional_info).length > 0 && (() => {
+                    const formatKey = (key) => key
+                        .replace(/_/g, " ")
+                        .replace(/\b\w/g, c => c.toUpperCase())
+                        .replace(/\bPtp\b/g, "PTP")
+                        .replace(/\bIsin\b/g, "ISIN")
+                        .replace(/\bNav\b/g, "NAV")
+                        .replace(/\bAum\b/g, "AUM");
 
-                const isSimple = (val) => val == null || typeof val === "string" || typeof val === "number" || typeof val === "boolean";
-                const isNumericObject = (val) => typeof val === "object" && val !== null && !Array.isArray(val) && Object.values(val).every(v => typeof v === "number");
-                const isFlatArray = (val) => Array.isArray(val) && val.length > 0 && typeof val[0] !== "object";
-                const isTableArray = (val) => Array.isArray(val) && val.length > 0 && typeof val[0] === "object";
-                const isKVObject = (val) => typeof val === "object" && val !== null && !Array.isArray(val) && Object.values(val).every(v => isSimple(v));
+                    const isSimple = (val) => val == null || typeof val === "string" || typeof val === "number" || typeof val === "boolean";
+                    const isNumericObject = (val) => typeof val === "object" && val !== null && !Array.isArray(val) && Object.values(val).every(v => typeof v === "number");
+                    const isFlatArray = (val) => Array.isArray(val) && val.length > 0 && typeof val[0] !== "object";
+                    const isTableArray = (val) => Array.isArray(val) && val.length > 0 && typeof val[0] === "object";
+                    const isKVObject = (val) => typeof val === "object" && val !== null && !Array.isArray(val) && Object.values(val).every(v => isSimple(v));
 
-                const formatSimple = (val) => {
-                    if (val == null) return "—";
-                    if (typeof val === "boolean") return val ? "Yes" : "No";
-                    if (typeof val === "number") return val.toLocaleString("en-IN");
-                    return String(val);
-                };
+                    const formatSimple = (val) => {
+                        if (val == null) return "—";
+                        if (typeof val === "boolean") return val ? "Yes" : "No";
+                        if (typeof val === "number") return val.toLocaleString("en-IN");
+                        return String(val);
+                    };
 
-                // Categorize entries
-                const simpleEntries = [];
-                const numericObjects = [];
-                const kvObjects = [];
-                const tableArrays = [];
+                    // Categorize entries
+                    const simpleEntries = [];
+                    const numericObjects = [];
+                    const kvObjects = [];
+                    const tableArrays = [];
 
-                for (const [key, val] of Object.entries(fund.additional_info)) {
-                    if (isSimple(val) || isFlatArray(val)) {
-                        simpleEntries.push([key, isFlatArray(val) ? val.join(", ") : val]);
-                    } else if (isNumericObject(val)) {
-                        numericObjects.push([key, val]);
-                    } else if (isTableArray(val)) {
-                        tableArrays.push([key, val]);
-                    } else if (isKVObject(val)) {
-                        kvObjects.push([key, val]);
+                    for (const [key, val] of Object.entries(fund.additional_info)) {
+                        if (isSimple(val) || isFlatArray(val)) {
+                            simpleEntries.push([key, isFlatArray(val) ? val.join(", ") : val]);
+                        } else if (isNumericObject(val)) {
+                            numericObjects.push([key, val]);
+                        } else if (isTableArray(val)) {
+                            tableArrays.push([key, val]);
+                        } else if (isKVObject(val)) {
+                            kvObjects.push([key, val]);
+                        }
+                        // Skip deeply nested/complex structures silently
                     }
-                    // Skip deeply nested/complex structures silently
-                }
 
-                return (
-                    <section className={`card ${styles.section}`}>
-                        <h2 className="section-title">📋 Additional Information</h2>
-                        {simpleEntries.length > 0 && (
-                            <div className={styles.infoGrid}>
-                                {simpleEntries.map(([key, val]) => (
-                                    <div key={key} className={styles.infoItem}>
-                                        <span className={styles.infoLabel}>{formatKey(key)}</span>
-                                        <span className={styles.infoValue}>{formatSimple(val)}</span>
-                                    </div>
-                                ))}
-                            </div>
-                        )}
-                        {kvObjects.map(([key, obj]) => (
-                            <div key={key} style={{ marginTop: 16 }}>
-                                <h3 style={{ fontSize: 14, fontWeight: 600, color: "var(--text-secondary)", marginBottom: 8 }}>{formatKey(key)}</h3>
+                    return (
+                        <section className={`card ${styles.section}`}>
+                            <h2 className="section-title">📋 Additional Information</h2>
+                            {simpleEntries.length > 0 && (
                                 <div className={styles.infoGrid}>
-                                    {Object.entries(obj).map(([k, v]) => (
-                                        <div key={k} className={styles.infoItem}>
-                                            <span className={styles.infoLabel}>{formatKey(k)}</span>
-                                            <span className={styles.infoValue}>{formatSimple(v)}</span>
+                                    {simpleEntries.map(([key, val]) => (
+                                        <div key={key} className={styles.infoItem}>
+                                            <span className={styles.infoLabel}>{formatKey(key)}</span>
+                                            <span className={styles.infoValue}>{formatSimple(val)}</span>
                                         </div>
                                     ))}
                                 </div>
-                            </div>
-                        ))}
-                        {numericObjects.map(([key, obj]) => (
-                            <div key={key} style={{ marginTop: 16 }}>
-                                <h3 style={{ fontSize: 14, fontWeight: 600, color: "var(--text-secondary)", marginBottom: 8 }}>{formatKey(key)}</h3>
-                                <AllocationBar data={obj} colors={sectorColors} />
-                            </div>
-                        ))}
-                        {tableArrays.map(([key, arr]) => (
-                            <div key={key} style={{ marginTop: 16 }}>
-                                <h3 style={{ fontSize: 14, fontWeight: 600, color: "var(--text-secondary)", marginBottom: 8 }}>{formatKey(key)}</h3>
-                                <div className={styles.tableWrap}>
-                                    <table className="data-table">
-                                        <thead>
-                                            <tr>
-                                                {Object.keys(arr[0]).map(col => (
-                                                    <th key={col}>{formatKey(col)}</th>
-                                                ))}
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            {arr.map((row, i) => (
-                                                <tr key={i}>
-                                                    {Object.values(row).map((cell, j) => (
-                                                        <td key={j}>{cell != null ? (typeof cell === "number" ? cell.toLocaleString("en-IN") : String(cell)) : "—"}</td>
+                            )}
+                            {kvObjects.map(([key, obj]) => (
+                                <div key={key} style={{ marginTop: 16 }}>
+                                    <h3 style={{ fontSize: 14, fontWeight: 600, color: "var(--text-secondary)", marginBottom: 8 }}>{formatKey(key)}</h3>
+                                    <div className={styles.infoGrid}>
+                                        {Object.entries(obj).map(([k, v]) => (
+                                            <div key={k} className={styles.infoItem}>
+                                                <span className={styles.infoLabel}>{formatKey(k)}</span>
+                                                <span className={styles.infoValue}>{formatSimple(v)}</span>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            ))}
+                            {numericObjects.map(([key, obj]) => (
+                                <div key={key} style={{ marginTop: 16 }}>
+                                    <h3 style={{ fontSize: 14, fontWeight: 600, color: "var(--text-secondary)", marginBottom: 8 }}>{formatKey(key)}</h3>
+                                    <AllocationBar data={obj} colors={sectorColors} />
+                                </div>
+                            ))}
+                            {tableArrays.map(([key, arr]) => (
+                                <div key={key} style={{ marginTop: 16 }}>
+                                    <h3 style={{ fontSize: 14, fontWeight: 600, color: "var(--text-secondary)", marginBottom: 8 }}>{formatKey(key)}</h3>
+                                    <div className={styles.tableWrap}>
+                                        <table className="data-table">
+                                            <thead>
+                                                <tr>
+                                                    {Object.keys(arr[0]).map(col => (
+                                                        <th key={col}>{formatKey(col)}</th>
                                                     ))}
                                                 </tr>
-                                            ))}
-                                        </tbody>
-                                    </table>
+                                            </thead>
+                                            <tbody>
+                                                {arr.map((row, i) => (
+                                                    <tr key={i}>
+                                                        {Object.values(row).map((cell, j) => (
+                                                            <td key={j}>{cell != null ? (typeof cell === "number" ? cell.toLocaleString("en-IN") : String(cell)) : "—"}</td>
+                                                        ))}
+                                                    </tr>
+                                                ))}
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
-                            </div>
-                        ))}
-                    </section>
-                );
-            })()}
-        </div>
+                            ))}
+                        </section>
+                    );
+                })()
+            }
+        </div >
     );
 }
