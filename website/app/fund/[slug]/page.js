@@ -990,7 +990,7 @@ export default function FundDetailPage() {
                 <div className="gate-overlay" style={{ position: "relative", zIndex: 10, marginTop: 24 }}>
                     <div className="gate-overlay-card">
                         <h3>{trialExpired ? "⏰ Trial Expired" : "🔒 Login Required"}</h3>
-                        <p>{trialExpired ? "Your 3-day free trial has ended." : "Sign in to access detailed fund analytics"}</p>
+                        <p>{trialExpired ? "Your 30-minute free trial has ended." : "Sign in to access detailed fund analytics"}</p>
                         {!trialExpired && <a href="/login" className="gate-overlay-btn">Sign In to View</a>}
                     </div>
                 </div>

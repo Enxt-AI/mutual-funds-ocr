@@ -6,7 +6,7 @@
 import { NextResponse } from "next/server";
 import { adminAuth, adminDb } from "../../../../lib/firebaseAdmin";
 
-const TRIAL_DAYS = 3;
+const TRIAL_MINUTES = 30;
 
 export async function GET(request) {
     try {
@@ -30,20 +30,20 @@ export async function GET(request) {
                 email: decoded.email,
                 createdAt: new Date(),
             });
-            return NextResponse.json({ expired: false, daysLeft: TRIAL_DAYS });
+            return NextResponse.json({ expired: false, minutesLeft: TRIAL_MINUTES });
         }
 
         const data = userDoc.data();
         const createdAt = data.createdAt?.toDate?.() || new Date(data.createdAt);
         const now = new Date();
         const diffMs = now.getTime() - createdAt.getTime();
-        const diffDays = diffMs / (1000 * 60 * 60 * 24);
-        const daysLeft = Math.max(0, Math.ceil(TRIAL_DAYS - diffDays));
-        const expired = diffDays >= TRIAL_DAYS;
+        const diffMinutes = diffMs / (1000 * 60);
+        const minutesLeft = Math.max(0, Math.ceil(TRIAL_MINUTES - diffMinutes));
+        const expired = diffMinutes >= TRIAL_MINUTES;
 
         return NextResponse.json({
             expired,
-            daysLeft,
+            minutesLeft,
             createdAt: createdAt.toISOString(),
         });
     } catch (error) {

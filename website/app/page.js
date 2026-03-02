@@ -243,7 +243,7 @@ function HomeContent() {
                         <div className="gate-overlay">
                           <div className="gate-overlay-card">
                             <h3>{trialExpired ? "⏰ Trial Expired" : "🔒 Login Required"}</h3>
-                            <p>{trialExpired ? "Your 3-day free trial has ended." : "Sign in to view detailed fund data"}</p>
+                            <p>{trialExpired ? "Your 30-minute free trial has ended." : "Sign in to view detailed fund data"}</p>
                             {!trialExpired && <a href="/login" className="gate-overlay-btn">Sign In to View</a>}
                           </div>
                         </div>

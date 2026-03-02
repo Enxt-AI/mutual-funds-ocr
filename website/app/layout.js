@@ -5,7 +5,7 @@ import { AuthProvider, useAuth } from "./contexts/AuthContext";
 import { LogIn, LogOut, Clock } from "lucide-react";
 
 function Navbar() {
-  const { user, loading, trialDaysLeft, trialExpired, logout } = useAuth();
+  const { user, loading, trialMinutesLeft, trialExpired, logout } = useAuth();
 
   return (
     <nav className="navbar">
@@ -18,10 +18,10 @@ function Navbar() {
           <a href="/?tab=compare" className="nav-link">Compare Funds</a>
           {!loading && (
             <>
-              {user && !trialExpired && trialDaysLeft != null && (
+              {user && !trialExpired && trialMinutesLeft != null && (
                 <span className="trial-badge">
                   <Clock size={12} />
-                  {trialDaysLeft} day{trialDaysLeft !== 1 ? "s" : ""} left
+                  {trialMinutesLeft} min left
                 </span>
               )}
               {user && trialExpired && (

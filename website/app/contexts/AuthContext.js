@@ -6,7 +6,7 @@ import { onAuthChange, getIdToken, logOut } from "../../lib/firebase";
 const AuthContext = createContext({
     user: null,
     loading: true,
-    trialDaysLeft: null,
+    trialMinutesLeft: null,
     trialExpired: false,
     logout: async () => { },
 });
@@ -14,7 +14,7 @@ const AuthContext = createContext({
 export function AuthProvider({ children }) {
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);
-    const [trialDaysLeft, setTrialDaysLeft] = useState(null);
+    const [trialMinutesLeft, setTrialMinutesLeft] = useState(null);
     const [trialExpired, setTrialExpired] = useState(false);
 
     useEffect(() => {
@@ -29,7 +29,7 @@ export function AuthProvider({ children }) {
                     });
                     if (res.ok) {
                         const data = await res.json();
-                        setTrialDaysLeft(data.daysLeft);
+                        setTrialMinutesLeft(data.minutesLeft);
                         setTrialExpired(data.expired);
                     }
                 } catch (e) {
@@ -37,7 +37,7 @@ export function AuthProvider({ children }) {
                 }
             } else {
                 setUser(null);
-                setTrialDaysLeft(null);
+                setTrialMinutesLeft(null);
                 setTrialExpired(false);
             }
             setLoading(false);
@@ -53,7 +53,7 @@ export function AuthProvider({ children }) {
     };
 
     return (
-        <AuthContext.Provider value={{ user, loading, trialDaysLeft, trialExpired, logout }}>
+        <AuthContext.Provider value={{ user, loading, trialMinutesLeft, trialExpired, logout }}>
             {children}
         </AuthContext.Provider>
     );
