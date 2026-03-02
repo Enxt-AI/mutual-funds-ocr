@@ -49,7 +49,7 @@ export default function SignupPage() {
                 <div className={styles.authHeader}>
                     <span className={styles.authIcon}>🚀</span>
                     <h1 className={styles.authTitle}>Start Free Trial</h1>
-                    <p className={styles.authSub}>Get 3 days of full access to all fund data</p>
+                    <p className={styles.authSub}>Get 30 minutes of full access to all fund data</p>
                 </div>
                 <form onSubmit={handleSubmit} className={styles.authForm}>
                     {error && <div className={styles.authError}>{error}</div>}
@@ -95,7 +95,7 @@ export default function SignupPage() {
                     Already have an account? <a href="/login" className={styles.authLink}>Sign in</a>
                 </div>
                 <div className={styles.trialNote}>
-                    <span>⏱️</span> Your 3-day free trial starts immediately after sign up
+                    <span>⏱️</span> Your 30-minute free trial starts immediately after sign up
                 </div>
             </div>
         </div>

@@ -69,7 +69,7 @@ export default function LoginPage() {
                     </button>
                 </form>
                 <div className={styles.authFooter}>
-                    Don&apos;t have an account? <a href="/signup" className={styles.authLink}>Create one — 3 days free</a>
+                    Don&apos;t have an account? <a href="/signup" className={styles.authLink}>Create one — 30 min free</a>
                 </div>
             </div>
         </div>
