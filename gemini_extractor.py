@@ -464,6 +464,45 @@ def merge_page_results(page_results: list[dict]) -> dict:
     return merged
 
 
+def _normalize_manager_name(name: str) -> str:
+    """Normalize a fund manager name for dedup comparison.
+    Strips honorifics (Mr./Ms./Mrs./Dr./Shri/Smt.) and extra whitespace."""
+    import re
+    if not name:
+        return ""
+    n = name.lower().strip()
+    # Remove common honorifics
+    n = re.sub(r'^(mr\.?|ms\.?|mrs\.?|dr\.?|shri\.?|smt\.?)\s+', '', n)
+    # Collapse whitespace
+    n = re.sub(r'\s+', ' ', n).strip()
+    return n
+
+
+def _names_match(name1: str, name2: str) -> bool:
+    """Check if two manager names refer to the same person.
+    Handles exact match, prefix match (e.g. 'Arun R' vs 'Arun Ramachandran'),
+    and honorific differences (e.g. 'Mr. X' vs 'X')."""
+    n1 = _normalize_manager_name(name1)
+    n2 = _normalize_manager_name(name2)
+    if not n1 or not n2:
+        return False
+    if n1 == n2:
+        return True
+    # Check if shorter name's parts are all prefixes of longer name's parts
+    parts1 = n1.split()
+    parts2 = n2.split()
+    short, long = (parts1, parts2) if len(parts1) <= len(parts2) else (parts2, parts1)
+    if len(short) < 2:
+        return False
+    # First name must match exactly, remaining short parts must be prefixes of long parts
+    if short[0] != long[0]:
+        return False
+    for sp, lp in zip(short[1:], long[1:]):
+        if not lp.startswith(sp):
+            return False
+    return True
+
+
 def _deep_merge_scheme(existing: dict, new: dict):
     """Merge new scheme data into existing, preferring non-empty values."""
     for key, val in new.items():
@@ -493,21 +532,28 @@ def _deep_merge_scheme(existing: dict, new: dict):
                     if item.get("period") not in existing_periods:
                         existing[key].append(item)
             elif key == "fund_managers":
-                # Merge managers by name
-                existing_names = {m.get("name", "").lower() for m in existing[key] if m}
+                # Merge managers by normalized name (handles honorifics & abbreviations)
                 for item in val:
                     if not item or not isinstance(item, dict):
                         continue
-                    item_name = (item.get("name") or "").lower()
-                    if item_name and item_name not in existing_names:
+                    item_name = item.get("name") or ""
+                    if not item_name.strip():
+                        continue
+                    # Check if this manager already exists (by normalized name)
+                    matched = False
+                    for em in existing[key]:
+                        if em and _names_match(em.get("name", ""), item_name):
+                            # Update existing manager with more detail
+                            for mk, mv in item.items():
+                                if mv and not em.get(mk):
+                                    em[mk] = mv
+                            # Prefer the longer/more complete name
+                            if len(item_name) > len(em.get("name", "")):
+                                em["name"] = item_name
+                            matched = True
+                            break
+                    if not matched:
                         existing[key].append(item)
-                    elif item_name:
-                        # Update existing manager with more detail
-                        for em in existing[key]:
-                            if em and em.get("name", "").lower() == item_name:
-                                for mk, mv in item.items():
-                                    if mv and not em.get(mk):
-                                        em[mk] = mv
             else:
                 # For other lists, extend if new items
                 existing[key].extend(val)

@@ -618,7 +618,7 @@
       "risk_level": "Very High",
       "fund_managers": [
         {
-          "name": "Taher Badshah",
+          "name": "Taher Badshah & Manish Poddar",
           "managing_since": "Since July 01, 2025",
           "experience": "30 Years"
         },
@@ -626,10 +626,6 @@
           "name": "Manish Poddar",
           "managing_since": "Since July 01, 2025",
           "experience": "13 Years"
-        },
-        {
-          "name": "Taher Badshah & Manish Poddar",
-          "managing_since": "July 1, 2025"
         }
       ],
       "returns": [
@@ -9615,34 +9611,22 @@
       "risk_level": "Very High",
       "fund_managers": [
         {
-          "name": "Amey Sathe",
+          "name": "Amey Sathe (Equity Investments)",
           "role": "Equity Investments",
           "managing_since": "November 04, 2025",
           "experience": "18 Years"
         },
         {
-          "name": "Manish Kalani",
+          "name": "Manish Kalani (Arbitrage Investments)",
           "role": "Arbitrage Investments",
           "managing_since": "July 01, 2025",
           "experience": "18 Years"
         },
         {
-          "name": "Krishna Cheemalapati",
+          "name": "Krishna Cheemalapati (Debt Investments)",
           "role": "Debt Investments",
           "managing_since": "March 01, 2025",
           "experience": "27 Years"
-        },
-        {
-          "name": "Amey Sathe (Equity Investments)",
-          "managing_since": "November 4, 2025"
-        },
-        {
-          "name": "Manish Kalani (Arbitrage Investments)",
-          "managing_since": "July 1 2025"
-        },
-        {
-          "name": "Krishna Cheemalapati (Debt Investments)",
-          "managing_since": "March 01, 2025"
         }
       ],
       "lumpsum_returns": {
@@ -10390,28 +10374,19 @@
         {
           "name": "Amey Sathe (Equity Investments)",
           "managing_since": "Since November 04, 2025",
-          "experience": "18 Years"
+          "experience": "18 Years",
+          "role": "Equity Investments"
         },
         {
           "name": "Hiten Jain (Equity Investments)",
           "managing_since": "Since December 01, 2023",
-          "experience": "17 Years"
+          "experience": "17 Years",
+          "role": "Equity Investments"
         },
         {
           "name": "Krishna Cheemalapati (Debt Investments)",
           "managing_since": "Since June 30, 2018",
-          "experience": "27 Years"
-        },
-        {
-          "name": "Amey Sathe",
-          "role": "Equity Investments"
-        },
-        {
-          "name": "Hiten Jain",
-          "role": "Equity Investments"
-        },
-        {
-          "name": "Krishna Cheemalapati",
+          "experience": "27 Years",
           "role": "Debt Investments"
         }
       ],
@@ -10995,34 +10970,22 @@
       "risk_level": "Moderately High",
       "fund_managers": [
         {
-          "name": "Amey Sathe",
+          "name": "Amey Sathe (Equity Investments)",
           "managing_since": "2025-11-04",
           "experience": "18 Years",
           "role": "Equity Investments"
         },
         {
-          "name": "Deepak Gupta",
+          "name": "Deepak Gupta (Arbitrage Investments)",
           "managing_since": "2023-12-01",
           "experience": "19 Years",
           "role": "Arbitrage Investments"
         },
         {
-          "name": "Krishna Cheemalapati",
+          "name": "Krishna Cheemalapati (Debt Investments)",
           "managing_since": "2019-03-07",
           "experience": "27 Years",
           "role": "Debt Investments"
-        },
-        {
-          "name": "Amey Sathe (Equity Investments)",
-          "managing_since": "November 04, 2025"
-        },
-        {
-          "name": "Deepak Gupta (Arbitrage Investments)",
-          "managing_since": "December 1, 2023"
-        },
-        {
-          "name": "Krishna Cheemalapati (Debt Investments)",
-          "managing_since": "March 7, 2019"
         }
       ],
       "returns": [
