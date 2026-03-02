@@ -1,11 +1,15 @@
 "use client";
 
-import { useState, useMemo, useEffect } from "react";
+import { useState, useMemo, useEffect, useRef, useCallback } from "react";
 import { useParams } from "next/navigation";
 import indexData from "../../data/indices.json";
 import { useNavData } from "../../hooks/useNavData";
 import { getAmcLogoUrl } from "../../../lib/amcLogos";
 import styles from "./page.module.css";
+import { useAuth } from "../../contexts/AuthContext";
+import { Users, Zap, LineChart, BarChart3, Briefcase, Landmark, Puzzle, Building2, Ruler, PieChart, CalendarDays, Shield, Coins, Calculator, Star, Target, ClipboardList, TrendingUp, Info, FileText, ChevronDown } from "lucide-react";
+
+const iconStyle = { display: "inline", verticalAlign: "middle", marginRight: 8 };
 
 // Map fund benchmark names to available index data keys
 const BENCHMARK_MAP = {
@@ -691,6 +695,26 @@ export default function FundDetailPage() {
         return (!hasEquity && hasDebt) ? "debt" : "equity";
     });
 
+    // Fund manager popover state
+    const [expandedManager, setExpandedManager] = useState(null);
+    const managerRefs = useRef([]);
+
+    // Close popover on click outside or Escape
+    useEffect(() => {
+        if (expandedManager === null) return;
+        const handleClick = (e) => {
+            const ref = managerRefs.current[expandedManager];
+            if (ref && !ref.contains(e.target)) setExpandedManager(null);
+        };
+        const handleKey = (e) => { if (e.key === "Escape") setExpandedManager(null); };
+        document.addEventListener("mousedown", handleClick);
+        document.addEventListener("keydown", handleKey);
+        return () => { document.removeEventListener("mousedown", handleClick); document.removeEventListener("keydown", handleKey); };
+    }, [expandedManager]);
+
+    // Auth gating
+    const { user, trialExpired } = useAuth();
+    const canView = user && !trialExpired;
 
     // Fetch live NAV from AMFI
     const { navMap } = useNavData(fund ? [fund] : []);
@@ -786,7 +810,19 @@ export default function FundDetailPage() {
     const equityHoldings = fund.equity_holdings || [];
     const debtHoldings = fund.debt_holdings || [];
     const returns = fund.returns || [];
-    const managers = fund.fund_managers || [];
+    const normalizeMgrName = (n) => (n || "").toLowerCase().trim().replace(/^(mr\.?|ms\.?|mrs\.?|dr\.?|shri\.?|smt\.?)\s+/i, "").replace(/\s+/g, " ").trim();
+    const mgrNamesMatch = (a, b) => {
+        const na = normalizeMgrName(a), nb = normalizeMgrName(b);
+        if (!na || !nb) return false;
+        if (na === nb) return true;
+        const pa = na.split(" "), pb = nb.split(" ");
+        const [short, long] = pa.length <= pb.length ? [pa, pb] : [pb, pa];
+        if (short.length < 2 || short[0] !== long[0]) return false;
+        return short.slice(1).every((s, i) => long[i + 1]?.startsWith(s));
+    };
+    const managers = (fund.fund_managers || []).filter((m, i, arr) =>
+        m?.name && arr.findIndex(x => x?.name && mgrNamesMatch(x.name, m.name)) === i
+    );
     const riskMetrics = fund.risk_metrics || {};
 
     return (
@@ -817,6 +853,71 @@ export default function FundDetailPage() {
                             <MorningstarRating rating={fund.morningstar_rating} />
                         </div>
                     </div>
+                    {/* Fund Managers - top right */}
+                    {managers.length > 0 && (
+                        <div className={styles.headerManagers}>
+                            <span className={styles.headerManagersLabel}><Users size={14} style={{ marginRight: 4 }} />Fund Managers</span>
+                            <div className={styles.headerManagersList}>
+                                {managers.map((m, i) => {
+                                    const isExpanded = expandedManager === i;
+                                    const hasDetails = m.qualification || m.managing_since || m.other_schemes_managed || (m.experience && m.experience.length > 40);
+                                    return (
+                                        <div key={i} className={styles.headerManagerWrap} ref={el => managerRefs.current[i] = el}>
+                                            <div
+                                                className={`${styles.headerManagerChip} ${isExpanded ? styles.headerManagerChipActive : ""}`}
+                                                onClick={() => setExpandedManager(isExpanded ? null : i)}
+                                                style={{ cursor: hasDetails ? "pointer" : "default" }}
+                                            >
+                                                <div className={styles.headerManagerAvatar}>
+                                                    {m.name?.split(" ").filter(n => n.length > 0).map((n) => n[0]).join("").slice(0, 2)}
+                                                </div>
+                                                <div className={styles.headerManagerMeta}>
+                                                    <span className={styles.headerManagerName} title={m.name}>{m.name}</span>
+                                                    {m.experience && <span className={styles.headerManagerExp} title={m.experience}>{m.experience.length > 40 ? m.experience.slice(0, 40) + "…" : m.experience}</span>}
+                                                </div>
+                                                {hasDetails && (
+                                                    <ChevronDown size={14} className={`${styles.headerManagerChevron} ${isExpanded ? styles.headerManagerChevronOpen : ""}`} />
+                                                )}
+                                            </div>
+                                            {isExpanded && (
+                                                <div className={styles.managerPopover}>
+                                                    <div className={styles.managerPopoverHeader}>
+                                                        <div className={styles.managerPopoverAvatar}>
+                                                            {m.name?.split(" ").filter(n => n.length > 0).map((n) => n[0]).join("").slice(0, 2)}
+                                                        </div>
+                                                        <div>
+                                                            <div className={styles.managerPopoverName}>{m.name}</div>
+                                                            {m.qualification && <div className={styles.managerPopoverQual}>{m.qualification}</div>}
+                                                        </div>
+                                                    </div>
+                                                    <div className={styles.managerPopoverBody}>
+                                                        {m.experience && (
+                                                            <div className={styles.managerPopoverRow}>
+                                                                <span className={styles.managerPopoverLabel}>Experience</span>
+                                                                <span className={styles.managerPopoverValue}>{m.experience}</span>
+                                                            </div>
+                                                        )}
+                                                        {m.managing_since && (
+                                                            <div className={styles.managerPopoverRow}>
+                                                                <span className={styles.managerPopoverLabel}>Managing Since</span>
+                                                                <span className={styles.managerPopoverValue}>{m.managing_since}</span>
+                                                            </div>
+                                                        )}
+                                                        {m.other_schemes_managed && (
+                                                            <div className={styles.managerPopoverRow}>
+                                                                <span className={styles.managerPopoverLabel}>Other Schemes</span>
+                                                                <span className={styles.managerPopoverValue}>{safeText(m.other_schemes_managed)}</span>
+                                                            </div>
+                                                        )}
+                                                    </div>
+                                                </div>
+                                            )}
+                                        </div>
+                                    );
+                                })}
+                            </div>
+                        </div>
+                    )}
                 </div>
                 <div className={styles.statBar}>
                     <div className={styles.statBarItem}>
@@ -884,869 +985,843 @@ export default function FundDetailPage() {
                 </div>
             </section>
 
-            {/* ===== FUND MANAGERS ===== */}
-            {
-                managers.length > 0 && (
-                    <section className={`card ${styles.section}`}>
-                        <h2 className="section-title">👤 Fund Managers</h2>
-                        <div className={styles.managerGrid}>
-                            {managers.map((m, i) => (
-                                <div key={i} className={styles.managerCard}>
-                                    <div className={styles.managerAvatar}>
-                                        {m.name?.split(" ").filter(n => n.length > 0).map((n) => n[0]).join("").slice(0, 2)}
-                                    </div>
-                                    <div className={styles.managerInfo}>
-                                        <h4 className={styles.managerName}>{m.name}</h4>
-                                        {m.experience && <p className={styles.managerDetail}>Experience: {m.experience}</p>}
-                                        {m.qualification && <p className={styles.managerDetail}>{m.qualification}</p>}
-                                        {m.managing_since && (
-                                            <p className={styles.managerDetail}>
-                                                Managing since {(() => { try { return new Date(m.managing_since).toLocaleDateString("en-IN", { month: "short", year: "numeric" }); } catch { return m.managing_since; } })()}
-                                            </p>
-                                        )}
-                                        {m.other_schemes_managed && (
-                                            <div className={styles.schemeTags}>
-                                                {(Array.isArray(m.other_schemes_managed)
-                                                    ? m.other_schemes_managed
-                                                    : String(m.other_schemes_managed).split(",").map(s => s.trim())
-                                                ).filter(Boolean).slice(0, 5).map((s, j) => (
-                                                    <span key={j} className={styles.schemeTag}>{s}</span>
-                                                ))}
-                                            </div>
-                                        )}
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </section>
-                )
-            }
-
-            {/* ===== ALPHA SUMMARY BANNER ===== */}
-            {
-                returns.length > 0 && (() => {
-                    const r1Y = returns.find(r => r.period === "1Y");
-                    const r3Y = returns.find(r => r.period === "3Y");
-                    const alpha1Y = (r1Y?.fund_return != null && r1Y?.benchmark_return != null) ? r1Y.fund_return - r1Y.benchmark_return : null;
-                    const alpha3Y = (r3Y?.fund_return != null && r3Y?.benchmark_return != null) ? r3Y.fund_return - r3Y.benchmark_return : null;
-                    if (alpha1Y == null && alpha3Y == null) return null;
-                    return (
-                        <section className={`card ${styles.section} ${styles.alphaBanner}`}>
-                            <div className={styles.alphaBannerHeader}>
-                                <h2 className="section-title">⚡ Benchmark Comparison</h2>
-                                <span className={styles.alphaBenchName}>
-                                    vs {fund.benchmark || benchmark.name}
-                                </span>
-                            </div>
-                            <div className={styles.alphaCards}>
-                                {alpha1Y != null && (
-                                    <div className={`${styles.alphaCard} ${alpha1Y >= 0 ? styles.alphaPositive : styles.alphaNegative}`}>
-                                        <span className={styles.alphaLabel}>1 Year Alpha</span>
-                                        <span className={styles.alphaValue}>
-                                            {alpha1Y >= 0 ? "▲" : "▼"} {alpha1Y >= 0 ? "+" : ""}{alpha1Y.toFixed(2)}%
-                                        </span>
-                                        <span className={styles.alphaDetail}>
-                                            Fund {safe(r1Y.fund_return, "%")} vs Benchmark {safe(r1Y.benchmark_return, "%")}
-                                        </span>
-                                    </div>
-                                )}
-                                {alpha3Y != null && (
-                                    <div className={`${styles.alphaCard} ${alpha3Y >= 0 ? styles.alphaPositive : styles.alphaNegative}`}>
-                                        <span className={styles.alphaLabel}>3 Year Alpha</span>
-                                        <span className={styles.alphaValue}>
-                                            {alpha3Y >= 0 ? "▲" : "▼"} {alpha3Y >= 0 ? "+" : ""}{alpha3Y.toFixed(2)}%
-                                        </span>
-                                        <span className={styles.alphaDetail}>
-                                            Fund {safe(r3Y.fund_return, "%")} vs Benchmark {safe(r3Y.benchmark_return, "%")}
-                                        </span>
-                                    </div>
-                                )}
-                            </div>
-                        </section>
-                    );
-                })()
-            }
-
-            {/* ===== FUND vs BENCHMARK CHART ===== */}
-            <section className={`card ${styles.section}`}>
-                <div className={styles.sectionHeader}>
-                    <h2 className="section-title">📈 Fund vs Benchmark</h2>
-                    <div className="pill-tabs">
-                        {CHART_PERIODS.map((p) => (
-                            <button key={p} className={`pill-tab ${chartPeriod === p ? "active" : ""}`} onClick={() => setChartPeriod(p)}>
-                                {p}
-                            </button>
-                        ))}
+            {/* Auth gate: blur everything below header for non-authenticated / expired users */}
+            {!canView && (
+                <div className="gate-overlay" style={{ position: "relative", zIndex: 10, marginTop: 24 }}>
+                    <div className="gate-overlay-card">
+                        <h3>{trialExpired ? "⏰ Trial Expired" : "🔒 Login Required"}</h3>
+                        <p>{trialExpired ? "Your 3-day free trial has ended." : "Sign in to access detailed fund analytics"}</p>
+                        {!trialExpired && <a href="/login" className="gate-overlay-btn">Sign In to View</a>}
                     </div>
                 </div>
-                <NavChart data={chartData} fundNavData={fundChartData} benchmarkLabel={benchmark.name} fundLabel={fund.fund_name} />
-            </section>
-
-            {/* ===== TRAILING RETURNS VERTICAL BAR CHART ===== */}
-            {
-                returns.length > 0 && (() => {
-                    const hasAddlBench = returns.some(r => r.additional_benchmark_return != null);
-                    const allVals = returns.flatMap(r => [r.fund_return, r.benchmark_return, hasAddlBench ? r.additional_benchmark_return : null].filter(v => v != null));
-                    const maxVal = Math.max(...allVals.map(Math.abs), 1);
-                    const minVal = Math.min(...allVals, 0);
-                    const hasNeg = minVal < 0;
-                    const range = maxVal + (hasNeg ? Math.abs(minVal) : 0);
-                    return (
-                        <section className={`card ${styles.section}`}>
-                            <h2 className="section-title">📊 Trailing Returns Comparison</h2>
-                            {/* Legend */}
-                            <div className={styles.trLegend}>
-                                <div className={styles.trLegendItem}><span className={styles.trLegendDot} style={{ background: "linear-gradient(135deg, #10b981, #34d399)" }} /><span>Fund</span></div>
-                                <div className={styles.trLegendItem}><span className={styles.trLegendDot} style={{ background: "linear-gradient(135deg, #3b82f6, #60a5fa)" }} /><span>{fund.benchmark || "Benchmark"}</span></div>
-                                {hasAddlBench && <div className={styles.trLegendItem}><span className={styles.trLegendDot} style={{ background: "linear-gradient(135deg, #8b5cf6, #a78bfa)" }} /><span>{fund.additional_benchmark || "Addl. Benchmark"}</span></div>}
-                            </div>
-                            {/* Vertical bar chart */}
-                            <div className={styles.trVChart}>
-                                {/* Y-axis gridlines */}
-                                <div className={styles.trVBarsArea}>
-                                    {[0, 25, 50, 75, 100].map(pct => (
-                                        <div key={pct} className={styles.trGridLine} style={{ bottom: `${hasNeg ? ((pct / 100) * maxVal / range) * 100 + (Math.abs(minVal) / range) * 100 * (pct === 0 ? 0 : 0) : pct}%` }}>
+            )}
+            <div className={canView ? "" : "blurred-content"}>
+                {/* ===== ALPHA SUMMARY BANNER ===== */}
+                {
+                    returns.length > 0 && (() => {
+                        const r1Y = returns.find(r => r.period === "1Y");
+                        const r3Y = returns.find(r => r.period === "3Y");
+                        const alpha1Y = (r1Y?.fund_return != null && r1Y?.benchmark_return != null) ? r1Y.fund_return - r1Y.benchmark_return : null;
+                        const alpha3Y = (r3Y?.fund_return != null && r3Y?.benchmark_return != null) ? r3Y.fund_return - r3Y.benchmark_return : null;
+                        if (alpha1Y == null && alpha3Y == null) return null;
+                        return (
+                            <section className={`card ${styles.section} ${styles.alphaBanner}`}>
+                                <div className={styles.alphaBannerHeader}>
+                                    <h2 className="section-title"><Zap size={20} style={iconStyle} />Benchmark Comparison</h2>
+                                    <span className={styles.alphaBenchName}>
+                                        vs {fund.benchmark || benchmark.name}
+                                    </span>
+                                </div>
+                                <div className={styles.alphaCards}>
+                                    {alpha1Y != null && (
+                                        <div className={`${styles.alphaCard} ${alpha1Y >= 0 ? styles.alphaPositive : styles.alphaNegative}`}>
+                                            <span className={styles.alphaLabel}>1 Year Alpha</span>
+                                            <span className={styles.alphaValue}>
+                                                {alpha1Y >= 0 ? "▲" : "▼"} {alpha1Y >= 0 ? "+" : ""}{alpha1Y.toFixed(2)}%
+                                            </span>
+                                            <span className={styles.alphaDetail}>
+                                                Fund {safe(r1Y.fund_return, "%")} vs Benchmark {safe(r1Y.benchmark_return, "%")}
+                                            </span>
                                         </div>
-                                    ))}
-                                    {/* Zero line when there are negative values */}
-                                    {hasNeg && (
-                                        <div className={styles.trZeroLine} style={{ bottom: `${(Math.abs(minVal) / range) * 100}%` }}>
-                                            <span className={styles.trZeroLabel}>0%</span>
+                                    )}
+                                    {alpha3Y != null && (
+                                        <div className={`${styles.alphaCard} ${alpha3Y >= 0 ? styles.alphaPositive : styles.alphaNegative}`}>
+                                            <span className={styles.alphaLabel}>3 Year Alpha</span>
+                                            <span className={styles.alphaValue}>
+                                                {alpha3Y >= 0 ? "▲" : "▼"} {alpha3Y >= 0 ? "+" : ""}{alpha3Y.toFixed(2)}%
+                                            </span>
+                                            <span className={styles.alphaDetail}>
+                                                Fund {safe(r3Y.fund_return, "%")} vs Benchmark {safe(r3Y.benchmark_return, "%")}
+                                            </span>
                                         </div>
                                     )}
                                 </div>
-                                {/* Bar columns */}
-                                <div className={styles.trVColumns}>
-                                    {returns.map((r) => {
-                                        const diff = (r.fund_return != null && r.benchmark_return != null) ? r.fund_return - r.benchmark_return : null;
-                                        const barH = (val) => val != null ? (Math.abs(val) / maxVal) * 100 : 0;
-                                        return (
-                                            <div key={r.period} className={styles.trVCol}>
-                                                {/* Bars container with value labels */}
-                                                <div className={styles.trVBarGroup}>
-                                                    {/* Fund bar */}
-                                                    <div className={styles.trVBarWrap}>
-                                                        <span className={`${styles.trVVal} ${(r.fund_return || 0) >= 0 ? "positive" : "negative"}`}>
-                                                            {r.fund_return != null ? `${r.fund_return}%` : ""}
-                                                        </span>
-                                                        <div
-                                                            className={styles.trVBar}
-                                                            style={{
-                                                                height: `${Math.max(barH(r.fund_return), 3)}%`,
-                                                                background: (r.fund_return || 0) >= 0
-                                                                    ? "linear-gradient(0deg, #059669, #34d399)"
-                                                                    : "linear-gradient(0deg, #f87171, #ef4444)",
-                                                            }}
-                                                        />
-                                                    </div>
-                                                    {/* Benchmark bar */}
-                                                    <div className={styles.trVBarWrap}>
-                                                        <span className={styles.trVVal}>
-                                                            {r.benchmark_return != null ? `${r.benchmark_return}%` : ""}
-                                                        </span>
-                                                        <div
-                                                            className={styles.trVBar}
-                                                            style={{
-                                                                height: `${Math.max(barH(r.benchmark_return), 3)}%`,
-                                                                background: (r.benchmark_return || 0) >= 0
-                                                                    ? "linear-gradient(0deg, #2563eb, #60a5fa)"
-                                                                    : "linear-gradient(0deg, #f87171, #ef4444)",
-                                                            }}
-                                                        />
-                                                    </div>
-                                                    {/* Additional benchmark bar */}
-                                                    {hasAddlBench && (
+                            </section>
+                        );
+                    })()
+                }
+
+                {/* ===== FUND vs BENCHMARK CHART ===== */}
+                <section className={`card ${styles.section}`}>
+                    <div className={styles.sectionHeader}>
+                        <h2 className="section-title"><LineChart size={20} style={iconStyle} />Fund vs Benchmark</h2>
+                        <div className="pill-tabs">
+                            {CHART_PERIODS.map((p) => (
+                                <button key={p} className={`pill-tab ${chartPeriod === p ? "active" : ""}`} onClick={() => setChartPeriod(p)}>
+                                    {p}
+                                </button>
+                            ))}
+                        </div>
+                    </div>
+                    <NavChart data={chartData} fundNavData={fundChartData} benchmarkLabel={benchmark.name} fundLabel={fund.fund_name} />
+                </section>
+
+                {/* ===== TRAILING RETURNS VERTICAL BAR CHART ===== */}
+                {
+                    returns.length > 0 && (() => {
+                        const hasAddlBench = returns.some(r => r.additional_benchmark_return != null);
+                        const allVals = returns.flatMap(r => [r.fund_return, r.benchmark_return, hasAddlBench ? r.additional_benchmark_return : null].filter(v => v != null));
+                        const maxVal = Math.max(...allVals.map(Math.abs), 1);
+                        const minVal = Math.min(...allVals, 0);
+                        const hasNeg = minVal < 0;
+                        const range = maxVal + (hasNeg ? Math.abs(minVal) : 0);
+                        return (
+                            <section className={`card ${styles.section}`}>
+                                <h2 className="section-title"><BarChart3 size={20} style={iconStyle} />Trailing Returns Comparison</h2>
+                                {/* Legend */}
+                                <div className={styles.trLegend}>
+                                    <div className={styles.trLegendItem}><span className={styles.trLegendDot} style={{ background: "linear-gradient(135deg, #10b981, #34d399)" }} /><span>Fund</span></div>
+                                    <div className={styles.trLegendItem}><span className={styles.trLegendDot} style={{ background: "linear-gradient(135deg, #3b82f6, #60a5fa)" }} /><span>{fund.benchmark || "Benchmark"}</span></div>
+                                    {hasAddlBench && <div className={styles.trLegendItem}><span className={styles.trLegendDot} style={{ background: "linear-gradient(135deg, #8b5cf6, #a78bfa)" }} /><span>{fund.additional_benchmark || "Addl. Benchmark"}</span></div>}
+                                </div>
+                                {/* Vertical bar chart */}
+                                <div className={styles.trVChart}>
+                                    {/* Y-axis gridlines */}
+                                    <div className={styles.trVBarsArea}>
+                                        {[0, 25, 50, 75, 100].map(pct => (
+                                            <div key={pct} className={styles.trGridLine} style={{ bottom: `${hasNeg ? ((pct / 100) * maxVal / range) * 100 + (Math.abs(minVal) / range) * 100 * (pct === 0 ? 0 : 0) : pct}%` }}>
+                                            </div>
+                                        ))}
+                                        {/* Zero line when there are negative values */}
+                                        {hasNeg && (
+                                            <div className={styles.trZeroLine} style={{ bottom: `${(Math.abs(minVal) / range) * 100}%` }}>
+                                                <span className={styles.trZeroLabel}>0%</span>
+                                            </div>
+                                        )}
+                                    </div>
+                                    {/* Bar columns */}
+                                    <div className={styles.trVColumns}>
+                                        {returns.map((r) => {
+                                            const diff = (r.fund_return != null && r.benchmark_return != null) ? r.fund_return - r.benchmark_return : null;
+                                            const barH = (val) => val != null ? (Math.abs(val) / maxVal) * 100 : 0;
+                                            return (
+                                                <div key={r.period} className={styles.trVCol}>
+                                                    {/* Bars container with value labels */}
+                                                    <div className={styles.trVBarGroup}>
+                                                        {/* Fund bar */}
                                                         <div className={styles.trVBarWrap}>
-                                                            <span className={styles.trVVal}>
-                                                                {r.additional_benchmark_return != null ? `${r.additional_benchmark_return}%` : ""}
+                                                            <span className={`${styles.trVVal} ${(r.fund_return || 0) >= 0 ? "positive" : "negative"}`}>
+                                                                {r.fund_return != null ? `${r.fund_return}%` : ""}
                                                             </span>
                                                             <div
                                                                 className={styles.trVBar}
                                                                 style={{
-                                                                    height: `${Math.max(barH(r.additional_benchmark_return), 3)}%`,
-                                                                    background: (r.additional_benchmark_return || 0) >= 0
-                                                                        ? "linear-gradient(0deg, #7c3aed, #a78bfa)"
+                                                                    height: `${Math.max(barH(r.fund_return), 3)}%`,
+                                                                    background: (r.fund_return || 0) >= 0
+                                                                        ? "linear-gradient(0deg, #059669, #34d399)"
                                                                         : "linear-gradient(0deg, #f87171, #ef4444)",
                                                                 }}
                                                             />
                                                         </div>
+                                                        {/* Benchmark bar */}
+                                                        <div className={styles.trVBarWrap}>
+                                                            <span className={styles.trVVal}>
+                                                                {r.benchmark_return != null ? `${r.benchmark_return}%` : ""}
+                                                            </span>
+                                                            <div
+                                                                className={styles.trVBar}
+                                                                style={{
+                                                                    height: `${Math.max(barH(r.benchmark_return), 3)}%`,
+                                                                    background: (r.benchmark_return || 0) >= 0
+                                                                        ? "linear-gradient(0deg, #2563eb, #60a5fa)"
+                                                                        : "linear-gradient(0deg, #f87171, #ef4444)",
+                                                                }}
+                                                            />
+                                                        </div>
+                                                        {/* Additional benchmark bar */}
+                                                        {hasAddlBench && (
+                                                            <div className={styles.trVBarWrap}>
+                                                                <span className={styles.trVVal}>
+                                                                    {r.additional_benchmark_return != null ? `${r.additional_benchmark_return}%` : ""}
+                                                                </span>
+                                                                <div
+                                                                    className={styles.trVBar}
+                                                                    style={{
+                                                                        height: `${Math.max(barH(r.additional_benchmark_return), 3)}%`,
+                                                                        background: (r.additional_benchmark_return || 0) >= 0
+                                                                            ? "linear-gradient(0deg, #7c3aed, #a78bfa)"
+                                                                            : "linear-gradient(0deg, #f87171, #ef4444)",
+                                                                    }}
+                                                                />
+                                                            </div>
+                                                        )}
+                                                    </div>
+                                                    {/* Period label */}
+                                                    <div className={styles.trVPeriod}>{r.period}</div>
+                                                    {/* Alpha badge */}
+                                                    {diff != null && (
+                                                        <span className={`${styles.trVAlpha} ${diff >= 0 ? styles.trAlphaPos : styles.trAlphaNeg}`}>
+                                                            {diff >= 0 ? "+" : ""}{diff.toFixed(1)}%
+                                                        </span>
                                                     )}
                                                 </div>
-                                                {/* Period label */}
-                                                <div className={styles.trVPeriod}>{r.period}</div>
-                                                {/* Alpha badge */}
-                                                {diff != null && (
-                                                    <span className={`${styles.trVAlpha} ${diff >= 0 ? styles.trAlphaPos : styles.trAlphaNeg}`}>
-                                                        {diff >= 0 ? "+" : ""}{diff.toFixed(1)}%
-                                                    </span>
-                                                )}
+                                            );
+                                        })}
+                                    </div>
+                                </div>
+                            </section>
+                        );
+                    })()
+                }
+
+                {/* ===== TWO-COLUMN: HOLDINGS + ALLOCATIONS ===== */}
+                <div className={styles.twoCol}>
+                    {/* Holdings */}
+                    <section className={`card ${styles.section}`}>
+                        <div className={styles.sectionHeader}>
+                            <h2 className="section-title"><Briefcase size={20} style={iconStyle} />Portfolio Holdings</h2>
+                            <div className="pill-tabs">
+                                <button className={`pill-tab ${holdingTab === "equity" ? "active" : ""}`} onClick={() => setHoldingTab("equity")}>
+                                    Equity ({equityHoldings.length})
+                                </button>
+                                <button className={`pill-tab ${holdingTab === "debt" ? "active" : ""}`} onClick={() => setHoldingTab("debt")}>
+                                    Debt ({debtHoldings.length})
+                                </button>
+                            </div>
+                        </div>
+                        {holdingTab === "equity" ? (
+                            equityHoldings.length > 0 ? (
+                                <table className="data-table">
+                                    <thead>
+                                        <tr><th>Stock</th><th>Sector</th><th>Weight</th></tr>
+                                    </thead>
+                                    <tbody>
+                                        {equityHoldings.map((h, i) => (
+                                            <tr key={i}>
+                                                <td style={{ fontWeight: 600 }}>{h.name}</td>
+                                                <td style={{ color: "var(--text-secondary)" }}>{h.sector || "—"}</td>
+                                                <td>
+                                                    <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                                                        <div className="progress-bar" style={{ width: 80 }}>
+                                                            <div className="progress-fill" style={{ width: `${(h.weight_pct || 0) * 10}%`, background: sectorColors[i % sectorColors.length] }} />
+                                                        </div>
+                                                        <span style={{ fontWeight: 700 }}>{h.weight_pct}%</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        ))}
+                                    </tbody>
+                                </table>
+                            ) : <div className={styles.noData}>No equity holdings data</div>
+                        ) : (
+                            debtHoldings.length > 0 ? (
+                                <table className="data-table">
+                                    <thead>
+                                        <tr><th>Instrument</th><th>Type</th><th>Rating</th><th>Weight</th></tr>
+                                    </thead>
+                                    <tbody>
+                                        {debtHoldings.map((h, i) => (
+                                            <tr key={i}>
+                                                <td style={{ fontWeight: 600 }}>{h.name}</td>
+                                                <td style={{ color: "var(--text-secondary)" }}>{h.instrument_type || "—"}</td>
+                                                <td>{h.rating ? <span className="badge badge-green">{h.rating}</span> : "—"}</td>
+                                                <td style={{ fontWeight: 700 }}>{h.weight_pct}%</td>
+                                            </tr>
+                                        ))}
+                                    </tbody>
+                                </table>
+                            ) : <div className={styles.noData}>No debt holdings data</div>
+                        )}
+                    </section>
+
+                    {/* Allocations */}
+                    <div className={styles.allocColumn}>
+                        <section className={`card ${styles.section}`}>
+                            <h2 className="section-title"><Landmark size={20} style={iconStyle} />Asset Allocation</h2>
+                            <DonutChart data={fund.asset_allocation} colors={assetColors} />
+                        </section>
+                        {fund.instrument_composition && Object.keys(fund.instrument_composition).length > 0 && (
+                            <section className={`card ${styles.section}`}>
+                                <h2 className="section-title"><Puzzle size={20} style={iconStyle} />Instrument Composition</h2>
+                                <AllocationBar data={fund.instrument_composition} colors={sectorColors} />
+                            </section>
+                        )}
+                        <section className={`card ${styles.section}`}>
+                            <h2 className="section-title"><Building2 size={20} style={iconStyle} />Sector Allocation</h2>
+                            <AllocationBar data={fund.sector_allocation} colors={sectorColors} />
+                        </section>
+                        <section className={`card ${styles.section}`}>
+                            <h2 className="section-title"><Ruler size={20} style={iconStyle} />Market Cap</h2>
+                            <SemiCircleChart data={fund.market_cap_allocation} colors={capColors} />
+                        </section>
+                        {fund.composition_by_rating && Object.keys(fund.composition_by_rating).length > 0 && (
+                            <section className={`card ${styles.section}`}>
+                                <h2 className="section-title"><PieChart size={20} style={iconStyle} />Rating Composition</h2>
+                                <AllocationBar data={fund.composition_by_rating} colors={capColors} />
+                            </section>
+                        )}
+                        {fund.maturity_profile && Object.keys(fund.maturity_profile).length > 0 && (
+                            <section className={`card ${styles.section}`}>
+                                <h2 className="section-title"><CalendarDays size={20} style={iconStyle} />Maturity Profile</h2>
+                                <AllocationBar data={fund.maturity_profile} colors={assetColors} />
+                            </section>
+                        )}
+                    </div>
+                </div>
+
+
+                {/* ===== RISK ANALYSIS (Tabbed: 1Y / 3Y / 5Y) ===== */}
+                {
+                    (() => {
+                        const RISK_PERIODS = ["1Y", "3Y", "5Y"];
+                        // Merge OCR-extracted risk metrics with calculated ones for the selected period
+                        const ocrMetrics = riskMetrics || {};
+                        const hasOcr = Object.keys(ocrMetrics).length > 0 && Object.values(ocrMetrics).some(v => v != null);
+                        const currentCalc = riskMetricsByPeriod[riskPeriod];
+                        const hasCalc = currentCalc != null;
+                        const hasAnyPeriod = RISK_PERIODS.some(p => riskMetricsByPeriod[p] != null);
+                        if (!hasOcr && !hasAnyPeriod) return null;
+
+                        // Order of display
+                        const metricOrder = ["beta", "alpha", "sharpe_ratio", "standard_deviation", "r_squared",
+                            "treynor_ratio", "sortino_ratio", "information_ratio", "tracking_error", "max_drawdown"];
+
+                        // Build merged entries: calculated per-period takes priority, OCR fills gaps
+                        const merged = {};
+                        for (const key of metricOrder) {
+                            const calcVal = hasCalc ? currentCalc[key] : null;
+                            const ocrVal = ocrMetrics[key];
+                            if (calcVal != null) {
+                                merged[key] = { val: calcVal, source: "calculated" };
+                            } else if (ocrVal != null) {
+                                merged[key] = { val: ocrVal, source: "factsheet" };
+                            }
+                        }
+                        // Also include any OCR-only keys not in our standard list
+                        for (const key of Object.keys(ocrMetrics)) {
+                            if (!merged[key] && ocrMetrics[key] != null) {
+                                merged[key] = { val: ocrMetrics[key], source: "factsheet" };
+                            }
+                        }
+
+                        if (Object.keys(merged).length === 0) return null;
+
+                        // Metric descriptions for tooltips
+                        const desc = {
+                            beta: "Sensitivity to market movements. 1 = moves with market",
+                            alpha: "Excess return over benchmark (risk-adjusted)",
+                            sharpe_ratio: "Risk-adjusted return. >1 is good, >2 is excellent",
+                            standard_deviation: "Volatility of returns. Lower = less risky",
+                            r_squared: "How closely fund tracks benchmark. 1 = perfect tracking",
+                            treynor_ratio: "Return per unit of systematic risk",
+                            sortino_ratio: "Like Sharpe but only penalizes downside. >1 is good",
+                            information_ratio: "Active return per unit of tracking error",
+                            tracking_error: "How much fund deviates from benchmark",
+                            max_drawdown: "Largest peak-to-trough decline"
+                        };
+
+                        return (
+                            <section className={`card ${styles.section}`}>
+                                <div className={styles.sectionHeader}>
+                                    <h2 className="section-title"><Shield size={20} style={iconStyle} />Risk Analysis</h2>
+                                    <div className="pill-tabs">
+                                        {RISK_PERIODS.map((p) => (
+                                            <button
+                                                key={p}
+                                                className={`pill-tab ${riskPeriod === p ? "active" : ""}`}
+                                                onClick={() => setRiskPeriod(p)}
+                                                disabled={!riskMetricsByPeriod[p]}
+                                                style={!riskMetricsByPeriod[p] ? { opacity: 0.4, cursor: "not-allowed" } : {}}
+                                            >
+                                                {p}
+                                            </button>
+                                        ))}
+                                    </div>
+                                </div>
+                                <div className={styles.riskBars}>
+                                    {Object.entries(merged).map(([key, { val, source }]) => {
+                                        const label = key.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+
+                                        let displayVal;
+                                        let numVal;
+                                        if (typeof val === "object" && val !== null && !Array.isArray(val)) {
+                                            const parts = Object.entries(val)
+                                                .map(([k, v]) => `${k.replace(/\b\w/g, c => c.toUpperCase())}: ${v}`)
+                                                .join(" | ");
+                                            displayVal = parts;
+                                            numVal = val.fund != null ? val.fund : null;
+                                        } else {
+                                            displayVal = String(val);
+                                            numVal = typeof val === "number" ? val : null;
+                                        }
+
+                                        const isGood = (key === "sharpe_ratio" && numVal > 1) || (key === "alpha" && numVal > 0) || (key === "sortino_ratio" && numVal > 1) || (key === "r_squared" && numVal > 0.8) || (key === "information_ratio" && numVal > 0);
+                                        const isBad = key === "max_drawdown" || (key === "standard_deviation" && numVal > 20) || (key === "tracking_error" && numVal > 10);
+                                        const suffix = key === "standard_deviation" || key === "tracking_error" || key === "alpha" ? "%" : "";
+
+                                        // Determine bar scale based on metric type
+                                        const maxRef = {
+                                            beta: 2, alpha: 20, sharpe_ratio: 3, standard_deviation: 30,
+                                            r_squared: 1, treynor_ratio: 1, sortino_ratio: 3,
+                                            information_ratio: 2, tracking_error: 20, max_drawdown: 50
+                                        };
+                                        const maxScale = maxRef[key] || 10;
+                                        const barPct = numVal != null ? Math.min(Math.abs(numVal) / maxScale * 100, 100) : 0;
+
+                                        const barColor = isGood
+                                            ? "linear-gradient(90deg, #10b981, #34d399)"
+                                            : isBad
+                                                ? "linear-gradient(90deg, #ef4444, #f87171)"
+                                                : "linear-gradient(90deg, #6366f1, #818cf8)";
+
+                                        return (
+                                            <div key={key} className={styles.riskBarRow} title={desc[key] || ""}>
+                                                <div className={styles.riskBarLabel}>
+                                                    <span>{label}</span>
+                                                    {source === "calculated" && (
+                                                        <span className={styles.calcBadge} title={`Computed from ${riskPeriod} historical NAV data`}>{riskPeriod}</span>
+                                                    )}
+                                                    {source === "factsheet" && (
+                                                        <span className={styles.calcBadge} style={{ background: "rgba(245, 158, 11, 0.15)", color: "#f59e0b" }} title="From factsheet">PDF</span>
+                                                    )}
+                                                </div>
+                                                <div className={styles.riskBarTrack}>
+                                                    <div
+                                                        className={styles.riskBarFill}
+                                                        style={{ width: `${Math.max(barPct, 2)}%`, background: barColor }}
+                                                    />
+                                                </div>
+                                                <span className={`${styles.riskBarValue} ${isBad ? "negative" : isGood ? "positive" : ""}`}>
+                                                    {displayVal}{suffix}
+                                                </span>
                                             </div>
                                         );
                                     })}
                                 </div>
-                            </div>
-                        </section>
-                    );
-                })()
-            }
+                            </section>
+                        );
+                    })()
+                }
 
-            {/* ===== TWO-COLUMN: HOLDINGS + ALLOCATIONS ===== */}
-            <div className={styles.twoCol}>
-                {/* Holdings */}
-                <section className={`card ${styles.section}`}>
-                    <div className={styles.sectionHeader}>
-                        <h2 className="section-title">💼 Portfolio Holdings</h2>
-                        <div className="pill-tabs">
-                            <button className={`pill-tab ${holdingTab === "equity" ? "active" : ""}`} onClick={() => setHoldingTab("equity")}>
-                                Equity ({equityHoldings.length})
-                            </button>
-                            <button className={`pill-tab ${holdingTab === "debt" ? "active" : ""}`} onClick={() => setHoldingTab("debt")}>
-                                Debt ({debtHoldings.length})
-                            </button>
-                        </div>
-                    </div>
-                    {holdingTab === "equity" ? (
-                        equityHoldings.length > 0 ? (
-                            <table className="data-table">
-                                <thead>
-                                    <tr><th>Stock</th><th>Sector</th><th>Weight</th></tr>
-                                </thead>
-                                <tbody>
-                                    {equityHoldings.map((h, i) => (
-                                        <tr key={i}>
-                                            <td style={{ fontWeight: 600 }}>{h.name}</td>
-                                            <td style={{ color: "var(--text-secondary)" }}>{h.sector || "—"}</td>
-                                            <td>
-                                                <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-                                                    <div className="progress-bar" style={{ width: 80 }}>
-                                                        <div className="progress-fill" style={{ width: `${(h.weight_pct || 0) * 10}%`, background: sectorColors[i % sectorColors.length] }} />
-                                                    </div>
-                                                    <span style={{ fontWeight: 700 }}>{h.weight_pct}%</span>
-                                                </div>
-                                            </td>
+                {/* ===== SIP RETURNS (from factsheet) ===== */}
+                {
+                    fund.sip_returns && fund.sip_returns.length > 0 && (
+                        <section className={`card ${styles.section}`}>
+                            <h2 className="section-title"><Coins size={20} style={iconStyle} />SIP Returns</h2>
+                            <div className={styles.tableWrap}>
+                                <table className="data-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Period</th>
+                                            <th>Invested</th>
+                                            <th>Market Value</th>
+                                            <th>Return</th>
                                         </tr>
-                                    ))}
-                                </tbody>
-                            </table>
-                        ) : <div className={styles.noData}>No equity holdings data</div>
-                    ) : (
-                        debtHoldings.length > 0 ? (
-                            <table className="data-table">
-                                <thead>
-                                    <tr><th>Instrument</th><th>Type</th><th>Rating</th><th>Weight</th></tr>
-                                </thead>
-                                <tbody>
-                                    {debtHoldings.map((h, i) => (
-                                        <tr key={i}>
-                                            <td style={{ fontWeight: 600 }}>{h.name}</td>
-                                            <td style={{ color: "var(--text-secondary)" }}>{h.instrument_type || "—"}</td>
-                                            <td>{h.rating ? <span className="badge badge-green">{h.rating}</span> : "—"}</td>
-                                            <td style={{ fontWeight: 700 }}>{h.weight_pct}%</td>
-                                        </tr>
-                                    ))}
-                                </tbody>
-                            </table>
-                        ) : <div className={styles.noData}>No debt holdings data</div>
-                    )}
-                </section>
-
-                {/* Allocations */}
-                <div className={styles.allocColumn}>
-                    <section className={`card ${styles.section}`}>
-                        <h2 className="section-title">🏦 Asset Allocation</h2>
-                        <DonutChart data={fund.asset_allocation} colors={assetColors} />
-                    </section>
-                    {fund.instrument_composition && Object.keys(fund.instrument_composition).length > 0 && (
-                        <section className={`card ${styles.section}`}>
-                            <h2 className="section-title">🧩 Instrument Composition</h2>
-                            <AllocationBar data={fund.instrument_composition} colors={sectorColors} />
-                        </section>
-                    )}
-                    <section className={`card ${styles.section}`}>
-                        <h2 className="section-title">🏢 Sector Allocation</h2>
-                        <AllocationBar data={fund.sector_allocation} colors={sectorColors} />
-                    </section>
-                    <section className={`card ${styles.section}`}>
-                        <h2 className="section-title">📐 Market Cap</h2>
-                        <SemiCircleChart data={fund.market_cap_allocation} colors={capColors} />
-                    </section>
-                    {fund.composition_by_rating && Object.keys(fund.composition_by_rating).length > 0 && (
-                        <section className={`card ${styles.section}`}>
-                            <h2 className="section-title">📊 Rating Composition</h2>
-                            <AllocationBar data={fund.composition_by_rating} colors={capColors} />
-                        </section>
-                    )}
-                    {fund.maturity_profile && Object.keys(fund.maturity_profile).length > 0 && (
-                        <section className={`card ${styles.section}`}>
-                            <h2 className="section-title">📅 Maturity Profile</h2>
-                            <AllocationBar data={fund.maturity_profile} colors={assetColors} />
-                        </section>
-                    )}
-                </div>
-            </div>
-
-
-            {/* ===== RISK ANALYSIS (Tabbed: 1Y / 3Y / 5Y) ===== */}
-            {
-                (() => {
-                    const RISK_PERIODS = ["1Y", "3Y", "5Y"];
-                    // Merge OCR-extracted risk metrics with calculated ones for the selected period
-                    const ocrMetrics = riskMetrics || {};
-                    const hasOcr = Object.keys(ocrMetrics).length > 0 && Object.values(ocrMetrics).some(v => v != null);
-                    const currentCalc = riskMetricsByPeriod[riskPeriod];
-                    const hasCalc = currentCalc != null;
-                    const hasAnyPeriod = RISK_PERIODS.some(p => riskMetricsByPeriod[p] != null);
-                    if (!hasOcr && !hasAnyPeriod) return null;
-
-                    // Order of display
-                    const metricOrder = ["beta", "alpha", "sharpe_ratio", "standard_deviation", "r_squared",
-                        "treynor_ratio", "sortino_ratio", "information_ratio", "tracking_error", "max_drawdown"];
-
-                    // Build merged entries: calculated per-period takes priority, OCR fills gaps
-                    const merged = {};
-                    for (const key of metricOrder) {
-                        const calcVal = hasCalc ? currentCalc[key] : null;
-                        const ocrVal = ocrMetrics[key];
-                        if (calcVal != null) {
-                            merged[key] = { val: calcVal, source: "calculated" };
-                        } else if (ocrVal != null) {
-                            merged[key] = { val: ocrVal, source: "factsheet" };
-                        }
-                    }
-                    // Also include any OCR-only keys not in our standard list
-                    for (const key of Object.keys(ocrMetrics)) {
-                        if (!merged[key] && ocrMetrics[key] != null) {
-                            merged[key] = { val: ocrMetrics[key], source: "factsheet" };
-                        }
-                    }
-
-                    if (Object.keys(merged).length === 0) return null;
-
-                    // Metric descriptions for tooltips
-                    const desc = {
-                        beta: "Sensitivity to market movements. 1 = moves with market",
-                        alpha: "Excess return over benchmark (risk-adjusted)",
-                        sharpe_ratio: "Risk-adjusted return. >1 is good, >2 is excellent",
-                        standard_deviation: "Volatility of returns. Lower = less risky",
-                        r_squared: "How closely fund tracks benchmark. 1 = perfect tracking",
-                        treynor_ratio: "Return per unit of systematic risk",
-                        sortino_ratio: "Like Sharpe but only penalizes downside. >1 is good",
-                        information_ratio: "Active return per unit of tracking error",
-                        tracking_error: "How much fund deviates from benchmark",
-                        max_drawdown: "Largest peak-to-trough decline"
-                    };
-
-                    return (
-                        <section className={`card ${styles.section}`}>
-                            <div className={styles.sectionHeader}>
-                                <h2 className="section-title">🛡️ Risk Analysis</h2>
-                                <div className="pill-tabs">
-                                    {RISK_PERIODS.map((p) => (
-                                        <button
-                                            key={p}
-                                            className={`pill-tab ${riskPeriod === p ? "active" : ""}`}
-                                            onClick={() => setRiskPeriod(p)}
-                                            disabled={!riskMetricsByPeriod[p]}
-                                            style={!riskMetricsByPeriod[p] ? { opacity: 0.4, cursor: "not-allowed" } : {}}
-                                        >
-                                            {p}
-                                        </button>
-                                    ))}
-                                </div>
-                            </div>
-                            <div className={styles.riskBars}>
-                                {Object.entries(merged).map(([key, { val, source }]) => {
-                                    const label = key.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
-
-                                    let displayVal;
-                                    let numVal;
-                                    if (typeof val === "object" && val !== null && !Array.isArray(val)) {
-                                        const parts = Object.entries(val)
-                                            .map(([k, v]) => `${k.replace(/\b\w/g, c => c.toUpperCase())}: ${v}`)
-                                            .join(" | ");
-                                        displayVal = parts;
-                                        numVal = val.fund != null ? val.fund : null;
-                                    } else {
-                                        displayVal = String(val);
-                                        numVal = typeof val === "number" ? val : null;
-                                    }
-
-                                    const isGood = (key === "sharpe_ratio" && numVal > 1) || (key === "alpha" && numVal > 0) || (key === "sortino_ratio" && numVal > 1) || (key === "r_squared" && numVal > 0.8) || (key === "information_ratio" && numVal > 0);
-                                    const isBad = key === "max_drawdown" || (key === "standard_deviation" && numVal > 20) || (key === "tracking_error" && numVal > 10);
-                                    const suffix = key === "standard_deviation" || key === "tracking_error" || key === "alpha" ? "%" : "";
-
-                                    // Determine bar scale based on metric type
-                                    const maxRef = {
-                                        beta: 2, alpha: 20, sharpe_ratio: 3, standard_deviation: 30,
-                                        r_squared: 1, treynor_ratio: 1, sortino_ratio: 3,
-                                        information_ratio: 2, tracking_error: 20, max_drawdown: 50
-                                    };
-                                    const maxScale = maxRef[key] || 10;
-                                    const barPct = numVal != null ? Math.min(Math.abs(numVal) / maxScale * 100, 100) : 0;
-
-                                    const barColor = isGood
-                                        ? "linear-gradient(90deg, #10b981, #34d399)"
-                                        : isBad
-                                            ? "linear-gradient(90deg, #ef4444, #f87171)"
-                                            : "linear-gradient(90deg, #6366f1, #818cf8)";
-
-                                    return (
-                                        <div key={key} className={styles.riskBarRow} title={desc[key] || ""}>
-                                            <div className={styles.riskBarLabel}>
-                                                <span>{label}</span>
-                                                {source === "calculated" && (
-                                                    <span className={styles.calcBadge} title={`Computed from ${riskPeriod} historical NAV data`}>{riskPeriod}</span>
-                                                )}
-                                                {source === "factsheet" && (
-                                                    <span className={styles.calcBadge} style={{ background: "rgba(245, 158, 11, 0.15)", color: "#f59e0b" }} title="From factsheet">PDF</span>
-                                                )}
-                                            </div>
-                                            <div className={styles.riskBarTrack}>
-                                                <div
-                                                    className={styles.riskBarFill}
-                                                    style={{ width: `${Math.max(barPct, 2)}%`, background: barColor }}
-                                                />
-                                            </div>
-                                            <span className={`${styles.riskBarValue} ${isBad ? "negative" : isGood ? "positive" : ""}`}>
-                                                {displayVal}{suffix}
-                                            </span>
-                                        </div>
-                                    );
-                                })}
+                                    </thead>
+                                    <tbody>
+                                        {fund.sip_returns.filter(s => !(s.scheme_name || "").toLowerCase().includes("benchmark")).map((s, i) => (
+                                            <tr key={i}>
+                                                <td style={{ fontWeight: 600 }}>{s.period}</td>
+                                                <td>{s.total_invested != null ? `₹${Number(s.total_invested).toLocaleString("en-IN")}` : "—"}</td>
+                                                <td>{s.market_value != null ? `₹${Number(s.market_value).toLocaleString("en-IN")}` : "—"}</td>
+                                                <td className={s.return_pct >= 0 ? "positive" : "negative"} style={{ fontWeight: 700 }}>
+                                                    {s.return_pct != null ? `${s.return_pct}%` : "—"}
+                                                </td>
+                                            </tr>
+                                        ))}
+                                    </tbody>
+                                </table>
                             </div>
                         </section>
-                    );
-                })()
-            }
+                    )
+                }
 
-            {/* ===== SIP RETURNS (from factsheet) ===== */}
-            {
-                fund.sip_returns && fund.sip_returns.length > 0 && (
-                    <section className={`card ${styles.section}`}>
-                        <h2 className="section-title">💰 SIP Returns</h2>
-                        <div className={styles.tableWrap}>
-                            <table className="data-table">
-                                <thead>
-                                    <tr>
-                                        <th>Period</th>
-                                        <th>Invested</th>
-                                        <th>Market Value</th>
-                                        <th>Return</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    {fund.sip_returns.filter(s => !(s.scheme_name || "").toLowerCase().includes("benchmark")).map((s, i) => (
-                                        <tr key={i}>
-                                            <td style={{ fontWeight: 600 }}>{s.period}</td>
-                                            <td>{s.total_invested != null ? `₹${Number(s.total_invested).toLocaleString("en-IN")}` : "—"}</td>
-                                            <td>{s.market_value != null ? `₹${Number(s.market_value).toLocaleString("en-IN")}` : "—"}</td>
-                                            <td className={s.return_pct >= 0 ? "positive" : "negative"} style={{ fontWeight: 700 }}>
-                                                {s.return_pct != null ? `${s.return_pct}%` : "—"}
-                                            </td>
-                                        </tr>
-                                    ))}
-                                </tbody>
-                            </table>
-                        </div>
-                    </section>
-                )
-            }
+                {/* ===== SIP CALCULATOR ===== */}
+                {
+                    returns.length > 0 && (
+                        <section className={`card ${styles.section}`}>
+                            <h2 className="section-title"><Calculator size={20} style={iconStyle} />SIP Calculator</h2>
+                            <SIPCalculator fund={fund} />
+                        </section>
+                    )
+                }
 
-            {/* ===== SIP CALCULATOR ===== */}
-            {
-                returns.length > 0 && (
-                    <section className={`card ${styles.section}`}>
-                        <h2 className="section-title">🧮 SIP Calculator</h2>
-                        <SIPCalculator fund={fund} />
-                    </section>
-                )
-            }
-
-            {/* ===== KEY HIGHLIGHTS ===== */}
-            {
-                fund.additional_info?.key_highlights && fund.additional_info.key_highlights.length > 0 && (
-                    <section className={`card ${styles.section}`}>
-                        <h2 className="section-title">🌟 Key Highlights</h2>
-                        <div className={styles.highlightsList}>
-                            {fund.additional_info.key_highlights.map((h, i) => (
-                                <div key={i} className={styles.highlightItem}>
-                                    <span className={styles.highlightIcon}>✦</span>
-                                    <span>{h}</span>
-                                </div>
-                            ))}
-                        </div>
-                        {fund.additional_info.about_the_scheme && fund.additional_info.about_the_scheme.length > 0 && (
-                            <div style={{ marginTop: 16 }}>
-                                <h3 style={{ fontSize: 14, fontWeight: 600, color: "var(--text-secondary)", marginBottom: 10 }}>About the Scheme</h3>
-                                <div className={styles.highlightsList}>
-                                    {fund.additional_info.about_the_scheme.map((item, i) => (
-                                        <div key={i} className={styles.highlightItem}>
-                                            <span className={styles.highlightIcon}>•</span>
-                                            <span>{item}</span>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                        )}
-                    </section>
-                )
-            }
-
-            {/* ===== ALLOCATION STRATEGY ===== */}
-            {
-                (fund.additional_info?.equity_allocation_strategy || fund.additional_info?.fixed_income_allocation_strategy || fund.additional_info?.commodity_allocation_strategy) && (
-                    <section className={`card ${styles.section}`}>
-                        <h2 className="section-title">🎯 Investment Strategy</h2>
-                        <div className={styles.strategyGrid}>
-                            {fund.additional_info.equity_allocation_strategy && (
-                                <div className={styles.strategyCard}>
-                                    <div className={styles.strategyLabel}>Equity Strategy</div>
-                                    <div className={styles.strategyText}>{fund.additional_info.equity_allocation_strategy}</div>
-                                </div>
-                            )}
-                            {fund.additional_info.fixed_income_allocation_strategy && (
-                                <div className={styles.strategyCard}>
-                                    <div className={styles.strategyLabel}>Fixed Income Strategy</div>
-                                    <div className={styles.strategyText}>{fund.additional_info.fixed_income_allocation_strategy}</div>
-                                </div>
-                            )}
-                            {fund.additional_info.commodity_allocation_strategy && (
-                                <div className={styles.strategyCard}>
-                                    <div className={styles.strategyLabel}>Commodity Strategy</div>
-                                    <div className={styles.strategyText}>{fund.additional_info.commodity_allocation_strategy}</div>
-                                </div>
-                            )}
-                        </div>
-                    </section>
-                )
-            }
-
-            {/* ===== PORTFOLIO ACTIVITY ===== */}
-            {
-                (fund.additional_info?.stocks_new_entries?.length > 0 || fund.additional_info?.stocks_total_exits?.length > 0) && (
-                    <section className={`card ${styles.section}`}>
-                        <h2 className="section-title">📋 Portfolio Activity</h2>
-                        <div className={styles.activityGrid}>
-                            {fund.additional_info.stocks_new_entries?.length > 0 && (
-                                <div className={styles.activityColumn}>
-                                    <div className={styles.activityTitle} style={{ color: "#10b981" }}>↑ New Entries</div>
-                                    {fund.additional_info.stocks_new_entries.map((s, i) => (
-                                        <div key={i} className={styles.activityEntry}>{s}</div>
-                                    ))}
-                                </div>
-                            )}
-                            {fund.additional_info.stocks_total_exits?.length > 0 && (
-                                <div className={styles.activityColumn}>
-                                    <div className={styles.activityTitle} style={{ color: "#ef4444" }}>↓ Exits</div>
-                                    {fund.additional_info.stocks_total_exits.map((s, i) => (
-                                        <div key={i} className={styles.activityExit}>{s}</div>
-                                    ))}
-                                </div>
-                            )}
-                        </div>
-                    </section>
-                )
-            }
-
-            {/* ===== PORTFOLIO STATISTICS ===== */}
-            {
-                fund.portfolio_stats && Object.values(fund.portfolio_stats).some(v => v != null) && (
-                    <section className={`card ${styles.section}`}>
-                        <h2 className="section-title">📈 Portfolio Statistics</h2>
-                        <div className={styles.statsGrid}>
-                            {fund.portfolio_stats.pe_ratio != null && (
-                                <div className={styles.statItem}>
-                                    <span className={styles.statItemLabel}>P/E Ratio</span>
-                                    <span className={styles.statItemValue}>{fund.portfolio_stats.pe_ratio}</span>
-                                </div>
-                            )}
-                            {fund.portfolio_stats.pb_ratio != null && (
-                                <div className={styles.statItem}>
-                                    <span className={styles.statItemLabel}>P/B Ratio</span>
-                                    <span className={styles.statItemValue}>{fund.portfolio_stats.pb_ratio}</span>
-                                </div>
-                            )}
-                            {fund.portfolio_stats.dividend_yield != null && (
-                                <div className={styles.statItem}>
-                                    <span className={styles.statItemLabel}>Dividend Yield</span>
-                                    <span className={styles.statItemValue}>{fund.portfolio_stats.dividend_yield}%</span>
-                                </div>
-                            )}
-                            {fund.portfolio_stats.roe != null && (
-                                <div className={styles.statItem}>
-                                    <span className={styles.statItemLabel}>ROE</span>
-                                    <span className={styles.statItemValue}>{fund.portfolio_stats.roe}%</span>
-                                </div>
-                            )}
-                            {fund.portfolio_stats.roa != null && (
-                                <div className={styles.statItem}>
-                                    <span className={styles.statItemLabel}>ROA</span>
-                                    <span className={styles.statItemValue}>{fund.portfolio_stats.roa}%</span>
-                                </div>
-                            )}
-                            {fund.portfolio_stats.avg_market_cap_cr != null && (
-                                <div className={styles.statItem}>
-                                    <span className={styles.statItemLabel}>Avg Mkt Cap</span>
-                                    <span className={styles.statItemValue}>₹{Number(fund.portfolio_stats.avg_market_cap_cr).toLocaleString("en-IN")} Cr</span>
-                                </div>
-                            )}
-                            {fund.portfolio_stats.equity_style && (
-                                <div className={styles.statItem}>
-                                    <span className={styles.statItemLabel}>Equity Style</span>
-                                    <span className={styles.statItemValue} style={{ fontSize: 14 }}>{fund.portfolio_stats.equity_style}</span>
-                                </div>
-                            )}
-                        </div>
-                        {(fund.additional_info?.portfolio_dividend_yield != null || fund.additional_info?.benchmark_dividend_yield != null) && (
-                            <div style={{ display: "flex", gap: 16, marginTop: 12 }}>
-                                {fund.additional_info.portfolio_dividend_yield != null && (
-                                    <div className={styles.statItem} style={{ flex: 1 }}>
-                                        <span className={styles.statItemLabel}>Portfolio Div. Yield</span>
-                                        <span className={styles.statItemValue}>{fund.additional_info.portfolio_dividend_yield}%</span>
+                {/* ===== KEY HIGHLIGHTS ===== */}
+                {
+                    fund.additional_info?.key_highlights && fund.additional_info.key_highlights.length > 0 && (
+                        <section className={`card ${styles.section}`}>
+                            <h2 className="section-title"><Star size={20} style={iconStyle} />Key Highlights</h2>
+                            <div className={styles.highlightsList}>
+                                {fund.additional_info.key_highlights.map((h, i) => (
+                                    <div key={i} className={styles.highlightItem}>
+                                        <span className={styles.highlightIcon}>✦</span>
+                                        <span>{h}</span>
                                     </div>
-                                )}
-                                {fund.additional_info.benchmark_dividend_yield != null && (
-                                    <div className={styles.statItem} style={{ flex: 1 }}>
-                                        <span className={styles.statItemLabel}>Benchmark Div. Yield</span>
-                                        <span className={styles.statItemValue}>{fund.additional_info.benchmark_dividend_yield}%</span>
-                                    </div>
-                                )}
+                                ))}
                             </div>
-                        )}
-                    </section>
-                )
-            }
-
-            {/* ===== FUND INFO ===== */}
-            <section className={`card ${styles.section}`}>
-                <h2 className="section-title">ℹ️ Fund Information</h2>
-                <div className={styles.infoGrid}>
-                    <div className={styles.infoItem}>
-                        <span className={styles.infoLabel}>AMC</span>
-                        <span className={styles.infoValue}>{fund.amc || "—"}</span>
-                    </div>
-                    <div className={styles.infoItem}>
-                        <span className={styles.infoLabel}>Benchmark</span>
-                        <span className={styles.infoValue}>{safeText(fund.benchmark)}</span>
-                    </div>
-                    <div className={styles.infoItem}>
-                        <span className={styles.infoLabel}>Category</span>
-                        <span className={styles.infoValue}>{fund.category || "—"}</span>
-                    </div>
-                    <div className={styles.infoItem}>
-                        <span className={styles.infoLabel}>Scheme Type</span>
-                        <span className={styles.infoValue}>{fund.scheme_type || "—"}</span>
-                    </div>
-                    <div className={styles.infoItem}>
-                        <span className={styles.infoLabel}>Inception Date</span>
-                        <span className={styles.infoValue}>{fund.inception_date || "—"}</span>
-                    </div>
-                    <div className={styles.infoItem}>
-                        <span className={styles.infoLabel}>Plans Offered</span>
-                        <span className={styles.infoValue}>{safeText(fund.plans_offered)}</span>
-                    </div>
-                    {fund.isin && (
-                        <div className={styles.infoItem}>
-                            <span className={styles.infoLabel}>ISIN</span>
-                            <span className={styles.infoValue}>{safeText(fund.isin)}</span>
-                        </div>
-                    )}
-                    {fund.amfi_code && (
-                        <div className={styles.infoItem}>
-                            <span className={styles.infoLabel}>AMFI Code</span>
-                            <span className={styles.infoValue}>{safeText(fund.amfi_code)}</span>
-                        </div>
-                    )}
-                    {fund.registrar && (
-                        <div className={styles.infoItem}>
-                            <span className={styles.infoLabel}>Registrar</span>
-                            <span className={styles.infoValue}>{safeText(fund.registrar)}</span>
-                        </div>
-                    )}
-                    <div className={styles.infoItem}>
-                        <span className={styles.infoLabel}>Exit Load</span>
-                        <span className={styles.infoValue}>{safeText(fund.exit_load)}</span>
-                    </div>
-                    <div className={styles.infoItem}>
-                        <span className={styles.infoLabel}>Min SIP</span>
-                        <span className={styles.infoValue}>{fund.min_sip != null ? safeMoney(fund.min_sip) : "—"}</span>
-                    </div>
-                    <div className={styles.infoItem}>
-                        <span className={styles.infoLabel}>Min Lumpsum</span>
-                        <span className={styles.infoValue}>{fund.min_lumpsum != null ? (typeof fund.min_lumpsum === "number" ? safeMoney(fund.min_lumpsum) : fund.min_lumpsum) : "—"}</span>
-                    </div>
-                    {fund.min_additional != null && (
-                        <div className={styles.infoItem}>
-                            <span className={styles.infoLabel}>Min Additional</span>
-                            <span className={styles.infoValue}>{safeMoney(fund.min_additional)}</span>
-                        </div>
-                    )}
-                    {fund.min_redemption != null && (
-                        <div className={styles.infoItem}>
-                            <span className={styles.infoLabel}>Min Redemption</span>
-                            <span className={styles.infoValue}>{safeMoney(fund.min_redemption)}</span>
-                        </div>
-                    )}
-                    <div className={styles.infoItem}>
-                        <span className={styles.infoLabel}>Monthly Avg AUM</span>
-                        <span className={styles.infoValue}>{fund.monthly_avg_aum != null ? `₹${fund.monthly_avg_aum} Cr` : "—"}</span>
-                    </div>
-                    {(fund.turnover_ratio != null || fund.portfolio_turnover != null) && (
-                        <div className={styles.infoItem}>
-                            <span className={styles.infoLabel}>Turnover Ratio</span>
-                            <span className={styles.infoValue}>{safeText(fund.turnover_ratio ?? fund.portfolio_turnover)}</span>
-                        </div>
-                    )}
-                    {fund.lock_in_period && (
-                        <div className={styles.infoItem}>
-                            <span className={styles.infoLabel}>Lock-in Period</span>
-                            <span className={styles.infoValue}>{fund.lock_in_period}</span>
-                        </div>
-                    )}
-                    {fund.stamp_duty && (
-                        <div className={styles.infoItem}>
-                            <span className={styles.infoLabel}>Stamp Duty</span>
-                            <span className={styles.infoValue}>{fund.stamp_duty}</span>
-                        </div>
-                    )}
-                </div>
-
-                {/* SIP/SWP/STP Availability */}
-                {(fund.sip_available != null || fund.swp_available != null || fund.stp_available != null) && (
-                    <div style={{ marginTop: 16 }}>
-                        <span style={{ fontWeight: 600, color: "var(--text-secondary)", fontSize: 13, display: "block", marginBottom: 10 }}>Availability</span>
-                        <div className={styles.availGrid}>
-                            {fund.sip_available != null && (
-                                <span className={`${styles.availBadge} ${fund.sip_available ? styles.availYes : styles.availNo}`}>
-                                    {fund.sip_available ? "✓" : "✗"} SIP
-                                </span>
-                            )}
-                            {fund.swp_available != null && (
-                                <span className={`${styles.availBadge} ${fund.swp_available ? styles.availYes : styles.availNo}`}>
-                                    {fund.swp_available ? "✓" : "✗"} SWP
-                                </span>
-                            )}
-                            {fund.stp_available != null && (
-                                <span className={`${styles.availBadge} ${fund.stp_available ? styles.availYes : styles.availNo}`}>
-                                    {fund.stp_available ? "✓" : "✗"} STP
-                                </span>
-                            )}
-                        </div>
-                    </div>
-                )}
-
-                {fund.investment_objective && (
-                    <div style={{ marginTop: 16, padding: "12px 16px", background: "var(--bg-secondary)", borderRadius: 8 }}>
-                        <span style={{ fontWeight: 600, color: "var(--text-secondary)", fontSize: 13 }}>Investment Objective</span>
-                        <p style={{ margin: "6px 0 0", fontSize: 13, lineHeight: 1.6, color: "var(--text-primary)" }}>{fund.investment_objective}</p>
-                    </div>
-                )}
-            </section>
-
-            {/* ===== ADDITIONAL INFO (dynamic) ===== */}
-            {
-                fund.additional_info && Object.keys(fund.additional_info).length > 0 && (() => {
-                    const formatKey = (key) => key
-                        .replace(/_/g, " ")
-                        .replace(/\b\w/g, c => c.toUpperCase())
-                        .replace(/\bPtp\b/g, "PTP")
-                        .replace(/\bIsin\b/g, "ISIN")
-                        .replace(/\bNav\b/g, "NAV")
-                        .replace(/\bAum\b/g, "AUM");
-
-                    const isSimple = (val) => val == null || typeof val === "string" || typeof val === "number" || typeof val === "boolean";
-                    const isNumericObject = (val) => typeof val === "object" && val !== null && !Array.isArray(val) && Object.values(val).every(v => typeof v === "number");
-                    const isFlatArray = (val) => Array.isArray(val) && val.length > 0 && typeof val[0] !== "object";
-                    const isTableArray = (val) => Array.isArray(val) && val.length > 0 && typeof val[0] === "object";
-                    const isKVObject = (val) => typeof val === "object" && val !== null && !Array.isArray(val) && Object.values(val).every(v => isSimple(v));
-
-                    const formatSimple = (val) => {
-                        if (val == null) return "—";
-                        if (typeof val === "boolean") return val ? "Yes" : "No";
-                        if (typeof val === "number") return val.toLocaleString("en-IN");
-                        return String(val);
-                    };
-
-                    // Categorize entries
-                    const simpleEntries = [];
-                    const numericObjects = [];
-                    const kvObjects = [];
-                    const tableArrays = [];
-
-                    for (const [key, val] of Object.entries(fund.additional_info)) {
-                        if (isSimple(val) || isFlatArray(val)) {
-                            simpleEntries.push([key, isFlatArray(val) ? val.join(", ") : val]);
-                        } else if (isNumericObject(val)) {
-                            numericObjects.push([key, val]);
-                        } else if (isTableArray(val)) {
-                            tableArrays.push([key, val]);
-                        } else if (isKVObject(val)) {
-                            kvObjects.push([key, val]);
-                        }
-                        // Skip deeply nested/complex structures silently
-                    }
-
-                    return (
-                        <section className={`card ${styles.section}`}>
-                            <h2 className="section-title">📋 Additional Information</h2>
-                            {simpleEntries.length > 0 && (
-                                <div className={styles.infoGrid}>
-                                    {simpleEntries.map(([key, val]) => (
-                                        <div key={key} className={styles.infoItem}>
-                                            <span className={styles.infoLabel}>{formatKey(key)}</span>
-                                            <span className={styles.infoValue}>{formatSimple(val)}</span>
-                                        </div>
-                                    ))}
-                                </div>
-                            )}
-                            {kvObjects.map(([key, obj]) => (
-                                <div key={key} style={{ marginTop: 16 }}>
-                                    <h3 style={{ fontSize: 14, fontWeight: 600, color: "var(--text-secondary)", marginBottom: 8 }}>{formatKey(key)}</h3>
-                                    <div className={styles.infoGrid}>
-                                        {Object.entries(obj).map(([k, v]) => (
-                                            <div key={k} className={styles.infoItem}>
-                                                <span className={styles.infoLabel}>{formatKey(k)}</span>
-                                                <span className={styles.infoValue}>{formatSimple(v)}</span>
+                            {fund.additional_info.about_the_scheme && fund.additional_info.about_the_scheme.length > 0 && (
+                                <div style={{ marginTop: 16 }}>
+                                    <h3 style={{ fontSize: 14, fontWeight: 600, color: "var(--text-secondary)", marginBottom: 10 }}>About the Scheme</h3>
+                                    <div className={styles.highlightsList}>
+                                        {fund.additional_info.about_the_scheme.map((item, i) => (
+                                            <div key={i} className={styles.highlightItem}>
+                                                <span className={styles.highlightIcon}>•</span>
+                                                <span>{item}</span>
                                             </div>
                                         ))}
                                     </div>
                                 </div>
-                            ))}
-                            {numericObjects.map(([key, obj]) => (
-                                <div key={key} style={{ marginTop: 16 }}>
-                                    <h3 style={{ fontSize: 14, fontWeight: 600, color: "var(--text-secondary)", marginBottom: 8 }}>{formatKey(key)}</h3>
-                                    <AllocationBar data={obj} colors={sectorColors} />
+                            )}
+                        </section>
+                    )
+                }
+
+                {/* ===== ALLOCATION STRATEGY ===== */}
+                {
+                    (fund.additional_info?.equity_allocation_strategy || fund.additional_info?.fixed_income_allocation_strategy || fund.additional_info?.commodity_allocation_strategy) && (
+                        <section className={`card ${styles.section}`}>
+                            <h2 className="section-title"><Target size={20} style={iconStyle} />Investment Strategy</h2>
+                            <div className={styles.strategyGrid}>
+                                {fund.additional_info.equity_allocation_strategy && (
+                                    <div className={styles.strategyCard}>
+                                        <div className={styles.strategyLabel}>Equity Strategy</div>
+                                        <div className={styles.strategyText}>{fund.additional_info.equity_allocation_strategy}</div>
+                                    </div>
+                                )}
+                                {fund.additional_info.fixed_income_allocation_strategy && (
+                                    <div className={styles.strategyCard}>
+                                        <div className={styles.strategyLabel}>Fixed Income Strategy</div>
+                                        <div className={styles.strategyText}>{fund.additional_info.fixed_income_allocation_strategy}</div>
+                                    </div>
+                                )}
+                                {fund.additional_info.commodity_allocation_strategy && (
+                                    <div className={styles.strategyCard}>
+                                        <div className={styles.strategyLabel}>Commodity Strategy</div>
+                                        <div className={styles.strategyText}>{fund.additional_info.commodity_allocation_strategy}</div>
+                                    </div>
+                                )}
+                            </div>
+                        </section>
+                    )
+                }
+
+                {/* ===== PORTFOLIO ACTIVITY ===== */}
+                {
+                    (fund.additional_info?.stocks_new_entries?.length > 0 || fund.additional_info?.stocks_total_exits?.length > 0) && (
+                        <section className={`card ${styles.section}`}>
+                            <h2 className="section-title"><ClipboardList size={20} style={iconStyle} />Portfolio Activity</h2>
+                            <div className={styles.activityGrid}>
+                                {fund.additional_info.stocks_new_entries?.length > 0 && (
+                                    <div className={styles.activityColumn}>
+                                        <div className={styles.activityTitle} style={{ color: "#10b981" }}>↑ New Entries</div>
+                                        {fund.additional_info.stocks_new_entries.map((s, i) => (
+                                            <div key={i} className={styles.activityEntry}>{s}</div>
+                                        ))}
+                                    </div>
+                                )}
+                                {fund.additional_info.stocks_total_exits?.length > 0 && (
+                                    <div className={styles.activityColumn}>
+                                        <div className={styles.activityTitle} style={{ color: "#ef4444" }}>↓ Exits</div>
+                                        {fund.additional_info.stocks_total_exits.map((s, i) => (
+                                            <div key={i} className={styles.activityExit}>{s}</div>
+                                        ))}
+                                    </div>
+                                )}
+                            </div>
+                        </section>
+                    )
+                }
+
+                {/* ===== PORTFOLIO STATISTICS ===== */}
+                {
+                    fund.portfolio_stats && Object.values(fund.portfolio_stats).some(v => v != null) && (
+                        <section className={`card ${styles.section}`}>
+                            <h2 className="section-title"><TrendingUp size={20} style={iconStyle} />Portfolio Statistics</h2>
+                            <div className={styles.statsGrid}>
+                                {fund.portfolio_stats.pe_ratio != null && (
+                                    <div className={styles.statItem}>
+                                        <span className={styles.statItemLabel}>P/E Ratio</span>
+                                        <span className={styles.statItemValue}>{fund.portfolio_stats.pe_ratio}</span>
+                                    </div>
+                                )}
+                                {fund.portfolio_stats.pb_ratio != null && (
+                                    <div className={styles.statItem}>
+                                        <span className={styles.statItemLabel}>P/B Ratio</span>
+                                        <span className={styles.statItemValue}>{fund.portfolio_stats.pb_ratio}</span>
+                                    </div>
+                                )}
+                                {fund.portfolio_stats.dividend_yield != null && (
+                                    <div className={styles.statItem}>
+                                        <span className={styles.statItemLabel}>Dividend Yield</span>
+                                        <span className={styles.statItemValue}>{fund.portfolio_stats.dividend_yield}%</span>
+                                    </div>
+                                )}
+                                {fund.portfolio_stats.roe != null && (
+                                    <div className={styles.statItem}>
+                                        <span className={styles.statItemLabel}>ROE</span>
+                                        <span className={styles.statItemValue}>{fund.portfolio_stats.roe}%</span>
+                                    </div>
+                                )}
+                                {fund.portfolio_stats.roa != null && (
+                                    <div className={styles.statItem}>
+                                        <span className={styles.statItemLabel}>ROA</span>
+                                        <span className={styles.statItemValue}>{fund.portfolio_stats.roa}%</span>
+                                    </div>
+                                )}
+                                {fund.portfolio_stats.avg_market_cap_cr != null && (
+                                    <div className={styles.statItem}>
+                                        <span className={styles.statItemLabel}>Avg Mkt Cap</span>
+                                        <span className={styles.statItemValue}>₹{Number(fund.portfolio_stats.avg_market_cap_cr).toLocaleString("en-IN")} Cr</span>
+                                    </div>
+                                )}
+                                {fund.portfolio_stats.equity_style && (
+                                    <div className={styles.statItem}>
+                                        <span className={styles.statItemLabel}>Equity Style</span>
+                                        <span className={styles.statItemValue} style={{ fontSize: 14 }}>{fund.portfolio_stats.equity_style}</span>
+                                    </div>
+                                )}
+                            </div>
+                            {(fund.additional_info?.portfolio_dividend_yield != null || fund.additional_info?.benchmark_dividend_yield != null) && (
+                                <div style={{ display: "flex", gap: 16, marginTop: 12 }}>
+                                    {fund.additional_info.portfolio_dividend_yield != null && (
+                                        <div className={styles.statItem} style={{ flex: 1 }}>
+                                            <span className={styles.statItemLabel}>Portfolio Div. Yield</span>
+                                            <span className={styles.statItemValue}>{fund.additional_info.portfolio_dividend_yield}%</span>
+                                        </div>
+                                    )}
+                                    {fund.additional_info.benchmark_dividend_yield != null && (
+                                        <div className={styles.statItem} style={{ flex: 1 }}>
+                                            <span className={styles.statItemLabel}>Benchmark Div. Yield</span>
+                                            <span className={styles.statItemValue}>{fund.additional_info.benchmark_dividend_yield}%</span>
+                                        </div>
+                                    )}
                                 </div>
-                            ))}
-                            {tableArrays.map(([key, arr]) => (
-                                <div key={key} style={{ marginTop: 16 }}>
-                                    <h3 style={{ fontSize: 14, fontWeight: 600, color: "var(--text-secondary)", marginBottom: 8 }}>{formatKey(key)}</h3>
-                                    <div className={styles.tableWrap}>
-                                        <table className="data-table">
-                                            <thead>
-                                                <tr>
-                                                    {Object.keys(arr[0]).map(col => (
-                                                        <th key={col}>{formatKey(col)}</th>
-                                                    ))}
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                {arr.map((row, i) => (
-                                                    <tr key={i}>
-                                                        {Object.values(row).map((cell, j) => (
-                                                            <td key={j}>{cell != null ? (typeof cell === "number" ? cell.toLocaleString("en-IN") : String(cell)) : "—"}</td>
+                            )}
+                        </section>
+                    )
+                }
+
+                {/* ===== FUND INFO ===== */}
+                <section className={`card ${styles.section}`}>
+                    <h2 className="section-title"><Info size={20} style={iconStyle} />Fund Information</h2>
+                    <div className={styles.infoGrid}>
+                        <div className={styles.infoItem}>
+                            <span className={styles.infoLabel}>AMC</span>
+                            <span className={styles.infoValue}>{fund.amc || "—"}</span>
+                        </div>
+                        <div className={styles.infoItem}>
+                            <span className={styles.infoLabel}>Benchmark</span>
+                            <span className={styles.infoValue}>{safeText(fund.benchmark)}</span>
+                        </div>
+                        <div className={styles.infoItem}>
+                            <span className={styles.infoLabel}>Category</span>
+                            <span className={styles.infoValue}>{fund.category || "—"}</span>
+                        </div>
+                        <div className={styles.infoItem}>
+                            <span className={styles.infoLabel}>Scheme Type</span>
+                            <span className={styles.infoValue}>{fund.scheme_type || "—"}</span>
+                        </div>
+                        <div className={styles.infoItem}>
+                            <span className={styles.infoLabel}>Inception Date</span>
+                            <span className={styles.infoValue}>{fund.inception_date || "—"}</span>
+                        </div>
+                        <div className={styles.infoItem}>
+                            <span className={styles.infoLabel}>Plans Offered</span>
+                            <span className={styles.infoValue}>{safeText(fund.plans_offered)}</span>
+                        </div>
+                        {fund.isin && (
+                            <div className={styles.infoItem}>
+                                <span className={styles.infoLabel}>ISIN</span>
+                                <span className={styles.infoValue}>{safeText(fund.isin)}</span>
+                            </div>
+                        )}
+                        {fund.amfi_code && (
+                            <div className={styles.infoItem}>
+                                <span className={styles.infoLabel}>AMFI Code</span>
+                                <span className={styles.infoValue}>{safeText(fund.amfi_code)}</span>
+                            </div>
+                        )}
+                        {fund.registrar && (
+                            <div className={styles.infoItem}>
+                                <span className={styles.infoLabel}>Registrar</span>
+                                <span className={styles.infoValue}>{safeText(fund.registrar)}</span>
+                            </div>
+                        )}
+                        <div className={styles.infoItem}>
+                            <span className={styles.infoLabel}>Exit Load</span>
+                            <span className={styles.infoValue}>{safeText(fund.exit_load)}</span>
+                        </div>
+                        <div className={styles.infoItem}>
+                            <span className={styles.infoLabel}>Min SIP</span>
+                            <span className={styles.infoValue}>{fund.min_sip != null ? safeMoney(fund.min_sip) : "—"}</span>
+                        </div>
+                        <div className={styles.infoItem}>
+                            <span className={styles.infoLabel}>Min Lumpsum</span>
+                            <span className={styles.infoValue}>{fund.min_lumpsum != null ? (typeof fund.min_lumpsum === "number" ? safeMoney(fund.min_lumpsum) : fund.min_lumpsum) : "—"}</span>
+                        </div>
+                        {fund.min_additional != null && (
+                            <div className={styles.infoItem}>
+                                <span className={styles.infoLabel}>Min Additional</span>
+                                <span className={styles.infoValue}>{safeMoney(fund.min_additional)}</span>
+                            </div>
+                        )}
+                        {fund.min_redemption != null && (
+                            <div className={styles.infoItem}>
+                                <span className={styles.infoLabel}>Min Redemption</span>
+                                <span className={styles.infoValue}>{safeMoney(fund.min_redemption)}</span>
+                            </div>
+                        )}
+                        <div className={styles.infoItem}>
+                            <span className={styles.infoLabel}>Monthly Avg AUM</span>
+                            <span className={styles.infoValue}>{fund.monthly_avg_aum != null ? `₹${fund.monthly_avg_aum} Cr` : "—"}</span>
+                        </div>
+                        {(fund.turnover_ratio != null || fund.portfolio_turnover != null) && (
+                            <div className={styles.infoItem}>
+                                <span className={styles.infoLabel}>Turnover Ratio</span>
+                                <span className={styles.infoValue}>{safeText(fund.turnover_ratio ?? fund.portfolio_turnover)}</span>
+                            </div>
+                        )}
+                        {fund.lock_in_period && (
+                            <div className={styles.infoItem}>
+                                <span className={styles.infoLabel}>Lock-in Period</span>
+                                <span className={styles.infoValue}>{fund.lock_in_period}</span>
+                            </div>
+                        )}
+                        {fund.stamp_duty && (
+                            <div className={styles.infoItem}>
+                                <span className={styles.infoLabel}>Stamp Duty</span>
+                                <span className={styles.infoValue}>{fund.stamp_duty}</span>
+                            </div>
+                        )}
+                    </div>
+
+                    {/* SIP/SWP/STP Availability */}
+                    {(fund.sip_available != null || fund.swp_available != null || fund.stp_available != null) && (
+                        <div style={{ marginTop: 16 }}>
+                            <span style={{ fontWeight: 600, color: "var(--text-secondary)", fontSize: 13, display: "block", marginBottom: 10 }}>Availability</span>
+                            <div className={styles.availGrid}>
+                                {fund.sip_available != null && (
+                                    <span className={`${styles.availBadge} ${fund.sip_available ? styles.availYes : styles.availNo}`}>
+                                        {fund.sip_available ? "✓" : "✗"} SIP
+                                    </span>
+                                )}
+                                {fund.swp_available != null && (
+                                    <span className={`${styles.availBadge} ${fund.swp_available ? styles.availYes : styles.availNo}`}>
+                                        {fund.swp_available ? "✓" : "✗"} SWP
+                                    </span>
+                                )}
+                                {fund.stp_available != null && (
+                                    <span className={`${styles.availBadge} ${fund.stp_available ? styles.availYes : styles.availNo}`}>
+                                        {fund.stp_available ? "✓" : "✗"} STP
+                                    </span>
+                                )}
+                            </div>
+                        </div>
+                    )}
+
+                    {fund.investment_objective && (
+                        <div style={{ marginTop: 16, padding: "12px 16px", background: "var(--bg-secondary)", borderRadius: 8 }}>
+                            <span style={{ fontWeight: 600, color: "var(--text-secondary)", fontSize: 13 }}>Investment Objective</span>
+                            <p style={{ margin: "6px 0 0", fontSize: 13, lineHeight: 1.6, color: "var(--text-primary)" }}>{fund.investment_objective}</p>
+                        </div>
+                    )}
+                </section>
+
+                {/* ===== ADDITIONAL INFO (dynamic) ===== */}
+                {
+                    fund.additional_info && Object.keys(fund.additional_info).length > 0 && (() => {
+                        const formatKey = (key) => key
+                            .replace(/_/g, " ")
+                            .replace(/\b\w/g, c => c.toUpperCase())
+                            .replace(/\bPtp\b/g, "PTP")
+                            .replace(/\bIsin\b/g, "ISIN")
+                            .replace(/\bNav\b/g, "NAV")
+                            .replace(/\bAum\b/g, "AUM");
+
+                        const isSimple = (val) => val == null || typeof val === "string" || typeof val === "number" || typeof val === "boolean";
+                        const isNumericObject = (val) => typeof val === "object" && val !== null && !Array.isArray(val) && Object.values(val).every(v => typeof v === "number");
+                        const isFlatArray = (val) => Array.isArray(val) && val.length > 0 && typeof val[0] !== "object";
+                        const isTableArray = (val) => Array.isArray(val) && val.length > 0 && typeof val[0] === "object";
+                        const isKVObject = (val) => typeof val === "object" && val !== null && !Array.isArray(val) && Object.values(val).every(v => isSimple(v));
+
+                        const formatSimple = (val) => {
+                            if (val == null) return "—";
+                            if (typeof val === "boolean") return val ? "Yes" : "No";
+                            if (typeof val === "number") return val.toLocaleString("en-IN");
+                            return String(val);
+                        };
+
+                        // Categorize entries
+                        const simpleEntries = [];
+                        const numericObjects = [];
+                        const kvObjects = [];
+                        const tableArrays = [];
+
+                        for (const [key, val] of Object.entries(fund.additional_info)) {
+                            if (isSimple(val) || isFlatArray(val)) {
+                                simpleEntries.push([key, isFlatArray(val) ? val.join(", ") : val]);
+                            } else if (isNumericObject(val)) {
+                                numericObjects.push([key, val]);
+                            } else if (isTableArray(val)) {
+                                tableArrays.push([key, val]);
+                            } else if (isKVObject(val)) {
+                                kvObjects.push([key, val]);
+                            }
+                            // Skip deeply nested/complex structures silently
+                        }
+
+                        return (
+                            <section className={`card ${styles.section}`}>
+                                <h2 className="section-title"><FileText size={20} style={iconStyle} />Additional Information</h2>
+                                {simpleEntries.length > 0 && (
+                                    <div className={styles.infoGrid}>
+                                        {simpleEntries.map(([key, val]) => (
+                                            <div key={key} className={styles.infoItem}>
+                                                <span className={styles.infoLabel}>{formatKey(key)}</span>
+                                                <span className={styles.infoValue}>{formatSimple(val)}</span>
+                                            </div>
+                                        ))}
+                                    </div>
+                                )}
+                                {kvObjects.map(([key, obj]) => (
+                                    <div key={key} style={{ marginTop: 16 }}>
+                                        <h3 style={{ fontSize: 14, fontWeight: 600, color: "var(--text-secondary)", marginBottom: 8 }}>{formatKey(key)}</h3>
+                                        <div className={styles.infoGrid}>
+                                            {Object.entries(obj).map(([k, v]) => (
+                                                <div key={k} className={styles.infoItem}>
+                                                    <span className={styles.infoLabel}>{formatKey(k)}</span>
+                                                    <span className={styles.infoValue}>{formatSimple(v)}</span>
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
+                                ))}
+                                {numericObjects.map(([key, obj]) => (
+                                    <div key={key} style={{ marginTop: 16 }}>
+                                        <h3 style={{ fontSize: 14, fontWeight: 600, color: "var(--text-secondary)", marginBottom: 8 }}>{formatKey(key)}</h3>
+                                        <AllocationBar data={obj} colors={sectorColors} />
+                                    </div>
+                                ))}
+                                {tableArrays.map(([key, arr]) => (
+                                    <div key={key} style={{ marginTop: 16 }}>
+                                        <h3 style={{ fontSize: 14, fontWeight: 600, color: "var(--text-secondary)", marginBottom: 8 }}>{formatKey(key)}</h3>
+                                        <div className={styles.tableWrap}>
+                                            <table className="data-table">
+                                                <thead>
+                                                    <tr>
+                                                        {Object.keys(arr[0]).map(col => (
+                                                            <th key={col}>{formatKey(col)}</th>
                                                         ))}
                                                     </tr>
-                                                ))}
-                                            </tbody>
-                                        </table>
+                                                </thead>
+                                                <tbody>
+                                                    {arr.map((row, i) => (
+                                                        <tr key={i}>
+                                                            {Object.values(row).map((cell, j) => (
+                                                                <td key={j}>{cell != null ? (typeof cell === "number" ? cell.toLocaleString("en-IN") : String(cell)) : "—"}</td>
+                                                            ))}
+                                                        </tr>
+                                                    ))}
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
-                                </div>
-                            ))}
-                        </section>
-                    );
-                })()
-            }
+                                ))}
+                            </section>
+                        );
+                    })()
+                }
+            </div>
         </div >
     );
 }

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { useNavData } from "./hooks/useNavData";
 import { getAmcLogoUrl, getAmcInitial } from "../lib/amcLogos";
+import { useAuth } from "./contexts/AuthContext";
 import styles from "./page.module.css";
 
 function getRiskColor(risk) {
@@ -34,6 +35,8 @@ function HomeContent() {
   const [dataLoading, setDataLoading] = useState(true);
   const searchParams = useSearchParams();
   const [activeTab, setActiveTab] = useState(searchParams.get("tab") === "compare" ? "compare" : "explore");
+  const { user, loading: authLoading, trialExpired } = useAuth();
+  const canView = user && !trialExpired;
 
   useEffect(() => {
     fetch("/api/funds")
@@ -235,63 +238,74 @@ function HomeContent() {
 
                   {/* Expanded Schemes */}
                   {isExpanded && (
-                    <div className={styles.amcSchemes}>
-                      <div className={styles.fundGrid}>
-                        {amcFunds.map((fund, idx) => (
-                          <Link href={`/fund/${fund.slug}`} key={idx} className={styles.fundCard}>
-                            <div className={styles.fundCardHeader}>
-                              <div className={styles.fundAmcWithLogo}>
-                                {(() => {
-                                  const cardLogoUrl = getAmcLogoUrl(fund.amc_slug);
-                                  return cardLogoUrl ? (
-                                    <img src={cardLogoUrl} alt={fund.amc} className={styles.fundCardLogo} />
-                                  ) : null;
-                                })()}
-                                <span className={styles.fundAmc}>{fund.amc || "—"}</span>
-                              </div>
-                              <span className={styles.fundRisk} style={{ color: getRiskColor(fund.risk_level) }}>
-                                {fund.risk_level || "—"}
-                              </span>
-                            </div>
-                            <h3 className={styles.fundName}>{fund.fund_name}</h3>
-                            <div className={styles.fundCategory}>{fund.category || "—"}</div>
-                            <div className={styles.fundMetrics}>
-                              <div className={styles.metric}>
-                                <span className={styles.metricLabel}>
-                                  NAV {navMap[fund.slug] && <span className={styles.liveDot}>●</span>}
-                                </span>
-                                <span className={styles.metricValue}>
-                                  {navMap[fund.slug]?.nav != null
-                                    ? `₹${Number(navMap[fund.slug].nav).toFixed(2)}`
-                                    : fund.nav != null ? `₹${Number(fund.nav).toFixed(2)}` : "—"}
+                    <div className={styles.amcSchemes} style={{ position: "relative", minHeight: canView ? "auto" : 200 }}>
+                      {!canView && (
+                        <div className="gate-overlay">
+                          <div className="gate-overlay-card">
+                            <h3>{trialExpired ? "⏰ Trial Expired" : "🔒 Login Required"}</h3>
+                            <p>{trialExpired ? "Your 3-day free trial has ended." : "Sign in to view detailed fund data"}</p>
+                            {!trialExpired && <a href="/login" className="gate-overlay-btn">Sign In to View</a>}
+                          </div>
+                        </div>
+                      )}
+                      <div className={canView ? "" : "blurred-content"}>
+                        <div className={styles.fundGrid}>
+                          {amcFunds.map((fund, idx) => (
+                            <Link href={`/fund/${fund.slug}`} key={idx} className={styles.fundCard}>
+                              <div className={styles.fundCardHeader}>
+                                <div className={styles.fundAmcWithLogo}>
+                                  {(() => {
+                                    const cardLogoUrl = getAmcLogoUrl(fund.amc_slug);
+                                    return cardLogoUrl ? (
+                                      <img src={cardLogoUrl} alt={fund.amc} className={styles.fundCardLogo} />
+                                    ) : null;
+                                  })()}
+                                  <span className={styles.fundAmc}>{fund.amc || "—"}</span>
+                                </div>
+                                <span className={styles.fundRisk} style={{ color: getRiskColor(fund.risk_level) }}>
+                                  {fund.risk_level || "—"}
                                 </span>
                               </div>
-                              <div className={styles.metric}>
-                                <span className={styles.metricLabel}>AUM</span>
-                                <span className={styles.metricValue}>{formatAUM(fund.aum_crores)}</span>
+                              <h3 className={styles.fundName}>{fund.fund_name}</h3>
+                              <div className={styles.fundCategory}>{fund.category || "—"}</div>
+                              <div className={styles.fundMetrics}>
+                                <div className={styles.metric}>
+                                  <span className={styles.metricLabel}>
+                                    NAV {navMap[fund.slug] && <span className={styles.liveDot}>●</span>}
+                                  </span>
+                                  <span className={styles.metricValue}>
+                                    {navMap[fund.slug]?.nav != null
+                                      ? `₹${Number(navMap[fund.slug].nav).toFixed(2)}`
+                                      : fund.nav != null ? `₹${Number(fund.nav).toFixed(2)}` : "—"}
+                                  </span>
+                                </div>
+                                <div className={styles.metric}>
+                                  <span className={styles.metricLabel}>AUM</span>
+                                  <span className={styles.metricValue}>{formatAUM(fund.aum_crores)}</span>
+                                </div>
+                                <div className={styles.metric}>
+                                  <span className={styles.metricLabel}>Expense</span>
+                                  <span className={styles.metricValue}>
+                                    {fund.expense_ratio != null ? `${fund.expense_ratio}%` : "—"}
+                                  </span>
+                                </div>
                               </div>
-                              <div className={styles.metric}>
-                                <span className={styles.metricLabel}>Expense</span>
-                                <span className={styles.metricValue}>
-                                  {fund.expense_ratio != null ? `${fund.expense_ratio}%` : "—"}
-                                </span>
+                              <div className={styles.fundReturns}>
+                                {["1Y", "3Y", "5Y"].map((period) => {
+                                  const ret = getReturn(fund, period);
+                                  return (
+                                    <div key={period} className={styles.returnItem}>
+                                      <span className={styles.returnPeriod}>{period}</span>
+                                      <span className={`${styles.returnVal} ${ret != null && ret >= 0 ? "positive" : ret != null && ret < 0 ? "negative" : ""}`}>
+                                        {ret != null ? `${ret}%` : "—"}
+                                      </span>
+                                    </div>
+                                  );
+                                })}
                               </div>
-                            </div>
-                            <div className={styles.fundReturns}>
-                              {["1Y", "3Y", "5Y"].map((period) => {
-                                const ret = getReturn(fund, period);
-                                return (
-                                  <div key={period} className={styles.returnItem}>
-                                    <span className={styles.returnPeriod}>{period}</span>
-                                    <span className={`${styles.returnVal} ${ret != null && ret >= 0 ? "positive" : ret != null && ret < 0 ? "negative" : ""}`}>
-                                      {ret != null ? `${ret}%` : "—"}
-                                    </span>
-                                  </div>
-                                );
-                              })}
-                            </div>
-                          </Link>
-                        ))}
+                            </Link>
+                          ))}
+                        </div>
                       </div>
                     </div>
                   )}
