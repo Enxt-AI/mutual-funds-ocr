@@ -26,6 +26,7 @@ const TABS = [
     { id: "factsheet", label: "Upload Factsheet", icon: "📄" },
     { id: "pipeline", label: "Scrape & Extract", icon: "🔄" },
     { id: "nse", label: "NSE Index Data", icon: "📈" },
+    { id: "apikeys", label: "API Keys", icon: "🔑" },
 ];
 
 export default function AdminPage() {
@@ -58,6 +59,30 @@ export default function AdminPage() {
     const [nseStatus, setNseStatus] = useState(null);
     const [nseCsvFiles, setNseCsvFiles] = useState([]);
 
+    // API Keys state
+    const [apiKeys, setApiKeys] = useState([]);
+    const [apiKeysLoading, setApiKeysLoading] = useState(false);
+    const [newKeyName, setNewKeyName] = useState("");
+    const [newKeyAccessType, setNewKeyAccessType] = useState("all");
+    const [newKeyAllowedAmcs, setNewKeyAllowedAmcs] = useState(new Set()); // full AMC access
+    const [newKeyAllowedSchemes, setNewKeyAllowedSchemes] = useState(new Set()); // per-scheme access
+    const [newKeyRateLimit, setNewKeyRateLimit] = useState(100);
+    const [creatingKey, setCreatingKey] = useState(false);
+    const [createdKeyModal, setCreatedKeyModal] = useState(null);
+    const [editingKeyId, setEditingKeyId] = useState(null);
+    const [editAccessType, setEditAccessType] = useState("all");
+    const [editAllowedAmcs, setEditAllowedAmcs] = useState(new Set());
+    const [editAllowedSchemes, setEditAllowedSchemes] = useState(new Set());
+    const [amcSchemesMap, setAmcSchemesMap] = useState({});
+    const [loadingSchemes, setLoadingSchemes] = useState(new Set());
+    const [copiedKey, setCopiedKey] = useState(false);
+    const [expandedAmcs, setExpandedAmcs] = useState(new Set());
+    const [editExpandedAmcs, setEditExpandedAmcs] = useState(new Set());
+    // Analytics state
+    const [analyticsKeyId, setAnalyticsKeyId] = useState(null);
+    const [analyticsData, setAnalyticsData] = useState(null);
+    const [analyticsLoading, setAnalyticsLoading] = useState(false);
+
     // Fetch existing AMCs
     const fetchAmcs = useCallback(() => {
         fetch("/api/amcs")
@@ -67,6 +92,172 @@ export default function AdminPage() {
     }, []);
 
     useEffect(() => { fetchAmcs(); }, [fetchAmcs]);
+
+    // Fetch API keys when tab is active
+    const fetchApiKeys = useCallback(() => {
+        setApiKeysLoading(true);
+        fetch("/api/api-keys")
+            .then(res => res.json())
+            .then(data => {
+                if (data.success) setApiKeys(data.keys || []);
+            })
+            .catch(() => { })
+            .finally(() => setApiKeysLoading(false));
+    }, []);
+
+    useEffect(() => {
+        if (activeTab === "apikeys") {
+            fetchApiKeys();
+        }
+    }, [activeTab, fetchApiKeys]);
+
+    // Fetch schemes for a specific AMC (on-demand when AMC is checked)
+    const fetchSchemesForAmc = useCallback(async (amcSlug) => {
+        if (amcSchemesMap[amcSlug]) return; // already fetched
+        setLoadingSchemes(prev => new Set([...prev, amcSlug]));
+        try {
+            const res = await fetch(`/api/amcs/schemes?slug=${amcSlug}`);
+            const data = await res.json();
+            setAmcSchemesMap(prev => ({ ...prev, [amcSlug]: data.schemes || [] }));
+        } catch {
+            setAmcSchemesMap(prev => ({ ...prev, [amcSlug]: [] }));
+        } finally {
+            setLoadingSchemes(prev => {
+                const next = new Set(prev);
+                next.delete(amcSlug);
+                return next;
+            });
+        }
+    }, [amcSchemesMap]);
+
+    // API Key handlers
+    const handleCreateKey = async () => {
+        if (!newKeyName.trim()) return;
+        setCreatingKey(true);
+        try {
+            const body = {
+                name: newKeyName.trim(),
+                access: {
+                    type: newKeyAccessType,
+                    allowed_amcs: newKeyAccessType === "restricted" ? [...newKeyAllowedAmcs] : [],
+                    allowed_schemes: newKeyAccessType === "restricted" ? [...newKeyAllowedSchemes] : [],
+                },
+                rate_limit: newKeyRateLimit,
+            };
+            const res = await fetch("/api/api-keys", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(body),
+            });
+            const data = await res.json();
+            if (data.success) {
+                setCreatedKeyModal(data.key);
+                setNewKeyName("");
+                setNewKeyAccessType("all");
+                setNewKeyAllowedAmcs(new Set());
+                setNewKeyAllowedSchemes(new Set());
+                setNewKeyRateLimit(100);
+                fetchApiKeys();
+            } else {
+                alert(data.error || "Failed to create key");
+            }
+        } catch (e) {
+            alert("Network error: " + e.message);
+        } finally {
+            setCreatingKey(false);
+        }
+    };
+
+    const handleToggleKey = async (id, currentActive) => {
+        try {
+            const res = await fetch("/api/api-keys", {
+                method: "PATCH",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ id, is_active: !currentActive }),
+            });
+            const data = await res.json();
+            if (data.success) fetchApiKeys();
+        } catch { }
+    };
+
+    const handleDeleteKey = async (id, name) => {
+        if (!window.confirm(`Delete API key "${name}"? This action cannot be undone.`)) return;
+        try {
+            const res = await fetch("/api/api-keys", {
+                method: "DELETE",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ id }),
+            });
+            const data = await res.json();
+            if (data.success) fetchApiKeys();
+            else alert(data.error || "Failed to delete key");
+        } catch (e) {
+            alert("Network error: " + e.message);
+        }
+    };
+
+    const handleUpdateAccess = async (id) => {
+        try {
+            const res = await fetch("/api/api-keys", {
+                method: "PATCH",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    id,
+                    access: {
+                        type: editAccessType,
+                        allowed_amcs: editAccessType === "restricted" ? [...editAllowedAmcs] : [],
+                        allowed_schemes: editAccessType === "restricted" ? [...editAllowedSchemes] : [],
+                    },
+                }),
+            });
+            const data = await res.json();
+            if (data.success) {
+                setEditingKeyId(null);
+                fetchApiKeys();
+            }
+        } catch { }
+    };
+
+    const startEditAccess = (key) => {
+        setEditingKeyId(key.id);
+        setEditAccessType(key.access?.type || "all");
+        const existingAmcs = key.access?.allowed_amcs || [];
+        setEditAllowedAmcs(new Set(existingAmcs));
+        setEditAllowedSchemes(new Set(key.access?.allowed_schemes || []));
+        // Auto-expand AMCs that have access
+        setEditExpandedAmcs(new Set(existingAmcs));
+        existingAmcs.forEach(slug => fetchSchemesForAmc(slug));
+    };
+
+    const copyToClipboard = (text) => {
+        navigator.clipboard.writeText(text).then(() => {
+            setCopiedKey(true);
+            setTimeout(() => setCopiedKey(false), 2000);
+        });
+    };
+
+    const fetchAnalytics = async (keyId, forceReload = false) => {
+        if (analyticsKeyId === keyId && !forceReload) {
+            setAnalyticsKeyId(null);
+            setAnalyticsData(null);
+            return;
+        }
+        setAnalyticsKeyId(keyId);
+        setAnalyticsLoading(true);
+        try {
+            const res = await fetch(`/api/api-keys/analytics?key_id=${keyId}&days=7`);
+            const data = await res.json();
+            if (data.success) {
+                setAnalyticsData(data);
+            } else {
+                setAnalyticsData(null);
+            }
+        } catch {
+            setAnalyticsData(null);
+        } finally {
+            setAnalyticsLoading(false);
+        }
+    };
 
     // Fetch available pipeline AMCs when tab is switched to pipeline
     useEffect(() => {
@@ -525,6 +716,508 @@ export default function AdminPage() {
                     </>
                 )}
 
+                {/* ========== API KEYS TAB ========== */}
+                {activeTab === "apikeys" && (
+                    <>
+                        <div className={styles.pageHeader}>
+                            <h1 className={styles.pageTitle}>API Keys</h1>
+                            <p className={styles.pageSubtitle}>Manage API keys for public fund data access</p>
+                        </div>
+
+                        {/* Create New Key */}
+                        <div className={styles.uploadCard}>
+                            <h2 className={styles.cardTitle}>Create New API Key</h2>
+
+                            <div className={styles.inputGroup}>
+                                <label className={styles.inputLabel}>Key Name</label>
+                                <input
+                                    type="text"
+                                    className={styles.textInput}
+                                    placeholder="e.g. Client App - Production"
+                                    value={newKeyName}
+                                    onChange={(e) => setNewKeyName(e.target.value)}
+                                    disabled={creatingKey}
+                                />
+                            </div>
+
+                            <div className={styles.inputGroup}>
+                                <label className={styles.inputLabel}>Access Type</label>
+                                <div className={styles.accessToggle}>
+                                    <button
+                                        className={`${styles.accessBtn} ${newKeyAccessType === "all" ? styles.accessBtnActive : ""}`}
+                                        onClick={() => setNewKeyAccessType("all")}
+                                        disabled={creatingKey}
+                                    >
+                                        🌐 All Funds
+                                    </button>
+                                    <button
+                                        className={`${styles.accessBtn} ${newKeyAccessType === "restricted" ? styles.accessBtnActive : ""}`}
+                                        onClick={() => setNewKeyAccessType("restricted")}
+                                        disabled={creatingKey}
+                                    >
+                                        🔒 Restricted
+                                    </button>
+                                </div>
+                            </div>
+
+                            {newKeyAccessType === "restricted" && (
+                                <>
+                                    <div className={styles.inputGroup}>
+                                        <label className={styles.inputLabel}>
+                                            Select AMCs & Schemes ({newKeyAllowedAmcs.size} AMC{newKeyAllowedAmcs.size !== 1 ? "s" : ""}, {newKeyAllowedSchemes.size} scheme{newKeyAllowedSchemes.size !== 1 ? "s" : ""})
+                                        </label>
+                                        <div className={styles.amcSchemeTree}>
+                                            {amcs.map(amc => {
+                                                const isExpanded = expandedAmcs.has(amc.slug);
+                                                const schemes = amcSchemesMap[amc.slug] || [];
+                                                const isLoading = loadingSchemes.has(amc.slug);
+                                                const hasFullAccess = newKeyAllowedAmcs.has(amc.slug);
+                                                return (
+                                                    <div key={amc.slug} className={styles.amcTreeNode}>
+                                                        <div className={styles.amcTreeHeader}>
+                                                            <button
+                                                                className={styles.expandBtn}
+                                                                onClick={() => {
+                                                                    setExpandedAmcs(prev => {
+                                                                        const next = new Set(prev);
+                                                                        if (next.has(amc.slug)) {
+                                                                            next.delete(amc.slug);
+                                                                        } else {
+                                                                            next.add(amc.slug);
+                                                                            fetchSchemesForAmc(amc.slug);
+                                                                        }
+                                                                        return next;
+                                                                    });
+                                                                }}
+                                                                disabled={creatingKey}
+                                                            >
+                                                                {isExpanded ? "▼" : "▶"}
+                                                            </button>
+                                                            <span className={styles.amcCheckName}>{amc.name || amc.slug}</span>
+                                                            <span className={styles.amcCheckStatus}>{amc.schemes} schemes</span>
+                                                            <label className={styles.selectAllLabel}>
+                                                                <input
+                                                                    type="checkbox"
+                                                                    checked={hasFullAccess}
+                                                                    onChange={() => {
+                                                                        setNewKeyAllowedAmcs(prev => {
+                                                                            const next = new Set(prev);
+                                                                            if (next.has(amc.slug)) next.delete(amc.slug);
+                                                                            else next.add(amc.slug);
+                                                                            return next;
+                                                                        });
+                                                                    }}
+                                                                    disabled={creatingKey}
+                                                                />
+                                                                All
+                                                            </label>
+                                                        </div>
+                                                        {isExpanded && (
+                                                            <div className={styles.schemeList}>
+                                                                {isLoading ? (
+                                                                    <div className={styles.schemeLoading}>Loading schemes...</div>
+                                                                ) : schemes.length > 0 ? (
+                                                                    schemes.map(s => (
+                                                                        <label key={s.slug} className={styles.schemeCheckItem}>
+                                                                            <input
+                                                                                type="checkbox"
+                                                                                checked={hasFullAccess || newKeyAllowedSchemes.has(s.slug)}
+                                                                                onChange={() => {
+                                                                                    if (hasFullAccess) return; // can't deselect individual if "All" is on
+                                                                                    setNewKeyAllowedSchemes(prev => {
+                                                                                        const next = new Set(prev);
+                                                                                        if (next.has(s.slug)) next.delete(s.slug);
+                                                                                        else next.add(s.slug);
+                                                                                        return next;
+                                                                                    });
+                                                                                }}
+                                                                                disabled={creatingKey || hasFullAccess}
+                                                                            />
+                                                                            <span className={styles.schemeName}>{s.name}</span>
+                                                                            {s.category && <span className={styles.schemeCat}>{s.category}</span>}
+                                                                        </label>
+                                                                    ))
+                                                                ) : (
+                                                                    <div className={styles.schemeLoading}>No schemes found</div>
+                                                                )}
+                                                            </div>
+                                                        )}
+                                                    </div>
+                                                );
+                                            })}
+                                        </div>
+                                        <span className={styles.slugPreview}>
+                                            Click ▶ to expand an AMC. Check "All" for full AMC access, or select individual schemes.
+                                        </span>
+                                    </div>
+                                </>
+                            )}
+
+                            <div className={styles.inputGroup}>
+                                <label className={styles.inputLabel}>Rate Limit (requests/minute)</label>
+                                <input
+                                    type="number"
+                                    className={styles.textInput}
+                                    value={newKeyRateLimit}
+                                    onChange={(e) => setNewKeyRateLimit(parseInt(e.target.value) || 100)}
+                                    min="1" max="10000"
+                                    disabled={creatingKey}
+                                />
+                            </div>
+
+                            <button
+                                className={styles.extractBtn}
+                                style={{ background: "linear-gradient(135deg, #10b981, #059669)" }}
+                                onClick={handleCreateKey}
+                                disabled={creatingKey || !newKeyName.trim()}
+                            >
+                                {creatingKey ? (
+                                    <><span className={styles.spinner} /> Creating...</>
+                                ) : (
+                                    <>🔑 Generate API Key</>
+                                )}
+                            </button>
+                        </div>
+
+                        {/* Created Key Modal */}
+                        {createdKeyModal && (
+                            <div className={styles.modalOverlay} onClick={() => setCreatedKeyModal(null)}>
+                                <div className={styles.modalContent} onClick={e => e.stopPropagation()}>
+                                    <h3 className={styles.modalTitle}>✅ API Key Created</h3>
+                                    <p className={styles.modalSubtext}>
+                                        Copy this key now — it won&apos;t be shown again in full.
+                                    </p>
+                                    <div className={styles.keyDisplay}>
+                                        <code className={styles.keyCode}>{createdKeyModal.key}</code>
+                                        <button
+                                            className={styles.copyBtn}
+                                            onClick={() => copyToClipboard(createdKeyModal.key)}
+                                        >
+                                            {copiedKey ? "✅ Copied!" : "📋 Copy"}
+                                        </button>
+                                    </div>
+                                    <div className={styles.modalMeta}>
+                                        <span>Name: <strong>{createdKeyModal.name}</strong></span>
+                                        <span>Access: <strong>{createdKeyModal.access?.type === "all" ? "All Funds" : "Restricted"}</strong></span>
+                                    </div>
+                                    <button
+                                        className={styles.extractBtn}
+                                        style={{ marginTop: 16 }}
+                                        onClick={() => setCreatedKeyModal(null)}
+                                    >
+                                        Done
+                                    </button>
+                                </div>
+                            </div>
+                        )}
+
+                        {/* Existing Keys List */}
+                        <div className={styles.amcListCard}>
+                            <h2 className={styles.cardTitle}>
+                                Existing API Keys
+                                <span className={styles.amcCount}>{apiKeys.length}</span>
+                            </h2>
+
+                            {apiKeysLoading ? (
+                                <div className={styles.loadingText}>Loading API keys...</div>
+                            ) : apiKeys.length === 0 ? (
+                                <div className={styles.emptyText}>No API keys yet. Create one above to get started!</div>
+                            ) : (
+                                <div className={styles.keysList}>
+                                    {apiKeys.map(k => (
+                                        <div key={k.id} className={`${styles.keyCard} ${!k.is_active ? styles.keyCardInactive : ""}`}>
+                                            <div className={styles.keyCardHeader}>
+                                                <div className={styles.keyCardInfo}>
+                                                    <span className={styles.keyCardName}>{k.name}</span>
+                                                    <code className={styles.keyCardMasked}>{k.key}</code>
+                                                </div>
+                                                <div className={styles.keyCardActions}>
+                                                    <span className={`${styles.keyStatusBadge} ${k.is_active ? styles.keyStatusActive : styles.keyStatusRevoked}`}>
+                                                        {k.is_active ? "Active" : "Revoked"}
+                                                    </span>
+                                                    <button
+                                                        className={styles.linkBtn}
+                                                        onClick={() => handleToggleKey(k.id, k.is_active)}
+                                                        title={k.is_active ? "Revoke" : "Activate"}
+                                                    >
+                                                        {k.is_active ? "⏸ Revoke" : "▶ Activate"}
+                                                    </button>
+                                                    <button
+                                                        className={styles.linkBtn}
+                                                        onClick={() => startEditAccess(k)}
+                                                        title="Edit access"
+                                                    >
+                                                        ✏️ Access
+                                                    </button>
+                                                    <button
+                                                        className={styles.linkBtn}
+                                                        onClick={() => fetchAnalytics(k.id)}
+                                                        title="View analytics"
+                                                        style={analyticsKeyId === k.id ? { background: 'rgba(99,102,241,0.15)', color: 'var(--accent)' } : {}}
+                                                    >
+                                                        📊 Analytics
+                                                    </button>
+                                                    <button
+                                                        className={styles.deleteBtn}
+                                                        onClick={() => handleDeleteKey(k.id, k.name)}
+                                                        title="Delete key"
+                                                    >
+                                                        🗑️
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div className={styles.keyCardMeta}>
+                                                <span>Access: <strong>{k.access?.type === "all" ? "All Funds" : "Restricted"}</strong></span>
+                                                {k.access?.type === "restricted" && k.access.allowed_amcs?.length > 0 && (
+                                                    <span>AMCs: {k.access.allowed_amcs.join(", ")}</span>
+                                                )}
+                                                {k.access?.type === "restricted" && k.access.allowed_schemes?.length > 0 && (
+                                                    <span>Schemes: {k.access.allowed_schemes.length} scheme(s)</span>
+                                                )}
+                                                <span>Rate: {k.rate_limit}/min</span>
+                                                <span>Created: {formatDate(k.created_at)}</span>
+                                                {k.last_used_at && <span>Last used: {formatDate(k.last_used_at)}</span>}
+                                            </div>
+
+                                            {/* Inline edit access panel */}
+                                            {editingKeyId === k.id && (
+                                                <div className={styles.editAccessPanel}>
+                                                    <div className={styles.accessToggle}>
+                                                        <button
+                                                            className={`${styles.accessBtn} ${editAccessType === "all" ? styles.accessBtnActive : ""}`}
+                                                            onClick={() => setEditAccessType("all")}
+                                                        >
+                                                            🌐 All Funds
+                                                        </button>
+                                                        <button
+                                                            className={`${styles.accessBtn} ${editAccessType === "restricted" ? styles.accessBtnActive : ""}`}
+                                                            onClick={() => setEditAccessType("restricted")}
+                                                        >
+                                                            🔒 Restricted
+                                                        </button>
+                                                    </div>
+                                                    {editAccessType === "restricted" && (
+                                                        <div className={styles.amcSchemeTree} style={{ maxHeight: 240, marginTop: 10 }}>
+                                                            {amcs.map(amc => {
+                                                                const isExpanded = editExpandedAmcs.has(amc.slug);
+                                                                const schemes = amcSchemesMap[amc.slug] || [];
+                                                                const isLoading = loadingSchemes.has(amc.slug);
+                                                                const hasFullAccess = editAllowedAmcs.has(amc.slug);
+                                                                return (
+                                                                    <div key={amc.slug} className={styles.amcTreeNode}>
+                                                                        <div className={styles.amcTreeHeader}>
+                                                                            <button
+                                                                                className={styles.expandBtn}
+                                                                                onClick={() => {
+                                                                                    setEditExpandedAmcs(prev => {
+                                                                                        const next = new Set(prev);
+                                                                                        if (next.has(amc.slug)) {
+                                                                                            next.delete(amc.slug);
+                                                                                        } else {
+                                                                                            next.add(amc.slug);
+                                                                                            fetchSchemesForAmc(amc.slug);
+                                                                                        }
+                                                                                        return next;
+                                                                                    });
+                                                                                }}
+                                                                            >
+                                                                                {isExpanded ? "▼" : "▶"}
+                                                                            </button>
+                                                                            <span className={styles.amcCheckName}>{amc.name || amc.slug}</span>
+                                                                            <label className={styles.selectAllLabel}>
+                                                                                <input
+                                                                                    type="checkbox"
+                                                                                    checked={hasFullAccess}
+                                                                                    onChange={() => {
+                                                                                        setEditAllowedAmcs(prev => {
+                                                                                            const next = new Set(prev);
+                                                                                            if (next.has(amc.slug)) next.delete(amc.slug);
+                                                                                            else next.add(amc.slug);
+                                                                                            return next;
+                                                                                        });
+                                                                                    }}
+                                                                                />
+                                                                                All
+                                                                            </label>
+                                                                        </div>
+                                                                        {isExpanded && (
+                                                                            <div className={styles.schemeList}>
+                                                                                {isLoading ? (
+                                                                                    <div className={styles.schemeLoading}>Loading...</div>
+                                                                                ) : schemes.length > 0 ? (
+                                                                                    schemes.map(s => (
+                                                                                        <label key={s.slug} className={styles.schemeCheckItem}>
+                                                                                            <input
+                                                                                                type="checkbox"
+                                                                                                checked={hasFullAccess || editAllowedSchemes.has(s.slug)}
+                                                                                                onChange={() => {
+                                                                                                    if (hasFullAccess) return;
+                                                                                                    setEditAllowedSchemes(prev => {
+                                                                                                        const next = new Set(prev);
+                                                                                                        if (next.has(s.slug)) next.delete(s.slug);
+                                                                                                        else next.add(s.slug);
+                                                                                                        return next;
+                                                                                                    });
+                                                                                                }}
+                                                                                                disabled={hasFullAccess}
+                                                                                            />
+                                                                                            <span className={styles.schemeName}>{s.name}</span>
+                                                                                        </label>
+                                                                                    ))
+                                                                                ) : null}
+                                                                            </div>
+                                                                        )}
+                                                                    </div>
+                                                                );
+                                                            })}
+                                                        </div>
+                                                    )}
+                                                    <div style={{ display: "flex", gap: 8, marginTop: 10 }}>
+                                                        <button className={styles.linkBtn} style={{ background: "rgba(16,185,129,0.1)", color: "#10b981" }} onClick={() => handleUpdateAccess(k.id)}>Save</button>
+                                                        <button className={styles.linkBtn} onClick={() => setEditingKeyId(null)}>Cancel</button>
+                                                    </div>
+                                                </div>
+                                            )}
+
+                                            {/* Analytics panel */}
+                                            {analyticsKeyId === k.id && (
+                                                <div className={styles.analyticsPanel}>
+                                                    <div className={styles.analyticsPanelHeader}>
+                                                        <span>📊 Analytics (Last 7 days)</span>
+                                                        <button
+                                                            className={styles.reloadBtn}
+                                                            onClick={() => fetchAnalytics(k.id, true)}
+                                                            disabled={analyticsLoading}
+                                                            title="Refresh analytics"
+                                                        >
+                                                            {analyticsLoading ? '⏳' : '🔄'}
+                                                        </button>
+                                                    </div>
+                                                    {analyticsLoading ? (
+                                                        <div className={styles.analyticsLoading}>
+                                                            <span className={styles.spinner} /> Loading analytics...
+                                                        </div>
+                                                    ) : analyticsData ? (
+                                                        <>
+                                                            {/* Summary cards */}
+                                                            <div className={styles.analyticsGrid}>
+                                                                <div className={styles.statCard}>
+                                                                    <span className={styles.statValue}>{analyticsData.summary.total_requests}</span>
+                                                                    <span className={styles.statLabel}>Total Requests</span>
+                                                                </div>
+                                                                <div className={styles.statCard}>
+                                                                    <span className={styles.statValue}>{analyticsData.summary.avg_latency_ms}ms</span>
+                                                                    <span className={styles.statLabel}>Avg Latency</span>
+                                                                </div>
+                                                                <div className={styles.statCard}>
+                                                                    <span className={styles.statValue} style={{ color: analyticsData.summary.error_rate > 5 ? '#ef4444' : '#10b981' }}>
+                                                                        {analyticsData.summary.error_rate}%
+                                                                    </span>
+                                                                    <span className={styles.statLabel}>Error Rate</span>
+                                                                </div>
+                                                                <div className={styles.statCard}>
+                                                                    <span className={styles.statValue}>{analyticsData.summary.unique_ips}</span>
+                                                                    <span className={styles.statLabel}>Unique IPs</span>
+                                                                </div>
+                                                            </div>
+
+                                                            {/* Rate limit chart */}
+                                                            <div className={styles.chartSection}>
+                                                                <h4 className={styles.chartTitle}>Requests per Hour (Last 24h)</h4>
+                                                                {(() => {
+                                                                    const rd = analyticsData.rate_data || [];
+                                                                    const maxCount = Math.max(...rd.map(r => r.count), 1);
+                                                                    const chartW = 700, chartH = 140, barW = Math.floor(chartW / Math.max(rd.length, 1)) - 2;
+                                                                    return (
+                                                                        <div className={styles.chartContainer}>
+                                                                            <svg viewBox={`0 0 ${chartW} ${chartH + 20}`} className={styles.chartSvg}>
+                                                                                {rd.map((r, i) => {
+                                                                                    const barH = Math.max((r.count / maxCount) * chartH, 2);
+                                                                                    const x = i * (barW + 2);
+                                                                                    const y = chartH - barH;
+                                                                                    return (
+                                                                                        <g key={i}>
+                                                                                            <rect x={x} y={y} width={barW} height={barH} rx={3}
+                                                                                                fill={r.count > 0 ? "rgba(99,102,241,0.7)" : "rgba(99,102,241,0.15)"}
+                                                                                            />
+                                                                                            {r.count > 0 && (
+                                                                                                <text x={x + barW / 2} y={y - 3} textAnchor="middle" fontSize="9" fill="var(--text-muted)">
+                                                                                                    {r.count}
+                                                                                                </text>
+                                                                                            )}
+                                                                                            {i % 3 === 0 && (
+                                                                                                <text x={x + barW / 2} y={chartH + 14} textAnchor="middle" fontSize="8" fill="var(--text-muted)">
+                                                                                                    {r.label}
+                                                                                                </text>
+                                                                                            )}
+                                                                                        </g>
+                                                                                    );
+                                                                                })}
+                                                                                <line x1={0} y1={chartH} x2={chartW} y2={chartH} stroke="var(--border)" strokeWidth={0.5} />
+                                                                            </svg>
+                                                                        </div>
+                                                                    );
+                                                                })()}
+                                                            </div>
+
+                                                            {/* Request log table */}
+                                                            <div className={styles.logSection}>
+                                                                <h4 className={styles.chartTitle}>Request Log ({analyticsData.logs.length} entries)</h4>
+                                                                <div className={styles.logTableWrap}>
+                                                                    <table className={styles.logTable}>
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>Date & Time</th>
+                                                                                <th>IP Address</th>
+                                                                                <th>Method</th>
+                                                                                <th>URL</th>
+                                                                                <th>Status</th>
+                                                                                <th>Size</th>
+                                                                                <th>Latency</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            {analyticsData.logs.map((log, i) => (
+                                                                                <tr key={i}>
+                                                                                    <td className={styles.logTimestamp}>
+                                                                                        {new Date(log.timestamp).toLocaleString("en-IN", { dateStyle: "short", timeStyle: "medium" })}
+                                                                                    </td>
+                                                                                    <td className={styles.logIp}>{log.ip}</td>
+                                                                                    <td><span className={styles.methodBadge}>{log.method}</span></td>
+                                                                                    <td className={styles.logUrl}>{log.url?.split("?")[0]}</td>
+                                                                                    <td>
+                                                                                        <span className={`${styles.statusBadge} ${log.status >= 400 ? styles.statusError : styles.statusOk}`}>
+                                                                                            {log.status}
+                                                                                        </span>
+                                                                                    </td>
+                                                                                    <td className={styles.logSize}>
+                                                                                        {log.response_size > 1024
+                                                                                            ? `${(log.response_size / 1024).toFixed(1)} KB`
+                                                                                            : `${log.response_size} B`}
+                                                                                    </td>
+                                                                                    <td className={styles.logLatency}>
+                                                                                        {log.latency_ms}ms
+                                                                                    </td>
+                                                                                </tr>
+                                                                            ))}
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </>
+                                                    ) : (
+                                                        <div className={styles.analyticsLoading}>No analytics data available yet. Make some API calls first!</div>
+                                                    )}
+                                                </div>
+                                            )}
+                                        </div>
+                                    ))}
+                                </div>
+                            )}
+                        </div>
+                    </>
+                )}
+
                 {/* ========== NSE TAB ========== */}
                 {activeTab === "nse" && (
                     <>
@@ -629,6 +1322,6 @@ export default function AdminPage() {
                     </>
                 )}
             </main>
-        </div>
+        </div >
     );
 }
