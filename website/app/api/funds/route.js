@@ -221,7 +221,7 @@ export async function GET() {
                     (s.debt_holdings && s.debt_holdings.length > 0) ||
                     (s.sector_allocation && Object.keys(s.sector_allocation).length > 0);
 
-                if (!hasSubstance && s.returns && s.returns.length > 0) {
+                if (!hasSubstance && Array.isArray(s.returns) && s.returns.length > 0) {
                     returnOnlyEntries.push(s);
                 } else {
                     fullSchemes.push(s);
@@ -244,8 +244,9 @@ export async function GET() {
 
                 if (bestMatch) {
                     // Append returns to the parent
-                    if (!bestMatch.returns) bestMatch.returns = [];
-                    for (const r of retEntry.returns) {
+                    if (!Array.isArray(bestMatch.returns)) bestMatch.returns = [];
+                    const retReturns = Array.isArray(retEntry.returns) ? retEntry.returns : [];
+                    for (const r of retReturns) {
                         // Tag with plan_type from the return entry if available
                         const tagged = { ...r };
                         if (!tagged.plan_type && retEntry.plan_type) tagged.plan_type = retEntry.plan_type;
