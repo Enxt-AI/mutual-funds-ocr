@@ -1,0 +1,126 @@
+{
+  "schemes": [
+    {
+      "fund_name": "TrustMF Flexi Cap Fund Direct Growth",
+      "category": "Flexi Cap Fund",
+      "investment_objective": "To provide long-term growth in capital and income to investors, through active management of investments in a diversified portfolio of equity and equity-related securities across the entire market capitalization spectrum and in debt and money market instruments.",
+      "benchmark": "Nifty 500 TR INR",
+      "inception_date": "26/04/2024",
+      "option": "Growth",
+      "isin": "INF0GCD01743",
+      "nav": 12.01,
+      "nav_date": "18/06/2026",
+      "aum_crores": 10430.43,
+      "expense_ratio": 0.56,
+      "exit_load": "1.00% - 0-180 days; 0.00% - >180 days",
+      "min_initial_purchase": 1000,
+      "min_additional": 1000,
+      "morningstar_rating": "Not Rated",
+      "fund_managers": [
+        {
+          "name": "Mihir Vora",
+          "managing_since": "26/04/2024"
+        }
+      ],
+      "returns": [
+        {
+          "period": "3M",
+          "fund_return": 8.79,
+          "benchmark_return": 5.91,
+          "category_avg_return": 6.89
+        },
+        {
+          "period": "6M",
+          "fund_return": 3.09,
+          "benchmark_return": -1.25,
+          "category_avg_return": -0.31
+        },
+        {
+          "period": "1Y",
+          "fund_return": 3.89,
+          "benchmark_return": 1.84,
+          "category_avg_return": 2.18
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "ICICI Bank Ltd",
+          "weight_pct": 6.95
+        },
+        {
+          "name": "HDFC Bank Ltd",
+          "weight_pct": 5.71
+        },
+        {
+          "name": "Reliance Industries Ltd",
+          "weight_pct": 3.18
+        },
+        {
+          "name": "Bharti Airtel Ltd",
+          "weight_pct": 2.93
+        },
+        {
+          "name": "BSE Ltd",
+          "weight_pct": 2.46
+        },
+        {
+          "name": "Lenskart Solutions Ltd",
+          "weight_pct": 2.28
+        },
+        {
+          "name": "Axis Bank Ltd",
+          "weight_pct": 2.26
+        },
+        {
+          "name": "Solar Industries India Ltd",
+          "weight_pct": 2.25
+        },
+        {
+          "name": "Multi Commodity Exchange of...",
+          "weight_pct": 2.2
+        },
+        {
+          "name": "Radico Khaitan Ltd",
+          "weight_pct": 2.17
+        }
+      ],
+      "sector_allocation": {
+        "Basic Materials": 8.86,
+        "Consumer Cyclical": 10.99,
+        "Financial Services": 33.99,
+        "Communication Services": 4.21,
+        "Energy": 3.32,
+        "Industrials": 12.27,
+        "Technology": 7.93,
+        "Consumer Defensive": 5.85,
+        "Healthcare": 11.06,
+        "Utilities": 1.53
+      },
+      "asset_allocation": {
+        "Stocks": 96.27,
+        "Bonds": 0.0,
+        "Cash": 3.7,
+        "Other": 0.03
+      },
+      "market_cap_allocation": {
+        "Giant": 36.61,
+        "Large": 43.44,
+        "Medium": 18.7,
+        "Small": 1.25,
+        "Micro": 0.0
+      },
+      "portfolio_stats": {
+        "avg_market_cap_cr": 1653.79
+      }
+    }
+  ],
+  "amc_info": {
+    "amc_name": "Trust Asset Management Private Limited",
+    "factsheet_date": "19 Jun 2026",
+    "website": "www.trustmf.com"
+  },
+  "pages_processed": 1,
+  "source_pdf": "Trust.pdf",
+  "amc_slug": "trust",
+  "extracted_at": "2026-06-19T18:11:45"
+}

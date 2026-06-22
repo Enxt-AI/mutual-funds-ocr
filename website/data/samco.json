@@ -1,0 +1,141 @@
+{
+  "schemes": [
+    {
+      "fund_name": "Samco Flexi Cap Fund Direct Growth",
+      "category": "Flexi Cap Fund",
+      "investment_objective": "The investment objective of the Scheme is to seek to generate long-term capital growth from an actively managed portfolio of Indian & foreign equity instruments across market capitalisation.",
+      "benchmark": "Nifty 500 TR INR",
+      "inception_date": "04/02/2022",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "isin": "INF0K1H01024",
+      "nav": 10.64,
+      "nav_date": "18/06/2026",
+      "aum_crores": 2831.51,
+      "expense_ratio": 0.98,
+      "exit_load": "1.00% - 0-12 months, 0.00% - >12 months",
+      "min_sip": 500,
+      "min_lumpsum": 5000,
+      "morningstar_rating": 1,
+      "fund_managers": [
+        {
+          "name": "Umeshkumar Mehta",
+          "managing_since": "01/08/2023"
+        }
+      ],
+      "returns": [
+        {
+          "period": "3M",
+          "fund_return": 8.13,
+          "benchmark_return": 5.91
+        },
+        {
+          "period": "6M",
+          "fund_return": 3.4,
+          "benchmark_return": -1.25
+        },
+        {
+          "period": "1Y",
+          "fund_return": -6.09,
+          "benchmark_return": 1.84
+        },
+        {
+          "period": "3Y",
+          "fund_return": 1.32,
+          "benchmark_return": 13.4
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "Nestle India Ltd",
+          "sector": "Consumer Defensive",
+          "weight_pct": 6.65
+        },
+        {
+          "name": "Marico Ltd",
+          "sector": "Consumer Defensive",
+          "weight_pct": 6.59
+        },
+        {
+          "name": "Bank of Maharashtra",
+          "sector": "Financial Services",
+          "weight_pct": 6.09
+        },
+        {
+          "name": "AIA Engineering Ltd",
+          "sector": "Industrials",
+          "weight_pct": 5.07
+        },
+        {
+          "name": "Hindustan Zinc Ltd",
+          "sector": "Basic Materials",
+          "weight_pct": 4.72
+        },
+        {
+          "name": "KEI Industries Ltd",
+          "sector": "Industrials",
+          "weight_pct": 4.51
+        },
+        {
+          "name": "Hero MotoCorp Ltd",
+          "sector": "Consumer Cyclical",
+          "weight_pct": 4.32
+        },
+        {
+          "name": "Godawari Power & Ispat Ltd",
+          "sector": "Basic Materials",
+          "weight_pct": 4.24
+        },
+        {
+          "name": "Engineers India Ltd",
+          "sector": "Industrials",
+          "weight_pct": 4.08
+        },
+        {
+          "name": "Alkem Laboratories Ltd",
+          "sector": "Healthcare",
+          "weight_pct": 4.07
+        }
+      ],
+      "sector_allocation": {
+        "Basic Materials": 20.42,
+        "Consumer Cyclical": 4.38,
+        "Financial Services": 26.46,
+        "Industrials": 24.8,
+        "Consumer Defensive": 13.45,
+        "Healthcare": 10.48
+      },
+      "asset_allocation": {
+        "Stocks": 98.47,
+        "Bonds": 0.0,
+        "Cash": 1.53,
+        "Other": 0.0
+      },
+      "market_cap_allocation": {
+        "Giant": 0.0,
+        "Large": 51.04,
+        "Medium": 45.82,
+        "Small": 3.14,
+        "Micro": 0.0
+      },
+      "risk_metrics": {
+        "alpha": -10.98,
+        "beta": 1.08,
+        "sharpe_ratio": -0.15,
+        "standard_deviation": 19.42,
+        "r_squared": 72.5,
+        "information_ratio": -1.16,
+        "tracking_error": 10.25
+      }
+    }
+  ],
+  "amc_info": {
+    "amc_name": "Samco Asset Management Pvt Ltd",
+    "factsheet_date": "19 Jun 2026",
+    "website": "www.samcomf.com"
+  },
+  "pages_processed": 1,
+  "source_pdf": "samco.pdf",
+  "amc_slug": "samco",
+  "extracted_at": "2026-06-19T17:47:49"
+}

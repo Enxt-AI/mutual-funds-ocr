@@ -1,0 +1,158 @@
+{
+  "schemes": [
+    {
+      "fund_name": "Invesco India Smallcap Fund Direct Growth",
+      "category": "Smallcap",
+      "investment_objective": "To generate capital appreciation by investing predominantly in stocks of Smallcap companies.",
+      "benchmark": "Nifty Smallcap 250 TR INR",
+      "inception_date": "30/10/2018",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "isin": "INF205K013T3",
+      "nav": 51.57,
+      "nav_date": "19/06/2026",
+      "expense_ratio": 0.39,
+      "exit_load": "1.00% - 0-1 years; 0.00% - >1 years",
+      "min_initial_purchase": 100,
+      "min_additional_purchase": 100,
+      "morningstar_rating": 5,
+      "fund_managers": [
+        {
+          "name": "Taher Badshah",
+          "managing_since": "30/10/2018"
+        }
+      ],
+      "returns": [
+        {
+          "period": "3M",
+          "fund_return": 21.91,
+          "benchmark_return": 20.18,
+          "category_avg_return": 16.91
+        },
+        {
+          "period": "6M",
+          "fund_return": 10.67,
+          "benchmark_return": 8.15,
+          "category_avg_return": 9.94
+        },
+        {
+          "period": "1Y",
+          "fund_return": 14.3,
+          "benchmark_return": 5.97,
+          "category_avg_return": 7.52
+        },
+        {
+          "period": "3Y",
+          "fund_return": 24.99,
+          "benchmark_return": 19.84,
+          "category_avg_return": 18.1
+        },
+        {
+          "period": "5Y",
+          "fund_return": 22.57,
+          "benchmark_return": 17.39,
+          "category_avg_return": 17.99
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "Sai Life Sciences Ltd",
+          "sector": "Healthcare",
+          "weight_pct": 4.89
+        },
+        {
+          "name": "Amber Enterprises India Ltd",
+          "sector": "Consumer Cyclical",
+          "weight_pct": 4.85
+        },
+        {
+          "name": "Aditya Infotech Ltd",
+          "sector": "Technology",
+          "weight_pct": 4.14
+        },
+        {
+          "name": "Krishna Institute of Medical...",
+          "sector": "Healthcare",
+          "weight_pct": 4.12
+        },
+        {
+          "name": "Max Healthcare Institute Ltd",
+          "sector": "Healthcare",
+          "weight_pct": 3.77
+        },
+        {
+          "name": "InterGlobe Aviation Ltd",
+          "sector": "Industrials",
+          "weight_pct": 3.74
+        },
+        {
+          "name": "Eternal Ltd",
+          "sector": "Consumer Cyclical",
+          "weight_pct": 3.48
+        },
+        {
+          "name": "BSE Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 2.89
+        },
+        {
+          "name": "RBL Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 2.6
+        },
+        {
+          "name": "Karur Vysya Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 2.39
+        }
+      ],
+      "sector_allocation": {
+        "Basic Materials": 6.36,
+        "Consumer Cyclical": 22.02,
+        "Financial Services": 20.69,
+        "Real Estate": 6.95,
+        "Communication Services": 0,
+        "Energy": 0.32,
+        "Industrials": 18.58,
+        "Technology": 2.27,
+        "Consumer Defensive": 1.85,
+        "Healthcare": 20.97,
+        "Utilities": 0
+      },
+      "asset_allocation": {
+        "Stocks": 98.89,
+        "Bonds": 0,
+        "Cash": 1.11,
+        "Other": 0
+      },
+      "market_cap_allocation": {
+        "Giant": 0,
+        "Large": 26.77,
+        "Medium": 59.04,
+        "Small": 14.19,
+        "Micro": 0
+      },
+      "risk_metrics": {
+        "alpha": 5.01,
+        "beta": 0.83,
+        "sharpe_ratio": 0.89,
+        "r_squared": 91.1,
+        "information_ratio": 0.53,
+        "tracking_error": 6.9
+      },
+      "portfolio_stats": {
+        "avg_market_cap_cr": 305978.01
+      },
+      "aum_crores": 117168.83
+    }
+  ],
+  "amc_info": {
+    "amc_name": "Invesco Asset Management (India) Private Ltd",
+    "factsheet_date": "20 Jun 2026",
+    "website": "https://www.invescomutualfund.com/"
+  },
+  "pages_processed": 2,
+  "source_pdf": "Invesso.pdf",
+  "amc_slug": "invesso",
+  "extracted_at": "2026-06-20T11:03:19"
+}

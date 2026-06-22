@@ -1,0 +1,159 @@
+{
+  "schemes": [
+    {
+      "fund_name": "Union Flexi Cap Fund Direct Growth Option",
+      "category": "Flexi Cap Fund",
+      "investment_objective": "The investment objective of the Scheme is to achieve long-term capital appreciation by investing substantially in a portfolio consisting of equity and equity related securities across market capitalisation. However, there can be no assurance that the investment objective of the scheme will be achieved.",
+      "benchmark": "BSE 500 India TR INR",
+      "inception_date": "01/01/2013",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "isin": "INF582M01633",
+      "nav": 57.32,
+      "nav_date": "18/06/2026",
+      "aum_crores": 22894.43,
+      "expense_ratio": 0.84,
+      "exit_load": "1.00% - 0-15 days; 0.00% - >15 days",
+      "min_initial_purchase": 1000,
+      "min_additional": 1000,
+      "morningstar_rating": 3,
+      "fund_managers": [
+        {
+          "name": "Sanjay Bembalkar",
+          "managing_since": "25/01/2023"
+        }
+      ],
+      "returns": [
+        {
+          "period": "3M",
+          "fund_return": 6.38,
+          "benchmark_return": 5.91,
+          "category_avg_return": 6.89
+        },
+        {
+          "period": "6M",
+          "fund_return": -0.21,
+          "benchmark_return": -1.25,
+          "category_avg_return": -0.31
+        },
+        {
+          "period": "1Y",
+          "fund_return": 2.08,
+          "benchmark_return": 1.84,
+          "category_avg_return": 2.18
+        },
+        {
+          "period": "3Y",
+          "fund_return": 13.44,
+          "benchmark_return": 13.4,
+          "category_avg_return": 13.84
+        },
+        {
+          "period": "5Y",
+          "fund_return": 12.85,
+          "benchmark_return": 12.53,
+          "category_avg_return": 12.68
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "ICICI Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 4.39
+        },
+        {
+          "name": "HDFC Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 3.94
+        },
+        {
+          "name": "Tata Consumer Products Ltd",
+          "sector": "Consumer Defensive",
+          "weight_pct": 2.85
+        },
+        {
+          "name": "Bharti Airtel Ltd",
+          "sector": "Communication Services",
+          "weight_pct": 2.84
+        },
+        {
+          "name": "Axis Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 2.73
+        },
+        {
+          "name": "Reliance Industries Ltd",
+          "sector": "Energy",
+          "weight_pct": 2.68
+        },
+        {
+          "name": "Larsen & Toubro Ltd",
+          "sector": "Industrials",
+          "weight_pct": 2.65
+        },
+        {
+          "name": "State Bank of India",
+          "sector": "Financial Services",
+          "weight_pct": 2.55
+        },
+        {
+          "name": "JSW Energy Ltd",
+          "sector": "Utilities",
+          "weight_pct": 2.16
+        },
+        {
+          "name": "JSW Infrastructure Ltd",
+          "sector": "Industrials",
+          "weight_pct": 1.98
+        }
+      ],
+      "sector_allocation": {
+        "Basic Materials": 10.88,
+        "Consumer Cyclical": 12.1,
+        "Financial Services": 26.62,
+        "Real Estate": 0.85,
+        "Communication Services": 2.95,
+        "Energy": 3.94,
+        "Industrials": 17.58,
+        "Technology": 5.2,
+        "Consumer Defensive": 5.09,
+        "Healthcare": 10.07,
+        "Utilities": 4.72
+      },
+      "asset_allocation": {
+        "Stocks": 96.05,
+        "Bonds": 0.0,
+        "Cash": 3.92,
+        "Other": 0.03
+      },
+      "market_cap_allocation": {
+        "Giant": 31.81,
+        "Large": 36.96,
+        "Medium": 27.9,
+        "Small": 3.33,
+        "Micro": 0.0
+      },
+      "risk_metrics": {
+        "alpha": 0.46,
+        "beta": 0.94,
+        "sharpe_ratio": 0.51,
+        "standard_deviation": 14.93,
+        "r_squared": 94.91,
+        "information_ratio": 0.03,
+        "tracking_error": 3.47
+      },
+      "portfolio_stats": {
+        "avg_market_cap_cr": 1345.79
+      }
+    }
+  ],
+  "amc_info": {
+    "amc_name": "Union Asset Management Co. Pvt. Ltd.",
+    "factsheet_date": "19 Jun 2026",
+    "website": "www.unionmf.com"
+  },
+  "pages_processed": 1,
+  "source_pdf": "Union.pdf",
+  "amc_slug": "union",
+  "extracted_at": "2026-06-19T17:27:16"
+}

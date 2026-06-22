@@ -1,0 +1,119 @@
+{
+  "schemes": [
+    {
+      "fund_name": "Samco Small Cap Fund Direct Growth",
+      "category": "Small Cap",
+      "investment_objective": "The investment objective of the Scheme is to generate long-term capital appreciation from a diversified portfolio predominantly consisting of equity and equity related instruments of small cap companies.",
+      "benchmark": "Nifty Smallcap 250 TR INR",
+      "inception_date": "04/12/2025",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "isin": "INF0K1H01297",
+      "nav": 10.77,
+      "nav_date": "19/06/2026",
+      "aum_crores": 1512.99,
+      "expense_ratio": 0.94,
+      "exit_load": "1.00% - 0-30 days, 0.00% - >30 days",
+      "min_initial_purchase": 5000,
+      "min_additional_purchase": 500,
+      "morningstar_rating": "Not Rated",
+      "fund_managers": [
+        {
+          "name": "Umeshkumar Mehta",
+          "managing_since": "04/12/2025"
+        }
+      ],
+      "returns": [
+        {
+          "period": "3M",
+          "fund_return": 17.32,
+          "benchmark_return": 20.18,
+          "category_avg_return": 20.64
+        },
+        {
+          "period": "6M",
+          "fund_return": 8.46,
+          "benchmark_return": 8.15,
+          "category_avg_return": 9.49
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "Karur Vysya Bank Ltd",
+          "weight_pct": 3.74
+        },
+        {
+          "name": "Aditya Birla Sun Life AMC Ltd",
+          "weight_pct": 3.62
+        },
+        {
+          "name": "Sterlite Technologies Ltd",
+          "weight_pct": 3.44
+        },
+        {
+          "name": "Future on BANK Index",
+          "weight_pct": 3.43
+        },
+        {
+          "name": "J.B. Chemicals &...",
+          "weight_pct": 3.25
+        },
+        {
+          "name": "Finolex Cables Ltd",
+          "weight_pct": 3.13
+        },
+        {
+          "name": "Angel One Ltd Ordinary Shares",
+          "weight_pct": 2.58
+        },
+        {
+          "name": "Engineers India Ltd",
+          "weight_pct": 2.45
+        },
+        {
+          "name": "Can Fin Homes Ltd",
+          "weight_pct": 2.4
+        },
+        {
+          "name": "Timken India Ltd",
+          "weight_pct": 2.39
+        }
+      ],
+      "sector_allocation": {
+        "Basic Materials": 12.56,
+        "Consumer Cyclical": 9.91,
+        "Financial Services": 18.34,
+        "Communication Services": 1.78,
+        "Industrials": 27.85,
+        "Technology": 11.16,
+        "Consumer Defensive": 4.26,
+        "Healthcare": 14.15
+      },
+      "asset_allocation": {
+        "Stocks": 95.71,
+        "Bonds": 0.0,
+        "Cash": 1.96,
+        "Other": 2.33
+      },
+      "market_cap_allocation": {
+        "Giant": 0.0,
+        "Large": 0.0,
+        "Medium": 77.19,
+        "Small": 22.81,
+        "Micro": 0.0
+      },
+      "portfolio_stats": {
+        "avg_market_cap_cr": 183151.78
+      }
+    }
+  ],
+  "amc_info": {
+    "amc_name": "Samco Asset Management Pvt Ltd",
+    "factsheet_date": "20 Jun 2026",
+    "website": "www.samcomf.com"
+  },
+  "pages_processed": 1,
+  "source_pdf": "Samco small.pdf",
+  "amc_slug": "samco-small",
+  "extracted_at": "2026-06-20T12:02:50"
+}

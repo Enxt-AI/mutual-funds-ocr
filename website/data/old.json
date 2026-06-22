@@ -1,0 +1,126 @@
+{
+  "schemes": [
+    {
+      "fund_name": "Old Bridge Flexi Cap Fund Direct Growth",
+      "category": "Flexi Cap Fund",
+      "investment_objective": "To generate long term capital appreciation by investing predominantly in equity and equity related instruments across market capitalization. There is no assurance or guarantee that the objectives of the scheme will be achieved.",
+      "benchmark": "BSE 500 TRI",
+      "inception_date": "02/03/2026",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "isin": "INF0S5R01133",
+      "nav": 11.01,
+      "nav_date": "18/06/2026",
+      "expense_ratio": 0.83,
+      "exit_load": "1.00% - 0-365 days; 0.00% - >365 days",
+      "min_lumpsum": 5000,
+      "min_additional": 1000,
+      "morningstar_rating": "Not Rated",
+      "fund_managers": [
+        {
+          "name": "Kenneth Andrade",
+          "managing_since": "02/03/2026"
+        }
+      ],
+      "returns": [
+        {
+          "period": "3M",
+          "fund_return": 9.77,
+          "benchmark_return": 5.91,
+          "category_avg_return": 6.89
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "Marksans Pharma Ltd",
+          "sector": "Healthcare",
+          "weight_pct": 3.28
+        },
+        {
+          "name": "Star Health and Allied...",
+          "sector": "Healthcare",
+          "weight_pct": 3.02
+        },
+        {
+          "name": "DLF Ltd",
+          "sector": "Real Estate",
+          "weight_pct": 3.0
+        },
+        {
+          "name": "The Federal Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 2.98
+        },
+        {
+          "name": "Deepak Fertilisers &...",
+          "sector": "Basic Materials",
+          "weight_pct": 2.92
+        },
+        {
+          "name": "Axis Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 2.92
+        },
+        {
+          "name": "Gujarat Ambuja Exports Ltd",
+          "sector": "Basic Materials",
+          "weight_pct": 2.87
+        },
+        {
+          "name": "Shriram Finance Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 2.84
+        },
+        {
+          "name": "Hindalco Industries Ltd",
+          "sector": "Basic Materials",
+          "weight_pct": 2.81
+        },
+        {
+          "name": "Aurobindo Pharma Ltd",
+          "sector": "Healthcare",
+          "weight_pct": 2.8
+        }
+      ],
+      "sector_allocation": {
+        "Basic Materials": 15.14,
+        "Consumer Cyclical": 18.47,
+        "Financial Services": 21.69,
+        "Real Estate": 3.39,
+        "Communication Services": 0.0,
+        "Energy": 0.0,
+        "Industrials": 11.2,
+        "Technology": 2.17,
+        "Consumer Defensive": 7.95,
+        "Healthcare": 17.69,
+        "Utilities": 2.29
+      },
+      "asset_allocation": {
+        "Stocks": 89.79,
+        "Bonds": 0.0,
+        "Cash": 10.21,
+        "Other": 0.0
+      },
+      "market_cap_allocation": {
+        "Giant": 9.44,
+        "Large": 33.62,
+        "Medium": 30.32,
+        "Small": 23.94,
+        "Micro": 2.68
+      },
+      "portfolio_stats": {
+        "avg_market_cap_cr": 412953.16
+      },
+      "aum_crores": 1764.52
+    }
+  ],
+  "amc_info": {
+    "amc_name": "Old Bridge Asset Management Private Limited",
+    "factsheet_date": "19 Jun 2026",
+    "website": "https://www.oldbridgemf.com/"
+  },
+  "pages_processed": 2,
+  "source_pdf": "Old.pdf",
+  "amc_slug": "old",
+  "extracted_at": "2026-06-19T18:24:34"
+}

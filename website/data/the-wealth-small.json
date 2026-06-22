@@ -1,0 +1,115 @@
+{
+  "schemes": [
+    {
+      "fund_name": "The Wealth Company Small Cap Fund Direct Growth",
+      "category": "Small Cap",
+      "investment_objective": "To provide long-term capital appreciation / income by investing predominantly in equity and equity related securities of Small Cap companies . There is no assurance or guarantee that the investment objective of the Scheme will be achieved.",
+      "benchmark": "Nifty Smallcap 250 TR INR",
+      "inception_date": "25/03/2026",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "isin": "INF2F0001537",
+      "nav": 11.36,
+      "nav_date": "19/06/2026",
+      "expense_ratio": 0.34,
+      "exit_load": "1.00% - 0-1 years, 0.00% - >1 years",
+      "min_initial_purchase": 10000,
+      "min_additional_purchase": 5000,
+      "fund_managers": [
+        {
+          "name": "Aparna Shanker",
+          "managing_since": "25/03/2026"
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "Zen Technologies Ltd",
+          "sector": "Technology",
+          "weight_pct": 2.57
+        },
+        {
+          "name": "Multi Commodity Exchange of...",
+          "sector": "Financial Services",
+          "weight_pct": 2.4
+        },
+        {
+          "name": "Tech Mahindra Ltd",
+          "sector": "Technology",
+          "weight_pct": 2.35
+        },
+        {
+          "name": "Data Patterns (India) Ltd",
+          "sector": "Technology",
+          "weight_pct": 2.24
+        },
+        {
+          "name": "CG Power & Industrial...",
+          "sector": "Industrials",
+          "weight_pct": 2.24
+        },
+        {
+          "name": "SBFC Finance Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 2.18
+        },
+        {
+          "name": "Kirloskar Oil Engines Ltd",
+          "sector": "Industrials",
+          "weight_pct": 2.12
+        },
+        {
+          "name": "Granules India Ltd",
+          "sector": "Healthcare",
+          "weight_pct": 2.09
+        },
+        {
+          "name": "Billionbrains Garage...",
+          "sector": "Consumer Cyclical",
+          "weight_pct": 2.07
+        },
+        {
+          "name": "Netweb Technologies India Ltd",
+          "sector": "Technology",
+          "weight_pct": 2.06
+        }
+      ],
+      "sector_allocation": {
+        "Basic Materials": 6.62,
+        "Consumer Cyclical": 20.63,
+        "Financial Services": 19.53,
+        "Communication Services": 0.0,
+        "Energy": 0.0,
+        "Industrials": 24.61,
+        "Technology": 12.36,
+        "Consumer Defensive": 2.85,
+        "Healthcare": 13.41,
+        "Utilities": 0.0
+      },
+      "asset_allocation": {
+        "Stocks": 88.39,
+        "Bonds": 0.0,
+        "Cash": 11.61,
+        "Other": 0.0
+      },
+      "market_cap_allocation": {
+        "Giant": 2.06,
+        "Large": 21.97,
+        "Medium": 46.48,
+        "Small": 27.88,
+        "Micro": 1.62
+      },
+      "portfolio_stats": {
+        "avg_market_cap_cr": 242623.84
+      }
+    }
+  ],
+  "amc_info": {
+    "amc_name": "Wealth Company Asset Management Holdings Private Limited",
+    "factsheet_date": "20 Jun 2026",
+    "website": "https://www.wealthcompanyamc.in"
+  },
+  "pages_processed": 2,
+  "source_pdf": "the wealth small.pdf",
+  "amc_slug": "the-wealth-small",
+  "extracted_at": "2026-06-20T12:04:58"
+}

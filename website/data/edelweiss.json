@@ -1,0 +1,137 @@
+{
+  "schemes": [
+    {
+      "fund_name": "Edelweiss Flexi Cap Fund Direct Growth",
+      "category": "Flexi Cap Fund",
+      "investment_objective": "The investment objective of the Scheme is to generate long-term capital appreciation from a diversified portfolio that dynamically invests in equity and equity-related securities of companies across various market capitalisation. However, there can be no assurance that the investment objective of the Scheme will be realized.",
+      "benchmark": "BSE 500 India TR INR",
+      "inception_date": "03/02/2015",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "isin": "INF843K01KK1",
+      "nav": 44.94,
+      "nav_date": "18/06/2026",
+      "aum_crores": 33735.59,
+      "expense_ratio": 0.53,
+      "exit_load": "1.00% - 0-90 days; 0.00% - >90 days",
+      "min_initial_purchase": 100,
+      "min_additional_purchase": 100,
+      "morningstar_rating": 4,
+      "fund_managers": [
+        {
+          "name": "Trideep Bhattacharya",
+          "managing_since": "01/10/2021"
+        }
+      ],
+      "returns": [
+        {
+          "period": "3M",
+          "fund_return": 4.46,
+          "benchmark_return": 5.91,
+          "category_avg_return": 6.89
+        },
+        {
+          "period": "6M",
+          "fund_return": -1.31,
+          "benchmark_return": -1.25,
+          "category_avg_return": -0.31
+        },
+        {
+          "period": "1Y",
+          "fund_return": 3.78,
+          "benchmark_return": 1.84,
+          "category_avg_return": 2.18
+        },
+        {
+          "period": "3Y",
+          "fund_return": 16.86,
+          "benchmark_return": 13.4,
+          "category_avg_return": 13.84
+        },
+        {
+          "period": "5Y",
+          "fund_return": 15.46,
+          "benchmark_return": 12.53,
+          "category_avg_return": 12.68
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "ICICI Bank Ltd",
+          "weight_pct": 5.47
+        },
+        {
+          "name": "HDFC Bank Ltd",
+          "weight_pct": 5.45
+        },
+        {
+          "name": "Larsen & Toubro Ltd",
+          "weight_pct": 4.03
+        },
+        {
+          "name": "NTPC Ltd",
+          "weight_pct": 3.36
+        },
+        {
+          "name": "Reliance Industries Ltd",
+          "weight_pct": 3.11
+        },
+        {
+          "name": "Tata Steel Ltd",
+          "weight_pct": 2.5
+        },
+        {
+          "name": "State Bank of India",
+          "weight_pct": 2.44
+        },
+        {
+          "name": "Multi Commodity Exchange of...",
+          "weight_pct": 2.14
+        },
+        {
+          "name": "UltraTech Cement Ltd",
+          "weight_pct": 1.87
+        },
+        {
+          "name": "Bharti Airtel Ltd",
+          "weight_pct": 1.82
+        }
+      ],
+      "sector_allocation": {
+        "Cyclical": 57.0,
+        "Sensitive": 25.32,
+        "Defensive": 17.67
+      },
+      "asset_allocation": {
+        "Stocks": 97.66,
+        "Bonds": 0.0,
+        "Cash": 2.33,
+        "Other": 0.0
+      },
+      "market_cap_allocation": {
+        "Giant": 37.44,
+        "Large": 48.78,
+        "Medium": 13.21,
+        "Small": 0.57,
+        "Micro": 0.0
+      },
+      "risk_metrics": {
+        "alpha": 3.34,
+        "beta": 0.99,
+        "sharpe_ratio": 0.7,
+        "r_squared": 96.36,
+        "information_ratio": 1.24,
+        "tracking_error": 2.96,
+        "standard_deviation": 15.48
+      }
+    }
+  ],
+  "amc_info": {
+    "amc_name": "Edelweiss Asset Management Limited",
+    "website": "www.edelweissmf.com"
+  },
+  "pages_processed": 1,
+  "source_pdf": "Edelweiss.pdf",
+  "amc_slug": "edelweiss",
+  "extracted_at": "2026-06-19T16:46:34"
+}

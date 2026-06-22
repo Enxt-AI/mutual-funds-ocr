@@ -1,0 +1,126 @@
+{
+  "schemes": [
+    {
+      "fund_name": "Baroda BNP Paribas Small Cap Fund Direct Growth",
+      "category": "Small Cap",
+      "investment_objective": "The Scheme seeks to generate long-term capital appreciation by investing predominantly in equity and equity related securities of small cap companies. However, there can be no assurance that the investment objectives of the Scheme will be realized. The Scheme does not guarantee/indicate any returns.",
+      "benchmark": "Nifty Smallcap 250 TR Index",
+      "inception_date": "30/10/2023",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "isin": "INF251K01SR5",
+      "nav": 14.12,
+      "nav_date": "19/06/2026",
+      "expense_ratio": 0.8,
+      "exit_load": "1.00% - 0-1 years; 0.00% - >1 years",
+      "min_initial_purchase": 5000,
+      "min_additional_purchase": 1000,
+      "morningstar_rating": "Not Rated",
+      "fund_managers": [
+        {
+          "name": "Himanshu Singh",
+          "managing_since": "21/10/2024"
+        }
+      ],
+      "returns": [
+        {
+          "period": "3M",
+          "fund_return": 17.03,
+          "benchmark_return": 20.18,
+          "category_avg_return": 20.64
+        },
+        {
+          "period": "6M",
+          "fund_return": 8.04,
+          "benchmark_return": 8.15,
+          "category_avg_return": 9.49
+        },
+        {
+          "period": "1Y",
+          "fund_return": 7.65,
+          "benchmark_return": 5.97,
+          "category_avg_return": 9.94
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "Multi Commodity Exchange of...",
+          "weight_pct": 3.63
+        },
+        {
+          "name": "Laurus Labs Ltd",
+          "weight_pct": 3.62
+        },
+        {
+          "name": "National Aluminium Co Ltd",
+          "weight_pct": 3.47
+        },
+        {
+          "name": "Navin Fluorine International...",
+          "weight_pct": 3.31
+        },
+        {
+          "name": "Bharat Heavy Electricals Ltd",
+          "weight_pct": 2.74
+        },
+        {
+          "name": "J.B. Chemicals &...",
+          "weight_pct": 2.66
+        },
+        {
+          "name": "PhysicsWallah Ltd",
+          "weight_pct": 2.62
+        },
+        {
+          "name": "BEML Ltd",
+          "weight_pct": 2.4
+        },
+        {
+          "name": "Emcure Pharmaceuticals Ltd",
+          "weight_pct": 2.37
+        },
+        {
+          "name": "Karur Vysya Bank Ltd",
+          "weight_pct": 2.36
+        }
+      ],
+      "sector_allocation": {
+        "Basic Materials": 12.78,
+        "Consumer Cyclical": 12.02,
+        "Financial Services": 22.87,
+        "Communication Services": 1.26,
+        "Industrials": 16.39,
+        "Technology": 4.33,
+        "Consumer Defensive": 6.76,
+        "Healthcare": 21.65,
+        "Utilities": 1.94
+      },
+      "asset_allocation": {
+        "Stocks": 95.32,
+        "Bonds": 0.0,
+        "Cash": 4.68,
+        "Other": 0.0
+      },
+      "market_cap_allocation": {
+        "Giant": 0.0,
+        "Large": 16.17,
+        "Medium": 71.86,
+        "Small": 9.89,
+        "Micro": 2.08
+      },
+      "portfolio_stats": {
+        "avg_market_cap_cr": 252555.76
+      },
+      "aum_crores": 12221.42
+    }
+  ],
+  "amc_info": {
+    "amc_name": "Baroda BNP Paribas Asset Management India Pvt. Ltd.",
+    "factsheet_date": "20 Jun 2026",
+    "website": "https://www.barodabnpparibasmf.in/"
+  },
+  "pages_processed": 2,
+  "source_pdf": "Baroda BNP.pdf",
+  "amc_slug": "baroda-bnp",
+  "extracted_at": "2026-06-20T11:47:01"
+}

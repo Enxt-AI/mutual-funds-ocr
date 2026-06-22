@@ -1,0 +1,156 @@
+{
+  "schemes": [
+    {
+      "fund_name": "Axis Flexi Cap Fund Direct Growth",
+      "category": "Flexi Cap Fund",
+      "investment_objective": "To generate long term capital appreciation by investing in a dynamic mix of equity and equity related instruments across market capitalizations. However, there is no assurance or guarantee that the investment objective of the Scheme will be achieved.",
+      "benchmark": "Nifty 500 TR INR",
+      "inception_date": "17/11/2017",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "isin": "INF846K01B28",
+      "nav": 30.2,
+      "nav_date": "18/06/2026",
+      "aum_crores": 126249.5,
+      "expense_ratio": 0.75,
+      "exit_load": "0.00% - 0-12 months, 0.00% - >12 months",
+      "min_initial_purchase": 100,
+      "min_additional_purchase": 100,
+      "morningstar_rating": 2,
+      "fund_managers": [
+        {
+          "name": "Sachin Relekar",
+          "managing_since": "01/02/2024"
+        }
+      ],
+      "returns": [
+        {
+          "period": "3M",
+          "fund_return": 8.59,
+          "benchmark_return": 5.91,
+          "category_avg_return": 6.89
+        },
+        {
+          "period": "6M",
+          "fund_return": 3.39,
+          "benchmark_return": -1.25,
+          "category_avg_return": -0.31
+        },
+        {
+          "period": "1Y",
+          "fund_return": 3.99,
+          "benchmark_return": 1.84,
+          "category_avg_return": 2.18
+        },
+        {
+          "period": "3Y",
+          "fund_return": 14.08,
+          "benchmark_return": 13.4,
+          "category_avg_return": 13.84
+        },
+        {
+          "period": "5Y",
+          "fund_return": 11.25,
+          "benchmark_return": 12.53,
+          "category_avg_return": 12.68
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "ICICI Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 7.49
+        },
+        {
+          "name": "Bajaj Finance Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 3.94
+        },
+        {
+          "name": "Bharat Electronics Ltd",
+          "sector": "Industrials",
+          "weight_pct": 3.84
+        },
+        {
+          "name": "Eternal Ltd",
+          "sector": "Consumer Cyclical",
+          "weight_pct": 3.71
+        },
+        {
+          "name": "Axis Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 3.38
+        },
+        {
+          "name": "Krishna Institute of Medical...",
+          "sector": "Healthcare",
+          "weight_pct": 3.27
+        },
+        {
+          "name": "State Bank of India",
+          "sector": "Financial Services",
+          "weight_pct": 3.21
+        },
+        {
+          "name": "Apar Industries Ltd",
+          "sector": "Industrials",
+          "weight_pct": 3.12
+        },
+        {
+          "name": "UltraTech Cement Ltd",
+          "sector": "Basic Materials",
+          "weight_pct": 2.9
+        },
+        {
+          "name": "Mahindra & Mahindra Ltd",
+          "sector": "Consumer Cyclical",
+          "weight_pct": 2.62
+        }
+      ],
+      "sector_allocation": {
+        "Basic Materials": 8.45,
+        "Consumer Cyclical": 21.01,
+        "Financial Services": 31.51,
+        "Real Estate": 0.16,
+        "Communication Services": 2.56,
+        "Energy": 1.46,
+        "Industrials": 20.47,
+        "Technology": 1.92,
+        "Consumer Defensive": 0.0,
+        "Healthcare": 10.82,
+        "Utilities": 1.62
+      },
+      "asset_allocation": {
+        "Stocks": 91.37,
+        "Bonds": 0.0,
+        "Cash": 8.62,
+        "Other": 0.02
+      },
+      "market_cap_allocation": {
+        "Giant": 32.04,
+        "Large": 45.25,
+        "Medium": 19.47,
+        "Small": 2.99,
+        "Micro": 0.25
+      },
+      "risk_metrics": {
+        "alpha": 0.49,
+        "beta": 0.96,
+        "sharpe_ratio": 0.51,
+        "r_squared": 93.26,
+        "information_ratio": 0.06,
+        "standard_deviation": 15.39,
+        "tracking_error": 4.03
+      }
+    }
+  ],
+  "amc_info": {
+    "amc_name": "Axis Asset Management Company Limited",
+    "factsheet_date": "19 Jun 2026",
+    "website": "www.axismf.com"
+  },
+  "pages_processed": 1,
+  "source_pdf": "Axis.pdf",
+  "amc_slug": "axis",
+  "extracted_at": "2026-06-19T17:14:39"
+}

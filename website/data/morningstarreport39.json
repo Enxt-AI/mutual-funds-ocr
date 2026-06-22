@@ -1,0 +1,145 @@
+{
+  "schemes": [
+    {
+      "fund_name": "Invesco India Flexi Cap Fund Direct Growth",
+      "category": "Flexi Cap Fund",
+      "investment_objective": "To generate capital appreciation by dynamically investing in a mix of equity and equity related instruments across market capitalization i.e. large, mid and small cap stocks.",
+      "benchmark": "BSE 500 India TR INR",
+      "inception_date": "14/02/2022",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "isin": "INF205KA1494",
+      "nav": 20.08,
+      "nav_date": "18/06/2026",
+      "expense_ratio": 0.51,
+      "exit_load": "1.00% - 0-1 years; 0.00% - >1 years",
+      "min_initial_purchase": 100,
+      "min_additional_purchase": 100,
+      "morningstar_rating": 5,
+      "fund_managers": [
+        {
+          "name": "Taher Badshah",
+          "managing_since": "14/02/2022"
+        }
+      ],
+      "returns": [
+        {
+          "period": "3M",
+          "fund_return": 11.68,
+          "benchmark_return": 5.91
+        },
+        {
+          "period": "6M",
+          "fund_return": 1.31,
+          "benchmark_return": -1.25
+        },
+        {
+          "period": "1Y",
+          "fund_return": 2.71,
+          "benchmark_return": 1.84
+        },
+        {
+          "period": "3Y",
+          "fund_return": 19.83,
+          "benchmark_return": 13.4
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "ICICI Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 5.93
+        },
+        {
+          "name": "Larsen & Toubro Ltd",
+          "sector": "Industrials",
+          "weight_pct": 4.55
+        },
+        {
+          "name": "InterGlobe Aviation Ltd",
+          "sector": "Consumer Cyclical",
+          "weight_pct": 3.14
+        },
+        {
+          "name": "HDFC Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 2.89
+        },
+        {
+          "name": "Cholamandalam Investment and...",
+          "sector": "Financial Services",
+          "weight_pct": 2.8
+        },
+        {
+          "name": "BSE Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 2.78
+        },
+        {
+          "name": "Sai Life Sciences Ltd",
+          "sector": "Healthcare",
+          "weight_pct": 2.72
+        },
+        {
+          "name": "Max Healthcare Institute Ltd...",
+          "sector": "Healthcare",
+          "weight_pct": 2.57
+        },
+        {
+          "name": "Titan Co Ltd",
+          "sector": "Consumer Cyclical",
+          "weight_pct": 2.53
+        },
+        {
+          "name": "Bajaj Finance Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 2.41
+        }
+      ],
+      "sector_allocation": {
+        "Basic Materials": 2.47,
+        "Consumer Cyclical": 21.14,
+        "Financial Services": 31.8,
+        "Real Estate": 3.79,
+        "Communication Services": 1.68,
+        "Industrials": 18.58,
+        "Technology": 8.49,
+        "Consumer Defensive": 0.0,
+        "Healthcare": 12.04,
+        "Utilities": 0.0
+      },
+      "asset_allocation": {
+        "Stocks": 98.48,
+        "Bonds": 0.0,
+        "Cash": 1.5,
+        "Other": 0.02
+      },
+      "market_cap_allocation": {
+        "Giant": 22.13,
+        "Large": 45.05,
+        "Medium": 25.75,
+        "Small": 6.78,
+        "Micro": 0.29
+      },
+      "risk_metrics": {
+        "alpha": 4.86,
+        "beta": 1.04,
+        "r_squared": 87.67,
+        "information_ratio": 0.93,
+        "tracking_error": 6.07,
+        "sharpe_ratio": 0.74,
+        "standard_deviation": 17.21
+      },
+      "aum_crores": 49560.7
+    }
+  ],
+  "amc_info": {
+    "amc_name": "Invesco Asset Management (India) Private Ltd",
+    "factsheet_date": "19 Jun 2026",
+    "website": "https://www.invescomutualfund.com/"
+  },
+  "pages_processed": 2,
+  "source_pdf": "morningstarreport20260619102039.pdf",
+  "amc_slug": "morningstarreport39",
+  "extracted_at": "2026-06-19T15:51:36"
+}

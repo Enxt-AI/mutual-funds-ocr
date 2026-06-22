@@ -1,0 +1,150 @@
+{
+  "schemes": [
+    {
+      "fund_name": "HDFC Flexi Cap Fund -Direct Plan - Growth Option",
+      "category": "Flexi Cap Fund",
+      "investment_objective": "To generate capital appreciation / income from a portfolio, predominantly invested in equity & equity related instruments.",
+      "benchmark": "BSE 500 India TR INR",
+      "inception_date": "01/01/2013",
+      "plans_offered": "Direct",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "isin": "INF179K01UT0",
+      "nav": 2201.48,
+      "nav_date": "18/06/2026",
+      "aum_crores": 1018218.24,
+      "expense_ratio": 0.68,
+      "exit_load": "1.00% - 0-1 years; 0.00% - >1 years",
+      "min_initial_purchase": 100,
+      "min_additional_purchase": 100,
+      "morningstar_rating": 5,
+      "fund_managers": [
+        {
+          "name": "Amit Ganatra",
+          "managing_since": "01/02/2026"
+        }
+      ],
+      "returns": [
+        {
+          "period": "3M",
+          "fund_return": 3.88,
+          "benchmark_return": 5.91,
+          "category_avg_return": 7.59
+        },
+        {
+          "period": "6M",
+          "fund_return": -1.94,
+          "benchmark_return": -1.25,
+          "category_avg_return": -0.8
+        },
+        {
+          "period": "1Y",
+          "fund_return": 3.13,
+          "benchmark_return": 1.84,
+          "category_avg_return": 1.49
+        },
+        {
+          "period": "3Y",
+          "fund_return": 18.2,
+          "benchmark_return": 13.4,
+          "category_avg_return": 13.66
+        },
+        {
+          "period": "5Y",
+          "fund_return": 18.65,
+          "benchmark_return": 12.53,
+          "category_avg_return": 12.5
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "ICICI Bank Ltd",
+          "weight_pct": 8.83
+        },
+        {
+          "name": "Axis Bank Ltd",
+          "weight_pct": 6.84
+        },
+        {
+          "name": "HDFC Bank Ltd",
+          "weight_pct": 6.48
+        },
+        {
+          "name": "State Bank of India",
+          "weight_pct": 4.22
+        },
+        {
+          "name": "SBI Life Insurance Co Ltd",
+          "weight_pct": 3.76
+        },
+        {
+          "name": "Larsen & Toubro Ltd",
+          "weight_pct": 3.55
+        },
+        {
+          "name": "Kotak Mahindra Bank Ltd",
+          "weight_pct": 3.43
+        },
+        {
+          "name": "Bharti Airtel Ltd",
+          "weight_pct": 2.96
+        },
+        {
+          "name": "Maruti Suzuki India Ltd",
+          "weight_pct": 2.91
+        },
+        {
+          "name": "Cipla Ltd",
+          "weight_pct": 2.89
+        }
+      ],
+      "sector_allocation": {
+        "Cyclical": 62.92,
+        "Basic Materials": 4.48,
+        "Consumer Cyclical": 17.65,
+        "Financial Services": 37.98,
+        "Real Estate": 2.82,
+        "Sensitive": 21.12,
+        "Communication Services": 3.12,
+        "Energy": 2.99,
+        "Industrials": 9.15,
+        "Technology": 5.87,
+        "Defensive": 15.96,
+        "Consumer Defensive": 1.57,
+        "Healthcare": 11.75,
+        "Utilities": 2.64
+      },
+      "asset_allocation": {
+        "Stocks": 94.9,
+        "Bonds": 0.5,
+        "Cash": 4.6,
+        "Other": 0.0
+      },
+      "market_cap_allocation": {
+        "Giant": 44.84,
+        "Large": 42.45,
+        "Medium": 10.13,
+        "Small": 2.58,
+        "Micro": 0.0
+      },
+      "risk_metrics": {
+        "alpha": 5.21,
+        "beta": 0.82,
+        "r_squared": 93.44,
+        "information_ratio": 1.1,
+        "tracking_error": 4.33,
+        "sharpe_ratio": 0.87,
+        "standard_deviation": 13.11
+      }
+    }
+  ],
+  "amc_info": {
+    "amc_name": "HDFC Asset Management Co Ltd",
+    "factsheet_date": "19 Jun 2026",
+    "website": "www.hdfcfund.com"
+  },
+  "pages_processed": 1,
+  "source_pdf": "HDFC.pdf",
+  "amc_slug": "hdfc",
+  "extracted_at": "2026-06-19T16:12:07"
+}

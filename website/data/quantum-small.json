@@ -1,0 +1,131 @@
+{
+  "schemes": [
+    {
+      "fund_name": "Quantum Small Cap Fund Direct Growth",
+      "category": "Small Cap",
+      "investment_objective": "The Investment Objective of the Scheme to generate capital appreciation by investing predominantly in Small Cap Stocks. There is no assurance that the investment objective of the scheme will be achieved.",
+      "benchmark": "Nifty Smallcap 250 TR INR",
+      "inception_date": "03/11/2023",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "isin": "INF082J01432",
+      "nav": 13.9,
+      "nav_date": "19/06/2026",
+      "aum_crores": 2246.63,
+      "expense_ratio": 0.7,
+      "exit_load": "1.00% - 0-180 days; 0.00% - >180 days",
+      "min_initial_purchase": 500,
+      "min_additional_purchase": 500,
+      "morningstar_rating": "Not Rated",
+      "fund_managers": [
+        {
+          "name": "Chirag Mehta",
+          "managing_since": "03/11/2023"
+        }
+      ],
+      "returns": [
+        {
+          "period": "3M",
+          "fund_return": 19.11,
+          "benchmark_return": 20.18
+        },
+        {
+          "period": "6M",
+          "fund_return": 7.67,
+          "benchmark_return": 8.15
+        },
+        {
+          "period": "1Y",
+          "fund_return": 10.06,
+          "benchmark_return": 5.97
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "Supriya Lifescience Ltd",
+          "sector": "Healthcare",
+          "weight_pct": 4.6
+        },
+        {
+          "name": "Karur Vysya Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 2.81
+        },
+        {
+          "name": "Carysil Ltd",
+          "sector": "Consumer Cyclical",
+          "weight_pct": 2.76
+        },
+        {
+          "name": "Lumax Industries Ltd",
+          "sector": "Consumer Cyclical",
+          "weight_pct": 2.62
+        },
+        {
+          "name": "Mold-tek Packaging Ltd",
+          "sector": "Consumer Cyclical",
+          "weight_pct": 2.61
+        },
+        {
+          "name": "Mayur Uniquoters Ltd",
+          "sector": "Consumer Cyclical",
+          "weight_pct": 2.51
+        },
+        {
+          "name": "Engineers India Ltd",
+          "sector": "Industrials",
+          "weight_pct": 2.47
+        },
+        {
+          "name": "Star Health and Allied...",
+          "sector": "Financial Services",
+          "weight_pct": 2.46
+        },
+        {
+          "name": "Crompton Greaves Consumer...",
+          "sector": "Consumer Cyclical",
+          "weight_pct": 2.43
+        },
+        {
+          "name": "CCL Products (India) Ltd",
+          "sector": "Consumer Defensive",
+          "weight_pct": 2.35
+        }
+      ],
+      "sector_allocation": {
+        "Basic Materials": 5.19,
+        "Consumer Cyclical": 27.54,
+        "Financial Services": 25.74,
+        "Real Estate": 0.03,
+        "Communication Services": 3.19,
+        "Industrials": 16.76,
+        "Technology": 6.17,
+        "Consumer Defensive": 2.56,
+        "Healthcare": 11.23,
+        "Utilities": 1.58
+      },
+      "asset_allocation": {
+        "Stocks": 91.76,
+        "Bonds": 0.0,
+        "Cash": 8.24,
+        "Other": 0.0
+      },
+      "market_cap_allocation": {
+        "Giant": 7.02,
+        "Large": 3.02,
+        "Medium": 31.91,
+        "Small": 38.09,
+        "Micro": 19.97
+      }
+    }
+  ],
+  "amc_info": {
+    "amc_name": "Quantum Asset Management Co Pvt. Ltd.",
+    "factsheet_date": "20 Jun 2026",
+    "website": "www.QuantumAMC.com"
+  },
+  "pages_processed": 1,
+  "source_pdf": "Quantum small.pdf",
+  "amc_slug": "quantum-small",
+  "extracted_at": "2026-06-20T11:44:02"
+}

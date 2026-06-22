@@ -1,0 +1,155 @@
+{
+  "schemes": [
+    {
+      "fund_name": "SBI Flexicap Fund Direct Growth",
+      "category": "Flexi Cap Fund",
+      "investment_objective": "To provide investors with opportunities for longterm growth in capital along with the liquidity of an open-ended scheme through an active management of investments in a diversified basket of equity stocks spanning the entire market capitalization spectrum and in debt and money market instruments.",
+      "benchmark": "BSE 500 India TR INR",
+      "inception_date": "01/01/2013",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "isin": "INF200K01UG1",
+      "nav": 120.46,
+      "nav_date": "18/06/2026",
+      "aum_crores": 223865.15,
+      "expense_ratio": 0.83,
+      "exit_load": "0.10% - 0-30 days; 0.00% - >30 days",
+      "min_initial_purchase": 1000,
+      "min_additional_purchase": 1000,
+      "morningstar_rating": 3,
+      "fund_managers": [
+        {
+          "name": "Anup Upadhyay",
+          "managing_since": "01/12/2024"
+        }
+      ],
+      "returns": [
+        {
+          "period": "3M",
+          "fund_return": 3.52,
+          "benchmark_return": 5.91,
+          "category_avg_return": 6.89
+        },
+        {
+          "period": "6M",
+          "fund_return": -3.7,
+          "benchmark_return": -1.25,
+          "category_avg_return": -0.31
+        },
+        {
+          "period": "1Y",
+          "fund_return": 1.19,
+          "benchmark_return": 1.84,
+          "category_avg_return": 2.18
+        },
+        {
+          "period": "3Y",
+          "fund_return": 10.34,
+          "benchmark_return": 13.4,
+          "category_avg_return": 13.84
+        },
+        {
+          "period": "5Y",
+          "fund_return": 10.53,
+          "benchmark_return": 12.53,
+          "category_avg_return": 12.68
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "ICICI Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 5.5
+        },
+        {
+          "name": "Axis Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 4.49
+        },
+        {
+          "name": "HDFC Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 4.24
+        },
+        {
+          "name": "Larsen & Toubro Ltd",
+          "sector": "Industrials",
+          "weight_pct": 4.04
+        },
+        {
+          "name": "Bajaj Auto Ltd",
+          "sector": "Consumer Cyclical",
+          "weight_pct": 3.56
+        },
+        {
+          "name": "Tata Steel Ltd",
+          "sector": "Basic Materials",
+          "weight_pct": 3.38
+        },
+        {
+          "name": "NTPC Ltd",
+          "sector": "Utilities",
+          "weight_pct": 3.21
+        },
+        {
+          "name": "Aurobindo Pharma Ltd",
+          "sector": "Healthcare",
+          "weight_pct": 2.55
+        },
+        {
+          "name": "Microsoft Corp",
+          "sector": "Technology",
+          "weight_pct": 2.25
+        },
+        {
+          "name": "Tata Power Co Ltd",
+          "sector": "Utilities",
+          "weight_pct": 2.24
+        }
+      ],
+      "asset_allocation": {
+        "Stocks": 97.18,
+        "Bonds": 0.13,
+        "Cash": 2.69,
+        "Other": 0.0
+      },
+      "market_cap_allocation": {
+        "Giant": 38.57,
+        "Large": 41.03,
+        "Medium": 15.35,
+        "Small": 5.05,
+        "Micro": 0.0
+      },
+      "sector_allocation": {
+        "Basic Materials": 10.52,
+        "Consumer Cyclical": 12.26,
+        "Financial Services": 33.58,
+        "Communication Services": 1.03,
+        "Energy": 6.01,
+        "Industrials": 11.93,
+        "Technology": 5.68,
+        "Consumer Defensive": 1.72,
+        "Healthcare": 10.68,
+        "Utilities": 6.6
+      },
+      "risk_metrics": {
+        "alpha": -2.03,
+        "beta": 0.87,
+        "sharpe_ratio": 0.33,
+        "standard_deviation": 13.63,
+        "r_squared": 96.37,
+        "information_ratio": -0.94,
+        "tracking_error": 3.29
+      }
+    }
+  ],
+  "amc_info": {
+    "amc_name": "SBI Funds Management Ltd",
+    "factsheet_date": "19 Jun 2026",
+    "website": "www.sbimf.com"
+  },
+  "pages_processed": 1,
+  "source_pdf": "sbi.pdf",
+  "amc_slug": "sbi",
+  "extracted_at": "2026-06-19T17:39:34"
+}

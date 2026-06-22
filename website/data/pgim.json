@@ -1,0 +1,156 @@
+{
+  "schemes": [
+    {
+      "fund_name": "PGIM India Flexi Cap Fund Direct Growth",
+      "category": "Flexi Cap Fund",
+      "investment_objective": "To generate income & capital appreciation by predominantly investing in an actively managed diversified portfolio of equity & equity related instruments including derivatives.",
+      "benchmark": "BSE 500 India TR INR",
+      "inception_date": "04/03/2015",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "isin": "INF663L01FF1",
+      "nav": 42.72,
+      "nav_date": "18/06/2026",
+      "expense_ratio": 0.56,
+      "exit_load": "0.50% - 0-90 days; 0.00% - >90 days",
+      "min_lumpsum": 5000,
+      "min_additional": 1000,
+      "morningstar_rating": 3,
+      "fund_managers": [
+        {
+          "name": "A. Anandha Padmanabhan",
+          "managing_since": "01/06/2021"
+        }
+      ],
+      "returns": [
+        {
+          "period": "3M",
+          "fund_return": 6.56,
+          "benchmark_return": 5.91,
+          "category_avg_return": 6.89
+        },
+        {
+          "period": "6M",
+          "fund_return": -0.26,
+          "benchmark_return": -1.25,
+          "category_avg_return": -0.31
+        },
+        {
+          "period": "1Y",
+          "fund_return": 2.54,
+          "benchmark_return": 1.84,
+          "category_avg_return": 2.18
+        },
+        {
+          "period": "3Y",
+          "fund_return": 11.53,
+          "benchmark_return": 13.4,
+          "category_avg_return": 13.84
+        },
+        {
+          "period": "5Y",
+          "fund_return": 11.08,
+          "benchmark_return": 12.53,
+          "category_avg_return": 12.68
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "HDFC Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 5.78
+        },
+        {
+          "name": "ICICI Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 5.55
+        },
+        {
+          "name": "Bharti Airtel Ltd",
+          "sector": "Communication Services",
+          "weight_pct": 3.09
+        },
+        {
+          "name": "Reliance Industries Ltd",
+          "sector": "Energy",
+          "weight_pct": 2.82
+        },
+        {
+          "name": "State Bank of India",
+          "sector": "Financial Services",
+          "weight_pct": 2.34
+        },
+        {
+          "name": "Eternal Ltd",
+          "sector": "Consumer Cyclical",
+          "weight_pct": 2.25
+        },
+        {
+          "name": "TVS Motor Co Ltd",
+          "sector": "Consumer Cyclical",
+          "weight_pct": 2.15
+        },
+        {
+          "name": "Vishal Mega Mart Ltd",
+          "sector": "Consumer Cyclical",
+          "weight_pct": 1.97
+        },
+        {
+          "name": "Varun Beverages Ltd",
+          "sector": "Consumer Cyclical",
+          "weight_pct": 1.92
+        },
+        {
+          "name": "Bajaj Finance Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 1.78
+        }
+      ],
+      "sector_allocation": {
+        "Basic Materials": 8.16,
+        "Consumer Cyclical": 15.73,
+        "Financial Services": 28.15,
+        "Real Estate": 1.37,
+        "Communication Services": 4.22,
+        "Energy": 2.88,
+        "Industrials": 13.48,
+        "Technology": 7.93,
+        "Consumer Defensive": 4.75,
+        "Healthcare": 11.19,
+        "Utilities": 2.12
+      },
+      "asset_allocation": {
+        "Stocks": 97.61,
+        "Bonds": 0.11,
+        "Cash": 2.24,
+        "Other": 0.04
+      },
+      "market_cap_allocation": {
+        "Giant": 33.29,
+        "Large": 39.88,
+        "Medium": 24.84,
+        "Small": 1.99,
+        "Micro": 0.0
+      },
+      "risk_metrics": {
+        "alpha": -1.44,
+        "beta": 0.91,
+        "r_squared": 93.56,
+        "information_ratio": -0.56,
+        "tracking_error": 3.92,
+        "sharpe_ratio": 0.37,
+        "standard_deviation": 14.49
+      },
+      "aum_crores": 57329.78
+    }
+  ],
+  "amc_info": {
+    "amc_name": "PGIM India Asset Management Private Limited",
+    "factsheet_date": "19 Jun 2026",
+    "website": "http://www.pgimindiamf.com/"
+  },
+  "pages_processed": 2,
+  "source_pdf": "PGIM.pdf",
+  "amc_slug": "pgim",
+  "extracted_at": "2026-06-19T17:36:56"
+}

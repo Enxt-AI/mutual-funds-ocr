@@ -1,0 +1,155 @@
+{
+  "schemes": [
+    {
+      "fund_name": "LIC MF Flexi Cap Fund Direct Plan Growth Option",
+      "category": "Flexi Cap Fund",
+      "investment_objective": "The main investment objective of the scheme is to provide capital growth by investing across Large, Mid & Small Cap stocks. The investment portfolio of the scheme will be constantly monitored and reviewed to optimise capital growth. However, there is no assurance that the investment objective of the Schemes will be realized.",
+      "benchmark": "BSE 500 India TR INR",
+      "inception_date": "01/01/2013",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "isin": "INF767K01EG3",
+      "nav": 111.72,
+      "nav_date": "18/06/2026",
+      "aum_crores": 9972.3,
+      "expense_ratio": 0.95,
+      "exit_load": "1.00% - 0-3 months, 0.00% - >3 months",
+      "min_initial_purchase": 5000,
+      "min_additional_purchase": 500,
+      "morningstar_rating": 2,
+      "fund_managers": [
+        {
+          "name": "Sudhanshu Asthana",
+          "managing_since": "07/04/2026"
+        }
+      ],
+      "returns": [
+        {
+          "period": "3M",
+          "fund_return": 9.16,
+          "benchmark_return": 5.91,
+          "category_avg_return": 6.89
+        },
+        {
+          "period": "6M",
+          "fund_return": 0.8,
+          "benchmark_return": -1.25,
+          "category_avg_return": -0.31
+        },
+        {
+          "period": "1Y",
+          "fund_return": 7.45,
+          "benchmark_return": 1.84,
+          "category_avg_return": 2.18
+        },
+        {
+          "period": "3Y",
+          "fund_return": 12.85,
+          "benchmark_return": 13.4,
+          "category_avg_return": 13.84
+        },
+        {
+          "period": "5Y",
+          "fund_return": 11.47,
+          "benchmark_return": 12.53,
+          "category_avg_return": 12.68
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "ICICI Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 6.35
+        },
+        {
+          "name": "Axis Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 4.03
+        },
+        {
+          "name": "Larsen & Toubro Ltd",
+          "sector": "Industrials",
+          "weight_pct": 3.43
+        },
+        {
+          "name": "Solar Industries India Ltd",
+          "sector": "Basic Materials",
+          "weight_pct": 3.29
+        },
+        {
+          "name": "Apollo Hospitals Enterprise...",
+          "sector": "Healthcare",
+          "weight_pct": 3.24
+        },
+        {
+          "name": "Navin Fluorine International...",
+          "sector": "Basic Materials",
+          "weight_pct": 3.15
+        },
+        {
+          "name": "Torrent Pharmaceuticals Ltd",
+          "sector": "Healthcare",
+          "weight_pct": 2.97
+        },
+        {
+          "name": "Hitachi Energy India Ltd...",
+          "sector": "Industrials",
+          "weight_pct": 2.89
+        },
+        {
+          "name": "InterGlobe Aviation Ltd",
+          "sector": "Industrials",
+          "weight_pct": 2.87
+        },
+        {
+          "name": "Sun Pharmaceuticals...",
+          "sector": "Healthcare",
+          "weight_pct": 2.86
+        }
+      ],
+      "sector_allocation": {
+        "Basic Materials": 10.41,
+        "Consumer Cyclical": 11.04,
+        "Financial Services": 29.12,
+        "Real Estate": 2.37,
+        "Communication Services": 2.93,
+        "Industrials": 16.15,
+        "Technology": 10.87,
+        "Consumer Defensive": 5.03,
+        "Healthcare": 10.37,
+        "Utilities": 1.72
+      },
+      "asset_allocation": {
+        "Stocks": 97.49,
+        "Bonds": 0.0,
+        "Cash": 2.51,
+        "Other": 0.0
+      },
+      "market_cap_allocation": {
+        "Giant": 22.08,
+        "Large": 46.78,
+        "Medium": 23.16,
+        "Small": 7.99,
+        "Micro": 0.0
+      },
+      "risk_metrics": {
+        "alpha": -0.57,
+        "beta": 0.98,
+        "r_squared": 88.22,
+        "information_ratio": -0.17,
+        "tracking_error": 5.51,
+        "sharpe_ratio": 0.42,
+        "standard_deviation": 16.03
+      }
+    }
+  ],
+  "amc_info": {
+    "amc_name": "LIC Mutual Fund Asset Management Limited",
+    "factsheet_date": "19 Jun 2026",
+    "website": "www.licmf.com"
+  },
+  "pages_processed": 1,
+  "source_pdf": "LIC.pdf",
+  "amc_slug": "lic",
+  "extracted_at": "2026-06-19T17:31:45"
+}

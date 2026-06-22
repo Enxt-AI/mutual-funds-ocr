@@ -1,0 +1,141 @@
+{
+  "schemes": [
+    {
+      "fund_name": "Sundaram Flexi Cap Fund Direct Growth",
+      "category": "Flexi Cap Fund",
+      "investment_objective": "To generate capital appreciation by dynamically investing in a mix of equity and equity related instruments across market capitalization (i.e., large, mid and small cap stocks).",
+      "benchmark": "BSE 500 India TR INR",
+      "inception_date": "06/09/2022",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "isin": "INF903JA1LE2",
+      "nav": 15.16,
+      "nav_date": "18/06/2026",
+      "aum_crores": 19615.84,
+      "morningstar_rating": 2,
+      "fund_managers": [
+        {
+          "name": "S. Bharath",
+          "managing_since": "01/07/2024"
+        }
+      ],
+      "returns": [
+        {
+          "period": "3M",
+          "fund_return": 3.18,
+          "benchmark_return": 5.91,
+          "category_avg_return": 6.89
+        },
+        {
+          "period": "6M",
+          "fund_return": -4.55,
+          "benchmark_return": -1.25,
+          "category_avg_return": -0.31
+        },
+        {
+          "period": "1Y",
+          "fund_return": -0.07,
+          "benchmark_return": 1.84,
+          "category_avg_return": 2.18
+        },
+        {
+          "period": "3Y",
+          "fund_return": 12.03,
+          "benchmark_return": 13.4,
+          "category_avg_return": 13.84
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "HDFC Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 6.77
+        },
+        {
+          "name": "ICICI Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 5.75
+        },
+        {
+          "name": "Axis Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 4.36
+        },
+        {
+          "name": "Bharti Airtel Ltd",
+          "sector": "Communication Services",
+          "weight_pct": 3.86
+        },
+        {
+          "name": "Reliance Industries Ltd",
+          "sector": "Energy",
+          "weight_pct": 3.62
+        },
+        {
+          "name": "Larsen & Toubro Ltd",
+          "sector": "Industrials",
+          "weight_pct": 3.58
+        },
+        {
+          "name": "State Bank of India",
+          "sector": "Financial Services",
+          "weight_pct": 3.52
+        },
+        {
+          "name": "Infosys Ltd",
+          "sector": "Technology",
+          "weight_pct": 3.16
+        },
+        {
+          "name": "Kotak Mahindra Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 2.94
+        },
+        {
+          "name": "Kirloskar Oil Engines Ltd",
+          "sector": "Industrials",
+          "weight_pct": 2.93
+        }
+      ],
+      "sector_allocation": {
+        "Cyclical": 52.99,
+        "Sensitive": 33.77,
+        "Defensive": 13.25
+      },
+      "asset_allocation": {
+        "Stocks": 96.38,
+        "Bonds": 0.0,
+        "Cash": 3.62,
+        "Other": 0.0
+      },
+      "market_cap_allocation": {
+        "Giant": 46.39,
+        "Large": 29.55,
+        "Medium": 20.0,
+        "Small": 4.06,
+        "Micro": 0.0
+      },
+      "risk_metrics": {
+        "alpha": -0.65,
+        "beta": 0.92,
+        "sharpe_ratio": 0.43,
+        "standard_deviation": 14.53,
+        "r_squared": 94.74,
+        "information_ratio": -0.36,
+        "tracking_error": 3.56
+      },
+      "portfolio_stats": {
+        "avg_market_cap_cr": 1886.44
+      }
+    }
+  ],
+  "amc_info": {
+    "amc_name": "Sundaram Asset Management Company Ltd",
+    "factsheet_date": "19 Jun 2026",
+    "website": "www.sundarammutual.com"
+  },
+  "pages_processed": 1,
+  "source_pdf": "Sundaram.pdf",
+  "amc_slug": "sundaram",
+  "extracted_at": "2026-06-19T17:34:52"
+}

@@ -1,0 +1,159 @@
+{
+  "schemes": [
+    {
+      "fund_name": "Canara Robeco Flexi Cap Fund Direct Plan Growth Option",
+      "category": "Flexi Cap Fund",
+      "investment_objective": "To generate capital appreciation by investing in equity and equity and equity related securities. However, there can be no assurance that the investment objective of the scheme will be realized.",
+      "benchmark": "BSE 500 India TR INR",
+      "inception_date": "01/01/2013",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "isin": "INF760K01EF0",
+      "nav": 383.06,
+      "nav_date": "18/06/2026",
+      "aum_crores": 130125.93,
+      "expense_ratio": 0.51,
+      "exit_load": "1.00% - 0-1 years; 0.00% - >1 years",
+      "min_lumpsum": 5000,
+      "min_additional": 1000,
+      "morningstar_rating": 4,
+      "fund_managers": [
+        {
+          "name": "Shridatta Bhandwaldar",
+          "managing_since": "05/07/2016"
+        }
+      ],
+      "returns": [
+        {
+          "period": "3M",
+          "fund_return": 5.5,
+          "benchmark_return": 5.91,
+          "category_avg_return": 6.89
+        },
+        {
+          "period": "6M",
+          "fund_return": -1.52,
+          "benchmark_return": -1.25,
+          "category_avg_return": -0.31
+        },
+        {
+          "period": "1Y",
+          "fund_return": 1.8,
+          "benchmark_return": 1.84,
+          "category_avg_return": 2.18
+        },
+        {
+          "period": "3Y",
+          "fund_return": 13.42,
+          "benchmark_return": 13.4,
+          "category_avg_return": 13.84
+        },
+        {
+          "period": "5Y",
+          "fund_return": 12.44,
+          "benchmark_return": 12.53,
+          "category_avg_return": 12.68
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "HDFC Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 6.69
+        },
+        {
+          "name": "ICICI Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 6.18
+        },
+        {
+          "name": "Reliance Industries Ltd",
+          "sector": "Energy",
+          "weight_pct": 3.76
+        },
+        {
+          "name": "Bharti Airtel Ltd",
+          "sector": "Communication Services",
+          "weight_pct": 3.71
+        },
+        {
+          "name": "Larsen & Toubro Ltd",
+          "sector": "Industrials",
+          "weight_pct": 3.32
+        },
+        {
+          "name": "State Bank of India",
+          "sector": "Financial Services",
+          "weight_pct": 3.16
+        },
+        {
+          "name": "Infosys Ltd",
+          "sector": "Technology",
+          "weight_pct": 2.99
+        },
+        {
+          "name": "Bajaj Finance Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 2.59
+        },
+        {
+          "name": "Axis Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 2.53
+        },
+        {
+          "name": "Mahindra & Mahindra Ltd",
+          "sector": "Consumer Cyclical",
+          "weight_pct": 2.41
+        }
+      ],
+      "sector_allocation": {
+        "Basic Materials": 6.21,
+        "Consumer Cyclical": 17.14,
+        "Financial Services": 30.66,
+        "Real Estate": 1.04,
+        "Communication Services": 4.57,
+        "Energy": 3.96,
+        "Industrials": 11.95,
+        "Technology": 7.99,
+        "Consumer Defensive": 6.56,
+        "Healthcare": 7.85,
+        "Utilities": 2.07
+      },
+      "asset_allocation": {
+        "Stocks": 94.94,
+        "Bonds": 0.0,
+        "Cash": 5.04,
+        "Other": 0.02
+      },
+      "market_cap_allocation": {
+        "Giant": 47.74,
+        "Large": 40.04,
+        "Medium": 11.5,
+        "Small": 0.73,
+        "Micro": 0.0
+      },
+      "risk_metrics": {
+        "alpha": 0.18,
+        "beta": 0.93,
+        "sharpe_ratio": 0.5,
+        "standard_deviation": 14.53,
+        "r_squared": 97.68,
+        "information_ratio": -0.1,
+        "tracking_error": 2.45
+      },
+      "portfolio_stats": {
+        "avg_market_cap_cr": 2494.68
+      }
+    }
+  ],
+  "amc_info": {
+    "amc_name": "Canara Robeco Asset Management Co Ltd",
+    "factsheet_date": "19 Jun 2026",
+    "website": "www.canararobeco.com"
+  },
+  "pages_processed": 1,
+  "source_pdf": "Canara.pdf",
+  "amc_slug": "canara",
+  "extracted_at": "2026-06-19T17:24:31"
+}

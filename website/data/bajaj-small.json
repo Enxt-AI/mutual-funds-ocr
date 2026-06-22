@@ -1,0 +1,130 @@
+{
+  "schemes": [
+    {
+      "fund_name": "Bajaj Finserv Small Cap Fund Direct Growth",
+      "category": "Category_INCA000054",
+      "investment_objective": "The objective of the Scheme is to generate long term capital appreciation by investing in equity and equity related securities of small cap companies.",
+      "benchmark": "Nifty Smallcap 250 TR INR",
+      "inception_date": "18/07/2025",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "isin": "INF0QA701BN2",
+      "nav": 10.83,
+      "nav_date": "19/06/2026",
+      "aum_crores": 19826.72,
+      "expense_ratio": 0.52,
+      "exit_load": "0.00% - >0 years",
+      "min_initial_purchase": 500,
+      "min_additional_purchase": 100,
+      "fund_managers": [
+        {
+          "name": "Nimesh Chandan",
+          "managing_since": "18/07/2025"
+        }
+      ],
+      "returns": [
+        {
+          "period": "3M",
+          "fund_return": 24.94,
+          "benchmark_return": 20.18,
+          "category_avg_return": 20.64
+        },
+        {
+          "period": "6M",
+          "fund_return": 13.9,
+          "benchmark_return": 8.15,
+          "category_avg_return": 9.49
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "SJS Enterprises Ltd",
+          "sector": "Cyclical",
+          "weight_pct": 3.37
+        },
+        {
+          "name": "Rubicon Research Ltd",
+          "sector": "Healthcare",
+          "weight_pct": 3.35
+        },
+        {
+          "name": "Timken India Ltd",
+          "sector": "Industrials",
+          "weight_pct": 3.32
+        },
+        {
+          "name": "Angel One Ltd Ordinary Shares",
+          "sector": "Financial Services",
+          "weight_pct": 3.13
+        },
+        {
+          "name": "Schaeffler India Ltd",
+          "sector": "Industrials",
+          "weight_pct": 3.01
+        },
+        {
+          "name": "Welspun Corp Ltd",
+          "sector": "Industrials",
+          "weight_pct": 2.91
+        },
+        {
+          "name": "The Federal Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 2.86
+        },
+        {
+          "name": "Neuland Laboratories Ltd",
+          "sector": "Healthcare",
+          "weight_pct": 2.85
+        },
+        {
+          "name": "TD Power Systems Ltd",
+          "sector": "Industrials",
+          "weight_pct": 2.56
+        },
+        {
+          "name": "Schneider Electric...",
+          "sector": "Industrials",
+          "weight_pct": 2.21
+        }
+      ],
+      "sector_allocation": {
+        "Basic Materials": 9.54,
+        "Consumer Cyclical": 27.8,
+        "Financial Services": 13.19,
+        "Real Estate": 4.27,
+        "Communication Services": 1.5,
+        "Industrials": 28.75,
+        "Technology": 1.94,
+        "Consumer Defensive": 1.39,
+        "Healthcare": 10.13,
+        "Utilities": 1.49
+      },
+      "asset_allocation": {
+        "Stocks": 98.31,
+        "Bonds": 0.0,
+        "Cash": 1.69,
+        "Other": 0.0
+      },
+      "market_cap_allocation": {
+        "Giant": 0.0,
+        "Large": 7.92,
+        "Medium": 60.44,
+        "Small": 27.15,
+        "Micro": 4.49
+      },
+      "portfolio_stats": {
+        "avg_market_cap_cr": 165905.98
+      }
+    }
+  ],
+  "amc_info": {
+    "amc_name": "Bajaj Finserv Asset Management Limited",
+    "factsheet_date": "20 Jun 2026",
+    "website": "https://www.bajajamc.com/"
+  },
+  "pages_processed": 1,
+  "source_pdf": "Bajaj small.pdf",
+  "amc_slug": "bajaj-small",
+  "extracted_at": "2026-06-20T11:50:55"
+}

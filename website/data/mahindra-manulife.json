@@ -1,0 +1,152 @@
+{
+  "schemes": [
+    {
+      "fund_name": "Mahindra Manulife Small Cap Fund Direct Growth",
+      "category": "Small Cap",
+      "investment_objective": "The investment objective of the Scheme is to generate long term capital appreciation by investing in a diversified portfolio of equity & equity related securities of small cap companies, However, there can be no assurance that the investment objective of the Scheme will be achieved.",
+      "benchmark": "Nifty Smallcap 250 TR INR",
+      "inception_date": "14/12/2022",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "isin": "INF174V01BK7",
+      "nav": 22.19,
+      "nav_date": "19/06/2026",
+      "expense_ratio": 0.43,
+      "exit_load": "1.00% - 0-3 months; 0.00% - >3 months",
+      "min_initial_purchase": 1000,
+      "min_additional": 1000,
+      "morningstar_rating": 5,
+      "fund_managers": [
+        {
+          "name": "Krishna Sanghavi",
+          "managing_since": "24/10/2024"
+        }
+      ],
+      "returns": [
+        {
+          "period": "3M",
+          "fund_return": 20.43,
+          "benchmark_return": 20.18,
+          "category_avg_return": 16.91
+        },
+        {
+          "period": "6M",
+          "fund_return": 9.87,
+          "benchmark_return": 8.15,
+          "category_avg_return": 9.94
+        },
+        {
+          "period": "1Y",
+          "fund_return": 14.45,
+          "benchmark_return": 5.97,
+          "category_avg_return": 7.52
+        },
+        {
+          "period": "3Y",
+          "fund_return": 24.13,
+          "benchmark_return": 19.84,
+          "category_avg_return": 18.1
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "Jindal Saw Ltd",
+          "sector": "Basic Materials",
+          "weight_pct": 3.02
+        },
+        {
+          "name": "Arvind Ltd",
+          "sector": "Consumer Cyclical",
+          "weight_pct": 2.65
+        },
+        {
+          "name": "Neuland Laboratories Ltd",
+          "sector": "Healthcare",
+          "weight_pct": 2.56
+        },
+        {
+          "name": "Angel One Ltd Ordinary Shares",
+          "sector": "Financial Services",
+          "weight_pct": 2.49
+        },
+        {
+          "name": "Usha Martin Ltd",
+          "sector": "Basic Materials",
+          "weight_pct": 2.35
+        },
+        {
+          "name": "Ramco Cements Ltd",
+          "sector": "Basic Materials",
+          "weight_pct": 2.28
+        },
+        {
+          "name": "Vodafone Idea Ltd",
+          "sector": "Communication Services",
+          "weight_pct": 2.25
+        },
+        {
+          "name": "Aditya Birla Capital Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 2.22
+        },
+        {
+          "name": "Manappuram Finance Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 2.2
+        },
+        {
+          "name": "Voltamp Transformers Ltd",
+          "sector": "Industrials",
+          "weight_pct": 2.15
+        }
+      ],
+      "sector_allocation": {
+        "Basic Materials": 20.2,
+        "Consumer Cyclical": 21.92,
+        "Financial Services": 18.48,
+        "Real Estate": 0.64,
+        "Communication Services": 3.18,
+        "Industrials": 13.69,
+        "Technology": 4.76,
+        "Consumer Defensive": 2.86,
+        "Healthcare": 13.22,
+        "Utilities": 1.05
+      },
+      "asset_allocation": {
+        "Stocks": 94.32,
+        "Bonds": 0.0,
+        "Cash": 5.68,
+        "Other": 0.0
+      },
+      "market_cap_allocation": {
+        "Giant": 0.0,
+        "Large": 18.79,
+        "Medium": 53.7,
+        "Small": 18.23,
+        "Micro": 9.28
+      },
+      "risk_metrics": {
+        "alpha": 4.52,
+        "beta": 0.88,
+        "sharpe_ratio": 0.87,
+        "standard_deviation": 19.98,
+        "r_squared": 95.4,
+        "information_ratio": 0.74,
+        "tracking_error": 5.1
+      },
+      "portfolio_stats": {
+        "avg_market_cap_cr": 191489.09
+      },
+      "aum_crores": 45909.0
+    }
+  ],
+  "amc_info": {
+    "amc_name": "Mahindra Manulife Investment Management Pvt. Ltd.",
+    "factsheet_date": "20 Jun 2026",
+    "website": "www.mahindramanulife.com"
+  },
+  "pages_processed": 2,
+  "source_pdf": "Mahindra Manulife.pdf",
+  "amc_slug": "mahindra-manulife",
+  "extracted_at": "2026-06-20T11:05:51"
+}
