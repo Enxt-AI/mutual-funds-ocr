@@ -1,0 +1,145 @@
+{
+  "schemes": [
+    {
+      "fund_name": "Bandhan Flexi Cap Fund-Direct Plan-Growth",
+      "category": "Flexi Cap Fund",
+      "investment_objective": "The Scheme shall seek to generate long-term capital growth by investing in a diversified portfolio of equity and equity related instruments across market capitalization – large cap, mid cap and small cap, fixed income securities and Money Market Instruments.",
+      "benchmark": "BSE 500 India TR INR",
+      "inception_date": "01/01/2013",
+      "plans_offered": "Direct",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "isin": "INF194K01W62",
+      "nav": 230.78,
+      "nav_date": "18/06/2026",
+      "aum_crores": 72565.5,
+      "expense_ratio": 0.9,
+      "exit_load": "1.00% - 0-365 days; 0.00% - >365 days",
+      "min_initial_purchase": 1000,
+      "min_additional": 1000,
+      "morningstar_rating": 3,
+      "fund_managers": [
+        {
+          "name": "Viraj Kulkarni",
+          "managing_since": "24/01/2024"
+        }
+      ],
+      "returns": [
+        {
+          "period": "3M",
+          "fund_return": 5.49,
+          "benchmark_return": 5.91
+        },
+        {
+          "period": "6M",
+          "fund_return": -1.31,
+          "benchmark_return": -1.25
+        },
+        {
+          "period": "1Y",
+          "fund_return": 2.25,
+          "benchmark_return": 1.84
+        },
+        {
+          "period": "3Y",
+          "fund_return": 14.0,
+          "benchmark_return": 13.4
+        },
+        {
+          "period": "5Y",
+          "fund_return": 12.4,
+          "benchmark_return": 12.53
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "HDFC Bank Ltd",
+          "weight_pct": 8.11
+        },
+        {
+          "name": "ICICI Bank Ltd",
+          "weight_pct": 7.32
+        },
+        {
+          "name": "Reliance Industries Ltd",
+          "weight_pct": 4.37
+        },
+        {
+          "name": "Infosys Ltd",
+          "weight_pct": 3.68
+        },
+        {
+          "name": "Axis Bank Ltd",
+          "weight_pct": 3.63
+        },
+        {
+          "name": "Kotak Mahindra Bank Ltd",
+          "weight_pct": 3.55
+        },
+        {
+          "name": "Bharti Airtel Ltd",
+          "weight_pct": 3.53
+        },
+        {
+          "name": "Tata Consultancy Services Ltd",
+          "weight_pct": 3.11
+        },
+        {
+          "name": "ITC Ltd",
+          "weight_pct": 2.87
+        },
+        {
+          "name": "Bajaj Finserv Ltd",
+          "weight_pct": 2.7
+        }
+      ],
+      "sector_allocation": {
+        "Cyclical": 57.42,
+        "Basic Materials": 6.79,
+        "Consumer Cyclical": 13.05,
+        "Financial Services": 37.48,
+        "Real Estate": 0.08,
+        "Sensitive": 27.87,
+        "Communication Services": 5.08,
+        "Energy": 7.61,
+        "Industrials": 4.77,
+        "Technology": 10.4,
+        "Defensive": 14.72,
+        "Consumer Defensive": 6.85,
+        "Healthcare": 6.84,
+        "Utilities": 1.03
+      },
+      "asset_allocation": {
+        "Stocks": 96.35,
+        "Bonds": 0.66,
+        "Cash": 2.99,
+        "Other": 0.0
+      },
+      "market_cap_allocation": {
+        "Giant": 53.82,
+        "Large": 28.07,
+        "Medium": 14.94,
+        "Small": 2.68,
+        "Micro": 0.48
+      },
+      "risk_metrics": {
+        "alpha": 1.31,
+        "beta": 0.88,
+        "sharpe_ratio": 0.57,
+        "standard_deviation": 13.88,
+        "r_squared": 95.57,
+        "information_ratio": 0.2,
+        "tracking_error": 3.45
+      }
+    }
+  ],
+  "amc_info": {
+    "amc_name": "Bandhan Asset Management Company Limited",
+    "factsheet_date": "19 Jun 2026",
+    "website": "www.bandhanmutual.com"
+  },
+  "pages_processed": 1,
+  "source_pdf": "Bandhan.pdf",
+  "amc_slug": "bandhan",
+  "extracted_at": "2026-06-19T17:16:33"
+}

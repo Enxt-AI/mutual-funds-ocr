@@ -1,0 +1,130 @@
+{
+  "schemes": [
+    {
+      "fund_name": "360 ONE Flexicap Fund Direct Growth",
+      "category": "Flexi Cap Fund",
+      "investment_objective": "The investment objective of the scheme is to generate long-term capital appreciation by primarily investing in equity and equity related securities across the entire market capitalization range and investing the remaining portion in debt and money market instruments.",
+      "benchmark": "BSE 500 India TR INR",
+      "inception_date": "30/06/2023",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "isin": "INF579M01AS1",
+      "nav": 16.28,
+      "nav_date": "18/06/2026",
+      "aum_crores": 20420.63,
+      "expense_ratio": 0.51,
+      "exit_load": "1.00% - 0-365 days; 0.00% - >365 days",
+      "min_initial_purchase": 1000,
+      "min_additional": 1000,
+      "fund_managers": [
+        {
+          "name": "Mayur Patel",
+          "managing_since": "30/06/2023"
+        }
+      ],
+      "returns": [
+        {
+          "period": "3M",
+          "fund_return": 11.31,
+          "benchmark_return": 5.91
+        },
+        {
+          "period": "6M",
+          "fund_return": 4.34,
+          "benchmark_return": -1.25
+        },
+        {
+          "period": "1Y",
+          "fund_return": 6.5,
+          "benchmark_return": 1.84
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "GE Vernova T&D India Ltd",
+          "sector": "Industrials",
+          "weight_pct": 5.26
+        },
+        {
+          "name": "ICICI Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 4.84
+        },
+        {
+          "name": "Axis Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 3.87
+        },
+        {
+          "name": "Indus Towers Ltd Ordinary...",
+          "sector": "Communication Services",
+          "weight_pct": 3.85
+        },
+        {
+          "name": "Kotak Mahindra Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 3.79
+        },
+        {
+          "name": "Premier Energies Ltd",
+          "sector": "Industrials",
+          "weight_pct": 3.41
+        },
+        {
+          "name": "Cholamandalam Investment and...",
+          "sector": "Financial Services",
+          "weight_pct": 3.36
+        },
+        {
+          "name": "Eternal Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 3.18
+        },
+        {
+          "name": "Tata Motors Ltd",
+          "sector": "Consumer Cyclical",
+          "weight_pct": 2.99
+        },
+        {
+          "name": "Bharti Airtel Ltd",
+          "sector": "Communication Services",
+          "weight_pct": 2.89
+        }
+      ],
+      "sector_allocation": {
+        "Basic Materials": 3.98,
+        "Consumer Cyclical": 17.38,
+        "Financial Services": 30.81,
+        "Communication Services": 6.95,
+        "Energy": 2.97,
+        "Industrials": 13.39,
+        "Technology": 9.43,
+        "Consumer Defensive": 6.43,
+        "Healthcare": 7.16,
+        "Utilities": 1.5
+      },
+      "asset_allocation": {
+        "Stocks": 97.82,
+        "Bonds": 0.0,
+        "Cash": 2.18,
+        "Other": 0.0
+      },
+      "market_cap_allocation": {
+        "Giant": 21.84,
+        "Large": 45.15,
+        "Medium": 24.72,
+        "Small": 5.99,
+        "Micro": 2.3
+      }
+    }
+  ],
+  "amc_info": {
+    "amc_name": "360 ONE Asset Management Limited",
+    "factsheet_date": "19 Jun 2026",
+    "website": "https://www.360.one/asset"
+  },
+  "pages_processed": 1,
+  "source_pdf": "360.pdf",
+  "amc_slug": "360",
+  "extracted_at": "2026-06-19T18:06:40"
+}

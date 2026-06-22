@@ -1,0 +1,156 @@
+{
+  "schemes": [
+    {
+      "fund_name": "Franklin India Flexi Cap Fund Direct Growth",
+      "category": "Flexi Cap Fund",
+      "investment_objective": "The investment objective of this scheme is to provide growth of capital plus regular dividend through a diversified portfolio of equities, fixed income securities and money market instruments.",
+      "benchmark": "BSE 500 India TR INR",
+      "inception_date": "01/01/2013",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "isin": "INF090I01FK3",
+      "nav": 1786.42,
+      "nav_date": "18/06/2026",
+      "expense_ratio": 0.76,
+      "exit_load": "1.00% - 0-1 years; 0.00% - >1 years",
+      "min_initial_purchase": 5000,
+      "min_additional_purchase": 1000,
+      "morningstar_rating": 3,
+      "fund_managers": [
+        {
+          "name": "R. Janakiraman",
+          "managing_since": "01/02/2011"
+        }
+      ],
+      "returns": [
+        {
+          "period": "3M",
+          "fund_return": 3.69,
+          "benchmark_return": 5.91,
+          "category_avg_return": 7.59
+        },
+        {
+          "period": "6M",
+          "fund_return": -3.17,
+          "benchmark_return": -1.25,
+          "category_avg_return": -0.8
+        },
+        {
+          "period": "1Y",
+          "fund_return": -1.5,
+          "benchmark_return": 1.84,
+          "category_avg_return": 1.49
+        },
+        {
+          "period": "3Y",
+          "fund_return": 15.36,
+          "benchmark_return": 13.4,
+          "category_avg_return": 13.66
+        },
+        {
+          "period": "5Y",
+          "fund_return": 14.74,
+          "benchmark_return": 12.53,
+          "category_avg_return": 12.5
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "HDFC Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 7.4
+        },
+        {
+          "name": "ICICI Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 5.94
+        },
+        {
+          "name": "Axis Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 5.45
+        },
+        {
+          "name": "Larsen & Toubro Ltd",
+          "sector": "Industrials",
+          "weight_pct": 4.01
+        },
+        {
+          "name": "State Bank of India",
+          "sector": "Financial Services",
+          "weight_pct": 3.34
+        },
+        {
+          "name": "Bharti Airtel Ltd",
+          "sector": "Communication Services",
+          "weight_pct": 3.29
+        },
+        {
+          "name": "Reliance Industries Ltd",
+          "sector": "Energy",
+          "weight_pct": 3.16
+        },
+        {
+          "name": "Kotak Mahindra Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 3.04
+        },
+        {
+          "name": "Infosys Ltd",
+          "sector": "Technology",
+          "weight_pct": 2.87
+        },
+        {
+          "name": "Mahindra & Mahindra Ltd",
+          "sector": "Consumer Cyclical",
+          "weight_pct": 2.77
+        }
+      ],
+      "sector_allocation": {
+        "Basic Materials": 9.49,
+        "Consumer Cyclical": 9.66,
+        "Financial Services": 31.28,
+        "Real Estate": 1.56,
+        "Communication Services": 3.46,
+        "Energy": 4.69,
+        "Industrials": 15.56,
+        "Technology": 7.31,
+        "Consumer Defensive": 5.41,
+        "Healthcare": 6.45,
+        "Utilities": 5.14
+      },
+      "asset_allocation": {
+        "Stocks": 95.21,
+        "Bonds": 0.0,
+        "Cash": 4.79,
+        "Other": 0.0
+      },
+      "market_cap_allocation": {
+        "Giant": 45.45,
+        "Large": 40.4,
+        "Medium": 11.6,
+        "Small": 2.4,
+        "Micro": 0.16
+      },
+      "risk_metrics": {
+        "alpha": 2.11,
+        "beta": 0.92,
+        "r_squared": 96.42,
+        "information_ratio": 0.62,
+        "tracking_error": 2.99,
+        "sharpe_ratio": 0.63,
+        "standard_deviation": 14.47
+      },
+      "aum_crores": 187967.08
+    }
+  ],
+  "amc_info": {
+    "amc_name": "Franklin Templeton Asset Mgmt(IND)Pvt Ltd",
+    "factsheet_date": "19 Jun 2026",
+    "website": "https://www.franklintempletonindia.com"
+  },
+  "pages_processed": 2,
+  "source_pdf": "Franklin.pdf",
+  "amc_slug": "franklin",
+  "extracted_at": "2026-06-19T16:59:27"
+}

@@ -1,0 +1,133 @@
+{
+  "schemes": [
+    {
+      "fund_name": "Mirae Asset Small Cap Fund Direct Growth",
+      "category": "Small Cap",
+      "investment_objective": "The investment objective of the scheme is to generate capital appreciation by investing predominantly in small cap stocks. From time to time, the fund manager will also seek participation in other equity and equity related securities to achieve optimal portfolio construction. There is no assurance that the investment objective of the Scheme will be achieved.",
+      "benchmark": "Nifty Smallcap 250 TR INR",
+      "inception_date": "31/01/2025",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "isin": "INF769K01NJ4",
+      "nav": 12.19,
+      "nav_date": "19/06/2026",
+      "aum_crores": 43808.22,
+      "expense_ratio": 0.32,
+      "exit_load": "1.00% - 0-365 days; 0.00% - >365 days",
+      "min_lumpsum": 5000,
+      "min_additional": 1000,
+      "fund_managers": [
+        {
+          "name": "Varun Goel",
+          "managing_since": "31/01/2025"
+        }
+      ],
+      "returns": [
+        {
+          "period": "3M",
+          "fund_return": 14.59,
+          "benchmark_return": 20.18,
+          "category_avg_return": 20.64
+        },
+        {
+          "period": "6M",
+          "fund_return": 4.89,
+          "benchmark_return": 8.15,
+          "category_avg_return": 9.49
+        },
+        {
+          "period": "1Y",
+          "fund_return": 11.03,
+          "benchmark_return": 5.97,
+          "category_avg_return": 9.94
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "Welspun Corp Ltd",
+          "sector": "Basic Materials",
+          "weight_pct": 3.02
+        },
+        {
+          "name": "Kirloskar Oil Engines Ltd",
+          "sector": "Industrials",
+          "weight_pct": 2.93
+        },
+        {
+          "name": "Cholamandalam Financial...",
+          "sector": "Financial Services",
+          "weight_pct": 2.57
+        },
+        {
+          "name": "Karur Vysya Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 2.53
+        },
+        {
+          "name": "Krishna Institute of Medical...",
+          "sector": "Healthcare",
+          "weight_pct": 2.24
+        },
+        {
+          "name": "Voltamp Transformers Ltd",
+          "sector": "Industrials",
+          "weight_pct": 2.22
+        },
+        {
+          "name": "Dr. Lal PathLabs Ltd",
+          "sector": "Healthcare",
+          "weight_pct": 2.19
+        },
+        {
+          "name": "Anthem Biosciences Ltd",
+          "sector": "Healthcare",
+          "weight_pct": 2.14
+        },
+        {
+          "name": "Timken India Ltd",
+          "sector": "Industrials",
+          "weight_pct": 2.11
+        },
+        {
+          "name": "Neuland Laboratories Ltd",
+          "sector": "Healthcare",
+          "weight_pct": 2.09
+        }
+      ],
+      "sector_allocation": {
+        "Basic Materials": 12.93,
+        "Consumer Cyclical": 13.59,
+        "Financial Services": 21.39,
+        "Real Estate": 2.53,
+        "Communication Services": 0.71,
+        "Energy": 0.73,
+        "Industrials": 20.43,
+        "Technology": 9.23,
+        "Consumer Defensive": 0.7,
+        "Healthcare": 17.75
+      },
+      "asset_allocation": {
+        "Stocks": 99.24,
+        "Bonds": 0.0,
+        "Cash": 0.76,
+        "Other": 0.0
+      },
+      "market_cap_allocation": {
+        "Giant": 1.55,
+        "Large": 11.21,
+        "Medium": 65.56,
+        "Small": 20.86,
+        "Micro": 0.83
+      }
+    }
+  ],
+  "amc_info": {
+    "amc_name": "Mirae Asset Investment Managers (India) Private Limited",
+    "factsheet_date": "20 Jun 2026",
+    "website": "www.miraeassetmf.co.in"
+  },
+  "pages_processed": 1,
+  "source_pdf": "Mirae small.pdf",
+  "amc_slug": "mirae-small",
+  "extracted_at": "2026-06-20T11:42:30"
+}

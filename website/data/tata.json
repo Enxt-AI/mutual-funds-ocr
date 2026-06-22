@@ -1,0 +1,133 @@
+{
+  "schemes": [
+    {
+      "fund_name": "Tata Flexi Cap Fund Direct Growth",
+      "category": "Flexi Cap Fund",
+      "investment_objective": "The investment objective of the Scheme is to generate capital appreciation over medium to long term.",
+      "benchmark": "BSE 500 India TR INR",
+      "inception_date": "06/09/2018",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "isin": "INF277K015K0",
+      "nav": 26.49,
+      "nav_date": "18/06/2026",
+      "aum_crores": 36296.38,
+      "expense_ratio": 0.59,
+      "exit_load": "0.50% - 0-30 days; 0.00% - >30 days",
+      "min_lumpsum": 5000,
+      "min_additional": 1000,
+      "morningstar_rating": 3,
+      "fund_managers": [
+        {
+          "name": "Aditya Bagul",
+          "managing_since": "03/10/2023"
+        }
+      ],
+      "returns": [
+        {
+          "period": "3M",
+          "fund_return": 3.0,
+          "benchmark_return": 5.91
+        },
+        {
+          "period": "6M",
+          "fund_return": -3.68,
+          "benchmark_return": -1.25
+        },
+        {
+          "period": "1Y",
+          "fund_return": -1.1,
+          "benchmark_return": 1.84
+        },
+        {
+          "period": "3Y",
+          "fund_return": 13.39,
+          "benchmark_return": 13.4
+        },
+        {
+          "period": "5Y",
+          "fund_return": 11.79,
+          "benchmark_return": 12.53
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "HDFC Bank Ltd",
+          "weight_pct": 5.75
+        },
+        {
+          "name": "ICICI Bank Ltd",
+          "weight_pct": 5.49
+        },
+        {
+          "name": "Reliance Industries Ltd",
+          "weight_pct": 4.31
+        },
+        {
+          "name": "Axis Bank Ltd",
+          "weight_pct": 3.63
+        },
+        {
+          "name": "Bharti Airtel Ltd",
+          "weight_pct": 3.56
+        },
+        {
+          "name": "Larsen & Toubro Ltd",
+          "weight_pct": 2.75
+        },
+        {
+          "name": "NTPC Ltd",
+          "weight_pct": 2.61
+        },
+        {
+          "name": "Maruti Suzuki India Ltd",
+          "weight_pct": 2.38
+        },
+        {
+          "name": "Ambuja Cements Ltd",
+          "weight_pct": 2.33
+        },
+        {
+          "name": "Samvardhana Motherson...",
+          "weight_pct": 2.08
+        }
+      ],
+      "sector_allocation": {
+        "Cyclical": 61.26,
+        "Sensitive": 24.56,
+        "Defensive": 14.18
+      },
+      "asset_allocation": {
+        "Stocks": 95.3,
+        "Bonds": 0.0,
+        "Cash": 4.7,
+        "Other": 0.0
+      },
+      "market_cap_allocation": {
+        "Giant": 41.42,
+        "Large": 33.64,
+        "Medium": 20.64,
+        "Small": 2.61,
+        "Micro": 1.68
+      },
+      "risk_metrics": {
+        "alpha": 1.49,
+        "beta": 0.86,
+        "sharpe_ratio": 0.58,
+        "standard_deviation": 13.73,
+        "r_squared": 93.44,
+        "information_ratio": 0.19,
+        "tracking_error": 4.11
+      }
+    }
+  ],
+  "amc_info": {
+    "amc_name": "Tata Asset Management Pvt Ltd",
+    "factsheet_date": "May 2026",
+    "website": "www.tatamutualfund.com"
+  },
+  "pages_processed": 1,
+  "source_pdf": "Tata.pdf",
+  "amc_slug": "tata",
+  "extracted_at": "2026-06-19T17:22:27"
+}

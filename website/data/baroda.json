@@ -1,0 +1,153 @@
+{
+  "schemes": [
+    {
+      "fund_name": "Baroda BNP Paribas Flexi Cap Fund Direct Growth",
+      "category": "Flexi Cap Fund",
+      "investment_objective": "The Scheme seeks to generate long term capital appreciation by investing in a dynamic mix of equity and equity related instruments across market capitalizations. However, there can be no assurance that the investment objectives of the Scheme will be realized. The Scheme does not guarantee/indicate any returns.",
+      "benchmark": "BSE 500 India TR INR",
+      "inception_date": "22/08/2022",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "isin": "INF251K01QZ2",
+      "nav": 16.6,
+      "nav_date": "18/06/2026",
+      "expense_ratio": 0.85,
+      "exit_load": "1.00% - 0-12 months, 0.00% - >12 months",
+      "min_lumpsum": 5000,
+      "min_additional": 1000,
+      "morningstar_rating": 3,
+      "fund_managers": [
+        {
+          "name": "Sanjay Chawla",
+          "managing_since": "22/08/2022"
+        },
+        {
+          "name": "Kirtan Mehta",
+          "managing_since": "22/08/2022"
+        }
+      ],
+      "returns": [
+        {
+          "period": "3M",
+          "fund_return": 7.67,
+          "benchmark_return": 5.91,
+          "category_avg_return": 6.89
+        },
+        {
+          "period": "6M",
+          "fund_return": 2.04,
+          "benchmark_return": -1.25,
+          "category_avg_return": -0.31
+        },
+        {
+          "period": "1Y",
+          "fund_return": 3.59,
+          "benchmark_return": 1.84,
+          "category_avg_return": 2.18
+        },
+        {
+          "period": "3Y",
+          "fund_return": 15.22,
+          "benchmark_return": 13.4,
+          "category_avg_return": 13.84
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "Hindalco Industries Ltd",
+          "sector": "Cyclical",
+          "weight_pct": 3.69
+        },
+        {
+          "name": "The Federal Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 3.43
+        },
+        {
+          "name": "Bharti Airtel Ltd",
+          "sector": "Communication Services",
+          "weight_pct": 3.37
+        },
+        {
+          "name": "HDFC Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 3.35
+        },
+        {
+          "name": "Larsen & Toubro Ltd",
+          "sector": "Industrials",
+          "weight_pct": 3.34
+        },
+        {
+          "name": "IndusInd Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 3.18
+        },
+        {
+          "name": "Bharat Heavy Electricals Ltd",
+          "sector": "Industrials",
+          "weight_pct": 3.16
+        },
+        {
+          "name": "Reliance Industries Ltd",
+          "sector": "Energy",
+          "weight_pct": 3.03
+        },
+        {
+          "name": "Solar Industries India Ltd",
+          "sector": "Industrials",
+          "weight_pct": 2.99
+        },
+        {
+          "name": "Jindal Steel Ltd",
+          "sector": "Basic Materials",
+          "weight_pct": 2.97
+        }
+      ],
+      "sector_allocation": {
+        "Basic Materials": 13.03,
+        "Consumer Cyclical": 6.78,
+        "Financial Services": 25.16,
+        "Communication Services": 3.52,
+        "Energy": 4.94,
+        "Industrials": 19.14,
+        "Technology": 12.15,
+        "Consumer Defensive": 3.92,
+        "Healthcare": 9.84,
+        "Utilities": 1.52
+      },
+      "asset_allocation": {
+        "Stocks": 95.62,
+        "Bonds": 1.21,
+        "Cash": 3.17,
+        "Other": 0.0
+      },
+      "market_cap_allocation": {
+        "Giant": 29.51,
+        "Large": 57.16,
+        "Medium": 10.2,
+        "Small": 3.13,
+        "Micro": 0.0
+      },
+      "risk_metrics": {
+        "alpha": 2.21,
+        "beta": 1.0,
+        "r_squared": 93.57,
+        "information_ratio": 0.6,
+        "tracking_error": 4.03,
+        "sharpe_ratio": 0.61,
+        "standard_deviation": 15.9
+      },
+      "aum_crores": 12212.53
+    }
+  ],
+  "amc_info": {
+    "amc_name": "Baroda BNP Paribas Asset Management India Pvt. Ltd.",
+    "factsheet_date": "19 Jun 2026",
+    "website": "https://www.barodabnpparibasmf.in/"
+  },
+  "pages_processed": 2,
+  "source_pdf": "Baroda.pdf",
+  "amc_slug": "baroda",
+  "extracted_at": "2026-06-19T17:02:45"
+}

@@ -1,0 +1,156 @@
+{
+  "schemes": [
+    {
+      "fund_name": "UTI Flexi Cap Fund - Growth Option - Direct",
+      "category": "Flexi Cap Fund",
+      "investment_objective": "The primary objective of the scheme is to generate long term capital appreciation by investing predominantly in equity and equity related securities of companies in a flexible manner across the market capitalization spectrum. However, there can be no assurance or guarantee that the investment objective of the scheme would be achieved.",
+      "benchmark": "Nifty 500 TR INR",
+      "inception_date": "01/01/2013",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "isin": "INF789F01TC4",
+      "nav": 332.18,
+      "nav_date": "18/06/2026",
+      "aum_crores": 222483.83,
+      "expense_ratio": 1.0,
+      "exit_load": "1.00% - 0-1 years; 0.00% - >1 years",
+      "min_lumpsum": 5000,
+      "min_additional": 1000,
+      "morningstar_rating": 2,
+      "fund_managers": [
+        {
+          "name": "Ajay Tyagi",
+          "managing_since": "11/01/2016"
+        }
+      ],
+      "returns": [
+        {
+          "period": "3M",
+          "fund_return": 8.67,
+          "benchmark_return": 5.91,
+          "category_avg_return": 6.89
+        },
+        {
+          "period": "6M",
+          "fund_return": -3.64,
+          "benchmark_return": -1.25,
+          "category_avg_return": -0.31
+        },
+        {
+          "period": "1Y",
+          "fund_return": -3.84,
+          "benchmark_return": 1.84,
+          "category_avg_return": 2.18
+        },
+        {
+          "period": "3Y",
+          "fund_return": 8.29,
+          "benchmark_return": 13.4,
+          "category_avg_return": 13.84
+        },
+        {
+          "period": "5Y",
+          "fund_return": 6.89,
+          "benchmark_return": 12.53,
+          "category_avg_return": 12.68
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "ICICI Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 6.18
+        },
+        {
+          "name": "Bajaj Finance Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 6.13
+        },
+        {
+          "name": "Eternal Ltd",
+          "sector": "Consumer Cyclical",
+          "weight_pct": 5.7
+        },
+        {
+          "name": "HDFC Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 5.18
+        },
+        {
+          "name": "Titan Co Ltd",
+          "sector": "Consumer Cyclical",
+          "weight_pct": 3.89
+        },
+        {
+          "name": "Kotak Mahindra Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 3.59
+        },
+        {
+          "name": "Avenue Supermarts Ltd",
+          "sector": "Consumer Cyclical",
+          "weight_pct": 3.48
+        },
+        {
+          "name": "Bharti Airtel Ltd",
+          "sector": "Communication Services",
+          "weight_pct": 3.44
+        },
+        {
+          "name": "Coforge Ltd",
+          "sector": "Technology",
+          "weight_pct": 3.41
+        },
+        {
+          "name": "Persistent Systems Ltd",
+          "sector": "Technology",
+          "weight_pct": 3.2
+        }
+      ],
+      "sector_allocation": {
+        "Basic Materials": 6.14,
+        "Consumer Cyclical": 23.02,
+        "Financial Services": 23.51,
+        "Communication Services": 8.49,
+        "Industrials": 8.03,
+        "Technology": 12.79,
+        "Consumer Defensive": 5.94,
+        "Healthcare": 12.08
+      },
+      "asset_allocation": {
+        "Stocks": 97.12,
+        "Bonds": 0.23,
+        "Cash": 2.65,
+        "Other": 0.0
+      },
+      "market_cap_allocation": {
+        "Giant": 33.97,
+        "Large": 44.42,
+        "Medium": 18.99,
+        "Small": 1.76,
+        "Micro": 0.86
+      },
+      "risk_metrics": {
+        "alpha": -4.2,
+        "beta": 0.86,
+        "sharpe_ratio": 0.16,
+        "standard_deviation": 14.31,
+        "r_squared": 86.4,
+        "information_ratio": -0.98,
+        "tracking_error": 5.67
+      },
+      "portfolio_stats": {
+        "avg_market_cap_cr": 1510.63
+      }
+    }
+  ],
+  "amc_info": {
+    "amc_name": "UTI Asset Management Co Ltd",
+    "factsheet_date": "19 Jun 2026",
+    "website": "https://www.utiwms.com"
+  },
+  "pages_processed": 1,
+  "source_pdf": "uti.pdf",
+  "amc_slug": "uti",
+  "extracted_at": "2026-06-19T17:46:37"
+}

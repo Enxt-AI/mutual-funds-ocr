@@ -1,0 +1,127 @@
+{
+  "schemes": [
+    {
+      "fund_name": "Helios Flexi Cap Fund Direct Growth",
+      "category": "Flexi Cap Fund",
+      "investment_objective": "To generate long-term capital appreciation by investing predominantly in equity & equity related instruments across market capitalization. However, there is no assurance or guarantee that the investment objective of the Scheme will be achieved.",
+      "benchmark": "BSE 500 India TR INR",
+      "inception_date": "13/11/2023",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "isin": "INFOR8701046",
+      "nav": 15.77,
+      "nav_date": "18/06/2026",
+      "aum_crores": 70944.09,
+      "expense_ratio": 0.54,
+      "exit_load": "1.00% - 0-3 months; 0.00% - >3 months",
+      "min_lumpsum": 5000,
+      "min_additional": 1000,
+      "morningstar_rating": "Not Rated",
+      "fund_managers": [
+        {
+          "name": "Alok Bahl",
+          "managing_since": "13/11/2023"
+        }
+      ],
+      "returns": [
+        {
+          "period": "3M",
+          "fund_return": 10.51,
+          "benchmark_return": 5.91,
+          "category_avg_return": 7.59
+        },
+        {
+          "period": "6M",
+          "fund_return": 3.14,
+          "benchmark_return": -1.25,
+          "category_avg_return": -0.8
+        },
+        {
+          "period": "1Y",
+          "fund_return": 10.28,
+          "benchmark_return": 1.84,
+          "category_avg_return": 1.49
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "Adani Ports & Special...",
+          "sector": "Cyclical",
+          "weight_pct": 4.56
+        },
+        {
+          "name": "Eternal Ltd",
+          "sector": "Consumer Cyclical",
+          "weight_pct": 3.73
+        },
+        {
+          "name": "ICICI Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 3.59
+        },
+        {
+          "name": "Reliance Industries Ltd",
+          "sector": "Energy",
+          "weight_pct": 3.31
+        },
+        {
+          "name": "HDFC Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 3.25
+        },
+        {
+          "name": "Bharti Airtel Ltd",
+          "sector": "Communication Services",
+          "weight_pct": 2.66
+        },
+        {
+          "name": "Larsen & Toubro Ltd",
+          "sector": "Industrials",
+          "weight_pct": 2.64
+        },
+        {
+          "name": "State Bank of India",
+          "sector": "Financial Services",
+          "weight_pct": 2.64
+        },
+        {
+          "name": "One97 Communications Ltd",
+          "sector": "Technology",
+          "weight_pct": 2.6
+        },
+        {
+          "name": "Bharat Electronics Ltd",
+          "sector": "Industrials",
+          "weight_pct": 2.53
+        }
+      ],
+      "sector_allocation": {
+        "Cyclical": 52.59,
+        "Sensitive": 34.4,
+        "Defensive": 13.01
+      },
+      "asset_allocation": {
+        "Stocks": 98.41,
+        "Bonds": 0.0,
+        "Cash": 1.59,
+        "Other": 0.0
+      },
+      "market_cap_allocation": {
+        "Giant": 32.17,
+        "Large": 47.41,
+        "Medium": 16.4,
+        "Small": 4.01,
+        "Micro": 0.0
+      }
+    }
+  ],
+  "amc_info": {
+    "amc_name": "Helios Capital Asset Management (India) Private Limited",
+    "factsheet_date": "19 Jun 2026",
+    "website": "www.heliosmf.in"
+  },
+  "pages_processed": 1,
+  "source_pdf": "Helios.pdf",
+  "amc_slug": "helios",
+  "extracted_at": "2026-06-19T17:57:13"
+}

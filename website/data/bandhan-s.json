@@ -1,0 +1,158 @@
+{
+  "schemes": [
+    {
+      "fund_name": "Bandhan Small Cap Fund Direct Growth",
+      "category": "Small Cap",
+      "investment_objective": "The Fund focuses on building a diversified portfolio within the small cap segment. The fund follows a 3-pronged stock selection approach of Quality, Growth, and Reasonable Valuation.",
+      "benchmark": "Nifty Smallcap 250 TR INR",
+      "inception_date": "26/02/2020",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "nav": 54.45,
+      "nav_date": "19/06/2026",
+      "aum_crores": 272191.33,
+      "expense_ratio": 0.33,
+      "exit_load": "1.00% - 0-1 years; 0.00% - >1 years",
+      "min_initial_purchase": 1000,
+      "min_additional_purchase": 1000,
+      "morningstar_rating": 5,
+      "fund_managers": [
+        {
+          "name": "Manish Gunwani",
+          "managing_since": "28/01/2023"
+        }
+      ],
+      "returns": [
+        {
+          "period": "3M",
+          "fund_return": 17.49,
+          "benchmark_return": 20.18,
+          "category_avg_return": 16.91
+        },
+        {
+          "period": "6M",
+          "fund_return": 7.61,
+          "benchmark_return": 8.15,
+          "category_avg_return": 9.94
+        },
+        {
+          "period": "1Y",
+          "fund_return": 9.68,
+          "benchmark_return": 5.97,
+          "category_avg_return": 7.52
+        },
+        {
+          "period": "3Y",
+          "fund_return": 29.16,
+          "benchmark_return": 19.84,
+          "category_avg_return": 18.1
+        },
+        {
+          "period": "5Y",
+          "fund_return": 22.3,
+          "benchmark_return": 17.39,
+          "category_avg_return": 17.99
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "Sobha Ltd",
+          "sector": "Real Estate",
+          "weight_pct": 3.18
+        },
+        {
+          "name": "REC Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 3.1
+        },
+        {
+          "name": "State Bank of India",
+          "sector": "Financial Services",
+          "weight_pct": 2.02
+        },
+        {
+          "name": "LT Foods Ltd",
+          "sector": "Consumer Cyclical",
+          "weight_pct": 1.88
+        },
+        {
+          "name": "Arvind Ltd",
+          "sector": "Consumer Cyclical",
+          "weight_pct": 1.72
+        },
+        {
+          "name": "The South Indian Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 1.66
+        },
+        {
+          "name": "PNB Housing Finance Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 1.53
+        },
+        {
+          "name": "Jubilant Pharmova Ltd",
+          "sector": "Healthcare",
+          "weight_pct": 1.31
+        },
+        {
+          "name": "Karnataka Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 1.23
+        },
+        {
+          "name": "Cholamandalam Financial...",
+          "sector": "Financial Services",
+          "weight_pct": 1.21
+        }
+      ],
+      "sector_allocation": {
+        "Basic Materials": 12.24,
+        "Consumer Cyclical": 13.41,
+        "Financial Services": 24.95,
+        "Real Estate": 8.7,
+        "Communication Services": 2.29,
+        "Energy": 1.36,
+        "Industrials": 12.15,
+        "Technology": 8.08,
+        "Consumer Defensive": 4.47,
+        "Healthcare": 11.03,
+        "Utilities": 1.34
+      },
+      "asset_allocation": {
+        "Stocks": 89.71,
+        "Bonds": 0.0,
+        "Cash": 10.29,
+        "Other": 0.0
+      },
+      "market_cap_allocation": {
+        "Giant": 3.84,
+        "Large": 13.44,
+        "Medium": 40.34,
+        "Small": 28.92,
+        "Micro": 13.46
+      },
+      "risk_metrics": {
+        "alpha": 9.06,
+        "beta": 0.91,
+        "r_squared": 95.22,
+        "information_ratio": 2.01,
+        "tracking_error": 4.95,
+        "sharpe_ratio": 1.08,
+        "standard_deviation": 20.89
+      },
+      "portfolio_stats": {
+        "avg_market_cap_cr": 159394.63
+      }
+    }
+  ],
+  "amc_info": {
+    "amc_name": "Bandhan Asset Management Company Limited",
+    "factsheet_date": "20 Jun 2026",
+    "website": "www.bandhanmutual.com"
+  },
+  "pages_processed": 1,
+  "source_pdf": "Bandhan S.pdf",
+  "amc_slug": "bandhan-s",
+  "extracted_at": "2026-06-20T10:59:53"
+}

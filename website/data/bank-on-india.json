@@ -1,0 +1,159 @@
+{
+  "schemes": [
+    {
+      "fund_name": "Bank of India Small Cap Fund Direct Growth",
+      "category": "Small Cap",
+      "investment_objective": "The investment objective of the scheme is to generate long term capital appreciation by investing predominantly in equity and equity-related securities of small cap companies. However, there can be no assurance that the investment objectives of the Scheme will be realized.",
+      "benchmark": "Nifty Smallcap 250 TR INR",
+      "inception_date": "19/12/2018",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "isin": "INF761K01EP7",
+      "nav": 61.11,
+      "nav_date": "19/06/2026",
+      "aum_crores": 23184.11,
+      "expense_ratio": 0.43,
+      "exit_load": "1.00% - 0-1 years; 0.00% - >1 years",
+      "min_lumpsum": 5000,
+      "min_additional": 1000,
+      "morningstar_rating": 4,
+      "fund_managers": [
+        {
+          "name": "Alok Singh",
+          "managing_since": "01/10/2024"
+        }
+      ],
+      "returns": [
+        {
+          "period": "3M",
+          "fund_return": 31.93,
+          "benchmark_return": 20.18,
+          "category_avg_return": 16.91
+        },
+        {
+          "period": "6M",
+          "fund_return": 22.74,
+          "benchmark_return": 8.15,
+          "category_avg_return": 9.94
+        },
+        {
+          "period": "1Y",
+          "fund_return": 21.61,
+          "benchmark_return": 5.97,
+          "category_avg_return": 7.52
+        },
+        {
+          "period": "3Y",
+          "fund_return": 23.64,
+          "benchmark_return": 19.84,
+          "category_avg_return": 18.1
+        },
+        {
+          "period": "5Y",
+          "fund_return": 21.81,
+          "benchmark_return": 17.39,
+          "category_avg_return": 17.99
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "Wockhardt Ltd",
+          "sector": "Healthcare",
+          "weight_pct": 3.86
+        },
+        {
+          "name": "Sky Gold and Diamonds Ltd",
+          "sector": "Consumer Cyclical",
+          "weight_pct": 2.9
+        },
+        {
+          "name": "Acutaas Chemicals Ltd",
+          "sector": "Basic Materials",
+          "weight_pct": 2.88
+        },
+        {
+          "name": "Lloyds Metals & Energy Ltd",
+          "sector": "Basic Materials",
+          "weight_pct": 2.81
+        },
+        {
+          "name": "Quality Power Electrical...",
+          "sector": "Industrials",
+          "weight_pct": 2.59
+        },
+        {
+          "name": "Computer Age Management...",
+          "sector": "Financial Services",
+          "weight_pct": 2.57
+        },
+        {
+          "name": "City Union Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 2.35
+        },
+        {
+          "name": "Arvind Ltd",
+          "sector": "Consumer Cyclical",
+          "weight_pct": 2.25
+        },
+        {
+          "name": "Cemindia Projects Ltd",
+          "sector": "Industrials",
+          "weight_pct": 2.22
+        },
+        {
+          "name": "Krishna Institute of Medical...",
+          "sector": "Healthcare",
+          "weight_pct": 2.2
+        }
+      ],
+      "sector_allocation": {
+        "Basic Materials": 15.07,
+        "Consumer Cyclical": 22.16,
+        "Financial Services": 13.84,
+        "Real Estate": 1.28,
+        "Communication Services": 0.0,
+        "Energy": 0.51,
+        "Industrials": 23.45,
+        "Technology": 7.75,
+        "Consumer Defensive": 4.08,
+        "Healthcare": 11.85,
+        "Utilities": 0.0
+      },
+      "asset_allocation": {
+        "Stocks": 96.87,
+        "Bonds": 0.48,
+        "Cash": 2.65,
+        "Other": 0.0
+      },
+      "market_cap_allocation": {
+        "Giant": 0.0,
+        "Large": 10.95,
+        "Medium": 49.18,
+        "Small": 27.21,
+        "Micro": 12.66
+      },
+      "risk_metrics": {
+        "alpha": 3.52,
+        "beta": 0.93,
+        "sharpe_ratio": 0.79,
+        "standard_deviation": 21.88,
+        "r_squared": 89.95,
+        "information_ratio": 0.44,
+        "tracking_error": 7.1
+      },
+      "portfolio_stats": {
+        "avg_market_cap_cr": 145697.79
+      }
+    }
+  ],
+  "amc_info": {
+    "amc_name": "Bank of India Investment Managers Private Limited",
+    "factsheet_date": "20 Jun 2026",
+    "website": "https://www.boimf.in/"
+  },
+  "pages_processed": 1,
+  "source_pdf": "bank on india.pdf",
+  "amc_slug": "bank-on-india",
+  "extracted_at": "2026-06-20T11:07:15"
+}

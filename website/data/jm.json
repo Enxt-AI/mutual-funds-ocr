@@ -1,0 +1,156 @@
+{
+  "schemes": [
+    {
+      "fund_name": "JM Flexicap Fund (Direct) Growth Option",
+      "scheme_type": "Open-ended diversified equity fund",
+      "category": "Flexi Cap Fund",
+      "investment_objective": "JM Flexicap Fund is an open-ended diversified equity fund which aims to provide capital appreciation by investing primarily in equity and equity related securities of various market capitalisation. There can be no assurance that the investment objective of the scheme will be realized. The scheme does not guarantee/ indicate any returns.",
+      "benchmark": "BSE 500 India TR INR",
+      "inception_date": "01/01/2013",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "isin": "INF192K01CC7",
+      "nav": 111.1,
+      "nav_date": "18/06/2026",
+      "aum_crores": 50687.05,
+      "expense_ratio": 0.55,
+      "exit_load": "1.00% - 0-30 days; 0.00% - >30 days",
+      "min_initial_purchase": 1000,
+      "min_additional_purchase": 100,
+      "morningstar_rating": 4,
+      "fund_managers": [
+        {
+          "name": "Satish Ramanathan",
+          "managing_since": "20/08/2021"
+        }
+      ],
+      "returns": [
+        {
+          "period": "3M",
+          "fund_return": 8.66,
+          "benchmark_return": 5.91,
+          "category_avg_return": 6.89
+        },
+        {
+          "period": "6M",
+          "fund_return": 1.12,
+          "benchmark_return": -1.25,
+          "category_avg_return": -0.31
+        },
+        {
+          "period": "1Y",
+          "fund_return": 1.39,
+          "benchmark_return": 1.84,
+          "category_avg_return": 2.18
+        },
+        {
+          "period": "3Y",
+          "fund_return": 17.73,
+          "benchmark_return": 13.4,
+          "category_avg_return": 13.84
+        },
+        {
+          "period": "5Y",
+          "fund_return": 17.97,
+          "benchmark_return": 12.53,
+          "category_avg_return": 12.68
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "HDFC Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 5.07
+        },
+        {
+          "name": "ICICI Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 4.39
+        },
+        {
+          "name": "Godfrey Phillips India Ltd",
+          "sector": "Consumer Cyclical",
+          "weight_pct": 3.06
+        },
+        {
+          "name": "Larsen & Toubro Ltd",
+          "sector": "Industrials",
+          "weight_pct": 2.79
+        },
+        {
+          "name": "Arvind Ltd",
+          "sector": "Consumer Cyclical",
+          "weight_pct": 2.6
+        },
+        {
+          "name": "One97 Communications Ltd",
+          "sector": "Technology",
+          "weight_pct": 2.18
+        },
+        {
+          "name": "NTPC Ltd",
+          "sector": "Utilities",
+          "weight_pct": 2.18
+        },
+        {
+          "name": "Garware Hi-Tech Films Ltd",
+          "sector": "Basic Materials",
+          "weight_pct": 2.12
+        },
+        {
+          "name": "Bharti Airtel Ltd",
+          "sector": "Communication Services",
+          "weight_pct": 2.09
+        },
+        {
+          "name": "State Bank of India",
+          "sector": "Financial Services",
+          "weight_pct": 2.07
+        }
+      ],
+      "sector_allocation": {
+        "Basic Materials": 9.01,
+        "Consumer Cyclical": 19.88,
+        "Financial Services": 30.11,
+        "Communication Services": 2.13,
+        "Energy": 6.4,
+        "Industrials": 9.79,
+        "Technology": 8.84,
+        "Consumer Defensive": 3.99,
+        "Healthcare": 6.76,
+        "Utilities": 3.1
+      },
+      "asset_allocation": {
+        "Stocks": 98.1,
+        "Bonds": 0.0,
+        "Cash": 1.88,
+        "Other": 0.02
+      },
+      "market_cap_allocation": {
+        "Giant": 32.01,
+        "Large": 39.36,
+        "Medium": 20.23,
+        "Small": 8.07,
+        "Micro": 0.32
+      },
+      "risk_metrics": {
+        "alpha": 4.24,
+        "beta": 1.05,
+        "r_squared": 86.85,
+        "information_ratio": 0.78,
+        "tracking_error": 6.36,
+        "sharpe_ratio": 0.7,
+        "standard_deviation": 17.44
+      }
+    }
+  ],
+  "amc_info": {
+    "amc_name": "JM Financial Asset Management Limited",
+    "factsheet_date": "19 Jun 2026",
+    "website": "www.jmfinancialmf.com"
+  },
+  "pages_processed": 1,
+  "source_pdf": "JM.pdf",
+  "amc_slug": "jm",
+  "extracted_at": "2026-06-19T16:22:13"
+}

@@ -1,0 +1,113 @@
+{
+  "schemes": [
+    {
+      "fund_name": "Groww Small Cap Fund Direct Growth",
+      "investment_objective": "The objective of the Scheme is to generate long term capital appreciation by investing in equity and equity related instruments of small cap companies. However, there is no assurance that the investment objective of the Scheme will be achieved.",
+      "benchmark": "Nifty Smallcap 250 TR INR",
+      "inception_date": "29/01/2026",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "isin": "INF666M01NJ8",
+      "nav": 11.68,
+      "nav_date": "19/06/2026",
+      "aum_crores": 3433.32,
+      "expense_ratio": 0.62,
+      "exit_load": "1.00% - 0-1 years, 0.00% - >1 years",
+      "min_initial_purchase": 500,
+      "min_additional_purchase": 500,
+      "fund_managers": [
+        {
+          "name": "Anupam Tiwari",
+          "managing_since": "29/01/2026"
+        }
+      ],
+      "returns": [
+        {
+          "period": "3M",
+          "fund_return": 22.59,
+          "benchmark_return": 20.18,
+          "category_avg_return": 20.64
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "TD Power Systems Ltd",
+          "weight_pct": 4.39
+        },
+        {
+          "name": "Tamilnad Mercantile Bank Ltd",
+          "weight_pct": 3.68
+        },
+        {
+          "name": "Home First Finance Co India...",
+          "weight_pct": 3.63
+        },
+        {
+          "name": "City Union Bank Ltd",
+          "weight_pct": 3.44
+        },
+        {
+          "name": "Apar Industries Ltd",
+          "weight_pct": 3.38
+        },
+        {
+          "name": "Ujjivan Small Finance Bank...",
+          "weight_pct": 3.33
+        },
+        {
+          "name": "Azad Engineering Ltd",
+          "weight_pct": 2.92
+        },
+        {
+          "name": "Prudent Corporate Advisory...",
+          "weight_pct": 2.82
+        },
+        {
+          "name": "Navin Fluorine International...",
+          "weight_pct": 2.73
+        },
+        {
+          "name": "Craftsman Automation Ltd",
+          "weight_pct": 2.73
+        }
+      ],
+      "sector_allocation": {
+        "Basic Materials": 13.53,
+        "Consumer Cyclical": 19.91,
+        "Financial Services": 39.38,
+        "Communication Services": 0.0,
+        "Energy": 0.0,
+        "Industrials": 19.96,
+        "Technology": 2.15,
+        "Consumer Defensive": 0.68,
+        "Healthcare": 4.38,
+        "Utilities": 0.0
+      },
+      "asset_allocation": {
+        "Stocks": 86.19,
+        "Bonds": 0.0,
+        "Cash": 13.81,
+        "Other": 0.0
+      },
+      "market_cap_allocation": {
+        "Giant": 0.0,
+        "Large": 4.49,
+        "Medium": 51.75,
+        "Small": 36.45,
+        "Micro": 7.32
+      },
+      "portfolio_stats": {
+        "avg_market_cap_cr": 138914.95
+      }
+    }
+  ],
+  "amc_info": {
+    "amc_name": "Groww Asset Management Ltd.",
+    "factsheet_date": "20 Jun 2026",
+    "website": "www.growwmf.in"
+  },
+  "pages_processed": 1,
+  "source_pdf": "Groww small.pdf",
+  "amc_slug": "groww-small",
+  "extracted_at": "2026-06-20T11:59:39"
+}

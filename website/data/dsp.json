@@ -1,0 +1,159 @@
+{
+  "schemes": [
+    {
+      "fund_name": "DSP Flexi Cap Fund Direct Plan Growth",
+      "category": "Flexi Cap Fund",
+      "investment_objective": "The primary investment objective of the Scheme is to seek to generate long term capital appreciation, from a portfolio that is substantially constituted of equity securities and equity related securities of issuers domiciled in India. This shall be the fundamental attribute of the Scheme. There is no assurance that the investment objective of the Scheme will be realized.",
+      "benchmark": "BSE 500 India TR INR",
+      "inception_date": "01/01/2013",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "isin": "INF740K01PI2",
+      "nav": 114.72,
+      "nav_date": "18/06/2026",
+      "aum_crores": 117983.49,
+      "expense_ratio": 0.57,
+      "exit_load": "1.00% - 0-12 months, 0.00% - >12 months",
+      "min_initial_purchase": 100,
+      "min_additional_purchase": 100,
+      "morningstar_rating": 4,
+      "fund_managers": [
+        {
+          "name": "Bhavin Gandhi",
+          "managing_since": "01/03/2024"
+        }
+      ],
+      "returns": [
+        {
+          "period": "3M",
+          "fund_return": 6.28,
+          "benchmark_return": 5.91,
+          "category_avg_return": 6.89
+        },
+        {
+          "period": "6M",
+          "fund_return": -1.27,
+          "benchmark_return": -1.25,
+          "category_avg_return": -0.31
+        },
+        {
+          "period": "1Y",
+          "fund_return": 1.02,
+          "benchmark_return": 1.84,
+          "category_avg_return": 2.18
+        },
+        {
+          "period": "3Y",
+          "fund_return": 14.3,
+          "benchmark_return": 13.4,
+          "category_avg_return": 13.84
+        },
+        {
+          "period": "5Y",
+          "fund_return": 12.26,
+          "benchmark_return": 12.53,
+          "category_avg_return": 12.68
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "ICICI Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 8.2
+        },
+        {
+          "name": "HDFC Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 7.58
+        },
+        {
+          "name": "Axis Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 5.11
+        },
+        {
+          "name": "State Bank of India",
+          "sector": "Financial Services",
+          "weight_pct": 3.43
+        },
+        {
+          "name": "Mahindra & Mahindra Ltd",
+          "sector": "Consumer Cyclical",
+          "weight_pct": 3.23
+        },
+        {
+          "name": "Cholamandalam Investment and...",
+          "sector": "Financial Services",
+          "weight_pct": 3.07
+        },
+        {
+          "name": "Bharti Airtel Ltd",
+          "sector": "Communication Services",
+          "weight_pct": 2.94
+        },
+        {
+          "name": "Bajaj Finance Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 2.61
+        },
+        {
+          "name": "Coforge Ltd",
+          "sector": "Technology",
+          "weight_pct": 2.55
+        },
+        {
+          "name": "Cipla Ltd",
+          "sector": "Healthcare",
+          "weight_pct": 2.24
+        }
+      ],
+      "sector_allocation": {
+        "Basic Materials": 5.47,
+        "Consumer Cyclical": 11.41,
+        "Financial Services": 43.61,
+        "Real Estate": 0.16,
+        "Communication Services": 4.98,
+        "Energy": 4.56,
+        "Industrials": 8.63,
+        "Technology": 8.12,
+        "Consumer Defensive": 4.33,
+        "Healthcare": 8.67,
+        "Utilities": 0.04
+      },
+      "asset_allocation": {
+        "Stocks": 90.81,
+        "Bonds": 0.0,
+        "Cash": 9.19,
+        "Other": 0.0
+      },
+      "market_cap_allocation": {
+        "Giant": 39.89,
+        "Large": 38.63,
+        "Medium": 19.14,
+        "Small": 2.27,
+        "Micro": 0.07
+      },
+      "risk_metrics": {
+        "alpha": 1.08,
+        "beta": 0.97,
+        "sharpe_ratio": 0.55,
+        "standard_deviation": 15.43,
+        "r_squared": 94.5,
+        "information_ratio": 0.27,
+        "tracking_error": 3.64
+      },
+      "portfolio_stats": {
+        "avg_market_cap_cr": 1719.81
+      }
+    }
+  ],
+  "amc_info": {
+    "amc_name": "DSP Asset Managers Private Limited",
+    "factsheet_date": "19 Jun 2026",
+    "website": "www.dspim.com"
+  },
+  "pages_processed": 1,
+  "source_pdf": "DSP.pdf",
+  "amc_slug": "dsp",
+  "extracted_at": "2026-06-19T17:09:50"
+}

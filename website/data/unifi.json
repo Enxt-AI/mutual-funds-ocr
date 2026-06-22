@@ -1,0 +1,126 @@
+{
+  "schemes": [
+    {
+      "fund_name": "Unifi Flexi Cap Fund Direct Growth",
+      "category": "Flexi Cap Fund",
+      "investment_objective": "To generate long term capital appreciation by pursuing active management and bottom-up investing, primarily in equity and equity related instruments across sectors and market cap spectrum. The scheme will anchor to investing in growth businesses and is best suited for investors with long term investment horizon.",
+      "benchmark": "BSE 500 India TR INR",
+      "inception_date": "06/06/2025",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "isin": "INF1MIY01031",
+      "nav": 10.53,
+      "nav_date": "18/06/2026",
+      "aum_crores": 1942.32,
+      "expense_ratio": 1.0,
+      "exit_load": "1.00% - 0-12 months, 0.00% - >12 months",
+      "min_initial_purchase": 5000,
+      "min_additional_purchase": 500,
+      "morningstar_rating": "Not Rated",
+      "fund_managers": [
+        {
+          "name": "Saravanan V N",
+          "managing_since": "06/06/2025"
+        }
+      ],
+      "returns": [
+        {
+          "period": "3M",
+          "fund_return": 8.9,
+          "benchmark_return": 5.91,
+          "category_avg_return": 6.89
+        },
+        {
+          "period": "6M",
+          "fund_return": 2.26,
+          "benchmark_return": -1.25,
+          "category_avg_return": -0.31
+        },
+        {
+          "period": "1Y",
+          "fund_return": 4.78,
+          "benchmark_return": 1.84,
+          "category_avg_return": 2.18
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "Bharti Airtel Ltd",
+          "weight_pct": 4.81
+        },
+        {
+          "name": "The South Indian Bank Ltd",
+          "weight_pct": 4.69
+        },
+        {
+          "name": "ICICI Bank Ltd",
+          "weight_pct": 4.26
+        },
+        {
+          "name": "Reliance Industries Ltd",
+          "weight_pct": 4.01
+        },
+        {
+          "name": "Fedbank Financial Services Ltd",
+          "weight_pct": 3.71
+        },
+        {
+          "name": "Larsen & Toubro Ltd",
+          "weight_pct": 3.57
+        },
+        {
+          "name": "Kotak Mahindra Bank Ltd",
+          "weight_pct": 3.54
+        },
+        {
+          "name": "HDFC Bank Ltd",
+          "weight_pct": 3.16
+        },
+        {
+          "name": "Tata Steel Ltd",
+          "weight_pct": 2.95
+        },
+        {
+          "name": "Marksans Pharma Ltd",
+          "weight_pct": 2.92
+        }
+      ],
+      "sector_allocation": {
+        "Cyclical": 55.99,
+        "Basic Materials": 10.04,
+        "Consumer Cyclical": 7.53,
+        "Financial Services": 38.42,
+        "Sensitive": 25.88,
+        "Communication Services": 5.0,
+        "Energy": 4.17,
+        "Industrials": 11.14,
+        "Technology": 5.56,
+        "Defensive": 18.13,
+        "Healthcare": 14.72,
+        "Utilities": 3.41
+      },
+      "asset_allocation": {
+        "Stocks": 97.3,
+        "Bonds": 0.0,
+        "Cash": 2.7,
+        "Other": 0.0
+      },
+      "market_cap_allocation": {
+        "Giant": 36.06,
+        "Large": 25.41,
+        "Medium": 13.75,
+        "Small": 24.0,
+        "Micro": 0.78
+      }
+    }
+  ],
+  "amc_info": {
+    "amc_name": "Unifi Asset Management Private Limited",
+    "factsheet_date": "19 Jun 2026",
+    "website": "www.unifimf.com"
+  },
+  "pages_processed": 1,
+  "source_pdf": "Unifi.pdf",
+  "amc_slug": "unifi",
+  "extracted_at": "2026-06-19T18:09:58"
+}

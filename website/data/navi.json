@@ -1,0 +1,151 @@
+{
+  "schemes": [
+    {
+      "fund_name": "Navi Flexi Cap Fund Direct Growth",
+      "category": "Flexi Cap Fund",
+      "investment_objective": "To generate capital appreciation in the long term through equity investments by investing in a diversified portfolio of large cap, mid cap and small cap companies as defined by SEBI from time to time. There is no assurance that the investment objective of the scheme will be achieved.",
+      "benchmark": "Nifty 500 TR INR",
+      "inception_date": "09/07/2018",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "isin": "INF959L01DT9",
+      "nav": 28.57,
+      "nav_date": "18/06/2026",
+      "expense_ratio": 0.51,
+      "exit_load": "0.00% - >0 years",
+      "morningstar_rating": 3,
+      "fund_managers": [
+        {
+          "name": "Ashutosh Shirwaikar",
+          "managing_since": "01/08/2023"
+        }
+      ],
+      "returns": [
+        {
+          "period": "3M",
+          "fund_return": 10.43,
+          "benchmark_return": 5.91,
+          "category_avg_return": 7.59
+        },
+        {
+          "period": "6M",
+          "fund_return": 6.0,
+          "benchmark_return": -1.25,
+          "category_avg_return": -0.8
+        },
+        {
+          "period": "1Y",
+          "fund_return": 11.74,
+          "benchmark_return": 1.84,
+          "category_avg_return": 1.49
+        },
+        {
+          "period": "3Y",
+          "fund_return": 13.96,
+          "benchmark_return": 13.4,
+          "category_avg_return": 13.66
+        },
+        {
+          "period": "5Y",
+          "fund_return": 13.72,
+          "benchmark_return": 12.53,
+          "category_avg_return": 12.5
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "ICICI Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 4.16
+        },
+        {
+          "name": "Axis Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 4.09
+        },
+        {
+          "name": "HDFC Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 3.68
+        },
+        {
+          "name": "Usha Martin Ltd",
+          "sector": "Industrials",
+          "weight_pct": 3.35
+        },
+        {
+          "name": "Kotak Mahindra Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 2.97
+        },
+        {
+          "name": "Samvardhana Motherson...",
+          "sector": "Consumer Cyclical",
+          "weight_pct": 2.8
+        },
+        {
+          "name": "SJS Enterprises Ltd",
+          "sector": "Consumer Cyclical",
+          "weight_pct": 2.65
+        },
+        {
+          "name": "Varun Beverages Ltd",
+          "sector": "Consumer Cyclical",
+          "weight_pct": 2.57
+        },
+        {
+          "name": "Rainbow Childrens Medicare Ltd",
+          "sector": "Healthcare",
+          "weight_pct": 2.49
+        },
+        {
+          "name": "FIEM Industries Ltd",
+          "sector": "Consumer Cyclical",
+          "weight_pct": 2.24
+        }
+      ],
+      "sector_allocation": {
+        "Basic Materials": 7.69,
+        "Consumer Cyclical": 18.76,
+        "Financial Services": 31.45,
+        "Communication Services": 2.61,
+        "Energy": 2.34,
+        "Industrials": 16.49,
+        "Technology": 7.17,
+        "Consumer Defensive": 5.53,
+        "Healthcare": 7.97
+      },
+      "asset_allocation": {
+        "Stocks": 91.41,
+        "Bonds": 0.0,
+        "Cash": 8.59,
+        "Other": 0.0
+      },
+      "market_cap_allocation": {
+        "Giant": 28.45,
+        "Large": 22.9,
+        "Medium": 22.11,
+        "Small": 23.27,
+        "Micro": 3.27
+      },
+      "risk_metrics": {
+        "alpha": 0.35,
+        "beta": 0.98,
+        "sharpe_ratio": 0.49,
+        "standard_deviation": 15.72,
+        "r_squared": 92.62,
+        "information_ratio": 0.05,
+        "tracking_error": 4.28
+      }
+    }
+  ],
+  "amc_info": {
+    "amc_name": "Navi AMC Limited",
+    "factsheet_date": "19 Jun 2026",
+    "website": "https://www.navimutualfund.com/"
+  },
+  "pages_processed": 1,
+  "source_pdf": "Navi.pdf",
+  "amc_slug": "navi",
+  "extracted_at": "2026-06-19T17:20:49"
+}

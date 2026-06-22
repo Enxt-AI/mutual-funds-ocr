@@ -1,0 +1,145 @@
+{
+  "schemes": [
+    {
+      "fund_name": "Kotak Flexicap Fund Direct Growth",
+      "category": "Flexi Cap Fund",
+      "investment_objective": "The investment objective of the scheme is to generate long-term capital appreciation from a portfolio of equity and equity related securities, generally focused on a few selected sectors. However, there is no assurance that the objective of the scheme will be realized.",
+      "benchmark": "BSE 500 INDIA TR INR",
+      "inception_date": "01/01/2013",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "isin": "INF174K01LS2",
+      "nav": 96.66,
+      "nav_date": "18/06/2026",
+      "aum_crores": 548013.29,
+      "expense_ratio": 0.59,
+      "exit_load": "1.00% - 0-1 years; 0.00% - >1 years",
+      "min_initial_purchase": 100,
+      "min_additional_purchase": 100,
+      "morningstar_rating": 4,
+      "fund_managers": [
+        {
+          "name": "Harsha Upadhyaya",
+          "managing_since": "04/08/2012"
+        }
+      ],
+      "returns": [
+        {
+          "period": "3M",
+          "fund_return": 3.83,
+          "benchmark_return": 5.91,
+          "category_avg_return": 6.89
+        },
+        {
+          "period": "6M",
+          "fund_return": -0.36,
+          "benchmark_return": -1.25,
+          "category_avg_return": -0.31
+        },
+        {
+          "period": "1Y",
+          "fund_return": 1.75,
+          "benchmark_return": 1.84,
+          "category_avg_return": 2.18
+        },
+        {
+          "period": "3Y",
+          "fund_return": 14.7,
+          "benchmark_return": 13.4,
+          "category_avg_return": 13.84
+        },
+        {
+          "period": "5Y",
+          "fund_return": 13.17,
+          "benchmark_return": 12.53,
+          "category_avg_return": 12.68
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "Bharat Electronics Ltd",
+          "weight_pct": 5.51
+        },
+        {
+          "name": "HDFC Bank Ltd",
+          "weight_pct": 5.37
+        },
+        {
+          "name": "ICICI Bank Ltd",
+          "weight_pct": 5.04
+        },
+        {
+          "name": "State Bank of India",
+          "weight_pct": 4.19
+        },
+        {
+          "name": "Jindal Steel Ltd",
+          "weight_pct": 4.19
+        },
+        {
+          "name": "Larsen & Toubro Ltd",
+          "weight_pct": 3.94
+        },
+        {
+          "name": "Axis Bank Ltd",
+          "weight_pct": 3.76
+        },
+        {
+          "name": "Solar Industries India Ltd",
+          "weight_pct": 3.33
+        },
+        {
+          "name": "Eternal Ltd",
+          "weight_pct": 3.2
+        },
+        {
+          "name": "SRF Ltd",
+          "weight_pct": 3.1
+        }
+      ],
+      "sector_allocation": {
+        "Basic Materials": 15.99,
+        "Consumer Cyclical": 11.74,
+        "Financial Services": 31.18,
+        "Communication Services": 4.08,
+        "Energy": 5.67,
+        "Industrials": 19.16,
+        "Technology": 3.98,
+        "Consumer Defensive": 2.05,
+        "Healthcare": 3.22,
+        "Utilities": 2.92
+      },
+      "asset_allocation": {
+        "Stocks": 97.28,
+        "Bonds": 0.0,
+        "Cash": 2.72,
+        "Other": 0.0
+      },
+      "market_cap_allocation": {
+        "Giant": 39.11,
+        "Large": 48.26,
+        "Medium": 12.63,
+        "Small": 0.0,
+        "Micro": 0.0
+      },
+      "risk_metrics": {
+        "alpha": 1.45,
+        "beta": 0.94,
+        "sharpe_ratio": 0.57,
+        "standard_deviation": 14.96,
+        "r_squared": 94.64,
+        "information_ratio": 0.35,
+        "tracking_error": 3.56
+      }
+    }
+  ],
+  "amc_info": {
+    "amc_name": "Kotak Mahindra Asset Management Co Ltd",
+    "factsheet_date": "19 Jun 2026",
+    "website": "www.kotakmf.com"
+  },
+  "pages_processed": 1,
+  "source_pdf": "Kotak.pdf",
+  "amc_slug": "kotak",
+  "extracted_at": "2026-06-19T17:05:52"
+}

@@ -1,0 +1,138 @@
+{
+  "schemes": [
+    {
+      "fund_name": "Motilal Oswal Small Cap Fund Direct Growth",
+      "category": "Small Cap",
+      "investment_objective": "To generate capital appreciation by investing predominantly in Small Cap stocks. However, there can be no assurance that the investment objective of the scheme will be realized.",
+      "benchmark": "Nifty Smallcap 250 TR INR",
+      "inception_date": "26/12/2023",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "isin": "INF247L01BY3",
+      "nav": 16.48,
+      "nav_date": "19/06/2026",
+      "expense_ratio": 0.67,
+      "exit_load": "1.00% - 0-1 years; 0.00% - >1 years",
+      "min_initial_purchase": 500,
+      "min_additional_purchase": 500,
+      "morningstar_rating": "Not Rated",
+      "fund_managers": [
+        {
+          "name": "Ajay Khandelwal",
+          "managing_since": "26/12/2023"
+        }
+      ],
+      "returns": [
+        {
+          "period": "3M",
+          "fund_return": 27.94,
+          "benchmark_return": 20.18,
+          "category_avg_return": 16.91
+        },
+        {
+          "period": "6M",
+          "fund_return": 16.03,
+          "benchmark_return": 8.15,
+          "category_avg_return": 9.94
+        },
+        {
+          "period": "1Y",
+          "fund_return": 18.08,
+          "benchmark_return": 5.97,
+          "category_avg_return": 7.52
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "VA Tech Wabag Ltd",
+          "sector": "Industrial",
+          "weight_pct": 3.89
+        },
+        {
+          "name": "Aditya Infotech Ltd",
+          "sector": "Technology",
+          "weight_pct": 3.84
+        },
+        {
+          "name": "Rubicon Research Ltd",
+          "sector": "Healthcare",
+          "weight_pct": 3.8
+        },
+        {
+          "name": "Karur Vysya Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 3.66
+        },
+        {
+          "name": "CCL Products (India) Ltd",
+          "sector": "Consumer Defensive",
+          "weight_pct": 3.58
+        },
+        {
+          "name": "Vijaya Diagnostic Centre Ltd",
+          "sector": "Healthcare",
+          "weight_pct": 3.33
+        },
+        {
+          "name": "Dr Agarwal's Health Care Ltd",
+          "sector": "Healthcare",
+          "weight_pct": 3.17
+        },
+        {
+          "name": "Shaily Engineering Plastics...",
+          "sector": "Basic Materials",
+          "weight_pct": 2.98
+        },
+        {
+          "name": "Campus Activewear Ltd",
+          "sector": "Consumer Cyclical",
+          "weight_pct": 2.7
+        },
+        {
+          "name": "Rainbow Childrens Medicare Ltd",
+          "sector": "Healthcare",
+          "weight_pct": 2.43
+        }
+      ],
+      "sector_allocation": {
+        "Basic Materials": 7.98,
+        "Consumer Cyclical": 25.64,
+        "Financial Services": 14.39,
+        "Real Estate": 1.89,
+        "Communication Services": 0.0,
+        "Energy": 1.63,
+        "Industrials": 18.77,
+        "Technology": 8.38,
+        "Consumer Defensive": 4.5,
+        "Healthcare": 15.35,
+        "Utilities": 1.47
+      },
+      "asset_allocation": {
+        "Stocks": 96.34,
+        "Bonds": 0.0,
+        "Cash": 3.66,
+        "Other": 0.0
+      },
+      "market_cap_allocation": {
+        "Giant": 1.47,
+        "Large": 4.5,
+        "Medium": 64.79,
+        "Small": 26.99,
+        "Micro": 2.25
+      },
+      "portfolio_stats": {
+        "avg_market_cap_cr": 162938.94
+      },
+      "aum_crores": 65153.68
+    }
+  ],
+  "amc_info": {
+    "amc_name": "Motilal Oswal Asset Management Company Limited - Portfolio Managers",
+    "factsheet_date": "20 Jun 2026",
+    "website": "www.motilaloswalmf.com"
+  },
+  "pages_processed": 2,
+  "source_pdf": "Motilal small.pdf",
+  "amc_slug": "motilal-small",
+  "extracted_at": "2026-06-20T11:38:50"
+}

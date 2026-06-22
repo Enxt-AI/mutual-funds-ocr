@@ -1,0 +1,153 @@
+{
+  "schemes": [
+    {
+      "fund_name": "Mahindra Manulife Flexi Cap Fund Direct Growth",
+      "category": "Flexi Cap Fund",
+      "investment_objective": "The investment objective of the Scheme is to generate long term capital appreciation by investing in a diversified portfolio of equity and equity-related securities across market capitalization. However, there can be no assurance that the investment objective of the Scheme will be achieved.",
+      "benchmark": "BSE 500 India TR INR",
+      "inception_date": "23/08/2021",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "isin": "INF174V01AS2",
+      "nav": 17.22,
+      "nav_date": "18/06/2026",
+      "expense_ratio": 0.44,
+      "exit_load": "1.00% - 0-3 months, 0.00% - >3 months",
+      "min_initial_purchase": 1000,
+      "min_additional_purchase": 1000,
+      "morningstar_rating": 3,
+      "fund_managers": [
+        {
+          "name": "Fatema Pacha",
+          "managing_since": "23/08/2021"
+        }
+      ],
+      "returns": [
+        {
+          "period": "3M",
+          "fund_return": 4.67,
+          "benchmark_return": 5.91,
+          "category_avg_return": 6.89
+        },
+        {
+          "period": "6M",
+          "fund_return": -3.23,
+          "benchmark_return": -1.25,
+          "category_avg_return": -0.31
+        },
+        {
+          "period": "1Y",
+          "fund_return": 0.03,
+          "benchmark_return": 1.84,
+          "category_avg_return": 2.18
+        },
+        {
+          "period": "3Y",
+          "fund_return": 13.31,
+          "benchmark_return": 13.4,
+          "category_avg_return": 13.84
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "ICICI Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 7.87
+        },
+        {
+          "name": "HDFC Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 4.52
+        },
+        {
+          "name": "Kotak Mahindra Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 3.45
+        },
+        {
+          "name": "Bharti Airtel Ltd",
+          "sector": "Communication Services",
+          "weight_pct": 3.23
+        },
+        {
+          "name": "Bajaj Finance Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 2.91
+        },
+        {
+          "name": "Larsen & Toubro Ltd",
+          "sector": "Industrials",
+          "weight_pct": 2.43
+        },
+        {
+          "name": "Tata Consultancy Services Ltd",
+          "sector": "Technology",
+          "weight_pct": 2.07
+        },
+        {
+          "name": "Infosys Ltd",
+          "sector": "Technology",
+          "weight_pct": 1.99
+        },
+        {
+          "name": "Reliance Industries Ltd",
+          "sector": "Energy",
+          "weight_pct": 1.99
+        },
+        {
+          "name": "Avenue Supermarts Ltd",
+          "sector": "Consumer Cyclical",
+          "weight_pct": 1.82
+        }
+      ],
+      "sector_allocation": {
+        "Cyclical": 48.51,
+        "Basic Materials": 5.51,
+        "Consumer Cyclical": 14.82,
+        "Financial Services": 27.17,
+        "Real Estate": 1.01,
+        "Sensitive": 34.73,
+        "Communication Services": 7.28,
+        "Energy": 4.47,
+        "Industrials": 14.65,
+        "Technology": 8.34,
+        "Defensive": 16.76,
+        "Consumer Defensive": 5.97,
+        "Healthcare": 8.16,
+        "Utilities": 2.63
+      },
+      "asset_allocation": {
+        "Stocks": 99.16,
+        "Bonds": 0.0,
+        "Cash": 0.82,
+        "Other": 0.02
+      },
+      "market_cap_allocation": {
+        "Giant": 39.18,
+        "Large": 38.67,
+        "Medium": 19.67,
+        "Small": 2.48,
+        "Micro": 0.0
+      },
+      "risk_metrics": {
+        "alpha": 0.51,
+        "beta": 0.94,
+        "r_squared": 97.33,
+        "information_ratio": 0.07,
+        "tracking_error": 2.57,
+        "sharpe_ratio": 0.52,
+        "standard_deviation": 14.67
+      },
+      "aum_crores": 15268.63
+    }
+  ],
+  "amc_info": {
+    "amc_name": "Mahindra Manulife Investment Management Pvt. Ltd.",
+    "factsheet_date": "19 Jun 2026",
+    "website": "www.mahindramanulife.co.in"
+  },
+  "pages_processed": 2,
+  "source_pdf": "Mahindra.pdf",
+  "amc_slug": "mahindra",
+  "extracted_at": "2026-06-19T17:30:18"
+}

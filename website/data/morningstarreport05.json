@@ -1,0 +1,154 @@
+{
+  "schemes": [
+    {
+      "fund_name": "Quant Flexi Cap Fund Growth Option Direct Plan",
+      "category": "Flexi Cap Fund",
+      "investment_objective": "The primary investment objective of the scheme is to seek to generate consistent returns by investing in a portfolio of Large Cap, Mid Cap and Small Cap companies. However, there can be no assurance that the investment objective of the Scheme will be realized, as actual market movements may be at variance with anticipated trends.",
+      "benchmark": "BSE 500 India TR INR",
+      "inception_date": "01/01/2013",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "isin": "INF966L01911",
+      "nav": 121.92,
+      "nav_date": "18/06/2026",
+      "aum_crores": 69935.8,
+      "expense_ratio": 0.67,
+      "exit_load": "1.00% - 0-15 days; 0.00% - >15 days",
+      "min_initial_purchase": 5000,
+      "min_additional_purchase": 1000,
+      "morningstar_rating": 5,
+      "fund_managers": [
+        {
+          "name": "Sandeep Tandon",
+          "managing_since": "07/01/2022"
+        }
+      ],
+      "returns": [
+        {
+          "period": "3M",
+          "fund_return": 16.66,
+          "benchmark_return": 5.91,
+          "category_avg_return": 7.59
+        },
+        {
+          "period": "6M",
+          "fund_return": 11.15,
+          "benchmark_return": -1.25,
+          "category_avg_return": -0.8
+        },
+        {
+          "period": "1Y",
+          "fund_return": 14.58,
+          "benchmark_return": 1.84,
+          "category_avg_return": 1.49
+        },
+        {
+          "period": "3Y",
+          "fund_return": 19.88,
+          "benchmark_return": 13.4,
+          "category_avg_return": 13.66
+        },
+        {
+          "period": "5Y",
+          "fund_return": 17.92,
+          "benchmark_return": 12.53,
+          "category_avg_return": 12.5
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "Adani Power Ltd",
+          "sector": "Utilities",
+          "weight_pct": 9.99
+        },
+        {
+          "name": "Samvardhana Motherson...",
+          "sector": "Consumer Cyclical",
+          "weight_pct": 8.56
+        },
+        {
+          "name": "Adani Enterprises Ltd",
+          "sector": "Energy",
+          "weight_pct": 8.51
+        },
+        {
+          "name": "ICICI Prudential Asset...",
+          "sector": "Financial Services",
+          "weight_pct": 6.82
+        },
+        {
+          "name": "Aurobindo Pharma Ltd",
+          "sector": "Healthcare",
+          "weight_pct": 6.13
+        },
+        {
+          "name": "ICICI Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 5.79
+        },
+        {
+          "name": "Adani Green Energy Ltd",
+          "sector": "Utilities",
+          "weight_pct": 4.43
+        },
+        {
+          "name": "Adani Energy Solutions Ltd",
+          "sector": "Utilities",
+          "weight_pct": 3.82
+        },
+        {
+          "name": "Larsen & Toubro Ltd",
+          "sector": "Industrials",
+          "weight_pct": 3.62
+        },
+        {
+          "name": "Tata Power Co Ltd",
+          "sector": "Utilities",
+          "weight_pct": 3.53
+        }
+      ],
+      "sector_allocation": {
+        "Basic Materials": 1.19,
+        "Consumer Cyclical": 13.12,
+        "Financial Services": 22.24,
+        "Communication Services": 4.05,
+        "Energy": 13.59,
+        "Industrials": 9.42,
+        "Technology": 1.02,
+        "Healthcare": 9.31,
+        "Utilities": 26.07
+      },
+      "asset_allocation": {
+        "Stocks": 99.14,
+        "Bonds": 0.0,
+        "Cash": 0.86,
+        "Other": 0.0
+      },
+      "market_cap_allocation": {
+        "Giant": 39.25,
+        "Large": 48.89,
+        "Medium": 8.22,
+        "Small": 3.64,
+        "Micro": 0.0
+      },
+      "risk_metrics": {
+        "alpha": 5.8,
+        "beta": 1.16,
+        "sharpe_ratio": 0.74,
+        "r_squared": 83.47,
+        "information_ratio": 0.88,
+        "tracking_error": 8.32,
+        "standard_deviation": 19.55
+      }
+    }
+  ],
+  "amc_info": {
+    "amc_name": "Quant Money Managers Limited",
+    "factsheet_date": "19 Jun 2026",
+    "website": "www.quantmutual.com"
+  },
+  "pages_processed": 1,
+  "source_pdf": "morningstarreport20260619101505.pdf",
+  "amc_slug": "morningstarreport05",
+  "extracted_at": "2026-06-19T15:46:01"
+}

@@ -1,0 +1,153 @@
+{
+  "schemes": [
+    {
+      "fund_name": "WhiteOak Capital Flexi Cap Fund Direct Growth",
+      "category": "Flexi Cap Fund",
+      "investment_objective": "To generate long-term capital appreciation by investing predominately in equity & equity related instruments across the spectrum of various market capitalization. However, there can be no assurance or guarantee that the investment objective of the Scheme would be achieved.",
+      "benchmark": "BSE 500 India TR INR",
+      "inception_date": "02/08/2022",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "isin": "INF03VN01530",
+      "nav": 18.47,
+      "nav_date": "18/06/2026",
+      "aum_crores": 81365.0,
+      "expense_ratio": 0.46,
+      "exit_load": "0.00% - >0 days",
+      "min_initial_purchase": 500,
+      "min_additional_purchase": 500,
+      "morningstar_rating": 4,
+      "fund_managers": [
+        {
+          "name": "Ramesh Mantri",
+          "managing_since": "02/08/2022"
+        }
+      ],
+      "returns": [
+        {
+          "period": "3M",
+          "fund_return": 7.69,
+          "benchmark_return": 5.91,
+          "category_avg_return": 6.89
+        },
+        {
+          "period": "6M",
+          "fund_return": -0.15,
+          "benchmark_return": -1.25,
+          "category_avg_return": -0.31
+        },
+        {
+          "period": "1Y",
+          "fund_return": 3.96,
+          "benchmark_return": 1.84,
+          "category_avg_return": 2.18
+        },
+        {
+          "period": "3Y",
+          "fund_return": 17.27,
+          "benchmark_return": 13.4,
+          "category_avg_return": 13.84
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "ICICI Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 8.05
+        },
+        {
+          "name": "HDFC Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 6.56
+        },
+        {
+          "name": "Bharti Airtel Ltd",
+          "sector": "Communication Services",
+          "weight_pct": 4.21
+        },
+        {
+          "name": "Nestle India Ltd",
+          "sector": "Consumer Defensive",
+          "weight_pct": 2.86
+        },
+        {
+          "name": "Bharat Electronics Ltd",
+          "sector": "Industrials",
+          "weight_pct": 2.44
+        },
+        {
+          "name": "Eternal Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 2.42
+        },
+        {
+          "name": "Kotak Mahindra Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 2.31
+        },
+        {
+          "name": "Mahindra & Mahindra Ltd",
+          "sector": "Consumer Cyclical",
+          "weight_pct": 2.3
+        },
+        {
+          "name": "Reliance Industries Ltd",
+          "sector": "Energy",
+          "weight_pct": 2.27
+        },
+        {
+          "name": "Maruti Suzuki India Ltd",
+          "sector": "Consumer Cyclical",
+          "weight_pct": 1.71
+        }
+      ],
+      "sector_allocation": {
+        "Basic Materials": 9.43,
+        "Consumer Cyclical": 14.07,
+        "Financial Services": 33.43,
+        "Real Estate": 5.66,
+        "Communication Services": 5.02,
+        "Energy": 3.58,
+        "Industrials": 10.15,
+        "Technology": 4.85,
+        "Consumer Defensive": 3.84,
+        "Healthcare": 8.56,
+        "Utilities": 1.43
+      },
+      "asset_allocation": {
+        "Stocks": 99.07,
+        "Bonds": 0.0,
+        "Cash": 0.93,
+        "Other": 0.0
+      },
+      "market_cap_allocation": {
+        "Giant": 36.59,
+        "Large": 24.85,
+        "Medium": 27.81,
+        "Small": 9.11,
+        "Micro": 1.64
+      },
+      "risk_metrics": {
+        "alpha": 3.93,
+        "beta": 0.91,
+        "sharpe_ratio": 0.75,
+        "standard_deviation": 14.51,
+        "r_squared": 93.85,
+        "information_ratio": 1.01,
+        "tracking_error": 3.84
+      },
+      "portfolio_stats": {
+        "avg_market_cap_cr": 1188.47
+      }
+    }
+  ],
+  "amc_info": {
+    "amc_name": "WhiteOak Capital Asset Management Limited",
+    "factsheet_date": "19 Jun 2026",
+    "website": "http://mf.whiteoakamc.com"
+  },
+  "pages_processed": 1,
+  "source_pdf": "whiteoak.pdf",
+  "amc_slug": "whiteoak",
+  "extracted_at": "2026-06-19T16:31:27"
+}

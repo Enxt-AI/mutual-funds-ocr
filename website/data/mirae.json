@@ -1,0 +1,150 @@
+{
+  "schemes": [
+    {
+      "fund_name": "Mirae Asset Flexi Cap Fund Direct Growth",
+      "category": "Flexi Cap Fund",
+      "investment_objective": "The investment objective of the scheme is to provide long-term capital appreciation from a portfolio investing predominantly in Indian equity and equity related instruments across market capitalization. However, there is no assurance that the investment objective of the Scheme will be realized.",
+      "benchmark": "BSE 500 India TR INR",
+      "inception_date": "24/02/2023",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "isin": "INF769K01JJ2",
+      "nav": 16.79,
+      "nav_date": "18/06/2026",
+      "aum_crores": 40797.43,
+      "expense_ratio": 0.42,
+      "exit_load": "1.00% - 0-365 days; 0.00% - >365 days",
+      "min_initial_purchase": 5000,
+      "min_additional_purchase": 1000,
+      "morningstar_rating": 3,
+      "fund_managers": [
+        {
+          "name": "Varun Goel",
+          "managing_since": "03/04/2024"
+        }
+      ],
+      "returns": [
+        {
+          "period": "3M",
+          "fund_return": 5.21,
+          "benchmark_return": 5.91,
+          "category_avg_return": 6.89
+        },
+        {
+          "period": "6M",
+          "fund_return": -0.52,
+          "benchmark_return": -1.25,
+          "category_avg_return": -0.31
+        },
+        {
+          "period": "1Y",
+          "fund_return": 4.57,
+          "benchmark_return": 1.84,
+          "category_avg_return": 2.18
+        },
+        {
+          "period": "3Y",
+          "fund_return": 15.21,
+          "benchmark_return": 13.4,
+          "category_avg_return": 13.84
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "HDFC Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 5.47
+        },
+        {
+          "name": "ICICI Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 5.11
+        },
+        {
+          "name": "Reliance Industries Ltd",
+          "sector": "Energy",
+          "weight_pct": 4.23
+        },
+        {
+          "name": "State Bank of India",
+          "sector": "Financial Services",
+          "weight_pct": 2.53
+        },
+        {
+          "name": "Bharti Airtel Ltd",
+          "sector": "Communication Services",
+          "weight_pct": 2.33
+        },
+        {
+          "name": "Larsen & Toubro Ltd",
+          "sector": "Industrials",
+          "weight_pct": 2.27
+        },
+        {
+          "name": "Axis Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 2.13
+        },
+        {
+          "name": "Infosys Ltd",
+          "sector": "Technology",
+          "weight_pct": 1.86
+        },
+        {
+          "name": "Mahindra & Mahindra Ltd",
+          "sector": "Consumer Cyclical",
+          "weight_pct": 1.74
+        },
+        {
+          "name": "CG Power & Industrial...",
+          "sector": "Industrials",
+          "weight_pct": 1.71
+        }
+      ],
+      "sector_allocation": {
+        "Basic Materials": 7.93,
+        "Consumer Cyclical": 11.07,
+        "Financial Services": 31.94,
+        "Real Estate": 2.38,
+        "Communication Services": 4.72,
+        "Energy": 6.03,
+        "Industrials": 11.9,
+        "Technology": 6.97,
+        "Consumer Defensive": 1.87,
+        "Healthcare": 12.55,
+        "Utilities": 2.63
+      },
+      "asset_allocation": {
+        "Stocks": 98.26,
+        "Bonds": 0.0,
+        "Cash": 1.74,
+        "Other": 0.0
+      },
+      "market_cap_allocation": {
+        "Giant": 37.39,
+        "Large": 44.84,
+        "Medium": 14.64,
+        "Small": 2.76,
+        "Micro": 0.37
+      },
+      "risk_metrics": {
+        "alpha": 1.8,
+        "beta": 0.94,
+        "r_squared": 97.61,
+        "information_ratio": 0.65,
+        "tracking_error": 2.46,
+        "sharpe_ratio": 0.61,
+        "standard_deviation": 14.57
+      }
+    }
+  ],
+  "amc_info": {
+    "amc_name": "Mirae Asset Investment Managers (India) Private Limited",
+    "factsheet_date": "19 Jun 2026",
+    "website": "www.miraeassetmf.co.in"
+  },
+  "pages_processed": 1,
+  "source_pdf": "mirae.pdf",
+  "amc_slug": "mirae",
+  "extracted_at": "2026-06-19T17:08:07"
+}

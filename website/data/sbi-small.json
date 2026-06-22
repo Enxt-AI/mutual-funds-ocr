@@ -1,0 +1,148 @@
+{
+  "schemes": [
+    {
+      "fund_name": "SBI Small Cap Fund Direct Plan Growth",
+      "scheme_type": "Open-ended",
+      "category": "Small Cap",
+      "investment_objective": "To provide investors with opportunities for long-term growth in capital along with the liquidity of an open-ended scheme by investing predominantly in a well diversified basket of equity stocks of small cap companies.",
+      "benchmark": "Nifty Smallcap 250 TR INR",
+      "inception_date": "01/01/2013",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "isin": "INF200K01T51",
+      "nav": 202.08,
+      "nav_date": "19/06/2026",
+      "aum_crores": 373946.07,
+      "expense_ratio": 0.74,
+      "exit_load": "1.00% - 0-1 years; 0.00% - >1 years",
+      "min_initial_purchase": 5000,
+      "min_additional_purchase": 1000,
+      "morningstar_rating": 3,
+      "fund_managers": [
+        {
+          "name": "R. Srinivasan",
+          "managing_since": "16/11/2013"
+        }
+      ],
+      "returns": [
+        {
+          "period": "3M",
+          "fund_return": 16.2,
+          "benchmark_return": 20.18,
+          "category_avg_return": 16.91
+        },
+        {
+          "period": "6M",
+          "fund_return": 5.73,
+          "benchmark_return": 8.15,
+          "category_avg_return": 9.94
+        },
+        {
+          "period": "1Y",
+          "fund_return": 5.16,
+          "benchmark_return": 5.97,
+          "category_avg_return": 7.52
+        },
+        {
+          "period": "3Y",
+          "fund_return": 13.82,
+          "benchmark_return": 19.84,
+          "category_avg_return": 18.1
+        },
+        {
+          "period": "5Y",
+          "fund_return": 15.47,
+          "benchmark_return": 17.39,
+          "category_avg_return": 17.99
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "Ather Energy Ltd",
+          "weight_pct": 5.18
+        },
+        {
+          "name": "Nifty Index 30-06-2026",
+          "weight_pct": 3.18
+        },
+        {
+          "name": "Navin Fluorine International...",
+          "weight_pct": 3.11
+        },
+        {
+          "name": "Honeywell Automation India Ltd",
+          "weight_pct": 2.83
+        },
+        {
+          "name": "Kalpataru Projects...",
+          "weight_pct": 2.76
+        },
+        {
+          "name": "ZF Commercial Vehicle...",
+          "weight_pct": 2.75
+        },
+        {
+          "name": "City Union Bank Ltd",
+          "weight_pct": 2.69
+        },
+        {
+          "name": "Belrise Industries Ltd",
+          "weight_pct": 2.52
+        },
+        {
+          "name": "Krishna Institute of Medical...",
+          "weight_pct": 2.5
+        },
+        {
+          "name": "Sundaram Fasteners Ltd",
+          "weight_pct": 2.3
+        }
+      ],
+      "sector_allocation": {
+        "Basic Materials": 15.38,
+        "Consumer Cyclical": 29.1,
+        "Financial Services": 16.31,
+        "Real Estate": 0.87,
+        "Communication Services": 0.42,
+        "Industrials": 25.08,
+        "Technology": 6.15,
+        "Consumer Defensive": 3.86,
+        "Healthcare": 2.82
+      },
+      "asset_allocation": {
+        "Stocks": 91.9,
+        "Bonds": 0.17,
+        "Cash": 7.93,
+        "Other": 0.0
+      },
+      "market_cap_allocation": {
+        "Giant": 0.0,
+        "Large": 2.09,
+        "Medium": 74.51,
+        "Small": 21.84,
+        "Micro": 1.57
+      },
+      "risk_metrics": {
+        "alpha": -3.17,
+        "beta": 0.75,
+        "r_squared": 94.59,
+        "information_ratio": -0.99,
+        "tracking_error": 6.9,
+        "sharpe_ratio": 0.46,
+        "standard_deviation": 17.11
+      },
+      "portfolio_stats": {
+        "avg_market_cap_cr": 166885.87
+      }
+    }
+  ],
+  "amc_info": {
+    "amc_name": "SBI Funds Management Ltd",
+    "factsheet_date": "May 2026",
+    "website": "www.sbimf.com"
+  },
+  "pages_processed": 1,
+  "source_pdf": "SBI Small.pdf",
+  "amc_slug": "sbi-small",
+  "extracted_at": "2026-06-20T11:35:58"
+}

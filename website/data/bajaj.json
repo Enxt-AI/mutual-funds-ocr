@@ -1,0 +1,134 @@
+{
+  "schemes": [
+    {
+      "fund_name": "Bajaj Finserv Flexi Cap Fund Direct Growth",
+      "category": "Flexi Cap Fund",
+      "investment_objective": "To generate long term capital appreciation by investing predominantly in equity and equity related instruments across market capitalisation. However, there is no assurance that the investment objective of the Scheme will be achieved.",
+      "benchmark": "BSE 500 India TR INR",
+      "inception_date": "14/08/2023",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "isin": "INF0QA701342",
+      "nav": 15.82,
+      "nav_date": "18/06/2026",
+      "aum_crores": 71953.0,
+      "expense_ratio": 0.47,
+      "exit_load": "1.00% - 0-6 months, 0.00% - >6 months",
+      "min_initial_purchase": 500,
+      "min_additional_purchase": 100,
+      "morningstar_rating": "Not Rated",
+      "fund_managers": [
+        {
+          "name": "Nimesh Chandan",
+          "managing_since": "14/08/2023"
+        }
+      ],
+      "returns": [
+        {
+          "period": "3M",
+          "fund_return": 9.79,
+          "benchmark_return": 5.91,
+          "category_avg_return": 6.89
+        },
+        {
+          "period": "6M",
+          "fund_return": 3.92,
+          "benchmark_return": -1.25,
+          "category_avg_return": -0.31
+        },
+        {
+          "period": "1Y",
+          "fund_return": 6.8,
+          "benchmark_return": 1.84,
+          "category_avg_return": 2.18
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "ICICI Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 5.42
+        },
+        {
+          "name": "HDFC Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 3.91
+        },
+        {
+          "name": "MTAR Technologies Ltd",
+          "sector": "Industrials",
+          "weight_pct": 3.18
+        },
+        {
+          "name": "Reliance Industries Ltd",
+          "sector": "Energy",
+          "weight_pct": 3.16
+        },
+        {
+          "name": "Divi's Laboratories Ltd",
+          "sector": "Healthcare",
+          "weight_pct": 3.07
+        },
+        {
+          "name": "Apollo Hospitals Enterprise...",
+          "sector": "Healthcare",
+          "weight_pct": 3.0
+        },
+        {
+          "name": "UltraTech Cement Ltd",
+          "sector": "Basic Materials",
+          "weight_pct": 2.76
+        },
+        {
+          "name": "The Federal Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 2.7
+        },
+        {
+          "name": "Axis Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 2.6
+        },
+        {
+          "name": "State Bank of India",
+          "sector": "Financial Services",
+          "weight_pct": 2.59
+        }
+      ],
+      "sector_allocation": {
+        "Basic Materials": 5.45,
+        "Consumer Cyclical": 21.46,
+        "Financial Services": 24.9,
+        "Real Estate": 0.11,
+        "Communication Services": 1.51,
+        "Energy": 5.37,
+        "Industrials": 20.92,
+        "Technology": 3.79,
+        "Consumer Defensive": 3.23,
+        "Healthcare": 13.25
+      },
+      "asset_allocation": {
+        "Stocks": 98.37,
+        "Bonds": 0.07,
+        "Cash": 1.56,
+        "Other": 0.0
+      },
+      "market_cap_allocation": {
+        "Giant": 25.68,
+        "Large": 27.36,
+        "Medium": 41.21,
+        "Small": 5.75,
+        "Micro": 0.0
+      }
+    }
+  ],
+  "amc_info": {
+    "amc_name": "Bajaj Finserv Asset Management Limited",
+    "factsheet_date": "19 Jun 2026",
+    "website": "https://www.bajajamc.com/"
+  },
+  "pages_processed": 1,
+  "source_pdf": "bajaj.pdf",
+  "amc_slug": "bajaj",
+  "extracted_at": "2026-06-19T17:59:17"
+}

@@ -1,0 +1,136 @@
+{
+  "schemes": [
+    {
+      "fund_name": "Taurus Flexi Cap Fund - Direct Plan-Growth Option",
+      "category": "Flexi Cap Fund",
+      "investment_objective": "To provide long - term capital appreciation. Emphasis will be on sharing growth through appreciation as well as on distribution of income by way of dividend.",
+      "benchmark": "BSE 500 India TR INR",
+      "inception_date": "01/01/2013",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "isin": "INF044D01BU9",
+      "nav": 231.0,
+      "nav_date": "18/06/2026",
+      "aum_crores": 3442.56,
+      "expense_ratio": 2.03,
+      "exit_load": "1.00% - 0-365 days, 0.00% - >365 days",
+      "min_initial_purchase": 500,
+      "min_additional_purchase": 500,
+      "morningstar_rating": 2,
+      "fund_managers": [
+        {
+          "name": "Anuj Kapil",
+          "managing_since": "13/06/2023"
+        }
+      ],
+      "returns": [
+        {
+          "period": "3M",
+          "fund_return": 5.33,
+          "benchmark_return": 5.91
+        },
+        {
+          "period": "6M",
+          "fund_return": -0.25,
+          "benchmark_return": -1.25
+        },
+        {
+          "period": "1Y",
+          "fund_return": -0.41,
+          "benchmark_return": 1.84
+        },
+        {
+          "period": "3Y",
+          "fund_return": 12.43,
+          "benchmark_return": 13.4
+        },
+        {
+          "period": "5Y",
+          "fund_return": 10.46,
+          "benchmark_return": 12.53
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "HDFC Bank Ltd",
+          "weight_pct": 7.89
+        },
+        {
+          "name": "ITC Ltd",
+          "weight_pct": 7.24
+        },
+        {
+          "name": "Divi's Laboratories Ltd",
+          "weight_pct": 5.32
+        },
+        {
+          "name": "Park Medi World Ltd",
+          "weight_pct": 4.9
+        },
+        {
+          "name": "ICICI Bank Ltd",
+          "weight_pct": 4.24
+        },
+        {
+          "name": "SAMHI Hotels Ltd",
+          "weight_pct": 3.89
+        },
+        {
+          "name": "Axis Bank Ltd",
+          "weight_pct": 3.66
+        },
+        {
+          "name": "Bharti Airtel Ltd",
+          "weight_pct": 3.59
+        },
+        {
+          "name": "Mahindra & Mahindra Ltd",
+          "weight_pct": 3.31
+        },
+        {
+          "name": "Reliance Industries Ltd",
+          "weight_pct": 3.09
+        }
+      ],
+      "sector_allocation": {
+        "Cyclical": 49.33,
+        "Sensitive": 20.38,
+        "Defensive": 30.29
+      },
+      "asset_allocation": {
+        "Stocks": 92.31,
+        "Bonds": 0.0,
+        "Cash": 7.69,
+        "Other": 0.0
+      },
+      "market_cap_allocation": {
+        "Giant": 43.11,
+        "Large": 25.79,
+        "Medium": 10.2,
+        "Small": 6.99,
+        "Micro": 13.91
+      },
+      "risk_metrics": {
+        "alpha": -0.98,
+        "beta": 1.01,
+        "sharpe_ratio": 0.41,
+        "standard_deviation": 16.11,
+        "r_squared": 92.92,
+        "information_ratio": -0.27,
+        "tracking_error": 4.28
+      },
+      "portfolio_stats": {
+        "avg_market_cap_cr": 976882.62
+      }
+    }
+  ],
+  "amc_info": {
+    "amc_name": "Taurus Asset Management Company Limited",
+    "factsheet_date": "19 Jun 2026",
+    "website": "www.taurusmutualfund.com"
+  },
+  "pages_processed": 1,
+  "source_pdf": "Taurus.pdf",
+  "amc_slug": "taurus",
+  "extracted_at": "2026-06-19T17:33:29"
+}

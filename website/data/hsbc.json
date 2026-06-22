@@ -1,0 +1,159 @@
+{
+  "schemes": [
+    {
+      "fund_name": "HSBC Flexi Cap Fund Growth Direct",
+      "category": "Flexi Cap Fund",
+      "investment_objective": "To seek long term capital growth through investments made dynamically across market capitalization (i.e. Large, Mid, and Small Caps). The investmentcould be in any one, two or all three types of market capitalization. The Scheme aims to predominantly invest in equity and equity related securities.However, in line with the asset allocation pattern of the Scheme, it could move its assets between equity and fixed income securities depending on its view on these markets. However, there can be no assurance or guarantee that the investment objective of the scheme would be achieved.",
+      "benchmark": "Nifty 500 TR INR",
+      "inception_date": "01/01/2013",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "isin": "INF336L01DH5",
+      "nav": 254.36,
+      "nav_date": "18/06/2026",
+      "expense_ratio": 0.89,
+      "exit_load": "1.00% - 0-1 years, 0.00% - >1 years",
+      "min_lumpsum": 5000,
+      "min_additional": 1000,
+      "morningstar_rating": 4,
+      "fund_managers": [
+        {
+          "name": "Abhishek Gupta",
+          "managing_since": "01/03/2024"
+        }
+      ],
+      "returns": [
+        {
+          "period": "3M",
+          "fund_return": 10.43,
+          "benchmark_return": 5.91,
+          "category_avg_return": 7.59
+        },
+        {
+          "period": "6M",
+          "fund_return": 4.38,
+          "benchmark_return": -1.25,
+          "category_avg_return": -0.8
+        },
+        {
+          "period": "1Y",
+          "fund_return": 5.38,
+          "benchmark_return": 1.84,
+          "category_avg_return": 1.49
+        },
+        {
+          "period": "3Y",
+          "fund_return": 18.29,
+          "benchmark_return": 13.4,
+          "category_avg_return": 13.66
+        },
+        {
+          "period": "5Y",
+          "fund_return": 15.3,
+          "benchmark_return": 12.53,
+          "category_avg_return": 12.5
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "ICICI Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 4.2
+        },
+        {
+          "name": "HDFC Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 3.15
+        },
+        {
+          "name": "Reliance Industries Ltd",
+          "sector": "Energy",
+          "weight_pct": 2.85
+        },
+        {
+          "name": "MTAR Technologies Ltd",
+          "sector": "Industrials",
+          "weight_pct": 2.73
+        },
+        {
+          "name": "TD Power Systems Ltd",
+          "sector": "Industrials",
+          "weight_pct": 2.26
+        },
+        {
+          "name": "Multi Commodity Exchange of...",
+          "sector": "Financial Services",
+          "weight_pct": 2.1
+        },
+        {
+          "name": "State Bank of India",
+          "sector": "Financial Services",
+          "weight_pct": 2.09
+        },
+        {
+          "name": "Samvardhana Motherson...",
+          "sector": "Consumer Cyclical",
+          "weight_pct": 2.01
+        },
+        {
+          "name": "Axis Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 1.96
+        },
+        {
+          "name": "Shriram Finance Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 1.96
+        }
+      ],
+      "sector_allocation": {
+        "Basic Materials": 9.23,
+        "Consumer Cyclical": 13.53,
+        "Financial Services": 30.02,
+        "Real Estate": 0.86,
+        "Communication Services": 1.76,
+        "Energy": 4.29,
+        "Industrials": 15.52,
+        "Technology": 7.62,
+        "Consumer Defensive": 6.64,
+        "Healthcare": 7.16,
+        "Utilities": 3.37
+      },
+      "asset_allocation": {
+        "Stocks": 98.18,
+        "Bonds": 0.0,
+        "Cash": 1.82,
+        "Other": 0.0
+      },
+      "market_cap_allocation": {
+        "Giant": 25.12,
+        "Large": 40.12,
+        "Medium": 24.31,
+        "Small": 5.82,
+        "Micro": 4.63
+      },
+      "risk_metrics": {
+        "alpha": 4.22,
+        "beta": 1.09,
+        "sharpe_ratio": 0.72,
+        "r_squared": 93.22,
+        "information_ratio": 1.12,
+        "tracking_error": 4.7,
+        "standard_deviation": 17.32
+      },
+      "portfolio_stats": {
+        "avg_market_cap_cr": 1013.09
+      },
+      "aum_crores": 55384.84
+    }
+  ],
+  "amc_info": {
+    "amc_name": "HSBC Asset Management (India) Private Ltd",
+    "factsheet_date": "19 Jun 2026",
+    "website": "https://www.assetmanagement.hsbc.co.in/en/mutual-funds"
+  },
+  "pages_processed": 2,
+  "source_pdf": "HSBC.pdf",
+  "amc_slug": "hsbc",
+  "extracted_at": "2026-06-19T16:18:31"
+}

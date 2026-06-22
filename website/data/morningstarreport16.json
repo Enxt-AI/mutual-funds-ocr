@@ -1,0 +1,136 @@
+{
+  "schemes": [
+    {
+      "fund_name": "Motilal Oswal Flexicap Fund Direct Plan Growth",
+      "category": "Flexi Cap Fund",
+      "investment_objective": "The investment objective of the Scheme is to achieve long term capital appreciation by primarily investing in equity & equity related instruments across sectors and market-capitalization levels. However, there can be no assurance or guarantee that the investment objective of the Scheme would be achieved.",
+      "benchmark": "BSE 500 India TR INR",
+      "inception_date": "28/04/2014",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "isin": "INF247L01502",
+      "nav": 65.12,
+      "nav_date": "18/06/2026",
+      "expense_ratio": 0.87,
+      "exit_load": "1.00% - 0-1 years; 0.00% - >1 years",
+      "min_initial_purchase": 500,
+      "min_additional_purchase": 500,
+      "morningstar_rating": 3,
+      "fund_managers": [
+        {
+          "name": "Rakesh Shetty",
+          "managing_since": "22/11/2022"
+        }
+      ],
+      "returns": [
+        {
+          "period": "3M",
+          "fund_return": 8.26,
+          "benchmark_return": 5.91
+        },
+        {
+          "period": "6M",
+          "fund_return": -3.16,
+          "benchmark_return": -1.25
+        },
+        {
+          "period": "1Y",
+          "fund_return": -2.74,
+          "benchmark_return": 1.84
+        },
+        {
+          "period": "3Y",
+          "fund_return": 19.16,
+          "benchmark_return": 13.4
+        },
+        {
+          "period": "5Y",
+          "fund_return": 13.11,
+          "benchmark_return": 12.53
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "CG Power & Industrial...",
+          "weight_pct": 6.6
+        },
+        {
+          "name": "Kalyan Jewellers India Ltd",
+          "weight_pct": 6.25
+        },
+        {
+          "name": "Eternal Ltd",
+          "weight_pct": 5.33
+        },
+        {
+          "name": "Coforge Ltd",
+          "weight_pct": 4.85
+        },
+        {
+          "name": "Persistent Systems Ltd",
+          "weight_pct": 4.62
+        },
+        {
+          "name": "Waaree Energies Ltd",
+          "weight_pct": 4.13
+        },
+        {
+          "name": "Shriram Finance Ltd",
+          "weight_pct": 4.12
+        },
+        {
+          "name": "Ather Energy Ltd",
+          "weight_pct": 3.88
+        },
+        {
+          "name": "Multi Commodity Exchange of...",
+          "weight_pct": 3.65
+        },
+        {
+          "name": "IndusInd Bank Ltd",
+          "weight_pct": 3.56
+        }
+      ],
+      "sector_allocation": {
+        "Basic Materials": 2.39,
+        "Consumer Cyclical": 20.07,
+        "Financial Services": 22.43,
+        "Industrials": 29.86,
+        "Technology": 18.64,
+        "Healthcare": 6.61
+      },
+      "asset_allocation": {
+        "Stocks": 94.69,
+        "Bonds": 0.0,
+        "Cash": 5.31,
+        "Other": 0.0
+      },
+      "market_cap_allocation": {
+        "Giant": 0.0,
+        "Large": 73.0,
+        "Medium": 27.0,
+        "Small": 0.0,
+        "Micro": 0.0
+      },
+      "risk_metrics": {
+        "alpha": 5.69,
+        "beta": 0.95,
+        "r_squared": 71.52,
+        "information_ratio": 0.62,
+        "tracking_error": 9.27,
+        "sharpe_ratio": 0.74,
+        "standard_deviation": 17.35
+      },
+      "aum_crores": 129365.06
+    }
+  ],
+  "amc_info": {
+    "amc_name": "Motilal Oswal Asset Management Company Limited - Portfolio Managers",
+    "website": "www.motilaloswalmf.com",
+    "factsheet_date": "19 Jun 2026"
+  },
+  "pages_processed": 2,
+  "source_pdf": "morningstarreport20260619103216.pdf",
+  "amc_slug": "morningstarreport16",
+  "extracted_at": "2026-06-19T16:03:17"
+}

@@ -1,0 +1,143 @@
+{
+  "schemes": [
+    {
+      "fund_name": "ICICI Prudential Flexicap Fund Direct Growth",
+      "category": "Flexicap Fund",
+      "investment_objective": "To generate long-term capital appreciation by investing predominately in equity & equity related instruments across market capitalization. However, there can be no assurance or guarantee that the investment objective of the Scheme would be achieved.",
+      "benchmark": "BSE 500 India TR INR",
+      "inception_date": "19/07/2021",
+      "plan_type": "Direct",
+      "option": "Growth",
+      "isin": "INF109KC1R14",
+      "nav": 20.65,
+      "nav_date": "18/06/2026",
+      "aum_crores": 211889.94,
+      "expense_ratio": 0.64,
+      "exit_load": "1.00% - 0-1 months, 0.00% - >1 months",
+      "min_lumpsum": 5000,
+      "min_additional": 1000,
+      "morningstar_rating": 4,
+      "fund_managers": [
+        {
+          "name": "Rajat Chandak",
+          "managing_since": "19/07/2021"
+        }
+      ],
+      "returns": [
+        {
+          "period": "3M",
+          "fund_return": 8.4,
+          "benchmark_return": 5.91
+        },
+        {
+          "period": "6M",
+          "fund_return": -0.15,
+          "benchmark_return": -1.25
+        },
+        {
+          "period": "1Y",
+          "fund_return": 7.95,
+          "benchmark_return": 1.84
+        },
+        {
+          "period": "3Y",
+          "fund_return": 16.89,
+          "benchmark_return": 13.4
+        }
+      ],
+      "equity_holdings": [
+        {
+          "name": "TVS Motor Co Ltd",
+          "sector": "Consumer Cyclical",
+          "weight_pct": 9.25
+        },
+        {
+          "name": "Maruti Suzuki India Ltd",
+          "sector": "Consumer Cyclical",
+          "weight_pct": 6.74
+        },
+        {
+          "name": "ICICI Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 6.37
+        },
+        {
+          "name": "Avenue Supermarts Ltd",
+          "sector": "Consumer Cyclical",
+          "weight_pct": 4.09
+        },
+        {
+          "name": "HDFC Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 3.72
+        },
+        {
+          "name": "Eternal Ltd",
+          "sector": "Consumer Cyclical",
+          "weight_pct": 3.7
+        },
+        {
+          "name": "Infosys Ltd",
+          "sector": "Technology",
+          "weight_pct": 2.82
+        },
+        {
+          "name": "R R Kabel Ltd",
+          "sector": "Industrials",
+          "weight_pct": 2.62
+        },
+        {
+          "name": "Axis Bank Ltd",
+          "sector": "Financial Services",
+          "weight_pct": 2.51
+        },
+        {
+          "name": "Samvardhana Motherson...",
+          "sector": "Consumer Cyclical",
+          "weight_pct": 2.4
+        }
+      ],
+      "sector_allocation": {
+        "Basic Materials": 5.32,
+        "Consumer Cyclical": 39.67,
+        "Financial Services": 20.01,
+        "Communication Services": 1.51,
+        "Industrials": 13.03,
+        "Technology": 8.75,
+        "Consumer Defensive": 6.16,
+        "Healthcare": 5.54
+      },
+      "asset_allocation": {
+        "Stocks": 97.69,
+        "Bonds": 0.0,
+        "Cash": 2.31,
+        "Other": 0.0
+      },
+      "market_cap_allocation": {
+        "Giant": 30.81,
+        "Large": 35.27,
+        "Medium": 23.38,
+        "Small": 9.16,
+        "Micro": 1.38
+      },
+      "risk_metrics": {
+        "alpha": 3.29,
+        "beta": 0.96,
+        "sharpe_ratio": 0.68,
+        "r_squared": 92.06,
+        "information_ratio": 0.77,
+        "tracking_error": 4.38,
+        "standard_deviation": 15.4
+      }
+    }
+  ],
+  "amc_info": {
+    "amc_name": "ICICI Prudential Asset Management Co Ltd",
+    "factsheet_date": "19 Jun 2026",
+    "website": "www.icicipruamc.com"
+  },
+  "pages_processed": 1,
+  "source_pdf": "ICICI.pdf",
+  "amc_slug": "icici",
+  "extracted_at": "2026-06-19T16:42:15"
+}
