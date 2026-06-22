@@ -2,3 +2,7 @@ google-genai
 PyMuPDF
 Pillow
 python-dotenv
+pandas
+yfinance
+scrapy
+boto3

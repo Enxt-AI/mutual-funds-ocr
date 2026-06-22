@@ -1,26 +1,7 @@
 import { NextResponse } from "next/server";
-import { S3Client, ListObjectsV2Command, GetObjectCommand } from "@aws-sdk/client-s3";
+import { getJsonFile } from "../../../../lib/s3Utils";
 
 export const dynamic = "force-dynamic";
-
-const s3 = new S3Client({
-    region: process.env.AWS_REGION || "ap-south-1",
-    credentials: {
-        accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-        secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
-    },
-});
-const BUCKET = process.env.S3_BUCKET_NAME;
-
-async function getS3Json(key) {
-    try {
-        const resp = await s3.send(new GetObjectCommand({ Bucket: BUCKET, Key: key }));
-        const body = await resp.Body.transformToString();
-        return JSON.parse(body);
-    } catch {
-        return null;
-    }
-}
 
 /**
  * GET /api/api-keys/analytics?key_id=<id>&days=<7>
@@ -50,7 +31,7 @@ export async function GET(request) {
 
         // Fetch all date files in parallel
         const fetchPromises = dateKeys.map(async (dateKey) => {
-            const data = await getS3Json(`${prefix}${dateKey}.json`);
+            const data = await getJsonFile(`${prefix}${dateKey}.json`);
             if (data && Array.isArray(data.entries)) {
                 return data.entries;
             }

@@ -39,7 +39,7 @@ if not API_KEY:
     sys.exit(1)
 
 client = genai.Client(api_key=API_KEY)
-MODEL = "gemini-2.5-pro"
+MODEL = "gemini-3.1-flash-lite"
 
 # Rendering settings
 DPI = 250  # High DPI for best extraction quality

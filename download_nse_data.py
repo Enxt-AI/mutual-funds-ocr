@@ -16,10 +16,10 @@ os.makedirs(OUTPUT_DIR, exist_ok=True)
 # Yahoo Finance uses specific tickers for Indian indices
 INDICES = {
     "NIFTY_50": "^NSEI",
-    "NIFTY_NEXT_50": "^NSMIDCP50",  # Nifty Next 50
+    "NIFTY_NEXT_50": "^NSMIDCP",  # Nifty Next 50 (active symbol ^NSMIDCP)
     "NIFTY_100": "^CNX100",
     "NIFTY_MIDCAP_150": "NIFTYMIDCAP150.NS",
-    "NIFTY_SMALLCAP_250": "NIFTYSMLCAP250.NS",
+    "NIFTY_SMALLCAP_250": "0P0001KR2U.BO",  # Using Nippon India Nifty Smallcap 250 Index Fund proxy
     "NIFTY_500": "^CRSLDX",
     "NIFTY_BANK": "^NSEBANK",
     "SENSEX": "^BSESN",
@@ -49,6 +49,12 @@ def download_index(name: str, ticker: str) -> bool:
         cols = [c for c in ["Open", "High", "Low", "Close", "Volume"] if c in data.columns]
         data = data[cols]
         data.index.name = "Date"
+
+        # Scale proxy ticker values to match index range (NAV ~10 to Index ~5000 in Oct 2020)
+        if ticker == "0P0001KR2U.BO":
+            for col in ["Open", "High", "Low", "Close"]:
+                if col in data.columns:
+                    data[col] = data[col] * 500
 
         # Save
         filepath = os.path.join(OUTPUT_DIR, f"{name}.csv")

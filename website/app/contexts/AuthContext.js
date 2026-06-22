@@ -18,6 +18,22 @@ export function AuthProvider({ children }) {
     const [trialExpired, setTrialExpired] = useState(false);
 
     useEffect(() => {
+        const isLocalFallback = !process.env.NEXT_PUBLIC_FIREBASE_API_KEY || 
+                                process.env.NEXT_PUBLIC_FIREBASE_API_KEY === "AIzaSyFakeKeyPlaceholderHere12345";
+        
+        if (isLocalFallback) {
+            setUser({
+                email: "local-user@example.com",
+                uid: "local-dev-user",
+                displayName: "Local Dev User",
+                emailVerified: true
+            });
+            setTrialMinutesLeft(30);
+            setTrialExpired(false);
+            setLoading(false);
+            return;
+        }
+
         const unsub = onAuthChange(async (fbUser) => {
             if (fbUser) {
                 setUser(fbUser);
@@ -46,9 +62,14 @@ export function AuthProvider({ children }) {
     }, []);
 
     const logout = async () => {
+        const isLocalFallback = !process.env.NEXT_PUBLIC_FIREBASE_API_KEY || 
+                                process.env.NEXT_PUBLIC_FIREBASE_API_KEY === "AIzaSyFakeKeyPlaceholderHere12345";
+        if (isLocalFallback) {
+            return;
+        }
         await logOut();
         setUser(null);
-        setTrialDaysLeft(null);
+        setTrialMinutesLeft(null);
         setTrialExpired(false);
     };
 
